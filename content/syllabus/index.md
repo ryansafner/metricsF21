@@ -1,0 +1,383 @@
+---
+title: Syllabus
+slug: syllabus
+citeproc: true
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    toc: true
+    fig_caption: false
+---
+
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+
+<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
+
+-   [<i class="fas fa-file-pdf"></i> Download as PDF](/files/syllabus-pdf.pdf)
+
+-   **Last Updated**: Febrary 1, 2021
+
+> “The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design.”[^1] <br> <span style="float:right">— F.A. Hayek (1974 Economics Nobel Laureate)</span>
+
+<span class="newthought">Game theory</span>[^2] is a collection of analytical tools used to rigorously study strategic interactions between rational agents. It is one of the most useful and powerful theoretical innovations in 20<sup>th</sup> century social science, and has been applied extensively in economics, political science, psychology, sociology, logic, computer science, animal behavior, and evolutionary biology. At least twelve economists have won the Nobel Prize for research directly related to game theory (and arguably more have made tangential contributions). This is an *economics* course, so the majority of our focus and applications will be in economic settings, though we will examine a much wider scope of strategic interactions than the “narrow” economic domain of firms and consumers.
+
+Please don’t get the wrong idea — this course is *not* the theory of “games” in the colloquial sense (e.g. chess, poker, football, *Fortnite*, etc)! This course is *not* designed to make a you a better \[insert favorite game\] player (but that may be a side effect!). A “game” in social science is defined according to certain technical criteria. Furthermore, formal game theory is *highly abstract and very mathematical*. I will try to balance formal theory with interesting real world applications, sometimes including colloquial “games.”
+
+Game theory is a direct extension of basic microeconomics, so this class assumes you have met the **required prerequisite course(s) — ECON 206**. My approach to game theory requires *some* math, but it will not be exclusively about the math.
+
+# Course Format and Covid
+
+As of Fall 2021, all students are expected to be on campus except those with special approved exemptions. As such, this course will be taught **in-person** and **synchronously** until or unless otherwise announced.
+
+# Course objectives
+
+<span class="newthought">By the end of this course,</span> you will:
+
+-   Recognize different types of strategic interactions across different domains of life (e.g. economics, political science, biology, etc.)
+-   Recognize common types of games, e.g. prisoners’ dilemma, stag hunt, battle of the sexes, chicken, hawk-dove
+-   Solve for equilibria of games in normal form, extended form, in pure & mixed strategies,
+-   Understand the role of information, sequencing, credible commitments, repetition, etc.
+-   Become familiar with some of the economics (and other) literatures that use game theoretic tools
+
+Given these objectives, this course fulfills all three of the learning outcomes for [the George B. Delaplaine, Jr. School of Business](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business/student-learning-outcomes) Economics B.A. program:
+
+-   Use quantitative tools and techniques in the preparation, interpretation, analysis and presentation of data and information for problem solving and decision making \[…\]
+-   Apply economic reasoning and models to understand and analyze problems of public policy \[…\]
+-   Demonstrate effective oral and written communications skills for personal and professional success\[…\]
+
+<span class="newthought">Fair warning:</span> **Economics is hard.** *This, in particular, may be of the hardest courses that you will take, primarily due to the mathematical content.* Using the economic way of thinking is a skill, it is literally retraining your brain to interpret and analyze the world in a novel way, and is not something that can be memorized. I will do my best to make this class intuitive and helpful, if not interesting. If at any point you find yourself struggling in this course for any reason, please come see me. Do not suffer in silence! Coming to see me for help does not diminish my view of you, in fact I will hold you in *higher* regard for understanding your own needs and taking charge of your own learning. There are also a some fantastic resources on campus, such as the [Center for Academic Achievement and Retention (CAAR)](http://www.hood.edu/campus-services/academic-services/index.html) and the [Beneficial-Hodson Library](http://www.hood.edu/library/).
+
+See my [tips for success in this course](/reference#tips).
+
+# Required Course materials
+
+You can find all course materials at my **dedicated website** for this course: [gameF21.classes.ryansafner.com](https://gameF21.classes.ryansafner.com). Links to the website are posted on our Blackboard course page. Please familiarize yourself with the website, see that it contains this [syllabus](https://gameF21.classes.ryansafner.com/syllabus/), guides for your [reference](https://gameF21.classes.ryansafner.com/reference/), and our [schedule](https://gameF21.classes.ryansafner.com/schedule/). On the schedule page, you can find each module with its own class page (**start there!**) along with all related readings, lecture slides, practice problems, and assignments.
+
+My lecture slides will be shared with you, and serve as your primary resource, but our main “textbook” below is **recommended** as the next best resource and will be available from the campus bookstore. I will discuss more about textbooks and materials in the first module.
+
+## Books
+
+My lecture slides (made available to you) are the primary resource for the material and the best guide to prepare for homeworks and exams. There are two books that we will roughly be following in parallel, both available at the bookstore (or you can find them on Amazon, ebay, etc). You may choose to purchase used or old versions, but be aware that content and ordering may slightly vary across versions.
+
+1.  Dixit, Avinash K and Barry J Nalebuff, 2008, *The Art of Strategy: A Game Theorist’s Guide to Success in Business and Life*, New York: W.W. Norton and Company
+2.  Dixit, Avinash K, Susan Skeath, and David H Reily Jr, 2014, *Games of Strategy*, 4<sup>th</sup> ed, New York: W.W. Norton and Company
+3.  Purchase a Moblab account (\$10) at [moblab.com](http://moblab.com)
+
+The first book is a popular, read-on-the-beach style paperback that covers the topics in a readable way. It is listed as **required** in the bookstore, and should be fairly cheap on Amazon. It mirrors the topics in the next book in roughly the same order but certainly at a more general (and less mathematical) manner.
+
+The second book is the more common textbook-style As with any textbook, this will be more expensive but a deeper dive into the material that may help with your understanding. It is listed as **recommended** in the bookstore.
+
+If you purchase the second book, it is superfluous for you to purchase the first book, unless you really would like to!
+
+Finally, purchase an account on [moblab.com](https://moblab.com) so that we can all play games in class together on common software.
+
+I leave it to you to determine your own optimal strategy in purchasing (or not) any textbooks. There is no dominant strategy here.
+
+# Assignments and Grades
+
+Your final course grade is the weighted average of the following assignments. You can find general descriptions for all the assignments on the [assignments page](http://gameF21.classes.ryansafner.com/assignments/) and more specific information and examples on each assignment’s page on the [schedule page](http://gameF21.classes.ryansafner.com/schedule/).
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Frequency
+</th>
+<th style="text-align:left;">
+Assignment
+</th>
+<th style="text-align:left;">
+Weight
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+n
+</td>
+<td style="text-align:left;">
+Homeworks
+</td>
+<td style="text-align:left;">
+25% (using average HW grade)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+Paper
+</td>
+<td style="text-align:left;">
+20%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+Midterm Exam
+</td>
+<td style="text-align:left;">
+20%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+Final Exam
+</td>
+<td style="text-align:left;">
+20% (each)
+</td>
+</tr>
+</tbody>
+</table>
+
+Each assignment is graded on a 100 point scale. Letter-grade equivalents are based on the following scale:
+
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Grade
+</th>
+<th style="text-align:center;">
+Range
+</th>
+<th style="text-align:left;">
+Grade
+</th>
+<th style="text-align:center;">
+Range
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:center;">
+93–100%
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:center;">
+73–76%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+A−
+</td>
+<td style="text-align:center;">
+90–92%
+</td>
+<td style="text-align:left;">
+C−
+</td>
+<td style="text-align:center;">
+70–72%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+B+
+</td>
+<td style="text-align:center;">
+87–89%
+</td>
+<td style="text-align:left;">
+D+
+</td>
+<td style="text-align:center;">
+67–69%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:center;">
+83–86%
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:center;">
+63–66%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+B−
+</td>
+<td style="text-align:center;">
+80–82%
+</td>
+<td style="text-align:left;">
+D−
+</td>
+<td style="text-align:center;">
+60–62%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+C+
+</td>
+<td style="text-align:center;">
+77–79%
+</td>
+<td style="text-align:left;">
+F
+</td>
+<td style="text-align:center;">
+&lt; 60%
+</td>
+</tr>
+</tbody>
+</table>
+
+See also my [<i class="fas fa-calculator"></i> `Grade Calculator`](https://ryansafner.shinyapps.io/306_grade_calculator/) app where you can calculate your overall grade using existing assignment grades and forecast “what if” scenarios.
+
+These grades are firm cutoffs, but I do of course round upwards `\((\geq\)` 0.5) for final grades. A necessary reminder, as an academic, I am not in the business of *giving* out grades, I merely report the grade that you *earn*. I will not alter your grade unless you provide a reasonable argument that I am in error (which does happen from time to time).
+
+## Homeworks
+
+There will be roughly a homework assignment every few lessons. These questions will help check your understanding and mastery of the material, and will be a combination of quantitative, graph, and short answer questions of examples. These will also be good indicators of what to expect on the exams. You may collaborate with other students to work on homeworks (and I encourage that!), but each person must turn in an individual assignment.
+
+Homeworks are generally due by 11:59 PM EST Sunday by submission to Blackboard Assignments.
+
+Please **type** your answers to the following questions in a document and **save as a PDF**[^3] to **upload on Blackboard** under Assignments. You may handwrite answers if you will be able to scan/photograph & convert them **to a single PDF**, if they are easily readable, but this is *not preferred*. See my [guide to making a PDF](https://gameF21.classes.ryansafner.com/resources/#how-to-make-a-pdf-for-submitting-assignments) - an essential skill in the modern world. If you are handwriting answers, you may print the `pdf` above and write on it, or just write on a piece of paper (we only need your answers).
+
+For the few questions that ask you to draw a **graph**, *try* to do so *on your computer* (use MS Paint, the drawing tools in MS Word or MS Powerpoint, plot points in MS Excel, drawing/notetaking apps, etc.), and save it as an image to include on your homework document. Again, they need not be perfect or to scale, just show that you understand the broad idea. Being able to understand and sketch the graphs is still a very important and useful skill! If all else fails, I will be lenient in grading graph questions if you are unable to technologically include a graph.
+
+Your TA, under my supervision, will grade homeworks 70% for completion, and for the remaining 30%, and one question will be graded for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.
+
+## Exams
+
+There will be three exams (one at the end of each unit) including the final exam. Each exam only covers the material in its associated unit (i.e. no exam is cumulative). These exams provide feedback both to you and to me that ensures everyone is progressing on schedule and apprehending the material. This is critical, as the rest of the course, and indeed, any future economics course you take, will build off of this foundation.
+
+Exams will be released **on Blackboard** as a timed assignment. You will have 2 hours once you open the exam on Blackboard. You will not need the whole time, I have given you some extra to accommodate the difficulties of taking an exam at home. Please pick a time to take it where you know you will have 2 hours. You may close the exam page and come back to it, but the timer will continue to run once the exam is first opened.
+
+## Opinion-Editorial
+
+Economic fallacies have always been popular, and journalists, politicians, and talking heads consistently engage in faulty economic reasoning in print and on television. Your task, as a student of economics, is to find some issue discussed in the past year, and write a critique of media discussion of that issue. Alternatively, instead of critiquing the reasoning or statements of others, you may write an advocacy piece, where you propose some economic policy and argue to persuade readers to endorse it. You will be graded both on the soundness of your economic reasoning and the quality of your writing. I would be happy to co-author an Op-Ed with anyone who writes an exemplary Op-Ed. Students who successfully publish their work in a media outlet will earn *extra credit* on their Op-Ed grade. I will provide ample resources and examples to help you accomplish this, you can find more on the associated [assignment page](assignment/op-ed).
+
+## No extra credit is available
+
+# Policies and Expectations
+
+This syllabus is a contract between you, the student, and me, your instructor. It has been carefully and deliberately thought out[^4], and I will uphold my end of the agreement and expect you to uphold yours.
+
+In the language of game theory, this syllabus is my commitment device. I am a very understanding person, and I know that exceptions to rules often need to be made for students. However, to be *fair* to *all* students the syllabus artificially constrains my ability to make exceptions at a whim for anyone. This prevents clever students from exploiting my congenial personality at everyone else’s expense. Please read and familiarize yourself with the course policies and expectations of you. Chances are, if you have a question, it is answered herein.
+
+This is a hybrid course with synchronous (live) and asynchronous (on your own time) parts.
+
+You are generally expected to join (online via Zoom) our **synchronous** class sessions unless circumstances prevent you from doing so. Day-to-day attendance is not graded per se, but I strongly recommend you join in all live sessions in which you are able, since we all can provide live feedback and I can answer questions and address concerns as soon as they come up. You will also benefit from a rigid schedule and shared community.
+
+If you are unable to make a particular class, you generally do not need to let me know. **The videos from all class sessions are posted on Blackboard** so please review videos of classes you were unable to attend live.
+
+All assignmnents are able to be completed **asynchronously** during the week, and are **generally due by 11:59PM Sunday each week** to allow you flexibility in your hectic schedules.
+
+## Late Assignments
+
+I will accept late assignments, but will subtract a specified amount of points as a penalty. Even if it is the last week of the semester, I encourage you to turn in late work: some points are better than no points!
+
+**Homeworks**: If you turn in a homework after it is due but before it is graded or the answer key posted, I generally will not take off any points. However, **if you turn in a homework *after* the answer key is posted, I will automatically deduct 20 points (so the maximum grade you can earn on it is an 80).**
+
+**Exams**: If you know that you will be unable to complete an *exam* as scheduled for a legitimate reason, please notify me at least *one week* in advance, and we will schedule a make-up exam date. Failure to do so, including desperate attempts to make arrangements only *after* the exam will result in a grade of 0 and little sympathy. I reserve the right to re-weight other assignments for students who I believe are legitimately unable to complete a particular assignment.
+
+**Op-eds**: Starting at the deadline, I will take off 1 point for every hour that your Op-ed is late.
+
+## Grading
+
+I will try my best to post grades on Blackboard’s Grading Center and return graded assignments to you within about one week of you turning them in. There will be exceptions. Where applicable, I will post answer keys once I know most homeworks are turned in (see Late Assignments above for penalties). Blackboard’s Grading Center is the place to look for your most up-to-date grades. See also my [<i class="fas fa-calculator"></i> `Grade Calculator`](https://ryansafner.shinyapps.io/306_grade_calculator/) app where you can calculate your overall grade using existing assignment grades and forecast “what if” scenarios.
+
+## Communication: Email, Slack, and Virtual Office Hours
+
+Students must regularly monitor their **Hood email accounts** to receive important college information, including messages related to this class. Email through the Blackboard system is my main method of communicating announcements and deadlines regarding your assignments. **Please do not reply to any automated Blackboard emails - I may not recieve it!**. My Hood email (`safner@hood.edu`) is the best means of contacting me. I will do my best to respond within 24 hours. If I do not reply within 48 hours, do not take it personally, and *feel free to send a follow up email* in the very likely event that I genuinely did not see your original message.
+
+Our [slack channel](https://hoodcollegeeconomics.slack.com) is available to all students and faculty in Economics and Business. I have invited all of my classes and advisees. It will not be extended to non-Business/Economics students or faculty. All users must use their **hood emails** and **true first and last names**. Each course has its own channel, exclusive for verified students in the course, and myself, by my invite only. As a third party platform, you agree to its Terms of Service. I have created this space as a way to stay connected, to help one another, and to foster community. Behaviors such as posting inappropriate content, harassing others, or engaging in academic dishonesty, to be determined solely at my discretion, will result in one warning, the content will be deleted, and subsequent behavior will result in a ban.
+
+I will host general **“office hours”** on Zoom. You can join in with video, audio, and/or chat, whichever you feel comfortable with. Of course, if you are not available during those times, we can schedule our own time if you prefer this method over email or Slack. If you want to go over material from class, please have *specific* questions you want help with. I am not in the business of giving private lectures (particularly if you missed class without a valid excuse).
+
+Watch this excellent and accurate video explaining office hours:
+
+<iframe src="https://player.vimeo.com/video/270014784" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+</iframe>
+
+## Netiquette
+
+When using Zoom and Slack, please follow appropriate internet etiquette (“Netiquette”). Written communications, like blog posts or use of the Zoom chat, lacks important nonverbal cues (such as body language, tone of voice, sarcasm, etc).
+
+Above all else, please respect one another and think/reread carefully about how others may see your post before you submit a comment. You are expected to disagree and have different opinions, this is inherently valuable in a discussion. Please be civil and constructive in responding to others’ comments: writing *“have you considered ‘X?’”* is a lot more helpful to all involved than just writing *“well you’re just wrong.”*
+
+Posting content that is wilfully incindiary, illegal, or that constitutes academic dishonesty (such as plagarism) will automatically earn a grade of 0 and may be elevated to other authorities on campus.
+
+When using the chat function on Zoom or public Slack channels, please treat it as official course communications, even though I may not be grading it. It may be a quick and informal tool - don’t feel you need to worry about spelling or perfect grammar - but please try to avoid *too* informal “text-speak” (i.e. say “That’s good for you” instead of “thas good 4 u”).
+
+## Privacy
+
+[Maryland law](https://www.execvision.io/blog/maryland-call-recording-laws/) [requires](https://law.justia.com/codes/maryland/2005/gcj/10-402.html) all parties consent for a conversation or meeting to be recorded. If you join in, and certainly if you participate, **you are consenting to be recorded.** However, as described below, videos are *not accessible* beyond our class.
+
+Live lectures are recorded on Zoom and posted to Blackboard via Panopto, a secure course management system for video. Among other nice features (such as multiple video screens, close captioning, and time-stamped search functions!), Panopto is authenticated via your Blackboard credentials, ensuring that *our course videos are not accessible to the open internet.*
+
+<!--Scheduled discussions, in which there is no lecture by me, will *never* be recorded or posted online.-->
+
+For the privacy of your peers, and to foster an environment of trust and academic freedom to explore ideas, **do not record our course lectures or discussions.** You are already getting my official copies.
+
+The [Family Educational Rights and Privacy Act](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html) prevents me from disclosing or discussing any student information, including grades and records about student performance. If the student is at least 18 years of age, *parents (or spouses) do not have a right to obtain this information*, except with consent by the student.
+
+Many of you may be tuning in remotely, living with parents, and may have occasional interruptions due to sharing a space. This is normal and fine, but know that I will protect your privacy and not discuss your performance when parents (or anyone other than you, for that matter) are present, without your explicit consent.
+
+## Enrollment
+
+Students are responsible for verifying their enrollment in this class. The last day to add or drop this class with no penalty is **Wednesday, February 10**. Be aware of [important dates](https://www.hood.edu/offices-services/registrars-office/academic-calendar).
+
+## Honor Code
+
+Hood College has an Academic Honor Code which requires all members of this community to maintain the highest standards of academic honesty and integrity. Cheating, plagiarism, lying, and stealing are all prohibited. All violations of the Honor Code are taken seriously, will be reported to appropriate authority, and may result in severe penalties, including expulsion from the college. See [here](http://hood.smartcatalogiq.com/en/2016-2017/Catalog/The-Spirit-of-Hood/The-Academic-Honor-Code-and-Code-of-Conduct) for more detailed information.
+
+## Van Halen and M&Ms
+
+When you have completed reading the syllabus, email me a picture of the band Van Halen and a picture of a bowl of M&Ms. If you do this *before* the date of the first exam, you will get bonus points on the exam.[^5] Yes, this is real.
+
+## Accessibility, Equity, and Accommodations
+
+College courses can, and should, be challenging and bring you out of your comfort zone in a safe and equitable environment. If, however, you feel at any point in the semester that certain assignments or aspects of the course will be disproportionately uncomfortable or burdensome for you due to any factor beyond your control, please come see me or email me. I am a very understanding person and am happy to work out a solution together. I reserve the right to modify and reweight assignments at my sole discretion for students that I belive would legitimately be at a disadvantage, through no fault of their own, to complete them as described.
+
+If you are unable to afford required textbooks or other resources for any reason, come see me and we can find a solution that works for you.
+
+This course is intended to be accessible for all students, including those with mental, physical, or cognitive disabilities, illness, injuries, impairments, or any other condition that tends to negatively affect one’s equal access to education. If at any point in the term, you find yourself not able to fully access the space, content, and experience of this course, you are welcome to contact me to discuss your specific needs. I also encourage you to contact the [Office of Accessibility Services](https://www.hood.edu/academics/josephine-steiner-center-academic-achievement-retention/accessibility-services) (301-696-3421). If you have a diagnosis or history of accommodations in high school or previous postsecondary institutions, Accessibility Services can help you document your needs and create an accommodation plan. By making a plan through Accessibility Services, you can ensure appropriate accommodations without disclosing your condition or diagnosis to course instructors.
+
+## ACBSP Information
+
+![](https://gameF21.classes.ryansafner.com/images/acbsp.png)
+
+Hood College is an accredited member of the Accreditation Council for Business Schools and Programs (ACBSP), an organization devoted to enhancing business education. In receiving and maintaining this accreditation, the faculty has made a commitment to the continuous improvement, innovation, and scholarship of the Department of Economics and Management. For you, this means that your educational experience undergoes ongoing validation to ensure it meets the most rigorous international standards of business education. Only a select group of institutions have received this status and it is an attribute of Hood for which you should take great pride.
+
+Pragmatically, our accreditation means that we will engage in the ongoing use of measures, both quantitative and qualitative in nature, to assess the performance of our students and the program. We ask that you take very seriously the surveys and other measurement devices we will use – your best work and honest response will help us best assess and improve our program.
+
+# Tentative Schedule
+
+**You can find a full schedule** with much more details, including the readings, appendices, and other further resources for each class meeting on the [schedule page](http://gameF21.classes.ryansafner.com/schedule/).
+
+[^1]: Hayek, F.A., 1988, *The Fatal Conceit*, p.76
+
+[^2]: {{% courseinfo %}}
+
+[^3]: In MS Word, or Pages, or most word processing software, File -&gt; Save As -&gt; PDF, or File -&gt; Export -&gt; PDF.
+
+[^4]: A syllabus can and will be used as a legal document for disputes tried at a court of law. Ask me how I know.
+
+[^5]: If 75-100% of the class does this, you each get 2 points. If 50-75% of the class does this, you each get 4 points. If 25-50% of the class does this, you each get 6 points. If 0-25% of the class does this, you each get 8 points.

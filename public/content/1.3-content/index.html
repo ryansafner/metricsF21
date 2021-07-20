@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.79.1" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Michael Vahn">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Monday, February 1, 2021    Section 1: Monday, February 8, 2021 Section 2: Tuesday, February 9, 2021   Overview From last class, we know what constraints individuals face in the market (represented by the budget constraint), but how do people make the choices they do? We must now enter the more controversial1 realm of modeling preferences.
+As I mentioned in last class’ page, a lot of the “in the weeds” details about preference assumptions, indifference curves, and utility functions are a waste of your time.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://microf21.classes.ryansafner.com/content/1.3-content/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#5E81AC">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i|Fira+Mono:400,700)&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.033753595582114e5ce5d6155d90ade7.css">
+
+  
+
+  
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://microf21.classes.ryansafner.com/content/1.3-content/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="ECON 306 — Microeconomic Analysis">
+  <meta property="og:url" content="https://microf21.classes.ryansafner.com/content/1.3-content/">
+  <meta property="og:title" content="1.3 — Preferences — Class Content | ECON 306 — Microeconomic Analysis">
+  <meta property="og:description" content="Monday, February 1, 2021    Section 1: Monday, February 8, 2021 Section 2: Tuesday, February 9, 2021   Overview From last class, we know what constraints individuals face in the market (represented by the budget constraint), but how do people make the choices they do? We must now enter the more controversial1 realm of modeling preferences.
+As I mentioned in last class’ page, a lot of the “in the weeds” details about preference assumptions, indifference curves, and utility functions are a waste of your time."><meta property="og:image" content="https://microf21.classes.ryansafner.com/img/icon-192.png">
+  <meta property="twitter:image" content="https://microf21.classes.ryansafner.com/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2021-06-08T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2021-06-08T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>1.3 — Preferences — Class Content | ECON 306 — Microeconomic Analysis</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">ECON 306 — Microeconomic Analysis</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resources/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/content/">Course content</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/content/">Overview</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.1-content/">1.1 — The Tools of Microeconomics</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.2-content/">1.2 — Budget Constraint</a>
+      </li>
+      
+      <li class="active">
+        <a href="/content/1.3-content/">1.3 — Preferences</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.4-content/">1.4 — Utility Maximization</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.5-content/">1.5 — Demand</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.6-content/">1.6 — Income and Substitution Effects</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.65-content/">1.65 — Income and Substitution Effects</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.7-content/">1.7 — Price Elasticity</a>
+      </li>
+      
+      <li >
+        <a href="/content/2.1-content/">2.1 — Production, Specialization, and Firms</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#i-classfas-fa-info-circle-fa-lgi-overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+    <li><a href="#i-classfas-fa-book-reader-fa-lgi-readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+    <li><a href="#i-classfas-fa-chalkboard-teacheri-slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+    <li><a href="#i-classfas-fa-dumbbelli-practice"><i class="fas fa-dumbbell"></i> Practice</a></li>
+    <li><a href="#i-classfas-fa-laptop-codei-assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+      <ul>
+        <li><a href="#problem-set-1">Problem Set 1</a></li>
+      </ul>
+    </li>
+    <li><a href="#i-classfas-fa-sigmai-appendix-1-material-on-preferences"><i class="fas fa-sigma"></i> Appendix 1: Material on Preferences</a>
+      <ul>
+        <li><a href="#strict-vsweak-preferences">Strict vs. Weak Preferences</a></li>
+        <li><a href="#assumptions-of-well-behaved-preferences">Assumptions of “Well-behaved Preferences”</a></li>
+        <li><a href="#assumptions-of-well-behaved-indifference-curves">Assumptions of “Well-behaved Indifference Curves”</a></li>
+        <li><a href="#steepness--indifference-curves-for-neutrals">Steepness &amp; Indifference Curves for Neutrals</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#derivation-of-mrs-equation-as-ratio-of-marginal-utilities">Derivation of MRS Equation (as ratio of marginal utilities)</a>
+      <ul>
+        <li><a href="#utility-functions-and-pmts">Utility Functions and PMTs</a></li>
+        <li><a href="#graphing-indifference-curves">Graphing Indifference Curves</a></li>
+        <li><a href="#utility-functions-for-perfect-substitutes">Utility Functions for Perfect Substitutes</a></li>
+        <li><a href="#utility-functions-for-perfect-complements">Utility Functions for Perfect Complements</a></li>
+        <li><a href="#cobb-douglas-functions">Cobb-Douglas Functions</a></li>
+        <li><a href="#mrs-and-positive-monotonic-transformations">MRS and Positive Monotonic Transformations</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">1.3 — Preferences — Class Content</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/plotly-binding/plotly.js"></script>
+<script src="/rmarkdown-libs/typedarray/typedarray.min.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+<link href="/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/plotly-main/plotly-latest.min.js"></script>
+<div class="alert alert-warning">
+  <div>
+    <em>Monday, February 1, 2021</em>
+  </div>
+</div>
+<ul>
+<li>Section 1: <em>Monday, February 8, 2021</em></li>
+<li>Section 2: <em>Tuesday, February 9, 2021</em></li>
+</ul>
+<h2 id="i-classfas-fa-info-circle-fa-lgi-overview"><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>From last class, we know what constraints individuals face in the market (represented by the budget constraint), but how do people make the choices they do? We must now enter the more controversial<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> realm of modeling preferences.</p>
+<p>As I mentioned in <a href="/content/1.2-content">last class’ page</a>, a lot of the “in the weeds” details about preference assumptions, indifference curves, and utility functions are a waste of your time. If you look at the textbook chapter, I am skipping a lot of “the fat,” and relegating it to an appendix at the bottom of this page.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> Again, I reiterate that if you are interested in more advanced economics training, it is <em>essential</em> that you master all of these details. But not for this course.</p>
+<p>Today we focus on the essential tools for fitting preferences into our optimization model:</p>
+<ul>
+<li><strong>indifference curves</strong>: each of which is the set of all bundles that one is <em>indifferent between</em> (and that give the same amount utility)</li>
+<li><strong>utility functions</strong>: which measure the <em>ordinal</em> (but not cardinal!) utility level of any given bundle; for comparisons only!</li>
+<li><strong>marginal rate of substitution</strong>: the slope of the indifference curve, representing an individual’s subjective tradeoff between goods; measured by the ratio of marginal utilities: <code>\(MRS_{x,y}=-\frac{MU_x}{MU_y}\)</code></li>
+</ul>
+<h2 id="i-classfas-fa-book-reader-fa-lgi-readings"><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Ch. 4.1-4.2 in Goolsbee, Levitt, and Syverson, 2019</li>
+<li><a href="/files/math_review_guide.pdf"><i class="fas fa-file-pdf"></i> Math Review Guide</a></li>
+</ul>
+<h2 id="i-classfas-fa-chalkboard-teacheri-slides"><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p><a href="/slides/1.3-slides.html"><img src="/slides/1.3-slides.png" alt=""></a></p>
+<ul>
+<li><a href="/slides/1.3-slides.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a></li>
+</ul>
+<h2 id="i-classfas-fa-dumbbelli-practice"><i class="fas fa-dumbbell"></i> Practice</h2>
+<p>Answers from last class’ <a href="/practice/1.2-practice">practice problems</a> are posted on that page.</p>
+<h2 id="i-classfas-fa-laptop-codei-assignments"><i class="fas fa-laptop-code"></i> Assignments</h2>
+<h3 id="problem-set-1">Problem Set 1</h3>
+<p><a href="/assignment/01-problem-set">Problem set 1</a> (on 1.1-1.4) is due by 11:59 PM Sunday February 14 by PDF upload to Blackboard Assignments. We will learn and practice the final few concepts this problem set covers next class.</p>
+<h2 id="i-classfas-fa-sigmai-appendix-1-material-on-preferences"><i class="fas fa-sigma"></i> Appendix 1: Material on Preferences</h2>
+<h3 id="strict-vsweak-preferences">Strict vs. Weak Preferences</h3>
+<p>We have defined preferences as being <strong>strictly</strong> one of the following possibilities:</p>
+<ol>
+<li><code>\(a \succ b\)</code> ($a$ is <em>strictly</em> preferred over <em>b</em>)</li>
+<li><code>\(a \prec b\)</code> ($b$ is <em>strictly</em> preferred over <em>a</em>)</li>
+<li><code>\(a \sim b\)</code> (indifferent between <em>a</em>)</li>
+</ol>
+<p>You can also have <strong>weak</strong> preferences, such as</p>
+<ol>
+<li><code>\(a \succeq b\)</code> ($a$ is <em>at least as preferred</em> as (or “weakly preferred over” <code>\(b\)</code>)</li>
+<li><code>\(a \preceq b\)</code> ($b$ is <em>at least as preferred</em> as (or “weakly preferred over” <code>\(a\)</code>)</li>
+</ol>
+<p>These are more technically complete, but it is much more simple for us to focus on strong preferences, and we don’t lose much by doing so.</p>
+<h3 id="assumptions-of-well-behaved-preferences">Assumptions of “Well-behaved Preferences”</h3>
+<ol>
+<li>
+<p><strong>Reflexivity</strong> : any bundle is at least as preferred as itself</p>
+</li>
+<li>
+<p><strong>Completeness</strong> : any two bundles can be compared</p>
+</li>
+<li>
+<p><strong>Transitivity</strong> : rankings are logically consistent:</p>
+</li>
+</ol>
+<ul>
+<li>If <code>\(a \succ b\)</code> and <code>\(b \succ c\)</code>, then <code>\(a \succ c\)</code></li>
+</ul>
+<p>Are these good assumptions? As you will find typical in economics, <em>very often yes, sometimes no!</em> See the growing field of <a href="https://en.wikipedia.org/wiki/Behavioral_economics">Behavioral economics</a> for interesting anomalies and exceptions to our assumptions.</p>
+<h3 id="assumptions-of-well-behaved-indifference-curves">Assumptions of “Well-behaved Indifference Curves”</h3>
+<p>Like preferences, we make 4 major assumptions about indifference curves to describe the normal case. In fact, many of these assumptions are derived from the assumptions we made above about well-behaved preferences</p>
+<ol>
+<li><strong>We can always draw indifference curves:</strong> two bundles can always be ranked</li>
+</ol>
+<p>Every possible bundle (point on graph) is on an indifference curve.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">IC_10=function(x){<span style="color:#ff0;font-weight:bold">100</span>/x}
+IC_9=function(x){<span style="color:#ff0;font-weight:bold">81</span>/x}
+IC_8=function(x){<span style="color:#ff0;font-weight:bold">64</span>/x}
+IC_7=function(x){<span style="color:#ff0;font-weight:bold">49</span>/x}
+IC_6=function(x){<span style="color:#ff0;font-weight:bold">36</span>/x}
+IC_5=function(x){<span style="color:#ff0;font-weight:bold">25</span>/x}
+IC_4=function(x){<span style="color:#ff0;font-weight:bold">16</span>/x}
+IC_3=function(x){<span style="color:#ff0;font-weight:bold">9</span>/x}
+IC_2=function(x){<span style="color:#ff0;font-weight:bold">4</span>/x}
+IC_1=function(x){<span style="color:#ff0;font-weight:bold">1</span>/x}
+
+
+ggplot(data.frame(x=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>)), aes(x=x))+
+  stat_function(fun=IC_10, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+  stat_function(fun=IC_9, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+  stat_function(fun=IC_8, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+  stat_function(fun=IC_7, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+  stat_function(fun=IC_6, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+  stat_function(fun=IC_5, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+  stat_function(fun=IC_4, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+  stat_function(fun=IC_3, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+  stat_function(fun=IC_2, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+  stat_function(fun=IC_1, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+    scale_x_continuous(breaks=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">1</span>),
+                     limits=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>),
+                     expand=expand_scale(mult=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">0.1</span>)))+
+  scale_y_continuous(breaks=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">1</span>),
+                     limits=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>),
+                     expand=expand_scale(mult=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">0.1</span>)))+
+  scale_color_viridis_d(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>)+
+  <span style="color:#007f7f">#scale_colour_manual(&#34;Curves&#34;, values = line_colors, guide=F)+</span>
+  labs(x = <span style="color:#0ff;font-weight:bold">&#34;x&#34;</span>,
+       y = <span style="color:#0ff;font-weight:bold">&#34;y&#34;</span>)+
+  theme_classic(base_family = <span style="color:#0ff;font-weight:bold">&#34;Fira Sans Condensed&#34;</span>, base_size=<span style="color:#ff0;font-weight:bold">20</span>)
+</code></pre></div><p><img src="/content/1.3-content_files/figure-html/IC-ass-1-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p>Of course, this means that this entire graph is <em>full</em> of indifference curves - every single possible point is on <em>some</em> indifference curve (and this whole graph would just be a solid block of black). Naturally, it’s pointless to draw all the indifference curves, we just want to show a few to make our analysis meaningful. But the general idea comes from assumption 2 of preferences: <em>any two bundles can be compared</em>, as we can compare two points on this graph and make a judgment.</p>
+<ol>
+<li><strong>Indifference curves are monotonic</strong>, which means practically that “more is preferred to less”</li>
+</ol>
+<p>For any bundle <code>\(b\)</code> with more of at least one good than bundle <code>\(a \implies a \prec b\)</code>. Movements to the Northeast always preferable, while movements to the Southwest always unpreferable.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">points&lt;-tribble(
+  ~letter, ~x, ~y,
+  <span style="color:#0ff;font-weight:bold">&#34;A&#34;</span>, <span style="color:#ff0;font-weight:bold">2</span>, <span style="color:#ff0;font-weight:bold">2</span>,
+)
+
+asfill&lt;-tibble(fx=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">0.1</span>),
+               fymin=<span style="color:#ff0;font-weight:bold">4</span>/fx,
+             fymax=rep(<span style="color:#ff0;font-weight:bold">10</span>, length(fx))
+)
+
+asfill2&lt;-tibble(fx=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">0.1</span>),
+             fymin=rep(<span style="color:#ff0;font-weight:bold">0</span>, length(fx)),
+             fymax=<span style="color:#ff0;font-weight:bold">4</span>/fx
+)
+
+IC_as=function(x){<span style="color:#ff0;font-weight:bold">4</span>/x}
+
+ggplot(data.frame(x=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>)), aes(x=x))+
+  stat_function(fun=IC_as, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>, color=<span style="color:#0ff;font-weight:bold">&#34;blue&#34;</span>)+
+  geom_ribbon(data=asfill,aes(x=fx,ymin=fymin,ymax=fymax),fill=<span style="color:#0ff;font-weight:bold">&#34;green&#34;</span>, alpha=<span style="color:#ff0;font-weight:bold">0.4</span>)+
+  geom_ribbon(data=asfill2,aes(x=fx,ymin=fymin,ymax=fymax),fill=<span style="color:#0ff;font-weight:bold">&#34;red&#34;</span>, alpha=<span style="color:#ff0;font-weight:bold">0.4</span>)+
+  geom_rect(aes(xmin=<span style="color:#ff0;font-weight:bold">0</span>,xmax=<span style="color:#ff0;font-weight:bold">0.4</span>,ymin=<span style="color:#ff0;font-weight:bold">0</span>,ymax=<span style="color:#ff0;font-weight:bold">10</span>), fill=<span style="color:#0ff;font-weight:bold">&#34;red&#34;</span>, alpha=<span style="color:#ff0;font-weight:bold">0.2</span>)+
+  geom_point(data = points,
+             mapping=aes(x=x, y=y),
+             size = <span style="color:#ff0;font-weight:bold">3</span>)+
+  geom_text_repel(data = points,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = <span style="color:#ff0;font-weight:bold">6</span>)+
+  scale_x_continuous(breaks=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">1</span>),
+                     limits=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>),
+                     expand=expand_scale(mult=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">0.1</span>)))+
+  scale_y_continuous(breaks=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">1</span>),
+                     limits=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>),
+                     expand=expand_scale(mult=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">0.1</span>)))+
+  labs(x = <span style="color:#0ff;font-weight:bold">&#34;x&#34;</span>,
+       y = <span style="color:#0ff;font-weight:bold">&#34;y&#34;</span>)+
+  theme_classic(base_family = <span style="color:#0ff;font-weight:bold">&#34;Fira Sans Condensed&#34;</span>, base_size=<span style="color:#ff0;font-weight:bold">20</span>)
+</code></pre></div><p><img src="/content/1.3-content_files/figure-html/IC-ass-2-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p>Here’s a <em>challenge</em>: what would indifference curves look like if one of the axes contained a <em>bad</em>, rather than a good? In this case, we would violate the assumption of monotonicity!</p>
+<ol>
+<li><strong>Indifference curves are convex</strong>, which means in practice that “averages are preferred to extremes”</li>
+</ol>
+<p>From experience, people generally prefer variety in their consumption. Rather than having one bundle that is “extreme” (a lot of one good and little or none of another), they tend to prefer a bundle with a better “mix” or “balance” of some of both goods.</p>
+<p>Take our example from class, hunting for apartments. Apartment <code>\(A\)</code> is very large but near very few friends, whereas apartment <code>\(B\)</code> is very small but near many friends. If we could find some apartment, <code>\(C\)</code>, that is a weighted average of the two, with a better mix of size and friends, it would be preferred, and thus, on a higher indifference curve than <code>\(A\)</code> or <code>\(B\)</code>!</p>
+<p>Mathematically, this feature is because indifference curves are normally convex. A function is <strong>convex</strong> when a line connecting any two points on the function lies <em>above</em> the function itself. Check the math review guide for more information.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">apts4&lt;-tribble(
+  ~letter, ~x, ~y,
+  <span style="color:#0ff;font-weight:bold">&#34;A&#34;</span>, <span style="color:#ff0;font-weight:bold">1</span>, <span style="color:#ff0;font-weight:bold">1200</span>,
+  <span style="color:#0ff;font-weight:bold">&#34;B&#34;</span>, <span style="color:#ff0;font-weight:bold">6</span>, <span style="color:#ff0;font-weight:bold">200</span>,
+  <span style="color:#0ff;font-weight:bold">&#34;C&#34;</span>, <span style="color:#ff0;font-weight:bold">3</span>, <span style="color:#ff0;font-weight:bold">800</span>
+)
+IC=function(x){<span style="color:#ff0;font-weight:bold">1200</span>/x}
+line_colors &lt;- c(<span style="color:#0ff;font-weight:bold">&#34;IC&#34;</span> = <span style="color:#0ff;font-weight:bold">&#34;blue&#34;</span>)
+
+apts&lt;-tribble(
+  ~letter, ~x, ~y,
+  <span style="color:#0ff;font-weight:bold">&#34;A&#34;</span>, <span style="color:#ff0;font-weight:bold">1</span>, <span style="color:#ff0;font-weight:bold">1200</span>,
+  <span style="color:#0ff;font-weight:bold">&#34;B&#34;</span>, <span style="color:#ff0;font-weight:bold">3</span>, <span style="color:#ff0;font-weight:bold">400</span>,
+  <span style="color:#0ff;font-weight:bold">&#34;C&#34;</span>, <span style="color:#ff0;font-weight:bold">6</span>, <span style="color:#ff0;font-weight:bold">200</span>,
+)
+
+ggplot(data.frame(x=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>)), aes(x=x))+
+  stat_function(fun=IC, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>, color=<span style="color:#0ff;font-weight:bold">&#34;blue&#34;</span>)+
+  geom_point(data = apts4,
+             mapping=aes(x=x, y=y),
+             size = <span style="color:#ff0;font-weight:bold">3</span>)+
+  geom_text_repel(data = apts4,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = <span style="color:#ff0;font-weight:bold">6</span>)+
+  geom_segment(aes(x=<span style="color:#ff0;font-weight:bold">1</span>, xend=<span style="color:#ff0;font-weight:bold">6</span>, y=<span style="color:#ff0;font-weight:bold">1200</span>, yend=<span style="color:#ff0;font-weight:bold">200</span>), linetype=<span style="color:#0ff;font-weight:bold">&#34;dashed&#34;</span>, color=<span style="color:#0ff;font-weight:bold">&#34;red&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>)+
+  scale_x_continuous(breaks=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">1</span>),
+                     limits=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>),
+                     expand=expand_scale(mult=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">0.1</span>)))+
+  scale_y_continuous(breaks=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">2000</span>,<span style="color:#ff0;font-weight:bold">200</span>),
+                     limits=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">2000</span>),
+                     expand=expand_scale(mult=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">0.1</span>)))+
+  scale_colour_manual(guide=F)+
+  labs(x = <span style="color:#0ff;font-weight:bold">&#34;Friends Nearby&#34;</span>,
+       y = expression(ft^2))+
+  theme_classic(base_family = <span style="color:#0ff;font-weight:bold">&#34;Fira Sans Condensed&#34;</span>, base_size=<span style="color:#ff0;font-weight:bold">20</span>)
+</code></pre></div><p><img src="/content/1.3-content_files/figure-html/IC-as-3-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p>Here’s a <em>challenge</em>: what would <em>non-convex</em> (e.g. <em>concave</em>) curves look like, and what preferences would cause that situation?</p>
+<ol>
+<li><strong>Indifference curves can never cross</strong> because we have assumed that <em>preferences are transitive</em>.</li>
+</ol>
+<p>Suppose two curves crossed, as the ones below:</p>
+<ul>
+<li>On the blue indifference curve, <code>\\(A \sim B\\)</code></li>
+<li>On the orange indifference curve <code>\\(B \sim C\\)</code></li>
+<li>But clearly <code>\\(C\\)</code> <code>\(\succ\)</code> .<code>\\(B\\)</code></li>
+<li>Preferences are not transitive!</li>
+</ul>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">points_as4&lt;-tribble(
+  ~letter, ~x, ~y,
+  <span style="color:#0ff;font-weight:bold">&#34;A&#34;</span>, <span style="color:#ff0;font-weight:bold">2.125</span>, <span style="color:#ff0;font-weight:bold">570</span>,
+  <span style="color:#0ff;font-weight:bold">&#34;B&#34;</span>, <span style="color:#ff0;font-weight:bold">6</span>, <span style="color:#ff0;font-weight:bold">200</span>,
+  <span style="color:#0ff;font-weight:bold">&#34;C&#34;</span>, <span style="color:#ff0;font-weight:bold">8</span>, <span style="color:#ff0;font-weight:bold">425</span>
+)
+
+IC_as4=function(x){(<span style="color:#ff0;font-weight:bold">400</span>/x)<span style="color:#ff0;font-weight:bold">+375</span>}
+
+
+ggplot(data.frame(x=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>)), aes(x=x))+
+  stat_function(fun=IC, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>, color=<span style="color:#0ff;font-weight:bold">&#34;blue&#34;</span>)+
+  stat_function(fun=IC_as4, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>, color=<span style="color:#0ff;font-weight:bold">&#34;orange&#34;</span>)+
+  geom_point(data = points_as4,
+             mapping=aes(x=x, y=y),
+             size = <span style="color:#ff0;font-weight:bold">3</span>)+
+  geom_text_repel(data = points_as4,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = <span style="color:#ff0;font-weight:bold">6</span>)+
+  scale_x_continuous(breaks=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">1</span>),
+                     limits=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>),
+                     expand=expand_scale(mult=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">0.1</span>)))+
+  scale_y_continuous(breaks=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">2000</span>,<span style="color:#ff0;font-weight:bold">200</span>),
+                     limits=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">2000</span>),
+                     expand=expand_scale(mult=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">0.1</span>)))+
+  scale_colour_manual(guide=F)+
+  labs(x = <span style="color:#0ff;font-weight:bold">&#34;Friends Nearby&#34;</span>,
+       y = expression(ft^2))+
+  theme_classic(base_family = <span style="color:#0ff;font-weight:bold">&#34;Fira Sans Condensed&#34;</span>, base_size=<span style="color:#ff0;font-weight:bold">20</span>)
+</code></pre></div><p><img src="/content/1.3-content_files/figure-html/IC-as-4-1.png" width="576" style="display: block; margin: auto;" /></p>
+<h3 id="steepness--indifference-curves-for-neutrals">Steepness &amp; Indifference Curves for Neutrals</h3>
+<p>The Steepness of indifference curves tells us how consumers trade off between goods.</p>
+<p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Perfectly vertical curves (left) <code>\(\implies\)</code> indifference between having more (point B) or fewer (point A) downloads. There is no tradeoff a person would make to acquire more Downloads, they truly <em>do not care</em> about them at all. Thus, on the left graph, Downloads would be a neutral.</p>
+<p>Perfectly horizontal curves (right) <code>\(\implies\)</code> indifference between having more (point B) or fewer (point A) Tickets. There is no tradeoff a person would make to acquire more Tickets, they truly do not care about them at all. Thus, on the right graph, Tickets would be a neutral.</p>
+<p>We can look at less extreme cases:</p>
+<p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>On the left graph, the flatter curve implies the person is willing to give up <em>only a few</em> Downloads to obtain more Tickets (and vice versa). <code>\(MRS_{T,D}\)</code> (slope) is small, indicating downloads are more highly valued relative to tickets.</p>
+<p>On the right graph, the steeper curve implies the person is willing to give up <em>a lot</em> Downloads to obtain more Tickets (and vice versa). <code>\(MRS_{T,D}\)</code> (slope) is large, indicating downloads are less valued relative to tickets.</p>
+<h1 id="i-classfas-fa-sigmai-math-appendix"><i class="fas fa-sigma"></i> Math Appendix</h1>
+<h2 id="derivation-of-mrs-equation-as-ratio-of-marginal-utilities">Derivation of MRS Equation (as ratio of marginal utilities)</h2>
+<p>Consider a movement along an indifference curve, how would this change affect utility? There will be a change in <code>\(x\)</code> and a change in <code>\(y\)</code>, and multiplying the marginal utility of each, and adding these together will give us our total change in utility. But we know that if we are on the same indifference curve, moving along the curve will <em>not change utility</em> (all points on the curve are defined as having the same utility!). So rearrange the equation as follows:</p>
+<p><code>$$\begin{align*} MU_x \Delta x+MU_y\Delta y&amp;= \Delta u &amp;&amp; \text{Measuring change in utility} \\ MU_x \Delta x+MU_y \Delta y &amp;=0 &amp;&amp; \text{But change in utility is 0}\\ MU_y \Delta y&amp;= -MU_{x} \Delta x &amp;&amp; \text{Subtracting x terms}\\ \underbrace{\frac{\Delta y}{\Delta x}}_{MRS} &amp;= -\frac{MU_{x}}{MU_{y}} &amp;&amp; \text{Dividing to get like terms on each side}\\ \end{align*}$$</code></p>
+<p>Notice rise over run, <code>\(\frac{\Delta y}{\Delta x}\)</code>, is the slope, which we have defined as the marginal rate of substitution (MRS). <code>\(\blacksquare\)</code></p>
+<h3 id="utility-functions-and-pmts">Utility Functions and PMTs</h3>
+<p>Two utility functions <code>\(u(\cdot)\)</code> and <code>\(v(\cdot)\)</code> represent the same preferences iff there is a <em>strictly</em> increasing function <code>\(f\)</code> such that <code>\(v(\cdot)=f\left[u(\cdot)\right]\)</code></p>
+<p><code>$$\begin{aligned} a&amp;=(1,2)\\ b&amp;=(2,2)\\ c&amp;=(4,3)\\ \end{aligned}$$</code></p>
+<p>The following utility functions express the same preferences:</p>
+<table>
+<thead>
+<tr>
+<th><code>\(u(\cdot)\)</code></th>
+<th><code>\(v(\cdot)\)</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\(u(a)=1\)</code></td>
+<td><code>\(v(a)=2\)</code></td>
+</tr>
+<tr>
+<td><code>\(u(b)=2\)</code></td>
+<td><code>\(v(b)=4\)</code></td>
+</tr>
+<tr>
+<td><code>\(u(c)=3\)</code></td>
+<td><code>\(v(c)=6\)</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>$$v(\cdot)=2\left[u(\cdot)\right]$$</code></p>
+<p>A <strong>positive monotonic transformation (PMT)</strong> transforms quantities such that the rank order of the quantities is preserved.</p>
+<ul>
+<li>Examples: <code>\(v(u)=u+2; \, v(u)=4u; \, v(u)=u^3; \, v(u)=ln(u)\)</code></li>
+</ul>
+<p><em>Any PMT of a utility function contains the same preferences!</em></p>
+<h3 id="graphing-indifference-curves">Graphing Indifference Curves</h3>
+<p>I will not ask you to formally graph indifference curves (just roughly sketch them where appropriate). If you wanted to graph them, and express them in a graphable (slope-intercept form) equation, simply solve for the good on the vertical axis.</p>
+<p><strong>Example</strong>: Suppose we have a typical<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> indifference curve for apples <code>\((a)\)</code> and bananas <code>\((b)\)</code>:
+<code>$$u(a,b)=ab$$</code></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">library(<span style="color:#0ff;font-weight:bold">&#34;plotly&#34;</span>)
+x_vec = seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">1</span>)
+y_vec = seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">1</span>)
+x_matrix = matrix(c(x_vec), nrow = <span style="color:#ff0;font-weight:bold">10</span>, ncol = <span style="color:#ff0;font-weight:bold">1</span>)
+y_matrix = matrix(c(y_vec), nrow = <span style="color:#ff0;font-weight:bold">1</span>, ncol = <span style="color:#ff0;font-weight:bold">10</span>)
+z_matrix = matrix(c(x_matrix %*% y_matrix),nrow=<span style="color:#ff0;font-weight:bold">10</span>,ncol=<span style="color:#ff0;font-weight:bold">10</span>)
+
+plot_ly(x = x_vec,
+           y = y_vec,
+           z = z_matrix) %&gt;%
+  add_surface() %&gt;%
+  layout(scene = list(xaxis = list(title=<span style="color:#0ff;font-weight:bold">&#34;a&#34;</span>),
+                      yaxis = list(title=<span style="color:#0ff;font-weight:bold">&#34;b&#34;</span>),
+                      zaxis = list(title=<span style="color:#0ff;font-weight:bold">&#34;Utility&#34;</span>)))
+</code></pre></div><div id="htmlwidget-1" style="width:672px;height:528px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"696d40229612":["function () ","plotlyVisDat"]},"cur_data":"696d40229612","attrs":{"696d40229612":{"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,2,3,4,5,6,7,8,9],[0,2,4,6,8,10,12,14,16,18],[0,3,6,9,12,15,18,21,24,27],[0,4,8,12,16,20,24,28,32,36],[0,5,10,15,20,25,30,35,40,45],[0,6,12,18,24,30,36,42,48,54],[0,7,14,21,28,35,42,49,56,63],[0,8,16,24,32,40,48,56,64,72],[0,9,18,27,36,45,54,63,72,81]],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"a"},"yaxis":{"title":"b"},"zaxis":{"title":"Utility"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"showSendToCloud":false},"data":[{"colorbar":{"title":"","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":true,"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,2,3,4,5,6,7,8,9],[0,2,4,6,8,10,12,14,16,18],[0,3,6,9,12,15,18,21,24,27],[0,4,8,12,16,20,24,28,32,36],[0,5,10,15,20,25,30,35,40,45],[0,6,12,18,24,30,36,42,48,54],[0,7,14,21,28,35,42,49,56,63],[0,8,16,24,32,40,48,56,64,72],[0,9,18,27,36,45,54,63,72,81]],"type":"surface","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p>Each indifference curve (or contour) is one level of utility (all points on the curve give a specific level of utility). So, set that level of utility equal to some constant, <code>\(k\)</code>.</p>
+<p><code>$$ab=k$$</code></p>
+<p>Then, if we are putting <code>\(b\)</code> on the vertical axis, we simply solve this for <code>\(b\)</code>:</p>
+<p><code>$$\begin{align*} ab&amp;=k\\ b&amp;=\frac{k}{a}\\ \end{align*}$$</code></p>
+<p>This is the general equation for all indifference curves of this utility function: each utility level (value of <code>\(k)\)</code> can be graphed as an indifference curve with that equation. Thus, for example, for a utility level of <code>\(10\)</code>, the equation for that indifference curve is
+<code>$$b=\frac{10}{a}$$</code>.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">library(<span style="color:#0ff;font-weight:bold">&#34;mosaic&#34;</span>)
+update_geom_defaults(<span style="color:#0ff;font-weight:bold">&#34;label&#34;</span>, list(family = <span style="color:#0ff;font-weight:bold">&#34;Fira Sans Condensed&#34;</span>))
+
+IC_50=function(x){<span style="color:#ff0;font-weight:bold">50</span>/x}
+IC_25=function(x){<span style="color:#ff0;font-weight:bold">25</span>/x}
+IC_10=function(x){<span style="color:#ff0;font-weight:bold">10</span>/x}
+
+colors&lt;-c(<span style="color:#0ff;font-weight:bold">&#34;b=50/a&#34;</span> = <span style="color:#0ff;font-weight:bold">&#34;#20A387FF&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;b=25/a&#34;</span> = <span style="color:#0ff;font-weight:bold">&#34;#39568CFF&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;b=10/a&#34;</span> = <span style="color:#0ff;font-weight:bold">&#34;#481567FF&#34;</span>)
+
+ggplot(data.frame(x=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>)), aes(x=x))+
+  stat_function(fun=IC_50, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>, aes(color = <span style="color:#0ff;font-weight:bold">&#34;b=50/a&#34;</span>))+
+  stat_function(fun=IC_25, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>, aes(color = <span style="color:#0ff;font-weight:bold">&#34;b=25/a&#34;</span>))+
+  stat_function(fun=IC_10, geom=<span style="color:#0ff;font-weight:bold">&#34;line&#34;</span>, size=<span style="color:#ff0;font-weight:bold">2</span>, aes(color = <span style="color:#0ff;font-weight:bold">&#34;b=10/a&#34;</span>))+
+  geom_label(aes(x=<span style="color:#ff0;font-weight:bold">9</span>,y=IC_50(<span style="color:#ff0;font-weight:bold">9</span>)), color = <span style="color:#0ff;font-weight:bold">&#34;#20A387FF&#34;</span>, label=<span style="color:#0ff;font-weight:bold">&#34;u=50&#34;</span>, size = <span style="color:#ff0;font-weight:bold">6</span>)+
+  geom_label(aes(x=<span style="color:#ff0;font-weight:bold">9</span>,y=IC_25(<span style="color:#ff0;font-weight:bold">9</span>)), color = <span style="color:#0ff;font-weight:bold">&#34;#39568CFF&#34;</span>, label=<span style="color:#0ff;font-weight:bold">&#34;u=25&#34;</span>, size = <span style="color:#ff0;font-weight:bold">6</span>)+
+  geom_label(aes(x=<span style="color:#ff0;font-weight:bold">9</span>,y=IC_10(<span style="color:#ff0;font-weight:bold">9</span>)), color = <span style="color:#0ff;font-weight:bold">&#34;#481567FF&#34;</span>, label=<span style="color:#0ff;font-weight:bold">&#34;u=10&#34;</span>, size = <span style="color:#ff0;font-weight:bold">6</span>)+
+    scale_x_continuous(breaks=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">1</span>),
+                     limits=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>),
+                     expand=expand_scale(mult=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">0.1</span>)))+
+  scale_y_continuous(breaks=seq(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>,<span style="color:#ff0;font-weight:bold">1</span>),
+                     limits=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">10</span>),
+                     expand=expand_scale(mult=c(<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">0.1</span>)))+
+  scale_colour_manual(<span style="color:#0ff;font-weight:bold">&#34;I.C. equations&#34;</span>, values = colors)+
+  labs(x = <span style="color:#0ff;font-weight:bold">&#34;a&#34;</span>,
+       y = <span style="color:#0ff;font-weight:bold">&#34;b&#34;</span>,
+       title = <span style="color:#0ff;font-weight:bold">&#34;Indifference curves for u(a,b)=ab&#34;</span>)+
+  theme_classic(base_family = <span style="color:#0ff;font-weight:bold">&#34;Fira Sans Condensed&#34;</span>, base_size=<span style="color:#ff0;font-weight:bold">20</span>)
+</code></pre></div><p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<h3 id="utility-functions-for-perfect-substitutes">Utility Functions for Perfect Substitutes</h3>
+<p>Perfect substitutes produce straight lines for indifference curves. A straight line has a constant slope, which is interpretted as the MRS being constant - you should always be willing to substitute between the two goods at the same rate. The utility function looks like:</p>
+<p><code>$$u(x,y)=w_xx+w_yy$$</code></p>
+<p>Where each <code>\(w_i\)</code> is a relative weight (intensity of relative preference). These are often known as <strong>linear preferences</strong> because the utility of the two goods are related by addition.</p>
+<p>Notice, having some of one good and none of the other still provides positive utility (unlike utility functions where the quantities of goods are multiplied!). This is precisely because of the substitutability between the goods!</p>
+<h4 id="example">Example</h4>
+<p>Consider 1-Liter bottles of Coke <code>\(L_{1}\)</code> and 2-Liter bottles of Coke <code>\(L_{2}\)</code>. You should always be willing to substitute between one 2-Liter bottle and two 1-Liter bottles.</p>
+<p><code>$$u_{L_{1},L_{2}}=1L_{1}+2L_{2}$$</code></p>
+<p>The relative weights here are 1 for 1-Liter bottles and 2 for 2-Liter bottles, because 2-Liter bottles are “worth” twice as much for you (it takes two 1-Liter bottles to match a 2-Liter bottle!).</p>
+<p><code>\(MRS_{L_{1},L_{2}}=-\frac{w_x}{w_y} = -\frac{1}{2}\)</code></p>
+<p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<h3 id="utility-functions-for-perfect-complements">Utility Functions for Perfect Complements</h3>
+<p>Perfect complements produce right angles for indifference curves. This is technically not a mathematical function, since each <code>\(X\)</code> value must be mapped to a single <code>\(Y\)</code> value (i.e. no vertical lines). Thus, the utility function for perfect complements <code>\(x\)</code> and <code>\(y\)</code> is quite unique:</p>
+<p><code>$$u(x,y)=min\{w_xx,w_yy\}$$</code></p>
+<p>Where each <code>\(w_i\)</code> is a relative weight (intensity of relative preference). Utility is determined by the <em>lesser</em> value of what you have, <code>\(x\)</code> (weighted by <code>\(w_x\)</code>) or <code>\(y\)</code> (weighted by <code>\(w_y\)</code>). These are sometimes called “<strong>Leontief preferences</strong>.”</p>
+<p>The marginal rate of substitution alternates between <code>\(0\)</code> (horizontal line) and <code>\(\infty\)</code> (vertical line).</p>
+<h4 id="example-1">Example</h4>
+<p>Consider consuming hot dogs <code>\((H)\)</code> and buns <code>\((B)\)</code>, that must be consumed together as a package 1:1. The utility function would be:
+<code>$$u(H,B)=min\{H,B\}$$</code></p>
+<p>Having 2 hot dogs and 3 buns only yields a utility of 2. Having 3 hot dogs and 2 buns also only yields a utility of 2.</p>
+<p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<h3 id="cobb-douglas-functions">Cobb-Douglas Functions</h3>
+<p>Cobb-Douglas functions (both for utility and production) are one of the most common functional forms in economics. Despite their somewhat frightening presence on the surface, they have very neat mathematical properties, and have been empirically useful as well. A Cobb-Douglas function (for utility) looks like:</p>
+<p><code>$$u(x, y)=x^a y^b$$</code></p>
+<h3 id="mrs-and-positive-monotonic-transformations">MRS and Positive Monotonic Transformations</h3>
+<p>The marginal rate of substitution, using the above equation is:
+<code>$$\begin{align*}     MRS_{x, y}  &amp;=\frac{MU_{x}}{MU_{y}} &amp;&amp; \text{The definition of MRS}\\     &amp;= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} &amp;&amp; \text{Using the definition of marginal utility as partial derivative}\\     &amp;= \frac{a x^{a-1}y^b}{b x^a y^{b-1}} &amp;&amp; \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\     &amp;=\frac{a}{b} x^{(a-1)-a}y^{b-(b-1)} &amp;&amp; \text{Using exponent rules for division}\\     &amp;= \frac{a}{b} x^{-1}y^{1} &amp;&amp; \text{Simplifying exponents}\\     &amp;=\frac{a}{b} \frac{y}{x} &amp;&amp; \text{Using exponent rules for negative exponents}\\ \end{align*}$$</code></p>
+<p>Using logarithms, we can take a positive monotonic transformation of the original utility function <code>\(u\)</code>:</p>
+<p><code>$$v(x, y)=a \: ln \: x + b \: ln \: y$$</code></p>
+<p>The MRS using the logarithmic form is:</p>
+<p><code>$$\begin{align*}     MRS_{x, y}  &amp;=\frac{MU_{x}}{MU_{y}} &amp;&amp; \text{The definition of MRS}\\     &amp;= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} &amp;&amp; \text{Using the definition of marginal utility as partial derivative}\\     &amp;= \cfrac{\big(\frac{a}{x}\big)}{\big(\frac{b}{y}\big)} &amp;&amp; \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\     &amp;=\frac{a}{b} \frac{y}{x} &amp;&amp; \text{Multiplying the righthand side by the reciprocal of the denominator,} \frac{y}{b}\\ \end{align*}$$</code></p>
+<p>Which of course, is the same, because we know any positive monotonic transformation of a utility function preserves the same preferences!</p>
+<h4 id="example-2">EXAMPLE</h4>
+<p>Find the marginal rate of substitution for the utility function:</p>
+<p><code>$$u(x, y) = \sqrt{x, y}$$</code></p>
+<p>First, recognize that square roots are equivalent to saying <code>\(x^{0.5} y^{0.5}\)</code>. The marginal rate of substitution would be:</p>
+<p><code>$$\begin{align*}         MRS_{x, y}  &amp;=\frac{MU_{x}}{MU_{y}} &amp;&amp; \text{The definition of MRS}\\     &amp;= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} &amp;&amp; \text{Using the definition of marginal utility as partial derivative}\\     &amp;= \frac{0.5 x^{-0.5}y^{0.5}}{0.5x^{0.5}y^{-0.5}} &amp;&amp; \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\     &amp;=\frac{0.5}{0.5} x^{0.5-0.5}y^{0.5-(-0.5)} &amp;&amp; \text{Using exponent rules for division}\\     &amp;=  x^{-1}y^{1} &amp;&amp; \text{Simplifying exponents, and cancelling} \frac{0.5}{0.5}\\     &amp;=\frac{y}{x} &amp;&amp; \text{Using exponent rules for negative exponents}\\ \end{align*}$$</code></p>
+<p>Note we could find this equivalently again by taking logs of the original utility function.</p>
+<p><code>$$v(x,y)=0.5 \: ln \: x+0.5\: ln\: y$$</code></p>
+<p><code>$$\begin{align*}         MRS_{x, y}  &amp;=\frac{MU_{x}}{MU_{y}} &amp;&amp; \text{The definition of MRS}\\     &amp;= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} &amp;&amp; \text{Using the definition of marginal utility as partial derivative}\\     &amp;= \cfrac{\big(\frac{0.5}{x}\big)}{\big(\frac{0.5}{y}\big)} &amp;&amp; \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\     &amp;=\frac{y}{x} &amp;&amp; \text{Multiplying the righthand side by the reciprocal of the denominator,} \frac{y}{0.5}\\ \end{align*}$$</code></p>
+<p>Which again, gives us the same marginal rate of substitution.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Though still the overwhelming consensus view in economics. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>I used to spend an entire week just teaching about preferences. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Cobb-Douglas! <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/content/1.1-content/" rel="prev">1.1 — The Tools of Microeconomics — Class Content</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          Last updated on Jun 8, 2021
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> 2021 by Ryan Safner &middot; 
+          Powered by
+          <a href="https://gethugothemes.com" target="_blank" rel="noopener">Gethugothemes</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.7276a6a3624de715a5c7f54c7c07696d.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

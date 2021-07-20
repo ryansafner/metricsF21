@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.79.1" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Michael Vahn">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Overview  Readings  Slides  Practice  Assignments  Problem Set 1 Due Wed Feb 17   Math Appendix  Solving the Constrained Optimization Problem with Calculus  Example  General Case for \(n\) Goods &amp; Marshallian Demand Functions     Section 1: Wednesday, February 10, 2021 Section 2: Thursday, February 11, 2021   Overview Today we put all of our tools together thus far to solve the consumer’s constrained optimization problem.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://microf21.classes.ryansafner.com/content/1.4-content/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#5E81AC">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,400i,700,700i|Fira+Mono:400,700)&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.033753595582114e5ce5d6155d90ade7.css">
+
+  
+
+  
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://microf21.classes.ryansafner.com/content/1.4-content/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="ECON 306 — Microeconomic Analysis">
+  <meta property="og:url" content="https://microf21.classes.ryansafner.com/content/1.4-content/">
+  <meta property="og:title" content="1.4 — Utility Maximization — Class Content | ECON 306 — Microeconomic Analysis">
+  <meta property="og:description" content="Overview  Readings  Slides  Practice  Assignments  Problem Set 1 Due Wed Feb 17   Math Appendix  Solving the Constrained Optimization Problem with Calculus  Example  General Case for \(n\) Goods &amp; Marshallian Demand Functions     Section 1: Wednesday, February 10, 2021 Section 2: Thursday, February 11, 2021   Overview Today we put all of our tools together thus far to solve the consumer’s constrained optimization problem."><meta property="og:image" content="https://microf21.classes.ryansafner.com/img/icon-192.png">
+  <meta property="twitter:image" content="https://microf21.classes.ryansafner.com/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2020-06-08T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-06-08T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>1.4 — Utility Maximization — Class Content | ECON 306 — Microeconomic Analysis</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">ECON 306 — Microeconomic Analysis</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resources/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/content/">Course content</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/content/">Overview</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.1-content/">1.1 — The Tools of Microeconomics</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.2-content/">1.2 — Budget Constraint</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.3-content/">1.3 — Preferences</a>
+      </li>
+      
+      <li class="active">
+        <a href="/content/1.4-content/">1.4 — Utility Maximization</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.5-content/">1.5 — Demand</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.6-content/">1.6 — Income and Substitution Effects</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.65-content/">1.65 — Income and Substitution Effects</a>
+      </li>
+      
+      <li >
+        <a href="/content/1.7-content/">1.7 — Price Elasticity</a>
+      </li>
+      
+      <li >
+        <a href="/content/2.1-content/">2.1 — Production, Specialization, and Firms</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">1.4 — Utility Maximization — Class Content</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#practice"><i class="fas fa-dumbbell"></i> Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#problem-set-1-due-wed-feb-17">Problem Set 1 Due Wed Feb 17</a></li>
+</ul></li>
+<li><a href="#math-appendix"><i class="fas fa-sigma"></i> Math Appendix</a>
+<ul>
+<li><a href="#solving-the-constrained-optimization-problem-with-calculus">Solving the Constrained Optimization Problem with Calculus</a>
+<ul>
+<li><a href="#example">Example</a></li>
+</ul></li>
+<li><a href="#general-case-for-n-goods-marshallian-demand-functions">General Case for <span class="math inline">\(n\)</span> Goods &amp; Marshallian Demand Functions</a></li>
+</ul></li>
+</ul>
+</div>
+
+<ul>
+<li>Section 1: <em>Wednesday, February 10, 2021</em></li>
+<li>Section 2: <em>Thursday, February 11, 2021</em></li>
+</ul>
+<div id="overview" class="section level1">
+<h1><i class="fas fa-info-circle fa-lg"></i> Overview</h1>
+<p>Today we put all of our tools together thus far to solve the consumer’s constrained optimization problem. To solve the problem the “traditional way” would be to use <a href="https://en.wikipedia.org/wiki/Lagrange_multiplier">Lagrangian multipliers</a> and calculus and solve for the first order conditions.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> We instead will find the solution by looking graphically, and use an algebraic rule that should make a lot of intuitive sense. That rule, equivalently expressed in two ways:</p>
+<p><span class="math display">\[
+\begin{align*}\frac{MU_x}{MU_y} &amp;= \frac{p_x}{p_y}\\
+\frac{MU_x}{p_x} &amp;= \frac{MU_y}{p_y}\\ 
+\end{align*}
+\]</span>
+The first rule states that the slope of the indifference curve (left) equals the slope of the budget constraint (right). This is stating that the marginal benefit of consuming <span class="math inline">\(x\)</span> (left) equals the marginal cost (right) of consuming <span class="math inline">\(y\)</span>, and that the individual is trading off <span class="math inline">\(y\)</span> for <span class="math inline">\(x\)</span> at the same rate as the market is.</p>
+<p>The second (version of the) rule, solved for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> terms on either side, shows that the marginal utility per dollar spent is equal across both (all) goods.</p>
+<p>Both forms are often called the <strong>equimarginal rule</strong>, that at the optimum choice, the marginal benefit equals the marginal cost (which is the marginal benefit of the next best foregone opportunity).</p>
+<p>We will do some <a href="/practice/1.4-practice">practice</a> to make sure you can solve this type of model, and then you are fully prepared for <a href="/assignment/01-problem-set">Problem Set 1</a>.</p>
+</div>
+<div id="readings" class="section level1">
+<h1><i class="fas fa-book-reader fa-lg"></i> Readings</h1>
+<ul>
+<li><i class="fas fa-book"></i> Ch. 4.4-4.5 in Goolsbee, Levitt, and Syverson, 2019</li>
+<li><a href="/files/math_review_guide.pdf"><i class="fas fa-file-pdf"></i> Math Review Guide</a></li>
+</ul>
+</div>
+<div id="slides" class="section level1">
+<h1><i class="fas fa-chalkboard-teacher"></i> Slides</h1>
+<p><a href="/slides/1.4-slides.html"><img src="/slides/1.4-slides.png" /></a></p>
+<ul>
+<li><a href="/slides/1.4-slides.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a></li>
+</ul>
+</div>
+<div id="practice" class="section level1">
+<h1><i class="fas fa-dumbbell"></i> Practice</h1>
+<p>Today we will be working on <a href="/practice/1.4-practice">practice problems</a>. Answers will be posted later on that page.</p>
+</div>
+<div id="assignments" class="section level1">
+<h1><i class="fas fa-laptop-code"></i> Assignments</h1>
+<div id="problem-set-1-due-wed-feb-17" class="section level2">
+<h2>Problem Set 1 Due Wed Feb 17</h2>
+<p><a href="/assignment/01-problem-set">Problem set 1</a> (on 1.1-1.4) is due by 11:59 PM <strong>Wednesday</strong> February <strong>17</strong> by PDF upload to Blackboard Assignments.</p>
+</div>
+</div>
+<div id="math-appendix" class="section level1">
+<h1><i class="fas fa-sigma"></i> Math Appendix</h1>
+<div id="solving-the-constrained-optimization-problem-with-calculus" class="section level2">
+<h2>Solving the Constrained Optimization Problem with Calculus</h2>
+<div id="example" class="section level3">
+<h3>Example</h3>
+<p>A consumer has a utility function of
+<span class="math display">\[u(x, y) = xy\]</span>
+and faces prices of <span class="math inline">\(p_x = 5\)</span>, <span class="math inline">\(p_y = 10\)</span>, and has an income of <span class="math inline">\(m = 50\)</span>. Find the consumer’s optimum consumption bundle.</p>
+<p>The problem can be expressed as</p>
+<p><span class="math display">\[\max_{x,y} xy\]</span>
+<span class="math display">\[s. t. 5x+10y=50\]</span></p>
+<p>There are a few strategies you can use to solve this problem using calculus.</p>
+<p><strong>Substitution Method</strong>: take the budget constraint and solve it for one good in terms of the other good and income. Let’s solve for <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[\begin{align*}
+5x+10y&amp;=50 &amp;&amp; \text{The budget constraint}\\
+5x&amp;=50-10y &amp;&amp; \text{Subtracting     } 10y \text{ from both sides}\\
+x&amp;=10-2y &amp;&amp; \text{Dividing both sides by 5}\\
+\end{align*}\]</span></p>
+<p>Now we can plug this in for <span class="math inline">\(x\)</span> in the utility function to get an <em>unconstrained</em> maximization problem:</p>
+<p><span class="math display">\[\begin{align*}
+\max_{y} (10-2y)y &amp;&amp; \text{Plugging into the original utility function}\\
+\max_{y} 10y-2y^2 &amp;&amp; \text{Distributing the }y\\
+\end{align*}\]</span></p>
+<p>Then we take the derivative with respect to <span class="math inline">\(y\)</span> and set it equal to zero to find the maximum value of <span class="math inline">\(y\)</span> in the function.</p>
+<p><span class="math display">\[\begin{align*}
+    u&amp;=10y-2y^2 &amp;&amp; \text{The new utility function}\\
+    \frac{d u}{d y} = 10-4y&amp;=0 &amp;&amp; \text{Taking the first derivative} \\
+    10&amp;=4y &amp;&amp; \text{Adding } 4y \text{ to both sides}\\
+    2.5&amp;=y &amp;&amp; \text{Dividing both sides by } 4\\
+\end{align*}\]</span></p>
+<p>Now that we know <span class="math inline">\(y\)</span> is 2.5. To find <span class="math inline">\(x\)</span>, plug 2.5 in for <span class="math inline">\(y\)</span> in the first equation we found from the budget constraint:</p>
+<p><span class="math display">\[\begin{align*}
+x&amp;=10-2y &amp;&amp; \text{The equation}\\   
+x&amp;=10-2(2.5) &amp;&amp; \text{Plugging in 2.5}\\
+x&amp;=10-5 &amp;&amp; \text{Distributing the -2}\\
+x&amp;=5 &amp;&amp; \text{Simplifying}\\
+\end{align*}\]</span></p>
+<p>So we’ve found the <strong>optimal bundle is 5 of <span class="math inline">\(x\)</span> and 2.5 of <span class="math inline">\(y\)</span>, or (<span class="math inline">\(x^*,y^*)=(5,2.5)\)</span>.</strong></p>
+<p><strong>Lagrangian Method</strong>: Recall the Lagrangian adds the objective function and the Lagrange multiplier <span class="math inline">\((\lambda)\)</span> times the constraint set equal to 0:</p>
+<p><span class="math display">\[\max_{x, y, \lambda} \Lambda(x, y, \lambda)=xy+\lambda(5x+10y-50)\]</span></p>
+<p>Solving for the First Order Conditions (setting all partial derivatives to 0):</p>
+<p><span class="math display">\[\begin{align*}
+\frac{\partial \Lambda}{\partial x} &amp;= y+5\lambda &amp;= 0  \\
+\frac{\partial \Lambda}{\partial y} &amp;= x+10\lambda &amp;= 0 \\
+\frac{\partial \Lambda}{\partial \lambda} &amp;= 5x+10y-50 &amp;= 0 \\
+\end{align*}\]</span></p>
+<p>Taking the first two equations, and rearranging each to equal <span class="math inline">\(\lambda\)</span>:</p>
+<p><span class="math display">\[\begin{align*}
+\frac{y}{5}&amp;=\lambda \\
+\frac{x}{10}&amp;=\lambda   \\
+\end{align*}\]</span></p>
+<p>Setting them equal to one another, and solving for <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[\begin{align*}
+ \frac{y}{5}&amp;=\frac{x}{10}  \\
+2y&amp;=x   \\
+\end{align*}\]</span></p>
+<p>So the consumer will buy twice the amount of <span class="math inline">\(y\)</span> as <span class="math inline">\(x\)</span> (note this should be intuitive as <span class="math inline">\(y\)</span> costs twice as much as <span class="math inline">\(x\)</span>!). To find the exact amounts of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> she will buy, plug what we just found into the budget constraint:</p>
+<p><span class="math display">\[\begin{align*}
+5(2y)+10y&amp;=50   \\
+20y&amp;=50 \\
+y&amp;=2.5  \\
+\end{align*}\]</span></p>
+<p>Since we now know <span class="math inline">\(y^*\)</span>, we can find <span class="math inline">\(x^*\)</span>:</p>
+<p><span class="math display">\[\begin{align*}
+x&amp;=2y\\
+x&amp;=2(2.5)=5 \\
+\end{align*}\]</span></p>
+<p>So the <strong>optimum consumption bundle (<span class="math inline">\(x^*, y^*\)</span>) again is (5,2.5).</strong></p>
+<p>You may be asking: <em>so what in the world is <span class="math inline">\(\lambda\)</span>?</em> Besides being instrumental in solving constrained optimization problems, the Lagrangian multiplier <span class="math inline">\(\lambda\)</span> does have some economic interpretation. First, let’s return to the FOCs, knowing <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, to solve for <span class="math inline">\(\lambda\)</span>:</p>
+<p><span class="math display">\[\begin{align*}
+    y+5\lambda &amp;=0\\
+    2.5+5\lambda &amp;=0\\
+\lambda &amp;=0.5   \\
+\end{align*}\]</span></p>
+<p>Mathematically, it can be proved that <span class="math inline">\(\lambda=\displaystyle \frac{\partial u(x,y)}{\partial m}\)</span>: the rate of instantaneous change in your objective function with respect to your constraint (i.e. your income). That is, if you were to change your constraint (i.e. your income) by one unit, <span class="math inline">\(\lambda\)</span> tells us how much your objective function would increase (in units of the objective function).</p>
+<p>Economically, it is known as the “shadow price,” or sometimes the “marginal utility of wealth.” It tells us how much your utility would increase if you were able to increase your constraint (income) by one unit (e.g. $1). Alternatively, we can think of it as the marginal benefit of relaxing the constraint (having $1 more to spend), or the marginal cost of strengthening the constraint (having $1 less).</p>
+<p>In our example, <span class="math inline">\(\lambda=0.5\)</span>, so if we had one +(-)$1 in income to spend, utility would increase(decrease) by 0.5.</p>
+<p>Recall that since utility is <em>ordinal</em> and not <em>cardinal</em>, the number of “utils” your utility were to change by is meaningless. <span class="math inline">\(\lambda\)</span> does have meaningful quantitative interpretations when we use constrained optimization to talk about production, where units are dollars and output, rather than dollars and utility.</p>
+<p>Let’s lastly confirm that this is the optimum using the definition</p>
+<p><span class="math display">\[\begin{align*}
+|MRS| &amp;= |\frac{p_x}{p_y}| &amp;&amp; \text{At the optimum, slopes of I.C. and B.C. are equal}\\
+\frac{MU_{x}}{MU_{y}}&amp;=\frac{p_x}{p_y} &amp;&amp; \text{Definition of each slope}\\
+    \frac{y}{x} &amp;= \frac{p_x}{p_y} &amp;&amp; \text{MU&#39;s for this specific utility function}\\
+    \frac{(2.5)}{(5)} &amp;= \frac{5}{10} &amp;&amp; \text{At optimum, } y=2.5, x=5\\ 
+    \frac{1}{2} &amp;= \frac{1}{2} &amp;&amp; \checkmark 
+\end{align*}\]</span></p>
+</div>
+</div>
+<div id="general-case-for-n-goods-marshallian-demand-functions" class="section level2">
+<h2>General Case for <span class="math inline">\(n\)</span> Goods &amp; Marshallian Demand Functions</h2>
+<p>In the case of <span class="math inline">\(n\)</span> number of goods (from good <span class="math inline">\(x_1\)</span> to <span class="math inline">\(x_n)\)</span>, the optimal consumption portfolio solves the utility maximization problem:</p>
+<p><span class="math inline">\(\max_{x_1,\cdots,n_n}U(x_1,\cdots, x_n)\)</span>
+<span class="math inline">\(s.t. \sum^{n}_{i=1} x_ip_i \leq m\)</span></p>
+<p>That is, as usual, choosing the consumption bundle that maximizes utility, subject to the budget constraint.</p>
+<p>Using the Lagrangian method, the Lagrangian is:</p>
+<p><span class="math display">\[\mathbb{L} = U(x_i, \cdots, x_n)+\lambda(M - \sum_{i=1}^{n} x_ip_i)\]</span></p>
+<p>The first order conditions are a series of <span class="math inline">\(n+1\)</span> equations, with <span class="math inline">\(n+1\)</span> unknowns:</p>
+<p><span class="math display">\[\begin{align*}
+\frac{\partial u}{\partial x_1} &amp;= \lambda p_i\\
+\vdots\\
+\frac{\partial u}{\partial x_n} &amp;= \lambda p_n\\
+\sum^{n}_{i=1} x_ip_i &amp;= m\\
+\end{align*}\]</span></p>
+<p>Solving for each individual <span class="math inline">\(x_i^*\)</span> gives us a <strong>Marshallian Demand System</strong>:</p>
+<p><span class="math display">\[\begin{align*}
+x_1^* &amp;= x_1^M(p_1,\cdots,p_n,m)\\
+\vdots\\
+x_n^* &amp;= x_n^M(p_1,\cdots,p_n,m)\\
+\lambda^* &amp;= \lambda^M(p_1,\cdots,p_n,m)\\
+\end{align*}\]</span></p>
+<p>Each equation here is a demand function for that respective good, as a function of all market prices <span class="math inline">\((p_1, \cdots, p_n)\)</span> and income <span class="math inline">\(m\)</span>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Take the full Lagrangian equation and solve for all partial derivatives, set equal to 0.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/content/1.2-content/" rel="next">1.2 — Budget Constraint — Class Content</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/content/1.5-content/" rel="prev">1.5 — Demand — Class Content</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          Last updated on Jun 8, 2020
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> 2021 by Ryan Safner &middot; 
+          Powered by
+          <a href="https://gethugothemes.com" target="_blank" rel="noopener">Gethugothemes</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.7276a6a3624de715a5c7f54c7c07696d.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

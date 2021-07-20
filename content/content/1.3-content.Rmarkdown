@@ -1,0 +1,639 @@
+---
+title: "1.3 — Preferences — Class Content"
+draft: false
+linktitle: "1.3 — Preferences"
+date: "2021-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 4
+type: docs
+toc: true
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=T,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align="center")
+library("tidyverse")
+library("ggrepel")
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+```
+
+{{% alert warning %}}
+*Monday, February 1, 2021*
+{{% /alert %}}
+
+- Section 1: *Monday, February 8, 2021*
+- Section 2: *Tuesday, February 9, 2021*
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+From last class, we know what constraints individuals face in the market (represented by the budget constraint), but how do people make the choices they do? We must now enter the more controversial^[Though still the overwhelming consensus view in economics.] realm of modeling preferences.
+
+As I mentioned in [last class' page](/content/1.2-content), a lot of the "in the weeds" details about preference assumptions, indifference curves, and utility functions are a waste of your time. If you look at the textbook chapter, I am skipping a lot of "the fat," and relegating it to an appendix at the bottom of this page.^[I used to spend an entire week just teaching about preferences.] Again, I reiterate that if you are interested in more advanced economics training, it is *essential* that you master all of these details. But not for this course.
+
+Today we focus on the essential tools for fitting preferences into our optimization model:
+
+- **indifference curves**: each of which is the set of all bundles that one is *indifferent between* (and that give the same amount utility)
+- **utility functions**: which measure the *ordinal* (but not cardinal!) utility level of any given bundle; for comparisons only!
+- **marginal rate of substitution**: the slope of the indifference curve, representing an individual's subjective tradeoff between goods; measured by the ratio of marginal utilities: $MRS_{x,y}=-\frac{MU_x}{MU_y}$
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch. 4.1-4.2 in Goolsbee, Levitt, and Syverson, 2019
+- [<i class="fas fa-file-pdf"></i> Math Review Guide](/files/math_review_guide.pdf) 
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+[![](/slides/1.3-slides.png)](/slides/1.3-slides.html)
+
+- [<i class="fas fa-file-pdf"></i> Download as PDF](/slides/1.3-slides.pdf)
+
+## <i class="fas fa-dumbbell"></i> Practice
+
+Answers from last class' [practice problems](/practice/1.2-practice) are posted on that page.
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Problem Set 1
+
+[Problem set 1](/assignment/01-problem-set) (on 1.1-1.4) is due by 11:59 PM Sunday February 14 by PDF upload to Blackboard Assignments. We will learn and practice the final few concepts this problem set covers next class.
+
+## <i class="fas fa-sigma"></i> Appendix 1: Material on Preferences
+
+### Strict vs. Weak Preferences
+
+We have defined preferences as being **strictly** one of the following possibilities:
+
+1. $a \succ b$ ($a$ is *strictly* preferred over *b*)
+2. $a \prec b$ ($b$ is *strictly* preferred over *a*)
+3. $a \sim b$ (indifferent between *a*)
+
+You can also have **weak** preferences, such as 
+
+1. $a \succeq b$ ($a$ is *at least as preferred* as (or “weakly preferred over” $b$)
+2. $a \preceq b$ ($b$ is *at least as preferred* as (or “weakly preferred over” $a$)
+
+These are more technically complete, but it is much more simple for us to focus on strong preferences, and we don't lose much by doing so.
+
+### Assumptions of “Well-behaved Preferences”
+
+1. **Reflexivity** : any bundle is at least as preferred as itself
+
+2. **Completeness** : any two bundles can be compared
+
+3. **Transitivity** : rankings are logically consistent:
+  - If $a \succ b$ and $b \succ c$, then $a \succ c$
+
+Are these good assumptions? As you will find typical in economics, *very often yes, sometimes no!* See the growing field of [Behavioral economics](https://en.wikipedia.org/wiki/Behavioral_economics) for interesting anomalies and exceptions to our assumptions.
+
+### Assumptions of “Well-behaved Indifference Curves”
+
+Like preferences, we make 4 major assumptions about indifference curves to describe the normal case. In fact, many of these assumptions are derived from the assumptions we made above about well-behaved preferences
+
+1. **We can always draw indifference curves:** two bundles can always be ranked
+
+Every possible bundle (point on graph) is on an indifference curve.
+
+```{r IC-ass-1, fig.retina=3, fig.align="center", fig.width=6}
+
+IC_10=function(x){100/x}
+IC_9=function(x){81/x}
+IC_8=function(x){64/x}
+IC_7=function(x){49/x}
+IC_6=function(x){36/x}
+IC_5=function(x){25/x}
+IC_4=function(x){16/x}
+IC_3=function(x){9/x}
+IC_2=function(x){4/x}
+IC_1=function(x){1/x}
+
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=IC_10, geom="line", size=2)+
+  stat_function(fun=IC_9, geom="line", size=2)+
+  stat_function(fun=IC_8, geom="line", size=2)+
+  stat_function(fun=IC_7, geom="line", size=2)+
+  stat_function(fun=IC_6, geom="line", size=2)+
+  stat_function(fun=IC_5, geom="line", size=2)+
+  stat_function(fun=IC_4, geom="line", size=2)+
+  stat_function(fun=IC_3, geom="line", size=2)+
+  stat_function(fun=IC_2, geom="line", size=2)+
+  stat_function(fun=IC_1, geom="line", size=2)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_color_viridis_d(0,10)+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "x",
+       y = "y")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+Of course, this means that this entire graph is *full* of indifference curves - every single possible point is on *some* indifference curve (and this whole graph would just be a solid block of black). Naturally, it's pointless to draw all the indifference curves, we just want to show a few to make our analysis meaningful. But the general idea comes from assumption 2 of preferences: *any two bundles can be compared*, as we can compare two points on this graph and make a judgment.
+
+2. **Indifference curves are monotonic**, which means practically that “more is preferred to less”
+
+For any bundle $b$ with more of at least one good than bundle $a \implies a \prec b$. Movements to the Northeast always preferable, while movements to the Southwest always unpreferable.
+
+```{r IC-ass-2, fig.retina=3, fig.align="center", fig.width=6}
+points<-tribble(
+  ~letter, ~x, ~y,
+  "A", 2, 2,
+)
+
+asfill<-tibble(fx=seq(0,10,0.1),
+               fymin=4/fx,
+             fymax=rep(10, length(fx))
+)
+
+asfill2<-tibble(fx=seq(0,10,0.1),
+             fymin=rep(0, length(fx)),
+             fymax=4/fx
+)
+
+IC_as=function(x){4/x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=IC_as, geom="line", size=2, color="blue")+
+  geom_ribbon(data=asfill,aes(x=fx,ymin=fymin,ymax=fymax),fill="green", alpha=0.4)+
+  geom_ribbon(data=asfill2,aes(x=fx,ymin=fymin,ymax=fymax),fill="red", alpha=0.4)+
+  geom_rect(aes(xmin=0,xmax=0.4,ymin=0,ymax=10), fill="red", alpha=0.2)+
+  geom_point(data = points,
+             mapping=aes(x=x, y=y),
+             size = 3)+
+  geom_text_repel(data = points,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = 6)+
+  scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "x",
+       y = "y")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+Here's a *challenge*: what would indifference curves look like if one of the axes contained a *bad*, rather than a good? In this case, we would violate the assumption of monotonicity!
+
+3. **Indifference curves are convex**, which means in practice that “averages are preferred to extremes”
+
+From experience, people generally prefer variety in their consumption. Rather than having one bundle that is “extreme” (a lot of one good and little or none of another), they tend to prefer a bundle with a better “mix” or “balance” of some of both goods.
+
+Take our example from class, hunting for apartments. Apartment $A$ is very large but near very few friends, whereas apartment $B$ is very small but near many friends. If we could find some apartment, $C$, that is a weighted average of the two, with a better mix of size and friends, it would be preferred, and thus, on a higher indifference curve than $A$ or $B$!
+
+Mathematically, this feature is because indifference curves are normally convex. A function is **convex** when a line connecting any two points on the function lies *above* the function itself. Check the math review guide for more information.
+
+```{r IC-as-3, fig.retina=3, fig.align="center", fig.width=6}
+apts4<-tribble(
+  ~letter, ~x, ~y,
+  "A", 1, 1200,
+  "B", 6, 200,
+  "C", 3, 800
+)
+IC=function(x){1200/x}
+line_colors <- c("IC" = "blue")
+
+apts<-tribble(
+  ~letter, ~x, ~y,
+  "A", 1, 1200,
+  "B", 3, 400,
+  "C", 6, 200,
+)
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=IC, geom="line", size=2, color="blue")+
+  geom_point(data = apts4,
+             mapping=aes(x=x, y=y),
+             size = 3)+
+  geom_text_repel(data = apts4,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = 6)+
+  geom_segment(aes(x=1, xend=6, y=1200, yend=200), linetype="dashed", color="red", size=2)+
+  scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,2000,200),
+                     limits=c(0,2000),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual(guide=F)+
+  labs(x = "Friends Nearby",
+       y = expression(ft^2))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+Here's a *challenge*: what would *non-convex* (e.g. *concave*) curves look like, and what preferences would cause that situation?
+
+4. **Indifference curves can never cross** because we have assumed that *preferences are transitive*.
+
+Suppose two curves crossed, as the ones below: 
+  - On the blue indifference curve, `\\(A \sim B\\)`
+  - On the orange indifference curve `\\(B \sim C\\)`
+  - But clearly `\\(C\\)` $\succ$ .`\\(B\\)`
+  - Preferences are not transitive!
+
+```{r IC-as-4, fig.retina=3, fig.align="center", fig.width=6}
+
+points_as4<-tribble(
+  ~letter, ~x, ~y,
+  "A", 2.125, 570,
+  "B", 6, 200,
+  "C", 8, 425
+)
+
+IC_as4=function(x){(400/x)+375}
+
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=IC, geom="line", size=2, color="blue")+
+  stat_function(fun=IC_as4, geom="line", size=2, color="orange")+
+  geom_point(data = points_as4,
+             mapping=aes(x=x, y=y),
+             size = 3)+
+  geom_text_repel(data = points_as4,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = 6)+
+  scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,2000,200),
+                     limits=c(0,2000),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual(guide=F)+
+  labs(x = "Friends Nearby",
+       y = expression(ft^2))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+### Steepness & Indifference Curves for Neutrals
+
+The Steepness of indifference curves tells us how consumers trade off between goods.
+
+```{r, echo=F, fig.retina=3, fig.height=5, fig.align="center"}
+points_1<-tribble(
+  ~letter, ~x, ~y,
+  "A", 2, 2,
+  "B", 2, 4
+)
+
+vert<-ggplot(data.frame(x=c(0,5)), aes(x=x))+
+  geom_segment(aes(x=2, xend=2, y=0, yend=5), color="blue", size=2)+
+  geom_segment(aes(x=4, xend=4, y=0, yend=5), color="green", size=2)+
+  geom_point(data = points_1,
+             mapping=aes(x=x, y=y),
+             size = 3)+
+  geom_text_repel(data = points_1,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = 6)+
+  scale_x_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Movie Tickets",
+       y = "Movie Downloads")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+points_2<-tribble(
+  ~letter, ~x, ~y,
+  "A", 2, 2,
+  "B", 4, 2
+)
+
+hor<-ggplot(data.frame(x=c(0,5)), aes(x=x))+
+  geom_segment(aes(x=0, xend=5, y=2, yend=2), color="blue", size=2)+
+  geom_segment(aes(x=0, xend=5, y=4, yend=4), color="green", size=2)+
+  geom_point(data = points_2,
+             mapping=aes(x=x, y=y),
+             size = 3)+
+  geom_text_repel(data = points_2,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = 6)+
+  scale_x_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Movie Tickets",
+       y = "Movie Downloads")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+library(patchwork)
+vert+hor
+```
+
+Perfectly vertical curves (left) $\implies$ indifference between having more (point B) or fewer (point A) downloads. There is no tradeoff a person would make to acquire more Downloads, they truly *do not care* about them at all. Thus, on the left graph, Downloads would be a neutral.
+
+Perfectly horizontal curves (right) $\implies$ indifference between having more (point B) or fewer (point A) Tickets. There is no tradeoff a person would make to acquire more Tickets, they truly do not care about them at all. Thus, on the right graph, Tickets would be a neutral.
+
+We can look at less extreme cases:
+
+```{r, echo=F, fig.retina=3, fig.height=5, fig.align="center"}
+IC_flat_1<-function(x){2/x+1}
+IC_flat_2<-function(x){2/x+2}
+IC_flat_3<-function(x){2/x+3}
+
+flat<-ggplot(data.frame(x=c(0,5)), aes(x=x))+
+  stat_function(fun=IC_flat_1, geom="line", size=2, color = "#453781FF")+
+  stat_function(fun=IC_flat_2, geom="line", size=2, color = "#2D708EFF")+
+  stat_function(fun=IC_flat_3, geom="line", size=2, color = "#20A387FF")+
+  geom_segment(aes(x=1, xend=1, y=3, yend=2), size=1, linetype="dashed", color="red")+
+  geom_segment(aes(x=1, xend=2, y=2, yend=2), size=1, linetype="dashed", color="red")+
+  geom_text(aes(x=1.5, y=1.75), color="red", size=6, label=expression(paste(Delta, "T")))+
+  geom_text(aes(x=0.75, y=2.5), color="red", size=6, label=expression(paste(Delta, "D")))+
+  scale_x_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Movie Tickets",
+       y = "Movie Downloads")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+IC_steep_1<-function(x){4/x}
+IC_steep_2<-function(x){4/x+1}
+IC_steep_3<-function(x){4/x+2}
+steep<-ggplot(data.frame(x=c(0,5)), aes(x=x))+
+  stat_function(fun=IC_steep_1, geom="line", size=2, color = "#453781FF")+
+  stat_function(fun=IC_steep_2, geom="line", size=2, color = "#2D708EFF")+
+  stat_function(fun=IC_steep_3, geom="line", size=2, color = "#20A387FF")+
+  geom_segment(aes(x=1, xend=1, y=4, yend=2), size=1, linetype="dashed", color="red")+
+  geom_segment(aes(x=1, xend=2, y=2, yend=2), size=1, linetype="dashed", color="red")+
+  geom_text(aes(x=1.5, y=1.75), color="red", size=6, label=expression(paste(Delta, "T")))+
+  geom_text(aes(x=0.75, y=3), color="red", size=6, label=expression(paste(Delta, "D")))+
+  scale_x_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Movie Tickets",
+       y = "Movie Downloads")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+flat+steep
+```
+
+
+On the left graph, the flatter curve implies the person is willing to give up *only a few* Downloads to obtain more Tickets (and vice versa). $MRS_{T,D}$ (slope) is small, indicating downloads are more highly valued relative to tickets.
+
+On the right graph, the steeper curve implies the person is willing to give up *a lot* Downloads to obtain more Tickets (and vice versa). $MRS_{T,D}$ (slope) is large, indicating downloads are less valued relative to tickets. 
+
+# <i class="fas fa-sigma"></i> Math Appendix
+
+## Derivation of MRS Equation (as ratio of marginal utilities)
+
+Consider a movement along an indifference curve, how would this change affect utility? There will be a change in $x$ and a change in $y$, and multiplying the marginal utility of each, and adding these together will give us our total change in utility. But we know that if we are on the same indifference curve, moving along the curve will *not change utility* (all points on the curve are defined as having the same utility!). So rearrange the equation as follows:
+
+$$\begin{align*}
+MU_x \Delta x+MU_y\Delta y&= \Delta u && \text{Measuring change in utility} \\
+MU_x \Delta x+MU_y \Delta y &=0 && \text{But change in utility is 0}\\
+MU_y \Delta y&= -MU_{x} \Delta x && \text{Subtracting x terms}\\
+\underbrace{\frac{\Delta y}{\Delta x}}_{MRS} &= -\frac{MU_{x}}{MU_{y}} && \text{Dividing to get like terms on each side}\\ \end{align*}$$
+
+Notice rise over run, $\frac{\Delta y}{\Delta x}$, is the slope, which we have defined as the marginal rate of substitution (MRS). $\blacksquare$
+
+### Utility Functions and PMTs
+
+Two utility functions $u(\cdot)$ and $v(\cdot)$ represent the same preferences iff there is a *strictly* increasing function $f$ such that $v(\cdot)=f\left[u(\cdot)\right]$
+
+$$\begin{aligned}
+a&=(1,2)\\
+b&=(2,2)\\
+c&=(4,3)\\
+\end{aligned}$$
+
+The following utility functions express the same preferences:
+
+| $u(\cdot)$ | $v(\cdot)$ |
+|------------|------------|
+| $u(a)=1$   | $v(a)=2$   |
+| $u(b)=2$   | $v(b)=4$   |
+| $u(c)=3$   | $v(c)=6$   |
+
+$$v(\cdot)=2\left[u(\cdot)\right]$$
+
+A **positive monotonic transformation (PMT)** transforms quantities such that the rank order of the quantities is preserved.
+
+- Examples: $v(u)=u+2; \, v(u)=4u; \, v(u)=u^3; \, v(u)=ln(u)$
+
+*Any PMT of a utility function contains the same preferences!*
+
+### Graphing Indifference Curves
+
+I will not ask you to formally graph indifference curves (just roughly sketch them where appropriate). If you wanted to graph them, and express them in a graphable (slope-intercept form) equation, simply solve for the good on the vertical axis. 
+
+**Example**: Suppose we have a typical^[Cobb-Douglas!] indifference curve for apples $(a)$ and bananas $(b)$: 
+$$u(a,b)=ab$$
+
+```{r, fig.retina=3, fig.height=5.5}
+library("plotly")
+x_vec = seq(0,10,1)
+y_vec = seq(0,10,1)
+x_matrix = matrix(c(x_vec), nrow = 10, ncol = 1)
+y_matrix = matrix(c(y_vec), nrow = 1, ncol = 10)
+z_matrix = matrix(c(x_matrix %*% y_matrix),nrow=10,ncol=10)
+
+plot_ly(x = x_vec,
+           y = y_vec,
+           z = z_matrix) %>%
+  add_surface() %>%
+  layout(scene = list(xaxis = list(title="a"),
+                      yaxis = list(title="b"),
+                      zaxis = list(title="Utility")))
+```
+
+Each indifference curve (or contour) is one level of utility (all points on the curve give a specific level of utility). So, set that level of utility equal to some constant, $k$. 
+
+$$ab=k$$
+
+Then, if we are putting $b$ on the vertical axis, we simply solve this for $b$:
+
+$$\begin{align*}
+ab&=k\\
+b&=\frac{k}{a}\\
+\end{align*}$$
+
+This is the general equation for all indifference curves of this utility function: each utility level (value of $k)$ can be graphed as an indifference curve with that equation. Thus, for example, for a utility level of $10$, the equation for that indifference curve is
+$$b=\frac{10}{a}$$.
+
+```{r, fig.retina=3, fig.height=5.5}
+library("mosaic")
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+
+IC_50=function(x){50/x}
+IC_25=function(x){25/x}
+IC_10=function(x){10/x}
+
+colors<-c("b=50/a" = "#20A387FF", "b=25/a" = "#39568CFF", "b=10/a" = "#481567FF")
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=IC_50, geom="line", size=2, aes(color = "b=50/a"))+
+  stat_function(fun=IC_25, geom="line", size=2, aes(color = "b=25/a"))+
+  stat_function(fun=IC_10, geom="line", size=2, aes(color = "b=10/a"))+
+  geom_label(aes(x=9,y=IC_50(9)), color = "#20A387FF", label="u=50", size = 6)+
+  geom_label(aes(x=9,y=IC_25(9)), color = "#39568CFF", label="u=25", size = 6)+
+  geom_label(aes(x=9,y=IC_10(9)), color = "#481567FF", label="u=10", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  labs(x = "a",
+       y = "b",
+       title = "Indifference curves for u(a,b)=ab")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+### Utility Functions for Perfect Substitutes
+
+Perfect substitutes produce straight lines for indifference curves. A straight line has a constant slope, which is interpretted as the MRS being constant - you should always be willing to substitute between the two goods at the same rate. The utility function looks like: 
+
+$$u(x,y)=w_xx+w_yy$$
+
+Where each $w_i$ is a relative weight (intensity of relative preference). These are often known as **linear preferences** because the utility of the two goods are related by addition.
+
+Notice, having some of one good and none of the other still provides positive utility (unlike utility functions where the quantities of goods are multiplied!). This is precisely because of the substitutability between the goods!
+
+#### Example 
+
+Consider 1-Liter bottles of Coke $L_{1}$ and 2-Liter bottles of Coke $L_{2}$. You should always be willing to substitute between one 2-Liter bottle and two 1-Liter bottles.
+
+$$u_{L_{1},L_{2}}=1L_{1}+2L_{2}$$
+
+The relative weights here are 1 for 1-Liter bottles and 2 for 2-Liter bottles, because 2-Liter bottles are "worth" twice as much for you (it takes two 1-Liter bottles to match a 2-Liter bottle!). 
+
+$MRS_{L_{1},L_{2}}=-\frac{w_x}{w_y} = -\frac{1}{2}$
+
+```{r, echo=F, fig.retina=3, fig.align="center"}
+ggplot(data.frame(x=c(0,5)), aes(x=x))+
+  geom_segment(aes(x=0, xend=2, y=1, yend=0), size=1, color="#453781FF")+
+  geom_segment(aes(x=0, xend=4, y=2, yend=0), size=1, color="#20A387FF")+
+  geom_label(aes(x=1, y=0.5), size=6, color="#453781FF", label="u=1")+
+  geom_label(aes(x=1, y=1.5), size=6, color="#20A387FF", label="u=2")+
+  scale_x_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "1-Liter Bottles",
+       y = "2-Liter Bottles")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+### Utility Functions for Perfect Complements
+
+Perfect complements produce right angles for indifference curves. This is technically not a mathematical function, since each $X$ value must be mapped to a single $Y$ value (i.e. no vertical lines). Thus, the utility function for perfect complements $x$ and $y$ is quite unique: 
+
+$$u(x,y)=min\{w_xx,w_yy\}$$
+
+Where each $w_i$ is a relative weight (intensity of relative preference). Utility is determined by the *lesser* value of what you have, $x$ (weighted by $w_x$) or $y$ (weighted by $w_y$). These are sometimes called "**Leontief preferences**".
+
+The marginal rate of substitution alternates between $0$ (horizontal line) and $\infty$ (vertical line). 
+
+#### Example
+
+Consider consuming hot dogs $(H)$ and buns $(B)$, that must be consumed together as a package 1:1. The utility function would be: 
+$$u(H,B)=min\{H,B\}$$
+
+Having 2 hot dogs and 3 buns only yields a utility of 2. Having 3 hot dogs and 2 buns also only yields a utility of 2. 
+
+```{r, echo=F, fig.retina=3, fig.align="center"}
+ggplot(data.frame(x=c(0,5)), aes(x=x))+
+  geom_segment(aes(x=1, xend=1, y=5, yend=1), size=1, color="#453781FF")+
+  geom_segment(aes(x=1, xend=5, y=1, yend=1), size=1, color="#453781FF")+
+  geom_segment(aes(x=2, xend=2, y=5, yend=2), size=1, color="#20A387FF")+
+  geom_segment(aes(x=2, xend=5, y=2, yend=2), size=1, color="#20A387FF")+
+  geom_label(aes(x=4, y=1), size=6, color="#453781FF", label="u=1")+
+  geom_label(aes(x=4, y=2), size=6, color="#20A387FF", label="u=2")+
+  scale_x_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,5,1),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Hot Dogs",
+       y = "Buns")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+### Cobb-Douglas Functions
+
+Cobb-Douglas functions (both for utility and production) are one of the most common functional forms in economics. Despite their somewhat frightening presence on the surface, they have very neat mathematical properties, and have been empirically useful as well. A Cobb-Douglas function (for utility) looks like: 
+
+$$u(x, y)=x^a y^b$$
+		
+### MRS and Positive Monotonic Transformations
+
+The marginal rate of substitution, using the above equation is: 
+$$\begin{align*}
+	MRS_{x, y}	&=\frac{MU_{x}}{MU_{y}} && \text{The definition of MRS}\\
+	&= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} && \text{Using the definition of marginal utility as partial derivative}\\
+	&= \frac{a x^{a-1}y^b}{b x^a y^{b-1}} && \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\
+	&=\frac{a}{b} x^{(a-1)-a}y^{b-(b-1)} && \text{Using exponent rules for division}\\
+	&= \frac{a}{b} x^{-1}y^{1} && \text{Simplifying exponents}\\
+	&=\frac{a}{b} \frac{y}{x} && \text{Using exponent rules for negative exponents}\\ \end{align*}$$
+
+Using logarithms, we can take a positive monotonic transformation of the original utility function $u$:
+
+$$v(x, y)=a \: ln \: x + b \: ln \: y$$
+
+The MRS using the logarithmic form is:
+
+$$\begin{align*}
+	MRS_{x, y}	&=\frac{MU_{x}}{MU_{y}} && \text{The definition of MRS}\\
+	&= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} && \text{Using the definition of marginal utility as partial derivative}\\
+	&= \cfrac{\big(\frac{a}{x}\big)}{\big(\frac{b}{y}\big)} && \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\
+	&=\frac{a}{b} \frac{y}{x} && \text{Multiplying the righthand side by the reciprocal of the denominator,} \frac{y}{b}\\ \end{align*}$$
+	
+Which of course, is the same, because we know any positive monotonic transformation of a utility function preserves the same preferences! 
+
+#### EXAMPLE
+
+Find the marginal rate of substitution for the utility function: 
+
+$$u(x, y) = \sqrt{x, y}$$
+
+First, recognize that square roots are equivalent to saying $x^{0.5} y^{0.5}$. The marginal rate of substitution would be: 
+
+$$\begin{align*}
+		MRS_{x, y}	&=\frac{MU_{x}}{MU_{y}} && \text{The definition of MRS}\\
+	&= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} && \text{Using the definition of marginal utility as partial derivative}\\
+	&= \frac{0.5 x^{-0.5}y^{0.5}}{0.5x^{0.5}y^{-0.5}} && \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\
+	&=\frac{0.5}{0.5} x^{0.5-0.5}y^{0.5-(-0.5)} && \text{Using exponent rules for division}\\
+	&=  x^{-1}y^{1} && \text{Simplifying exponents, and cancelling} \frac{0.5}{0.5}\\
+	&=\frac{y}{x} && \text{Using exponent rules for negative exponents}\\ \end{align*}$$
+
+Note we could find this equivalently again by taking logs of the original utility function. 
+
+$$v(x,y)=0.5 \: ln \: x+0.5\: ln\: y$$
+ 	
+$$\begin{align*}
+		MRS_{x, y}	&=\frac{MU_{x}}{MU_{y}} && \text{The definition of MRS}\\
+	&= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} && \text{Using the definition of marginal utility as partial derivative}\\
+	&= \cfrac{\big(\frac{0.5}{x}\big)}{\big(\frac{0.5}{y}\big)} && \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\
+	&=\frac{y}{x} && \text{Multiplying the righthand side by the reciprocal of the denominator,} \frac{y}{0.5}\\ \end{align*}$$
+
+Which again, gives us the same marginal rate of substitution.
+

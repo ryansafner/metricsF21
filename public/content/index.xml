@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on ECON 306 — Microeconomic Analysis</title>
+    <link>https://microf21.classes.ryansafner.com/content/</link>
+    <description>Recent content in Overview on ECON 306 — Microeconomic Analysis</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>[CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) {year} by Ryan Safner</copyright>
+    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://microf21.classes.ryansafner.com/content/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1.3 — Preferences — Class Content</title>
+      <link>https://microf21.classes.ryansafner.com/content/1.3-content/</link>
+      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://microf21.classes.ryansafner.com/content/1.3-content/</guid>
+      <description>&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Monday, February 1, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Section 1: &lt;em&gt;Monday, February 8, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Section 2: &lt;em&gt;Tuesday, February 9, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;i-classfas-fa-info-circle-fa-lgi-overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;From last class, we know what constraints individuals face in the market (represented by the budget constraint), but how do people make the choices they do? We must now enter the more controversial&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; realm of modeling preferences.&lt;/p&gt;
+&lt;p&gt;As I mentioned in &lt;a href=&#34;https://microf21.classes.ryansafner.com/content/1.2-content&#34;&gt;last class’ page&lt;/a&gt;, a lot of the “in the weeds” details about preference assumptions, indifference curves, and utility functions are a waste of your time. If you look at the textbook chapter, I am skipping a lot of “the fat,” and relegating it to an appendix at the bottom of this page.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; Again, I reiterate that if you are interested in more advanced economics training, it is &lt;em&gt;essential&lt;/em&gt; that you master all of these details. But not for this course.&lt;/p&gt;
+&lt;p&gt;Today we focus on the essential tools for fitting preferences into our optimization model:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;indifference curves&lt;/strong&gt;: each of which is the set of all bundles that one is &lt;em&gt;indifferent between&lt;/em&gt; (and that give the same amount utility)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;utility functions&lt;/strong&gt;: which measure the &lt;em&gt;ordinal&lt;/em&gt; (but not cardinal!) utility level of any given bundle; for comparisons only!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;marginal rate of substitution&lt;/strong&gt;: the slope of the indifference curve, representing an individual’s subjective tradeoff between goods; measured by the ratio of marginal utilities: &lt;code&gt;\(MRS_{x,y}=-\frac{MU_x}{MU_y}\)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;i-classfas-fa-book-reader-fa-lgi-readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 4.1-4.2 in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Math Review Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;i-classfas-fa-chalkboard-teacheri-slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.3-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.3-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.3-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;i-classfas-fa-dumbbelli-practice&#34;&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/h2&gt;
+&lt;p&gt;Answers from last class’ &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.2-practice&#34;&gt;practice problems&lt;/a&gt; are posted on that page.&lt;/p&gt;
+&lt;h2 id=&#34;i-classfas-fa-laptop-codei-assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;h3 id=&#34;problem-set-1&#34;&gt;Problem Set 1&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; (on 1.1-1.4) is due by 11:59 PM Sunday February 14 by PDF upload to Blackboard Assignments. We will learn and practice the final few concepts this problem set covers next class.&lt;/p&gt;
+&lt;h2 id=&#34;i-classfas-fa-sigmai-appendix-1-material-on-preferences&#34;&gt;&lt;i class=&#34;fas fa-sigma&#34;&gt;&lt;/i&gt; Appendix 1: Material on Preferences&lt;/h2&gt;
+&lt;h3 id=&#34;strict-vsweak-preferences&#34;&gt;Strict vs. Weak Preferences&lt;/h3&gt;
+&lt;p&gt;We have defined preferences as being &lt;strong&gt;strictly&lt;/strong&gt; one of the following possibilities:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;\(a \succ b\)&lt;/code&gt; ($a$ is &lt;em&gt;strictly&lt;/em&gt; preferred over &lt;em&gt;b&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\(a \prec b\)&lt;/code&gt; ($b$ is &lt;em&gt;strictly&lt;/em&gt; preferred over &lt;em&gt;a&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\(a \sim b\)&lt;/code&gt; (indifferent between &lt;em&gt;a&lt;/em&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can also have &lt;strong&gt;weak&lt;/strong&gt; preferences, such as&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;\(a \succeq b\)&lt;/code&gt; ($a$ is &lt;em&gt;at least as preferred&lt;/em&gt; as (or “weakly preferred over” &lt;code&gt;\(b\)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\(a \preceq b\)&lt;/code&gt; ($b$ is &lt;em&gt;at least as preferred&lt;/em&gt; as (or “weakly preferred over” &lt;code&gt;\(a\)&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These are more technically complete, but it is much more simple for us to focus on strong preferences, and we don’t lose much by doing so.&lt;/p&gt;
+&lt;h3 id=&#34;assumptions-of-well-behaved-preferences&#34;&gt;Assumptions of “Well-behaved Preferences”&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Reflexivity&lt;/strong&gt; : any bundle is at least as preferred as itself&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Completeness&lt;/strong&gt; : any two bundles can be compared&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Transitivity&lt;/strong&gt; : rankings are logically consistent:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;If &lt;code&gt;\(a \succ b\)&lt;/code&gt; and &lt;code&gt;\(b \succ c\)&lt;/code&gt;, then &lt;code&gt;\(a \succ c\)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Are these good assumptions? As you will find typical in economics, &lt;em&gt;very often yes, sometimes no!&lt;/em&gt; See the growing field of &lt;a href=&#34;https://en.wikipedia.org/wiki/Behavioral_economics&#34;&gt;Behavioral economics&lt;/a&gt; for interesting anomalies and exceptions to our assumptions.&lt;/p&gt;
+&lt;h3 id=&#34;assumptions-of-well-behaved-indifference-curves&#34;&gt;Assumptions of “Well-behaved Indifference Curves”&lt;/h3&gt;
+&lt;p&gt;Like preferences, we make 4 major assumptions about indifference curves to describe the normal case. In fact, many of these assumptions are derived from the assumptions we made above about well-behaved preferences&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;We can always draw indifference curves:&lt;/strong&gt; two bundles can always be ranked&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Every possible bundle (point on graph) is on an indifference curve.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;IC_10=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;100&lt;/span&gt;/x}
+IC_9=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;81&lt;/span&gt;/x}
+IC_8=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;64&lt;/span&gt;/x}
+IC_7=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;49&lt;/span&gt;/x}
+IC_6=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;36&lt;/span&gt;/x}
+IC_5=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;25&lt;/span&gt;/x}
+IC_4=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;16&lt;/span&gt;/x}
+IC_3=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;9&lt;/span&gt;/x}
+IC_2=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;4&lt;/span&gt;/x}
+IC_1=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;/x}
+
+
+ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;)), aes(x=x))+
+  stat_function(fun=IC_10, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+  stat_function(fun=IC_9, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+  stat_function(fun=IC_8, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+  stat_function(fun=IC_7, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+  stat_function(fun=IC_6, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+  stat_function(fun=IC_5, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+  stat_function(fun=IC_4, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+  stat_function(fun=IC_3, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+  stat_function(fun=IC_2, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+  stat_function(fun=IC_1, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+    scale_x_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_y_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_color_viridis_d(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;)+
+  &lt;span style=&#34;color:#007f7f&#34;&gt;#scale_colour_manual(&amp;#34;Curves&amp;#34;, values = line_colors, guide=F)+&lt;/span&gt;
+  labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;,
+       y = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;)+
+  theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-ass-1-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Of course, this means that this entire graph is &lt;em&gt;full&lt;/em&gt; of indifference curves - every single possible point is on &lt;em&gt;some&lt;/em&gt; indifference curve (and this whole graph would just be a solid block of black). Naturally, it’s pointless to draw all the indifference curves, we just want to show a few to make our analysis meaningful. But the general idea comes from assumption 2 of preferences: &lt;em&gt;any two bundles can be compared&lt;/em&gt;, as we can compare two points on this graph and make a judgment.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Indifference curves are monotonic&lt;/strong&gt;, which means practically that “more is preferred to less”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For any bundle &lt;code&gt;\(b\)&lt;/code&gt; with more of at least one good than bundle &lt;code&gt;\(a \implies a \prec b\)&lt;/code&gt;. Movements to the Northeast always preferable, while movements to the Southwest always unpreferable.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;points&amp;lt;-tribble(
+  ~letter, ~x, ~y,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;,
+)
+
+asfill&amp;lt;-tibble(fx=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;),
+               fymin=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;4&lt;/span&gt;/fx,
+             fymax=rep(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;, length(fx))
+)
+
+asfill2&amp;lt;-tibble(fx=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;),
+             fymin=rep(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;, length(fx)),
+             fymax=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;4&lt;/span&gt;/fx
+)
+
+IC_as=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;4&lt;/span&gt;/x}
+
+ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;)), aes(x=x))+
+  stat_function(fun=IC_as, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;blue&amp;#34;&lt;/span&gt;)+
+  geom_ribbon(data=asfill,aes(x=fx,ymin=fymin,ymax=fymax),fill=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;green&amp;#34;&lt;/span&gt;, alpha=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.4&lt;/span&gt;)+
+  geom_ribbon(data=asfill2,aes(x=fx,ymin=fymin,ymax=fymax),fill=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt;, alpha=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.4&lt;/span&gt;)+
+  geom_rect(aes(xmin=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,xmax=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.4&lt;/span&gt;,ymin=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,ymax=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;), fill=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt;, alpha=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.2&lt;/span&gt;)+
+  geom_point(data = points,
+             mapping=aes(x=x, y=y),
+             size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;)+
+  geom_text_repel(data = points,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  scale_x_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_y_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;,
+       y = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;)+
+  theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-ass-2-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Here’s a &lt;em&gt;challenge&lt;/em&gt;: what would indifference curves look like if one of the axes contained a &lt;em&gt;bad&lt;/em&gt;, rather than a good? In this case, we would violate the assumption of monotonicity!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Indifference curves are convex&lt;/strong&gt;, which means in practice that “averages are preferred to extremes”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;From experience, people generally prefer variety in their consumption. Rather than having one bundle that is “extreme” (a lot of one good and little or none of another), they tend to prefer a bundle with a better “mix” or “balance” of some of both goods.&lt;/p&gt;
+&lt;p&gt;Take our example from class, hunting for apartments. Apartment &lt;code&gt;\(A\)&lt;/code&gt; is very large but near very few friends, whereas apartment &lt;code&gt;\(B\)&lt;/code&gt; is very small but near many friends. If we could find some apartment, &lt;code&gt;\(C\)&lt;/code&gt;, that is a weighted average of the two, with a better mix of size and friends, it would be preferred, and thus, on a higher indifference curve than &lt;code&gt;\(A\)&lt;/code&gt; or &lt;code&gt;\(B\)&lt;/code&gt;!&lt;/p&gt;
+&lt;p&gt;Mathematically, this feature is because indifference curves are normally convex. A function is &lt;strong&gt;convex&lt;/strong&gt; when a line connecting any two points on the function lies &lt;em&gt;above&lt;/em&gt; the function itself. Check the math review guide for more information.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;apts4&amp;lt;-tribble(
+  ~letter, ~x, ~y,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1200&lt;/span&gt;,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;B&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;200&lt;/span&gt;,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;C&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;800&lt;/span&gt;
+)
+IC=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1200&lt;/span&gt;/x}
+line_colors &amp;lt;- c(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;IC&amp;#34;&lt;/span&gt; = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;blue&amp;#34;&lt;/span&gt;)
+
+apts&amp;lt;-tribble(
+  ~letter, ~x, ~y,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1200&lt;/span&gt;,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;B&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;400&lt;/span&gt;,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;C&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;200&lt;/span&gt;,
+)
+
+ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;)), aes(x=x))+
+  stat_function(fun=IC, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;blue&amp;#34;&lt;/span&gt;)+
+  geom_point(data = apts4,
+             mapping=aes(x=x, y=y),
+             size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;)+
+  geom_text_repel(data = apts4,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  geom_segment(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;, xend=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;, y=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1200&lt;/span&gt;, yend=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;200&lt;/span&gt;), linetype=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;dashed&amp;#34;&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)+
+  scale_x_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_y_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2000&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;200&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2000&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_colour_manual(guide=F)+
+  labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Friends Nearby&amp;#34;&lt;/span&gt;,
+       y = expression(ft^2))+
+  theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-as-3-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Here’s a &lt;em&gt;challenge&lt;/em&gt;: what would &lt;em&gt;non-convex&lt;/em&gt; (e.g. &lt;em&gt;concave&lt;/em&gt;) curves look like, and what preferences would cause that situation?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Indifference curves can never cross&lt;/strong&gt; because we have assumed that &lt;em&gt;preferences are transitive&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Suppose two curves crossed, as the ones below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On the blue indifference curve, &lt;code&gt;\\(A \sim B\\)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;On the orange indifference curve &lt;code&gt;\\(B \sim C\\)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;But clearly &lt;code&gt;\\(C\\)&lt;/code&gt; &lt;code&gt;\(\succ\)&lt;/code&gt; .&lt;code&gt;\\(B\\)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Preferences are not transitive!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;points_as4&amp;lt;-tribble(
+  ~letter, ~x, ~y,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2.125&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;570&lt;/span&gt;,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;B&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;200&lt;/span&gt;,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;C&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;8&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;425&lt;/span&gt;
+)
+
+IC_as4=function(x){(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;400&lt;/span&gt;/x)&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;+375&lt;/span&gt;}
+
+
+ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;)), aes(x=x))+
+  stat_function(fun=IC, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;blue&amp;#34;&lt;/span&gt;)+
+  stat_function(fun=IC_as4, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;orange&amp;#34;&lt;/span&gt;)+
+  geom_point(data = points_as4,
+             mapping=aes(x=x, y=y),
+             size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;)+
+  geom_text_repel(data = points_as4,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  scale_x_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_y_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2000&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;200&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2000&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_colour_manual(guide=F)+
+  labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Friends Nearby&amp;#34;&lt;/span&gt;,
+       y = expression(ft^2))+
+  theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-as-4-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;steepness--indifference-curves-for-neutrals&#34;&gt;Steepness &amp;amp; Indifference Curves for Neutrals&lt;/h3&gt;
+&lt;p&gt;The Steepness of indifference curves tells us how consumers trade off between goods.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Perfectly vertical curves (left) &lt;code&gt;\(\implies\)&lt;/code&gt; indifference between having more (point B) or fewer (point A) downloads. There is no tradeoff a person would make to acquire more Downloads, they truly &lt;em&gt;do not care&lt;/em&gt; about them at all. Thus, on the left graph, Downloads would be a neutral.&lt;/p&gt;
+&lt;p&gt;Perfectly horizontal curves (right) &lt;code&gt;\(\implies\)&lt;/code&gt; indifference between having more (point B) or fewer (point A) Tickets. There is no tradeoff a person would make to acquire more Tickets, they truly do not care about them at all. Thus, on the right graph, Tickets would be a neutral.&lt;/p&gt;
+&lt;p&gt;We can look at less extreme cases:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;On the left graph, the flatter curve implies the person is willing to give up &lt;em&gt;only a few&lt;/em&gt; Downloads to obtain more Tickets (and vice versa). &lt;code&gt;\(MRS_{T,D}\)&lt;/code&gt; (slope) is small, indicating downloads are more highly valued relative to tickets.&lt;/p&gt;
+&lt;p&gt;On the right graph, the steeper curve implies the person is willing to give up &lt;em&gt;a lot&lt;/em&gt; Downloads to obtain more Tickets (and vice versa). &lt;code&gt;\(MRS_{T,D}\)&lt;/code&gt; (slope) is large, indicating downloads are less valued relative to tickets.&lt;/p&gt;
+&lt;h1 id=&#34;i-classfas-fa-sigmai-math-appendix&#34;&gt;&lt;i class=&#34;fas fa-sigma&#34;&gt;&lt;/i&gt; Math Appendix&lt;/h1&gt;
+&lt;h2 id=&#34;derivation-of-mrs-equation-as-ratio-of-marginal-utilities&#34;&gt;Derivation of MRS Equation (as ratio of marginal utilities)&lt;/h2&gt;
+&lt;p&gt;Consider a movement along an indifference curve, how would this change affect utility? There will be a change in &lt;code&gt;\(x\)&lt;/code&gt; and a change in &lt;code&gt;\(y\)&lt;/code&gt;, and multiplying the marginal utility of each, and adding these together will give us our total change in utility. But we know that if we are on the same indifference curve, moving along the curve will &lt;em&gt;not change utility&lt;/em&gt; (all points on the curve are defined as having the same utility!). So rearrange the equation as follows:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} MU_x \Delta x+MU_y\Delta y&amp;amp;= \Delta u &amp;amp;&amp;amp; \text{Measuring change in utility} \\ MU_x \Delta x+MU_y \Delta y &amp;amp;=0 &amp;amp;&amp;amp; \text{But change in utility is 0}\\ MU_y \Delta y&amp;amp;= -MU_{x} \Delta x &amp;amp;&amp;amp; \text{Subtracting x terms}\\ \underbrace{\frac{\Delta y}{\Delta x}}_{MRS} &amp;amp;= -\frac{MU_{x}}{MU_{y}} &amp;amp;&amp;amp; \text{Dividing to get like terms on each side}\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Notice rise over run, &lt;code&gt;\(\frac{\Delta y}{\Delta x}\)&lt;/code&gt;, is the slope, which we have defined as the marginal rate of substitution (MRS). &lt;code&gt;\(\blacksquare\)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;utility-functions-and-pmts&#34;&gt;Utility Functions and PMTs&lt;/h3&gt;
+&lt;p&gt;Two utility functions &lt;code&gt;\(u(\cdot)\)&lt;/code&gt; and &lt;code&gt;\(v(\cdot)\)&lt;/code&gt; represent the same preferences iff there is a &lt;em&gt;strictly&lt;/em&gt; increasing function &lt;code&gt;\(f\)&lt;/code&gt; such that &lt;code&gt;\(v(\cdot)=f\left[u(\cdot)\right]\)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{aligned} a&amp;amp;=(1,2)\\ b&amp;amp;=(2,2)\\ c&amp;amp;=(4,3)\\ \end{aligned}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The following utility functions express the same preferences:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;\(u(\cdot)\)&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;\(v(\cdot)\)&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;\(u(a)=1\)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\(v(a)=2\)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;\(u(b)=2\)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\(v(b)=4\)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;\(u(c)=3\)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\(v(c)=6\)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;$$v(\cdot)=2\left[u(\cdot)\right]$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;positive monotonic transformation (PMT)&lt;/strong&gt; transforms quantities such that the rank order of the quantities is preserved.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Examples: &lt;code&gt;\(v(u)=u+2; \, v(u)=4u; \, v(u)=u^3; \, v(u)=ln(u)\)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Any PMT of a utility function contains the same preferences!&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;graphing-indifference-curves&#34;&gt;Graphing Indifference Curves&lt;/h3&gt;
+&lt;p&gt;I will not ask you to formally graph indifference curves (just roughly sketch them where appropriate). If you wanted to graph them, and express them in a graphable (slope-intercept form) equation, simply solve for the good on the vertical axis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: Suppose we have a typical&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; indifference curve for apples &lt;code&gt;\((a)\)&lt;/code&gt; and bananas &lt;code&gt;\((b)\)&lt;/code&gt;:
+&lt;code&gt;$$u(a,b)=ab$$&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;library(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;plotly&amp;#34;&lt;/span&gt;)
+x_vec = seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;)
+y_vec = seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;)
+x_matrix = matrix(c(x_vec), nrow = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;, ncol = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;)
+y_matrix = matrix(c(y_vec), nrow = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;, ncol = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;)
+z_matrix = matrix(c(x_matrix %*% y_matrix),nrow=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,ncol=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;)
+
+plot_ly(x = x_vec,
+           y = y_vec,
+           z = z_matrix) %&amp;gt;%
+  add_surface() %&amp;gt;%
+  layout(scene = list(xaxis = list(title=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;a&amp;#34;&lt;/span&gt;),
+                      yaxis = list(title=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;b&amp;#34;&lt;/span&gt;),
+                      zaxis = list(title=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Utility&amp;#34;&lt;/span&gt;)))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:672px;height:528px;&#34; class=&#34;plotly html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;visdat&#34;:{&#34;696d40229612&#34;:[&#34;function () &#34;,&#34;plotlyVisDat&#34;]},&#34;cur_data&#34;:&#34;696d40229612&#34;,&#34;attrs&#34;:{&#34;696d40229612&#34;:{&#34;x&#34;:[0,1,2,3,4,5,6,7,8,9,10],&#34;y&#34;:[0,1,2,3,4,5,6,7,8,9,10],&#34;z&#34;:[[0,0,0,0,0,0,0,0,0,0],[0,1,2,3,4,5,6,7,8,9],[0,2,4,6,8,10,12,14,16,18],[0,3,6,9,12,15,18,21,24,27],[0,4,8,12,16,20,24,28,32,36],[0,5,10,15,20,25,30,35,40,45],[0,6,12,18,24,30,36,42,48,54],[0,7,14,21,28,35,42,49,56,63],[0,8,16,24,32,40,48,56,64,72],[0,9,18,27,36,45,54,63,72,81]],&#34;alpha_stroke&#34;:1,&#34;sizes&#34;:[10,100],&#34;spans&#34;:[1,20],&#34;type&#34;:&#34;surface&#34;,&#34;inherit&#34;:true}},&#34;layout&#34;:{&#34;margin&#34;:{&#34;b&#34;:40,&#34;l&#34;:60,&#34;t&#34;:25,&#34;r&#34;:10},&#34;scene&#34;:{&#34;xaxis&#34;:{&#34;title&#34;:&#34;a&#34;},&#34;yaxis&#34;:{&#34;title&#34;:&#34;b&#34;},&#34;zaxis&#34;:{&#34;title&#34;:&#34;Utility&#34;}},&#34;hovermode&#34;:&#34;closest&#34;,&#34;showlegend&#34;:false,&#34;legend&#34;:{&#34;yanchor&#34;:&#34;top&#34;,&#34;y&#34;:0.5}},&#34;source&#34;:&#34;A&#34;,&#34;config&#34;:{&#34;showSendToCloud&#34;:false},&#34;data&#34;:[{&#34;colorbar&#34;:{&#34;title&#34;:&#34;&#34;,&#34;ticklen&#34;:2,&#34;len&#34;:0.5,&#34;lenmode&#34;:&#34;fraction&#34;,&#34;y&#34;:1,&#34;yanchor&#34;:&#34;top&#34;},&#34;colorscale&#34;:[[&#34;0&#34;,&#34;rgba(68,1,84,1)&#34;],[&#34;0.0416666666666667&#34;,&#34;rgba(70,19,97,1)&#34;],[&#34;0.0833333333333333&#34;,&#34;rgba(72,32,111,1)&#34;],[&#34;0.125&#34;,&#34;rgba(71,45,122,1)&#34;],[&#34;0.166666666666667&#34;,&#34;rgba(68,58,128,1)&#34;],[&#34;0.208333333333333&#34;,&#34;rgba(64,70,135,1)&#34;],[&#34;0.25&#34;,&#34;rgba(60,82,138,1)&#34;],[&#34;0.291666666666667&#34;,&#34;rgba(56,93,140,1)&#34;],[&#34;0.333333333333333&#34;,&#34;rgba(49,104,142,1)&#34;],[&#34;0.375&#34;,&#34;rgba(46,114,142,1)&#34;],[&#34;0.416666666666667&#34;,&#34;rgba(42,123,142,1)&#34;],[&#34;0.458333333333333&#34;,&#34;rgba(38,133,141,1)&#34;],[&#34;0.5&#34;,&#34;rgba(37,144,140,1)&#34;],[&#34;0.541666666666667&#34;,&#34;rgba(33,154,138,1)&#34;],[&#34;0.583333333333333&#34;,&#34;rgba(39,164,133,1)&#34;],[&#34;0.625&#34;,&#34;rgba(47,174,127,1)&#34;],[&#34;0.666666666666667&#34;,&#34;rgba(53,183,121,1)&#34;],[&#34;0.708333333333333&#34;,&#34;rgba(79,191,110,1)&#34;],[&#34;0.75&#34;,&#34;rgba(98,199,98,1)&#34;],[&#34;0.791666666666667&#34;,&#34;rgba(119,207,85,1)&#34;],[&#34;0.833333333333333&#34;,&#34;rgba(147,214,70,1)&#34;],[&#34;0.875&#34;,&#34;rgba(172,220,52,1)&#34;],[&#34;0.916666666666667&#34;,&#34;rgba(199,225,42,1)&#34;],[&#34;0.958333333333333&#34;,&#34;rgba(226,228,40,1)&#34;],[&#34;1&#34;,&#34;rgba(253,231,37,1)&#34;]],&#34;showscale&#34;:true,&#34;x&#34;:[0,1,2,3,4,5,6,7,8,9,10],&#34;y&#34;:[0,1,2,3,4,5,6,7,8,9,10],&#34;z&#34;:[[0,0,0,0,0,0,0,0,0,0],[0,1,2,3,4,5,6,7,8,9],[0,2,4,6,8,10,12,14,16,18],[0,3,6,9,12,15,18,21,24,27],[0,4,8,12,16,20,24,28,32,36],[0,5,10,15,20,25,30,35,40,45],[0,6,12,18,24,30,36,42,48,54],[0,7,14,21,28,35,42,49,56,63],[0,8,16,24,32,40,48,56,64,72],[0,9,18,27,36,45,54,63,72,81]],&#34;type&#34;:&#34;surface&#34;,&#34;frame&#34;:null}],&#34;highlight&#34;:{&#34;on&#34;:&#34;plotly_click&#34;,&#34;persistent&#34;:false,&#34;dynamic&#34;:false,&#34;selectize&#34;:false,&#34;opacityDim&#34;:0.2,&#34;selected&#34;:{&#34;opacity&#34;:1},&#34;debounce&#34;:0},&#34;shinyEvents&#34;:[&#34;plotly_hover&#34;,&#34;plotly_click&#34;,&#34;plotly_selected&#34;,&#34;plotly_relayout&#34;,&#34;plotly_brushed&#34;,&#34;plotly_brushing&#34;,&#34;plotly_clickannotation&#34;,&#34;plotly_doubleclick&#34;,&#34;plotly_deselect&#34;,&#34;plotly_afterplot&#34;,&#34;plotly_sunburstclick&#34;],&#34;base_url&#34;:&#34;https://plot.ly&#34;},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;p&gt;Each indifference curve (or contour) is one level of utility (all points on the curve give a specific level of utility). So, set that level of utility equal to some constant, &lt;code&gt;\(k\)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$ab=k$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then, if we are putting &lt;code&gt;\(b\)&lt;/code&gt; on the vertical axis, we simply solve this for &lt;code&gt;\(b\)&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} ab&amp;amp;=k\\ b&amp;amp;=\frac{k}{a}\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This is the general equation for all indifference curves of this utility function: each utility level (value of &lt;code&gt;\(k)\)&lt;/code&gt; can be graphed as an indifference curve with that equation. Thus, for example, for a utility level of &lt;code&gt;\(10\)&lt;/code&gt;, the equation for that indifference curve is
+&lt;code&gt;$$b=\frac{10}{a}$$&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;library(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;mosaic&amp;#34;&lt;/span&gt;)
+update_geom_defaults(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;label&amp;#34;&lt;/span&gt;, list(family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;))
+
+IC_50=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;50&lt;/span&gt;/x}
+IC_25=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;25&lt;/span&gt;/x}
+IC_10=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;/x}
+
+colors&amp;lt;-c(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;b=50/a&amp;#34;&lt;/span&gt; = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#20A387FF&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;b=25/a&amp;#34;&lt;/span&gt; = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#39568CFF&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;b=10/a&amp;#34;&lt;/span&gt; = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#481567FF&amp;#34;&lt;/span&gt;)
+
+ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;)), aes(x=x))+
+  stat_function(fun=IC_50, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, aes(color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;b=50/a&amp;#34;&lt;/span&gt;))+
+  stat_function(fun=IC_25, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, aes(color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;b=25/a&amp;#34;&lt;/span&gt;))+
+  stat_function(fun=IC_10, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, aes(color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;b=10/a&amp;#34;&lt;/span&gt;))+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;9&lt;/span&gt;,y=IC_50(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;9&lt;/span&gt;)), color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#20A387FF&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;u=50&amp;#34;&lt;/span&gt;, size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;9&lt;/span&gt;,y=IC_25(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;9&lt;/span&gt;)), color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#39568CFF&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;u=25&amp;#34;&lt;/span&gt;, size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;9&lt;/span&gt;,y=IC_10(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;9&lt;/span&gt;)), color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#481567FF&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;u=10&amp;#34;&lt;/span&gt;, size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+    scale_x_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_y_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_colour_manual(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;I.C. equations&amp;#34;&lt;/span&gt;, values = colors)+
+  labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;a&amp;#34;&lt;/span&gt;,
+       y = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;b&amp;#34;&lt;/span&gt;,
+       title = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Indifference curves for u(a,b)=ab&amp;#34;&lt;/span&gt;)+
+  theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;utility-functions-for-perfect-substitutes&#34;&gt;Utility Functions for Perfect Substitutes&lt;/h3&gt;
+&lt;p&gt;Perfect substitutes produce straight lines for indifference curves. A straight line has a constant slope, which is interpretted as the MRS being constant - you should always be willing to substitute between the two goods at the same rate. The utility function looks like:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$u(x,y)=w_xx+w_yy$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Where each &lt;code&gt;\(w_i\)&lt;/code&gt; is a relative weight (intensity of relative preference). These are often known as &lt;strong&gt;linear preferences&lt;/strong&gt; because the utility of the two goods are related by addition.&lt;/p&gt;
+&lt;p&gt;Notice, having some of one good and none of the other still provides positive utility (unlike utility functions where the quantities of goods are multiplied!). This is precisely because of the substitutability between the goods!&lt;/p&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
+&lt;p&gt;Consider 1-Liter bottles of Coke &lt;code&gt;\(L_{1}\)&lt;/code&gt; and 2-Liter bottles of Coke &lt;code&gt;\(L_{2}\)&lt;/code&gt;. You should always be willing to substitute between one 2-Liter bottle and two 1-Liter bottles.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$u_{L_{1},L_{2}}=1L_{1}+2L_{2}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The relative weights here are 1 for 1-Liter bottles and 2 for 2-Liter bottles, because 2-Liter bottles are “worth” twice as much for you (it takes two 1-Liter bottles to match a 2-Liter bottle!).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\(MRS_{L_{1},L_{2}}=-\frac{w_x}{w_y} = -\frac{1}{2}\)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;utility-functions-for-perfect-complements&#34;&gt;Utility Functions for Perfect Complements&lt;/h3&gt;
+&lt;p&gt;Perfect complements produce right angles for indifference curves. This is technically not a mathematical function, since each &lt;code&gt;\(X\)&lt;/code&gt; value must be mapped to a single &lt;code&gt;\(Y\)&lt;/code&gt; value (i.e. no vertical lines). Thus, the utility function for perfect complements &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt; is quite unique:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$u(x,y)=min\{w_xx,w_yy\}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Where each &lt;code&gt;\(w_i\)&lt;/code&gt; is a relative weight (intensity of relative preference). Utility is determined by the &lt;em&gt;lesser&lt;/em&gt; value of what you have, &lt;code&gt;\(x\)&lt;/code&gt; (weighted by &lt;code&gt;\(w_x\)&lt;/code&gt;) or &lt;code&gt;\(y\)&lt;/code&gt; (weighted by &lt;code&gt;\(w_y\)&lt;/code&gt;). These are sometimes called “&lt;strong&gt;Leontief preferences&lt;/strong&gt;.”&lt;/p&gt;
+&lt;p&gt;The marginal rate of substitution alternates between &lt;code&gt;\(0\)&lt;/code&gt; (horizontal line) and &lt;code&gt;\(\infty\)&lt;/code&gt; (vertical line).&lt;/p&gt;
+&lt;h4 id=&#34;example-1&#34;&gt;Example&lt;/h4&gt;
+&lt;p&gt;Consider consuming hot dogs &lt;code&gt;\((H)\)&lt;/code&gt; and buns &lt;code&gt;\((B)\)&lt;/code&gt;, that must be consumed together as a package 1:1. The utility function would be:
+&lt;code&gt;$$u(H,B)=min\{H,B\}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Having 2 hot dogs and 3 buns only yields a utility of 2. Having 3 hot dogs and 2 buns also only yields a utility of 2.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;cobb-douglas-functions&#34;&gt;Cobb-Douglas Functions&lt;/h3&gt;
+&lt;p&gt;Cobb-Douglas functions (both for utility and production) are one of the most common functional forms in economics. Despite their somewhat frightening presence on the surface, they have very neat mathematical properties, and have been empirically useful as well. A Cobb-Douglas function (for utility) looks like:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$u(x, y)=x^a y^b$$&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mrs-and-positive-monotonic-transformations&#34;&gt;MRS and Positive Monotonic Transformations&lt;/h3&gt;
+&lt;p&gt;The marginal rate of substitution, using the above equation is:
+&lt;code&gt;$$\begin{align*}     MRS_{x, y}  &amp;amp;=\frac{MU_{x}}{MU_{y}} &amp;amp;&amp;amp; \text{The definition of MRS}\\     &amp;amp;= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} &amp;amp;&amp;amp; \text{Using the definition of marginal utility as partial derivative}\\     &amp;amp;= \frac{a x^{a-1}y^b}{b x^a y^{b-1}} &amp;amp;&amp;amp; \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\     &amp;amp;=\frac{a}{b} x^{(a-1)-a}y^{b-(b-1)} &amp;amp;&amp;amp; \text{Using exponent rules for division}\\     &amp;amp;= \frac{a}{b} x^{-1}y^{1} &amp;amp;&amp;amp; \text{Simplifying exponents}\\     &amp;amp;=\frac{a}{b} \frac{y}{x} &amp;amp;&amp;amp; \text{Using exponent rules for negative exponents}\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Using logarithms, we can take a positive monotonic transformation of the original utility function &lt;code&gt;\(u\)&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$v(x, y)=a \: ln \: x + b \: ln \: y$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The MRS using the logarithmic form is:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*}     MRS_{x, y}  &amp;amp;=\frac{MU_{x}}{MU_{y}} &amp;amp;&amp;amp; \text{The definition of MRS}\\     &amp;amp;= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} &amp;amp;&amp;amp; \text{Using the definition of marginal utility as partial derivative}\\     &amp;amp;= \cfrac{\big(\frac{a}{x}\big)}{\big(\frac{b}{y}\big)} &amp;amp;&amp;amp; \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\     &amp;amp;=\frac{a}{b} \frac{y}{x} &amp;amp;&amp;amp; \text{Multiplying the righthand side by the reciprocal of the denominator,} \frac{y}{b}\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Which of course, is the same, because we know any positive monotonic transformation of a utility function preserves the same preferences!&lt;/p&gt;
+&lt;h4 id=&#34;example-2&#34;&gt;EXAMPLE&lt;/h4&gt;
+&lt;p&gt;Find the marginal rate of substitution for the utility function:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$u(x, y) = \sqrt{x, y}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;First, recognize that square roots are equivalent to saying &lt;code&gt;\(x^{0.5} y^{0.5}\)&lt;/code&gt;. The marginal rate of substitution would be:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*}         MRS_{x, y}  &amp;amp;=\frac{MU_{x}}{MU_{y}} &amp;amp;&amp;amp; \text{The definition of MRS}\\     &amp;amp;= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} &amp;amp;&amp;amp; \text{Using the definition of marginal utility as partial derivative}\\     &amp;amp;= \frac{0.5 x^{-0.5}y^{0.5}}{0.5x^{0.5}y^{-0.5}} &amp;amp;&amp;amp; \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\     &amp;amp;=\frac{0.5}{0.5} x^{0.5-0.5}y^{0.5-(-0.5)} &amp;amp;&amp;amp; \text{Using exponent rules for division}\\     &amp;amp;=  x^{-1}y^{1} &amp;amp;&amp;amp; \text{Simplifying exponents, and cancelling} \frac{0.5}{0.5}\\     &amp;amp;=\frac{y}{x} &amp;amp;&amp;amp; \text{Using exponent rules for negative exponents}\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Note we could find this equivalently again by taking logs of the original utility function.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$v(x,y)=0.5 \: ln \: x+0.5\: ln\: y$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*}         MRS_{x, y}  &amp;amp;=\frac{MU_{x}}{MU_{y}} &amp;amp;&amp;amp; \text{The definition of MRS}\\     &amp;amp;= \cfrac{\big(\frac{\partial }{\partial x}\big)}{\big(\frac{\partial}{\partial y}\big)} &amp;amp;&amp;amp; \text{Using the definition of marginal utility as partial derivative}\\     &amp;amp;= \cfrac{\big(\frac{0.5}{x}\big)}{\big(\frac{0.5}{y}\big)} &amp;amp;&amp;amp; \text{Differentiating }u \text{ w.r.t }x \text{ on top and }y \text{ on bottom}\\     &amp;amp;=\frac{y}{x} &amp;amp;&amp;amp; \text{Multiplying the righthand side by the reciprocal of the denominator,} \frac{y}{0.5}\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Which again, gives us the same marginal rate of substitution.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Though still the overwhelming consensus view in economics. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I used to spend an entire week just teaching about preferences. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cobb-Douglas! &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>1.1 — The Tools of Microeconomics — Class Content</title>
+      <link>https://microf21.classes.ryansafner.com/content/1.1-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://microf21.classes.ryansafner.com/content/1.1-content/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Monday, February 1, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;i-classfas-fa-info-circle-fa-lgi-overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Welcome to ECON 306 - Microeconomic Analysis! Today&amp;rsquo;s lesson will be an introduction to the course and the tools we use in microeconomics.&lt;/p&gt;
+&lt;p&gt;If you have not done so, please watch my &lt;strong&gt;welcome video&lt;/strong&gt;, take my &lt;strong&gt;survey&lt;/strong&gt;, join our class &lt;strong&gt;Slack channel&lt;/strong&gt;, and read the important items, which can be found in the &lt;code&gt;START HERE&lt;/code&gt; menu item in the course&amp;rsquo;s Blackboard site.^[I would link to them all here, but this website is public on the internet, so I am ensuring only real enrolled students can access these via Blackboard!]&lt;/p&gt;
+&lt;p&gt;The live class &lt;i class=&#34;fas fa-video&#34;&gt;&lt;/i&gt; Zoom meeting link can be found on Blackboard (see &lt;code&gt;LIVE ZOOM MEETINGS&lt;/code&gt; on the left navigation menu), and will start at 2:00 PM Monday (for section 1) or Tuesday (for section 2).&lt;/p&gt;
+&lt;p&gt;If you are unable to join this live session, or if you want to review, you can find the recording stored on Blackboard via Panopto (see &lt;code&gt;Class Recordings&lt;/code&gt; on the left navigation menu).&lt;/p&gt;
+&lt;h2 id=&#34;i-classfas-fa-book-reader-fa-lgi-readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;p&gt;Today is introductory, but you may look at Chapter 1 if you wish, to remind you about the use of models in economics. Otherwise, please heed this timeless message:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A message to students from the Doggfather himself, &lt;a href=&#34;https://twitter.com/SnoopDogg?ref_src=twsrc%5Etfw&#34;&gt;@SnoopDogg&lt;/a&gt; &lt;a href=&#34;https://t.co/wsSANYv8u6&#34;&gt;pic.twitter.com/wsSANYv8u6&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ryan Briggs (@ryancbriggs) &lt;a href=&#34;https://twitter.com/ryancbriggs/status/1293543531496308736?ref_src=twsrc%5Etfw&#34;&gt;August 12, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;Please note going forward, the lesson numbers and topics (e.g. 1.1) are &lt;em&gt;my&lt;/em&gt; design, and will not match up with the textbook!&lt;/p&gt;
+&lt;h3 id=&#34;optionalreferenced-readings&#34;&gt;Optional/Referenced Readings&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;July 2 2003, &lt;a href=&#34;https://www.theguardian.com/science/2003/jul/03/research.science&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; “Why Dolphins are Deep Thinkers”&lt;/a&gt;, &lt;em&gt;The Guardian&lt;/em&gt;]&lt;/li&gt;
+&lt;li&gt;January 17, 2021, &lt;a href=&#34;https://gizmodo.com/these-monkeys-understand-economics-and-intentionally-st-1846078932?utm_medium=sharefromsite&amp;amp;utm_source=_facebook&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; These Monkeys Understand Economics and Intentionally Steal High-Ticket Items to Barter for Better Food, Study Finds&lt;/a&gt;, &lt;em&gt;Gizmodo&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;i-classfas-fa-chalkboard-teacheri-slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.1-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.1-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.1-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;i-classfas-fa-dumbbelli-practice&#34;&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/h2&gt;
+&lt;p&gt;NONE&lt;/p&gt;
+&lt;h2 id=&#34;i-classfas-fa-laptop-codei-assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;h3 id=&#34;preliminary-math-survey-due-sunday-feb-7&#34;&gt;Preliminary Math Survey Due Sunday Feb 7&lt;/h3&gt;
+&lt;p&gt;Please take the &lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/00-preliminary-survey&#34;&gt;preliminary math survey&lt;/a&gt; on your math background by 11:59 PM Sunday February 7. This will help us all have a productive course together.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>1.2 — Budget Constraint — Class Content</title>
+      <link>https://microf21.classes.ryansafner.com/content/1.2-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://microf21.classes.ryansafner.com/content/1.2-content/</guid>
+      <description>&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Monday, February 1, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;We are diving right into what is commonly called &lt;a href=&#34;https://en.wikipedia.org/wiki/Consumer_choice&#34;&gt;&amp;ldquo;Consumer Theory&amp;rdquo;&lt;/a&gt; in textbooks. While our paradigmatic example will indeed be a consumer deciding what goods and services to purchase, please recognize that this model can be applied to just about &lt;em&gt;any&lt;/em&gt; decision made by an individual. We should more appropriately describe it as &lt;a href=&#34;https://en.wikipedia.org/wiki/Rational_choice_theory&#34;&gt;&amp;ldquo;Rational Choice Theory&amp;rdquo;&lt;/a&gt;. This will take several classes to fully unpack as our formal model of &lt;strong&gt;constrained optimization&lt;/strong&gt;, so today we are only focusing on the &lt;em&gt;constraints&lt;/em&gt; using the tool known as the &amp;ldquo;budget constraint.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;While budget constraints are fairly straightforward, consumer theory often the most &amp;ldquo;alien&amp;rdquo; material to students of economics: preferences, indifference curves, and utility functions derived from behavioral axioms. The model we put together—constrained optimization—is borrowed from calculus and engineering. In my opinion, a good chunk of consumer theory, particularly about preferences (next class), is a waste of your time and will give you unnecessary anxiety. It&amp;rsquo;s perhaps neat for you to see how economists ground all of their models in utility-maximization, but our time is better spent on more productive things. If, however, you plan on going to graduate school for economics or social science, &lt;strong&gt;read this chapter, and my online appendices, in great detail.&lt;/strong&gt;^[And see &lt;a href=&#34;https://twitter.com/graykimbrough/status/1291017699481575424&#34;&gt;this tweet&lt;/a&gt; for an 100% accurate example of what you can expect in a common Ph.D textbook discussing preferences.]&lt;/p&gt;
+&lt;p&gt;As it is still only the first week of class: if you have not done so, please watch my welcome video, read the announcements in Blackboard, take my survey, and join our class slack channel.&lt;/p&gt;
+&lt;h2 id=&#34;readings&#34;&gt;Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 4.3 in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Bastiat, 1848 &lt;a href=&#34;https://www.econlib.org/library/Bastiat/basEss.html?chapter_num=4#book-reader&#34;&gt;“What is Seen and Not Seen”&lt;/a&gt;, (Section 1)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Math Review Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now that we are picking up the intensity and working with some models (many will be new to you at first), I recommend looking at the textbook readings &lt;em&gt;before&lt;/em&gt; each class.&lt;/p&gt;
+&lt;p&gt;If you are following the textbook, we are going a bit out of order in two ways. It ggoes straight into (a review of principles, really) supply &amp;amp; demand in Chapters 1-3. We will ultimately get to supply and demand, but if you trust me, by the time we do later this semester, you will have a &lt;em&gt;much&lt;/em&gt; richer understanding and appreciation for them, having understood &lt;strong&gt;how they represent the decisions by optimizing individuals as buyers and sellers.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It begins &amp;ldquo;Consumer Theory&amp;rdquo; as chapter 4. It also stars with the &amp;ldquo;newer&amp;rdquo; and &amp;ldquo;weirder&amp;rdquo; stuff first — indifference curves and utility functions, and then teaches budget constraints second. I will go in the &lt;em&gt;opposite&lt;/em&gt; order to slowly acclimate you from familiar territory (linear equations) into newer tools and concepts (nonlinear functions, multivariate functions, optimization, etc). This is also a good time to review my &lt;a href=&#34;https://microf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;Math Review Guide&lt;/a&gt; for next week.&lt;/p&gt;
+&lt;p&gt;The Bastiat reading is perhaps one of the greatest economic parables ever written, and demonstrates the importance of opportunity cost in clear thinking (especially about policy).&lt;/p&gt;
+&lt;h3 id=&#34;optionalreferenced-readings&#34;&gt;Optional/Referenced Readings&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ryansafner.com/post/econometrics-data-science-and-causal-inference/&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Safner, 2019, &amp;ldquo;Econometrics, Data Science, and Causal Inference&amp;rdquo; (blog post)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.2-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.2-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.2-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;practice&#34;&gt;Practice&lt;/h2&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.2-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;h3 id=&#34;preliminary-survey&#34;&gt;Preliminary Survey&lt;/h3&gt;
+&lt;p&gt;Again, please take the &lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/00-preliminary-survey&#34;&gt;preliminary survey&lt;/a&gt; on your math background by 11:59 PM Sunday. This will help us all have a productive course together.&lt;/p&gt;
+&lt;h2 id=&#34;math-appendix&#34;&gt;Math Appendix&lt;/h2&gt;
+&lt;h3 id=&#34;budget-constraint-for-n-goods&#34;&gt;Budget Constraint for &lt;code&gt;\(n\)&lt;/code&gt; Goods&lt;/h3&gt;
+&lt;p&gt;While we can derive a lot of useful propositions and testable claims using a simple model with just 2 goods, obviously there are many orders of magnitude more goods in an economy. Economics at the graduate and professional level begins with abstract models of &lt;code&gt;\(n\)&lt;/code&gt; number of goods in an economy. Naturally, we cannot graph this, so we must deal in abstract equations and set theory:&lt;/p&gt;
+&lt;p&gt;Let &lt;code&gt;\(\{x_1, x_2, \cdots, x_n\}\)&lt;/code&gt; denote the set of &lt;code&gt;\(n\)&lt;/code&gt; goods in an economy. Let &lt;code&gt;\(\{p_1,p_2, \cdots, p_n\}\)&lt;/code&gt; denote the set of market prices affiliated with each good. Let &lt;code&gt;\(m\)&lt;/code&gt; again denote an individual&amp;rsquo;s income.&lt;/p&gt;
+&lt;p&gt;For &lt;code&gt;\(n\)&lt;/code&gt; goods, the budget set is defined as:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$p_1x_1 + p_2x_2 + \cdots + p_n x_n \leq m$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Which we can simplify, using &lt;a href=&#34;https://metricsf20.classes.ryansafner.com/class/2.1-class/#the-summation-operator&#34;&gt;summation notation&lt;/a&gt;, as:&lt;/p&gt;
+&lt;p&gt;$$
+\sum^{n}_{i=1}p_ix_i \leq m
+$$&lt;/p&gt;
+&lt;p&gt;To get the limit of this set, the budget constraint, make it an equality:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\sum^{n}_{i=1}p_ix_i = m$$&lt;/code&gt;
+As usual, this simply says that one&amp;rsquo;s total expenditures (on all goods) on the left-hand side, must be equal to one&amp;rsquo;s income on the right-hand side.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>1.4 — Utility Maximization — Class Content</title>
+      <link>https://microf21.classes.ryansafner.com/content/1.4-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://microf21.classes.ryansafner.com/content/1.4-content/</guid>
+      <description>
+&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#practice&#34;&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-1-due-wed-feb-17&#34;&gt;Problem Set 1 Due Wed Feb 17&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#math-appendix&#34;&gt;&lt;i class=&#34;fas fa-sigma&#34;&gt;&lt;/i&gt; Math Appendix&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#solving-the-constrained-optimization-problem-with-calculus&#34;&gt;Solving the Constrained Optimization Problem with Calculus&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#example&#34;&gt;Example&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#general-case-for-n-goods-marshallian-demand-functions&#34;&gt;General Case for &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; Goods &amp;amp; Marshallian Demand Functions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Section 1: &lt;em&gt;Wednesday, February 10, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Section 2: &lt;em&gt;Thursday, February 11, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h1&gt;
+&lt;p&gt;Today we put all of our tools together thus far to solve the consumer’s constrained optimization problem. To solve the problem the “traditional way” would be to use &lt;a href=&#34;https://en.wikipedia.org/wiki/Lagrange_multiplier&#34;&gt;Lagrangian multipliers&lt;/a&gt; and calculus and solve for the first order conditions.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; We instead will find the solution by looking graphically, and use an algebraic rule that should make a lot of intuitive sense. That rule, equivalently expressed in two ways:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{align*}\frac{MU_x}{MU_y} &amp;amp;= \frac{p_x}{p_y}\\
+\frac{MU_x}{p_x} &amp;amp;= \frac{MU_y}{p_y}\\ 
+\end{align*}
+\]&lt;/span&gt;
+The first rule states that the slope of the indifference curve (left) equals the slope of the budget constraint (right). This is stating that the marginal benefit of consuming &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; (left) equals the marginal cost (right) of consuming &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;, and that the individual is trading off &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; at the same rate as the market is.&lt;/p&gt;
+&lt;p&gt;The second (version of the) rule, solved for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; terms on either side, shows that the marginal utility per dollar spent is equal across both (all) goods.&lt;/p&gt;
+&lt;p&gt;Both forms are often called the &lt;strong&gt;equimarginal rule&lt;/strong&gt;, that at the optimum choice, the marginal benefit equals the marginal cost (which is the marginal benefit of the next best foregone opportunity).&lt;/p&gt;
+&lt;p&gt;We will do some &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.4-practice&#34;&gt;practice&lt;/a&gt; to make sure you can solve this type of model, and then you are fully prepared for &lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 4.4-4.5 in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Math Review Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.4-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.4-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.4-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;practice&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/h1&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.4-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
+&lt;div id=&#34;problem-set-1-due-wed-feb-17&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Problem Set 1 Due Wed Feb 17&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; (on 1.1-1.4) is due by 11:59 PM &lt;strong&gt;Wednesday&lt;/strong&gt; February &lt;strong&gt;17&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;math-appendix&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-sigma&#34;&gt;&lt;/i&gt; Math Appendix&lt;/h1&gt;
+&lt;div id=&#34;solving-the-constrained-optimization-problem-with-calculus&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Solving the Constrained Optimization Problem with Calculus&lt;/h2&gt;
+&lt;div id=&#34;example&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Example&lt;/h3&gt;
+&lt;p&gt;A consumer has a utility function of
+&lt;span class=&#34;math display&#34;&gt;\[u(x, y) = xy\]&lt;/span&gt;
+and faces prices of &lt;span class=&#34;math inline&#34;&gt;\(p_x = 5\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(p_y = 10\)&lt;/span&gt;, and has an income of &lt;span class=&#34;math inline&#34;&gt;\(m = 50\)&lt;/span&gt;. Find the consumer’s optimum consumption bundle.&lt;/p&gt;
+&lt;p&gt;The problem can be expressed as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\max_{x,y} xy\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[s. t. 5x+10y=50\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;There are a few strategies you can use to solve this problem using calculus.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Substitution Method&lt;/strong&gt;: take the budget constraint and solve it for one good in terms of the other good and income. Let’s solve for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+5x+10y&amp;amp;=50 &amp;amp;&amp;amp; \text{The budget constraint}\\
+5x&amp;amp;=50-10y &amp;amp;&amp;amp; \text{Subtracting     } 10y \text{ from both sides}\\
+x&amp;amp;=10-2y &amp;amp;&amp;amp; \text{Dividing both sides by 5}\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now we can plug this in for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; in the utility function to get an &lt;em&gt;unconstrained&lt;/em&gt; maximization problem:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\max_{y} (10-2y)y &amp;amp;&amp;amp; \text{Plugging into the original utility function}\\
+\max_{y} 10y-2y^2 &amp;amp;&amp;amp; \text{Distributing the }y\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Then we take the derivative with respect to &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; and set it equal to zero to find the maximum value of &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; in the function.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    u&amp;amp;=10y-2y^2 &amp;amp;&amp;amp; \text{The new utility function}\\
+    \frac{d u}{d y} = 10-4y&amp;amp;=0 &amp;amp;&amp;amp; \text{Taking the first derivative} \\
+    10&amp;amp;=4y &amp;amp;&amp;amp; \text{Adding } 4y \text{ to both sides}\\
+    2.5&amp;amp;=y &amp;amp;&amp;amp; \text{Dividing both sides by } 4\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now that we know &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; is 2.5. To find &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, plug 2.5 in for &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; in the first equation we found from the budget constraint:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+x&amp;amp;=10-2y &amp;amp;&amp;amp; \text{The equation}\\   
+x&amp;amp;=10-2(2.5) &amp;amp;&amp;amp; \text{Plugging in 2.5}\\
+x&amp;amp;=10-5 &amp;amp;&amp;amp; \text{Distributing the -2}\\
+x&amp;amp;=5 &amp;amp;&amp;amp; \text{Simplifying}\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So we’ve found the &lt;strong&gt;optimal bundle is 5 of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and 2.5 of &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;, or (&lt;span class=&#34;math inline&#34;&gt;\(x^*,y^*)=(5,2.5)\)&lt;/span&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lagrangian Method&lt;/strong&gt;: Recall the Lagrangian adds the objective function and the Lagrange multiplier &lt;span class=&#34;math inline&#34;&gt;\((\lambda)\)&lt;/span&gt; times the constraint set equal to 0:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\max_{x, y, \lambda} \Lambda(x, y, \lambda)=xy+\lambda(5x+10y-50)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Solving for the First Order Conditions (setting all partial derivatives to 0):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{\partial \Lambda}{\partial x} &amp;amp;= y+5\lambda &amp;amp;= 0  \\
+\frac{\partial \Lambda}{\partial y} &amp;amp;= x+10\lambda &amp;amp;= 0 \\
+\frac{\partial \Lambda}{\partial \lambda} &amp;amp;= 5x+10y-50 &amp;amp;= 0 \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Taking the first two equations, and rearranging each to equal &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{y}{5}&amp;amp;=\lambda \\
+\frac{x}{10}&amp;amp;=\lambda   \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Setting them equal to one another, and solving for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+ \frac{y}{5}&amp;amp;=\frac{x}{10}  \\
+2y&amp;amp;=x   \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So the consumer will buy twice the amount of &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; as &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; (note this should be intuitive as &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; costs twice as much as &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;!). To find the exact amounts of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; she will buy, plug what we just found into the budget constraint:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+5(2y)+10y&amp;amp;=50   \\
+20y&amp;amp;=50 \\
+y&amp;amp;=2.5  \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since we now know &lt;span class=&#34;math inline&#34;&gt;\(y^*\)&lt;/span&gt;, we can find &lt;span class=&#34;math inline&#34;&gt;\(x^*\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+x&amp;amp;=2y\\
+x&amp;amp;=2(2.5)=5 \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So the &lt;strong&gt;optimum consumption bundle (&lt;span class=&#34;math inline&#34;&gt;\(x^*, y^*\)&lt;/span&gt;) again is (5,2.5).&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You may be asking: &lt;em&gt;so what in the world is &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;?&lt;/em&gt; Besides being instrumental in solving constrained optimization problems, the Lagrangian multiplier &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; does have some economic interpretation. First, let’s return to the FOCs, knowing &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;, to solve for &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    y+5\lambda &amp;amp;=0\\
+    2.5+5\lambda &amp;amp;=0\\
+\lambda &amp;amp;=0.5   \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Mathematically, it can be proved that &lt;span class=&#34;math inline&#34;&gt;\(\lambda=\displaystyle \frac{\partial u(x,y)}{\partial m}\)&lt;/span&gt;: the rate of instantaneous change in your objective function with respect to your constraint (i.e. your income). That is, if you were to change your constraint (i.e. your income) by one unit, &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; tells us how much your objective function would increase (in units of the objective function).&lt;/p&gt;
+&lt;p&gt;Economically, it is known as the “shadow price,” or sometimes the “marginal utility of wealth.” It tells us how much your utility would increase if you were able to increase your constraint (income) by one unit (e.g. $1). Alternatively, we can think of it as the marginal benefit of relaxing the constraint (having $1 more to spend), or the marginal cost of strengthening the constraint (having $1 less).&lt;/p&gt;
+&lt;p&gt;In our example, &lt;span class=&#34;math inline&#34;&gt;\(\lambda=0.5\)&lt;/span&gt;, so if we had one +(-)$1 in income to spend, utility would increase(decrease) by 0.5.&lt;/p&gt;
+&lt;p&gt;Recall that since utility is &lt;em&gt;ordinal&lt;/em&gt; and not &lt;em&gt;cardinal&lt;/em&gt;, the number of “utils” your utility were to change by is meaningless. &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; does have meaningful quantitative interpretations when we use constrained optimization to talk about production, where units are dollars and output, rather than dollars and utility.&lt;/p&gt;
+&lt;p&gt;Let’s lastly confirm that this is the optimum using the definition&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+|MRS| &amp;amp;= |\frac{p_x}{p_y}| &amp;amp;&amp;amp; \text{At the optimum, slopes of I.C. and B.C. are equal}\\
+\frac{MU_{x}}{MU_{y}}&amp;amp;=\frac{p_x}{p_y} &amp;amp;&amp;amp; \text{Definition of each slope}\\
+    \frac{y}{x} &amp;amp;= \frac{p_x}{p_y} &amp;amp;&amp;amp; \text{MU&amp;#39;s for this specific utility function}\\
+    \frac{(2.5)}{(5)} &amp;amp;= \frac{5}{10} &amp;amp;&amp;amp; \text{At optimum, } y=2.5, x=5\\ 
+    \frac{1}{2} &amp;amp;= \frac{1}{2} &amp;amp;&amp;amp; \checkmark 
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;general-case-for-n-goods-marshallian-demand-functions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;General Case for &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; Goods &amp;amp; Marshallian Demand Functions&lt;/h2&gt;
+&lt;p&gt;In the case of &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; number of goods (from good &lt;span class=&#34;math inline&#34;&gt;\(x_1\)&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;\(x_n)\)&lt;/span&gt;, the optimal consumption portfolio solves the utility maximization problem:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\max_{x_1,\cdots,n_n}U(x_1,\cdots, x_n)\)&lt;/span&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(s.t. \sum^{n}_{i=1} x_ip_i \leq m\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;That is, as usual, choosing the consumption bundle that maximizes utility, subject to the budget constraint.&lt;/p&gt;
+&lt;p&gt;Using the Lagrangian method, the Lagrangian is:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mathbb{L} = U(x_i, \cdots, x_n)+\lambda(M - \sum_{i=1}^{n} x_ip_i)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The first order conditions are a series of &lt;span class=&#34;math inline&#34;&gt;\(n+1\)&lt;/span&gt; equations, with &lt;span class=&#34;math inline&#34;&gt;\(n+1\)&lt;/span&gt; unknowns:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{\partial u}{\partial x_1} &amp;amp;= \lambda p_i\\
+\vdots\\
+\frac{\partial u}{\partial x_n} &amp;amp;= \lambda p_n\\
+\sum^{n}_{i=1} x_ip_i &amp;amp;= m\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Solving for each individual &lt;span class=&#34;math inline&#34;&gt;\(x_i^*\)&lt;/span&gt; gives us a &lt;strong&gt;Marshallian Demand System&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+x_1^* &amp;amp;= x_1^M(p_1,\cdots,p_n,m)\\
+\vdots\\
+x_n^* &amp;amp;= x_n^M(p_1,\cdots,p_n,m)\\
+\lambda^* &amp;amp;= \lambda^M(p_1,\cdots,p_n,m)\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Each equation here is a demand function for that respective good, as a function of all market prices &lt;span class=&#34;math inline&#34;&gt;\((p_1, \cdots, p_n)\)&lt;/span&gt; and income &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Take the full Lagrangian equation and solve for all partial derivatives, set equal to 0.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>1.5 — Demand — Class Content</title>
+      <link>https://microf21.classes.ryansafner.com/content/1.5-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://microf21.classes.ryansafner.com/content/1.5-content/</guid>
+      <description>
+&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#practice&#34;&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-1-due-wed-feb-17&#34;&gt;Problem Set 1 Due Wed Feb 17&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-2-due-sun-feb-28&#34;&gt;Problem Set 2 Due Sun Feb 28&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#exam-1-week-of-mar-1&#34;&gt;Exam 1 Week of Mar 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Section 1: &lt;em&gt;Monday, February 15, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Section 2: &lt;em&gt;Tuesday, February 16, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h1&gt;
+&lt;p&gt;Solving a one-time constrained optimum problem might be useful in certain contexts, but the &lt;em&gt;dynamics&lt;/em&gt; of change are far more interesting and useful: how do people optimally &lt;em&gt;respond&lt;/em&gt; to changes in constraints? The remaining few classes before Exam 1 are about how people respond to changes in prices and income.&lt;/p&gt;
+&lt;p&gt;An individual’s &lt;strong&gt;demand function&lt;/strong&gt; (often just called &lt;strong&gt;“demand”&lt;/strong&gt;) for a particular good describes how that person optimally responds to changes in market conditions. While in truth, many things factor into one’s demand for a good, we are simplifying the model to relate a person’s quantity demanded of a good to three things: the price of that good (“own” price), the price of &lt;em&gt;other&lt;/em&gt; goods, and the person’s income. When we look only at the relationship between quantity demanded and the good’s price (holding constant the other two things — other prices, and income), this is the familiar &lt;strong&gt;demand curve&lt;/strong&gt; you see on supply and demand graphs from principles.&lt;/p&gt;
+&lt;p&gt;Today, we look only at how changes in &lt;em&gt;income&lt;/em&gt; or changes in the prices of &lt;em&gt;other&lt;/em&gt; goods can affect your quantity demanded for a good.&lt;/p&gt;
+&lt;p&gt;In doing so, we also introduce a major empirical tool that we will return to many times: an &lt;em&gt;elasticity.&lt;/em&gt; You’ve seen one elasticity before: the price elasticity of demand, and probably calculated it using the “midpoint formula.” There’s a lot more to elasticity (and a lot of other kinds of elasticities!) than that. We will see two varieties today, and will spend most of a lecture on price elasticity, two class periods from now.&lt;/p&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.6-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 5.1, 5.2, 5.4 in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.5-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.5-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.5-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;practice&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/h1&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.6-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
+&lt;div id=&#34;problem-set-1-due-wed-feb-17&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Problem Set 1 Due Wed Feb 17&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; (on 1.1-1.4) is due by 11:59 PM &lt;strong&gt;Wednesday&lt;/strong&gt; February &lt;strong&gt;17&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;problem-set-2-due-sun-feb-28&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Problem Set 2 Due Sun Feb 28&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exam-1-week-of-mar-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exam 1 Week of Mar 1&lt;/h2&gt;
+&lt;p&gt;If you see on the schedule, we will quickly complete the materials needed for Exam 1. Expect it to be the week of March 1, with more details coming by early next week.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>1.6 — Income and Substitution Effects — Class Content</title>
+      <link>https://microf21.classes.ryansafner.com/content/1.6-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://microf21.classes.ryansafner.com/content/1.6-content/</guid>
+      <description>
+&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#interactive-examples&#34;&gt;Interactive Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-1-due&#34;&gt;Problem Set 1 Due&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-2-due-sun-feb-28&#34;&gt;Problem Set 2 Due Sun Feb 28&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#exam-1-week-of-mar-1&#34;&gt;Exam 1 Week of Mar 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#appendix&#34;&gt;&lt;i class=&#34;far fa-sigma&#34;&gt;&lt;/i&gt; Appendix&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#example-demand-functions&#34;&gt;Example Demand Functions&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#perfect-substitutes&#34;&gt;Perfect Substitutes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#perfect-complements&#34;&gt;Perfect Complements&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cobb-douglas&#34;&gt;Cobb-Douglas&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#example&#34;&gt;EXAMPLE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Section 1: &lt;em&gt;Wednesday, February 17, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Section 2: &lt;em&gt;Tuesday, February 23, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;i class=&#34;fas fa-exclamation-circle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Note to Section 2 (TuTh)&lt;/strong&gt;: Hood College &lt;a href=&#34;https://www.hood.edu/offices-services/registrars-office/academic-calendar&#34;&gt;has designated&lt;/a&gt; Thursday February 18 to be one of the four days this semester where there are no classes. There will be no video to watch — we will have our next class meeting until Tuesday, February 23.&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h1&gt;
+&lt;p&gt;Today we cover the third effect in the individual demand function: the (own) price effect, aka the &lt;strong&gt;law of demand&lt;/strong&gt;: how changes in a good’s (own) price affect quantity demanded for that good.&lt;/p&gt;
+&lt;p&gt;We introduce the idea of (simplified, own-price) demand functions, inverse demand functions, and a demand curve. I will also show you examples of how we derive demand functions and curves.&lt;/p&gt;
+&lt;p&gt;The other major concept today is breaking apart the law of demand into two effects: the &lt;strong&gt;(real) income effect&lt;/strong&gt;, and the &lt;strong&gt;substitution effect&lt;/strong&gt;. We considering them conceptually and graphically. These can be a difficult concept for students to grasp.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 2.2, 5.3, in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;interactive-examples&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Interactive Examples&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ryansafner.shinyapps.io/Consumer/&#34;&gt;Visualizing the Consumer’s Problem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ryansafner.shinyapps.io/Consumer_changes/&#34;&gt;Visualizing Changes in the Consumer’s Problem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ryansafner.shinyapps.io/Demand/&#34;&gt;Visualizing Demand Shifters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are examples that I wrote in R/Shiny in the past, to visualize what it is we are looking at. As I find more time, I will update these and integrate them into our slides, but until then, I will just post links.&lt;/p&gt;
+&lt;p&gt;The first is a visual example of the static (one-time) Consumer’s problem. You can adjust things about the (Cobb-Douglas) utility function, income, and prices, and see how it would affect the graph and the optimum.&lt;/p&gt;
+&lt;p&gt;The second is a visual example of dynamic changes in the Consumer’s problem. The consumer starts at a pre-defined optimum. You can adjust any of the budget constraint parameters &lt;span class=&#34;math inline&#34;&gt;\((m, p_x, p_y)\)&lt;/span&gt;, and see how it would affect a new optimum, which you can &lt;em&gt;compare&lt;/em&gt; the the original optimum.&lt;/p&gt;
+&lt;p&gt;The third is a visual example of a hypothetical demand function for beer, with preference intensity, income, price of nachos (a complement), and price of wine (a substitute) as inputs to the function. Based on some pre-defined functions (in the background), you can change any of the inputs and see how it would affect the (inverse) demand function, expressed as a simple demand curve.&lt;/p&gt;
+&lt;p&gt;I hope some time to clean these up and make a few more, such as “Visualizing the Income and Substitution Effects” and “Estimating a Demand Function from Real World Data.”&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
+&lt;div id=&#34;problem-set-1-due&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Problem Set 1 Due&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; &lt;strong&gt;is due&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;problem-set-2-due-sun-feb-28&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Problem Set 2 Due Sun Feb 28&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exam-1-week-of-mar-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exam 1 Week of Mar 1&lt;/h2&gt;
+&lt;p&gt;If you see on the schedule, we will quickly complete the materials needed for Exam 1. Expect it to be the week of March 1, with more details coming by early next week.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;appendix&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;far fa-sigma&#34;&gt;&lt;/i&gt; Appendix&lt;/h1&gt;
+&lt;div id=&#34;example-demand-functions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Example Demand Functions&lt;/h2&gt;
+&lt;p&gt;The examples below show how we can take a utility function and derive a demand function.&lt;/p&gt;
+&lt;div id=&#34;perfect-substitutes&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Perfect Substitutes&lt;/h3&gt;
+&lt;p&gt;Recall that perfect substitutes have indifference curves that are straight lines (constant MRS), and have a utility function of:
+&lt;span class=&#34;math display&#34;&gt;\[u(x,y)=w_1x+w_2y\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since both the budget constraint and the indifference curves are straight lines, we will not have a point of &lt;strong&gt;tangency&lt;/strong&gt; between them, but a point(s) where the lines &lt;strong&gt;intersect&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(&amp;quot;mosaic&amp;quot;)
+library(&amp;quot;ggrepel&amp;quot;)
+update_geom_defaults(&amp;quot;label&amp;quot;, list(family = &amp;quot;Fira Sans Condensed&amp;quot;))
+
+IC_s1=function(x){6-x}
+IC_s2=function(x){8-x}
+IC_s3=function(x){10-x}
+BC=function(x){4-0.5*x}
+
+point_sub&amp;lt;-tribble(
+  ~letter, ~x, ~y,
+  &amp;quot;A&amp;quot;, 8, 0
+)
+#colors&amp;lt;-c(&amp;quot;b=50/a&amp;quot; = &amp;quot;#20A387FF&amp;quot;, &amp;quot;b=25/a&amp;quot; = &amp;quot;#39568CFF&amp;quot;, &amp;quot;b=10/a&amp;quot; = &amp;quot;#39568CFF&amp;quot;)
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=IC_s1, geom=&amp;quot;line&amp;quot;, size=2, color = &amp;quot;#481567FF&amp;quot;)+
+  stat_function(fun=IC_s2, geom=&amp;quot;line&amp;quot;, size=2, color = &amp;quot;#39568CFF&amp;quot;)+
+  stat_function(fun=IC_s3, geom=&amp;quot;line&amp;quot;, size=2, color = &amp;quot;#20A387FF&amp;quot;)+
+  stat_function(fun=BC, geom=&amp;quot;line&amp;quot;, size=2, color = &amp;quot;red&amp;quot;)+
+  geom_label(aes(x=2,y=IC_s1(2)), color = &amp;quot;#481567FF&amp;quot;, label=&amp;quot;u=6&amp;quot;, size = 6)+
+  geom_label(aes(x=2,y=IC_s2(2)), color = &amp;quot;#39568CFF&amp;quot;, label=&amp;quot;u=8&amp;quot;, size = 6)+
+  geom_label(aes(x=2,y=IC_s3(2)), color = &amp;quot;#20A387FF&amp;quot;, label=&amp;quot;u=10&amp;quot;, size = 6)+
+  geom_label(aes(x=1,y=BC(1)), color = &amp;quot;red&amp;quot;, label=&amp;quot;BC&amp;quot;, size = 6)+
+  geom_point(data = point_sub,
+             mapping=aes(x=x, y=y),
+             size = 4)+
+  geom_text_repel(data = point_sub,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  coord_cartesian(clip=&amp;quot;off&amp;quot;)+
+  labs(x = &amp;quot;a&amp;quot;,
+       y = &amp;quot;b&amp;quot;,
+       title = &amp;quot;Optimal Consumption for Substitutes&amp;quot;,
+      caption = expression(paste(u(x,y)==x+y, &amp;quot;, &amp;quot;, m, &amp;quot; = $20.00, &amp;quot;, p[x],&amp;quot; = $2.50, &amp;quot;, p[y],&amp;quot; = $5.00&amp;quot;, sep=&amp;quot; &amp;quot;)))+
+  theme_classic(base_family = &amp;quot;Fira Sans Condensed&amp;quot;, base_size=20)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.6-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;There are three possible cases,&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;if &lt;span class=&#34;math inline&#34;&gt;\(p_x&amp;gt;p_y\)&lt;/span&gt;, the slope of the budget constraint is flatter than the slope of the indifference “curves.” The optimal bundle is spending &lt;em&gt;all&lt;/em&gt; income on good &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;if &lt;span class=&#34;math inline&#34;&gt;\(p_x&amp;lt;p_y\)&lt;/span&gt;, the slope of the budget constraint is steeper than the slope of the indifference “curves.” The optimal bundle is spending &lt;em&gt;all&lt;/em&gt; income on good &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;if &lt;span class=&#34;math inline&#34;&gt;\(p_x=p_y\)&lt;/span&gt;, the budget constraint and indifference “curves” are &lt;em&gt;the same line&lt;/em&gt;, so &lt;em&gt;any point&lt;/em&gt; on the lines is optimal!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first two cases are known as “&lt;strong&gt;corner solutions&lt;/strong&gt;,” where a consumer chooses all of one good, and none of another. Note perfect substitutes are &lt;em&gt;not convex&lt;/em&gt;, and violate the assumption that “averages are preferred to extremes.”&lt;/p&gt;
+&lt;p&gt;We can therefore write the &lt;strong&gt;demand function for good x&lt;/strong&gt; (and similarly for y):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[q_d^x = \begin{cases} \frac{m}{p_x} &amp;amp; \text{When } p_x &amp;lt; p_y\\
+\text{any number between 0 and } \frac{m}{p_x} &amp;amp; \text{When } p_x=p_y\\
+0 &amp;amp; \text{When } p_x &amp;gt; p_y\\ \end{cases}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;perfect-complements&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Perfect Complements&lt;/h3&gt;
+&lt;p&gt;Recall that perfect complements have indifference curves that are right angles, and have a utility function of:
+&lt;span class=&#34;math display&#34;&gt;\[u(x,y)=\min \{w_1x,w_2y\}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The optimal choice must always be at the &lt;strong&gt;corner&lt;/strong&gt; of the indifference “curves.”&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(&amp;quot;mosaic&amp;quot;)
+library(&amp;quot;ggrepel&amp;quot;)
+update_geom_defaults(&amp;quot;label&amp;quot;, list(family = &amp;quot;Fira Sans Condensed&amp;quot;))
+
+BC_c=function(x){6-x}
+
+point_comp&amp;lt;-tribble(
+  ~letter, ~x, ~y,
+  &amp;quot;A&amp;quot;, 3, 3
+)
+
+ggplot(data.frame(x=c(0,5)), aes(x=x))+
+  stat_function(fun=BC_c, geom=&amp;quot;line&amp;quot;, size=2, color = &amp;quot;red&amp;quot;)+
+  geom_label(aes(x=1,y=BC_c(1)), color = &amp;quot;red&amp;quot;, label=&amp;quot;BC&amp;quot;, size = 6)+
+  geom_segment(aes(x=2, xend=2, y=10, yend=2), size=1, color=&amp;quot;#453781FF&amp;quot;)+
+  geom_segment(aes(x=2, xend=10, y=2, yend=2), size=1, color=&amp;quot;#453781FF&amp;quot;)+
+  geom_segment(aes(x=3, xend=3, y=10, yend=3), size=1, color=&amp;quot;#20A387FF&amp;quot;)+
+  geom_segment(aes(x=3, xend=10, y=3, yend=3), size=1, color=&amp;quot;#20A387FF&amp;quot;)+
+  geom_label(aes(x=9, y=2), size=6, color=&amp;quot;#453781FF&amp;quot;, label=&amp;quot;u=2&amp;quot;)+
+  geom_label(aes(x=9, y=3), size=6, color=&amp;quot;#20A387FF&amp;quot;, label=&amp;quot;u=3&amp;quot;)+
+  geom_point(data = point_comp,
+             mapping=aes(x=x, y=y),
+             size = 4)+
+  geom_text_repel(data = point_comp,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = 6)+
+  scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = &amp;quot;x&amp;quot;,
+       y = &amp;quot;y&amp;quot;,
+       title = &amp;quot;Optimal Consumption for Complements&amp;quot;,
+      caption = expression(paste(u(x,y)==min(x,y), &amp;quot;, &amp;quot;, m, &amp;quot; = $20.00, &amp;quot;, p[x],&amp;quot; = $2.50, &amp;quot;, p[u],&amp;quot; = $2.50&amp;quot;, sep=&amp;quot; &amp;quot;)))+
+  theme_classic(base_family = &amp;quot;Fira Sans Condensed&amp;quot;, base_size=20)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.6-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The consumer is purchasing equal amounts of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; in this example, no matter what the prices are of either, so &lt;span class=&#34;math inline&#34;&gt;\(x=y\)&lt;/span&gt;. We must satisfy the budget constraint, that &lt;span class=&#34;math inline&#34;&gt;\(p_xx+p_yx=m\)&lt;/span&gt; (recall &lt;span class=&#34;math inline&#34;&gt;\(y=x\)&lt;/span&gt;). Solving this for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; gives us the &lt;strong&gt;demand function for good x&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[q_D^x=q_D^y=\frac{m}{p_x+p_y}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This should be intuitive: the consumer must always purchase equal amounts of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;, so it’s as if the consumer was spending all of their income on a single good &lt;span class=&#34;math inline&#34;&gt;\((x+y)\)&lt;/span&gt; that has a price of &lt;span class=&#34;math inline&#34;&gt;\((p_x+p_y)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cobb-douglas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cobb-Douglas&lt;/h2&gt;
+&lt;p&gt;Now we come to a more realistic demand function. If a consumer has a Cobb-Douglas utility function&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;
+&lt;span class=&#34;math display&#34;&gt;\[u(x,y)= a \ln x+ b \ln y\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Then we are solving the following constrained optimization problem:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\max_{x,y} a \ln x + b \ln y\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\text{subject to } p_xx+p_yy=m\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I will solve this using the Lagrangian method.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mathbb{L}=a \: ln \: x + b \: ln \: y - \lambda(p_x x + p_y y - m)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The First Order Conditions are:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{\partial \mathbb{L}}{\partial x} = \frac{a}{x}-\lambda p_x &amp;amp;= 0\\
+\frac{\partial \mathbb{L}}{\partial y} = \frac{b}{y}-\lambda p_y &amp;amp;= 0\\
+\frac{\partial \mathbb{L}}{\partial \lambda} = p_xx+p_yy-m &amp;amp;= 0\\ \end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Rearranging the first two FOCs:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+a&amp;amp;=\lambda p_x x\\
+b&amp;amp;=\lambda p_y y\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Adding them together:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+a+b&amp;amp;=\lambda(p_xx+p_yy)\\
+a+b&amp;amp;=\lambda m\\ \end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Solving for &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\lambda=\frac{a+b}{m}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substitute this back into each of the first two FOCs and solve for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;, respectively, to get:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+x&amp;amp;=\frac{a}{a+b}\frac{m}{p_x}\\
+y&amp;amp;=\frac{b}{a+b} \frac{m}{p_y}\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;These are the &lt;strong&gt;demand functions&lt;/strong&gt; for goods &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;. One of the &lt;strong&gt;convenient properties&lt;/strong&gt; of Cobb-Douglas preferences is that a consumer &lt;em&gt;spends a constant fraction of income&lt;/em&gt; &lt;span class=&#34;math inline&#34;&gt;\((\frac{a}{a+b})\)&lt;/span&gt; &lt;em&gt;on good &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;&lt;/em&gt;, and &lt;em&gt;the complement fraction&lt;/em&gt; &lt;span class=&#34;math inline&#34;&gt;\((\frac{b}{a+b})\)&lt;/span&gt; &lt;em&gt;on good &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;&lt;/em&gt;!^This becomes especially simple when the exponents &lt;span class=&#34;math inline&#34;&gt;\(a+b=1\)&lt;/span&gt;, as in:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[u(x,y)=x^ay^{(1-a)} \quad \quad \text{where 0 &amp;lt; a &amp;lt; 1}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(1-a\)&lt;/span&gt; are proportions of &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;!]&lt;/p&gt;
+&lt;p&gt;For a constant value of &lt;span class=&#34;math inline&#34;&gt;\(p_x\)&lt;/span&gt;, this is a linear function of &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;. So doubling, tripling, etc. &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; will double, triple, etc. quantity demanded for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;. So the income expansion path (&lt;a href=&#34;https://microf21.classes.ryansafner.com/class/1.7-class&#34;&gt;see previous class&lt;/a&gt;) is a straight line through the origin with a slope &lt;span class=&#34;math inline&#34;&gt;\(\frac{a}{p_x}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;div id=&#34;example&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;EXAMPLE&lt;/h3&gt;
+&lt;p&gt;Suppose a consumer has a utility function&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[u(x,y)=x^{0.5}y^{0.5}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and faces constraints of &lt;span class=&#34;math inline&#34;&gt;\(m=50\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(p_a=10\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(p_b=5\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\max_{x,y} x^{0.5}y^{0.5}\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\text{subject to } 10x+5y=50\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Write the Lagrangian (and taking logs of the objective function, for simplicity):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mathbb{L} = 0.5 \: ln \: x+0.5 \: ln \: y-\lambda(10x+5y-50)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;FOCs are:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{\partial \mathbb{L}}{\partial x} = \frac{0.5}{x}-10\lambda &amp;amp;= 0 \\
+\frac{\partial \mathbb{L}}{\partial y} = \frac{0.5}{y}-5\lambda &amp;amp;= 0 \\
+\frac{\partial \mathbb{L}}{\partial \lambda} = 10x+5y-50 &amp;amp;= 0\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Rearrange the first two FOCs:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+0.5&amp;amp;=10 \lambda x\\
+0.5&amp;amp;=5 \lambda y\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Add then together, and solve for &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+1&amp;amp;=\lambda(10x+5y)\\
+1&amp;amp;=\lambda(50)\\
+\frac{1}{50}&amp;amp;=\lambda\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now substitute lambda into each of the first two FOCs, solving for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;, respectively:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{0.5}{x}&amp;amp;=10(\frac{1}{50})\\
+10x&amp;amp;=0.5(50)\\
+x&amp;amp;=2.5\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{0.5}{y}&amp;amp;=5(\frac{1}{50})\\
+10x&amp;amp;=0.5(50)\\
+y&amp;amp;=5\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This consumer buys 2.5 units of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; at $10/each ($25) and 5 units of &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; at $5/each ($25), spending all $50.&lt;/p&gt;
+&lt;p&gt;Recall the utility function is&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[u(x, y)=\sqrt{xy}=x^{0.5}y^{0.5}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Note the Cobb-Douglas exponents on &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; are equal and sum to 1: &lt;span class=&#34;math inline&#34;&gt;\((a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(1-a=0.5)\)&lt;/span&gt;. So the consumer spends &lt;span class=&#34;math inline&#34;&gt;\(a=50\%\)&lt;/span&gt; of her income on &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(1-a=50\%\)&lt;/span&gt; on &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;To get the &lt;strong&gt;demand functions&lt;/strong&gt; for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;, go back to the FOCs, and keep all budget constraint terms as variables &lt;span class=&#34;math inline&#34;&gt;\((p_x, p_y, m)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{\partial \mathbb{L}}{\partial x} = \frac{0.5}{x}-p_x\lambda &amp;amp;= 0 \\
+\frac{\partial \mathbb{L}}{\partial y} = \frac{0.5}{y}-p_y\lambda &amp;amp;= 0 \\
+\frac{\partial \mathbb{L}}{\partial \lambda} = p_xx+p_yy-m &amp;amp;= 0\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Rearrange the first two FOCs:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+0.5&amp;amp;=p_x \lambda a\\
+0.5&amp;amp;=p_y \lambda y\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Add then together, and solve for &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+1&amp;amp;=\lambda(p_xx+p_yy)\\
+1&amp;amp;=\lambda(m)\\
+\frac{1}{m}&amp;amp;=\lambda\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substitute this back into each of the first two FOCs and solve for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;, respectively, to get:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{0.5}{x}-p_x\lambda&amp;amp;=0\\
+\frac{0.5}{x}-p_x \left(\frac{1}{m}\right)&amp;amp;=0\\
+\frac{0.5}{x}&amp;amp;=\frac{p_x}{m}\\
+p_xx&amp;amp;=0.5m\\
+x&amp;amp;=0.5\frac{m}{p_x}\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{0.5}{y}-p_y\lambda&amp;amp;=0\\
+\frac{0.5}{y}-p_y \left(\frac{1}{m}\right)&amp;amp;=0\\
+\frac{0.5}{y}&amp;amp;=\frac{p_y}{m}\\
+p_yy&amp;amp;=0.5m\\
+y&amp;amp;=0.5\frac{m}{p_y}\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;These are the &lt;strong&gt;demand functions&lt;/strong&gt; for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and for &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;.&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note if we want to &lt;em&gt;graph&lt;/em&gt; this, we need to find the &lt;strong&gt;inverse demand function&lt;/strong&gt; by solving for &lt;span class=&#34;math inline&#34;&gt;\(p_x\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+x&amp;amp;=0.5\frac{m}{p_x} \\
+p_xx&amp;amp;=0.5m\\
+p_x&amp;amp;=0.5\frac{m}{x} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now we can graph a demand function for a given amount of income. As income changes, the demand curve shifts. Here are two examples, one where &lt;span class=&#34;math inline&#34;&gt;\(m=20\)&lt;/span&gt; and another where &lt;span class=&#34;math inline&#34;&gt;\(m=40\)&lt;/span&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(&amp;quot;mosaic&amp;quot;)
+library(&amp;quot;ggrepel&amp;quot;)
+
+cd1=function(x){0.5*20/x}
+cd2=function(x){0.5*40/x}
+
+point_sub&amp;lt;-tribble(
+  ~letter, ~x, ~y,
+  &amp;quot;A&amp;quot;, 8, 0
+)
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=cd1, geom=&amp;quot;line&amp;quot;, size=2, color = &amp;quot;blue&amp;quot;)+
+  stat_function(fun=cd2, geom=&amp;quot;line&amp;quot;, size=2, color = &amp;quot;blue&amp;quot;, linetype=&amp;quot;dashed&amp;quot;)+
+  geom_label(aes(x=3,y=cd1(3)), color = &amp;quot;blue&amp;quot;, label=&amp;quot;Demand: m=20&amp;quot;, size = 6)+
+  geom_label(aes(x=6,y=cd2(6)), color = &amp;quot;blue&amp;quot;, label=&amp;quot;Demand: m=40&amp;quot;, size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste(&amp;quot;$&amp;quot;, x, sep=&amp;quot;&amp;quot;)})+
+  coord_cartesian(clip=&amp;quot;off&amp;quot;)+
+  labs(x = &amp;quot;Quantity of x&amp;quot;,
+       y = &amp;quot;Price of x&amp;quot;,
+       title = &amp;quot;Demand Curve&amp;quot;,
+      caption = expression(p_x==0.5*m/x))+
+  theme_classic(base_family = &amp;quot;Fira Sans Condensed&amp;quot;, base_size=20)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.6-content_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Note: Natural logs &lt;a href=&#34;https://microf19.classes.ryansafner.com/class/05-class/#cobb-douglas-functions&#34;&gt;are easier to work with&lt;/a&gt;, this function is equivalent to &lt;span class=&#34;math inline&#34;&gt;\(u(x,y)=x^ay^b\)&lt;/span&gt;.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Note you could solve this by substitution. Use the definition of the optimum, that &lt;span class=&#34;math inline&#34;&gt;\(\frac{MU_x}{MU_y}=\frac{p_x}{p_y}\)&lt;/span&gt;, plug in, and solving carefully for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Note you can just take the rule learned above, that &lt;span class=&#34;math inline&#34;&gt;\(x=a\frac{m}{p_x}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y=b\frac{m}{p_y}\)&lt;/span&gt; and plug in &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt;.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>1.65 — Income and Substitution Effects — Class Content</title>
+      <link>https://microf21.classes.ryansafner.com/content/1.65-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://microf21.classes.ryansafner.com/content/1.65-content/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Section 1: &lt;em&gt;Wednesday, February 17, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Section 2: &lt;em&gt;Tuesday, February 23, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;i class=&#34;fas fa-exclamation-circle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Note to Section 2 (TuTh)&lt;/strong&gt;: Hood College &lt;a href=&#34;https://www.hood.edu/offices-services/registrars-office/academic-calendar&#34;&gt;has designated&lt;/a&gt; Thursday February 18 to be one of the four days this semester where there are no classes. There will be no video to watch — we will have our next class meeting until Tuesday, February 23.&lt;/p&gt;
+&lt;h1 id=&#34;i-classfas-fa-info-circle-fa-lgi-overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h1&gt;
+&lt;p&gt;Today we cover the third effect in the individual demand function: the (own) price effect, aka the &lt;strong&gt;law of demand&lt;/strong&gt;: how changes in a good&amp;rsquo;s (own) price affect quantity demanded for that good.&lt;/p&gt;
+&lt;p&gt;We introduce the idea of (simplified, own-price) demand functions, inverse demand functions, and a demand curve. I will also show you examples of how we derive demand functions and curves.&lt;/p&gt;
+&lt;p&gt;The other major concept today is breaking apart the law of demand into two effects: the &lt;strong&gt;(real) income effect&lt;/strong&gt;, and the &lt;strong&gt;substitution effect&lt;/strong&gt;. We considering them conceptually and graphically. These can be a difficult concept for students to grasp.&lt;/p&gt;
+&lt;h1 id=&#34;i-classfas-fa-book-reader-fa-lgi-readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 2.2, 5.3, in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;i-classfas-fa-chalkboard-teacheri-slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;interactive-examples&#34;&gt;Interactive Examples&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ryansafner.shinyapps.io/Consumer/&#34;&gt;Visualizing the Consumer&amp;rsquo;s Problem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ryansafner.shinyapps.io/Consumer_changes/&#34;&gt;Visualizing Changes in the Consumer&amp;rsquo;s Problem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ryansafner.shinyapps.io/Demand/&#34;&gt;Visualizing Demand Shifters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are examples that I wrote in R/Shiny in the past, to visualize what it is we are looking at. As I find more time, I will update these and integrate them into our slides, but until then, I will just post links.&lt;/p&gt;
+&lt;p&gt;The first is a visual example of the static (one-time) Consumer&amp;rsquo;s problem. You can adjust things about the (Cobb-Douglas) utility function, income, and prices, and see how it would affect the graph and the optimum.&lt;/p&gt;
+&lt;p&gt;The second is a visual example of dynamic changes in the Consumer&amp;rsquo;s problem. The consumer starts at a pre-defined optimum. You can adjust any of the budget constraint parameters &lt;code&gt;\((m, p_x, p_y)\)&lt;/code&gt;, and see how it would affect a new optimum, which you can &lt;em&gt;compare&lt;/em&gt; the the original optimum.&lt;/p&gt;
+&lt;p&gt;The third is a visual example of a hypothetical demand function for beer, with preference intensity, income, price of nachos (a complement), and price of wine (a substitute) as inputs to the function. Based on some pre-defined functions (in the background), you can change any of the inputs and see how it would affect the (inverse) demand function, expressed as a simple demand curve.&lt;/p&gt;
+&lt;p&gt;I hope some time to clean these up and make a few more, such as &amp;ldquo;Visualizing the Income and Substitution Effects&amp;rdquo; and &amp;ldquo;Estimating a Demand Function from Real World Data.&amp;rdquo;&lt;/p&gt;
+&lt;h1 id=&#34;i-classfas-fa-laptop-codei-assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
+&lt;h2 id=&#34;problem-set-1-due&#34;&gt;Problem Set 1 Due&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; &lt;strong&gt;is due&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;h2 id=&#34;problem-set-2-due-sun-feb-28&#34;&gt;Problem Set 2 Due Sun Feb 28&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;h2 id=&#34;exam-1-week-of-mar-1&#34;&gt;Exam 1 Week of Mar 1&lt;/h2&gt;
+&lt;p&gt;If you see on the schedule, we will quickly complete the materials needed for Exam 1. Expect it to be the week of March 1, with more details coming by early next week.&lt;/p&gt;
+&lt;h1 id=&#34;i-classfar-fa-sigmai-appendix&#34;&gt;&lt;i class=&#34;far fa-sigma&#34;&gt;&lt;/i&gt; Appendix&lt;/h1&gt;
+&lt;h2 id=&#34;example-demand-functions&#34;&gt;Example Demand Functions&lt;/h2&gt;
+&lt;p&gt;The examples below show how we can take a utility function and derive a demand function.&lt;/p&gt;
+&lt;h3 id=&#34;perfect-substitutes&#34;&gt;Perfect Substitutes&lt;/h3&gt;
+&lt;p&gt;Recall that perfect substitutes have indifference curves that are straight lines (constant MRS), and have a utility function of:
+&lt;code&gt;$$u(x,y)=w_1x+w_2y$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Since both the budget constraint and the indifference curves are straight lines, we will not have a point of &lt;strong&gt;tangency&lt;/strong&gt; between them, but a point(s) where the lines &lt;strong&gt;intersect&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;library(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;mosaic&amp;#34;&lt;/span&gt;)
+library(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;ggrepel&amp;#34;&lt;/span&gt;)
+update_geom_defaults(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;label&amp;#34;&lt;/span&gt;, list(family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;))
+
+IC_s1=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;-x}
+IC_s2=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;8&lt;/span&gt;-x}
+IC_s3=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;-x}
+BC=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;4-0.5&lt;/span&gt;*x}
+
+point_sub&amp;lt;-tribble(
+  ~letter, ~x, ~y,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;8&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;
+)
+&lt;span style=&#34;color:#007f7f&#34;&gt;#colors&amp;lt;-c(&amp;#34;b=50/a&amp;#34; = &amp;#34;#20A387FF&amp;#34;, &amp;#34;b=25/a&amp;#34; = &amp;#34;#39568CFF&amp;#34;, &amp;#34;b=10/a&amp;#34; = &amp;#34;#39568CFF&amp;#34;)&lt;/span&gt;
+
+ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;)), aes(x=x))+
+  stat_function(fun=IC_s1, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#481567FF&amp;#34;&lt;/span&gt;)+
+  stat_function(fun=IC_s2, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#39568CFF&amp;#34;&lt;/span&gt;)+
+  stat_function(fun=IC_s3, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#20A387FF&amp;#34;&lt;/span&gt;)+
+  stat_function(fun=BC, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;,y=IC_s1(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)), color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#481567FF&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;u=6&amp;#34;&lt;/span&gt;, size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;,y=IC_s2(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)), color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#39568CFF&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;u=8&amp;#34;&lt;/span&gt;, size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;,y=IC_s3(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;)), color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#20A387FF&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;u=10&amp;#34;&lt;/span&gt;, size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;,y=BC(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;)), color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;BC&amp;#34;&lt;/span&gt;, size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  geom_point(data = point_sub,
+             mapping=aes(x=x, y=y),
+             size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;4&lt;/span&gt;)+
+  geom_text_repel(data = point_sub,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+    scale_x_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_y_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  coord_cartesian(clip=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;off&amp;#34;&lt;/span&gt;)+
+  labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;a&amp;#34;&lt;/span&gt;,
+       y = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;b&amp;#34;&lt;/span&gt;,
+       title = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Optimal Consumption for Substitutes&amp;#34;&lt;/span&gt;,
+      caption = expression(paste(u(x,y)==x+y, &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;, &amp;#34;&lt;/span&gt;, m, &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $20.00, &amp;#34;&lt;/span&gt;, p[x],&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $2.50, &amp;#34;&lt;/span&gt;, p[y],&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $5.00&amp;#34;&lt;/span&gt;, sep=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt;)))+
+  theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.65-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;There are three possible cases,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;if &lt;code&gt;\(p_x&amp;gt;p_y\)&lt;/code&gt;, the slope of the budget constraint is flatter than the slope of the indifference &amp;ldquo;curves.&amp;rdquo; The optimal bundle is spending &lt;em&gt;all&lt;/em&gt; income on good &lt;code&gt;\(x\)&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;if &lt;code&gt;\(p_x&amp;lt;p_y\)&lt;/code&gt;, the slope of the budget constraint is steeper than the slope of the indifference &amp;ldquo;curves.&amp;rdquo; The optimal bundle is spending &lt;em&gt;all&lt;/em&gt; income on good &lt;code&gt;\(y\)&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;if &lt;code&gt;\(p_x=p_y\)&lt;/code&gt;, the budget constraint and indifference &amp;ldquo;curves&amp;rdquo; are &lt;em&gt;the same line&lt;/em&gt;, so &lt;em&gt;any point&lt;/em&gt; on the lines is optimal!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first two cases are known as &amp;ldquo;&lt;strong&gt;corner solutions&lt;/strong&gt;,&amp;rdquo; where a consumer chooses all of one good, and none of another. Note perfect substitutes are &lt;em&gt;not convex&lt;/em&gt;, and violate the assumption that &amp;ldquo;averages are preferred to extremes.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;We can therefore write the &lt;strong&gt;demand function for good x&lt;/strong&gt; (and similarly for y):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$q_d^x = \begin{cases} \frac{m}{p_x} &amp;amp; \text{When } p_x &amp;lt; p_y\\ \text{any number between 0 and } \frac{m}{p_x} &amp;amp; \text{When } p_x=p_y\\ 0 &amp;amp; \text{When } p_x &amp;gt; p_y\\ \end{cases}$$&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;perfect-complements&#34;&gt;Perfect Complements&lt;/h3&gt;
+&lt;p&gt;Recall that perfect complements have indifference curves that are right angles, and have a utility function of:
+&lt;code&gt;$$u(x,y)=\min \{w_1x,w_2y\}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The optimal choice must always be at the &lt;strong&gt;corner&lt;/strong&gt; of the indifference &amp;ldquo;curves.&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;library(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;mosaic&amp;#34;&lt;/span&gt;)
+library(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;ggrepel&amp;#34;&lt;/span&gt;)
+update_geom_defaults(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;label&amp;#34;&lt;/span&gt;, list(family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;))
+
+BC_c=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;-x}
+
+point_comp&amp;lt;-tribble(
+  ~letter, ~x, ~y,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;
+)
+
+ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;5&lt;/span&gt;)), aes(x=x))+
+  stat_function(fun=BC_c, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;,y=BC_c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;)), color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;BC&amp;#34;&lt;/span&gt;, size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  geom_segment(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, xend=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, y=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;, yend=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;), size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#453781FF&amp;#34;&lt;/span&gt;)+
+  geom_segment(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, xend=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;, y=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, yend=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;), size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#453781FF&amp;#34;&lt;/span&gt;)+
+  geom_segment(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;, xend=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;, y=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;, yend=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;), size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#20A387FF&amp;#34;&lt;/span&gt;)+
+  geom_segment(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;, xend=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;, y=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;, yend=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;), size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#20A387FF&amp;#34;&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;9&lt;/span&gt;, y=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;), size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#453781FF&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;u=2&amp;#34;&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;9&lt;/span&gt;, y=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;), size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;, color=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;#20A387FF&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;u=3&amp;#34;&lt;/span&gt;)+
+  geom_point(data = point_comp,
+             mapping=aes(x=x, y=y),
+             size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;4&lt;/span&gt;)+
+  geom_text_repel(data = point_comp,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  scale_x_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_y_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;,
+       y = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;,
+       title = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Optimal Consumption for Complements&amp;#34;&lt;/span&gt;,
+      caption = expression(paste(u(x,y)==min(x,y), &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;, &amp;#34;&lt;/span&gt;, m, &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $20.00, &amp;#34;&lt;/span&gt;, p[x],&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $2.50, &amp;#34;&lt;/span&gt;, p[u],&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $2.50&amp;#34;&lt;/span&gt;, sep=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt;)))+
+  theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.65-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The consumer is purchasing equal amounts of &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt; in this example, no matter what the prices are of either, so &lt;code&gt;\(x=y\)&lt;/code&gt;. We must satisfy the budget constraint, that &lt;code&gt;\(p_xx+p_yx=m\)&lt;/code&gt; (recall &lt;code&gt;\(y=x\)&lt;/code&gt;). Solving this for &lt;code&gt;\(x\)&lt;/code&gt; gives us the &lt;strong&gt;demand function for good x&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$q_D^x=q_D^y=\frac{m}{p_x+p_y}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This should be intuitive: the consumer must always purchase equal amounts of &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt;, so it&amp;rsquo;s as if the consumer was spending all of their income on a single good &lt;code&gt;\((x+y)\)&lt;/code&gt; that has a price of &lt;code&gt;\((p_x+p_y)\)&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;cobb-douglas&#34;&gt;Cobb-Douglas&lt;/h2&gt;
+&lt;p&gt;Now we come to a more realistic demand function. If a consumer has a Cobb-Douglas utility function^[Note: Natural logs &lt;a href=&#34;https://microf19.classes.ryansafner.com/class/05-class/#cobb-douglas-functions&#34;&gt;are easier to work with&lt;/a&gt;, this function is equivalent to &lt;code&gt;\(u(x,y)=x^ay^b\)&lt;/code&gt;.]
+&lt;code&gt;$$u(x,y)= a \ln x+ b \ln y$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then we are solving the following constrained optimization problem:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\max_{x,y} a \ln x + b \ln y$$&lt;/code&gt;
+&lt;code&gt;$$\text{subject to } p_xx+p_yy=m$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I will solve this using the Lagrangian method.^[Note you could solve this by substitution. Use the definition of the optimum, that &lt;code&gt;\(\frac{MU_x}{MU_y}=\frac{p_x}{p_y}\)&lt;/code&gt;, plug in, and solving carefully for &lt;code&gt;\(x\)&lt;/code&gt;.]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\mathbb{L}=a \: ln \: x + b \: ln \: y - \lambda(p_x x + p_y y - m)$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The First Order Conditions are:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} \frac{\partial \mathbb{L}}{\partial x} = \frac{a}{x}-\lambda p_x &amp;amp;= 0\\ \frac{\partial \mathbb{L}}{\partial y} = \frac{b}{y}-\lambda p_y &amp;amp;= 0\\ \frac{\partial \mathbb{L}}{\partial \lambda} = p_xx+p_yy-m &amp;amp;= 0\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Rearranging the first two FOCs:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} a&amp;amp;=\lambda p_x x\\ b&amp;amp;=\lambda p_y y\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Adding them together:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} a+b&amp;amp;=\lambda(p_xx+p_yy)\\ a+b&amp;amp;=\lambda m\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Solving for &lt;code&gt;\(\lambda\)&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\lambda=\frac{a+b}{m}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Substitute this back into each of the first two FOCs and solve for &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt;, respectively, to get:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} x&amp;amp;=\frac{a}{a+b}\frac{m}{p_x}\\ y&amp;amp;=\frac{b}{a+b} \frac{m}{p_y}\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;These are the &lt;strong&gt;demand functions&lt;/strong&gt; for goods &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt;. One of the &lt;strong&gt;convenient properties&lt;/strong&gt; of Cobb-Douglas preferences is that a consumer &lt;em&gt;spends a constant fraction of income&lt;/em&gt; &lt;code&gt;\((\frac{a}{a+b})\)&lt;/code&gt; &lt;em&gt;on good &lt;code&gt;\(x\)&lt;/code&gt;&lt;/em&gt;, and &lt;em&gt;the complement fraction&lt;/em&gt; &lt;code&gt;\((\frac{b}{a+b})\)&lt;/code&gt; &lt;em&gt;on good &lt;code&gt;\(y\)&lt;/code&gt;&lt;/em&gt;!^This becomes especially simple when the exponents &lt;code&gt;\(a+b=1\)&lt;/code&gt;, as in:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$u(x,y)=x^ay^{(1-a)} \quad \quad \text{where 0 &amp;lt; a &amp;lt; 1}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;So &lt;code&gt;\(a\)&lt;/code&gt; and &lt;code&gt;\(1-a\)&lt;/code&gt; are proportions of &lt;code&gt;\(m\)&lt;/code&gt;!]&lt;/p&gt;
+&lt;p&gt;For a constant value of &lt;code&gt;\(p_x\)&lt;/code&gt;, this is a linear function of &lt;code&gt;\(m\)&lt;/code&gt;. So doubling, tripling, etc. &lt;code&gt;\(m\)&lt;/code&gt; will double, triple, etc. quantity demanded for &lt;code&gt;\(x\)&lt;/code&gt;. So the income expansion path (&lt;a href=&#34;https://microf21.classes.ryansafner.com/class/1.7-class&#34;&gt;see previous class&lt;/a&gt;) is a straight line through the origin with a slope &lt;code&gt;\(\frac{a}{p_x}\)&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;example&#34;&gt;EXAMPLE&lt;/h3&gt;
+&lt;p&gt;Suppose a consumer has a utility function&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$u(x,y)=x^{0.5}y^{0.5}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and faces constraints of &lt;code&gt;\(m=50\)&lt;/code&gt;, &lt;code&gt;\(p_a=10\)&lt;/code&gt;, &lt;code&gt;\(p_b=5\)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\max_{x,y} x^{0.5}y^{0.5}$$&lt;/code&gt;
+&lt;code&gt;$$\text{subject to } 10x+5y=50$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Write the Lagrangian (and taking logs of the objective function, for simplicity):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\mathbb{L} = 0.5 \: ln \: x+0.5 \: ln \: y-\lambda(10x+5y-50)$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;FOCs are:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} \frac{\partial \mathbb{L}}{\partial x} = \frac{0.5}{x}-10\lambda &amp;amp;= 0 \\ \frac{\partial \mathbb{L}}{\partial y} = \frac{0.5}{y}-5\lambda &amp;amp;= 0 \\ \frac{\partial \mathbb{L}}{\partial \lambda} = 10x+5y-50 &amp;amp;= 0\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Rearrange the first two FOCs:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} 0.5&amp;amp;=10 \lambda x\\ 0.5&amp;amp;=5 \lambda y\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Add then together, and solve for &lt;code&gt;\(\lambda\)&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} 1&amp;amp;=\lambda(10x+5y)\\ 1&amp;amp;=\lambda(50)\\ \frac{1}{50}&amp;amp;=\lambda\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now substitute lambda into each of the first two FOCs, solving for &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt;, respectively:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} \frac{0.5}{x}&amp;amp;=10(\frac{1}{50})\\ 10x&amp;amp;=0.5(50)\\ x&amp;amp;=2.5\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} \frac{0.5}{y}&amp;amp;=5(\frac{1}{50})\\ 10x&amp;amp;=0.5(50)\\ y&amp;amp;=5\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This consumer buys 2.5 units of &lt;code&gt;\(x\)&lt;/code&gt; at $10/each ($25) and 5 units of &lt;code&gt;\(y\)&lt;/code&gt; at $5/each ($25), spending all $50.&lt;/p&gt;
+&lt;p&gt;Recall the utility function is&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$u(x, y)=\sqrt{xy}=x^{0.5}y^{0.5}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Note the Cobb-Douglas exponents on &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt; are equal and sum to 1: &lt;code&gt;\((a\)&lt;/code&gt; and &lt;code&gt;\(1-a=0.5)\)&lt;/code&gt;. So the consumer spends &lt;code&gt;\(a=50\%\)&lt;/code&gt; of her income on &lt;code&gt;\(x\)&lt;/code&gt;, and &lt;code&gt;\(1-a=50\%\)&lt;/code&gt; on &lt;code&gt;\(y\)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To get the &lt;strong&gt;demand functions&lt;/strong&gt; for &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt;, go back to the FOCs, and keep all budget constraint terms as variables &lt;code&gt;\((p_x, p_y, m)\)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} \frac{\partial \mathbb{L}}{\partial x} = \frac{0.5}{x}-p_x\lambda &amp;amp;= 0 \\ \frac{\partial \mathbb{L}}{\partial y} = \frac{0.5}{y}-p_y\lambda &amp;amp;= 0 \\ \frac{\partial \mathbb{L}}{\partial \lambda} = p_xx+p_yy-m &amp;amp;= 0\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Rearrange the first two FOCs:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} 0.5&amp;amp;=p_x \lambda a\\ 0.5&amp;amp;=p_y \lambda y\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Add then together, and solve for &lt;code&gt;\(\lambda\)&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} 1&amp;amp;=\lambda(p_xx+p_yy)\\ 1&amp;amp;=\lambda(m)\\ \frac{1}{m}&amp;amp;=\lambda\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Substitute this back into each of the first two FOCs and solve for &lt;code&gt;\(x\)&lt;/code&gt;, and &lt;code&gt;\(y\)&lt;/code&gt;, respectively, to get:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} \frac{0.5}{x}-p_x\lambda&amp;amp;=0\\ \frac{0.5}{x}-p_x \left(\frac{1}{m}\right)&amp;amp;=0\\ \frac{0.5}{x}&amp;amp;=\frac{p_x}{m}\\ p_xx&amp;amp;=0.5m\\ x&amp;amp;=0.5\frac{m}{p_x}\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} \frac{0.5}{y}-p_y\lambda&amp;amp;=0\\ \frac{0.5}{y}-p_y \left(\frac{1}{m}\right)&amp;amp;=0\\ \frac{0.5}{y}&amp;amp;=\frac{p_y}{m}\\ p_yy&amp;amp;=0.5m\\ y&amp;amp;=0.5\frac{m}{p_y}\\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;These are the &lt;strong&gt;demand functions&lt;/strong&gt; for &lt;code&gt;\(x\)&lt;/code&gt; and for &lt;code&gt;\(y\)&lt;/code&gt;.^[Note you can just take the rule learned above, that &lt;code&gt;\(x=a\frac{m}{p_x}\)&lt;/code&gt; and &lt;code&gt;\(y=b\frac{m}{p_y}\)&lt;/code&gt; and plug in &lt;code&gt;\(a\)&lt;/code&gt; and &lt;code&gt;\(b\)&lt;/code&gt;.]&lt;/p&gt;
+&lt;p&gt;Note if we want to &lt;em&gt;graph&lt;/em&gt; this, we need to find the &lt;strong&gt;inverse demand function&lt;/strong&gt; by solving for &lt;code&gt;\(p_x\)&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$$\begin{align*} x&amp;amp;=0.5\frac{m}{p_x} \\ p_xx&amp;amp;=0.5m\\ p_x&amp;amp;=0.5\frac{m}{x} \\ \end{align*}$$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now we can graph a demand function for a given amount of income. As income changes, the demand curve shifts. Here are two examples, one where &lt;code&gt;\(m=20\)&lt;/code&gt; and another where &lt;code&gt;\(m=40\)&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;library(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;mosaic&amp;#34;&lt;/span&gt;)
+library(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;ggrepel&amp;#34;&lt;/span&gt;)
+
+cd1=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.5&lt;/span&gt;*&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;/x}
+cd2=function(x){&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.5&lt;/span&gt;*&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;40&lt;/span&gt;/x}
+
+point_sub&amp;lt;-tribble(
+  ~letter, ~x, ~y,
+  &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;8&lt;/span&gt;, &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;
+)
+
+ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;)), aes(x=x))+
+  stat_function(fun=cd1, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;blue&amp;#34;&lt;/span&gt;)+
+  stat_function(fun=cd2, geom=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;, size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;2&lt;/span&gt;, color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;blue&amp;#34;&lt;/span&gt;, linetype=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;dashed&amp;#34;&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;,y=cd1(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;3&lt;/span&gt;)), color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;blue&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Demand: m=20&amp;#34;&lt;/span&gt;, size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+  geom_label(aes(x=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;,y=cd2(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)), color = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;blue&amp;#34;&lt;/span&gt;, label=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Demand: m=40&amp;#34;&lt;/span&gt;, size = &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;6&lt;/span&gt;)+
+    scale_x_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)))+
+  scale_y_continuous(breaks=seq(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;),
+                     limits=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;10&lt;/span&gt;),
+                     expand=expand_scale(mult=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.1&lt;/span&gt;)),
+                     labels = function(x){paste(&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;$&amp;#34;&lt;/span&gt;, x, sep=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)})+
+  coord_cartesian(clip=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;off&amp;#34;&lt;/span&gt;)+
+  labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Quantity of x&amp;#34;&lt;/span&gt;,
+       y = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Price of x&amp;#34;&lt;/span&gt;,
+       title = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Demand Curve&amp;#34;&lt;/span&gt;,
+      caption = expression(p_x==&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.5&lt;/span&gt;*m/x))+
+  theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.65-content_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>1.7 — Price Elasticity — Class Content</title>
+      <link>https://microf21.classes.ryansafner.com/content/1.7-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://microf21.classes.ryansafner.com/content/1.7-content/</guid>
+      <description>
+&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#practice&#34;&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#example-applications-of-consumer-theory-models&#34;&gt;Example Applications of Consumer Theory Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-1-answers-posted&#34;&gt;Problem Set 1 Answers Posted&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-2-due-sun-feb-28&#34;&gt;Problem Set 2 Due Sun Feb 28&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#exam-1-week-of-mar-1&#34;&gt;Exam 1 Week of Mar 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Section 1: &lt;em&gt;Monday, February 22, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Section 2: &lt;em&gt;Thursday, February 25, 2021&lt;/em&gt;&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h1&gt;
+&lt;p&gt;Today we wrap up Unit 1 by talking more extensively about demand curves and simple demand functions (relating price and quantity demanded of a good, &lt;em&gt;ceterus paribus&lt;/em&gt;). We also (re-)introduce the idea of &lt;strong&gt;price elasticity of demand&lt;/strong&gt; that measures a person’s responsiveness in consumption to a change in that good’s price. However, unlike what you learned in principles&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; we look at the elasticity of &lt;em&gt;any point on the demand curve&lt;/em&gt; using a more useful formula:
+&lt;span class=&#34;math display&#34;&gt;\[\epsilon_{q,p}=\frac{1}{slope} \times \frac{p}{q}\]&lt;/span&gt;
+where slope refers to the slope of the &lt;em&gt;inverse&lt;/em&gt; demand curve (the one that we graph).&lt;/p&gt;
+&lt;p&gt;We will look at the key relationship between price elasticity of demand and total revenue,&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; and work on some &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.7-practice&#34;&gt;practice problems&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To allow you to work on &lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-exam&#34;&gt;Exam 1&lt;/a&gt; (see below), there will be &lt;strong&gt;no class&lt;/strong&gt; on &lt;strong&gt;Monday Mar 1&lt;/strong&gt; (for section 1 M/W) or &lt;strong&gt;Thursday Mar 4&lt;/strong&gt; (for section 2 Tu/Th).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 2.2, 2.5, 5.5, in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.7-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.7-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.7-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;practice&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/h1&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.7-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example-applications-of-consumer-theory-models&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Example Applications of Consumer Theory Models&lt;/h1&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/CT_Application_1_Uncertainty.pdf&#34;&gt;Uncertainty&lt;/a&gt;: We have examined cases where outcomes are &lt;em&gt;certain&lt;/em&gt;. What if outcomes are not guaranteed, but are &lt;em&gt;uncertain&lt;/em&gt; (i.e. probabilistic)? Things like your health, your investments, and the integrity of your property (from theft, natural disasters, war, etc) certainly fall into this category. For this reason, we take out &lt;em&gt;insurance&lt;/em&gt; on valuable things that have some probability of significantly losing their value. Let’s explore how Consumer Theory can make our actions more intelligible.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/CT_Application_2_Exchange.pdf&#34;&gt;Exchange&lt;/a&gt;: We have examined the case of a single individual (a consumer) making optimal choices given market prices, income, and their preferences. In one sense, an economy is just a collection of millions of these individuals all doing the same thing. But economics truly begins where at the more important stage where these individuals interact and exchange &lt;em&gt;with one another.&lt;/em&gt; In particular, we want to examine how relative prices and income are &lt;em&gt;determined&lt;/em&gt; in an economy (up until now we simply &lt;em&gt;assumed&lt;/em&gt; them as given parameters). They must come from somewhere! – the interactions of individuals buying and selling with one another, responding in order to balance supply and demand. This is where the study of (general) &lt;strong&gt;equilibrium&lt;/strong&gt; comes from, and what the traditional Supply and Demand model captures in its simplifications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/CT_Application_3_Taxation.pdf&#34;&gt;Taxation&lt;/a&gt;: This handout uses consumer theory to answer a simple question: &lt;strong&gt;which is better for consumers, a consumption tax (tax per unit), or an equivalent income tax that raises the same amount of revenue for the government?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;Intertemporal Choice (TBD)&lt;/a&gt;: All of our models thus far have only looked at present consumption and ignored any element of &lt;em&gt;time.&lt;/em&gt; We can also look at &lt;em&gt;intertemporal choice&lt;/em&gt;, that is, consumption decisions over time. This often touches on topics that most consider “macroeconomics,” concepts like interest rates, borrowing, lending, etc. However, these “big picture” ideas must come from actual individual decisions to consume or to save, aggregated across many individuals. Even macroeconomic theories often require “micro-foundations.” Abstract and complex concepts like interest are actually just applications of relative price theory–interest itself is a relative price of consumption today vs. consumption in the future!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
+&lt;div id=&#34;problem-set-1-answers-posted&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Problem Set 1 Answers Posted&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; answers are posted on that page. Grades will be updated on Blackboard.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;problem-set-2-due-sun-feb-28&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Problem Set 2 Due Sun Feb 28&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exam-1-week-of-mar-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exam 1 Week of Mar 1&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignments/01-exam&#34;&gt;Exam 1&lt;/a&gt; (on 1.1-1.7) will be next week, please read that page for much more information. We save some time for review on class on Wednesday Feb 24 (Section 1) and Tuesday Mar 2 (Section 2).&lt;/p&gt;
+&lt;p&gt;To allow you to work on the exam, there will be &lt;strong&gt;no class&lt;/strong&gt; on &lt;strong&gt;Monday Mar 1&lt;/strong&gt; (for section 1 M/W) or &lt;strong&gt;Thursday Mar 4&lt;/strong&gt; (for section 2 Tu/Th).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Section 2, because of no class on Thursday Feb 18, is a class behind.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Arc-price elasticity using the midpoint between two points on the demand curve: &lt;span class=&#34;math display&#34;&gt;\[\cfrac{\frac{q_{2}-q_{1}}{\left(\frac{q_{1}+q_{2}}{2}\right)}}{\frac{p_{2}-p_{1}}{\left(\frac{p_{1}+p_{2}}{2}\right)}}\]&lt;/span&gt;
+This actually calculates the elasticity of a single point, the one midway between &lt;span class=&#34;math inline&#34;&gt;\((q_1,p_1)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\((q_2,p_2)\)&lt;/span&gt;.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Total expenditure, from the perspective of the buyer.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2.1 — Production, Specialization, and Firms — Class Content</title>
+      <link>https://microf21.classes.ryansafner.com/content/2.1-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://microf21.classes.ryansafner.com/content/2.1-content/</guid>
+      <description>
+&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#exam-1-week-of-mar-1&#34;&gt;Exam 1 Week of Mar 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Section 1: &lt;em&gt;Wednesday, March 3, 2021&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Section 2: &lt;em&gt;Thursday, March 11, 2021&lt;/em&gt;&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h1&gt;
+&lt;p&gt;Today we start looking on the supply side of the market for the next few weeks. You will ultimately see, we will use the same tools (and get basically the same results!) for studying producers (constrained optimization models) as we did for consumers. Sometimes, these models finally “click” for students the second time around, and production is often more intuitive than utility and consumption.&lt;/p&gt;
+&lt;p&gt;Today we set up the problem, and discuss what it is that firms do. If you want to learn a lot more about the economics of organization and theory of the firm, see my &lt;a href=&#34;https://ios20.classes.ryansafner.com&#34;&gt;Industrial Organization class&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the beginning, I introduce the canonical model of comparative advantage as a way to explore a lot of insights about production, the division of labor, specialization and trade, and the theory of the firm. Do not get too distracted in the graphs or mechanics of this model (though it should echo things that we have seen before), it is only a useful segue for what we will cover in the next 2-3 weeks. If you want to know more, I do a deep dive with these models to explain &lt;a href=&#34;https://tradef20.classes.ryansafner.com&#34;&gt;international trade in ECON 324&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 14.4&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;, 6.1, in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/2.1-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/2.1-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/2.1-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
+&lt;div id=&#34;exam-1-week-of-mar-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exam 1 Week of Mar 1&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignments/01-exam&#34;&gt;Exam 1&lt;/a&gt; (on 1.1-1.7) is currently available on Blackboard Assignments, and is due by 11:59 PM Sunday March 7 (for Section 1 M/W) or Wednesday March 10 (for Section 2 Tu/Th).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Section 2, because of no class on Thursday Feb 18 and Tuesday Mar 9, is 2 classes behind Section 1.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;On the production possibilities frontier.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

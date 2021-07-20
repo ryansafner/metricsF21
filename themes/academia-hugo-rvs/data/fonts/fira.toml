@@ -1,0 +1,17 @@
+# Font style metadata
+name = "fira"
+
+# Optional Google font URL
+google_fonts = "Fira+Sans+Condensed:400,400i,700,700i|Fira+Mono:400,700)"
+
+#|Overpass:400,400i,700,700i"
+
+# Font families
+heading_font = "Fira Sans Condensed"
+body_font = "Fira Sans Condensed"
+nav_font = "Fira Sans Condensed"
+mono_font = "Fira Mono"
+
+# Font size
+font_size = "20"
+font_size_small = "16"
