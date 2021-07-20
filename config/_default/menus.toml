@@ -23,11 +23,20 @@
   url = "/schedule/"
   weight = 30
 
+[[main]]
+  name = "Assignments"
+  url = "/assignments/"
+  weight = 35
 
 [[main]]
   name = "Resources"
   url = "resources/"
   weight = 40
+
+[[main]]
+  name = "Rstudio.Cloud"
+  url = "https://rstudio.cloud/"
+  weight = 50
 
 #[[main]]
 #  name = "Contact"

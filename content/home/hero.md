@@ -8,7 +8,7 @@ weight = 10  # Order that this section will appear.
 title = "Academia"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "micro_hex.png"
+hero_media = "metrics_hex.png"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -43,14 +43,14 @@ hero_media = "micro_hex.png"
 
 +++
 
-# Microeconomic Analysis
+# Econometrics
 
-## ECON 306 • Fall 2021 • Hood College
+## ECON 480 • Fall 2021 • Hood College
 
-### Learn the common tools and techniques that economists use to model the world around you.
+### Learn how to analyze data using the canonical models of econometics with R.
 
 By the end of this course, you will:
 
-1. apply the models of microeconomics (constrained optimization and equilibrium) towards explaining real world behavior of individuals, firms, & governments
-2. explore the effects of economic and political processes on market performance (competition, market prices, profits and losses, property rights, entrepreneurship, market power, market failures, public policy, government failures)
-3. apply the economic way of thinking to real world issues in writing
+1. understand how to evaluate statistical and empirical claims;
+2. use the fundamental models of causal inference and research design;
+3. gather, analyze, and communicate with real data in R.

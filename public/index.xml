@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ECON 306 — Microeconomic Analysis</title>
-    <link>https://microf21.classes.ryansafner.com/</link>
-    <description>Recent content on ECON 306 — Microeconomic Analysis</description>
+    <title>ECON 480 — Econometrics</title>
+    <link>https://metricsf21.classes.ryansafner.com/</link>
+    <description>Recent content on ECON 480 — Econometrics</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>[CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) {year} by Ryan Safner</copyright>
     <lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://microf21.classes.ryansafner.com/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://metricsf21.classes.ryansafner.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Overview</title>
-      <link>https://microf21.classes.ryansafner.com/content/</link>
-      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+      <link>https://metricsf21.classes.ryansafner.com/content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/content/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/content/</guid>
       <description>
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Each class session has a set of required readings that you should complete &lt;strong&gt;&lt;em&gt;before&lt;/em&gt;&lt;/strong&gt; watching the lecture.&lt;/p&gt;
@@ -33,67 +33,67 @@
     
     <item>
       <title>Resources</title>
-      <link>https://microf21.classes.ryansafner.com/resources/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <link>https://metricsf21.classes.ryansafner.com/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/resources/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/resources/</guid>
       <description>&lt;p&gt;Look here over the course of the semester for resources, links, and tips on how to succeed in the course, how to write well, and other things of interest related to (micro)economics.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>https://microf21.classes.ryansafner.com/talk/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      
-      <guid>https://microf21.classes.ryansafner.com/talk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://microf21.classes.ryansafner.com/publication/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://microf21.classes.ryansafner.com/publication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Posts</title>
-      <link>https://microf21.classes.ryansafner.com/post/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://microf21.classes.ryansafner.com/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Slides</title>
-      <link>https://microf21.classes.ryansafner.com/slides/</link>
+      <link>https://metricsf21.classes.ryansafner.com/slides/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/slides/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/slides/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://microf21.classes.ryansafner.com/project/</link>
+      <link>https://metricsf21.classes.ryansafner.com/project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/project/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://metricsf21.classes.ryansafner.com/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://metricsf21.classes.ryansafner.com/publication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://metricsf21.classes.ryansafner.com/talk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/talk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Schedule</title>
-      <link>https://microf21.classes.ryansafner.com/schedule/</link>
+      <link>https://metricsf21.classes.ryansafner.com/schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/schedule/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/schedule/</guid>
       <description>
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/schedule/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/schedule/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;This page contains all of the following resources for each class meeting:&lt;/p&gt;
@@ -126,15 +126,15 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/00-preliminary-survey/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/00-preliminary-survey/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.1 The Tools of Microeconomics&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/1.1-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.1-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.1-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.1-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -144,11 +144,11 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.2 Budget Constraint&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/1.2-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.2-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.2-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.2-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.2-practice/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.2-practice/&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -156,9 +156,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.3 Preferences&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/1.3-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.3-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.3-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -168,11 +168,11 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.4 Utility Maximization&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/1.4-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.4-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.4-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.4-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.4-practice/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.4-practice/&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -186,17 +186,17 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.5 Demand&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/1.5-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.5-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.5-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.5-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.5-practice/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.5-practice/&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -204,9 +204,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.6 Income and Substitution Effects&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/1.6-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.6-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.6-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -216,11 +216,11 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.7 Price Elasticity&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/1.7-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.7-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.7-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.7-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.7-practice/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.7-practice/&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -234,7 +234,7 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/02-problem-set/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/02-problem-set/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
@@ -246,7 +246,7 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-exam/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-exam/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
@@ -261,9 +261,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.1 Production, Specialization, and Firms&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/2.1-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.1-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/2.1-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.1-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -273,9 +273,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.2 Short Run and Long Run Production&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/2.2-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/2.2-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.2-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -285,11 +285,11 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.3 Cost Minimization&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/2.3-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.3-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/2.3-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.3-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/2.3-practice/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/2.3-practice/&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -303,15 +303,15 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/03-problem-set/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/03-problem-set/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.4 Costs of Production&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/2.4-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.4-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/2.4-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.4-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -321,11 +321,11 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.5 Short Run Profit Maximization&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/2.5-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.5-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/2.5-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.5-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/2.5-practice/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/2.5-practice/&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -333,9 +333,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.6 Long Run Industry Equilibrium&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/2.6-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.6-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/2.6-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.6-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -351,7 +351,7 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/04-problem-set/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/04-problem-set/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
@@ -363,7 +363,7 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/02-exam/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/02-exam/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
@@ -378,9 +378,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.1 The Supply and Demand Model&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/3.1-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.1-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/3.1-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.1-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -390,11 +390,11 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.2 Market Competition and Surpluses&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/3.2-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.2-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/3.2-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.2-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/3.2-practice/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/3.2-practice/&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -402,9 +402,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.3 Entrepreneurship, Profits, &amp;amp; Prices&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/3.3-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.3-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/3.3-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.3-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -414,9 +414,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.4 Welfare Economics &amp;amp; Market Failures&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/3.4-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.4-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/3.4-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.4-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -426,9 +426,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.5 Political Economy&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/3.5-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.5-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/3.5-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.5-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -444,7 +444,7 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/05-problem-set/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/05-problem-set/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
@@ -459,11 +459,11 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.1 Modeling Firms with Market Power&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/4.1-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/4.1-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/4.1-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/4.1-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/4.1-practice/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/4.1-practice/&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -471,9 +471,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.2 Consequences and Sources of Market Power&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/4.2-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/4.2-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/4.2-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/4.2-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -483,11 +483,11 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.3 Pricing Strategies&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/4.3-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/4.3-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/4.3-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/4.3-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/4.3-practice/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/4.3-practice/&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -495,11 +495,11 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.4 Factor Markets: Labor Markets&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/4.4-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/4.4-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/4.4-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/4.4-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/4.4-practice/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/4.4-practice/&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -507,9 +507,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.5 Monopolistic Competition and Oligopoly&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/4.5-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/4.5-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/4.5-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/4.5-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -519,9 +519,9 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.6 Contestable Markets and Wrap Up&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/content/4.6-content/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/4.6-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/4.6-slides/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/4.6-slides/&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -537,7 +537,7 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/06-problem-set/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/06-problem-set/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
@@ -549,7 +549,7 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/op-ed/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/op-ed/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
@@ -561,7 +561,7 @@
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/03-exam/&#34;&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/03-exam/&#34;&gt;
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
 
@@ -574,14 +574,14 @@
     
     <item>
       <title>Syllabus</title>
-      <link>https://microf21.classes.ryansafner.com/syllabus/</link>
+      <link>https://metricsf21.classes.ryansafner.com/syllabus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/syllabus/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/syllabus/</guid>
       <description>
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/syllabus/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/syllabus/index_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://microf21.classes.ryansafner.com/syllabus/index_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/syllabus/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/syllabus/index_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://metricsf21.classes.ryansafner.com/syllabus/index_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -627,7 +627,7 @@
         &lt;h3&gt;Course details&lt;/h3&gt;
         &lt;ul class=&#34;icon-list&#34;&gt;
             
-            &lt;li&gt;&lt;i class=&#34;far fa-clock&#34;&gt;&lt;/i&gt; MW 2:40—4:05 PM&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;far fa-clock&#34;&gt;&lt;/i&gt; TuTh 11:25 AM—12:50 PM&lt;/li&gt;
             
             &lt;li&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt; Rosenstock 1&lt;/li&gt;
             &lt;li&gt;&lt;i class=&#34;far fa-calendar-alt&#34;&gt;&lt;/i&gt; Aug 23—Dec 14, 2021&lt;/li&gt;
@@ -670,7 +670,7 @@
 &lt;li&gt;Demonstrate effective oral and written communications skills for personal and professional success[…]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Fair warning:&lt;/span&gt; &lt;strong&gt;Economics is hard.&lt;/strong&gt; &lt;em&gt;This, in particular, may be of the hardest courses that you will take, primarily due to the mathematical content.&lt;/em&gt; Using the economic way of thinking is a skill, it is literally retraining your brain to interpret and analyze the world in a novel way, and is not something that can be memorized. I will do my best to make this class intuitive and helpful, if not interesting. If at any point you find yourself struggling in this course for any reason, please come see me. Do not suffer in silence! Coming to see me for help does not diminish my view of you, in fact I will hold you in &lt;em&gt;higher&lt;/em&gt; regard for understanding your own needs and taking charge of your own learning. There are also a some fantastic resources on campus, such as the &lt;a href=&#34;http://www.hood.edu/campus-services/academic-services/index.html&#34;&gt;Center for Academic Achievement and Retention (CAAR)&lt;/a&gt; and the &lt;a href=&#34;http://www.hood.edu/library/&#34;&gt;Beneficial-Hodson Library&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;See my &lt;a href=&#34;https://microf21.classes.ryansafner.com/reference#tips&#34;&gt;tips for success in this course&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See my &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/reference#tips&#34;&gt;tips for success in this course&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;required-course-materials&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Required Course materials&lt;/h1&gt;

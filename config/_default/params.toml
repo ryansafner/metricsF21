@@ -181,13 +181,13 @@ sharing = false
   officehours = "Office Hours: TBD"
 
 [course]
-  number = "ECON 306"
+  number = "ECON 480"
   semester = "Fall 2021"
   #days = "MW"
-  time = "MW 2:40—4:05 PM"
+  time = "TuTh 11:25 AM—12:50 PM"
   location = "Rosenstock 1"
   dates = "Aug 23—Dec 14, 2021"
-  github = "ryansafner/microF21"
+  github = "ryansafner/metricsF21"
   copyrightYear = "2021"
   slack = "https://hoodcollegeeconomics.slack.com"
 

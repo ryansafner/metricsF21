@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Overview on ECON 306 — Microeconomic Analysis</title>
-    <link>https://microf21.classes.ryansafner.com/content/</link>
-    <description>Recent content in Overview on ECON 306 — Microeconomic Analysis</description>
+    <title>Overview on ECON 480 — Econometrics</title>
+    <link>https://metricsf21.classes.ryansafner.com/content/</link>
+    <description>Recent content in Overview on ECON 480 — Econometrics</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>[CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) {year} by Ryan Safner</copyright>
-    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://microf21.classes.ryansafner.com/content/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://metricsf21.classes.ryansafner.com/content/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>1.3 — Preferences — Class Content</title>
-      <link>https://microf21.classes.ryansafner.com/content/1.3-content/</link>
+      <link>https://metricsf21.classes.ryansafner.com/content/1.3-content/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/content/1.3-content/</guid>
-      <description>&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+      <guid>https://metricsf21.classes.ryansafner.com/content/1.3-content/</guid>
+      <description>&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
 &lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
     &lt;em&gt;Monday, February 1, 2021&lt;/em&gt;
@@ -37,7 +36,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;i-classfas-fa-info-circle-fa-lgi-overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
 &lt;p&gt;From last class, we know what constraints individuals face in the market (represented by the budget constraint), but how do people make the choices they do? We must now enter the more controversial&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; realm of modeling preferences.&lt;/p&gt;
-&lt;p&gt;As I mentioned in &lt;a href=&#34;https://microf21.classes.ryansafner.com/content/1.2-content&#34;&gt;last class’ page&lt;/a&gt;, a lot of the “in the weeds” details about preference assumptions, indifference curves, and utility functions are a waste of your time. If you look at the textbook chapter, I am skipping a lot of “the fat,” and relegating it to an appendix at the bottom of this page.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; Again, I reiterate that if you are interested in more advanced economics training, it is &lt;em&gt;essential&lt;/em&gt; that you master all of these details. But not for this course.&lt;/p&gt;
+&lt;p&gt;As I mentioned in &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.2-content&#34;&gt;last class’ page&lt;/a&gt;, a lot of the “in the weeds” details about preference assumptions, indifference curves, and utility functions are a waste of your time. If you look at the textbook chapter, I am skipping a lot of “the fat,” and relegating it to an appendix at the bottom of this page.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; Again, I reiterate that if you are interested in more advanced economics training, it is &lt;em&gt;essential&lt;/em&gt; that you master all of these details. But not for this course.&lt;/p&gt;
 &lt;p&gt;Today we focus on the essential tools for fitting preferences into our optimization model:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;indifference curves&lt;/strong&gt;: each of which is the set of all bundles that one is &lt;em&gt;indifferent between&lt;/em&gt; (and that give the same amount utility)&lt;/li&gt;
@@ -47,18 +46,18 @@
 &lt;h2 id=&#34;i-classfas-fa-book-reader-fa-lgi-readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 4.1-4.2 in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Math Review Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Math Review Guide&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;i-classfas-fa-chalkboard-teacheri-slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.3-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.3-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.3-slides.html&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/1.3-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.3-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.3-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;i-classfas-fa-dumbbelli-practice&#34;&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/h2&gt;
-&lt;p&gt;Answers from last class’ &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.2-practice&#34;&gt;practice problems&lt;/a&gt; are posted on that page.&lt;/p&gt;
+&lt;p&gt;Answers from last class’ &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.2-practice&#34;&gt;practice problems&lt;/a&gt; are posted on that page.&lt;/p&gt;
 &lt;h2 id=&#34;i-classfas-fa-laptop-codei-assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
 &lt;h3 id=&#34;problem-set-1&#34;&gt;Problem Set 1&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; (on 1.1-1.4) is due by 11:59 PM Sunday February 14 by PDF upload to Blackboard Assignments. We will learn and practice the final few concepts this problem set covers next class.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; (on 1.1-1.4) is due by 11:59 PM Sunday February 14 by PDF upload to Blackboard Assignments. We will learn and practice the final few concepts this problem set covers next class.&lt;/p&gt;
 &lt;h2 id=&#34;i-classfas-fa-sigmai-appendix-1-material-on-preferences&#34;&gt;&lt;i class=&#34;fas fa-sigma&#34;&gt;&lt;/i&gt; Appendix 1: Material on Preferences&lt;/h2&gt;
 &lt;h3 id=&#34;strict-vsweak-preferences&#34;&gt;Strict vs. Weak Preferences&lt;/h3&gt;
 &lt;p&gt;We have defined preferences as being &lt;strong&gt;strictly&lt;/strong&gt; one of the following possibilities:&lt;/p&gt;
@@ -129,7 +128,7 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
   labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;,
        y = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;)+
   theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-ass-1-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-ass-1-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Of course, this means that this entire graph is &lt;em&gt;full&lt;/em&gt; of indifference curves - every single possible point is on &lt;em&gt;some&lt;/em&gt; indifference curve (and this whole graph would just be a solid block of black). Naturally, it’s pointless to draw all the indifference curves, we just want to show a few to make our analysis meaningful. But the general idea comes from assumption 2 of preferences: &lt;em&gt;any two bundles can be compared&lt;/em&gt;, as we can compare two points on this graph and make a judgment.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Indifference curves are monotonic&lt;/strong&gt;, which means practically that “more is preferred to less”&lt;/li&gt;
@@ -173,7 +172,7 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
   labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;,
        y = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;)+
   theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-ass-2-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-ass-2-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Here’s a &lt;em&gt;challenge&lt;/em&gt;: what would indifference curves look like if one of the axes contained a &lt;em&gt;bad&lt;/em&gt;, rather than a good? In this case, we would violate the assumption of monotonicity!&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Indifference curves are convex&lt;/strong&gt;, which means in practice that “averages are preferred to extremes”&lt;/li&gt;
@@ -217,7 +216,7 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
   labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Friends Nearby&amp;#34;&lt;/span&gt;,
        y = expression(ft^2))+
   theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-as-3-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-as-3-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Here’s a &lt;em&gt;challenge&lt;/em&gt;: what would &lt;em&gt;non-convex&lt;/em&gt; (e.g. &lt;em&gt;concave&lt;/em&gt;) curves look like, and what preferences would cause that situation?&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Indifference curves can never cross&lt;/strong&gt; because we have assumed that &lt;em&gt;preferences are transitive&lt;/em&gt;.&lt;/li&gt;
@@ -259,14 +258,14 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
   labs(x = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Friends Nearby&amp;#34;&lt;/span&gt;,
        y = expression(ft^2))+
   theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-as-4-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content_files/figure-html/IC-as-4-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;steepness--indifference-curves-for-neutrals&#34;&gt;Steepness &amp;amp; Indifference Curves for Neutrals&lt;/h3&gt;
 &lt;p&gt;The Steepness of indifference curves tells us how consumers trade off between goods.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Perfectly vertical curves (left) &lt;code&gt;\(\implies\)&lt;/code&gt; indifference between having more (point B) or fewer (point A) downloads. There is no tradeoff a person would make to acquire more Downloads, they truly &lt;em&gt;do not care&lt;/em&gt; about them at all. Thus, on the left graph, Downloads would be a neutral.&lt;/p&gt;
 &lt;p&gt;Perfectly horizontal curves (right) &lt;code&gt;\(\implies\)&lt;/code&gt; indifference between having more (point B) or fewer (point A) Tickets. There is no tradeoff a person would make to acquire more Tickets, they truly do not care about them at all. Thus, on the right graph, Tickets would be a neutral.&lt;/p&gt;
 &lt;p&gt;We can look at less extreme cases:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;On the left graph, the flatter curve implies the person is willing to give up &lt;em&gt;only a few&lt;/em&gt; Downloads to obtain more Tickets (and vice versa). &lt;code&gt;\(MRS_{T,D}\)&lt;/code&gt; (slope) is small, indicating downloads are more highly valued relative to tickets.&lt;/p&gt;
 &lt;p&gt;On the right graph, the steeper curve implies the person is willing to give up &lt;em&gt;a lot&lt;/em&gt; Downloads to obtain more Tickets (and vice versa). &lt;code&gt;\(MRS_{T,D}\)&lt;/code&gt; (slope) is large, indicating downloads are less valued relative to tickets.&lt;/p&gt;
 &lt;h1 id=&#34;i-classfas-fa-sigmai-math-appendix&#34;&gt;&lt;i class=&#34;fas fa-sigma&#34;&gt;&lt;/i&gt; Math Appendix&lt;/h1&gt;
@@ -359,7 +358,7 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
        y = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;b&amp;#34;&lt;/span&gt;,
        title = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Indifference curves for u(a,b)=ab&amp;#34;&lt;/span&gt;)+
   theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;utility-functions-for-perfect-substitutes&#34;&gt;Utility Functions for Perfect Substitutes&lt;/h3&gt;
 &lt;p&gt;Perfect substitutes produce straight lines for indifference curves. A straight line has a constant slope, which is interpretted as the MRS being constant - you should always be willing to substitute between the two goods at the same rate. The utility function looks like:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$$u(x,y)=w_xx+w_yy$$&lt;/code&gt;&lt;/p&gt;
@@ -370,7 +369,7 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
 &lt;p&gt;&lt;code&gt;$$u_{L_{1},L_{2}}=1L_{1}+2L_{2}$$&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The relative weights here are 1 for 1-Liter bottles and 2 for 2-Liter bottles, because 2-Liter bottles are “worth” twice as much for you (it takes two 1-Liter bottles to match a 2-Liter bottle!).&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\(MRS_{L_{1},L_{2}}=-\frac{w_x}{w_y} = -\frac{1}{2}\)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;utility-functions-for-perfect-complements&#34;&gt;Utility Functions for Perfect Complements&lt;/h3&gt;
 &lt;p&gt;Perfect complements produce right angles for indifference curves. This is technically not a mathematical function, since each &lt;code&gt;\(X\)&lt;/code&gt; value must be mapped to a single &lt;code&gt;\(Y\)&lt;/code&gt; value (i.e. no vertical lines). Thus, the utility function for perfect complements &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt; is quite unique:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$$u(x,y)=min\{w_xx,w_yy\}$$&lt;/code&gt;&lt;/p&gt;
@@ -380,7 +379,7 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
 &lt;p&gt;Consider consuming hot dogs &lt;code&gt;\((H)\)&lt;/code&gt; and buns &lt;code&gt;\((B)\)&lt;/code&gt;, that must be consumed together as a package 1:1. The utility function would be:
 &lt;code&gt;$$u(H,B)=min\{H,B\}$$&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Having 2 hot dogs and 3 buns only yields a utility of 2. Having 3 hot dogs and 2 buns also only yields a utility of 2.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;cobb-douglas-functions&#34;&gt;Cobb-Douglas Functions&lt;/h3&gt;
 &lt;p&gt;Cobb-Douglas functions (both for utility and production) are one of the most common functional forms in economics. Despite their somewhat frightening presence on the surface, they have very neat mathematical properties, and have been empirically useful as well. A Cobb-Douglas function (for utility) looks like:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$$u(x, y)=x^a y^b$$&lt;/code&gt;&lt;/p&gt;
@@ -420,10 +419,10 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
     
     <item>
       <title>1.1 — The Tools of Microeconomics — Class Content</title>
-      <link>https://microf21.classes.ryansafner.com/content/1.1-content/</link>
+      <link>https://metricsf21.classes.ryansafner.com/content/1.1-content/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/content/1.1-content/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/content/1.1-content/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     &lt;em&gt;Monday, February 1, 2021&lt;/em&gt;
@@ -444,24 +443,24 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
 &lt;li&gt;January 17, 2021, &lt;a href=&#34;https://gizmodo.com/these-monkeys-understand-economics-and-intentionally-st-1846078932?utm_medium=sharefromsite&amp;amp;utm_source=_facebook&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; These Monkeys Understand Economics and Intentionally Steal High-Ticket Items to Barter for Better Food, Study Finds&lt;/a&gt;, &lt;em&gt;Gizmodo&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;i-classfas-fa-chalkboard-teacheri-slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.1-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.1-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.1-slides.html&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/1.1-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.1-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.1-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;i-classfas-fa-dumbbelli-practice&#34;&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/h2&gt;
 &lt;p&gt;NONE&lt;/p&gt;
 &lt;h2 id=&#34;i-classfas-fa-laptop-codei-assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
 &lt;h3 id=&#34;preliminary-math-survey-due-sunday-feb-7&#34;&gt;Preliminary Math Survey Due Sunday Feb 7&lt;/h3&gt;
-&lt;p&gt;Please take the &lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/00-preliminary-survey&#34;&gt;preliminary math survey&lt;/a&gt; on your math background by 11:59 PM Sunday February 7. This will help us all have a productive course together.&lt;/p&gt;
+&lt;p&gt;Please take the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/00-preliminary-survey&#34;&gt;preliminary math survey&lt;/a&gt; on your math background by 11:59 PM Sunday February 7. This will help us all have a productive course together.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>1.2 — Budget Constraint — Class Content</title>
-      <link>https://microf21.classes.ryansafner.com/content/1.2-content/</link>
+      <link>https://metricsf21.classes.ryansafner.com/content/1.2-content/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/content/1.2-content/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/content/1.2-content/</guid>
       <description>&lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
     &lt;em&gt;Monday, February 1, 2021&lt;/em&gt;
@@ -475,26 +474,26 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
 &lt;ul&gt;
 &lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 4.3 in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
 &lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Bastiat, 1848 &lt;a href=&#34;https://www.econlib.org/library/Bastiat/basEss.html?chapter_num=4#book-reader&#34;&gt;“What is Seen and Not Seen”&lt;/a&gt;, (Section 1)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Math Review Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Math Review Guide&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Now that we are picking up the intensity and working with some models (many will be new to you at first), I recommend looking at the textbook readings &lt;em&gt;before&lt;/em&gt; each class.&lt;/p&gt;
 &lt;p&gt;If you are following the textbook, we are going a bit out of order in two ways. It ggoes straight into (a review of principles, really) supply &amp;amp; demand in Chapters 1-3. We will ultimately get to supply and demand, but if you trust me, by the time we do later this semester, you will have a &lt;em&gt;much&lt;/em&gt; richer understanding and appreciation for them, having understood &lt;strong&gt;how they represent the decisions by optimizing individuals as buyers and sellers.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;It begins &amp;ldquo;Consumer Theory&amp;rdquo; as chapter 4. It also stars with the &amp;ldquo;newer&amp;rdquo; and &amp;ldquo;weirder&amp;rdquo; stuff first — indifference curves and utility functions, and then teaches budget constraints second. I will go in the &lt;em&gt;opposite&lt;/em&gt; order to slowly acclimate you from familiar territory (linear equations) into newer tools and concepts (nonlinear functions, multivariate functions, optimization, etc). This is also a good time to review my &lt;a href=&#34;https://microf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;Math Review Guide&lt;/a&gt; for next week.&lt;/p&gt;
+&lt;p&gt;It begins &amp;ldquo;Consumer Theory&amp;rdquo; as chapter 4. It also stars with the &amp;ldquo;newer&amp;rdquo; and &amp;ldquo;weirder&amp;rdquo; stuff first — indifference curves and utility functions, and then teaches budget constraints second. I will go in the &lt;em&gt;opposite&lt;/em&gt; order to slowly acclimate you from familiar territory (linear equations) into newer tools and concepts (nonlinear functions, multivariate functions, optimization, etc). This is also a good time to review my &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;Math Review Guide&lt;/a&gt; for next week.&lt;/p&gt;
 &lt;p&gt;The Bastiat reading is perhaps one of the greatest economic parables ever written, and demonstrates the importance of opportunity cost in clear thinking (especially about policy).&lt;/p&gt;
 &lt;h3 id=&#34;optionalreferenced-readings&#34;&gt;Optional/Referenced Readings&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ryansafner.com/post/econometrics-data-science-and-causal-inference/&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Safner, 2019, &amp;ldquo;Econometrics, Data Science, and Causal Inference&amp;rdquo; (blog post)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.2-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.2-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.2-slides.html&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/1.2-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.2-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.2-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;practice&#34;&gt;Practice&lt;/h2&gt;
-&lt;p&gt;Today we will be working on &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.2-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.2-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
 &lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
 &lt;h3 id=&#34;preliminary-survey&#34;&gt;Preliminary Survey&lt;/h3&gt;
-&lt;p&gt;Again, please take the &lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/00-preliminary-survey&#34;&gt;preliminary survey&lt;/a&gt; on your math background by 11:59 PM Sunday. This will help us all have a productive course together.&lt;/p&gt;
+&lt;p&gt;Again, please take the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/00-preliminary-survey&#34;&gt;preliminary survey&lt;/a&gt; on your math background by 11:59 PM Sunday. This will help us all have a productive course together.&lt;/p&gt;
 &lt;h2 id=&#34;math-appendix&#34;&gt;Math Appendix&lt;/h2&gt;
 &lt;h3 id=&#34;budget-constraint-for-n-goods&#34;&gt;Budget Constraint for &lt;code&gt;\(n\)&lt;/code&gt; Goods&lt;/h3&gt;
 &lt;p&gt;While we can derive a lot of useful propositions and testable claims using a simple model with just 2 goods, obviously there are many orders of magnitude more goods in an economy. Economics at the graduate and professional level begins with abstract models of &lt;code&gt;\(n\)&lt;/code&gt; number of goods in an economy. Naturally, we cannot graph this, so we must deal in abstract equations and set theory:&lt;/p&gt;
@@ -513,12 +512,12 @@ As usual, this simply says that one&amp;rsquo;s total expenditures (on all goods
     
     <item>
       <title>1.4 — Utility Maximization — Class Content</title>
-      <link>https://microf21.classes.ryansafner.com/content/1.4-content/</link>
+      <link>https://metricsf21.classes.ryansafner.com/content/1.4-content/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/content/1.4-content/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/content/1.4-content/</guid>
       <description>
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -556,31 +555,31 @@ As usual, this simply says that one&amp;rsquo;s total expenditures (on all goods
 The first rule states that the slope of the indifference curve (left) equals the slope of the budget constraint (right). This is stating that the marginal benefit of consuming &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; (left) equals the marginal cost (right) of consuming &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;, and that the individual is trading off &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; at the same rate as the market is.&lt;/p&gt;
 &lt;p&gt;The second (version of the) rule, solved for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; terms on either side, shows that the marginal utility per dollar spent is equal across both (all) goods.&lt;/p&gt;
 &lt;p&gt;Both forms are often called the &lt;strong&gt;equimarginal rule&lt;/strong&gt;, that at the optimum choice, the marginal benefit equals the marginal cost (which is the marginal benefit of the next best foregone opportunity).&lt;/p&gt;
-&lt;p&gt;We will do some &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.4-practice&#34;&gt;practice&lt;/a&gt; to make sure you can solve this type of model, and then you are fully prepared for &lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We will do some &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.4-practice&#34;&gt;practice&lt;/a&gt; to make sure you can solve this type of model, and then you are fully prepared for &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;readings&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 4.4-4.5 in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Math Review Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/files/math_review_guide.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Math Review Guide&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.4-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.4-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.4-slides.html&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/1.4-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.4-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.4-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;practice&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/h1&gt;
-&lt;p&gt;Today we will be working on &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.4-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.4-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;assignments&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
 &lt;div id=&#34;problem-set-1-due-wed-feb-17&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Problem Set 1 Due Wed Feb 17&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; (on 1.1-1.4) is due by 11:59 PM &lt;strong&gt;Wednesday&lt;/strong&gt; February &lt;strong&gt;17&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; (on 1.1-1.4) is due by 11:59 PM &lt;strong&gt;Wednesday&lt;/strong&gt; February &lt;strong&gt;17&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;math-appendix&#34; class=&#34;section level1&#34;&gt;
@@ -708,12 +707,12 @@ x_n^* &amp;amp;= x_n^M(p_1,\cdots,p_n,m)\\
     
     <item>
       <title>1.5 — Demand — Class Content</title>
-      <link>https://microf21.classes.ryansafner.com/content/1.5-content/</link>
+      <link>https://metricsf21.classes.ryansafner.com/content/1.5-content/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/content/1.5-content/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/content/1.5-content/</guid>
       <description>
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -740,7 +739,7 @@ x_n^* &amp;amp;= x_n^M(p_1,\cdots,p_n,m)\\
 &lt;p&gt;An individual’s &lt;strong&gt;demand function&lt;/strong&gt; (often just called &lt;strong&gt;“demand”&lt;/strong&gt;) for a particular good describes how that person optimally responds to changes in market conditions. While in truth, many things factor into one’s demand for a good, we are simplifying the model to relate a person’s quantity demanded of a good to three things: the price of that good (“own” price), the price of &lt;em&gt;other&lt;/em&gt; goods, and the person’s income. When we look only at the relationship between quantity demanded and the good’s price (holding constant the other two things — other prices, and income), this is the familiar &lt;strong&gt;demand curve&lt;/strong&gt; you see on supply and demand graphs from principles.&lt;/p&gt;
 &lt;p&gt;Today, we look only at how changes in &lt;em&gt;income&lt;/em&gt; or changes in the prices of &lt;em&gt;other&lt;/em&gt; goods can affect your quantity demanded for a good.&lt;/p&gt;
 &lt;p&gt;In doing so, we also introduce a major empirical tool that we will return to many times: an &lt;em&gt;elasticity.&lt;/em&gt; You’ve seen one elasticity before: the price elasticity of demand, and probably calculated it using the “midpoint formula.” There’s a lot more to elasticity (and a lot of other kinds of elasticities!) than that. We will see two varieties today, and will spend most of a lecture on price elasticity, two class periods from now.&lt;/p&gt;
-&lt;p&gt;Today we will be working on &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.6-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.6-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;readings&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h1&gt;
@@ -750,24 +749,24 @@ x_n^* &amp;amp;= x_n^M(p_1,\cdots,p_n,m)\\
 &lt;/div&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.5-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.5-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.5-slides.html&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/1.5-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.5-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.5-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;practice&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/h1&gt;
-&lt;p&gt;Today we will be working on &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.6-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.6-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;assignments&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
 &lt;div id=&#34;problem-set-1-due-wed-feb-17&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Problem Set 1 Due Wed Feb 17&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; (on 1.1-1.4) is due by 11:59 PM &lt;strong&gt;Wednesday&lt;/strong&gt; February &lt;strong&gt;17&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; (on 1.1-1.4) is due by 11:59 PM &lt;strong&gt;Wednesday&lt;/strong&gt; February &lt;strong&gt;17&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;problem-set-2-due-sun-feb-28&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Problem Set 2 Due Sun Feb 28&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;exam-1-week-of-mar-1&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Exam 1 Week of Mar 1&lt;/h2&gt;
@@ -779,12 +778,12 @@ x_n^* &amp;amp;= x_n^M(p_1,\cdots,p_n,m)\\
     
     <item>
       <title>1.6 — Income and Substitution Effects — Class Content</title>
-      <link>https://microf21.classes.ryansafner.com/content/1.6-content/</link>
+      <link>https://metricsf21.classes.ryansafner.com/content/1.6-content/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/content/1.6-content/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/content/1.6-content/</guid>
       <description>
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -832,9 +831,9 @@ x_n^* &amp;amp;= x_n^M(p_1,\cdots,p_n,m)\\
 &lt;/div&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.6-slides.html&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/1.6-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.6-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;interactive-examples&#34; class=&#34;section level1&#34;&gt;
@@ -854,11 +853,11 @@ x_n^* &amp;amp;= x_n^M(p_1,\cdots,p_n,m)\\
 &lt;h1&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
 &lt;div id=&#34;problem-set-1-due&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Problem Set 1 Due&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; &lt;strong&gt;is due&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; &lt;strong&gt;is due&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;problem-set-2-due-sun-feb-28&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Problem Set 2 Due Sun Feb 28&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;exam-1-week-of-mar-1&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Exam 1 Week of Mar 1&lt;/h2&gt;
@@ -918,7 +917,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
        title = &amp;quot;Optimal Consumption for Substitutes&amp;quot;,
       caption = expression(paste(u(x,y)==x+y, &amp;quot;, &amp;quot;, m, &amp;quot; = $20.00, &amp;quot;, p[x],&amp;quot; = $2.50, &amp;quot;, p[y],&amp;quot; = $5.00&amp;quot;, sep=&amp;quot; &amp;quot;)))+
   theme_classic(base_family = &amp;quot;Fira Sans Condensed&amp;quot;, base_size=20)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.6-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.6-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;There are three possible cases,&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;if &lt;span class=&#34;math inline&#34;&gt;\(p_x&amp;gt;p_y\)&lt;/span&gt;, the slope of the budget constraint is flatter than the slope of the indifference “curves.” The optimal bundle is spending &lt;em&gt;all&lt;/em&gt; income on good &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;.&lt;/li&gt;
@@ -974,7 +973,7 @@ ggplot(data.frame(x=c(0,5)), aes(x=x))+
        title = &amp;quot;Optimal Consumption for Complements&amp;quot;,
       caption = expression(paste(u(x,y)==min(x,y), &amp;quot;, &amp;quot;, m, &amp;quot; = $20.00, &amp;quot;, p[x],&amp;quot; = $2.50, &amp;quot;, p[u],&amp;quot; = $2.50&amp;quot;, sep=&amp;quot; &amp;quot;)))+
   theme_classic(base_family = &amp;quot;Fira Sans Condensed&amp;quot;, base_size=20)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.6-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.6-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The consumer is purchasing equal amounts of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; in this example, no matter what the prices are of either, so &lt;span class=&#34;math inline&#34;&gt;\(x=y\)&lt;/span&gt;. We must satisfy the budget constraint, that &lt;span class=&#34;math inline&#34;&gt;\(p_xx+p_yx=m\)&lt;/span&gt; (recall &lt;span class=&#34;math inline&#34;&gt;\(y=x\)&lt;/span&gt;). Solving this for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; gives us the &lt;strong&gt;demand function for good x&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[q_D^x=q_D^y=\frac{m}{p_x+p_y}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;This should be intuitive: the consumer must always purchase equal amounts of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;, so it’s as if the consumer was spending all of their income on a single good &lt;span class=&#34;math inline&#34;&gt;\((x+y)\)&lt;/span&gt; that has a price of &lt;span class=&#34;math inline&#34;&gt;\((p_x+p_y)\)&lt;/span&gt;.&lt;/p&gt;
@@ -1013,7 +1012,7 @@ y&amp;amp;=\frac{b}{a+b} \frac{m}{p_y}\\
 &lt;p&gt;These are the &lt;strong&gt;demand functions&lt;/strong&gt; for goods &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;. One of the &lt;strong&gt;convenient properties&lt;/strong&gt; of Cobb-Douglas preferences is that a consumer &lt;em&gt;spends a constant fraction of income&lt;/em&gt; &lt;span class=&#34;math inline&#34;&gt;\((\frac{a}{a+b})\)&lt;/span&gt; &lt;em&gt;on good &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;&lt;/em&gt;, and &lt;em&gt;the complement fraction&lt;/em&gt; &lt;span class=&#34;math inline&#34;&gt;\((\frac{b}{a+b})\)&lt;/span&gt; &lt;em&gt;on good &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;&lt;/em&gt;!^This becomes especially simple when the exponents &lt;span class=&#34;math inline&#34;&gt;\(a+b=1\)&lt;/span&gt;, as in:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[u(x,y)=x^ay^{(1-a)} \quad \quad \text{where 0 &amp;lt; a &amp;lt; 1}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;So &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(1-a\)&lt;/span&gt; are proportions of &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;!]&lt;/p&gt;
-&lt;p&gt;For a constant value of &lt;span class=&#34;math inline&#34;&gt;\(p_x\)&lt;/span&gt;, this is a linear function of &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;. So doubling, tripling, etc. &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; will double, triple, etc. quantity demanded for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;. So the income expansion path (&lt;a href=&#34;https://microf21.classes.ryansafner.com/class/1.7-class&#34;&gt;see previous class&lt;/a&gt;) is a straight line through the origin with a slope &lt;span class=&#34;math inline&#34;&gt;\(\frac{a}{p_x}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;For a constant value of &lt;span class=&#34;math inline&#34;&gt;\(p_x\)&lt;/span&gt;, this is a linear function of &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;. So doubling, tripling, etc. &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; will double, triple, etc. quantity demanded for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;. So the income expansion path (&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/class/1.7-class&#34;&gt;see previous class&lt;/a&gt;) is a straight line through the origin with a slope &lt;span class=&#34;math inline&#34;&gt;\(\frac{a}{p_x}\)&lt;/span&gt;.&lt;/p&gt;
 &lt;div id=&#34;example&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;EXAMPLE&lt;/h3&gt;
 &lt;p&gt;Suppose a consumer has a utility function&lt;/p&gt;
@@ -1124,7 +1123,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
        title = &amp;quot;Demand Curve&amp;quot;,
       caption = expression(p_x==0.5*m/x))+
   theme_classic(base_family = &amp;quot;Fira Sans Condensed&amp;quot;, base_size=20)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.6-content_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.6-content_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1141,10 +1140,10 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
     
     <item>
       <title>1.65 — Income and Substitution Effects — Class Content</title>
-      <link>https://microf21.classes.ryansafner.com/content/1.65-content/</link>
+      <link>https://metricsf21.classes.ryansafner.com/content/1.65-content/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/content/1.65-content/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/content/1.65-content/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Section 1: &lt;em&gt;Wednesday, February 17, 2021&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Section 2: &lt;em&gt;Tuesday, February 23, 2021&lt;/em&gt;&lt;/li&gt;
@@ -1159,9 +1158,9 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 &lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 2.2, 5.3, in Goolsbee, Levitt, and Syverson, 2019&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;i-classfas-fa-chalkboard-teacheri-slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.6-slides.html&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/1.6-slides.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.6-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.6-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;interactive-examples&#34;&gt;Interactive Examples&lt;/h1&gt;
 &lt;ul&gt;
@@ -1176,9 +1175,9 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 &lt;p&gt;I hope some time to clean these up and make a few more, such as &amp;ldquo;Visualizing the Income and Substitution Effects&amp;rdquo; and &amp;ldquo;Estimating a Demand Function from Real World Data.&amp;rdquo;&lt;/p&gt;
 &lt;h1 id=&#34;i-classfas-fa-laptop-codei-assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
 &lt;h2 id=&#34;problem-set-1-due&#34;&gt;Problem Set 1 Due&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; &lt;strong&gt;is due&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 1&lt;/a&gt; &lt;strong&gt;is due&lt;/strong&gt; by PDF upload to Blackboard Assignments.&lt;/p&gt;
 &lt;h2 id=&#34;problem-set-2-due-sun-feb-28&#34;&gt;Problem Set 2 Due Sun Feb 28&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
 &lt;h2 id=&#34;exam-1-week-of-mar-1&#34;&gt;Exam 1 Week of Mar 1&lt;/h2&gt;
 &lt;p&gt;If you see on the schedule, we will quickly complete the materials needed for Exam 1. Expect it to be the week of March 1, with more details coming by early next week.&lt;/p&gt;
 &lt;h1 id=&#34;i-classfar-fa-sigmai-appendix&#34;&gt;&lt;i class=&#34;far fa-sigma&#34;&gt;&lt;/i&gt; Appendix&lt;/h1&gt;
@@ -1231,7 +1230,7 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
        title = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Optimal Consumption for Substitutes&amp;#34;&lt;/span&gt;,
       caption = expression(paste(u(x,y)==x+y, &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;, &amp;#34;&lt;/span&gt;, m, &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $20.00, &amp;#34;&lt;/span&gt;, p[x],&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $2.50, &amp;#34;&lt;/span&gt;, p[y],&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $5.00&amp;#34;&lt;/span&gt;, sep=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt;)))+
   theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.65-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.65-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;There are three possible cases,&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;if &lt;code&gt;\(p_x&amp;gt;p_y\)&lt;/code&gt;, the slope of the budget constraint is flatter than the slope of the indifference &amp;ldquo;curves.&amp;rdquo; The optimal bundle is spending &lt;em&gt;all&lt;/em&gt; income on good &lt;code&gt;\(x\)&lt;/code&gt;.&lt;/li&gt;
@@ -1283,7 +1282,7 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
        title = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Optimal Consumption for Complements&amp;#34;&lt;/span&gt;,
       caption = expression(paste(u(x,y)==min(x,y), &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;, &amp;#34;&lt;/span&gt;, m, &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $20.00, &amp;#34;&lt;/span&gt;, p[x],&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $2.50, &amp;#34;&lt;/span&gt;, p[u],&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; = $2.50&amp;#34;&lt;/span&gt;, sep=&lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt;)))+
   theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.65-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.65-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The consumer is purchasing equal amounts of &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt; in this example, no matter what the prices are of either, so &lt;code&gt;\(x=y\)&lt;/code&gt;. We must satisfy the budget constraint, that &lt;code&gt;\(p_xx+p_yx=m\)&lt;/code&gt; (recall &lt;code&gt;\(y=x\)&lt;/code&gt;). Solving this for &lt;code&gt;\(x\)&lt;/code&gt; gives us the &lt;strong&gt;demand function for good x&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$$q_D^x=q_D^y=\frac{m}{p_x+p_y}$$&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This should be intuitive: the consumer must always purchase equal amounts of &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt;, so it&amp;rsquo;s as if the consumer was spending all of their income on a single good &lt;code&gt;\((x+y)\)&lt;/code&gt; that has a price of &lt;code&gt;\((p_x+p_y)\)&lt;/code&gt;.&lt;/p&gt;
@@ -1308,7 +1307,7 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
 &lt;p&gt;These are the &lt;strong&gt;demand functions&lt;/strong&gt; for goods &lt;code&gt;\(x\)&lt;/code&gt; and &lt;code&gt;\(y\)&lt;/code&gt;. One of the &lt;strong&gt;convenient properties&lt;/strong&gt; of Cobb-Douglas preferences is that a consumer &lt;em&gt;spends a constant fraction of income&lt;/em&gt; &lt;code&gt;\((\frac{a}{a+b})\)&lt;/code&gt; &lt;em&gt;on good &lt;code&gt;\(x\)&lt;/code&gt;&lt;/em&gt;, and &lt;em&gt;the complement fraction&lt;/em&gt; &lt;code&gt;\((\frac{b}{a+b})\)&lt;/code&gt; &lt;em&gt;on good &lt;code&gt;\(y\)&lt;/code&gt;&lt;/em&gt;!^This becomes especially simple when the exponents &lt;code&gt;\(a+b=1\)&lt;/code&gt;, as in:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$$u(x,y)=x^ay^{(1-a)} \quad \quad \text{where 0 &amp;lt; a &amp;lt; 1}$$&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;So &lt;code&gt;\(a\)&lt;/code&gt; and &lt;code&gt;\(1-a\)&lt;/code&gt; are proportions of &lt;code&gt;\(m\)&lt;/code&gt;!]&lt;/p&gt;
-&lt;p&gt;For a constant value of &lt;code&gt;\(p_x\)&lt;/code&gt;, this is a linear function of &lt;code&gt;\(m\)&lt;/code&gt;. So doubling, tripling, etc. &lt;code&gt;\(m\)&lt;/code&gt; will double, triple, etc. quantity demanded for &lt;code&gt;\(x\)&lt;/code&gt;. So the income expansion path (&lt;a href=&#34;https://microf21.classes.ryansafner.com/class/1.7-class&#34;&gt;see previous class&lt;/a&gt;) is a straight line through the origin with a slope &lt;code&gt;\(\frac{a}{p_x}\)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For a constant value of &lt;code&gt;\(p_x\)&lt;/code&gt;, this is a linear function of &lt;code&gt;\(m\)&lt;/code&gt;. So doubling, tripling, etc. &lt;code&gt;\(m\)&lt;/code&gt; will double, triple, etc. quantity demanded for &lt;code&gt;\(x\)&lt;/code&gt;. So the income expansion path (&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/class/1.7-class&#34;&gt;see previous class&lt;/a&gt;) is a straight line through the origin with a slope &lt;code&gt;\(\frac{a}{p_x}\)&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;example&#34;&gt;EXAMPLE&lt;/h3&gt;
 &lt;p&gt;Suppose a consumer has a utility function&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$$u(x,y)=x^{0.5}y^{0.5}$$&lt;/code&gt;&lt;/p&gt;
@@ -1372,18 +1371,18 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
        title = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Demand Curve&amp;#34;&lt;/span&gt;,
       caption = expression(p_x==&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0.5&lt;/span&gt;*m/x))+
   theme_classic(base_family = &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Fira Sans Condensed&amp;#34;&lt;/span&gt;, base_size=&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;20&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/content/1.65-content_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/1.65-content_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>1.7 — Price Elasticity — Class Content</title>
-      <link>https://microf21.classes.ryansafner.com/content/1.7-content/</link>
+      <link>https://metricsf21.classes.ryansafner.com/content/1.7-content/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/content/1.7-content/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/content/1.7-content/</guid>
       <description>
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1410,8 +1409,8 @@ ggplot(data.frame(x=c(&lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;0&
 &lt;p&gt;Today we wrap up Unit 1 by talking more extensively about demand curves and simple demand functions (relating price and quantity demanded of a good, &lt;em&gt;ceterus paribus&lt;/em&gt;). We also (re-)introduce the idea of &lt;strong&gt;price elasticity of demand&lt;/strong&gt; that measures a person’s responsiveness in consumption to a change in that good’s price. However, unlike what you learned in principles&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; we look at the elasticity of &lt;em&gt;any point on the demand curve&lt;/em&gt; using a more useful formula:
 &lt;span class=&#34;math display&#34;&gt;\[\epsilon_{q,p}=\frac{1}{slope} \times \frac{p}{q}\]&lt;/span&gt;
 where slope refers to the slope of the &lt;em&gt;inverse&lt;/em&gt; demand curve (the one that we graph).&lt;/p&gt;
-&lt;p&gt;We will look at the key relationship between price elasticity of demand and total revenue,&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; and work on some &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.7-practice&#34;&gt;practice problems&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To allow you to work on &lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-exam&#34;&gt;Exam 1&lt;/a&gt; (see below), there will be &lt;strong&gt;no class&lt;/strong&gt; on &lt;strong&gt;Monday Mar 1&lt;/strong&gt; (for section 1 M/W) or &lt;strong&gt;Thursday Mar 4&lt;/strong&gt; (for section 2 Tu/Th).&lt;/p&gt;
+&lt;p&gt;We will look at the key relationship between price elasticity of demand and total revenue,&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; and work on some &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.7-practice&#34;&gt;practice problems&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To allow you to work on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-exam&#34;&gt;Exam 1&lt;/a&gt; (see below), there will be &lt;strong&gt;no class&lt;/strong&gt; on &lt;strong&gt;Monday Mar 1&lt;/strong&gt; (for section 1 M/W) or &lt;strong&gt;Thursday Mar 4&lt;/strong&gt; (for section 2 Tu/Th).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;readings&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h1&gt;
@@ -1421,21 +1420,21 @@ where slope refers to the slope of the &lt;em&gt;inverse&lt;/em&gt; demand curve
 &lt;/div&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.7-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/1.7-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.7-slides.html&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/1.7-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/1.7-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.7-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;practice&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/h1&gt;
-&lt;p&gt;Today we will be working on &lt;a href=&#34;https://microf21.classes.ryansafner.com/practice/1.7-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/practice/1.7-practice&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;example-applications-of-consumer-theory-models&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Example Applications of Consumer Theory Models&lt;/h1&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/CT_Application_1_Uncertainty.pdf&#34;&gt;Uncertainty&lt;/a&gt;: We have examined cases where outcomes are &lt;em&gt;certain&lt;/em&gt;. What if outcomes are not guaranteed, but are &lt;em&gt;uncertain&lt;/em&gt; (i.e. probabilistic)? Things like your health, your investments, and the integrity of your property (from theft, natural disasters, war, etc) certainly fall into this category. For this reason, we take out &lt;em&gt;insurance&lt;/em&gt; on valuable things that have some probability of significantly losing their value. Let’s explore how Consumer Theory can make our actions more intelligible.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/CT_Application_2_Exchange.pdf&#34;&gt;Exchange&lt;/a&gt;: We have examined the case of a single individual (a consumer) making optimal choices given market prices, income, and their preferences. In one sense, an economy is just a collection of millions of these individuals all doing the same thing. But economics truly begins where at the more important stage where these individuals interact and exchange &lt;em&gt;with one another.&lt;/em&gt; In particular, we want to examine how relative prices and income are &lt;em&gt;determined&lt;/em&gt; in an economy (up until now we simply &lt;em&gt;assumed&lt;/em&gt; them as given parameters). They must come from somewhere! – the interactions of individuals buying and selling with one another, responding in order to balance supply and demand. This is where the study of (general) &lt;strong&gt;equilibrium&lt;/strong&gt; comes from, and what the traditional Supply and Demand model captures in its simplifications.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/files/CT_Application_3_Taxation.pdf&#34;&gt;Taxation&lt;/a&gt;: This handout uses consumer theory to answer a simple question: &lt;strong&gt;which is better for consumers, a consumption tax (tax per unit), or an equivalent income tax that raises the same amount of revenue for the government?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/files/CT_Application_1_Uncertainty.pdf&#34;&gt;Uncertainty&lt;/a&gt;: We have examined cases where outcomes are &lt;em&gt;certain&lt;/em&gt;. What if outcomes are not guaranteed, but are &lt;em&gt;uncertain&lt;/em&gt; (i.e. probabilistic)? Things like your health, your investments, and the integrity of your property (from theft, natural disasters, war, etc) certainly fall into this category. For this reason, we take out &lt;em&gt;insurance&lt;/em&gt; on valuable things that have some probability of significantly losing their value. Let’s explore how Consumer Theory can make our actions more intelligible.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/files/CT_Application_2_Exchange.pdf&#34;&gt;Exchange&lt;/a&gt;: We have examined the case of a single individual (a consumer) making optimal choices given market prices, income, and their preferences. In one sense, an economy is just a collection of millions of these individuals all doing the same thing. But economics truly begins where at the more important stage where these individuals interact and exchange &lt;em&gt;with one another.&lt;/em&gt; In particular, we want to examine how relative prices and income are &lt;em&gt;determined&lt;/em&gt; in an economy (up until now we simply &lt;em&gt;assumed&lt;/em&gt; them as given parameters). They must come from somewhere! – the interactions of individuals buying and selling with one another, responding in order to balance supply and demand. This is where the study of (general) &lt;strong&gt;equilibrium&lt;/strong&gt; comes from, and what the traditional Supply and Demand model captures in its simplifications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/files/CT_Application_3_Taxation.pdf&#34;&gt;Taxation&lt;/a&gt;: This handout uses consumer theory to answer a simple question: &lt;strong&gt;which is better for consumers, a consumption tax (tax per unit), or an equivalent income tax that raises the same amount of revenue for the government?&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;Intertemporal Choice (TBD)&lt;/a&gt;: All of our models thus far have only looked at present consumption and ignored any element of &lt;em&gt;time.&lt;/em&gt; We can also look at &lt;em&gt;intertemporal choice&lt;/em&gt;, that is, consumption decisions over time. This often touches on topics that most consider “macroeconomics,” concepts like interest rates, borrowing, lending, etc. However, these “big picture” ideas must come from actual individual decisions to consume or to save, aggregated across many individuals. Even macroeconomic theories often require “micro-foundations.” Abstract and complex concepts like interest are actually just applications of relative price theory–interest itself is a relative price of consumption today vs. consumption in the future!&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -1443,15 +1442,15 @@ where slope refers to the slope of the &lt;em&gt;inverse&lt;/em&gt; demand curve
 &lt;h1&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
 &lt;div id=&#34;problem-set-1-answers-posted&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Problem Set 1 Answers Posted&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; answers are posted on that page. Grades will be updated on Blackboard.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; answers are posted on that page. Grades will be updated on Blackboard.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;problem-set-2-due-sun-feb-28&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Problem Set 2 Due Sun Feb 28&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/01-problem-set&#34;&gt;Problem set 2&lt;/a&gt; (on classes 1.6-1.8) is due by 11:59 PM Sunday, February 28 by PDF upload to Blackboard Assignments.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;exam-1-week-of-mar-1&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Exam 1 Week of Mar 1&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignments/01-exam&#34;&gt;Exam 1&lt;/a&gt; (on 1.1-1.7) will be next week, please read that page for much more information. We save some time for review on class on Wednesday Feb 24 (Section 1) and Tuesday Mar 2 (Section 2).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-exam&#34;&gt;Exam 1&lt;/a&gt; (on 1.1-1.7) will be next week, please read that page for much more information. We save some time for review on class on Wednesday Feb 24 (Section 1) and Tuesday Mar 2 (Section 2).&lt;/p&gt;
 &lt;p&gt;To allow you to work on the exam, there will be &lt;strong&gt;no class&lt;/strong&gt; on &lt;strong&gt;Monday Mar 1&lt;/strong&gt; (for section 1 M/W) or &lt;strong&gt;Thursday Mar 4&lt;/strong&gt; (for section 2 Tu/Th).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1469,12 +1468,12 @@ This actually calculates the elasticity of a single point, the one midway betwee
     
     <item>
       <title>2.1 — Production, Specialization, and Firms — Class Content</title>
-      <link>https://microf21.classes.ryansafner.com/content/2.1-content/</link>
+      <link>https://metricsf21.classes.ryansafner.com/content/2.1-content/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://microf21.classes.ryansafner.com/content/2.1-content/</guid>
+      <guid>https://metricsf21.classes.ryansafner.com/content/2.1-content/</guid>
       <description>
-&lt;script src=&#34;https://microf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -1506,16 +1505,16 @@ This actually calculates the elasticity of a single point, the one midway betwee
 &lt;/div&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/2.1-slides.html&#34;&gt;&lt;img src=&#34;https://microf21.classes.ryansafner.com/slides/2.1-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.1-slides.html&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/2.1-slides.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/slides/2.1-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.1-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;assignments&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h1&gt;
 &lt;div id=&#34;exam-1-week-of-mar-1&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Exam 1 Week of Mar 1&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://microf21.classes.ryansafner.com/assignments/01-exam&#34;&gt;Exam 1&lt;/a&gt; (on 1.1-1.7) is currently available on Blackboard Assignments, and is due by 11:59 PM Sunday March 7 (for Section 1 M/W) or Wednesday March 10 (for Section 2 Tu/Th).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-exam&#34;&gt;Exam 1&lt;/a&gt; (on 1.1-1.7) is currently available on Blackboard Assignments, and is due by 11:59 PM Sunday March 7 (for Section 1 M/W) or Wednesday March 10 (for Section 2 Tu/Th).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
