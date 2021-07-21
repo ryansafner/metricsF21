@@ -20,8 +20,8 @@ hero_media = "metrics_hex.png"
   color = "#fff"
   
   # Background gradient.
-   gradient_start = "#5E81AC"
-   gradient_end = "#aec0d5"
+   gradient_start = "#314f4f"
+   gradient_end = "#98a7a7"
   
   # Background image.
   # image = ""  # Name of image in `static/img/`.

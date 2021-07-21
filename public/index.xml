@@ -91,7 +91,6 @@
 &lt;p&gt;&lt;table class=&#34;table schedule&#34; style=&#34;max-width:90%; margin-left: auto; margin-right: auto&#34;&gt;
     &lt;tbody&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;span class=&#34;fake-header-table&#34;&gt;I. Data Analysis in R&lt;/span&gt;&lt;/td&gt;
 
             &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Content&lt;/td&gt;
@@ -100,7 +99,6 @@
             &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;Preliminary Survey&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -112,7 +110,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.1 Introduction to Econometrics&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.1-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -124,7 +121,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.2 Meet R&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.2-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -136,7 +132,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.3 Data Visualization with ggplot2&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.3-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -148,7 +143,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.4 Data Wrangling in the tidyverse&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.4-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -160,7 +154,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;1.5 Optimize Workflow: Markdown, Projects, and Git&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.5-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -172,7 +165,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;i content=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; &lt;strong&gt;Problem Set 1&lt;/strong&gt; due Sun Sept 6&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -184,7 +176,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;span class=&#34;fake-header-table&#34;&gt;II. Linear Regression and Statistical Inference&lt;/span&gt;&lt;/td&gt;
 
             &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Content&lt;/td&gt;
@@ -193,7 +184,6 @@
             &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.1 Data 101 and Descriptive Statistics&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.1-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -205,7 +195,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.2 Random Variables and Distributions&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -217,7 +206,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;i content=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; &lt;strong&gt;Problem Set 2&lt;/strong&gt; due Sun Sept 13&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -229,7 +217,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.3 OLS Linear Regression&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.3-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -241,7 +228,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.4 OLS: Goodness of Fit and Bias&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.4-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -253,7 +239,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.5 OLS: Precision and Diagnostics&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.5-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -265,7 +250,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.6 Statistical Inference&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.6-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -277,7 +261,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;2.7 Inference for Regression&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/2.7-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -289,7 +272,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;i content=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; &lt;strong&gt;Problem Set 3&lt;/strong&gt; due Sunday Sept 27&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -301,7 +283,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;i content=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;strong&gt;Midterm Exam&lt;/strong&gt; week of Sept 28&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -313,7 +294,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;span class=&#34;fake-header-table&#34;&gt;III. Causal Inference&lt;/span&gt;&lt;/td&gt;
 
             &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Content&lt;/td&gt;
@@ -322,7 +302,6 @@
             &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.1 The Fundamental Problem of Causal Inference &amp;amp; Potential Outcomes&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.1-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -334,7 +313,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.2 Causal Inference II: DAGs&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.2-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -346,7 +324,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.3 Omitted Variable Bias&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.3-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -358,7 +335,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.4 Multivariate OLS Estimators: Bias, Precision, and Fit&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.4-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -370,7 +346,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;i content=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; &lt;strong&gt;Problem Set 4&lt;/strong&gt; due Sun Oct 25&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -382,7 +357,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.5 Writing an Empirical Paper&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.5-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -394,7 +368,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.6 Regression with Categorical Data&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.6-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -406,7 +379,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.7 Regression with Interaction Effects&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.7-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -418,7 +390,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.8 Polynomial Regression&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.8-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -430,7 +401,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.9 Logarithmic Regression&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.9-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -442,7 +412,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;i content=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; &lt;strong&gt;Problem Set 5&lt;/strong&gt; due Sun Nov 8&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -454,7 +423,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;span class=&#34;fake-header-table&#34;&gt;IV. Panel Data &amp;amp; Advanced Models&lt;/span&gt;&lt;/td&gt;
 
             &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Content&lt;/td&gt;
@@ -463,7 +431,6 @@
             &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.1 Panel Data and Fixed Effects Models&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/4.1-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -475,7 +442,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.2 Difference-in-Difference Models&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/4.2-content/&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
@@ -487,7 +453,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;i content=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; &lt;strong&gt;Problem Set 6&lt;/strong&gt; (Practice, Ungraded)&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -499,7 +464,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Empirical Research Paper Project&lt;/strong&gt; Due Sunday Nov 22&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -511,7 +475,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Final Exam&lt;/strong&gt; Friday Nov 20—Tuesday Nov 24&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -523,7 +486,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.3 Instrumental Variables Models&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -535,7 +497,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.4 Regression Discontinuity Models&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -547,7 +508,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.5 Binary Dependent Variables Models&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
@@ -559,7 +519,6 @@
                 &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;4.6 Prediction, contentification, &amp;amp; Machine Learning&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;

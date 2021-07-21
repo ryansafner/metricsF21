@@ -5,7 +5,7 @@ name = "RVS"
 light = true
 
 # Primary
-primary = "#5E81AC"
+primary = "#314f4f"
 
 # Menu
 menu_primary = "#fff" 
