@@ -17,4 +17,4 @@ design:
 
 {{< courseinfo >}}
 
-{{< figure src="/images/metrics_flowchart_blankbg.png" alt="Course map" >}}
+{{< figure src="/img/metrics_flowchart_blankbg.png" alt="Course map" >}}

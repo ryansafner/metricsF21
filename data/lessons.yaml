@@ -1,153 +1,175 @@
 lessons:
-  - title: '**I. Rational Choice Theory: Consumers**'
+  - title: '<span class="fake-header-table">I. Data Analysis in R</span>'
     header: True
 
   - title: "Preliminary Survey"
     assignment: "00-preliminary-survey"
-
-  - title: "1.1 The Tools of Microeconomics"
+    
+  - title: "1.1 Introduction to Econometrics"
     content: "1.1-content"
     slides: "1.1-slides"
-
-  - title: "1.2 Budget Constraint"
+    
+  - title: "1.2 Meet R"
     content: "1.2-content"
     slides: "1.2-slides"
-    practice: "1.2-practice"
-  
-  - title: "1.3 Preferences"
+    reading: "1.2-reading"
+    r: "1.2-r-practice"
+
+  - title: "1.3 Data Visualization with ggplot2"
     content: "1.3-content"
     slides: "1.3-slides"
+    reading: "1.3-reading"
+    r: "1.3-r-practice"
     
-  - title: "1.4 Utility Maximization"
+  - title: "1.4 Data Wrangling in the tidyverse"
     content: "1.4-content"
     slides: "1.4-slides"
-    practice: "1.4-practice"
+    reading: "1.4-reading"
+    r: "1.4-r-practice"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 1** due *Wed Feb 17*'
-    assignment: "01-problem-set"
-
-  - title: "1.5 Demand"
+  - title: "1.5 Optimize Workflow: Markdown, Projects, and Git"
     content: "1.5-content"
     slides: "1.5-slides"
-    practice: "1.5-practice"
+    reading: "1.5-reading"
+    r: "1.5-r-practice"
+    
+  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 1** due Sun Sept 6'
+    assignment: "01-problem-set"
 
-  - title: "1.6 Income and Substitution Effects"
-    content: "1.6-content"
-    slides: "1.6-slides"
-  
-  - title: "1.7 Price Elasticity"
-    content: "1.7-content"
-    slides: "1.7-slides"
-    practice: "1.7-practice"
-    
-    
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 2** due Sun Feb 28'
-    assignment: "02-problem-set"
-  
-  - title: '<i class="fas fa-star"></i> **Exam 1** week of Mar 1'
-    assignment: "01-exam"
-    bottomborder: True
-   
-  - title: '<span class="content-title">II. Rational Choice Theory: Producers</span>'
+  - title: '<span class="fake-header-table">II. Linear Regression and Statistical Inference</span>'
     header: True
 
-  - title: "2.1 Production, Specialization, and Firms"
+  - title: "2.1 Data 101 and Descriptive Statistics"
     content: "2.1-content"
     slides: "2.1-slides"
+    reading: "2.1-reading"
     
-  - title: "2.2 Short Run and Long Run Production"
+  - title: "2.2 Random Variables and Distributions"
+    reading: "2.2-reading"
     content: "2.2-content"
     slides: "2.2-slides"
+    
+  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 2** due Sun Sept 13'
+    assignment: "02-problem-set"
 
-  - title: "2.3 Cost Minimization"
+  - title: "2.3 OLS Linear Regression"
+    reading: "2.3-reading"
     content: "2.3-content"
     slides: "2.3-slides"
-    practice: "2.3-practice"
-
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 3** due Sun Mar 14/21'
-    assignment: "03-problem-set"
     
-  - title: "2.4 Costs of Production"
+  - title: "2.4 OLS: Goodness of Fit and Bias"
+    reading: "2.4-reading"
     content: "2.4-content"
     slides: "2.4-slides"
-
-  - title: "2.5 Short Run Profit Maximization"
-    content: "2.5-content"
-    practice: "2.5-practice"
-    slides: "2.5-slides"
     
-  - title: "2.6 Long Run Industry Equilibrium"
+  - title: "2.5 OLS: Precision and Diagnostics"
+    reading: "2.5-reading"
+    reading: "2.5-reading"
+    content: "2.5-content"
+    slides: "2.5-slides"
+    r: "2.5-r-practice"
+    
+  - title: "2.6 Statistical Inference"
+    reading: "2.6-reading"
     content: "2.6-content"
     slides: "2.6-slides"
     
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 4** due Sun Mar 28/Sun April 4'
-    assignment: "04-problem-set"
+  - title: "2.7 Inference for Regression"
+    reading: "2.7-reading"
+    content: "2.7-content"
+    slides: "2.7-slides"
+    r: "2.7-r-practice"
     
-  - title: '<i class="fas fa-star"></i> **Exam 2** week of April 5'
-    assignment: "02-exam"
+  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 3** due Sunday Sept 27'
+    assignment: "03-problem-set"
 
-  - title: '<span class="fake-header-table">III. Market Equilibrium</span>'
+  - title: '<i content="fas fa-star"></i> **Midterm Exam** week of Sept 28'
+    assignment: "01-exam"
+
+  - title: '<span class="fake-header-table">III. Causal Inference</span>'
     header: True
 
-  - title: "3.1 The Supply and Demand Model"
+  - title: "3.1 The Fundamental Problem of Causal Inference & Potential Outcomes"
     content: "3.1-content"
+    reading: "3.1-reading"
     slides: "3.1-slides"
 
-  - title: "3.2 Market Competition and Surpluses"
+  - title: "3.2 Causal Inference II: DAGs"
+    reading: "3.2-reading"
     content: "3.2-content"
     slides: "3.2-slides"
-    practice: "3.2-practice"
-
-  - title: "3.3 Entrepreneurship, Profits, & Prices"
+    r: "3.2-r-practice"
+    
+  - title: "3.3 Omitted Variable Bias"
+    reading: "3.3-reading"
     content: "3.3-content"
     slides: "3.3-slides"
     
-  - title: "3.4 Welfare Economics & Market Failures"
+  - title: "3.4 Multivariate OLS Estimators: Bias, Precision, and Fit"
+    reading: "3.4-reading"
     content: "3.4-content"
     slides: "3.4-slides"
+    r: "3.4-r-practice"
     
-  - title: "3.5 Political Economy"
+  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 4** due Sun Oct 25'
+    assignment: "04-problem-set"
+  
+  - title: "3.5 Writing an Empirical Paper"
     content: "3.5-content"
     slides: "3.5-slides"
     
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 5** due Sun Apr 25'
+  - title: "3.6 Regression with Categorical Data"
+    content: "3.6-content"
+    slides: "3.6-slides"
+    reading: "3.6-reading"
+
+  - title: "3.7 Regression with Interaction Effects"
+    content: "3.7-content"
+    slides: "3.7-slides"
+    reading: "3.7-reading"
+    r: "3.7-r-practice"
+    
+  - title: "3.8 Polynomial Regression"
+    content: "3.8-content"
+    slides: "3.8-slides"
+    reading: "3.8-reading"
+    
+  - title: "3.9 Logarithmic Regression"
+    content: "3.9-content"
+    slides: "3.9-slides"
+    reading: "3.9-reading"
+    r: "3.9-r-practice"
+    
+  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 5** due Sun Nov 8'
     assignment: "05-problem-set"
 
-  - title: '<span class="fake-header-table">IV. Imperfect Competition</span>'
+  - title: '<span class="fake-header-table">IV. Panel Data & Advanced Models</span>'
     header: True
 
-  - title: "4.1 Modeling Firms with Market Power"
+  - title: "4.1 Panel Data and Fixed Effects Models"
     content: "4.1-content"
     slides: "4.1-slides"
-    practice: "4.1-practice"
-
-  - title: "4.2 Consequences and Sources of Market Power"
+    reading: "4.1-reading"
+    
+  - title: "4.2 Difference-in-Difference Models"
+    reading: "4.2-reading"
     content: "4.2-content"
     slides: "4.2-slides"
-
-  - title: "4.3 Pricing Strategies"
-    content: "4.3-content"
-    slides: "4.3-slides"
-    practice: "4.3-practice"
     
-  - title: "4.4 Factor Markets: Labor Markets"
-    content: "4.4-content"
-    slides: "4.4-slides"
-    practice: "4.4-practice"
-
-  - title: "4.5 Monopolistic Competition and Oligopoly"
-    content: "4.5-content"
-    slides: "4.5-slides"
-    
-  - title: "4.6 Contestable Markets and Wrap Up"
-    content: "4.6-content"
-    slides: "4.6-slides"
-    
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 6** (Ungraded Practice)'
+  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 6** (Practice, Ungraded)'
     assignment: "06-problem-set"
+  
+  - title: "**Empirical Research Paper Project** Due Sunday Nov 22"
+    assignment: "paper-project"
+    
+  - title: "**Final Exam** Friday Nov 20—Tuesday Nov 24"
+    assignment: "02-exam"
+  
+  - title: "4.3 Instrumental Variables Models"
+  
+  - title: "4.4 Regression Discontinuity Models"
+  
+  - title: "4.5 Binary Dependent Variables Models"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Op-Ed** Due Fri May 14'
-    assignment: "op-ed"
-
-  - title: '<i class="fas fa-star"></i> **Final Exam** week of May 16'
-    assignment: "03-exam"
+  - title: "4.6 Prediction, contentification, & Machine Learning"
+  
