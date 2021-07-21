@@ -82,13 +82,13 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;i class=&#34;fas fa-info-circle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Content&lt;/strong&gt; materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these &lt;strong&gt;before&lt;/strong&gt; each class.&lt;/li&gt;
 &lt;li&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; &lt;strong&gt;Slides&lt;/strong&gt; are “&lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;Xaringan&lt;/a&gt;” presentations in html that can be opened in any browser (You can find a downloadable &lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; &lt;code&gt;PDF&lt;/code&gt; in each respective &lt;i class=&#34;fas fa-info-circle&#34;&gt;&lt;/i&gt; &lt;strong&gt;content&lt;/strong&gt; page)&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; &lt;strong&gt;Practice&lt;/strong&gt; problems we work on together in class to prepare for homeworks and exams&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; &lt;strong&gt;R&lt;/strong&gt; materials contain extra tutorials, videos, practice exercises for using &lt;code&gt;R&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; &lt;strong&gt;Assignments&lt;/strong&gt; are generally 11:59 PM Sundays on Blackboard&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Please note, the lesson numbers and topics (e.g. 1.1) are &lt;em&gt;my&lt;/em&gt; design, and do not match up with the textbook!&lt;/p&gt;
 &lt;p&gt;Relevant materials (if applicable, icons will become links) will be posted before class meets.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;&lt;table class=&#34;table schedule&#34; style=&#34;max-width:75%; margin-left: auto; margin-right: auto&#34;&gt;
+&lt;p&gt;&lt;table class=&#34;table schedule&#34; style=&#34;max-width:90%; margin-left: auto; margin-right: auto&#34;&gt;
     &lt;tbody&gt;
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
