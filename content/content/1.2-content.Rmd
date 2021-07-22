@@ -8,6 +8,7 @@ menu:
     parent: Course content
     weight: 2
 type: docs
+toc: true
 ---
 
 {{% alert note %}}
