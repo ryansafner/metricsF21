@@ -1,0 +1,4 @@
+{{ if .Page.Params.slides }}
+<p style="text-align:center;"><a target="_blank" href="/slides/{{ .Page.Params.slides }}.html"><img src ="/slides/{{ .Page.Params.slides }}.png" alt = "{{ .Page.Params.slides }}"></a></p>
+<p style="text-align:center;"><a class="btn btn-primary btn-lg" target="_blank" href="/slides/{{ .Page.Params.slides }}.pdf"><i class="fas fa-file.pdf"></i> Download as PDF</a></p>
+{{ end }}
