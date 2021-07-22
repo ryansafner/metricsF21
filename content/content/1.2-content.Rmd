@@ -44,10 +44,6 @@ Please note going forward, the lesson numbers and topics (e.g. 1.1) are *my* des
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
-{{% div fyi %}}
-**Fun fact**: If you type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) while going through the slides, you can see a list of special slide-specific commands.
-{{% /div %}}
-
 ## <i class="fas fa-dumbbell"></i> Practice
 
 NONE
