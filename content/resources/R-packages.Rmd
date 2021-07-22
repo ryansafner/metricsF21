@@ -1,0 +1,41 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+linktitle: R Packages Used in this Course
+menu:
+  resources:
+    parent: Resources
+title: R Packages Used
+toc: true
+type: docs
+weight: 2
+---
+
+The following is a compendium of all R packages used in this course (in order of appearnace), their main uses, and what we use them for^[Note, many of these packages have multiple uses beyond our purposes!]. Each package name below contains a link to the package's website and/or documentation.
+
+Note: `ggplot2, tibble, magrittr, dplyr, readr` are all part of the `tidyverse`. 
+
+| Name | Type | Description/Reason(s) for Use | Classes Used |
+|------|------|-------------|------|
+| [`ggplot2`†](https://ggplot2.tidyverse.org/) | Plotting | For nice plots | [[1.3](/class/1.3-class)] | 
+| [`haven`†](https://haven.tidyverse.org/) | Data Wrangling | For importing nonstandard data files | [[1.4](/class/1.4-class)] | 
+| [`dplyr`†](https://dplyr.tidyverse.org/) | Data Wrangling | For manipulating data (part of tidyverse) | [[1.4](/class/1.4-class)] |
+| [`readr`†](https://readr.tidyverse.org/) | Data Wrangling | For importing most data files | [[1.4](/class/1.4-class)] | 
+| [`tidyr`†](https://tidyr.tidyverse.org/) | Data Wrangling | For reshaping data (wide and long) | [[1.4](/class/1.4-class)] |
+| [`magrittr`†](https://magrittr.tidyverse.org/) | Data Wrangling | For the pipe | [[1.4](/class/1.4-class)] |
+| [`tibble`†](https://tibble.tidyverse.org/) | Data Wrangling | For a friendlier data.frame | [[1.4](/class/1.4-class)] | 
+| `car` | Models | For testing for outliers | |
+| `estimatr` | Models | For calculating robust standard errors | |
+| `lmtest` | Models | For testing for heteroskedasticity | |
+| `broom` | Models | For tidying regression output | |
+| `gganimate` | Plotting | For animating plots | |
+| `huxtable` | Models | For making nice regression tables | |
+| `ggtext` | Plotting | For using markdown in text (labels, axes) | |
+| `ggrepel` | Plotting | For annotating text that doesn't cover observations | |
+| `patchwork` | Plotting | For aligning multiple plots into a single figure | |
+| `infer` | Models | For simulation and statistical inference | |
+| `kable` | Output | For outputting nicer tables | |
+| `ggdag` | Plotting | For plotting DAGs in ggplot | |
+| `plm` | Models | For working with panel data | |
+
+† Indicates package is part of the [`tidyverse`](https://tidyverse.org)

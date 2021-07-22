@@ -1,0 +1,34 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+linktitle: Statistics Resources
+menu:
+  resources:
+    parent: Resources
+title: Statistics Resources
+toc: true
+type: docs
+weight: 2
+---
+
+## A General Symbol Guide
+
+There are a lot of symbols (often greek letters or ligatures on English letters) used in statistics and econometrics. Luckliy, most of them follow some standard patterns, and are consistent across textbooks and research (note there are exceptions!).
+
+| Style | Examples | Meaning |
+|--------|---------|---------|
+| Greek letters | $\beta_0, \beta_1, \sigma, u$ | True *parameters* of population |
+| Hats | $\hat{\beta_0}, \hat{\beta_1}, \hat{\sigma}, \hat{u}$ | Our *statistical estimates* of population parameters, from sample data |
+| English capital letters | $X_1, X_2, Y$ | (Random) variables in our sample data |
+| English lowercase letters | $x_{1i}, x_{2i}, y_i$ | Individual observations of variables in our sample data |
+| Modified capital letters | $\bar{X}, \bar{Y}$ | Statistics calculated from our sample data (e.g. sample mean) |
+| Bold capital letters | $X= \begin{bmatrix} x_1, x_2, \cdots , x_n \\ \end{bmatrix}$ $\mathbf{\beta} = \begin{bmatrix} \beta_1, \beta_2, \cdots , \beta_k \\ \end{bmatrix}$ | Vector or matrix |
+
+## Sample Statistics vs Population Parameters Formulae
+
+|    | Sample | Population |
+|----|--------|------------|
+| Population | $n$ | $N$ |
+| Mean | $\bar{x} = \frac{1}{n} \displaystyle\sum^n_{i=1} x_i$ | $\mu = \frac{1}{N} \displaystyle\sum^N_{i=1} x_i$ |
+| Variance | $s^2=\frac{1}{n-1} \displaystyle\sum^n_{i=1} (x_i-\bar{x})^2$ | $\sigma^2=\frac{1}{N} \displaystyle\sum^N_{i=1} (x_i-\mu)^2$ |
+| Standard Deviation | $s = \sqrt{s^2}$ | $\sigma = \sqrt{\sigma^2}$ |

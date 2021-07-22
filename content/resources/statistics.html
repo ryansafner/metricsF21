@@ -1,0 +1,108 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+linktitle: Statistics Resources
+menu:
+  resources:
+    parent: Resources
+title: Statistics Resources
+toc: true
+type: docs
+weight: 2
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+
+</div>
+
+<div id="a-general-symbol-guide" class="section level2">
+<h2>A General Symbol Guide</h2>
+<p>There are a lot of symbols (often greek letters or ligatures on English letters) used in statistics and econometrics. Luckliy, most of them follow some standard patterns, and are consistent across textbooks and research (note there are exceptions!).</p>
+<table>
+<colgroup>
+<col width="30%" />
+<col width="34%" />
+<col width="34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Style</th>
+<th>Examples</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Greek letters</td>
+<td><span class="math inline">\(\beta_0, \beta_1, \sigma, u\)</span></td>
+<td>True <em>parameters</em> of population</td>
+</tr>
+<tr class="even">
+<td>Hats</td>
+<td><span class="math inline">\(\hat{\beta_0}, \hat{\beta_1}, \hat{\sigma}, \hat{u}\)</span></td>
+<td>Our <em>statistical estimates</em> of population parameters, from sample data</td>
+</tr>
+<tr class="odd">
+<td>English capital letters</td>
+<td><span class="math inline">\(X_1, X_2, Y\)</span></td>
+<td>(Random) variables in our sample data</td>
+</tr>
+<tr class="even">
+<td>English lowercase letters</td>
+<td><span class="math inline">\(x_{1i}, x_{2i}, y_i\)</span></td>
+<td>Individual observations of variables in our sample data</td>
+</tr>
+<tr class="odd">
+<td>Modified capital letters</td>
+<td><span class="math inline">\(\bar{X}, \bar{Y}\)</span></td>
+<td>Statistics calculated from our sample data (e.g. sample mean)</td>
+</tr>
+<tr class="even">
+<td>Bold capital letters</td>
+<td><span class="math inline">\(X= \begin{bmatrix} x_1, x_2, \cdots , x_n \\ \end{bmatrix}\)</span> <span class="math inline">\(\mathbf{\beta} = \begin{bmatrix} \beta_1, \beta_2, \cdots , \beta_k \\ \end{bmatrix}\)</span></td>
+<td>Vector or matrix</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="sample-statistics-vs-population-parameters-formulae" class="section level2">
+<h2>Sample Statistics vs Population Parameters Formulae</h2>
+<table>
+<colgroup>
+<col width="16%" />
+<col width="33%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Sample</th>
+<th>Population</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Population</td>
+<td><span class="math inline">\(n\)</span></td>
+<td><span class="math inline">\(N\)</span></td>
+</tr>
+<tr class="even">
+<td>Mean</td>
+<td><span class="math inline">\(\bar{x} = \frac{1}{n} \displaystyle\sum^n_{i=1} x_i\)</span></td>
+<td><span class="math inline">\(\mu = \frac{1}{N} \displaystyle\sum^N_{i=1} x_i\)</span></td>
+</tr>
+<tr class="odd">
+<td>Variance</td>
+<td><span class="math inline">\(s^2=\frac{1}{n-1} \displaystyle\sum^n_{i=1} (x_i-\bar{x})^2\)</span></td>
+<td><span class="math inline">\(\sigma^2=\frac{1}{N} \displaystyle\sum^N_{i=1} (x_i-\mu)^2\)</span></td>
+</tr>
+<tr class="even">
+<td>Standard Deviation</td>
+<td><span class="math inline">\(s = \sqrt{s^2}\)</span></td>
+<td><span class="math inline">\(\sigma = \sqrt{\sigma^2}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>

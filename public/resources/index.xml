@@ -32,6 +32,113 @@
     </item>
     
     <item>
+      <title>Data Resources</title>
+      <link>https://metricsf21.classes.ryansafner.com/resources/data/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/resources/data/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;list-of-public-datasets-data-sources-and-r-apis&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;List of Public Datasets, Data Sources, and R APIs&lt;/h2&gt;
+&lt;div id=&#34;build-in-datasets&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Build-in Datasets&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;a href=&#34;https://vincentarelbundock.github.io/Rdatasets/datasets.html&#34;&gt;near-comprehensive list&lt;/a&gt; of all existing data sets built-in to R or R packages&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;general-databases-of-datasets&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;General Databases of Datasets&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://toolbox.google.com/datasetsearch&#34;&gt;Google Database Search&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/datasets&#34;&gt;Kaggle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hls.harvard.edu/library/research/find-a-database/#hlsnav-databases-for-legal-and-law-related-research&#34;&gt;Harvard Law School: Find a Database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;good-r-packages-for-getting-data-in-r-format&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Good R Packages for Getting Data in R Format&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Below are packages written by and for R users that link up with the API of key data sets for easy use in R. Each link goes to the documentation and description of each package.&lt;/p&gt;
+&lt;p&gt;Don’t forget to install&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; first and then load it with &lt;code&gt;library()&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/wbstats/wbstats.pdf&#34;&gt;&lt;code&gt;wbstats&lt;/code&gt;&lt;/a&gt; provides access to all the data available on the &lt;strong&gt;World Bank&lt;/strong&gt; API, which is basically everything on their website. The World Bank keeps track of &lt;em&gt;many&lt;/em&gt; country-level indicators over time.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/tidycensus/tidycensus.pdf&#34;&gt;&lt;code&gt;tidycensus&lt;/code&gt;&lt;/a&gt; gives you access to data from the &lt;strong&gt;US Census&lt;/strong&gt; and the &lt;strong&gt;American Community Survey.&lt;/strong&gt; These are the largest high-quality data sets you’ll find of cross-sectional data on individual people in the US. You’ll need to get a (free) API key from the website (or ask me for mine).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/fredr/vignettes/fredr.html&#34;&gt;&lt;code&gt;fredr&lt;/code&gt;&lt;/a&gt; gets data from the &lt;strong&gt;Federal Reserve’s Economic Database (FRED)&lt;/strong&gt;. You’ll need to get a (free) API key from the website (or ask me for mine).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/tidyquant/index.html&#34;&gt;&lt;code&gt;tidyquant&lt;/code&gt;&lt;/a&gt; gets data from a number of financial sources (including &lt;code&gt;fredr&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/icpsrdata/icpsrdata.pdf&#34;&gt;&lt;code&gt;icpsrdata&lt;/code&gt;&lt;/a&gt; downloads data from the &lt;strong&gt;Inter-university Consortium for Political and Social Research&lt;/strong&gt; (you’ll need an account and a keycode). ICPSR is a database of datasets from published social science papers for the purposes of reproducibility.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/NHANES/NHANES.pdf&#34;&gt;&lt;code&gt;NHANES&lt;/code&gt;&lt;/a&gt; uses data from the &lt;strong&gt;US National Health and Nutrition Examination Survey.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/ipumsr/vignettes/ipums.html&#34;&gt;&lt;code&gt;ipumsr&lt;/code&gt;&lt;/a&gt; has &lt;strong&gt;census data&lt;/strong&gt; from &lt;em&gt;all around the world&lt;/em&gt;, in addition to the US census, &lt;strong&gt;American Community Survey&lt;/strong&gt;, and &lt;strong&gt;Current Population Survey&lt;/strong&gt;. If you’re doing international micro work, look at IPUMS. It’s also the easiest way to get the &lt;strong&gt;Current Population Survey (CPS)&lt;/strong&gt;, which is very popular for labor economics. Unfortunately ipumsr won’t get the data from within R; you’ll have to make your own data extract on the IPUMS website and download it. But ipumsr will read that file into R and preserve things like names and labels.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/UrbanInstitute/education-data-package-r&#34;&gt;&lt;code&gt;education-data-package-r&lt;/code&gt;&lt;/a&gt;&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; is the Urban Institute’s data data on educational institutions in the US, including colleges (in IPEDS) and K-12 schools (in CCD). This package also has data on county-level poverty rates from SAIPE.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/psidR/psidR.pdf&#34;&gt;&lt;code&gt;psidR&lt;/code&gt;&lt;/a&gt; is the &lt;strong&gt;Panel Study of Income Dynamics&lt;/strong&gt;. This study doesn’t just follow people over their lifetimes, it follows their children too, generationally! A great source for studying how things follow families through generations.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/atus/atus.pdf&#34;&gt;&lt;code&gt;atus&lt;/code&gt;&lt;/a&gt; is th e &lt;strong&gt;American Time Use Survey&lt;/strong&gt;, which is a large cross-sectional data set with information on how people spend their time.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ilostat.github.io/Rilostat/index.html&#34;&gt;&lt;code&gt;Rilostat&lt;/code&gt;&lt;/a&gt; uses data from the &lt;strong&gt;International Labor Organization.&lt;/strong&gt; This contains lots of different statistics on labor, like employment, wage gaps, etc., generally aggregated to the national level and changing over time.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xmarquez/democracyData&#34;&gt;&lt;code&gt;democracyData&lt;/code&gt;&lt;/a&gt;&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt; is a great “package for accessing and manipulating existing measures of democracy.”&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.rstudio.com/web/packages/politicaldata/index.html&#34;&gt;&lt;code&gt;politicaldata&lt;/code&gt;&lt;/a&gt; provides useful functions for obtaining commonly-used data in political analysis and political science, including from sources such as the Comparative Agendas Project (which provides data on politics and policy from 20+ countries), the MIT Election and Data Science Lab, and FiveThirtyEight.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below is a list of good data sources depending on the types of topics you might be interested in writing on:&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;key-data-sources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Key Data Sources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Coronavirus Data: &lt;a href=&#34;https://github.com/CSSEGISandData/COVID-19&#34;&gt;John Hopkins CSSE Covid-19 data (definitive)&lt;/a&gt;, &lt;a href=&#34;https://github.com/owid/covid-19-data/tree/master/public/data&#34;&gt;Our World in Data&lt;/a&gt;, &lt;a href=&#34;https://github.com/nytimes/covid-19-data&#34;&gt;New York Times Covid data&lt;/a&gt;, &lt;a href=&#34;https://github.com/kjhealy/covdata&#34;&gt;&lt;code&gt;covdata&lt;/code&gt; r package&lt;/a&gt;, &lt;a href=&#34;https://github.com/joachim-gassen/tidycovid19&#34;&gt;Tidy Covid data&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.aeaweb.org/resources/data&#34;&gt;American Economic Association Data&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://inforumweb.umd.edu/econdata/econdata.html&#34;&gt;EconData from UMD&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.historicalstatistics.org/&#34;&gt;Historical Macroeconomic Statistics&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://inforumweb.umd.edu/econdata/econdatacontents.html&#34;&gt;UMD’s Interindustry Forecasting&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://db.nomics.world/&#34;&gt;DB-nomics&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.upcdatabase.com/&#34;&gt;Internet UPC Database&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.macalester.edu/research/economics/PAGE/HAVEMAN/Trade.Resources/TradeData.html&#34;&gt;International Trade Data&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ourworldindata.org/&#34;&gt;OurWorldinData.org&lt;/a&gt; (&lt;a href=&#34;https://github.com/owid/owid-datasets&#34;&gt;download datasets&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://econ.sciences-po.fr/thierry-mayer/data&#34;&gt;SciencesPo International Trade Gravity Dataset&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cid.econ.ucdavis.edu/&#34;&gt;Center for International Data&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://atlas.cid.harvard.edu/&#34;&gt;Atlas of Economic Complexity&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://hdr.undp.org/en&#34;&gt;U.N. World Development Reports&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://oec.world/en/&#34;&gt;Observatory of Economic Complexity&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.reddit.com/r/datasets/&#34;&gt;Reddit /r/datasets&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cloud.google.com/public-datasets/&#34;&gt;Google Cloud Public Datasets&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;By Topic&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qog.pol.gu.se/data/dataextras/datasources&#34;&gt;Quality of Government Data&lt;/a&gt; has an extremely wide range of data sources pertaining to measures of institutions. The data itself can be found &lt;a href=&#34;https://qog.pol.gu.se/data/datadownloads/qogstandarddata&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;National and State Accounts Data: &lt;a href=&#34;http://www.bea.doc.gov/&#34;&gt;Bureau of Economic Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Labor Market and Price Data: &lt;a href=&#34;http://www.bls.gov/&#34;&gt;Bureau of Labor Statistics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Macroeconomic Data: &lt;a href=&#34;https://fred.stlouisfed.org/&#34;&gt;Federal Reserve Economic Data (FRED)&lt;/a&gt;, &lt;a href=&#34;https://datacatalog.worldbank.org/dataset/world-development-indicators&#34;&gt;World Development Indicators (World Bank)&lt;/a&gt;, &lt;a href=&#34;https://www.rug.nl/ggdc/productivity/pwt/&#34;&gt;Penn World Table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;International Data: &lt;a href=&#34;http://www.nationmaster.com/&#34;&gt;NationMaster.com&lt;/a&gt;, &lt;a href=&#34;http://rru.worldbank.org/DoingBusiness/&#34;&gt;Doing Business&lt;/a&gt;, &lt;a href=&#34;ttp://www.ciesin.org/data.html&#34;&gt;CIESIN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Census Data: &lt;a href=&#34;http://www.census.gov/&#34;&gt;U.S. Census Bureau&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sports Data: &lt;a href=&#34;http://spotrac.com&#34;&gt;Spotrac&lt;/a&gt;, &lt;a href=&#34;https://sites.google.com/site/rodswebpages/codes&#34;&gt;Rodney Fort’s Sports Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Data Clearing House: &lt;a href=&#34;http://www.stat-usa.gov/&#34;&gt;Stat USA&lt;/a&gt;, &lt;a href=&#34;http://www.fedstats.gov/&#34;&gt;Fedstats&lt;/a&gt;, &lt;a href=&#34;http://www.census.gov/prod/www/statistical-abstract-us.html&#34;&gt;Statistical Abstract of the United States&lt;/a&gt;, &lt;a href=&#34;http://rfe.org&#34;&gt;Resources for Economists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Political and Social Data: &lt;a href=&#34;http://www.icpsr.umich.edu/&#34;&gt;ICPSR&lt;/a&gt;, &lt;a href=&#34;http://fec.gov&#34;&gt;Federal Election Commission&lt;/a&gt;, &lt;a href=&#34;http://voteview.uh.edu/default_nomdata.htm&#34;&gt;Poole and Rosenthal Roll Call Data (Voting ideology)&lt;/a&gt;, &lt;a href=&#34;https://www.rochester.edu/college/faculty/hgoemans/data.htm&#34;&gt;Archigos Data on Political Leaders&lt;/a&gt;, &lt;a href=&#34;http://thomas.loc.gov/&#34;&gt;Library of Congress: Thomas (Legislation)&lt;/a&gt;, &lt;a href=&#34;http://www.biz.uiowa.edu/iem/&#34;&gt;Iowa Electronic Markets (Prediction Markets)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;War and Violence Data: &lt;a href=&#34;http://www.correlatesofwar.org/data-sets&#34;&gt;Correlates of War&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;State Level Data: &lt;a href=&#34;http://ippsr.msu.edu/public-policy/correlates-state-policy&#34;&gt;Correlates of State Policy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Health Data: &lt;a href=&#34;http://www.cdc.gov/scientific.htm&#34;&gt;Centers for Disease Control&lt;/a&gt;, &lt;a href=&#34;http://wonder.cdc.gov/DataSets.shtml&#34;&gt;CDC Wonder System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Crime Data: &lt;a href=&#34;http://www.ojp.usdoj.gov/bjs/&#34;&gt;Bureau of Justice Statistics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Education Data: &lt;a href=&#34;http://www.nces.ed.gov/&#34;&gt;National Center for Education Statistics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Environmental Data: &lt;a href=&#34;http://www.epa.gov/ceisweb1/ceishome/&#34;&gt;EPA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Religion Data: &lt;a href=&#34;http://www.arda.tm/&#34;&gt;American Religion Data Archiva (ARDA)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Financial Data: &lt;a href=&#34;http://www.cob.ohio-state.edu/cgi-bin/DB_Search/db_search.cgi?setup_file=finance.setup.cgi&#34;&gt;Financial Data Finder&lt;/a&gt;{Financial Data Finder}&lt;/li&gt;
+&lt;li&gt;Philanthropy Data: &lt;a href=&#34;http://nccs.urban.org/&#34;&gt;The Urban Institute&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Note: You should use these more for playing around with in R to boost your data wrangling skills. These should not be used for your projects in most circumstances.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Some of these come from &lt;a href=&#34;http://www.nickchk.com/econometrics.html&#34;&gt;Nick Huntington-Klein’s excellent list&lt;/a&gt;.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;&lt;code&gt;install.packages(&#34;name_of_package&#34;)&lt;/code&gt;&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Note you will need to install &lt;code&gt;devtools&lt;/code&gt; package first, and then install the package directly from Github with the command &lt;code&gt;devtools::install_github(&#39;UrbanInstitute/education-data-package-r&#39;)&lt;/code&gt;&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;Note you will need to install &lt;code&gt;devtools&lt;/code&gt; package first, and then install the package directly from Github with the command &lt;code&gt;devtools::install_github(&#39;xmarquez/democracyData&#39;)&lt;/code&gt;&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;Some of these come from various sources, including &lt;a href=&#34;Awesomedata&amp;#39;s%20Awesome%20Public%20Datasets%20for%20Economics&#34;&gt;https://github.com/awesomedata/awesome-public-datasets#economics&lt;/a&gt;&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to Make a PDF</title>
       <link>https://metricsf21.classes.ryansafner.com/resources/pdfs/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
@@ -172,26 +279,264 @@
     </item>
     
     <item>
-      <title>Quotes About Economics</title>
-      <link>https://metricsf21.classes.ryansafner.com/resources/quotes/</link>
+      <title>R Packages Used</title>
+      <link>https://metricsf21.classes.ryansafner.com/resources/r-packages/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://metricsf21.classes.ryansafner.com/resources/quotes/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;“Whether we like it or not, it is a fact that economics cannot remain an esoteric branch of knowledge accessible only to small groups of scholars and specialists. Economics deals with society&amp;rsquo;s fundamental problems; it concerns everyone and belongs to all. It is the main and proper study of every citizen.”^[Mises, Ludwig von., 1948, &lt;em&gt;Human Action: A Treatise on Economics&lt;/em&gt;, p.879] &lt;br&gt; [— Ludwig von Mises]{style=&amp;ldquo;float:right&amp;rdquo;}&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“The task of the economist is not to plan utopias, but to criticize reality” &lt;br&gt; [— Joan Robinson]{style=&amp;ldquo;float:right&amp;rdquo;}&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“The first lesson of economics is scarcity: There is never enough of anything to satisfy all those who want it. The first lesson of politics is to disregard the first lesson of economics.”^[Sowell, Thomas, 1993, &lt;em&gt;Is Reality Optional? and Other Essays Quotes&lt;/em&gt;] &lt;br&gt; [— Thomas Sowell]{style=&amp;ldquo;float:right&amp;rdquo;}&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“The ideas of economists and political philosophers, both when they are right and when they are wrong, are more powerful than is commonly understood. Indeed the world is ruled by little else. Practical men, who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back. I am sure that the power of vested interests is vastly exaggerated compared with the gradual encroachment of ideas.”^[Keynes, John Maynard, 1936, &lt;em&gt;The General Theory of Employment, Interest, and Money&lt;/em&gt;, p.383] &lt;br&gt; [— John Maynard Keynes]{style=&amp;ldquo;float:right&amp;rdquo;}&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“There are no solutions, there are only tradeoffs.”^[Sowell, Thomas, 1987, &lt;em&gt;A Conflict of Visions&lt;/em&gt;] &lt;br&gt; [— Thomas Sowell]{style=&amp;ldquo;float:right&amp;rdquo;}&lt;/p&gt;
-&lt;/blockquote&gt;
+      <guid>https://metricsf21.classes.ryansafner.com/resources/r-packages/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;The following is a compendium of all R packages used in this course (in order of appearnace), their main uses, and what we use them for&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. Each package name below contains a link to the package’s website and/or documentation.&lt;/p&gt;
+&lt;p&gt;Note: &lt;code&gt;ggplot2, tibble, magrittr, dplyr, readr&lt;/code&gt; are all part of the &lt;code&gt;tidyverse&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description/Reason(s) for Use&lt;/th&gt;
+&lt;th&gt;Classes Used&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;ggplot2&lt;/code&gt;†&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Plotting&lt;/td&gt;
+&lt;td&gt;For nice plots&lt;/td&gt;
+&lt;td&gt;[&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/class/1.3-class&#34;&gt;1.3&lt;/a&gt;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;https://haven.tidyverse.org/&#34;&gt;&lt;code&gt;haven&lt;/code&gt;†&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Data Wrangling&lt;/td&gt;
+&lt;td&gt;For importing nonstandard data files&lt;/td&gt;
+&lt;td&gt;[&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/class/1.4-class&#34;&gt;1.4&lt;/a&gt;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;&lt;code&gt;dplyr&lt;/code&gt;†&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Data Wrangling&lt;/td&gt;
+&lt;td&gt;For manipulating data (part of tidyverse)&lt;/td&gt;
+&lt;td&gt;[&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/class/1.4-class&#34;&gt;1.4&lt;/a&gt;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;https://readr.tidyverse.org/&#34;&gt;&lt;code&gt;readr&lt;/code&gt;†&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Data Wrangling&lt;/td&gt;
+&lt;td&gt;For importing most data files&lt;/td&gt;
+&lt;td&gt;[&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/class/1.4-class&#34;&gt;1.4&lt;/a&gt;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;https://tidyr.tidyverse.org/&#34;&gt;&lt;code&gt;tidyr&lt;/code&gt;†&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Data Wrangling&lt;/td&gt;
+&lt;td&gt;For reshaping data (wide and long)&lt;/td&gt;
+&lt;td&gt;[&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/class/1.4-class&#34;&gt;1.4&lt;/a&gt;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;https://magrittr.tidyverse.org/&#34;&gt;&lt;code&gt;magrittr&lt;/code&gt;†&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Data Wrangling&lt;/td&gt;
+&lt;td&gt;For the pipe&lt;/td&gt;
+&lt;td&gt;[&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/class/1.4-class&#34;&gt;1.4&lt;/a&gt;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;https://tibble.tidyverse.org/&#34;&gt;&lt;code&gt;tibble&lt;/code&gt;†&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Data Wrangling&lt;/td&gt;
+&lt;td&gt;For a friendlier data.frame&lt;/td&gt;
+&lt;td&gt;[&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/class/1.4-class&#34;&gt;1.4&lt;/a&gt;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;car&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Models&lt;/td&gt;
+&lt;td&gt;For testing for outliers&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;estimatr&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Models&lt;/td&gt;
+&lt;td&gt;For calculating robust standard errors&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;lmtest&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Models&lt;/td&gt;
+&lt;td&gt;For testing for heteroskedasticity&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;broom&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Models&lt;/td&gt;
+&lt;td&gt;For tidying regression output&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;gganimate&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Plotting&lt;/td&gt;
+&lt;td&gt;For animating plots&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;huxtable&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Models&lt;/td&gt;
+&lt;td&gt;For making nice regression tables&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;ggtext&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Plotting&lt;/td&gt;
+&lt;td&gt;For using markdown in text (labels, axes)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;ggrepel&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Plotting&lt;/td&gt;
+&lt;td&gt;For annotating text that doesn’t cover observations&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;patchwork&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Plotting&lt;/td&gt;
+&lt;td&gt;For aligning multiple plots into a single figure&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;infer&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Models&lt;/td&gt;
+&lt;td&gt;For simulation and statistical inference&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;kable&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Output&lt;/td&gt;
+&lt;td&gt;For outputting nicer tables&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;ggdag&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Plotting&lt;/td&gt;
+&lt;td&gt;For plotting DAGs in ggplot&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;plm&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Models&lt;/td&gt;
+&lt;td&gt;For working with panel data&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;† Indicates package is part of the &lt;a href=&#34;https://tidyverse.org&#34;&gt;&lt;code&gt;tidyverse&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Note, many of these packages have multiple uses beyond our purposes!&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistics Resources</title>
+      <link>https://metricsf21.classes.ryansafner.com/resources/statistics/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/resources/statistics/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;a-general-symbol-guide&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;A General Symbol Guide&lt;/h2&gt;
+&lt;p&gt;There are a lot of symbols (often greek letters or ligatures on English letters) used in statistics and econometrics. Luckliy, most of them follow some standard patterns, and are consistent across textbooks and research (note there are exceptions!).&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;30%&#34; /&gt;
+&lt;col width=&#34;34%&#34; /&gt;
+&lt;col width=&#34;34%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Style&lt;/th&gt;
+&lt;th&gt;Examples&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Greek letters&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta_0, \beta_1, \sigma, u\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;True &lt;em&gt;parameters&lt;/em&gt; of population&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Hats&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_0}, \hat{\beta_1}, \hat{\sigma}, \hat{u}\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;Our &lt;em&gt;statistical estimates&lt;/em&gt; of population parameters, from sample data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;English capital letters&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(X_1, X_2, Y\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;(Random) variables in our sample data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;English lowercase letters&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(x_{1i}, x_{2i}, y_i\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;Individual observations of variables in our sample data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Modified capital letters&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\bar{X}, \bar{Y}\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;Statistics calculated from our sample data (e.g. sample mean)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Bold capital letters&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(X= \begin{bmatrix} x_1, x_2, \cdots , x_n \\ \end{bmatrix}\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\beta} = \begin{bmatrix} \beta_1, \beta_2, \cdots , \beta_k \\ \end{bmatrix}\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;Vector or matrix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sample-statistics-vs-population-parameters-formulae&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Sample Statistics vs Population Parameters Formulae&lt;/h2&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;16%&#34; /&gt;
+&lt;col width=&#34;33%&#34; /&gt;
+&lt;col width=&#34;50%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Sample&lt;/th&gt;
+&lt;th&gt;Population&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Population&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Mean&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\bar{x} = \frac{1}{n} \displaystyle\sum^n_{i=1} x_i\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mu = \frac{1}{N} \displaystyle\sum^N_{i=1} x_i\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Variance&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(s^2=\frac{1}{n-1} \displaystyle\sum^n_{i=1} (x_i-\bar{x})^2\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\sigma^2=\frac{1}{N} \displaystyle\sum^N_{i=1} (x_i-\mu)^2\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Standard Deviation&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(s = \sqrt{s^2}\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\sigma = \sqrt{\sigma^2}\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
 </description>
     </item>
     

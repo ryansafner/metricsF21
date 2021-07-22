@@ -8,4 +8,4 @@ type: docs
 weight: 1
 ---
 
-Look here over the course of the semester for resources, links, and tips on how to succeed in the course, how to write well, and other things of interest related to (micro)economics.
+Look here over the course of the semester for resources, links, and tips on how to succeed in the course, how to write well, and other things of interest related to econometrics, data analysis, managing your workflow, and using R. 

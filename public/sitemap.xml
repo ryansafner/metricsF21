@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://metricsf21.classes.ryansafner.com/resources/data/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://metricsf21.classes.ryansafner.com/resources/pdfs/</loc>
     <lastmod>2021-07-20T15:17:55-04:00</lastmod>
   </url>
@@ -28,8 +33,13 @@
   </url>
   
   <url>
-    <loc>https://metricsf21.classes.ryansafner.com/resources/quotes/</loc>
-    <lastmod>2021-07-20T15:17:55-04:00</lastmod>
+    <loc>https://metricsf21.classes.ryansafner.com/resources/r-packages/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://metricsf21.classes.ryansafner.com/resources/statistics/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -44,7 +54,7 @@
   
   <url>
     <loc>https://metricsf21.classes.ryansafner.com/</loc>
-    <lastmod>2021-07-22T17:17:03-04:00</lastmod>
+    <lastmod>2021-07-22T17:23:06-04:00</lastmod>
   </url>
   
   <url>
@@ -59,12 +69,7 @@
   
   <url>
     <loc>https://metricsf21.classes.ryansafner.com/content/1.1-content/</loc>
-    <lastmod>2021-07-22T17:17:03-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://metricsf21.classes.ryansafner.com/content/1.2-content/</loc>
-    <lastmod>2021-07-22T17:17:03-04:00</lastmod>
+    <lastmod>2021-07-22T17:23:06-04:00</lastmod>
   </url>
   
   <url>
