@@ -8,7 +8,9 @@ menu:
     parent: Research Paper
     weight: 1
 type: docs
-toc: true
+output:
+  blogdown::html_page:
+    toc: true
 ---
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}

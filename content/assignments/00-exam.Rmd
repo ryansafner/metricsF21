@@ -8,9 +8,9 @@ menu:
     parent: Exams
     weight: 1
 type: docs
-#output:
-#  blogdown::html_page:
-#    toc: true
+output:
+  blogdown::html_page:
+    toc: true
 ---
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
