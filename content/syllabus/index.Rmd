@@ -19,9 +19,7 @@ library(kableExtra)
 
 `r blogdown::shortcode("courseinfo")`
 
-<p style="text-align:center;"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</span></p>
-
-- **Last Updated**: July 23, 2021
+<p style="text-align:center;"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</span><br>**Last Updated**: July 23, 2021</p>
 
 > "There are three kinds of lies: lies, damned lies, and statistics." <br> [— Benjamin Disraeli]{style="float:right"}
 
@@ -37,10 +35,6 @@ As of Fall 2021, all students are expected to be on campus except those with spe
 # Course objectives
 
 <span class="newthought">By the end of this course,</span> you will:
-
-1. apply the models of microeconomics (constrained optimization and equilibrium) towards explaining real world behavior of individuals, firms, and governments
-2. explore the effects of economic and political processes on market performance (competition, market prices, profits and losses, property rights, entrepreneurship, market power, market failures, public policy, government failures)
-3. apply the economic way of thinking to real world issues in writing
 
 1. understand how to evaluate statistical and empirical claims;
 2. use the fundamental models of causal inference and research design;

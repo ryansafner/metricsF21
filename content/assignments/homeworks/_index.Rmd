@@ -1,0 +1,11 @@
+---
+title: HWs
+menu:
+  homeworks:
+    parent: Homeworks
+    weight: 1
+type: docs
+weight: 1
+---
+
+Info about HWs

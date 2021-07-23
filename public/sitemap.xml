@@ -3,8 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://metricsf21.classes.ryansafner.com/assignments/</loc>
+    <lastmod>2020-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://metricsf21.classes.ryansafner.com/resources/tips/</loc>
     <lastmod>2021-07-20T15:17:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://metricsf21.classes.ryansafner.com/assignments/homeworks/</loc>
   </url>
   
   <url>
@@ -70,6 +79,16 @@
   <url>
     <loc>https://metricsf21.classes.ryansafner.com/content/1.1-content/</loc>
     <lastmod>2021-07-22T17:23:06-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://metricsf21.classes.ryansafner.com/assignments/exams/</loc>
+    <lastmod>2020-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://metricsf21.classes.ryansafner.com/assignments/problem-sets/</loc>
+    <lastmod>2020-06-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -163,7 +182,7 @@
   
   <url>
     <loc>https://metricsf21.classes.ryansafner.com/syllabus/</loc>
-    <lastmod>2021-07-23T11:22:54-04:00</lastmod>
+    <lastmod>2021-07-23T11:27:44-04:00</lastmod>
   </url>
   
 </urlset>

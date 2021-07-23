@@ -1,0 +1,17 @@
+---
+title: Overview
+menu:
+  assignments:
+    parent: Assignments
+    weight: 1
+type: docs
+weight: 1
+---
+
+On this page, you can find more information about each individual assignment, as well as the assignments themselves.
+
+- [<i class="fas fa-calculator"></i> `Grade Calculator`](https://ryansafner.shinyapps.io/480_grade_calculator/) 
+
+Use this tool to help calculate your overall course grade using existing assignment grades, as well as forecast "what if" scenarios.
+
+Please refer to the [syllabus](/syllabus) for more information about grades.

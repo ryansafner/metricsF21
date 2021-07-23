@@ -1,0 +1,16 @@
+---
+title: "Problem Sets"
+draft: false
+linktitle: "Problem Sets"
+date: "2020-06-08"
+menu:
+  assignments:
+    parent: Assignments
+    weight: 2
+type: docs
+#output:
+#  blogdown::html_page:
+#    toc: true
+---
+
+There will be several problem sets (one at the end of each lesson). Problem sets will be a combination of math/statistical theory & application problems and problems that require use of R with real data. You may collaborate with other students to work on problem sets, but each person must turn in an individual problem set. Problem sets are due one week from the class period where we finish a lesson, and must emailed to me by the start of class (so please type or, if you must, hand write and scan them).
