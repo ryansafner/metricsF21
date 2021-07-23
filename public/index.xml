@@ -552,14 +552,13 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#course-format-and-covid&#34;&gt;Course Format and Covid&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#course-objectives&#34;&gt;Course objectives&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#required-course-materials&#34;&gt;Required Course materials&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#assignments-and-grades&#34;&gt;Assignments and Grades&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#required-course-materials&#34;&gt;Required Course materials&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#homeworks&#34;&gt;Homeworks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#exams&#34;&gt;Exams&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#opinion-editorial&#34;&gt;Opinion-Editorial&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#no-extra-credit-is-available&#34;&gt;No extra credit is available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#books&#34;&gt;Books&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#articles&#34;&gt;Articles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#software&#34;&gt;Software&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments-and-grades&#34;&gt;Assignments and Grades&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#policies-and-expectations&#34;&gt;Policies and Expectations&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#late-assignments&#34;&gt;Late Assignments&lt;/a&gt;&lt;/li&gt;
@@ -569,7 +568,7 @@
 &lt;li&gt;&lt;a href=&#34;#privacy&#34;&gt;Privacy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#enrollment&#34;&gt;Enrollment&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#honor-code&#34;&gt;Honor Code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#van-halen-and-mms&#34;&gt;Van Halen and M&amp;amp;Ms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#van-halen-and-mms-unlisted&#34;&gt;Van Halen and M&amp;amp;Ms {unlisted}&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#accessibility-equity-and-accommodations&#34;&gt;Accessibility, Equity, and Accommodations&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#acbsp-information&#34;&gt;ACBSP Information&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -606,14 +605,13 @@
 &lt;span class=&#34;btn btn-primary btn-lg&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF&lt;/span&gt;
 &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Last Updated&lt;/strong&gt;: February 1, 2021&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Last Updated&lt;/strong&gt;: July 23, 2021&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;“The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design.”&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; &lt;br&gt; &lt;span style=&#34;float:right&#34;&gt;— F.A. Hayek (1974 Economics Nobel Laureate)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;“There are three kinds of lies: lies, damned lies, and statistics.” &lt;br&gt; &lt;span style=&#34;float:right&#34;&gt;— Benjamin Disraeli&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Game theory&lt;/span&gt; is a collection of analytical tools used to rigorously study strategic interactions between rational agents. It is one of the most useful and powerful theoretical innovations in 20&lt;sup&gt;th&lt;/sup&gt; century social science, and has been applied extensively in economics, political science, psychology, sociology, logic, computer science, animal behavior, and evolutionary biology. At least twelve economists have won the Nobel Prize for research directly related to game theory (and arguably more have made tangential contributions). This is an &lt;em&gt;economics&lt;/em&gt; course, so the majority of our focus and applications will be in economic settings, though we will examine a much wider scope of strategic interactions than the “narrow” economic domain of firms and consumers.&lt;/p&gt;
-&lt;p&gt;Please don’t get the wrong idea — this course is &lt;em&gt;not&lt;/em&gt; the theory of “games” in the colloquial sense (e.g. chess, poker, football, &lt;em&gt;Fortnite&lt;/em&gt;, etc)! This course is &lt;em&gt;not&lt;/em&gt; designed to make a you a better [insert favorite game] player (but that may be a side effect!). A “game” in social science is defined according to certain technical criteria. Furthermore, formal game theory is &lt;em&gt;highly abstract and very mathematical&lt;/em&gt;. I will try to balance formal theory with interesting real world applications, sometimes including colloquial “games.”&lt;/p&gt;
-&lt;p&gt;Game theory is a direct extension of basic microeconomics, so this class assumes you have met the &lt;strong&gt;required prerequisite course(s) — ECON 206&lt;/strong&gt;. My approach to game theory requires &lt;em&gt;some&lt;/em&gt; math, but it will not be exclusively about the math.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Econometrics&lt;/span&gt; is the application of statistical tools to quantify and measure economic relationships in the real world. It uses real data to test economic hypotheses, quantitatively estimate causal relationships between economic variables, and to make forecasts of future events. The primary tool that economists use for empirical analysis is ordinary least squares (OLS) linear regression, so the majority of this course will focus on understanding, applying, and extending OLS regressions.&lt;/p&gt;
+&lt;p&gt;I assume you have &lt;em&gt;some&lt;/em&gt; working knowledge of economics at the intermediate level and some basic statistical tools.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; We will do some basic review of some necessary statistics and probability at the beginning until everyone is comfortable, before jumping right into regressions.&lt;/p&gt;
 &lt;div id=&#34;course-format-and-covid&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Course Format and Covid&lt;/h1&gt;
 &lt;p&gt;As of Fall 2021, all students are expected to be on campus except those with special approved exemptions. As such, this course will be taught &lt;strong&gt;in-person&lt;/strong&gt; and &lt;strong&gt;synchronously&lt;/strong&gt; until or unless otherwise announced.&lt;/p&gt;
@@ -621,44 +619,56 @@
 &lt;div id=&#34;course-objectives&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Course objectives&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;By the end of this course,&lt;/span&gt; you will:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Recognize different types of strategic interactions across different domains of life (e.g. economics, political science, biology, etc.)&lt;/li&gt;
-&lt;li&gt;Recognize common types of games, e.g. prisoners’ dilemma, stag hunt, battle of the sexes, chicken, hawk-dove&lt;/li&gt;
-&lt;li&gt;Solve for equilibria of games in normal form, extended form, in pure &amp;amp; mixed strategies,&lt;/li&gt;
-&lt;li&gt;Understand the role of information, sequencing, credible commitments, repetition, etc.&lt;/li&gt;
-&lt;li&gt;Become familiar with some of the economics (and other) literatures that use game theoretic tools&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;apply the models of microeconomics (constrained optimization and equilibrium) towards explaining real world behavior of individuals, firms, and governments&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;explore the effects of economic and political processes on market performance (competition, market prices, profits and losses, property rights, entrepreneurship, market power, market failures, public policy, government failures)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;apply the economic way of thinking to real world issues in writing&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;understand how to evaluate statistical and empirical claims;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;use the fundamental models of causal inference and research design;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;gather, analyze, and communicate with real data in R.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I am less concerned with forcing you to memorize and recite proofs of statistical estimator properties, and more concerned with the development of your intuitions and the ability to think critically as an empirical social scientist—although this will require you to demonstrate proficiency with some intermediate statistical and mathematical tools.&lt;/p&gt;
 &lt;p&gt;Given these objectives, this course fulfills all three of the learning outcomes for &lt;a href=&#34;https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business/student-learning-outcomes&#34;&gt;the George B. Delaplaine, Jr. School of Business&lt;/a&gt; Economics B.A. program:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Use quantitative tools and techniques in the preparation, interpretation, analysis and presentation of data and information for problem solving and decision making […]&lt;/li&gt;
 &lt;li&gt;Apply economic reasoning and models to understand and analyze problems of public policy […]&lt;/li&gt;
 &lt;li&gt;Demonstrate effective oral and written communications skills for personal and professional success[…]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Fair warning:&lt;/span&gt; &lt;strong&gt;Economics is hard.&lt;/strong&gt; &lt;em&gt;This, in particular, may be of the hardest courses that you will take, primarily due to the mathematical content.&lt;/em&gt; Using the economic way of thinking is a skill, it is literally retraining your brain to interpret and analyze the world in a novel way, and is not something that can be memorized. I will do my best to make this class intuitive and helpful, if not interesting. If at any point you find yourself struggling in this course for any reason, please come see me. Do not suffer in silence! Coming to see me for help does not diminish my view of you, in fact I will hold you in &lt;em&gt;higher&lt;/em&gt; regard for understanding your own needs and taking charge of your own learning. There are also a some fantastic resources on campus, such as the &lt;a href=&#34;http://www.hood.edu/campus-services/academic-services/index.html&#34;&gt;Center for Academic Achievement and Retention (CAAR)&lt;/a&gt; and the &lt;a href=&#34;http://www.hood.edu/library/&#34;&gt;Beneficial-Hodson Library&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;See my &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/reference#tips&#34;&gt;tips for success in this course&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Fair warning: Econometrics is hard.&lt;/span&gt; &lt;em&gt;It will be one of the hardest economics courses that you will take, primarily due to the mathematical content.&lt;/em&gt; I will do my best to make this class intuitive and helpful, if not interesting. If at any point you find yourself struggling in this course for any reason, please come see me. Do not suffer in silence! Coming to see me for help does not diminish my view of you, in fact I will hold you in &lt;em&gt;higher&lt;/em&gt; regard for understanding your own needs and taking charge of your own learning. There are also a some fantastic resources on campus, such as the &lt;a href=&#34;http://www.hood.edu/campus-services/academic-services/index.html&#34;&gt;Center for Academic Achievement and Retention (CAAR)&lt;/a&gt; and the &lt;a href=&#34;http://www.hood.edu/library/%7D%7BBeneficial-Hodson%20Library&#34;&gt;Beneficial-Hodson Library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See my &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/resources&#34;&gt;tips for success in this course&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;required-course-materials&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Required Course materials&lt;/h1&gt;
-&lt;p&gt;You can find all course materials at my &lt;strong&gt;dedicated website&lt;/strong&gt; for this course: &lt;a href=&#34;https://gameF21.classes.ryansafner.com&#34;&gt;gameF21.classes.ryansafner.com&lt;/a&gt;. Links to the website are posted on our Blackboard course page. Please familiarize yourself with the website, see that it contains this &lt;a href=&#34;https://gameF21.classes.ryansafner.com/syllabus/&#34;&gt;syllabus&lt;/a&gt;, guides for your &lt;a href=&#34;https://gameF21.classes.ryansafner.com/reference/&#34;&gt;reference&lt;/a&gt;, and our &lt;a href=&#34;https://gameF21.classes.ryansafner.com/schedule/&#34;&gt;schedule&lt;/a&gt;. On the schedule page, you can find each module with its own class page (&lt;strong&gt;start there!&lt;/strong&gt;) along with all related readings, lecture slides, practice problems, and assignments.&lt;/p&gt;
+&lt;p&gt;This course requires regular online internet access. If you know you will be unable to access the internet regularly, please let me know and we can make arrangements.&lt;/p&gt;
+&lt;p&gt;You can find all course materials at my &lt;strong&gt;dedicated website&lt;/strong&gt; for this course: &lt;a href=&#34;https://metricsF21.classes.ryansafner.com&#34;&gt;metricsF21.classes.ryansafner.com&lt;/a&gt;. Links to the website are posted on our Blackboard course page. Please familiarize yourself with the website, see that it contains this &lt;a href=&#34;https://metricsF21.classes.ryansafner.com/syllabus/&#34;&gt;syllabus&lt;/a&gt;, &lt;a href=&#34;https://metricsF21.classes.ryansafner.com/resources/&#34;&gt;resources&lt;/a&gt; to help you, and our &lt;a href=&#34;https://metricsF21.classes.ryansafner.com/schedule/&#34;&gt;schedule&lt;/a&gt;. On the schedule page, you can find each module with its own class page (&lt;strong&gt;start there!&lt;/strong&gt;) along with all related readings, lecture slides, practice problems, and assignments.&lt;/p&gt;
 &lt;p&gt;My lecture slides will be shared with you, and serve as your primary resource, but our main “textbook” below is &lt;strong&gt;recommended&lt;/strong&gt; as the next best resource and will be available from the campus bookstore. I will discuss more about textbooks and materials in the first module.&lt;/p&gt;
-&lt;div id=&#34;books&#34; class=&#34;section level2 unlisted&#34;&gt;
+&lt;div id=&#34;books&#34; class=&#34;section level2 unnumbered&#34;&gt;
 &lt;h2&gt;Books&lt;/h2&gt;
-&lt;p&gt;My lecture slides (made available to you) are the primary resource for the material and the best guide to prepare for homeworks and exams. There are two books that we will roughly be following in parallel, both available at the bookstore (or you can find them on Amazon, ebay, etc). You may choose to purchase used or old versions, but be aware that content and ordering may slightly vary across versions.&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Dixit, Avinash K and Barry J Nalebuff, 2008, &lt;em&gt;The Art of Strategy: A Game Theorist’s Guide to Success in Business and Life&lt;/em&gt;, New York: W.W. Norton and Company&lt;/li&gt;
-&lt;li&gt;Dixit, Avinash K, Susan Skeath, and David H Reily Jr, 2014, &lt;em&gt;Games of Strategy&lt;/em&gt;, 4&lt;sup&gt;th&lt;/sup&gt; ed, New York: W.W. Norton and Company&lt;/li&gt;
-&lt;li&gt;Purchase a Moblab account ($10) at &lt;a href=&#34;http://moblab.com&#34;&gt;moblab.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The first book is a popular, read-on-the-beach style paperback that covers the topics in a readable way. It is listed as &lt;strong&gt;required&lt;/strong&gt; in the bookstore, and should be fairly cheap on Amazon. It mirrors the topics in the next book in roughly the same order but certainly at a more general (and less mathematical) manner.&lt;/p&gt;
-&lt;p&gt;The second book is the more common textbook-style As with any textbook, this will be more expensive but a deeper dive into the material that may help with your understanding. It is listed as &lt;strong&gt;recommended&lt;/strong&gt; in the bookstore.&lt;/p&gt;
-&lt;p&gt;If you purchase the second book, it is superfluous for you to purchase the first book, unless you really would like to!&lt;/p&gt;
-&lt;p&gt;Finally, purchase an account on &lt;a href=&#34;https://moblab.com&#34;&gt;moblab.com&lt;/a&gt; so that we can all play games in class together on common software.&lt;/p&gt;
-&lt;p&gt;I leave it to you to determine your own optimal strategy in purchasing (or not) any textbooks. There is no dominant strategy here.&lt;/p&gt;
+&lt;p&gt;The following book is &lt;strong&gt;required&lt;/strong&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; and will be available from the campus bookstore.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bailey, Michael A, 2019, &lt;em&gt;Real Econometrics&lt;/em&gt;, New York: Oxford University Press, 2&lt;sup&gt;nd&lt;/sup&gt; ed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You are welcome to purchase the book by other means (e.g. Amazon, half.com, etc). I have no financial stake in requiring you to purchase this book. The (cheaper) 1st edition is sufficient, but makes significantly less use of &lt;code&gt;R&lt;/code&gt; (in favor of &lt;code&gt;STATA&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The following two books are &lt;strong&gt;recommended&lt;/strong&gt;, and are free online&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grolemund, Garrett and Hadley Wickham, &lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;&lt;em&gt;R For Data Science&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ismay, Chester and Albert Y Kim, &lt;a href=&#34;https://moderndive.com/&#34;&gt;&lt;em&gt;Modern Dive: Statistical Inference Via Data Science&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first book is the number one resource for using &lt;code&gt;R&lt;/code&gt; and &lt;code&gt;tidyverse&lt;/code&gt;, and is written for beginners. I still look at it &lt;em&gt;frequently.&lt;/em&gt; The second is another great reference for using &lt;code&gt;tidyverse&lt;/code&gt; in the context of basic statistics.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;articles&#34; class=&#34;section level2 unnumbered&#34;&gt;
+&lt;h2&gt;Articles&lt;/h2&gt;
+&lt;p&gt;Throughout the course, I will post both required and supplemental (non-required) readings that enrich your understanding for each topic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;software&#34; class=&#34;section level2 unnumbered&#34;&gt;
+&lt;h2&gt;Software&lt;/h2&gt;
+&lt;p&gt;You are &lt;strong&gt;strongly recommended&lt;/strong&gt; to download copies of &lt;a href=&#34;https://www.r-project.org/&#34;&gt;&lt;code&gt;R&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;http://www.rstudio.com&#34;&gt;&lt;code&gt;R Studio&lt;/code&gt;&lt;/a&gt; on your own computers. These software packages are available on all computers in the trading room, and you will have access to them during the week to work on assignments.&lt;/p&gt;
+&lt;p&gt;We will also have a shared class workspace in &lt;a href=&#34;http://rstudio.cloud/&#34;&gt;RStudio.cloud&lt;/a&gt; that runs a full instance of R Studio in your web browser (so no need to install anything!) will let you access files and assignments.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;assignments-and-grades&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Assignments and Grades&lt;/h1&gt;
-&lt;p&gt;Your final course grade is the weighted average of the following assignments. You can find general descriptions for all the assignments on the &lt;a href=&#34;http://gameF21.classes.ryansafner.com/assignments/&#34;&gt;assignments page&lt;/a&gt; and more specific information and examples on each assignment’s page on the &lt;a href=&#34;http://gameF21.classes.ryansafner.com/schedule/&#34;&gt;schedule page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your final course grade is the weighted average of the following assignments. You can find general descriptions for all the assignments on the &lt;a href=&#34;assignments/&#34;&gt;assignments page&lt;/a&gt; and more specific information (such as due dates) and examples on each assignment’s page on the &lt;a href=&#34;schedule/&#34;&gt;schedule page&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -676,13 +686,24 @@ Weight
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Research Project
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+30%
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
 n
 &lt;/td&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
-Homeworks
+Problem sets (Average)
 &lt;/td&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
-25% (using average HW grade)
+25%
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -690,7 +711,7 @@ Homeworks
 1
 &lt;/td&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
-Paper
+Midterm
 &lt;/td&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
 20%
@@ -701,21 +722,10 @@ Paper
 1
 &lt;/td&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
-Midterm Exam
+Final
 &lt;/td&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
-20%
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-3
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-Final Exam
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-20% (each)
+25%
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -825,43 +835,51 @@ F
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;See also my &lt;a href=&#34;https://ryansafner.shinyapps.io/306_grade_calculator/&#34;&gt;&lt;i class=&#34;fas fa-calculator&#34;&gt;&lt;/i&gt; &lt;code&gt;Grade Calculator&lt;/code&gt;&lt;/a&gt; app where you can calculate your overall grade using existing assignment grades and forecast “what if” scenarios.&lt;/p&gt;
+&lt;p&gt;See also my &lt;a href=&#34;https://ryansafner.shinyapps.io/480_grade_calculator/&#34;&gt;&lt;i class=&#34;fas fa-calculator&#34;&gt;&lt;/i&gt; &lt;code&gt;Grade Calculator&lt;/code&gt;&lt;/a&gt; app where you can calculate your overall grade using existing assignment grades and forecast “what if” scenarios.&lt;/p&gt;
 &lt;p&gt;These grades are firm cutoffs, but I do of course round upwards &lt;span class=&#34;math inline&#34;&gt;\((\geq\)&lt;/span&gt; 0.5) for final grades. A necessary reminder, as an academic, I am not in the business of &lt;em&gt;giving&lt;/em&gt; out grades, I merely report the grade that you &lt;em&gt;earn&lt;/em&gt;. I will not alter your grade unless you provide a reasonable argument that I am in error (which does happen from time to time).&lt;/p&gt;
-&lt;div id=&#34;homeworks&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Homeworks&lt;/h2&gt;
-&lt;p&gt;There will be roughly a homework assignment every few lessons. These questions will help check your understanding and mastery of the material, and will be a combination of quantitative, graph, and short answer questions of examples. These will also be good indicators of what to expect on the exams. You may collaborate with other students to work on homeworks (and I encourage that!), but each person must turn in an individual assignment.&lt;/p&gt;
-&lt;p&gt;Homeworks are generally due by 11:59 PM EST Sunday by submission to Blackboard Assignments.&lt;/p&gt;
-&lt;p&gt;Please &lt;strong&gt;type&lt;/strong&gt; your answers to the following questions in a document and &lt;strong&gt;save as a PDF&lt;/strong&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; to &lt;strong&gt;upload on Blackboard&lt;/strong&gt; under Assignments. You may handwrite answers if you will be able to scan/photograph &amp;amp; convert them &lt;strong&gt;to a single PDF&lt;/strong&gt;, if they are easily readable, but this is &lt;em&gt;not preferred&lt;/em&gt;. See my &lt;a href=&#34;https://gameF21.classes.ryansafner.com/resources/#how-to-make-a-pdf-for-submitting-assignments&#34;&gt;guide to making a PDF&lt;/a&gt; - an essential skill in the modern world. If you are handwriting answers, you may print the &lt;code&gt;pdf&lt;/code&gt; above and write on it, or just write on a piece of paper (we only need your answers).&lt;/p&gt;
-&lt;p&gt;For the few questions that ask you to draw a &lt;strong&gt;graph&lt;/strong&gt;, &lt;em&gt;try&lt;/em&gt; to do so &lt;em&gt;on your computer&lt;/em&gt; (use MS Paint, the drawing tools in MS Word or MS Powerpoint, plot points in MS Excel, drawing/notetaking apps, etc.), and save it as an image to include on your homework document. Again, they need not be perfect or to scale, just show that you understand the broad idea. Being able to understand and sketch the graphs is still a very important and useful skill! If all else fails, I will be lenient in grading graph questions if you are unable to technologically include a graph.&lt;/p&gt;
-&lt;p&gt;Your TA, under my supervision, will grade homeworks 70% for completion, and for the remaining 30%, and one question will be graded for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;exams&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Exams&lt;/h2&gt;
-&lt;p&gt;There will be three exams (one at the end of each unit) including the final exam. Each exam only covers the material in its associated unit (i.e. no exam is cumulative). These exams provide feedback both to you and to me that ensures everyone is progressing on schedule and apprehending the material. This is critical, as the rest of the course, and indeed, any future economics course you take, will build off of this foundation.&lt;/p&gt;
-&lt;p&gt;Exams will be released &lt;strong&gt;on Blackboard&lt;/strong&gt; as a timed assignment. You will have 2 hours once you open the exam on Blackboard. You will not need the whole time, I have given you some extra to accommodate the difficulties of taking an exam at home. Please pick a time to take it where you know you will have 2 hours. You may close the exam page and come back to it, but the timer will continue to run once the exam is first opened.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;opinion-editorial&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Opinion-Editorial&lt;/h2&gt;
-&lt;p&gt;Economic fallacies have always been popular, and journalists, politicians, and talking heads consistently engage in faulty economic reasoning in print and on television. Your task, as a student of economics, is to find some issue discussed in the past year, and write a critique of media discussion of that issue. Alternatively, instead of critiquing the reasoning or statements of others, you may write an advocacy piece, where you propose some economic policy and argue to persuade readers to endorse it. You will be graded both on the soundness of your economic reasoning and the quality of your writing. I would be happy to co-author an Op-Ed with anyone who writes an exemplary Op-Ed. Students who successfully publish their work in a media outlet will earn &lt;em&gt;extra credit&lt;/em&gt; on their Op-Ed grade. I will provide ample resources and examples to help you accomplish this, you can find more on the associated &lt;a href=&#34;assignment/op-ed&#34;&gt;assignment page&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;no-extra-credit-is-available&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;No extra credit is available&lt;/h2&gt;
-&lt;/div&gt;
+&lt;!--## Homeworks
+
+There will be roughly a homework assignment every few lessons. These questions will help check your understanding and mastery of the material, and will be a combination of quantitative, graph, and short answer questions of examples. These will also be good indicators of what to expect on the exams. You may collaborate with other students to work on homeworks (and I encourage that!), but each person must turn in an individual assignment.
+
+Homeworks are generally due by 11:59 PM EST Sunday by submission to Blackboard Assignments.
+
+Please **type** your answers to the following questions in a document and **save as a PDF**^[In MS Word, or Pages, or most word processing software, File -&gt; Save As -&gt; PDF, or File -&gt; Export -&gt; PDF.] to **upload on Blackboard** under Assignments. You may handwrite answers if you will be able to scan/photograph &amp; convert them **to a single PDF**, if they are easily readable, but this is *not preferred*. See my [guide to making a PDF](https://gameF21.classes.ryansafner.com/resources/#how-to-make-a-pdf-for-submitting-assignments) - an essential skill in the modern world. If you are handwriting answers, you may print the `pdf` above and write on it, or just write on a piece of paper (we only need your answers).
+
+For the few questions that ask you to draw a **graph**, *try* to do so *on your computer* (use MS Paint, the drawing tools in MS Word or MS Powerpoint, plot points in MS Excel, drawing/notetaking apps, etc.), and save it as an image to include on your homework document. Again, they need not be perfect or to scale, just show that you understand the broad idea. Being able to understand and sketch the graphs is still a very important and useful skill! If all else fails, I will be lenient in grading graph questions if you are unable to technologically include a graph. 
+
+Your TA, under my supervision, will grade homeworks 70% for completion, and for the remaining 30%, and one question will be graded for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.
+
+## Exams 
+
+There will be three exams (one at the end of each unit) including the final exam. Each exam only covers the material in its associated unit (i.e. no exam is cumulative). These exams provide feedback both to you and to me that ensures everyone is progressing on schedule and apprehending the material. This is critical, as the rest of the course, and indeed, any future economics course you take, will build off of this foundation.
+
+Exams will be released **on Blackboard** as a timed assignment. You will have 2 hours once you open the exam on Blackboard. You will not need the whole time, I have given you some extra to accommodate the difficulties of taking an exam at home. Please pick a time to take it where you know you will have 2 hours. You may close the exam page and come back to it, but the timer will continue to run once the exam is first opened.
+
+
+## Opinion-Editorial 
+
+Economic fallacies have always been popular, and journalists, politicians, and talking heads consistently engage in faulty economic reasoning in print and on television. Your task, as a student of economics, is to find some issue discussed in the past year, and write a critique of media discussion of that issue. Alternatively, instead of critiquing the reasoning or statements of others, you may write an advocacy piece, where you propose some economic policy and argue to persuade readers to endorse it. You will be graded both on the soundness of your economic reasoning and the quality of your writing. I would be happy to co-author an Op-Ed with anyone who writes an exemplary Op-Ed. Students who successfully publish their work in a media outlet will earn *extra credit* on their Op-Ed grade. I will provide ample resources and examples to help you accomplish this, you can find more on the associated [assignment page](assignment/op-ed).
+--&gt;
+&lt;p&gt;&lt;strong&gt;No extra credit is available&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;policies-and-expectations&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Policies and Expectations&lt;/h1&gt;
-&lt;p&gt;This syllabus is a contract between you, the student, and me, your instructor. It has been carefully and deliberately thought out&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;, and I will uphold my end of the agreement and expect you to uphold yours.&lt;/p&gt;
+&lt;p&gt;This syllabus is a contract between you, the student, and me, your instructor. It has been carefully and deliberately thought out&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;, and I will uphold my end of the agreement and expect you to uphold yours.&lt;/p&gt;
 &lt;p&gt;In the language of game theory, this syllabus is my commitment device. I am a very understanding person, and I know that exceptions to rules often need to be made for students. However, to be &lt;em&gt;fair&lt;/em&gt; to &lt;em&gt;all&lt;/em&gt; students the syllabus artificially constrains my ability to make exceptions at a whim for anyone. This prevents clever students from exploiting my congenial personality at everyone else’s expense. Please read and familiarize yourself with the course policies and expectations of you. Chances are, if you have a question, it is answered herein.&lt;/p&gt;
-&lt;p&gt;This is a hybrid course with synchronous (live) and asynchronous (on your own time) parts.&lt;/p&gt;
-&lt;p&gt;You are generally expected to join (online via Zoom) our &lt;strong&gt;synchronous&lt;/strong&gt; class sessions unless circumstances prevent you from doing so. Day-to-day attendance is not graded per se, but I strongly recommend you join in all live sessions in which you are able, since we all can provide live feedback and I can answer questions and address concerns as soon as they come up. You will also benefit from a rigid schedule and shared community.&lt;/p&gt;
-&lt;p&gt;If you are unable to make a particular class, you generally do not need to let me know. &lt;strong&gt;The videos from all class sessions are posted on Blackboard&lt;/strong&gt; so please review videos of classes you were unable to attend live.&lt;/p&gt;
-&lt;p&gt;All assignmnents are able to be completed &lt;strong&gt;asynchronously&lt;/strong&gt; during the week, and are &lt;strong&gt;generally due by 11:59PM Sunday each week&lt;/strong&gt; to allow you flexibility in your hectic schedules.&lt;/p&gt;
+&lt;!--This is a hybrid course with synchronous (live) and asynchronous (on your own time) parts. 
+
+You are generally expected to join (online via Zoom) our **synchronous** class sessions unless circumstances prevent you from doing so. Day-to-day attendance is not graded per se, but I strongly recommend you join in all live sessions in which you are able, since we all can provide live feedback and I can answer questions and address concerns as soon as they come up. You will also benefit from a rigid schedule and shared community. 
+
+If you are unable to make a particular class, you generally do not need to let me know. **The videos from all class sessions are posted on Blackboard** so please review videos of classes you were unable to attend live. 
+
+All assignmnents are able to be completed **asynchronously** during the week, and are **generally due by 11:59PM Sunday each week** to allow you flexibility in your hectic schedules.--&gt;
 &lt;div id=&#34;late-assignments&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Late Assignments&lt;/h2&gt;
 &lt;p&gt;I will accept late assignments, but will subtract a specified amount of points as a penalty. Even if it is the last week of the semester, I encourage you to turn in late work: some points are better than no points!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Homeworks&lt;/strong&gt;: If you turn in a homework after it is due but before it is graded or the answer key posted, I generally will not take off any points. However, &lt;strong&gt;if you turn in a homework &lt;em&gt;after&lt;/em&gt; the answer key is posted, I will automatically deduct 20 points (so the maximum grade you can earn on it is an 80).&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Exams&lt;/strong&gt;: If you know that you will be unable to complete an &lt;em&gt;exam&lt;/em&gt; as scheduled for a legitimate reason, please notify me at least &lt;em&gt;one week&lt;/em&gt; in advance, and we will schedule a make-up exam date. Failure to do so, including desperate attempts to make arrangements only &lt;em&gt;after&lt;/em&gt; the exam will result in a grade of 0 and little sympathy. I reserve the right to re-weight other assignments for students who I believe are legitimately unable to complete a particular assignment.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Op-eds&lt;/strong&gt;: Starting at the deadline, I will take off 1 point for every hour that your Op-ed is late.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Homeworks&lt;/strong&gt;: If you turn in a homework after it is due but before it is graded or the answer key posted, I generally will not take off any points. However, &lt;strong&gt;if you turn in a homework &lt;em&gt;after&lt;/em&gt; the answer key is posted, I will automatically deduct 15 points (so the maximum grade you can earn on it is an 85).&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exams&lt;/strong&gt;: If you know that you will be unable to complete an &lt;em&gt;exam&lt;/em&gt; as scheduled for a legitimate reason, please notify me at least &lt;em&gt;one week&lt;/em&gt; in advance, and we will schedule a make-up exam date. Failure to do so, including desperate attempts to make arrangements only &lt;em&gt;after&lt;/em&gt; the exam will result in a grade of 0 and little sympathy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Term Papers&lt;/strong&gt;: Starting at the deadline, I will take off 1 point for every hour that your paper is late.&lt;/p&gt;
+&lt;p&gt;I reserve the right to re-weight assignments for students whom I believe are legitimately unable to complete a particular assignment.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;grading&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Grading&lt;/h2&gt;
@@ -900,9 +918,9 @@ F
 &lt;h2&gt;Honor Code&lt;/h2&gt;
 &lt;p&gt;Hood College has an Academic Honor Code which requires all members of this community to maintain the highest standards of academic honesty and integrity. Cheating, plagiarism, lying, and stealing are all prohibited. All violations of the Honor Code are taken seriously, will be reported to appropriate authority, and may result in severe penalties, including expulsion from the college. See &lt;a href=&#34;http://hood.smartcatalogiq.com/en/2016-2017/Catalog/The-Spirit-of-Hood/The-Academic-Honor-Code-and-Code-of-Conduct&#34;&gt;here&lt;/a&gt; for more detailed information.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;van-halen-and-mms&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Van Halen and M&amp;amp;Ms&lt;/h2&gt;
-&lt;p&gt;When you have completed reading the syllabus, email me a picture of the band Van Halen and a picture of a bowl of M&amp;amp;Ms. If you do this &lt;em&gt;before&lt;/em&gt; the date of the first exam, you will get bonus points on the exam.&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; Yes, this is real.&lt;/p&gt;
+&lt;div id=&#34;van-halen-and-mms-unlisted&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Van Halen and M&amp;amp;Ms {unlisted}&lt;/h2&gt;
+&lt;p&gt;When you have completed reading the syllabus, email me a picture of the band Van Halen and a picture of a bowl of M&amp;amp;Ms. If you do this &lt;em&gt;before&lt;/em&gt; the date of the first exam, you will get bonus points on the exam.&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt; Yes, this is real.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;accessibility-equity-and-accommodations&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Accessibility, Equity, and Accommodations&lt;/h2&gt;
@@ -919,15 +937,16 @@ F
 &lt;/div&gt;
 &lt;div id=&#34;tentative-schedule&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Tentative Schedule&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;You can find a full schedule&lt;/strong&gt; with much more details, including the readings, appendices, and other further resources for each class meeting on the &lt;a href=&#34;http://gameF21.classes.ryansafner.com/schedule/&#34;&gt;schedule page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You can find a full schedule&lt;/strong&gt; with much more details, including the readings, appendices, and other further resources for each class meeting on the &lt;a href=&#34;schedule/&#34;&gt;schedule page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Hayek, F.A., 1988, &lt;em&gt;The Fatal Conceit&lt;/em&gt;, p.76&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;In MS Word, or Pages, or most word processing software, File -&amp;gt; Save As -&amp;gt; PDF, or File -&amp;gt; Export -&amp;gt; PDF.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;A syllabus can and will be used as a legal document for disputes tried at a court of law. Ask me how I know.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;If 75-100% of the class does this, you each get 2 points. If 50-75% of the class does this, you each get 4 points. If 25-50% of the class does this, you each get 6 points. If 0-25% of the class does this, you each get 8 points.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;The formal prerequisites for this course are &lt;strong&gt;ECON 205&lt;/strong&gt; and &lt;strong&gt;ECON 206&lt;/strong&gt;; &lt;strong&gt;ECMG 212&lt;/strong&gt; or &lt;strong&gt;MATH 112&lt;/strong&gt;; and &lt;strong&gt;ECON 305&lt;/strong&gt; or &lt;strong&gt;ECON 306&lt;/strong&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;You are not &lt;em&gt;obligated&lt;/em&gt; to buy it, I just &lt;strong&gt;strongly recommend&lt;/strong&gt; it in the sense that you will still have access to all data and assignments without possessing the book. But this is a course where you really will want to understand the derivations or get additional context beyond just my slides…&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;You can purchase a hard copy of the first one if you really want.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;A syllabus can and will be used as a legal document for disputes tried at a court of law. Ask me how I know.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;If 75-100% of the class does this, you each get 2 points. If 50-75% of the class does this, you each get 4 points. If 25-50% of the class does this, you each get 6 points. If 0-25% of the class does this, you each get 8 points.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
