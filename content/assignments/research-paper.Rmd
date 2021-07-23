@@ -1,7 +1,7 @@
 ---
 title: "Research Paper Project"
 draft: false
-linktitle: "Research Paper"
+linktitle: "Instructions"
 date: "2020-06-08"
 menu:
   assignments:
