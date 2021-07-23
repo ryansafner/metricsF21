@@ -1,0 +1,35 @@
+---
+title: Problem Sets
+menu:
+  assignments:
+    parent: Problem Sets
+    weight: 1
+type: docs
+weight: 1
+---
+
+## Overview
+
+There will be several problem sets (typically 5-6) spaced throughout the semester. Typically, after we cover a major concept or set of tools, I will assign a problem set to practice this material. 
+
+Problem sets will be a combination of math/statistical theory & application problems, as well as problems that require the use of R with real data.
+
+Problem sets are typically due one week from the class period it is assigned (although the due date announced on the problem set is the final authority on this), and must handed in or emailed to me by the start of class (so please type or, if you must, hand write and scan them).
+
+## Instructions
+
+Due to the combination of traditional and `R` problems, there are several ways you can complete and turn each assignment:
+
+1. Type up any applicable answers (saving any plots as images and including them) in a (e.g. Word) document and save it as a PDF *and* turn in a (commented!) *.R* file of commands for each relevant question. 
+
+2. If you wish to write out answers by hand, you may either print the <i class="fas fa-file-pdf"></i> pdf above or write your answers (all I need is your work and answers) on your own paper and then please scan/photograph & convert them **to a single PDF**, if they are easily readable, but this is *not preferred*. See my [guide to making a PDF](/reference/#how-to-make-a-pdf-for-submitting-assignments)
+
+3. Download the <i class="fab fa-markdown"></i> `.Rmd` file, do the homework in markdown, and email to me a single `knit`ted `html` or `pdf` file. Be sure that it shows all of your code (i.e. all chunks have `echo = TRUE` options), otherwise I will also ask for the markdown file.
+
+To minimize confusion, I suggest creating a new `R Project` (e.g. `hw1`) and storing any data and plots in that folder on your computer. See my [example workflow](https://github.com/ryansafner/workflow).
+
+You may work together (and I highly encourage that) but you must turn in your own answers. I grade homeworks 70% for completion, and for the remaining 30%, pick one question to grade for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.
+
+## Grading
+
+I grade homeworks 70% for completion, and for the remaining 30%, pick one question to grade for accuracy — so it is best that you try every problem, even if you are unsure how to complete it accurately.
