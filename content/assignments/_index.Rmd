@@ -1,11 +1,12 @@
 ---
-title: Overview
+title: Assignment Details
 menu:
   assignments:
     parent: Assignments
     weight: 1
 type: docs
 weight: 1
+toc: treu
 ---
 
 On this page, you can find more information about each individual assignment, as well as the assignments themselves.
@@ -15,3 +16,19 @@ On this page, you can find more information about each individual assignment, as
 Use this tool to help calculate your overall course grade using existing assignment grades, as well as forecast "what if" scenarios.
 
 Please refer to the [syllabus](/syllabus) for more information about grades.
+
+## Homeworks
+
+There will be several problem sets (one at the end of each lesson). Problem sets will be a combination of math/statistical theory & application problems and problems that require use of R with real data. You may collaborate with other students to work on problem sets, but each person must turn in an individual problem set. Problem sets are due one week from the class period where we finish a lesson, and must emailed to me by the start of class (so please type or, if you must, hand write and scan them).
+
+## Exams
+
+This class will have two (2) exams.
+
+## Midterm Exam
+
+After we have finished linear regression, there will be a midterm constituting a combination of multiple choice, problem, and short answer questions. This will cover the content we discuss in class, my lectures, and the readings. The midterm provides feedback both to you and to me that ensures everyone is progressing on schedule and comprehending the material. This is critical, as the rest of the course will build off of this foundation.
+
+## Final Exam
+
+On the college-determined date, we will have a comprehensive, closed-book, in-class final exam.

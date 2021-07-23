@@ -6,7 +6,7 @@ date: "2020-06-08"
 menu:
   assignments:
     parent: Problem Sets
-    weight: 2
+    weight: 1
 type: docs
 #output:
 #  blogdown::html_page:

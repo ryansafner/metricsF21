@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Overview</title>
+      <title>Assignment Details</title>
       <link>https://metricsf21.classes.ryansafner.com/assignments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -21,6 +21,9 @@
       <description>
 &lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;On this page, you can find more information about each individual assignment, as well as the assignments themselves.&lt;/p&gt;
 &lt;ul&gt;
@@ -28,6 +31,22 @@
 &lt;/ul&gt;
 &lt;p&gt;Use this tool to help calculate your overall course grade using existing assignment grades, as well as forecast “what if” scenarios.&lt;/p&gt;
 &lt;p&gt;Please refer to the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/syllabus&#34;&gt;syllabus&lt;/a&gt; for more information about grades.&lt;/p&gt;
+&lt;div id=&#34;homeworks&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Homeworks&lt;/h2&gt;
+&lt;p&gt;There will be several problem sets (one at the end of each lesson). Problem sets will be a combination of math/statistical theory &amp;amp; application problems and problems that require use of R with real data. You may collaborate with other students to work on problem sets, but each person must turn in an individual problem set. Problem sets are due one week from the class period where we finish a lesson, and must emailed to me by the start of class (so please type or, if you must, hand write and scan them).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exams&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Exams&lt;/h2&gt;
+&lt;p&gt;This class will have two (2) exams.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;midterm-exam&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Midterm Exam&lt;/h2&gt;
+&lt;p&gt;After we have finished linear regression, there will be a midterm constituting a combination of multiple choice, problem, and short answer questions. This will cover the content we discuss in class, my lectures, and the readings. The midterm provides feedback both to you and to me that ensures everyone is progressing on schedule and comprehending the material. This is critical, as the rest of the course will build off of this foundation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;final-exam&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Final Exam&lt;/h2&gt;
+&lt;p&gt;On the college-determined date, we will have a comprehensive, closed-book, in-class final exam.&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
