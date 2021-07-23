@@ -8,6 +8,7 @@ menu:
     parent: Assignments
     weight: 2
 type: docs
+weight: 4
 #output:
 #  blogdown::html_page:
 #    toc: true
