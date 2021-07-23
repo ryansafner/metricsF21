@@ -568,7 +568,6 @@
 &lt;li&gt;&lt;a href=&#34;#privacy&#34;&gt;Privacy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#enrollment&#34;&gt;Enrollment&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#honor-code&#34;&gt;Honor Code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#van-halen-and-mms-unlisted&#34;&gt;Van Halen and M&amp;amp;Ms {unlisted}&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#accessibility-equity-and-accommodations&#34;&gt;Accessibility, Equity, and Accommodations&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#acbsp-information&#34;&gt;ACBSP Information&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -611,7 +610,7 @@
 &lt;p&gt;“There are three kinds of lies: lies, damned lies, and statistics.” &lt;br&gt; &lt;span style=&#34;float:right&#34;&gt;— Benjamin Disraeli&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Econometrics&lt;/span&gt; is the application of statistical tools to quantify and measure economic relationships in the real world. It uses real data to test economic hypotheses, quantitatively estimate causal relationships between economic variables, and to make forecasts of future events. The primary tool that economists use for empirical analysis is ordinary least squares (OLS) linear regression, so the majority of this course will focus on understanding, applying, and extending OLS regressions.&lt;/p&gt;
-&lt;p&gt;I assume you have &lt;em&gt;some&lt;/em&gt; working knowledge of economics at the intermediate level and some basic statistical tools.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; We will do some basic review of some necessary statistics and probability at the beginning until everyone is comfortable, before jumping right into regressions.&lt;/p&gt;
+&lt;p&gt;I assume you have &lt;em&gt;some&lt;/em&gt; working knowledge of economics at the intermediate level and some basic statistical tools.The formal &lt;strong&gt;prerequisites&lt;/strong&gt; for this course are &lt;strong&gt;ECON 205&lt;/strong&gt; and &lt;strong&gt;ECON 206&lt;/strong&gt;; &lt;strong&gt;ECMG 212&lt;/strong&gt; or &lt;strong&gt;MATH 112&lt;/strong&gt;; and &lt;strong&gt;ECON 305&lt;/strong&gt; or &lt;strong&gt;ECON 306&lt;/strong&gt;. We will do some basic review of some necessary statistics and probability at the beginning until everyone is comfortable, before jumping right into regressions.&lt;/p&gt;
 &lt;div id=&#34;course-format-and-covid&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Course Format and Covid&lt;/h1&gt;
 &lt;p&gt;As of Fall 2021, all students are expected to be on campus except those with special approved exemptions. As such, this course will be taught &lt;strong&gt;in-person&lt;/strong&gt; and &lt;strong&gt;synchronously&lt;/strong&gt; until or unless otherwise announced.&lt;/p&gt;
@@ -644,12 +643,12 @@
 &lt;p&gt;My lecture slides will be shared with you, and serve as your primary resource, but our main “textbook” below is &lt;strong&gt;recommended&lt;/strong&gt; as the next best resource and will be available from the campus bookstore. I will discuss more about textbooks and materials in the first module.&lt;/p&gt;
 &lt;div id=&#34;books&#34; class=&#34;section level2 unnumbered&#34;&gt;
 &lt;h2&gt;Books&lt;/h2&gt;
-&lt;p&gt;The following book is &lt;strong&gt;required&lt;/strong&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; and will be available from the campus bookstore.&lt;/p&gt;
+&lt;p&gt;The following book is &lt;strong&gt;required&lt;/strong&gt; and will be available from the campus bookstore. (You are not &lt;em&gt;obligated&lt;/em&gt; to buy it, I just &lt;strong&gt;strongly recommend&lt;/strong&gt; it in the sense that you will still have access to all data and assignments without possessing the book. But this is a course where you really will want to understand the derivations or get additional context beyond just my slides…)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Bailey, Michael A, 2019, &lt;em&gt;Real Econometrics&lt;/em&gt;, New York: Oxford University Press, 2&lt;sup&gt;nd&lt;/sup&gt; ed.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You are welcome to purchase the book by other means (e.g. Amazon, half.com, etc). I have no financial stake in requiring you to purchase this book. The (cheaper) 1st edition is sufficient, but makes significantly less use of &lt;code&gt;R&lt;/code&gt; (in favor of &lt;code&gt;STATA&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;The following two books are &lt;strong&gt;recommended&lt;/strong&gt;, and are free online&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;The following two books are &lt;strong&gt;recommended&lt;/strong&gt;, and are free online. (You can purchase a hard copy of the first one if you really want.):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Grolemund, Garrett and Hadley Wickham, &lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;&lt;em&gt;R For Data Science&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Ismay, Chester and Albert Y Kim, &lt;a href=&#34;https://moderndive.com/&#34;&gt;&lt;em&gt;Modern Dive: Statistical Inference Via Data Science&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
@@ -864,7 +863,7 @@ Economic fallacies have always been popular, and journalists, politicians, and t
 &lt;/div&gt;
 &lt;div id=&#34;policies-and-expectations&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Policies and Expectations&lt;/h1&gt;
-&lt;p&gt;This syllabus is a contract between you, the student, and me, your instructor. It has been carefully and deliberately thought out&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;, and I will uphold my end of the agreement and expect you to uphold yours.&lt;/p&gt;
+&lt;p&gt;This syllabus is a contract between you, the student, and me, your instructor. It has been carefully and deliberately thought out. (A syllabus can and will be used as a legal document for disputes tried at a court of law. Ask me how I know.), and I will uphold my end of the agreement and expect you to uphold yours.&lt;/p&gt;
 &lt;p&gt;In the language of game theory, this syllabus is my commitment device. I am a very understanding person, and I know that exceptions to rules often need to be made for students. However, to be &lt;em&gt;fair&lt;/em&gt; to &lt;em&gt;all&lt;/em&gt; students the syllabus artificially constrains my ability to make exceptions at a whim for anyone. This prevents clever students from exploiting my congenial personality at everyone else’s expense. Please read and familiarize yourself with the course policies and expectations of you. Chances are, if you have a question, it is answered herein.&lt;/p&gt;
 &lt;!--This is a hybrid course with synchronous (live) and asynchronous (on your own time) parts. 
 
@@ -918,9 +917,9 @@ All assignmnents are able to be completed **asynchronously** during the week, an
 &lt;h2&gt;Honor Code&lt;/h2&gt;
 &lt;p&gt;Hood College has an Academic Honor Code which requires all members of this community to maintain the highest standards of academic honesty and integrity. Cheating, plagiarism, lying, and stealing are all prohibited. All violations of the Honor Code are taken seriously, will be reported to appropriate authority, and may result in severe penalties, including expulsion from the college. See &lt;a href=&#34;http://hood.smartcatalogiq.com/en/2016-2017/Catalog/The-Spirit-of-Hood/The-Academic-Honor-Code-and-Code-of-Conduct&#34;&gt;here&lt;/a&gt; for more detailed information.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;van-halen-and-mms-unlisted&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Van Halen and M&amp;amp;Ms {unlisted}&lt;/h2&gt;
-&lt;p&gt;When you have completed reading the syllabus, email me a picture of the band Van Halen and a picture of a bowl of M&amp;amp;Ms. If you do this &lt;em&gt;before&lt;/em&gt; the date of the first exam, you will get bonus points on the exam.&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt; Yes, this is real.&lt;/p&gt;
+&lt;div id=&#34;van-halen-and-mms&#34; class=&#34;section level2 unlisted&#34;&gt;
+&lt;h2&gt;Van Halen and M&amp;amp;Ms&lt;/h2&gt;
+&lt;p&gt;When you have completed reading the syllabus, email me a picture of the band Van Halen and a picture of a bowl of M&amp;amp;Ms. If you do this &lt;em&gt;before&lt;/em&gt; the date of the first exam, you will get bonus points on the exam. If 75-100% of the class does this, you each get 2 points. If 50-75% of the class does this, you each get 4 points. If 25-50% of the class does this, you each get 6 points. If 0-25% of the class does this, you each get 8 points. Yes, you read this correctly.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;accessibility-equity-and-accommodations&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Accessibility, Equity, and Accommodations&lt;/h2&gt;
@@ -938,16 +937,6 @@ All assignmnents are able to be completed **asynchronously** during the week, an
 &lt;div id=&#34;tentative-schedule&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Tentative Schedule&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;You can find a full schedule&lt;/strong&gt; with much more details, including the readings, appendices, and other further resources for each class meeting on the &lt;a href=&#34;schedule/&#34;&gt;schedule page&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;The formal prerequisites for this course are &lt;strong&gt;ECON 205&lt;/strong&gt; and &lt;strong&gt;ECON 206&lt;/strong&gt;; &lt;strong&gt;ECMG 212&lt;/strong&gt; or &lt;strong&gt;MATH 112&lt;/strong&gt;; and &lt;strong&gt;ECON 305&lt;/strong&gt; or &lt;strong&gt;ECON 306&lt;/strong&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;You are not &lt;em&gt;obligated&lt;/em&gt; to buy it, I just &lt;strong&gt;strongly recommend&lt;/strong&gt; it in the sense that you will still have access to all data and assignments without possessing the book. But this is a course where you really will want to understand the derivations or get additional context beyond just my slides…&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;You can purchase a hard copy of the first one if you really want.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;A syllabus can and will be used as a legal document for disputes tried at a court of law. Ask me how I know.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;If 75-100% of the class does this, you each get 2 points. If 50-75% of the class does this, you each get 4 points. If 25-50% of the class does this, you each get 6 points. If 0-25% of the class does this, you each get 8 points.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
 &lt;/div&gt;
 </description>
     </item>

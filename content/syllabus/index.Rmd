@@ -27,7 +27,7 @@ library(kableExtra)
 
 <span class="newthought">Econometrics</span> is the application of statistical tools to quantify and measure economic relationships in the real world. It uses real data to test economic hypotheses, quantitatively estimate causal relationships between economic variables, and to make forecasts of future events. The primary tool that economists use for empirical analysis is ordinary least squares (OLS) linear regression, so the majority of this course will focus on understanding, applying, and extending OLS regressions.
 
-I assume you have *some* working knowledge of  economics at the intermediate level and some basic statistical tools.^[The formal prerequisites for this course are **ECON 205** and **ECON 206**; **ECMG 212** or **MATH 112**; and **ECON 305** or **ECON 306**] We will do some basic review of some necessary statistics and probability at the beginning until everyone is comfortable, before jumping right into regressions. 
+I assume you have *some* working knowledge of  economics at the intermediate level and some basic statistical tools.The formal **prerequisites** for this course are **ECON 205** and **ECON 206**; **ECMG 212** or **MATH 112**; and **ECON 305** or **ECON 306**. We will do some basic review of some necessary statistics and probability at the beginning until everyone is comfortable, before jumping right into regressions. 
 
 
 # Course Format and Covid
@@ -68,13 +68,13 @@ My lecture slides will be shared with you, and serve as your primary resource, b
 
 ## Books {-}
 
-The following book is **required**^[You are not *obligated* to buy it, I just **strongly recommend** it in the sense that you will still have access to all data and assignments without possessing the book. But this is a course where you really will want to understand the derivations or get additional context beyond just my slides...] and will be available from the campus bookstore.
+The following book is **required** and will be available from the campus bookstore. (You are not *obligated* to buy it, I just **strongly recommend** it in the sense that you will still have access to all data and assignments without possessing the book. But this is a course where you really will want to understand the derivations or get additional context beyond just my slides...)
 
 - Bailey, Michael A, 2019, *Real Econometrics*, New York: Oxford University Press, 2^nd^ ed.
 
 You are welcome to purchase the book by other means (e.g. Amazon, half.com, etc). I have no financial stake in requiring you to purchase this book. The (cheaper) 1st edition is sufficient, but makes significantly less use of `R` (in favor of `STATA`).
 
-The following two books are **recommended**, and are free online^[You can purchase a hard copy of the first one if you really want.]:
+The following two books are **recommended**, and are free online. (You can purchase a hard copy of the first one if you really want.):
 
 - Grolemund, Garrett and Hadley Wickham, [*R For Data Science*](https://r4ds.had.co.nz/)
 - Ismay, Chester and Albert Y Kim, [*Modern Dive: Statistical Inference Via Data Science*](https://moderndive.com/)
@@ -174,7 +174,7 @@ Economic fallacies have always been popular, and journalists, politicians, and t
 
 # Policies and Expectations
 
-This syllabus is a contract between you, the student, and me, your instructor. It has been carefully and deliberately thought out^[A syllabus can and will be used as a legal document for disputes tried at a court of law. Ask me how I know.], and I will uphold my end of the agreement and expect you to uphold yours. 
+This syllabus is a contract between you, the student, and me, your instructor. It has been carefully and deliberately thought out. (A syllabus can and will be used as a legal document for disputes tried at a court of law. Ask me how I know.), and I will uphold my end of the agreement and expect you to uphold yours. 
 
 In the language of game theory, this syllabus is my commitment device. I am a very understanding person, and I know that exceptions to rules often need to be made for students. However, to be *fair* to *all* students the syllabus artificially constrains my ability to make exceptions at a whim for anyone. This prevents clever students from exploiting my congenial personality at everyone else's expense. Please read and familiarize yourself with the course policies and expectations of you. Chances are, if you have a question, it is answered herein.
 
@@ -246,9 +246,9 @@ Students are responsible for verifying their enrollment in this class. The last 
 
 Hood College has an Academic Honor Code which requires all members of this community to maintain the highest standards of academic honesty and integrity. Cheating, plagiarism, lying, and stealing are all prohibited.  All violations of the Honor Code are taken seriously, will be reported to appropriate authority, and may result in severe penalties, including expulsion from the college. See [here](http://hood.smartcatalogiq.com/en/2016-2017/Catalog/The-Spirit-of-Hood/The-Academic-Honor-Code-and-Code-of-Conduct) for more detailed information.
 
-## Van Halen and M&Ms {unlisted}
+## Van Halen and M&Ms {.unlisted}
 
-When you have completed reading the syllabus, email me a picture of the band Van Halen and a picture of a bowl of M&Ms. If you do this *before* the date of the first exam, you will get bonus points on the exam.^[If 75-100% of the class does this, you each get 2 points. If 50-75% of the class does this, you each get 4 points. If 25-50% of the class does this, you each get 6 points. If 0-25% of the class does this, you each get 8 points.] Yes, this is real.
+When you have completed reading the syllabus, email me a picture of the band Van Halen and a picture of a bowl of M&Ms. If you do this *before* the date of the first exam, you will get bonus points on the exam. If 75-100% of the class does this, you each get 2 points. If 50-75% of the class does this, you each get 4 points. If 25-50% of the class does this, you each get 6 points. If 0-25% of the class does this, you each get 8 points. Yes, you read this correctly.
 
 ## Accessibility, Equity, and Accommodations 
 
