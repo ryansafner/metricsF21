@@ -6,7 +6,6 @@ menu:
     parent: Problem Sets
     weight: 1
 type: docs
-weight: 1
 ---
 
 ## Overview

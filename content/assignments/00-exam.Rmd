@@ -1,14 +1,13 @@
 ---
-title: "Exam"
+title: "Exam 1"
 draft: false
-linktitle: "Exam"
+linktitle: "Exam 1"
 date: "2020-06-08"
 menu:
   assignments:
     parent: Exams
     weight: 2
 type: docs
-weight: 2
 #output:
 #  blogdown::html_page:
 #    toc: true
