@@ -8,7 +8,6 @@ menu:
     parent: Problem Sets
     weight: 2
 type: docs
-weight: 2
 #output:
 #  blogdown::html_page:
 #    toc: true
