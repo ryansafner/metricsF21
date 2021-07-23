@@ -6,7 +6,7 @@ menu:
     weight: 1
 type: docs
 weight: 1
-toc: treu
+toc: true
 ---
 
 On this page, you can find more information about each individual assignment, as well as the assignments themselves.

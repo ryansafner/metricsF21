@@ -1,6 +1,6 @@
 ---
-title: Description
-linktitle: Description
+title: Instructions
+linktitle: Instructions
 menu:
   assignments:
     parent: Problem Sets
