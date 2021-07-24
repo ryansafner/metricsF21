@@ -1,55 +1,57 @@
 ---
 authors:
 - admin
-avatar_image: user-full.png
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+avatar_image: summer_2019.JPG
+bio:
 btn:
-- label: Download Resume
-  url: https://sourcethemes.com/academic/docs/install/
-display_education: false
+- label: View CV
+  url: https://raw.githubusercontent.com/ryansafner/CV/master/CV.pdf
+display_education: true
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
-email: ""
+  - course: Ph.D in Economics
+    institution: George Mason University
+    year: 2015
+  - course: M.A. in Economics
+    institution: George Mason University
+    year: 2013
+  - course: B.A. in Economics
+    institution: University of Connecticut
+    year: 2011
+email: "ryansafner@gmail.com"
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-name: Michael Vahn
+- Innovation
+- Intellectual Property
+- Economic Growth
+- Data Analysis with R
+name: Ryan Safner
 organizations:
-- name: Stanford University
-  url: ""
-role: Professor of Artificial Intelligence
+- name: Hood College
+  url: "https://hood.edu"
+role: Assistant Professor of Economics
 social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/ryansafner
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.co.uk/citations?user=GDbo0gsAAAAJ&hl=en
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/ryansafner
 superuser: true
 user_groups:
 - Researchers
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am Assistant Professor of Economics at [Hood College](https://www.hood.edu/academics/Economics-and-Management/index.html). Previously I taught at [Wake Forest University](http://college.wfu.edu/economics/).
 
-![reviews](../../img/certifacates.jpg)
+I have a Ph.D and M.A. in Economics from [George Mason University](http://economics.gmu.edu/), and a B.A. in Economics from the [University of Connecticut](http://economics.uconn.edu/). Go Huskies!
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum. The point of using Lorem Ipsum. distracted by the readable content of a page.
+My research broadly explores the political economy of innovation, technological growth, and intellectual property using the tools of [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), and [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html).
+
+I am a passionate user of [*R*](https://www.r-project.org/) for data analysis, and [*R Markdown*](https://rmarkdown.rstudio.com/) and [GitHub](https://github.com) for writing reproducible research, version control, and managing my workflow. I occasionally blog here about using these tools in my research and teaching.
