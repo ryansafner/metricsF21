@@ -6,8 +6,7 @@
     <description>Recent content on ECON 480 — Econometrics</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>[CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) {year} by Ryan Safner</copyright>
-    <lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://metricsf21.classes.ryansafner.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -77,30 +76,17 @@
     </item>
     
     <item>
-      <title>Slides</title>
-      <link>https://metricsf21.classes.ryansafner.com/slides/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <title>Credits</title>
+      <link>https://metricsf21.classes.ryansafner.com/credits/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
       
-      <guid>https://metricsf21.classes.ryansafner.com/slides/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://metricsf21.classes.ryansafner.com/publication/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metricsf21.classes.ryansafner.com/publication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>https://metricsf21.classes.ryansafner.com/talk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metricsf21.classes.ryansafner.com/talk/</guid>
-      <description></description>
+      <guid>https://metricsf21.classes.ryansafner.com/credits/</guid>
+      <description>&lt;p&gt;Nobody produces something like this without a lot of inspiration and guidance from those who have already done this before. Here, I try to give credit where it is due, and slowly begin to document how I made everything, for those who eventually want to do what I did.&lt;/p&gt;
+&lt;p&gt;This website is written in &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;R Markdown&lt;/a&gt;, built with &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, pushed to &lt;a href=&#34;https://github.com/ryansafner/lawS21&#34;&gt;Github&lt;/a&gt;, and hosted by &lt;a href=&#34;https://netlify.com&#34;&gt;Netlify&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The theme is based on &lt;a href=&#34;https://github.com/themefisher/academia-hugo&#34;&gt;Academia-hugo&lt;/a&gt;, which I modified.&lt;/p&gt;
+&lt;p&gt;The inspiration for making individual course websites, along with the basic structure, comes from the incomparable &lt;a href=&#34;https://andrewheiss.com&#34;&gt;Andrew Heiss&lt;/a&gt;. See his website for examples, as well as a number of helpful tutorials. Sadly, I had to figure out how these websites work on my own, and attempted to document my process in the README of &lt;a href=&#34;https://github.com/ryansafner/classwebtest&#34;&gt;this repository&lt;/a&gt; for those interested. One day I may make a guide.&lt;/p&gt;
+&lt;p&gt;The course hex sticker I made via &lt;a href=&#34;https://github.com/GuangchuangYu/hexSticker&#34;&gt;hexSticker&lt;/a&gt;, and keep all of my course hex stickers in &lt;a href=&#34;https://github.com/ryansafner/hexstickers&#34;&gt;this repository&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>

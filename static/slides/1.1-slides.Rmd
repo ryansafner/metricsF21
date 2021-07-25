@@ -1,7 +1,7 @@
 ---
 title: "1.1 — Introduction to Econometrics"
-subtitle: "ECON 480 • Econometrics • Fall 2020"
-author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF20"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF20</a><br> <a href="https://metricsF20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF20.classes.ryansafner.com</a><br>'
+subtitle: "ECON 480 • Econometrics • Fall 2021"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF21"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF21</a><br> <a href="https://metricsF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF21.classes.ryansafner.com</a><br>'
 #date:
 output:
   xaringan::moon_reader:
@@ -29,14 +29,25 @@ options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(echo=F,
                       message=F,
                       warning=F,
-                      fig.retina=3,
+                      fig.retina = 3,
                       fig.align = "center")
 library("tidyverse")
+library("ggrepel")
+library("fontawesome")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
 
 theme_slides <- theme_light() + 
   theme(
     text = element_text(family = "Fira Sans", size = 24)
   )
+
 ```
 
 class: inverse, center, middle
@@ -972,7 +983,7 @@ knitr::kable(assignments, "html")
 
 - .hi[You are learning how to learn]<sup>1</sup>
 
-- See the [reference page](http://metricsf19.classes.ryansafner.com/reference) for more
+- See the [reference page](http://metricsf21.classes.ryansafner.com/reference) for more
 ]
 
 .pull-right[
@@ -1000,7 +1011,7 @@ knitr::kable(assignments, "html")
 ]
 ]
 
-[metricsF20.classes.ryansafner.com](http://metricsF20.classes.ryansafner.com)
+[metricsF21.classes.ryansafner.com](http://metricsF21.classes.ryansafner.com)
 
 ---
 

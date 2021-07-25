@@ -665,7 +665,7 @@ $colors: (
 /* TOC for docs pages, through Hugo not Pandoc */ 
 
 #TableOfContents {
-    background-color: lighten(#5E81AC, 35%);
+    background-color: lighten(#314f4f, 35%);
     line-height: 1.2;
     padding-bottom: 0.5em;
 
@@ -694,7 +694,7 @@ $colors: (
 }
 
 .toc-top {
-    background-color: #5E81AC;
+    background-color: #314f4f;
 
     li a {
         font-size: 1.1rem;
@@ -745,7 +745,7 @@ td.mid-table-header {
 .article-style #TOC {
     font-size: 0.8rem;
     text-align: left;
-    background: lighten(#5E81AC, 35%);
+    background: lighten(#314f4f, 35%);
     padding: 0;
     margin: 4px 0 2rem;
     padding-bottom: 0.5rem;
@@ -779,7 +779,7 @@ td.mid-table-header {
         font-weight: 700;
         display: block;
         color: #ffffff;
-        background-color: #5E81AC;
+        background-color: #314f4f;
         padding: 0.1rem 0.8rem 0.1rem;
         margin-bottom: 0.2rem;
     }
