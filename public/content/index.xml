@@ -22,10 +22,7 @@
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#optionalreferenced-readings&#34;&gt;Optional/Referenced Readings&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#practice&#34;&gt;&lt;i class=&#34;fas fa-dumbbell&#34;&gt;&lt;/i&gt; Practice&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
@@ -66,14 +63,7 @@ A message to students from the Doggfather himself, &lt;a href=&#34;https://twitt
 — Ryan Briggs (&lt;span class=&#34;citation&#34;&gt;@ryancbriggs&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/ryancbriggs/status/1293543531496308736?ref_src=twsrc%5Etfw&#34;&gt;August 12, 2020&lt;/a&gt;
 &lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;Please note going forward, the lesson numbers and topics (e.g. 1.1) are &lt;em&gt;my&lt;/em&gt; design, and will not match up with the textbook!&lt;/p&gt;
-&lt;div id=&#34;optionalreferenced-readings&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Optional/Referenced Readings&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;July 2 2003, &lt;a href=&#34;https://www.theguardian.com/science/2003/jul/03/research.science&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; “Why Dolphins are Deep Thinkers”&lt;/a&gt;, &lt;em&gt;The Guardian&lt;/em&gt;]&lt;/li&gt;
-&lt;li&gt;January 17, 2021, &lt;a href=&#34;https://gizmodo.com/these-monkeys-understand-economics-and-intentionally-st-1846078932?utm_medium=sharefromsite&amp;amp;utm_source=_facebook&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; These Monkeys Understand Economics and Intentionally Steal High-Ticket Items to Barter for Better Food, Study Finds&lt;/a&gt;, &lt;em&gt;Gizmodo&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
+&lt;p&gt;Please note going forward, the lesson numbers and topics (e.g. 1.1) on this website are &lt;em&gt;my&lt;/em&gt; design, and will not match up with the textbook!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
