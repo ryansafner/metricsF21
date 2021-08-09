@@ -13,7 +13,7 @@ menu_text = "#314f4f" #34495e
 menu_text_active = "#236192" #5E81AC
 menu_title = "#314f4f" #2b2b2b
 
-link = "#236192"
+link = "#e64173"
 
 # Home sections
 home_section_odd = "rgb(255, 255, 255)"
