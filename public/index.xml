@@ -571,7 +571,10 @@
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#course-format-and-covid&#34;&gt;Course Format and Covid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#course-format-and-covid&#34;&gt;Course Format (and Covid)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#learning-during-a-global-pandemic&#34;&gt;Learning During a Global Pandemic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#course-objectives&#34;&gt;Course objectives&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#required-course-materials&#34;&gt;Required Course materials&lt;/a&gt;
 &lt;ul&gt;
@@ -582,6 +585,7 @@
 &lt;li&gt;&lt;a href=&#34;#assignments-and-grades&#34;&gt;Assignments and Grades&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#policies-and-expectations&#34;&gt;Policies and Expectations&lt;/a&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#attendence&#34;&gt;Attendence&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#late-assignments&#34;&gt;Late Assignments&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#grading&#34;&gt;Grading&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#communication-email-slack-and-virtual-office-hours&#34;&gt;Communication: Email, Slack, and Virtual Office Hours&lt;/a&gt;&lt;/li&gt;
@@ -612,7 +616,7 @@
             
             &lt;li&gt;&lt;i class=&#34;far fa-clock&#34;&gt;&lt;/i&gt; TuTh 11:25 AM—12:50 PM&lt;/li&gt;
             
-            &lt;li&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt; Rosenstock 1&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt; Rosenstock Trading Room&lt;/li&gt;
             &lt;li&gt;&lt;i class=&#34;far fa-calendar-alt&#34;&gt;&lt;/i&gt; Aug 23—Dec 14, 2021&lt;/li&gt;
             &lt;li&gt;&lt;i class=&#34;fab fa-slack&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://hoodcollegeeconomics.slack.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slack&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
@@ -620,8 +624,8 @@
 
 &lt;/div&gt;
 &lt;/p&gt;
-&lt;p style=&#34;text-align:center;&#34;&gt;
-&lt;span class=&#34;btn btn-primary btn-lg&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF&lt;/span&gt;&lt;br&gt;&lt;strong&gt;Last Updated&lt;/strong&gt;: July 23, 2021
+&lt;p style=&#34;text-align:center&#34;&gt;
+&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/syllabus/syllabus-pdf.pdf&#34;&gt;&lt;span class=&#34;btn btn-primary btn-lg&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF&lt;/a&gt;&lt;/span&gt;&lt;/br&gt;&lt;strong&gt;Last Updated&lt;/strong&gt;: August 20, 2021
 &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“There are three kinds of lies: lies, damned lies, and statistics.” &lt;br&gt; &lt;span style=&#34;float:right&#34;&gt;— Benjamin Disraeli&lt;/span&gt;&lt;/p&gt;
@@ -629,8 +633,20 @@
 &lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Econometrics&lt;/span&gt; is the application of statistical tools to quantify and measure economic relationships in the real world. It uses real data to test economic hypotheses, quantitatively estimate causal relationships between economic variables, and to make forecasts of future events. The primary tool that economists use for empirical analysis is ordinary least squares (OLS) linear regression, so the majority of this course will focus on understanding, applying, and extending OLS regressions.&lt;/p&gt;
 &lt;p&gt;I assume you have &lt;em&gt;some&lt;/em&gt; working knowledge of economics at the intermediate level and some basic statistical tools.The formal &lt;strong&gt;prerequisites&lt;/strong&gt; for this course are &lt;strong&gt;ECON 205&lt;/strong&gt; and &lt;strong&gt;ECON 206&lt;/strong&gt;; &lt;strong&gt;ECMG 212&lt;/strong&gt; or &lt;strong&gt;MATH 112&lt;/strong&gt;; and &lt;strong&gt;ECON 305&lt;/strong&gt; or &lt;strong&gt;ECON 306&lt;/strong&gt;. We will do some basic review of some necessary statistics and probability at the beginning until everyone is comfortable, before jumping right into regressions.&lt;/p&gt;
 &lt;div id=&#34;course-format-and-covid&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Course Format and Covid&lt;/h1&gt;
+&lt;h1&gt;Course Format (and Covid)&lt;/h1&gt;
 &lt;p&gt;As of Fall 2021, all students are expected to be on campus except those with special approved exemptions. As such, this course will be taught &lt;strong&gt;in-person&lt;/strong&gt; and &lt;strong&gt;synchronously&lt;/strong&gt; until or unless otherwise announced.&lt;/p&gt;
+&lt;p&gt;You are expected to come to class except due to medical reasons or other legitimate conflicts. Watching videos are not a substitute for attending class.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; Please see the &lt;a href=&#34;#attendance&#34;&gt;attendance policy&lt;/a&gt; for more.&lt;/p&gt;
+&lt;p&gt;In any event that we are unable to meet in person, I will hold class meetings at the same day/time live on Zoom, and post all recorded lectures via Panopto on Blackboard, and all assignments will be submitted online (often via Blackboard).&lt;/p&gt;
+&lt;div id=&#34;learning-during-a-global-pandemic&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Learning During a Global Pandemic&lt;/h2&gt;
+&lt;p&gt;While we have made some progress in returning to normal, this remains a unique semester and a lot of things are still awful right now. None of us signed up for this. None of us are really okay, we’re all just pretending for everyone else.&lt;/p&gt;
+&lt;p&gt;Many of you may be dealing with hardships at home and at work, and are generally juggling many more problems than usual. Everyone’s future plans have been completely put on hold or cancelled to a large degree.&lt;/p&gt;
+&lt;p&gt;I am prioritizing us supporting each other as human beings during this crazy era, and will try to use simple, accessible solutions that make sense for the most people, and above all, to be flexible.&lt;/p&gt;
+&lt;p&gt;If you tell me you’re having trouble, I will do whatever I can to help, and not judge you or think less of you. I hope you will extend me the same courtesy.&lt;/p&gt;
+&lt;p&gt;You never &lt;em&gt;owe&lt;/em&gt; me personal information about your health (mental or physical). You are however always welcome to talk to me about things that you’re going through. If I can’t help you, I usually know somebody who can.&lt;/p&gt;
+&lt;p&gt;I want you to learn a lot from this course, but it is more important for you to remain healthy, balanced, and grounded during this crisis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I reserve the right to change any part of this syllabus and course, at my discretion, with proper advance warning.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;course-objectives&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Course objectives&lt;/h1&gt;
@@ -886,12 +902,18 @@ You are generally expected to join (online via Zoom) our **synchronous** class s
 If you are unable to make a particular class, you generally do not need to let me know. **The videos from all class sessions are posted on Blackboard** so please review videos of classes you were unable to attend live. 
 
 All assignmnents are able to be completed **asynchronously** during the week, and are **generally due by 11:59PM Sunday each week** to allow you flexibility in your hectic schedules.--&gt;
+&lt;div id=&#34;attendence&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Attendence&lt;/h2&gt;
+&lt;p&gt;Your day-to-day classroom attendance is not graded. My philosophy is that you are all adults and must take ownership of your own learning or else you will not succeed. Some assignments may require in-class participation for credit, and an (unexcused) absence may be detrimental to your grade. Attending class is one of the strongest predictors of success.&lt;/p&gt;
+&lt;p&gt;However, as required under Hood College’s “Promise of Fall Plan,” (Ch. 2-C) &lt;strong&gt;your classroom attendance will be recorded at every class meeting.&lt;/strong&gt; This is primarily to facilitate contact tracing.&lt;/p&gt;
+&lt;p&gt;If you know you will be absent, you are not &lt;em&gt;required&lt;/em&gt; to let me know, but it is polite to give notice (Note if I do not reply to an email of yours letting me know, I am probably busy but will still see it and appreciate your email). Your absence will be noted and recorded for the purposes stated above. If, however, we have an assignment due in class, you &lt;em&gt;must&lt;/em&gt; notify me ahead of time in order to make alternate arrangements to still receive credit. Hasty ex-post attempts to notify me will generate little sympathy.&lt;/p&gt;
+&lt;/div&gt;
 &lt;div id=&#34;late-assignments&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Late Assignments&lt;/h2&gt;
 &lt;p&gt;I will accept late assignments, but will subtract a specified amount of points as a penalty. Even if it is the last week of the semester, I encourage you to turn in late work: some points are better than no points!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Homeworks&lt;/strong&gt;: If you turn in a homework after it is due but before it is graded or the answer key posted, I generally will not take off any points. However, &lt;strong&gt;if you turn in a homework &lt;em&gt;after&lt;/em&gt; the answer key is posted, I will automatically deduct 15 points (so the maximum grade you can earn on it is an 85).&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Exams&lt;/strong&gt;: If you know that you will be unable to complete an &lt;em&gt;exam&lt;/em&gt; as scheduled for a legitimate reason, please notify me at least &lt;em&gt;one week&lt;/em&gt; in advance, and we will schedule a make-up exam date. Failure to do so, including desperate attempts to make arrangements only &lt;em&gt;after&lt;/em&gt; the exam will result in a grade of 0 and little sympathy.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Term Papers&lt;/strong&gt;: Starting at the deadline, I will take off 1 point for every hour that your paper is late.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Homeworks&lt;/strong&gt;: If you turn in a homework after it is due but before it is graded or the answer key posted, I generally will not take off any points. However, &lt;strong&gt;if you turn in a homework &lt;em&gt;after&lt;/em&gt; the answer key is posted, I will automatically deduct 15 points (so the maximum grade you can earn on it is an 80).&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exams&lt;/strong&gt;: If you know that you will be unable to complete an &lt;em&gt;in-class exam&lt;/em&gt; as scheduled for a legitimate reason, please notify me at least &lt;em&gt;one week&lt;/em&gt; in advance, and we will schedule a make-up exam date. Failure to do so, including desperate attempts to make arrangements only &lt;em&gt;after&lt;/em&gt; the exam will result in a grade of 0 and little sympathy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Papers&lt;/strong&gt;: Starting at the deadline, I will take off 1 point for every hour that your assignment is late.&lt;/p&gt;
 &lt;p&gt;I reserve the right to re-weight assignments for students whom I believe are legitimately unable to complete a particular assignment.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;grading&#34; class=&#34;section level2&#34;&gt;
@@ -902,7 +924,7 @@ All assignmnents are able to be completed **asynchronously** during the week, an
 &lt;h2&gt;Communication: Email, Slack, and Virtual Office Hours&lt;/h2&gt;
 &lt;p&gt;Students must regularly monitor their &lt;strong&gt;Hood email accounts&lt;/strong&gt; to receive important college information, including messages related to this class. Email through the Blackboard system is my main method of communicating announcements and deadlines regarding your assignments. &lt;strong&gt;Please do not reply to any automated Blackboard emails - I may not recieve it!&lt;/strong&gt;. My Hood email (&lt;code&gt;safner@hood.edu&lt;/code&gt;) is the best means of contacting me. I will do my best to respond within 24 hours. If I do not reply within 48 hours, do not take it personally, and &lt;em&gt;feel free to send a follow up email&lt;/em&gt; in the very likely event that I genuinely did not see your original message.&lt;/p&gt;
 &lt;p&gt;Our &lt;a href=&#34;https://hoodcollegeeconomics.slack.com&#34;&gt;slack channel&lt;/a&gt; is available to all students and faculty in Economics and Business. I have invited all of my classes and advisees. It will not be extended to non-Business/Economics students or faculty. All users must use their &lt;strong&gt;hood emails&lt;/strong&gt; and &lt;strong&gt;true first and last names&lt;/strong&gt;. Each course has its own channel, exclusive for verified students in the course, and myself, by my invite only. As a third party platform, you agree to its Terms of Service. I have created this space as a way to stay connected, to help one another, and to foster community. Behaviors such as posting inappropriate content, harassing others, or engaging in academic dishonesty, to be determined solely at my discretion, will result in one warning, the content will be deleted, and subsequent behavior will result in a ban.&lt;/p&gt;
-&lt;p&gt;I will host general &lt;strong&gt;“office hours”&lt;/strong&gt; on Zoom. You can join in with video, audio, and/or chat, whichever you feel comfortable with. Of course, if you are not available during those times, we can schedule our own time if you prefer this method over email or Slack. If you want to go over material from class, please have &lt;em&gt;specific&lt;/em&gt; questions you want help with. I am not in the business of giving private lectures (particularly if you missed class without a valid excuse).&lt;/p&gt;
+&lt;p&gt;In addition to in-person office hours, you can also make an appointment for &lt;strong&gt;“office hours”&lt;/strong&gt; on Zoom. You can join in with video, audio, and/or chat, whichever you feel comfortable with. Of course, if you are not available during those times, we can schedule our own time if you prefer this method over email or Slack. If you want to go over material from class, please have &lt;em&gt;specific&lt;/em&gt; questions you want help with. I am not in the business of giving private lectures (particularly if you missed class without a valid excuse).&lt;/p&gt;
 &lt;p&gt;Watch this excellent and accurate video explaining office hours:&lt;/p&gt;
 &lt;iframe src=&#34;https://player.vimeo.com/video/270014784&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; fullscreen&#34; allowfullscreen&gt;
 &lt;/iframe&gt;
@@ -925,7 +947,7 @@ All assignmnents are able to be completed **asynchronously** during the week, an
 &lt;/div&gt;
 &lt;div id=&#34;enrollment&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Enrollment&lt;/h2&gt;
-&lt;p&gt;Students are responsible for verifying their enrollment in this class. The last day to add or drop this class with no penalty is &lt;strong&gt;Wednesday, February 10&lt;/strong&gt;. Be aware of &lt;a href=&#34;https://www.hood.edu/offices-services/registrars-office/academic-calendar&#34;&gt;important dates&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Students are responsible for verifying their enrollment in this class. The last day to add or drop this class with no penalty is &lt;strong&gt;Wednesday, September 1&lt;/strong&gt;. Be aware of &lt;a href=&#34;https://www.hood.edu/offices-services/registrars-office/academic-calendar&#34;&gt;important dates&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;honor-code&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Honor Code&lt;/h2&gt;
@@ -945,6 +967,12 @@ All assignmnents are able to be completed **asynchronously** during the week, an
 &lt;div id=&#34;tentative-schedule&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Tentative Schedule&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;You can find a full schedule&lt;/strong&gt; with much more details, including the readings, appendices, and other further resources for each class meeting on the &lt;a href=&#34;schedule/&#34;&gt;schedule page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;On average, even for students who complete all assignments, those that do not regularly attend class suffer by a full letter grade, (&lt;a href=&#34;https://www.aeaweb.org/articles?id=10.1257/jep.7.3.167&#34;&gt;Levitt 1993&lt;/a&gt;).&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/div&gt;
 </description>
     </item>

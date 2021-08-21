@@ -1,29 +1,48 @@
 ---
-title: Syllabus
-slug: syllabus
-citeproc: true
-bibliography: ../../static/bib/references.bib
-csl: ../../static/bib/chicago-syllabus-no-bib.csl
-output:
-  blogdown::html_page:
-    toc: true
-    fig_caption: false
+output: 
+  pdf_document:
+    number_sections: false
+    keep_tex: true
+    fig_caption: yes
+    df_print: kable
+    latex_engine: xelatex
+    template: template-syllabus.tex
+    includes:
+      in_header: 
+geometry: margin=1in
+course: "Econometrics"
+coursecode: "ECON 480 Fall 2021"
+section: ""
+author: Dr. Ryan Safner
+semester: "[metricsF21.classes.ryansafner.com](http://metricsF21.classes.ryansafner.com)"
+
+email: "safner@hood.edu"
+web: "ryansafner.com"
+officehours: "<i class='fas fa-video'></i> MW 10:00—11 AM & by appt"
+office: "Rosenstock 110"
+classroom: "Rosenstock Trading Room"
+classhours: "TuTh 11:25 AM—12:50 PM"
+
+fontfamily: Fira Sans
+mainfont: Fira Sans
+fontsize: 12pt
+sansfont: "Yanone Kaffeesatz"
+monofont: "Fira Code"
+mathfont: "Fira Sans"
+
+#bibliography: 306syllabus.bib
 ---
 
 ```{r load-libraries, message=FALSE, warning=FALSE, include=FALSE}
 library(dplyr)
 library(tibble)
 library(pander)
+library(knitr)
 library(kableExtra)
+library(fontawesome)
 ```
 
-`r blogdown::shortcode("courseinfo")`
-
-<p style="text-align:center"><a target="_blank" href="/syllabus/syllabus-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span></br>**Last Updated**: August 20, 2021</p>
-
-> "There are three kinds of lies: lies, damned lies, and statistics." <br> [— Benjamin Disraeli]{style="float:right"}
-
-<span class="newthought">Econometrics</span> is the application of statistical tools to quantify and measure economic relationships in the real world. It uses real data to test economic hypotheses, quantitatively estimate causal relationships between economic variables, and to make forecasts of future events. The primary tool that economists use for empirical analysis is ordinary least squares (OLS) linear regression, so the majority of this course will focus on understanding, applying, and extending OLS regressions.
+**Econometrics** is the application of statistical tools to quantify and measure economic relationships in the real world. It uses real data to test economic hypotheses, quantitatively estimate causal relationships between economic variables, and to make forecasts of future events. The primary tool that economists use for empirical analysis is ordinary least squares (OLS) linear regression, so the majority of this course will focus on understanding, applying, and extending OLS regressions.
 
 I assume you have *some* working knowledge of  economics at the intermediate level and some basic statistical tools.The formal **prerequisites** for this course are **ECON 205** and **ECON 206**; **ECMG 212** or **MATH 112**; and **ECON 305** or **ECON 306**. We will do some basic review of some necessary statistics and probability at the beginning until everyone is comfortable, before jumping right into regressions. 
 
@@ -231,9 +250,7 @@ Our [slack channel](https://hoodcollegeeconomics.slack.com) is available to all 
 
 In addition to in-person office hours, you can also make an appointment for **“office hours”** on Zoom. You can join in with video, audio, and/or chat, whichever you feel comfortable with. Of course, if you are not available during those times, we can schedule our own time if you prefer this method over email or Slack. If you want to go over material from class, please have *specific* questions you want help with. I am not in the business of giving private lectures (particularly if you missed class without a valid excuse).
 
-Watch this excellent and accurate video explaining office hours:
-
-<iframe src="https://player.vimeo.com/video/270014784" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Watch the excellent and accurate video explaining office hours [on the website](https://gamef21.classes.ryansafner.com/syllabus/#communication-email-slack-and-virtual-office-hours).
 
 ## Netiquette 
 
