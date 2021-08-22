@@ -56,12 +56,8 @@
 &lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Each class session has a set of required readings that you should complete &lt;strong&gt;&lt;em&gt;before&lt;/em&gt;&lt;/strong&gt; watching the lecture.&lt;/p&gt;
-&lt;p&gt;Every class session also has a YouTube playlist of short recorded videos for each of the lecture sections. The lecture slides are special HTML files made with the R package &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/xaringan.html&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; (R can do so much!). On each class session page you’ll see buttons for opening the presentation in a new tab or for downloading a PDF of the slides in case you want to print them or store them on your computer:&lt;/p&gt;
-&lt;p style=&#34;text-align:center;&#34;&gt;
-&lt;span class=&#34;btn btn-primary btn-lg&#34;&gt;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; View all slides in new window&lt;/span&gt; &lt;span class=&#34;btn btn-primary btn-lg&#34;&gt;&lt;i class=&#34;far fa-file-pdf&#34;&gt;&lt;/i&gt; Download PDF of all slides&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;The slides are also embedded on each page. You can click in the slides and navigate through them with &lt;kbd&gt;←&lt;/kbd&gt; and &lt;kbd&gt;→&lt;/kbd&gt;. If you type &lt;kbd&gt;?&lt;/kbd&gt; (or &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;/&lt;/kbd&gt;) while viewing the slides you can see a list of slide-specific commands (like &lt;kbd&gt;f&lt;/kbd&gt; for fullscreen or &lt;kbd&gt;p&lt;/kbd&gt; for presenter mode if you want to see my notes).&lt;/p&gt;
+&lt;p&gt;These content pages provide the readings, lecture slide (in html and printable PDF), appendices, and other useful materials for each class. Each lesson covers approximately one class meeting.&lt;/p&gt;
+&lt;p&gt;Please note that the lesson numbers, topics, and titles (e.g. 1.1) are &lt;em&gt;my&lt;/em&gt; design, and do not match up with the textbook!&lt;/p&gt;
 </description>
     </item>
     
@@ -100,14 +96,22 @@
 
 
 &lt;p&gt;This page contains all of the following resources for each class meeting:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-info-circle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Content&lt;/strong&gt; materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these &lt;strong&gt;before&lt;/strong&gt; each class.&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; &lt;strong&gt;Slides&lt;/strong&gt; are “&lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;Xaringan&lt;/a&gt;” presentations in html that can be opened in any browser (You can find a downloadable &lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; &lt;code&gt;PDF&lt;/code&gt; in each respective &lt;i class=&#34;fas fa-info-circle&#34;&gt;&lt;/i&gt; &lt;strong&gt;content&lt;/strong&gt; page)&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; &lt;strong&gt;R&lt;/strong&gt; materials contain extra tutorials, videos, practice exercises for using &lt;code&gt;R&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; &lt;strong&gt;Assignments&lt;/strong&gt; are generally 11:59 PM Sundays on Blackboard&lt;/li&gt;
+&lt;ul class=&#34;icon-list&#34;&gt;
+&lt;li&gt;
+&lt;i class=&#34;fas fa-info-circle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Content&lt;/strong&gt; materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these &lt;strong&gt;before&lt;/strong&gt; each class.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; &lt;strong&gt;Slides&lt;/strong&gt; are “&lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;Xaringan&lt;/a&gt;” presentations in html that can be opened in any browser (You can find a downloadable PDF in each respective &lt;strong&gt;content&lt;/strong&gt; page)
+&lt;/li&gt;
+&lt;li&gt;
+&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; &lt;strong&gt;R&lt;/strong&gt; materials contain extra tutorials, videos, practice exercises for using &lt;code&gt;R&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; &lt;strong&gt;Assignments&lt;/strong&gt; are generally 11:59 PM Sundays on Blackboard
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Please note, the lesson numbers and topics (e.g. 1.1) are &lt;em&gt;my&lt;/em&gt; design, and do not match up with the textbook!&lt;/p&gt;
-&lt;p&gt;Relevant materials (if applicable, icons will become links) will be posted before class meets.&lt;/p&gt;
+&lt;p&gt;Please note that the lesson numbers, topics, and titles (e.g. 1.1) are &lt;em&gt;my&lt;/em&gt; design, and do not match up with the textbook!&lt;/p&gt;
+&lt;p&gt;Relevant materials, if applicable will be posted before class meets and become colored links.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;table class=&#34;table schedule&#34; style=&#34;max-width:90%; margin-left: auto; margin-right: auto&#34;&gt;
     &lt;tbody&gt;

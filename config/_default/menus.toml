@@ -34,9 +34,14 @@
   weight = 40
 
 [[main]]
-  name = "Rstudio.Cloud"
+  name = '<i class="fas fa-cloud"></i>'
   url = "https://rstudio.cloud/"
   weight = 50
+
+[[main]]
+  name = '<i class="fab fa-slack"></i>'
+  url = "https://hoodcollegeeconomics.slack.com"
+  weight = 55
 
 #[[main]]
 #  name = "Contact"
