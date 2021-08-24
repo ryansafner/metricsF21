@@ -42,6 +42,10 @@ Please note going forward, the lesson numbers and topics (e.g. 1.1) on this webs
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
 `r blogdown::shortcode("slide-links")`
 
 ## <i class="fas fa-laptop-code"></i> Assignments
