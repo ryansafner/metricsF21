@@ -48,12 +48,13 @@ Today we will be working on [practice problems](/r/1.2-r). Answers will be poste
 
 ## <i class="fas fa-laptop-code"></i> Assignments
 
-### Preliminary Math Survey Due Sunday Feb 7
+### Preliminary Statistics Survey Due Sunday August 29
 
 Please take the [preliminary survey](/assignment/00-preliminary-survey) on your statistics and software background by 11:59 PM Sunday. This will help us all have a productive semester together.
-# Additional Useful Information
 
-## Installing R and R Studio
+## Additional Useful Information
+
+### Installing R and R Studio
 
 We will be using [Rstudio.cloud](https://rstudio.cloud), for which you have made a free account. However, since R is free, I **strongly recommend** you download and install it on your own computers. You may decide also you prefer to use your own computers in class when we work with R.
 
@@ -62,7 +63,7 @@ We will be using [Rstudio.cloud](https://rstudio.cloud), for which you have made
 
 (This will also be posted on the [Reference](/reference) page.)
 
-## R Packages
+### R Packages
 
 Packages come from multiple sources.
 
@@ -101,11 +102,11 @@ This will display a help page specific to that function in the Viewer pane. R fu
 
 Additionally, you can turn to the community by searching on Google or better yet, StackExchange.
 
-## Other Useful Commands to Know
+### Other Useful Commands to Know
 
 One of the best/worst things about `R` is that it is a language, meaning there are multiple ways that you can accomplish the same task. Here are a few alternative methods relevant to what we have learned so far that might prove useful. 
 
-### Creating Vectors
+#### Creating Vectors
 
 We know vectors can be created with the `c()` command (and stored with `=` or `<-`), but there are other shortcuts to combine objects into a vector, particularly numeric data:
 
@@ -147,7 +148,7 @@ rep(c(1,4,7), 3) # repeat the vector "1, 4, 7" three times
 c(rep(seq(4,8,2),3),1,5)
 ```
 
-## Suggested Style Guide for Coding
+### Suggested Style Guide for Coding
 
 We want to maximize *human*-readability of code, not just machine-readability. I try to follow [Hadley Wickham's style guide](http://adv-r.had.co.nz/Style.html) for all of my code, including that in this class.
 

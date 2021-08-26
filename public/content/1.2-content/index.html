@@ -29,7 +29,7 @@
   
     
   
-  <meta name="description" content="Overview  Readings Strongly Recommended  Slides  R Practice  Assignments  Preliminary Math Survey Due Sunday Feb 7  Installing R and R Studio R Packages Getting Help for R Other Useful Commands to Know  Creating Vectors  Suggested Style Guide for Coding    Thursday, August 26, 2021    Please complete the preliminary survey by Sunday August 29.    Overview Today we begin the long slog to your mastery of R.">
+  <meta name="description" content="Overview  Readings Strongly Recommended  Slides  R Practice  Assignments  Preliminary Statistics Survey Due Sunday August 29  Additional Useful Information  Installing R and R Studio R Packages  Getting Help for R  Other Useful Commands to Know Suggested Style Guide for Coding     Thursday, August 26, 2021    Please complete the preliminary survey by Sunday August 29.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://metricsf21.classes.ryansafner.com/content/1.2-content/">
@@ -114,12 +114,12 @@
   <meta property="og:site_name" content="ECON 480 — Econometrics">
   <meta property="og:url" content="https://metricsf21.classes.ryansafner.com/content/1.2-content/">
   <meta property="og:title" content="1.2 — Meet R — Class Content | ECON 480 — Econometrics">
-  <meta property="og:description" content="Overview  Readings Strongly Recommended  Slides  R Practice  Assignments  Preliminary Math Survey Due Sunday Feb 7  Installing R and R Studio R Packages Getting Help for R Other Useful Commands to Know  Creating Vectors  Suggested Style Guide for Coding    Thursday, August 26, 2021    Please complete the preliminary survey by Sunday August 29.    Overview Today we begin the long slog to your mastery of R."><meta property="og:image" content="https://metricsf21.classes.ryansafner.com/img/icon-192.png">
+  <meta property="og:description" content="Overview  Readings Strongly Recommended  Slides  R Practice  Assignments  Preliminary Statistics Survey Due Sunday August 29  Additional Useful Information  Installing R and R Studio R Packages  Getting Help for R  Other Useful Commands to Know Suggested Style Guide for Coding     Thursday, August 26, 2021    Please complete the preliminary survey by Sunday August 29."><meta property="og:image" content="https://metricsf21.classes.ryansafner.com/img/icon-192.png">
   <meta property="twitter:image" content="https://metricsf21.classes.ryansafner.com/img/icon-192.png"><meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2020-06-08T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2021-07-22T17:54:07-04:00">
+  <meta property="article:modified_time" content="2021-08-26T08:11:34-04:00">
   
 
   
@@ -435,16 +435,18 @@
 <li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
 <li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
 <ul>
-<li><a href="#preliminary-math-survey-due-sunday-feb-7">Preliminary Math Survey Due Sunday Feb 7</a></li>
+<li><a href="#preliminary-statistics-survey-due-sunday-august-29">Preliminary Statistics Survey Due Sunday August 29</a></li>
 </ul></li>
+<li><a href="#additional-useful-information">Additional Useful Information</a>
+<ul>
 <li><a href="#installing-r-and-r-studio">Installing R and R Studio</a></li>
 <li><a href="#r-packages">R Packages</a></li>
-<li><a href="#getting-help-for-r">Getting Help for R</a></li>
-<li><a href="#other-useful-commands-to-know">Other Useful Commands to Know</a>
-<ul>
-<li><a href="#creating-vectors">Creating Vectors</a></li>
 </ul></li>
+<li><a href="#getting-help-for-r">Getting Help for R</a>
+<ul>
+<li><a href="#other-useful-commands-to-know">Other Useful Commands to Know</a></li>
 <li><a href="#suggested-style-guide-for-coding">Suggested Style Guide for Coding</a></li>
+</ul></li>
 </ul>
 </div>
 
@@ -489,14 +491,15 @@
 </div>
 <div id="assignments" class="section level2">
 <h2><i class="fas fa-laptop-code"></i> Assignments</h2>
-<div id="preliminary-math-survey-due-sunday-feb-7" class="section level3">
-<h3>Preliminary Math Survey Due Sunday Feb 7</h3>
-<p>Please take the <a href="/assignment/00-preliminary-survey">preliminary survey</a> on your statistics and software background by 11:59 PM Sunday. This will help us all have a productive semester together.
-# Additional Useful Information</p>
+<div id="preliminary-statistics-survey-due-sunday-august-29" class="section level3">
+<h3>Preliminary Statistics Survey Due Sunday August 29</h3>
+<p>Please take the <a href="/assignment/00-preliminary-survey">preliminary survey</a> on your statistics and software background by 11:59 PM Sunday. This will help us all have a productive semester together.</p>
 </div>
 </div>
-<div id="installing-r-and-r-studio" class="section level2">
-<h2>Installing R and R Studio</h2>
+<div id="additional-useful-information" class="section level2">
+<h2>Additional Useful Information</h2>
+<div id="installing-r-and-r-studio" class="section level3">
+<h3>Installing R and R Studio</h3>
 <p>We will be using <a href="https://rstudio.cloud">Rstudio.cloud</a>, for which you have made a free account. However, since R is free, I <strong>strongly recommend</strong> you download and install it on your own computers. You may decide also you prefer to use your own computers in class when we work with R.</p>
 <ol style="list-style-type: decimal">
 <li><a href="http://www.r-project.org/">Install R</a> from CRAN<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> by clicking “Download R” (or the CRAN link under Downloads on the left menu). This will take you to a mirrors page, where you can select a location in the U.S. and download a copy of R</li>
@@ -504,8 +507,8 @@
 </ol>
 <p>(This will also be posted on the <a href="/reference">Reference</a> page.)</p>
 </div>
-<div id="r-packages" class="section level2">
-<h2>R Packages</h2>
+<div id="r-packages" class="section level3">
+<h3>R Packages</h3>
 <p>Packages come from multiple sources.</p>
 <p>The polished, publicly released versions are found on <a href="https://cran.r-project.org/">CRAN</a>. When installing a package available on CRAN, it is sufficient simply to tell R the following:<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
 <pre class="r"><code>install.packages(&quot;packagename&quot;) </code></pre>
@@ -514,6 +517,7 @@
 <p>For example, to install Hadley Wickham’s package <code>r4ds</code> from its Github page <a href="https://github.com/hadley/r4ds">https://github.com/hadley/r4ds</a>, we would type:</p>
 <pre class="r"><code>devtools::install_github(&quot;hadley/r4ds&quot;)</code></pre>
 <p>To <strong>use</strong> a package, you need to ensure it is loaded to your workspace (you only need to do this once)^[When we learn how to write <code>R Markdown</code> documents, . with <code>library("package_name")</code>.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+</div>
 </div>
 <div id="getting-help-for-r" class="section level2">
 <h2>Getting Help for R</h2>
@@ -524,12 +528,11 @@
 ?mean()</code></pre>
 <p>This will display a help page specific to that function in the Viewer pane. R functions and packages are extremely well-documented; help pages <a href="http://socviz.co/assets/ch-09-read-a-help-page.png">normally</a><a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> a short description of the function, arguments and options (as well as their default values), and several examples or vignettes to demonstrate usage of the function.</p>
 <p>Additionally, you can turn to the community by searching on Google or better yet, StackExchange.</p>
-</div>
-<div id="other-useful-commands-to-know" class="section level2">
-<h2>Other Useful Commands to Know</h2>
+<div id="other-useful-commands-to-know" class="section level3">
+<h3>Other Useful Commands to Know</h3>
 <p>One of the best/worst things about <code>R</code> is that it is a language, meaning there are multiple ways that you can accomplish the same task. Here are a few alternative methods relevant to what we have learned so far that might prove useful.</p>
-<div id="creating-vectors" class="section level3">
-<h3>Creating Vectors</h3>
+<div id="creating-vectors" class="section level4">
+<h4>Creating Vectors</h4>
 <p>We know vectors can be created with the <code>c()</code> command (and stored with <code>=</code> or <code>&lt;-</code>), but there are other shortcuts to combine objects into a vector, particularly numeric data:</p>
 <ol style="list-style-type: decimal">
 <li><code>:</code> creates a series of integers</li>
@@ -566,8 +569,8 @@ c(rep(seq(4,8,2),3),1,5)</code></pre>
 <pre><code>##  [1] 4 6 8 4 6 8 4 6 8 1 5</code></pre>
 </div>
 </div>
-<div id="suggested-style-guide-for-coding" class="section level2">
-<h2>Suggested Style Guide for Coding</h2>
+<div id="suggested-style-guide-for-coding" class="section level3">
+<h3>Suggested Style Guide for Coding</h3>
 <p>We want to maximize <em>human</em>-readability of code, not just machine-readability. I try to follow <a href="http://adv-r.had.co.nz/Style.html">Hadley Wickham’s style guide</a> for all of my code, including that in this class.</p>
 <p><em>You will not be graded on the style of your code.</em> But now’s the best time to learn best practices (while you don’t know any alternatives!) to save yourself and your potential colleagues (including your future self) from unnecessary frustration.</p>
 <ul>
@@ -588,6 +591,7 @@ c(rep(seq(4,8,2),3),1,5)</code></pre>
            y = y,
            fill = fill))+
   geom_point()</code></pre>
+</div>
 </div>
 <div class="footnotes">
 <hr />
@@ -629,7 +633,7 @@ c(rep(seq(4,8,2),3),1,5)</code></pre>
         </div>
 
         <div class="body-footer">
-          Last updated on Jul 22, 2021
+          Last updated on Aug 26, 2021
         </div>
 
       </article>
