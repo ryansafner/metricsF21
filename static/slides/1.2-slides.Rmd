@@ -26,8 +26,7 @@ output:
 
 ```{r setup,```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(echo=F,
-                      message=F,
+knitr::opts_chunk$set(message=F,
                       warning=F,
                       fig.retina = 3,
                       fig.align = "center")
@@ -135,6 +134,7 @@ class: inverse
 
 ```{r gapplot, eval=F, echo=T}
 library("gapminder")
+library("tidyverse")
 
 ggplot(data = gapminder, 
        aes(x = gdpPercap,
@@ -166,13 +166,11 @@ ggplot(data = gapminder,
 .pull-left[
 # Code
 
-  ```{r, eval=F, echo=T}
-  library(gapminder)
-  ```
-
+.smaller[
 The average GDP per capita is $`` `r
 round(mean(gapminder$gdpPercap),2)` `` with a standard deviation of $`` `r
 round(sd(gapminder$gdpPercap),2)` ``.  
+]
 ]
 
 .pull-right[

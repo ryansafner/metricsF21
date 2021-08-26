@@ -114,6 +114,7 @@ class: inverse
 
 ```r
 library("gapminder")
+library("tidyverse")
 
 ggplot(data = gapminder, 
        aes(x = gdpPercap,
@@ -144,14 +145,11 @@ ggplot(data = gapminder,
 .pull-left[
 # Code
 
-  
-  ```r
-  library(gapminder)
-  ```
-
+.smaller[
 The average GDP per capita is $`` `r
 round(mean(gapminder$gdpPercap),2)` `` with a standard deviation of $`` `r
 round(sd(gapminder$gdpPercap),2)` ``.  
+]
 ]
 
 .pull-right[
@@ -462,6 +460,11 @@ From Kieran Healy's excellent (free online!) [book on Data Visualization](http:/
 - The hashtag `#` starts a comment, R will ignore everything on the rest of that line
 
 
+```r
+# Run regression of y on x, save as reg1 
+reg1&lt;-lm(y~x, data=data) #runs regression 
+summary(reg1$coefficients) #prints coefficients
+```
 
 - Save often!
   - Write scripts that save the commands that did what you wanted (and comment them!)
@@ -479,6 +482,11 @@ From Kieran Healy's excellent (free online!) [book on Data Visualization](http:/
     - DO NOT USE SPACES! You've seen seen webpages intended to be called `my webpage in html` turned into `http://my%20webpage%20in%20html.html`
 
 
+```r
+i_use_underscores
+some.people.use.snake.case
+othersUseCamelCase
+```
 ]
 
 .footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; Also described in [today's course notes page](http://metricsF20.classes.ryansafner.com/class/1.2-class/) and the course [reference page](http://metricsF20.classes.ryansafner.com/reference).
@@ -496,6 +504,9 @@ From Kieran Healy's excellent (free online!) [book on Data Visualization](http:/
 --
 
 
+```r
+&gt; 2+2
+```
 
 
 ```
@@ -513,12 +524,20 @@ From Kieran Healy's excellent (free online!) [book on Data Visualization](http:/
 - We can start using more fancy commands
 
 
+```r
+2^3
+```
+
 ```
 ## [1] 8
 ```
 
 --
 
+
+```r
+sqrt(25)
+```
 
 ```
 ## [1] 5
@@ -527,12 +546,20 @@ From Kieran Healy's excellent (free online!) [book on Data Visualization](http:/
 --
 
 
+```r
+log(6)
+```
+
 ```
 ## [1] 1.791759
 ```
 
 --
 
+
+```r
+pi/2
+```
 
 ```
 ## [1] 1.570796
@@ -580,12 +607,30 @@ From Kieran Healy's excellent (free online!) [book on Data Visualization](http:/
 .pull-right[
 
 
+```r
+# make an object
+my_object = -c(1,2,3,4,5)
+
+# look at it 
+my_object
+```
+
 ```
 ## [1] -1 -2 -3 -4 -5
 ```
 
+```r
+# find the sum
+sum(my_object)
+```
+
 ```
 ## [1] -15
+```
+
+```r
+# find the mean 
+mean(my_object)
 ```
 
 ```
@@ -608,12 +653,27 @@ From Kieran Healy's excellent (free online!) [book on Data Visualization](http:/
 .pull-right[
 
 
+```r
+# find the sd
+sd(my_object)
+```
+
 ```
 ## [1] 1.581139
 ```
 
+```r
+# round everything in my object to two decimals
+round(my_object,2)
+```
+
 ```
 ## [1] -1 -2 -3 -4 -5
+```
+
+```r
+# round the sd to two decimals
+round(sd(my_object),2)
 ```
 
 ```
@@ -639,8 +699,18 @@ class: inverse, center, middle
 
 .pull-right[
 
+```r
+x = 2 
+y = 3
+x+y
+```
+
 ```
 ## [1] 5
+```
+
+```r
+x*y
 ```
 
 ```
@@ -661,8 +731,19 @@ class: inverse, center, middle
 
 .pull-right[
 
+```r
+name = "Ryan Safner"
+address = "Washington D.C."
+
+name
+```
+
 ```
 ## [1] "Ryan Safner"
+```
+
+```r
+address
 ```
 
 ```
@@ -695,16 +776,34 @@ Two `==` *evaluate* a conditional statement.]
 .pull-right[
 
 
+```r
+z = 10 # set z equal to 10
+
+z==10 # is z equal to 10?
+```
+
 ```
 ## [1] TRUE
+```
+
+```r
+"red"=="blue" # is red equal to blue?
 ```
 
 ```
 ## [1] FALSE
 ```
 
+```r
+z &gt; 1 &amp; z &lt; 12 # is z &gt; 1 AND &lt; 12?
+```
+
 ```
 ## [1] TRUE
+```
+
+```r
+z &lt;= 1 | z==10 # is z &gt;= 1 OR equal to 10?
 ```
 
 ```
@@ -759,6 +858,14 @@ class: inverse, center, middle
 .pull-right[
 .code50[
 
+```r
+# create a vector called vec
+vec = c(1,"orange", 83.5, pi)
+
+# look at vec
+vec
+```
+
 ```
 ## [1] "1"                "orange"           "83.5"             "3.14159265358979"
 ```
@@ -782,6 +889,12 @@ class: inverse, center, middle
 .pull-right[
 
 .code50[
+
+```r
+library("ggplot2")
+
+diamonds
+```
 
 ```
 ## # A tibble: 53,940 × 10
@@ -816,6 +929,22 @@ class: inverse, center, middle
 
 .pull-right[
 
+```r
+# make two vectors
+fruits = c("apple","orange","pear","kiwi","pineapple")
+numbers = c(3.3,2.0,6.1,7.5,4.2)
+
+# combine into dataframe
+df = data.frame(fruits,numbers)
+
+# do it all in one step (note the = instead of &lt;-)
+df = data.frame(fruits=c("apple","orange","pear","kiwi","pineapple"),
+               numbers=c(3.3,2.0,6.1,7.5,4.2))
+
+# look at it
+df
+```
+
 ```
 ##      fruits numbers
 ## 1     apple     3.3
@@ -840,6 +969,9 @@ class: inverse, center, middle
 - Recall, any object is created with the assignment operator `=` or `&lt;-` 
 
 
+```r
+my_vector = c(1,2,3,4,5)
+```
 
 - R will not give any output after an assignment
 
@@ -850,6 +982,10 @@ class: inverse, center, middle
 - *View* an object (and list its contents) by typing its name
 
 
+```r
+my_vector
+```
+
 ```
 ## [1] 1 2 3 4 5
 ```
@@ -858,6 +994,11 @@ class: inverse, center, middle
 
 - objects maintain their values until they are assigned different values that will *overwrite* the object
 
+
+```r
+my_vector = c(2,7,9,1,5)
+my_vector
+```
 
 ```
 ## [1] 2 7 9 1 5
@@ -870,8 +1011,16 @@ class: inverse, center, middle
 - Check what type of object something is with `class()`
 
 
+```r
+class("six")
+```
+
 ```
 ## [1] "character"
+```
+
+```r
+class(6)
 ```
 
 ```
@@ -883,8 +1032,16 @@ class: inverse, center, middle
 - Can also use logical tests of `is.()` 
 
 
+```r
+is.numeric("six")
+```
+
 ```
 ## [1] FALSE
+```
+
+```r
+is.character("six")
 ```
 
 ```
@@ -899,8 +1056,16 @@ class: inverse, center, middle
     - Pay attention: you can't convert non-numbers to `numeric`, etc! 
 
 
+```r
+as.character(6)
+```
+
 ```
 ## [1] "6"
+```
+
+```r
+as.numeric("six")
 ```
 
 ```
@@ -916,8 +1081,17 @@ class: inverse, center, middle
     - Different types of data will be "**coerced**" into the lowest-common denominator type of object
 
 
+```r
+mixed_vector = c(pi, 12, "apple", 6.32)
+class(mixed_vector)
+```
+
 ```
 ## [1] "character"
+```
+
+```r
+mixed_vector
 ```
 
 ```
@@ -932,6 +1106,10 @@ class: inverse, center, middle
 
 .pull-left[
 
+```r
+df
+```
+
 ```
 ##      fruits numbers
 ## 1     apple     3.3
@@ -945,8 +1123,16 @@ class: inverse, center, middle
 .pull-right[
 
 
+```r
+class(df$fruits)
+```
+
 ```
 ## [1] "character"
+```
+
+```r
+class(df$numbers)
 ```
 
 ```
@@ -963,8 +1149,16 @@ class: inverse, center, middle
 - Learn more about a data frame with the `str()` command to view its structure
 
 
+```r
+class(df) 
+```
+
 ```
 ## [1] "data.frame"
+```
+
+```r
+str(df)
 ```
 
 ```
@@ -980,6 +1174,10 @@ class: inverse, center, middle
 - Take a look at the first 5 (or `n`) rows with `head()`
 
 
+```r
+head(df)
+```
+
 ```
 ##      fruits numbers
 ## 1     apple     3.3
@@ -987,6 +1185,10 @@ class: inverse, center, middle
 ## 3      pear     6.1
 ## 4      kiwi     7.5
 ## 5 pineapple     4.2
+```
+
+```r
+head(df, n=2)
 ```
 
 ```
@@ -1001,6 +1203,10 @@ class: inverse, center, middle
 
 - Get summary statistics&lt;sup&gt;.magenta[†]&lt;/sup&gt; by column (variable) with `summary()`
 
+
+```r
+summary(df)
+```
 
 ```
 ##     fruits             numbers    
@@ -1040,8 +1246,17 @@ class: inverse, center, middle
 - Functions in R are vectorized, meaning running a function on a vector applies it to *each* element
 
 
+```r
+my_vector = c(2,4,5,10)
+my_vector+4 # add 4 to all elements
+```
+
 ```
 ## [1]  6  8  9 14
+```
+
+```r
+my_vector^2 # square all elements
 ```
 
 ```
@@ -1055,28 +1270,56 @@ class: inverse, center, middle
 - But often we want to run functions on vectors that *aggregate* to a result (e.g. a statistic):
 
 
+```r
+length(my_vector) # how many elements
+```
+
 ```
 ## [1] 4
+```
+
+```r
+sum(my_vector) # add all elements
 ```
 
 ```
 ## [1] 21
 ```
 
+```r
+max(my_vector) # find largest element
+```
+
 ```
 ## [1] 10
+```
+
+```r
+min(my_vector) # find smallest element
 ```
 
 ```
 ## [1] 2
 ```
 
+```r
+mean(my_vector) # mean of all elements
+```
+
 ```
 ## [1] 5.25
 ```
 
+```r
+median(my_vector) # median of all elements
+```
+
 ```
 ## [1] 4.5
+```
+
+```r
+sd(my_vector) # standard deviation
 ```
 
 ```
@@ -1111,6 +1354,10 @@ class: inverse, center, middle
 .code50[
 
 
+
+```r
+mtcars
+```
 
 ```
 ##                    mpg cyl  disp  hp drat    wt  qsec
@@ -1150,6 +1397,10 @@ class: inverse, center, middle
 .pull-left[
 .code50[
 
+```r
+mtcars
+```
+
 ```
 ##                    mpg cyl  disp  hp drat    wt  qsec
 ## Mazda RX4         21.0   6 160.0 110 3.90 2.620 16.46
@@ -1173,9 +1424,17 @@ class: inverse, center, middle
 ### Subset by Row (Observations)
 .code50[
 
+```r
+mtcars[1,] # first row
+```
+
 ```
 ##           mpg cyl disp  hp drat   wt  qsec
 ## Mazda RX4  21   6  160 110  3.9 2.62 16.46
+```
+
+```r
+mtcars[c(1,3,4),] # first, third, and fourth rows
 ```
 
 ```
@@ -1183,6 +1442,10 @@ class: inverse, center, middle
 ## Mazda RX4      21.0   6  160 110 3.90 2.620 16.46
 ## Datsun 710     22.8   4  108  93 3.85 2.320 18.61
 ## Hornet 4 Drive 21.4   6  258 110 3.08 3.215 19.44
+```
+
+```r
+mtcars[1:3,] # first three rows
 ```
 
 ```
@@ -1200,6 +1463,10 @@ class: inverse, center, middle
 
 .pull-left[
 .code50[
+
+```r
+mtcars
+```
 
 ```
 ##                    mpg cyl  disp  hp drat    wt  qsec
@@ -1225,8 +1492,16 @@ class: inverse, center, middle
 
 .code50[
 
+```r
+mtcars[,6] # select column 6
+```
+
 ```
 ##  [1] 2.620 2.875 2.320 3.215 3.440 3.460 3.570 3.190 3.150 3.440 3.440 4.070
+```
+
+```r
+mtcars[,2:4] # select columns 2 through 4
 ```
 
 ```
@@ -1252,6 +1527,10 @@ class: inverse, center, middle
 
 .pull-left[
 .code50[
+
+```r
+mtcars
+```
 
 ```
 ##                    mpg cyl  disp  hp drat    wt  qsec
@@ -1279,6 +1558,10 @@ class: inverse, center, middle
 
 .code50[
 
+```r
+mtcars[[6]]
+```
+
 ```
 ##  [1] 2.620 2.875 2.320 3.215 3.440 3.460 3.570 3.190 3.150 3.440 3.440 4.070
 ```
@@ -1287,6 +1570,10 @@ class: inverse, center, middle
 - Can select columns .hi-turquoise[by name] with `$`
 
 .code50[
+
+```r
+mtcars$wt # same thing
+```
 
 ```
 ##  [1] 2.620 2.875 2.320 3.215 3.440 3.460 3.570 3.190 3.150 3.440 3.440 4.070
@@ -1301,6 +1588,10 @@ class: inverse, center, middle
 
 .pull-left[
 .code50[
+
+```r
+mtcars
+```
 
 ```
 ##                    mpg cyl  disp  hp drat    wt  qsec
@@ -1328,9 +1619,17 @@ class: inverse, center, middle
 
 .code50[
 
+```r
+mtcars[mtcars$wt&gt;4,] # select obs with wt&gt;4
+```
+
 ```
 ##             mpg cyl  disp  hp drat   wt qsec
 ## Merc 450SE 16.4   8 275.8 180 3.07 4.07 17.4
+```
+
+```r
+mtcars[mtcars$cyl==6,] # select obs with exactly 6 cyl
 ```
 
 ```
@@ -1341,6 +1640,10 @@ class: inverse, center, middle
 ## Valiant        18.1   6 225.0 105 2.76 3.460 20.22
 ## Merc 280       19.2   6 167.6 123 3.92 3.440 18.30
 ## Merc 280C      17.8   6 167.6 123 3.92 3.440 18.90
+```
+
+```r
+mtcars[mtcars$wt&lt;4 &amp; mtcars$wt&gt;2,] # select obs where 2&lt;wt&lt;4
 ```
 
 ```
@@ -1356,6 +1659,10 @@ class: inverse, center, middle
 ## Merc 230          22.8   4 140.8  95 3.92 3.150 22.90
 ## Merc 280          19.2   6 167.6 123 3.92 3.440 18.30
 ## Merc 280C         17.8   6 167.6 123 3.92 3.440 18.90
+```
+
+```r
+mtcars[mtcars$cyl==4 | mtcars$cyl==6,] # select obs with 4 OR 6 cyl
 ```
 
 ```
