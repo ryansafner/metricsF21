@@ -18,7 +18,9 @@ library(tidyverse)
 library(pander)
 ```
 
-*Due by 11:59PM Sunday, August 23, 2020*
+{{% alert warning %}}
+Please complete this by Sunday August 29.
+{{% /alert %}}
 
 This is an *ungraded* and *anonymous* survey for me to evaluate the distribution of your math and statistics backgrounds. Please complete all problems to the best of your ability. Your responses will help me craft the course to see which material we need to focus on at greater length, especially review material.
 

@@ -10,45 +10,12 @@ menu:
 type: docs
 output:
   blogdown::html_page:
-    toc: true
+    toc: false
 
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
-<div id="TOC">
-<ul>
-<li><a href="#getting-set-up">Getting Set Up</a></li>
-<li><a href="#creating-objects">Creating Objects</a>
-<ul>
-<li><a href="#section">1</a></li>
-<li><a href="#section-1">2</a></li>
-<li><a href="#section-2">3</a></li>
-<li><a href="#section-3">4</a></li>
-<li><a href="#section-4">5</a></li>
-</ul></li>
-<li><a href="#playing-with-data">Playing with Data</a>
-<ul>
-<li><a href="#section-5">6</a></li>
-<li><a href="#section-6">7</a></li>
-<li><a href="#section-7">8</a></li>
-<li><a href="#section-8">9</a></li>
-<li><a href="#section-9">10</a></li>
-<li><a href="#section-10">11</a></li>
-<li><a href="#section-11">12</a></li>
-<li><a href="#section-12">13</a></li>
-<li><a href="#section-13">14</a></li>
-<li><a href="#section-14">15</a></li>
-<li><a href="#section-15">16</a></li>
-<li><a href="#section-16">17</a></li>
-<li><a href="#section-17">18</a></li>
-<li><a href="#section-18">19</a></li>
-<li><a href="#section-19">20</a></li>
-<li><a href="#section-20">21</a></li>
-</ul></li>
-<li><a href="#execute-your-r-script">Execute your R Script</a></li>
-</ul>
-</div>
 
 <p style="text-align:center">
 <a target="_blank" href="/r/1.2-r-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span></br>
@@ -59,101 +26,95 @@ output:
 </div>
 <div id="creating-objects" class="section level1">
 <h1>Creating Objects</h1>
-<div id="section" class="section level2">
-<h2>1</h2>
+<div id="question-1" class="section level2">
+<h2>Question 1</h2>
 <p>Work on the following parts:</p>
-<ul>
-<li>a. Create a vector called <code>me</code> with two objects, your first name, and your last name.</li>
-<li><ol start="2" style="list-style-type: lower-alpha">
-<li>Call the vector to inspect it.</li>
-</ol></li>
-<li><ol start="3" style="list-style-type: lower-alpha">
-<li>Confirm it is a character class vector.</li>
-</ol></li>
-</ul>
+<p>a. Create a vector called <code>me</code> with two objects, your first name, and your last name.
+b. Call the vector to inspect it.
+c. Confirm it is a character class vector.</p>
 </div>
-<div id="section-1" class="section level2">
-<h2>2</h2>
+<div id="question-2" class="section level2">
+<h2>Question 2</h2>
 <p>Use R’s help functions to determine what the <code>paste()</code> function does. Then paste together your first name and last name.</p>
 </div>
-<div id="section-2" class="section level2">
-<h2>3</h2>
+<div id="question-3" class="section level2">
+<h2>Question 3</h2>
 <p>Create a vector called <code>my_vector</code> with all the even integers from 2 to 10.</p>
 </div>
-<div id="section-3" class="section level2">
-<h2>4</h2>
+<div id="question-4" class="section level2">
+<h2>Question 4</h2>
 <p>Find the mean of <code>my_vector</code> with <code>mean()</code>.</p>
 </div>
-<div id="section-4" class="section level2">
-<h2>5</h2>
+<div id="question-5" class="section level2">
+<h2>Question 5</h2>
 <p>Take all the integers from 18 to 763,<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> then get the mean.</p>
 </div>
 </div>
 <div id="playing-with-data" class="section level1">
 <h1>Playing with Data</h1>
 <p>For the following questions, we will use the <code>diamonds</code> dataset, included as part of <code>ggplot2</code>.</p>
-<div id="section-5" class="section level2">
-<h2>6</h2>
+<div id="question-6" class="section level2">
+<h2>Question 6</h2>
 <p>Install <code>ggplot2</code>.</p>
 </div>
-<div id="section-6" class="section level2">
-<h2>7</h2>
+<div id="question-7" class="section level2">
+<h2>Question 7</h2>
 <p>Load <code>ggplot2</code> with the <code>library()</code> command.</p>
 </div>
-<div id="section-7" class="section level2">
-<h2>8</h2>
+<div id="question-8" class="section level2">
+<h2>Question 8</h2>
 <p>Get the <code>str</code>ucture of the diamonds data frame. What are the different variables and what kind of data does each contain?</p>
 </div>
-<div id="section-8" class="section level2">
-<h2>9</h2>
+<div id="question-9" class="section level2">
+<h2>Question 9</h2>
 <p>Get summary statistics separately for <code>carat</code>, <code>depth</code>, <code>table</code>, and <code>price</code>.</p>
 </div>
-<div id="section-9" class="section level2">
-<h2>10</h2>
+<div id="question-10" class="section level2">
+<h2>Question 10</h2>
 <p><code>color</code>, <code>cut</code>, and <code>clarity</code> are categorical variables (factors). Use the <code>table()</code> command to generate frequency tables for each.</p>
 </div>
-<div id="section-10" class="section level2">
-<h2>11</h2>
+<div id="question-11" class="section level2">
+<h2>Question 11</h2>
 <p>Now rerun the <code>summary()</code> command on the entire data frame.</p>
 </div>
-<div id="section-11" class="section level2">
-<h2>12</h2>
+<div id="question-12" class="section level2">
+<h2>Question 12</h2>
 <p>Now look only at (subset) the first 4 diamonds in the dataset.</p>
 </div>
-<div id="section-12" class="section level2">
-<h2>13</h2>
+<div id="question-13" class="section level2">
+<h2>Question 13</h2>
 <p>Now look only at (subset) the third and seventh diamond in the dataset.</p>
 </div>
-<div id="section-13" class="section level2">
-<h2>14</h2>
+<div id="question-14" class="section level2">
+<h2>Question 14</h2>
 <p>Now look only at (subset) the second column of the dataset.</p>
 </div>
-<div id="section-14" class="section level2">
-<h2>15</h2>
+<div id="question-15" class="section level2">
+<h2>Question 15</h2>
 <p>Do this again, but look using the <code>$</code> to pull up the second column by name.</p>
 </div>
-<div id="section-15" class="section level2">
-<h2>16</h2>
+<div id="question-16" class="section level2">
+<h2>Question 16</h2>
 <p>Now look only at diamonds that have a <code>carat</code> greater than or equal to 1.</p>
 </div>
-<div id="section-16" class="section level2">
-<h2>17</h2>
+<div id="question-17" class="section level2">
+<h2>Question 17</h2>
 <p>Now look only at diamonds that have a VVS1 <code>clarity</code>.</p>
 </div>
-<div id="section-17" class="section level2">
-<h2>18</h2>
+<div id="question-18" class="section level2">
+<h2>Question 18</h2>
 <p>Now look only at dimaonds that have a color of E, F, I, and J.</p>
 </div>
-<div id="section-18" class="section level2">
-<h2>19</h2>
+<div id="question-19" class="section level2">
+<h2>Question 19</h2>
 <p>Now look only at diamonds that have a <code>carat</code> greater than or equal to 1 and a VVS1 <code>clarity</code>.</p>
 </div>
-<div id="section-19" class="section level2">
-<h2>20</h2>
+<div id="question-20" class="section level2">
+<h2>Question 20</h2>
 <p>Get the average price of diamonds in question 18.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
 </div>
-<div id="section-20" class="section level2">
-<h2>21</h2>
+<div id="question-21" class="section level2">
+<h2>Question 21</h2>
 <p>What is the highest price for a diamond with a 1.0 carat, D color, and VVS1 clarity?</p>
 </div>
 </div>
