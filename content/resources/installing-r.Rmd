@@ -1,0 +1,42 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+linktitle: "Installing R and R Studio"
+menu:
+  resources:
+    parent: R Resources
+title: "Installing R and R Studio"
+toc: true
+type: docs
+weight: 2
+---
+
+We will do all of our work in this course with the free & open source programming language `R`. While you can run everything you need directly in the command line using `R`, it is a lot more convenient to use an integrated development environment (IDE) like `R Studio`. Think of `R` as the engine of a car, and `R Studio` as the dashboard. 
+
+You will need to install *both*, but we will ever only open `R Studio.`
+
+## Installing `R`
+
+First you will need to download and install `R` on your computer.
+
+1. Go to the **Comprehensive R Archive Network (CRAN)** that maintains `R` and its official packages at: https://cran.r-project.org
+2. Click on "Download R for ..." your operating system (Mac or Windows)
+  - If you use a Mac, scroll to the first `.pkg` file listed on the left and download.
+  - If you use Windows, click on `base` ("This what you want to **install R for the first time**")
+3. Install the downloaded package like you would any software application on your computer.
+  - Typically, open the file from your `Downloads` folder (or whever you save downloaded files) and follow the prompts to install on your computer.
+4. If you use a Mac, also download and install `XQuartz` (https://www.xquartz.org/). You do not need to do this on Windows.
+
+## Install R Studio
+
+1. Go to RStudio.com and download the [free desktop version](https://www.rstudio.com/products/rstudio/download/#download).
+2. The website should automatically detect your operating system and give you a large button to click to download the application.
+3. Install the downloaded package like you would any software application on your computer.
+
+## R Studio Cloud
+
+R is free, but sometimes can be difficult to install and configure on your computer. To make things easier, and to ensure everyone has a consistent experience for class, you can (and should) use the free [Rstudio.Cloud](https://rstudio.cloud) service *initially*. This allows you to run `R` in your browser (i.e. Chrome, Firefox, Safari, etc), meaning you don't need to worry about installing things on your computer.
+
+Go to https://rstudio.cloud and create an account (please use your first and last name). I will send you a link via email to join our class workspace.
+
+R Studio Cloud is convenient, but is not designed to be as fully customizable and extensive as the main desktop version. I would start with the Cloud version if you have trouble with your own computer or computers on campus running R or R Studio. But ultimately, you will want to eventually do everything on your own computer and not the cloud version.

@@ -173,6 +173,59 @@
     </item>
     
     <item>
+      <title>Installing R and R Studio</title>
+      <link>https://metricsf21.classes.ryansafner.com/resources/installing-r/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/resources/installing-r/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;We will do all of our work in this course with the free &amp;amp; open source programming language &lt;code&gt;R&lt;/code&gt;. While you can run everything you need directly in the command line using &lt;code&gt;R&lt;/code&gt;, it is a lot more convenient to use an integrated development environment (IDE) like &lt;code&gt;R Studio&lt;/code&gt;. Think of &lt;code&gt;R&lt;/code&gt; as the engine of a car, and &lt;code&gt;R Studio&lt;/code&gt; as the dashboard.&lt;/p&gt;
+&lt;p&gt;You will need to install &lt;em&gt;both&lt;/em&gt;, but we will ever only open &lt;code&gt;R Studio.&lt;/code&gt;&lt;/p&gt;
+&lt;div id=&#34;installing-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Installing &lt;code&gt;R&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;First you will need to download and install &lt;code&gt;R&lt;/code&gt; on your computer.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Go to the &lt;strong&gt;Comprehensive R Archive Network (CRAN)&lt;/strong&gt; that maintains &lt;code&gt;R&lt;/code&gt; and its official packages at: &lt;a href=&#34;https://cran.r-project.org&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click on “Download R for …” your operating system (Mac or Windows)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;If you use a Mac, scroll to the first &lt;code&gt;.pkg&lt;/code&gt; file listed on the left and download.&lt;/li&gt;
+&lt;li&gt;If you use Windows, click on &lt;code&gt;base&lt;/code&gt; (“This what you want to &lt;strong&gt;install R for the first time&lt;/strong&gt;”)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Install the downloaded package like you would any software application on your computer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Typically, open the file from your &lt;code&gt;Downloads&lt;/code&gt; folder (or whever you save downloaded files) and follow the prompts to install on your computer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;If you use a Mac, also download and install &lt;code&gt;XQuartz&lt;/code&gt; (&lt;a href=&#34;https://www.xquartz.org/&#34; class=&#34;uri&#34;&gt;https://www.xquartz.org/&lt;/a&gt;). You do not need to do this on Windows.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;install-r-studio&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Install R Studio&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Go to RStudio.com and download the &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/#download&#34;&gt;free desktop version&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The website should automatically detect your operating system and give you a large button to click to download the application.&lt;/li&gt;
+&lt;li&gt;Install the downloaded package like you would any software application on your computer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-studio-cloud&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R Studio Cloud&lt;/h2&gt;
+&lt;p&gt;R is free, but sometimes can be difficult to install and configure on your computer. To make things easier, and to ensure everyone has a consistent experience for class, you can (and should) use the free &lt;a href=&#34;https://rstudio.cloud&#34;&gt;Rstudio.Cloud&lt;/a&gt; service &lt;em&gt;initially&lt;/em&gt;. This allows you to run &lt;code&gt;R&lt;/code&gt; in your browser (i.e. Chrome, Firefox, Safari, etc), meaning you don’t need to worry about installing things on your computer.&lt;/p&gt;
+&lt;p&gt;Go to &lt;a href=&#34;https://rstudio.cloud&#34; class=&#34;uri&#34;&gt;https://rstudio.cloud&lt;/a&gt; and create an account (please use your first and last name). I will send you a link via email to join our class workspace.&lt;/p&gt;
+&lt;p&gt;R Studio Cloud is convenient, but is not designed to be as fully customizable and extensive as the main desktop version. I would start with the Cloud version if you have trouble with your own computer or computers on campus running R or R Studio. But ultimately, you will want to eventually do everything on your own computer and not the cloud version.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>List of Math Appendices</title>
       <link>https://metricsf21.classes.ryansafner.com/resources/appendices/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
@@ -278,7 +331,7 @@
     </item>
     
     <item>
-      <title>R Packages Used</title>
+      <title>R Packages We Use</title>
       <link>https://metricsf21.classes.ryansafner.com/resources/r-packages/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       

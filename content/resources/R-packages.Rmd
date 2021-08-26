@@ -4,8 +4,8 @@ draft: false
 linktitle: R Packages Used in this Course
 menu:
   resources:
-    parent: Resources
-title: R Packages Used
+    parent: R Resources
+title: R Packages We Use
 toc: true
 type: docs
 weight: 2
