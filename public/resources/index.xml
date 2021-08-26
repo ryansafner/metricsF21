@@ -182,7 +182,11 @@
 &lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
-
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#installing-r&#34;&gt;Installing &lt;code&gt;R&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#install-r-studio&#34;&gt;Install R Studio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-studio-cloud&#34;&gt;R Studio Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 
 &lt;p&gt;We will do all of our work in this course with the free &amp;amp; open source programming language &lt;code&gt;R&lt;/code&gt;. While you can run everything you need directly in the command line using &lt;code&gt;R&lt;/code&gt;, it is a lot more convenient to use an integrated development environment (IDE) like &lt;code&gt;R Studio&lt;/code&gt;. Think of &lt;code&gt;R&lt;/code&gt; as the engine of a car, and &lt;code&gt;R Studio&lt;/code&gt; as the dashboard.&lt;/p&gt;
