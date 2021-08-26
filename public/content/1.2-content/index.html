@@ -22,15 +22,14 @@
   
   
 
-  <meta name="author" content="Michael Vahn">
+  <meta name="author" content="Ryan Safner">
 
   
   
   
     
   
-  <meta name="description" content="Monday, February 1, 2021    Please complete the preliminary survey on statistics and software as soon as you can.    Overview Welcome to ECON 480 — Econometrics! Today’s lesson will be an overview of the content and the assignments of the course. Please read and familiarize yourself with the syllabus.
-This is not just a “syllabus day,” as we need to hit the ground running, beginning with learning the software we will be using this semester.">
+  <meta name="description" content="Overview  Readings Strongly Recommended  Slides  R Practice  Assignments  Preliminary Math Survey Due Sunday Feb 7  Installing R and R Studio R Packages Getting Help for R Other Useful Commands to Know  Creating Vectors  Suggested Style Guide for Coding    Thursday, August 26, 2021    Please complete the preliminary survey by Sunday August 29.    Overview Today we begin the long slog to your mastery of R.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://metricsf21.classes.ryansafner.com/content/1.2-content/">
@@ -86,7 +85,7 @@ This is not just a “syllabus day,” as we need to hit the ground running, beg
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.1b2cde1b8ab15f16622e06d9ab78e5cc.css">
+  <link rel="stylesheet" href="/css/academia.min.0c527bc9fd0ba6033034eb84176a3cc2.css">
 
   
 
@@ -114,14 +113,13 @@ This is not just a “syllabus day,” as we need to hit the ground running, beg
   
   <meta property="og:site_name" content="ECON 480 — Econometrics">
   <meta property="og:url" content="https://metricsf21.classes.ryansafner.com/content/1.2-content/">
-  <meta property="og:title" content="1.2 — Introduction to Econometrics — Class Content | ECON 480 — Econometrics">
-  <meta property="og:description" content="Monday, February 1, 2021    Please complete the preliminary survey on statistics and software as soon as you can.    Overview Welcome to ECON 480 — Econometrics! Today’s lesson will be an overview of the content and the assignments of the course. Please read and familiarize yourself with the syllabus.
-This is not just a “syllabus day,” as we need to hit the ground running, beginning with learning the software we will be using this semester."><meta property="og:image" content="https://metricsf21.classes.ryansafner.com/img/icon-192.png">
+  <meta property="og:title" content="1.2 — Meet R — Class Content | ECON 480 — Econometrics">
+  <meta property="og:description" content="Overview  Readings Strongly Recommended  Slides  R Practice  Assignments  Preliminary Math Survey Due Sunday Feb 7  Installing R and R Studio R Packages Getting Help for R Other Useful Commands to Know  Creating Vectors  Suggested Style Guide for Coding    Thursday, August 26, 2021    Please complete the preliminary survey by Sunday August 29.    Overview Today we begin the long slog to your mastery of R."><meta property="og:image" content="https://metricsf21.classes.ryansafner.com/img/icon-192.png">
   <meta property="twitter:image" content="https://metricsf21.classes.ryansafner.com/img/icon-192.png"><meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2020-06-08T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2021-07-22T17:17:03-04:00">
+  <meta property="article:modified_time" content="2021-07-22T17:54:07-04:00">
   
 
   
@@ -133,7 +131,7 @@ This is not just a “syllabus day,” as we need to hit the ground running, beg
 
 
 
-  <title>1.2 — Introduction to Econometrics — Class Content | ECON 480 — Econometrics</title>
+  <title>1.2 — Meet R — Class Content | ECON 480 — Econometrics</title>
 
 </head>
 
@@ -227,7 +225,7 @@ This is not just a “syllabus day,” as we need to hit the ground running, beg
         
 
         <li class="nav-item">
-          <a class="nav-link  active" href="/content/"><span>Content</span></a>
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
         </li>
 
         
@@ -249,7 +247,7 @@ This is not just a “syllabus day,” as we need to hit the ground running, beg
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+          <a class="nav-link  active" href="/content/"><span>Content</span></a>
         </li>
 
         
@@ -317,7 +315,31 @@ This is not just a “syllabus day,” as we need to hit the ground running, beg
         
 
         <li class="nav-item">
-          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>Rstudio.Cloud</span></a>
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span><i class="fas fa-cloud"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://hoodcollegeeconomics.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
         </li>
 
         
@@ -378,7 +400,7 @@ This is not just a “syllabus day,” as we need to hit the ground running, beg
       </li>
       
       <li class="active">
-        <a href="/content/1.2-content/">1.2 — Introduction</a>
+        <a href="/content/1.2-content/">1.2 — Meet R</a>
       </li>
       
     </ul>
@@ -392,85 +414,193 @@ This is not just a “syllabus day,” as we need to hit the ground running, beg
     </div>
 
     
-    <div class="d-none d-xl-block col-xl-2 docs-toc">
-      <ul class="nav toc-top">
-        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
-      </ul>
-
-      
-
-      
-    </div>
-    
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
 
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">1.2 — Introduction to Econometrics — Class Content</h1>
+          <h1 itemprop="name">1.2 — Meet R — Class Content</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 <div id="TOC">
-
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#strongly-recommended">Strongly Recommended</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#preliminary-math-survey-due-sunday-feb-7">Preliminary Math Survey Due Sunday Feb 7</a></li>
+</ul></li>
+<li><a href="#installing-r-and-r-studio">Installing R and R Studio</a></li>
+<li><a href="#r-packages">R Packages</a></li>
+<li><a href="#getting-help-for-r">Getting Help for R</a></li>
+<li><a href="#other-useful-commands-to-know">Other Useful Commands to Know</a>
+<ul>
+<li><a href="#creating-vectors">Creating Vectors</a></li>
+</ul></li>
+<li><a href="#suggested-style-guide-for-coding">Suggested Style Guide for Coding</a></li>
+</ul>
 </div>
 
 <p><div class="alert alert-note">
   <div>
-    <em>Monday, February 1, 2021</em>
+    <em>Thursday, August 26, 2021</em>
   </div>
 </div>
 </p>
 <p><div class="alert alert-warning">
   <div>
-    Please complete the <a href="/assignment/00-preliminary-survey">preliminary survey</a> on statistics and software as soon as you can.
+    Please complete the <a href="/assignment/00-preliminary-survey">preliminary survey</a> by Sunday August 29.
   </div>
 </div>
 </p>
 <div id="overview" class="section level2">
 <h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
-<p><span class="newthought">Welcome</span> to ECON 480 — Econometrics! Today’s lesson will be an overview of the content and the assignments of the course. Please read and familiarize yourself with the <a href="/syllabus">syllabus</a>.</p>
-<p>This is not just a “syllabus day,” as we need to hit the ground running, beginning with learning the software we will be using this semester. Starting next class, we will do a deep dive in to R for about 2 weeks. In preparation, please do the following <strong>before next class</strong>:</p>
-<ol style="list-style-type: decimal">
-<li><p>Go to <a href="https://rstudio.cloud">RStudio.cloud</a> and register a (free) account with your Hood details.</p></li>
-<li><p>Try to <a href="https://metricsf20.classes.ryansafner.com/reference/#installing-r-and-r-studio">install R and R Studio</a> on your computer if you are able, before next class. You will still always have RStudio.cloud available all to use in your browser, but it is much better to have a real version of <code>R</code> and <code>R Studio</code> on your own machine to work with all semester.</p></li>
-</ol>
+<p>Today we begin the long slog to your mastery of <code>R</code>. We begin with the basics - how R works, how to use it, the different data types, and how to create and manipulate objects.</p>
 </div>
 <div id="readings" class="section level2">
 <h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
-<p>Today is introductory, but please heed this timeless message:</p>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-A message to students from the Doggfather himself, <a href="https://twitter.com/SnoopDogg?ref_src=twsrc%5Etfw"><span class="citation">@SnoopDogg</span></a> <a href="https://t.co/wsSANYv8u6">pic.twitter.com/wsSANYv8u6</a>
-</p>
-— Ryan Briggs (<span class="citation">@ryancbriggs</span>) <a href="https://twitter.com/ryancbriggs/status/1293543531496308736?ref_src=twsrc%5Etfw">August 12, 2020</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>Please note going forward, the lesson numbers and topics (e.g. 1.1) are <em>my</em> design, and will not match up with the textbook!</p>
-<div id="optionalreferenced-readings" class="section level3">
-<h3>Optional/Referenced Readings</h3>
-<ul>
-<li>July 2 2003, <a href="https://www.theguardian.com/science/2003/jul/03/research.science"><i class="fas fa-external-link-square-alt"></i> “Why Dolphins are Deep Thinkers”</a>, <em>The Guardian</em>]</li>
-<li>January 17, 2021, <a href="https://gizmodo.com/these-monkeys-understand-economics-and-intentionally-st-1846078932?utm_medium=sharefromsite&amp;utm_source=_facebook"><i class="fas fa-external-link-square-alt"></i> These Monkeys Understand Economics and Intentionally Steal High-Ticket Items to Barter for Better Food, Study Finds</a>, <em>Gizmodo</em></li>
-</ul>
 </div>
+<div id="strongly-recommended" class="section level2">
+<h2>Strongly Recommended</h2>
+<ul>
+<li><i class="fas fa-external-link-square-alt"></i>Ch.1<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> in <span class="citation">@R4DS [Ch. 1]</span></li>
+</ul>
+<p>Now that we start working with R, you should consider this book to be your primary reference for R-related questions. We will broadly cover the first few chapters in order over the next 2-3 class periods.</p>
 </div>
 <div id="slides" class="section level2">
 <h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>
+<p style="text-align:center;"><a target="_blank" href="/slides/1.2-slides.html"><img src ="/slides/1.2-slides.png" alt = "1.2-slides"></a></p>
+<p style="text-align:center;"><a class="btn btn-primary btn-lg" target="_blank" href="/slides/1.2-slides.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a></p>
+</p>
 </div>
-<div id="practice" class="section level2">
-<h2><i class="fas fa-dumbbell"></i> Practice</h2>
-<p>NONE</p>
+<div id="r-practice" class="section level2">
+<h2><i class="fas fa-registered"></i> R Practice</h2>
+<p>Today we will be working on <a href="/r/1.2-r">practice problems</a>. Answers will be posted later on that page.</p>
 </div>
 <div id="assignments" class="section level2">
 <h2><i class="fas fa-laptop-code"></i> Assignments</h2>
 <div id="preliminary-math-survey-due-sunday-feb-7" class="section level3">
 <h3>Preliminary Math Survey Due Sunday Feb 7</h3>
-<p>Please take the <a href="/assignment/00-preliminary-survey">preliminary survey</a> on your statistics and software background by 11:59 PM Sunday. This will help us all have a productive semester together.</p>
+<p>Please take the <a href="/assignment/00-preliminary-survey">preliminary survey</a> on your statistics and software background by 11:59 PM Sunday. This will help us all have a productive semester together.
+# Additional Useful Information</p>
 </div>
+</div>
+<div id="installing-r-and-r-studio" class="section level2">
+<h2>Installing R and R Studio</h2>
+<p>We will be using <a href="https://rstudio.cloud">Rstudio.cloud</a>, for which you have made a free account. However, since R is free, I <strong>strongly recommend</strong> you download and install it on your own computers. You may decide also you prefer to use your own computers in class when we work with R.</p>
+<ol style="list-style-type: decimal">
+<li><a href="http://www.r-project.org/">Install R</a> from CRAN<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> by clicking “Download R” (or the CRAN link under Downloads on the left menu). This will take you to a mirrors page, where you can select a location in the U.S. and download a copy of R</li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/">Install R Studio (Desktop Version)</a>, choose the “Free” option</li>
+</ol>
+<p>(This will also be posted on the <a href="/reference">Reference</a> page.)</p>
+</div>
+<div id="r-packages" class="section level2">
+<h2>R Packages</h2>
+<p>Packages come from multiple sources.</p>
+<p>The polished, publicly released versions are found on <a href="https://cran.r-project.org/">CRAN</a>. When installing a package available on CRAN, it is sufficient simply to tell R the following:<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<pre class="r"><code>install.packages(&quot;packagename&quot;) </code></pre>
+<p>Other packages, which may be in various developmental states (including perfectly functional!) are often hosted on <a href="http://github.com">GitHub</a> before they make their way onto CRAN. Simply telling R <code>install.packages("packagename")</code> will fail to find it (as R only looks in CRAN for packages), so you must use another package called <code>devtools</code><a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> to install packages directly from Github:<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<pre class="r"><code>devtools::install_github(&quot;username/packagename&quot;) </code></pre>
+<p>For example, to install Hadley Wickham’s package <code>r4ds</code> from its Github page <a href="https://github.com/hadley/r4ds">https://github.com/hadley/r4ds</a>, we would type:</p>
+<pre class="r"><code>devtools::install_github(&quot;hadley/r4ds&quot;)</code></pre>
+<p>To <strong>use</strong> a package, you need to ensure it is loaded to your workspace (you only need to do this once)^[When we learn how to write <code>R Markdown</code> documents, . with <code>library("package_name")</code>.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+</div>
+<div id="getting-help-for-r" class="section level2">
+<h2>Getting Help for R</h2>
+<p>For specific functions or commands, you can simply type:</p>
+<pre class="r"><code>?functionname()
+
+# example
+?mean()</code></pre>
+<p>This will display a help page specific to that function in the Viewer pane. R functions and packages are extremely well-documented; help pages <a href="http://socviz.co/assets/ch-09-read-a-help-page.png">normally</a><a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> a short description of the function, arguments and options (as well as their default values), and several examples or vignettes to demonstrate usage of the function.</p>
+<p>Additionally, you can turn to the community by searching on Google or better yet, StackExchange.</p>
+</div>
+<div id="other-useful-commands-to-know" class="section level2">
+<h2>Other Useful Commands to Know</h2>
+<p>One of the best/worst things about <code>R</code> is that it is a language, meaning there are multiple ways that you can accomplish the same task. Here are a few alternative methods relevant to what we have learned so far that might prove useful.</p>
+<div id="creating-vectors" class="section level3">
+<h3>Creating Vectors</h3>
+<p>We know vectors can be created with the <code>c()</code> command (and stored with <code>=</code> or <code>&lt;-</code>), but there are other shortcuts to combine objects into a vector, particularly numeric data:</p>
+<ol style="list-style-type: decimal">
+<li><code>:</code> creates a series of integers</li>
+</ol>
+<pre class="r"><code>1:5 # create a vector of 1 through 5</code></pre>
+<pre><code>## [1] 1 2 3 4 5</code></pre>
+<pre class="r"><code>12:17 # create a vector of 12 through 17</code></pre>
+<pre><code>## [1] 12 13 14 15 16 17</code></pre>
+<ul>
+<li><code>seq(from = , to = , by = )</code> creates a numeric sequence, and is not restricted to integers</li>
+</ul>
+<pre class="r"><code>seq(from = 1, to = 10, by = 2) # sequence from 1 to 10, by 2s</code></pre>
+<pre><code>## [1] 1 3 5 7 9</code></pre>
+<pre class="r"><code># note you do not need to fully write out the name of each argument, just the input!
+
+seq(32.5,40,1.5) # sequence from 32.5 to 40, by 1.5</code></pre>
+<pre><code>## [1] 32.5 34.0 35.5 37.0 38.5 40.0</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><code>rep(., times =)</code><a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> repeats an element a specified number of times</li>
+</ol>
+<pre class="r"><code>rep(2, times = 4) # repeat &quot;2&quot; four times</code></pre>
+<pre><code>## [1] 2 2 2 2</code></pre>
+<pre class="r"><code>rep(2, 4) # does the same thing</code></pre>
+<pre><code>## [1] 2 2 2 2</code></pre>
+<pre class="r"><code># the thing repeated could itself be a vector
+rep(c(1,4,7), 3) # repeat the vector &quot;1, 4, 7&quot; three times</code></pre>
+<pre><code>## [1] 1 4 7 1 4 7 1 4 7</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>We can combine these:</li>
+</ol>
+<pre class="r"><code># combine (the sequence of 4 to 8 by 2&#39;s repeated three times) and 1 and 5
+
+c(rep(seq(4,8,2),3),1,5)</code></pre>
+<pre><code>##  [1] 4 6 8 4 6 8 4 6 8 1 5</code></pre>
+</div>
+</div>
+<div id="suggested-style-guide-for-coding" class="section level2">
+<h2>Suggested Style Guide for Coding</h2>
+<p>We want to maximize <em>human</em>-readability of code, not just machine-readability. I try to follow <a href="http://adv-r.had.co.nz/Style.html">Hadley Wickham’s style guide</a> for all of my code, including that in this class.</p>
+<p><em>You will not be graded on the style of your code.</em> But now’s the best time to learn best practices (while you don’t know any alternatives!) to save yourself and your potential colleagues (including your future self) from unnecessary frustration.</p>
+<ul>
+<li>comment above for overall idea</li>
+<li>comment on side for individual elements of long commands</li>
+<li>name with <code>_</code></li>
+<li>use <code>%&gt;%</code> wherever possible</li>
+<li>spaces betweeen all operators: <code>&lt;-</code>, <code>=</code>, <code>+</code>, etc.
+<ul>
+<li>Exception: <code>:</code> and <code>::</code></li>
+</ul></li>
+<li>line breaks between multiple arguments to a function</li>
+</ul>
+<pre class="r"><code>p&lt;-ggplot(data=data, aes(x=x,y=y,fill=fill))+geom_point()</code></pre>
+<p>becomes</p>
+<pre class="r"><code>p &lt;- ggplot(data = data,
+       aes(x = x,
+           y = y,
+           fill = fill))+
+  geom_point()</code></pre>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="http://r4ds.had.co.nz/introduction.html" class="uri">http://r4ds.had.co.nz/introduction.html</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>The Comprehensive R Archive Network<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Note the plural <code>s</code> on <code>packages</code>, and the quotes around the “package name”<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Which you will need to install first if you (probably) don’t already have it!<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Note the <code>::</code> allows you to use the function <code>install_github()</code> from the <code>devtools</code> package without having to first load the devtools package with <code>library(devtools)</code>.<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Quotes are not necessary this time.<a href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>This useful guide comes from Kieran Healy’s excellent (free online!) <a href="http://socviz.co/">book on Data Visualization</a>.<a href="#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>The <code>.</code> is a placeholder here.<a href="#fnref8" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 
           </div>
@@ -510,9 +640,7 @@ A message to students from the Doggfather himself, <a href="https://twitter.com/
       <div class="col-md-6">
         
         <p>
-          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> 2021 by Ryan Safner &middot; 
-          Powered by
-          <a href="https://gethugothemes.com" target="_blank" rel="noopener">Gethugothemes</a>
+          Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a></a> <a href="https://ryansafner.com">Ryan Safner</a> &middot; <a href="Credits">Credits</a> &middot; Powered by <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a href="https://gohugo.io/">Hugo</a>
         </p>
       </div>
       <div class="col-md-6">

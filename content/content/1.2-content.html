@@ -1,0 +1,185 @@
+---
+title: "1.2 — Meet R — Class Content"
+draft: false
+linktitle: "1.2 — Meet R"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 2
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "1.2-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#strongly-recommended">Strongly Recommended</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#preliminary-math-survey-due-sunday-feb-7">Preliminary Math Survey Due Sunday Feb 7</a></li>
+</ul></li>
+<li><a href="#installing-r-and-r-studio">Installing R and R Studio</a></li>
+<li><a href="#r-packages">R Packages</a></li>
+<li><a href="#getting-help-for-r">Getting Help for R</a></li>
+<li><a href="#other-useful-commands-to-know">Other Useful Commands to Know</a>
+<ul>
+<li><a href="#creating-vectors">Creating Vectors</a></li>
+</ul></li>
+<li><a href="#suggested-style-guide-for-coding">Suggested Style Guide for Coding</a></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Thursday, August 26, 2021</em>
+{{% /alert %}}</p>
+<p>{{% alert warning %}}
+Please complete the <a href="/assignment/00-preliminary-survey">preliminary survey</a> by Sunday August 29.
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we begin the long slog to your mastery of <code>R</code>. We begin with the basics - how R works, how to use it, the different data types, and how to create and manipulate objects.</p>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+</div>
+<div id="strongly-recommended" class="section level2">
+<h2>Strongly Recommended</h2>
+<ul>
+<li><i class="fas fa-external-link-square-alt"></i>Ch.1<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> in <span class="citation">@R4DS [Ch. 1]</span></li>
+</ul>
+<p>Now that we start working with R, you should consider this book to be your primary reference for R-related questions. We will broadly cover the first few chapters in order over the next 2-3 class periods.</p>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="r-practice" class="section level2">
+<h2><i class="fas fa-registered"></i> R Practice</h2>
+<p>Today we will be working on <a href="/r/1.2-r">practice problems</a>. Answers will be posted later on that page.</p>
+</div>
+<div id="assignments" class="section level2">
+<h2><i class="fas fa-laptop-code"></i> Assignments</h2>
+<div id="preliminary-math-survey-due-sunday-feb-7" class="section level3">
+<h3>Preliminary Math Survey Due Sunday Feb 7</h3>
+<p>Please take the <a href="/assignment/00-preliminary-survey">preliminary survey</a> on your statistics and software background by 11:59 PM Sunday. This will help us all have a productive semester together.
+# Additional Useful Information</p>
+</div>
+</div>
+<div id="installing-r-and-r-studio" class="section level2">
+<h2>Installing R and R Studio</h2>
+<p>We will be using <a href="https://rstudio.cloud">Rstudio.cloud</a>, for which you have made a free account. However, since R is free, I <strong>strongly recommend</strong> you download and install it on your own computers. You may decide also you prefer to use your own computers in class when we work with R.</p>
+<ol style="list-style-type: decimal">
+<li><a href="http://www.r-project.org/">Install R</a> from CRAN<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> by clicking “Download R” (or the CRAN link under Downloads on the left menu). This will take you to a mirrors page, where you can select a location in the U.S. and download a copy of R</li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/">Install R Studio (Desktop Version)</a>, choose the “Free” option</li>
+</ol>
+<p>(This will also be posted on the <a href="/reference">Reference</a> page.)</p>
+</div>
+<div id="r-packages" class="section level2">
+<h2>R Packages</h2>
+<p>Packages come from multiple sources.</p>
+<p>The polished, publicly released versions are found on <a href="https://cran.r-project.org/">CRAN</a>. When installing a package available on CRAN, it is sufficient simply to tell R the following:<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<pre class="r"><code>install.packages(&quot;packagename&quot;) </code></pre>
+<p>Other packages, which may be in various developmental states (including perfectly functional!) are often hosted on <a href="http://github.com">GitHub</a> before they make their way onto CRAN. Simply telling R <code>install.packages("packagename")</code> will fail to find it (as R only looks in CRAN for packages), so you must use another package called <code>devtools</code><a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> to install packages directly from Github:<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<pre class="r"><code>devtools::install_github(&quot;username/packagename&quot;) </code></pre>
+<p>For example, to install Hadley Wickham’s package <code>r4ds</code> from its Github page <a href="https://github.com/hadley/r4ds">https://github.com/hadley/r4ds</a>, we would type:</p>
+<pre class="r"><code>devtools::install_github(&quot;hadley/r4ds&quot;)</code></pre>
+<p>To <strong>use</strong> a package, you need to ensure it is loaded to your workspace (you only need to do this once)^[When we learn how to write <code>R Markdown</code> documents, . with <code>library("package_name")</code>.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+</div>
+<div id="getting-help-for-r" class="section level2">
+<h2>Getting Help for R</h2>
+<p>For specific functions or commands, you can simply type:</p>
+<pre class="r"><code>?functionname()
+
+# example
+?mean()</code></pre>
+<p>This will display a help page specific to that function in the Viewer pane. R functions and packages are extremely well-documented; help pages <a href="http://socviz.co/assets/ch-09-read-a-help-page.png">normally</a><a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> a short description of the function, arguments and options (as well as their default values), and several examples or vignettes to demonstrate usage of the function.</p>
+<p>Additionally, you can turn to the community by searching on Google or better yet, StackExchange.</p>
+</div>
+<div id="other-useful-commands-to-know" class="section level2">
+<h2>Other Useful Commands to Know</h2>
+<p>One of the best/worst things about <code>R</code> is that it is a language, meaning there are multiple ways that you can accomplish the same task. Here are a few alternative methods relevant to what we have learned so far that might prove useful.</p>
+<div id="creating-vectors" class="section level3">
+<h3>Creating Vectors</h3>
+<p>We know vectors can be created with the <code>c()</code> command (and stored with <code>=</code> or <code>&lt;-</code>), but there are other shortcuts to combine objects into a vector, particularly numeric data:</p>
+<ol style="list-style-type: decimal">
+<li><code>:</code> creates a series of integers</li>
+</ol>
+<pre class="r"><code>1:5 # create a vector of 1 through 5</code></pre>
+<pre><code>## [1] 1 2 3 4 5</code></pre>
+<pre class="r"><code>12:17 # create a vector of 12 through 17</code></pre>
+<pre><code>## [1] 12 13 14 15 16 17</code></pre>
+<ul>
+<li><code>seq(from = , to = , by = )</code> creates a numeric sequence, and is not restricted to integers</li>
+</ul>
+<pre class="r"><code>seq(from = 1, to = 10, by = 2) # sequence from 1 to 10, by 2s</code></pre>
+<pre><code>## [1] 1 3 5 7 9</code></pre>
+<pre class="r"><code># note you do not need to fully write out the name of each argument, just the input!
+
+seq(32.5,40,1.5) # sequence from 32.5 to 40, by 1.5</code></pre>
+<pre><code>## [1] 32.5 34.0 35.5 37.0 38.5 40.0</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><code>rep(., times =)</code><a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> repeats an element a specified number of times</li>
+</ol>
+<pre class="r"><code>rep(2, times = 4) # repeat &quot;2&quot; four times</code></pre>
+<pre><code>## [1] 2 2 2 2</code></pre>
+<pre class="r"><code>rep(2, 4) # does the same thing</code></pre>
+<pre><code>## [1] 2 2 2 2</code></pre>
+<pre class="r"><code># the thing repeated could itself be a vector
+rep(c(1,4,7), 3) # repeat the vector &quot;1, 4, 7&quot; three times</code></pre>
+<pre><code>## [1] 1 4 7 1 4 7 1 4 7</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>We can combine these:</li>
+</ol>
+<pre class="r"><code># combine (the sequence of 4 to 8 by 2&#39;s repeated three times) and 1 and 5
+
+c(rep(seq(4,8,2),3),1,5)</code></pre>
+<pre><code>##  [1] 4 6 8 4 6 8 4 6 8 1 5</code></pre>
+</div>
+</div>
+<div id="suggested-style-guide-for-coding" class="section level2">
+<h2>Suggested Style Guide for Coding</h2>
+<p>We want to maximize <em>human</em>-readability of code, not just machine-readability. I try to follow <a href="http://adv-r.had.co.nz/Style.html">Hadley Wickham’s style guide</a> for all of my code, including that in this class.</p>
+<p><em>You will not be graded on the style of your code.</em> But now’s the best time to learn best practices (while you don’t know any alternatives!) to save yourself and your potential colleagues (including your future self) from unnecessary frustration.</p>
+<ul>
+<li>comment above for overall idea</li>
+<li>comment on side for individual elements of long commands</li>
+<li>name with <code>_</code></li>
+<li>use <code>%&gt;%</code> wherever possible</li>
+<li>spaces betweeen all operators: <code>&lt;-</code>, <code>=</code>, <code>+</code>, etc.
+<ul>
+<li>Exception: <code>:</code> and <code>::</code></li>
+</ul></li>
+<li>line breaks between multiple arguments to a function</li>
+</ul>
+<pre class="r"><code>p&lt;-ggplot(data=data, aes(x=x,y=y,fill=fill))+geom_point()</code></pre>
+<p>becomes</p>
+<pre class="r"><code>p &lt;- ggplot(data = data,
+       aes(x = x,
+           y = y,
+           fill = fill))+
+  geom_point()</code></pre>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="http://r4ds.had.co.nz/introduction.html" class="uri">http://r4ds.had.co.nz/introduction.html</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>The Comprehensive R Archive Network<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Note the plural <code>s</code> on <code>packages</code>, and the quotes around the “package name”<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Which you will need to install first if you (probably) don’t already have it!<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Note the <code>::</code> allows you to use the function <code>install_github()</code> from the <code>devtools</code> package without having to first load the devtools package with <code>library(devtools)</code>.<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Quotes are not necessary this time.<a href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>This useful guide comes from Kieran Healy’s excellent (free online!) <a href="http://socviz.co/">book on Data Visualization</a>.<a href="#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>The <code>.</code> is a placeholder here.<a href="#fnref8" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

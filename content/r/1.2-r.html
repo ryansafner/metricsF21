@@ -1,0 +1,135 @@
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<hr />
+<p>title: “1.2 — Meet R — Practice”
+draft: false
+date: “2020-06-08”
+linktitle: “1.2 — Meet R”
+menu:
+practice:
+parent: R Practice
+weight: 2
+type: docs
+output:
+blogdown::html_page:
+toc: true</p>
+<p style="text-align:center">
+<a target="_blank" href="/r/1.2-r-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span></br>
+</p>
+<div id="getting-set-up" class="section level1">
+<h1>Getting Set Up</h1>
+<p>Before we begin, start a new file with <code>File</code> <span class="math inline">\(\rightarrow\)</span> <code>New File</code> <span class="math inline">\(\rightarrow\)</span> <code>R Script</code>. As you work through this sheet in the console in <code>R</code>, also add (copy/paste) your commands that work into this new file. At the end, save it, and run to execute all of your commands at once.</p>
+</div>
+<div id="creating-objects" class="section level1">
+<h1>Creating Objects</h1>
+<div id="section" class="section level2">
+<h2>1</h2>
+<p>Work on the following parts:</p>
+<ul>
+<li>a. Create a vector called <code>me</code> with two objects, your first name, and your last name.</li>
+<li><ol start="2" style="list-style-type: lower-alpha">
+<li>Call the vector to inspect it.</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: lower-alpha">
+<li>Confirm it is a character class vector.</li>
+</ol></li>
+</ul>
+</div>
+<div id="section-1" class="section level2">
+<h2>2</h2>
+<p>Use R’s help functions to determine what the <code>paste()</code> function does. Then paste together your first name and last name.</p>
+</div>
+<div id="section-2" class="section level2">
+<h2>3</h2>
+<p>Create a vector called <code>my_vector</code> with all the even integers from 2 to 10.</p>
+</div>
+<div id="section-3" class="section level2">
+<h2>4</h2>
+<p>Find the mean of <code>my_vector</code> with <code>mean()</code>.</p>
+</div>
+<div id="section-4" class="section level2">
+<h2>5</h2>
+<p>Take all the integers from 18 to 763,<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> then get the mean.</p>
+</div>
+</div>
+<div id="playing-with-data" class="section level1">
+<h1>Playing with Data</h1>
+<p>For the following questions, we will use the <code>diamonds</code> dataset, included as part of <code>ggplot2</code>.</p>
+<div id="section-5" class="section level2">
+<h2>6</h2>
+<p>Install <code>ggplot2</code>.</p>
+</div>
+<div id="section-6" class="section level2">
+<h2>7</h2>
+<p>Load <code>ggplot2</code> with the <code>library()</code> command.</p>
+</div>
+<div id="section-7" class="section level2">
+<h2>8</h2>
+<p>Get the <code>str</code>ucture of the diamonds data frame. What are the different variables and what kind of data does each contain?</p>
+</div>
+<div id="section-8" class="section level2">
+<h2>9</h2>
+<p>Get summary statistics separately for <code>carat</code>, <code>depth</code>, <code>table</code>, and <code>price</code>.</p>
+</div>
+<div id="section-9" class="section level2">
+<h2>10</h2>
+<p><code>color</code>, <code>cut</code>, and <code>clarity</code> are categorical variables (factors). Use the <code>table()</code> command to generate frequency tables for each.</p>
+</div>
+<div id="section-10" class="section level2">
+<h2>11</h2>
+<p>Now rerun the <code>summary()</code> command on the entire data frame.</p>
+</div>
+<div id="section-11" class="section level2">
+<h2>12</h2>
+<p>Now look only at (subset) the first 4 diamonds in the dataset.</p>
+</div>
+<div id="section-12" class="section level2">
+<h2>13</h2>
+<p>Now look only at (subset) the third and seventh diamond in the dataset.</p>
+</div>
+<div id="section-13" class="section level2">
+<h2>14</h2>
+<p>Now look only at (subset) the second column of the dataset.</p>
+</div>
+<div id="section-14" class="section level2">
+<h2>15</h2>
+<p>Do this again, but look using the <code>$</code> to pull up the second column by name.</p>
+</div>
+<div id="section-15" class="section level2">
+<h2>16</h2>
+<p>Now look only at diamonds that have a <code>carat</code> greater than or equal to 1.</p>
+</div>
+<div id="section-16" class="section level2">
+<h2>17</h2>
+<p>Now look only at diamonds that have a VVS1 <code>clarity</code>.</p>
+</div>
+<div id="section-17" class="section level2">
+<h2>18</h2>
+<p>Now look only at dimaonds that have a color of E, F, I, and J.</p>
+</div>
+<div id="section-18" class="section level2">
+<h2>19</h2>
+<p>Now look only at diamonds that have a <code>carat</code> greater than or equal to 1 and a VVS1 <code>clarity</code>.</p>
+</div>
+<div id="section-19" class="section level2">
+<h2>20</h2>
+<p>Get the average price of diamonds in question 18.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+</div>
+<div id="section-20" class="section level2">
+<h2>21</h2>
+<p>What is the highest price for a diamond with a 1.0 carat, D color, and VVS1 clarity?</p>
+</div>
+</div>
+<div id="execute-your-r-script" class="section level1">
+<h1>Execute your R Script</h1>
+<p>Save the R Script you created at the beginning and (hopefully) have been pasting all of your valid commands to. This creates a <em>.R</em> file wherever you choose to save it to. Now looking at the file in the upper left pane of <em>R Studio</em> look for the button in the upper right corner that says <strong>Run</strong>. Sit back and watch <code>R</code> redo everything you’ve carefully worked on, all at once.</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Hint: use the <code>:</code> operator to create a sequence from a starting number to an ending number<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Hints: use your subset command as an argument to the mean function. You will not need a comma here because you are looking for a single row.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

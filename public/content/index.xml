@@ -26,7 +26,7 @@
 &lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#preliminary-math-survey-due-sunday-feb-7&#34;&gt;Preliminary Math Survey Due Sunday Feb 7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#preliminary-math-survey-due-sunday-august-29&#34;&gt;Preliminary Math Survey Due Sunday August 29&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -75,10 +75,198 @@ A message to students from the Doggfather himself, &lt;a href=&#34;https://twitt
 &lt;/div&gt;
 &lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
-&lt;div id=&#34;preliminary-math-survey-due-sunday-feb-7&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Preliminary Math Survey Due Sunday Feb 7&lt;/h3&gt;
+&lt;div id=&#34;preliminary-math-survey-due-sunday-august-29&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Preliminary Math Survey Due Sunday August 29&lt;/h3&gt;
 &lt;p&gt;Please take the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/00-preliminary-survey&#34;&gt;preliminary survey&lt;/a&gt; on your statistics and software background by 11:59 PM Sunday. This will help us all have a productive semester together.&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>1.2 — Meet R — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/1.2-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/1.2-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#strongly-recommended&#34;&gt;Strongly Recommended&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-practice&#34;&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#preliminary-math-survey-due-sunday-feb-7&#34;&gt;Preliminary Math Survey Due Sunday Feb 7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#installing-r-and-r-studio&#34;&gt;Installing R and R Studio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-packages&#34;&gt;R Packages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#getting-help-for-r&#34;&gt;Getting Help for R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#other-useful-commands-to-know&#34;&gt;Other Useful Commands to Know&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#creating-vectors&#34;&gt;Creating Vectors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#suggested-style-guide-for-coding&#34;&gt;Suggested Style Guide for Coding&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Thursday, August 26, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Please complete the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/00-preliminary-survey&#34;&gt;preliminary survey&lt;/a&gt; by Sunday August 29.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today we begin the long slog to your mastery of &lt;code&gt;R&lt;/code&gt;. We begin with the basics - how R works, how to use it, the different data types, and how to create and manipulate objects.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;strongly-recommended&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Strongly Recommended&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt;Ch.1&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; in &lt;span class=&#34;citation&#34;&gt;@R4DS [Ch. 1]&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now that we start working with R, you should consider this book to be your primary reference for R-related questions. We will broadly cover the first few chapters in order over the next 2-3 class periods.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.2-slides.html&#34;&gt;&lt;img src =&#34;/slides/1.2-slides.png&#34; alt = &#34;1.2-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.2-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-practice&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/h2&gt;
+&lt;p&gt;Today we will be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/1.2-r&#34;&gt;practice problems&lt;/a&gt;. Answers will be posted later on that page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;preliminary-math-survey-due-sunday-feb-7&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Preliminary Math Survey Due Sunday Feb 7&lt;/h3&gt;
+&lt;p&gt;Please take the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignment/00-preliminary-survey&#34;&gt;preliminary survey&lt;/a&gt; on your statistics and software background by 11:59 PM Sunday. This will help us all have a productive semester together.
+# Additional Useful Information&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;installing-r-and-r-studio&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Installing R and R Studio&lt;/h2&gt;
+&lt;p&gt;We will be using &lt;a href=&#34;https://rstudio.cloud&#34;&gt;Rstudio.cloud&lt;/a&gt;, for which you have made a free account. However, since R is free, I &lt;strong&gt;strongly recommend&lt;/strong&gt; you download and install it on your own computers. You may decide also you prefer to use your own computers in class when we work with R.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.r-project.org/&#34;&gt;Install R&lt;/a&gt; from CRAN&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; by clicking “Download R” (or the CRAN link under Downloads on the left menu). This will take you to a mirrors page, where you can select a location in the U.S. and download a copy of R&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34;&gt;Install R Studio (Desktop Version)&lt;/a&gt;, choose the “Free” option&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(This will also be posted on the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/reference&#34;&gt;Reference&lt;/a&gt; page.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-packages&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R Packages&lt;/h2&gt;
+&lt;p&gt;Packages come from multiple sources.&lt;/p&gt;
+&lt;p&gt;The polished, publicly released versions are found on &lt;a href=&#34;https://cran.r-project.org/&#34;&gt;CRAN&lt;/a&gt;. When installing a package available on CRAN, it is sufficient simply to tell R the following:&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;packagename&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Other packages, which may be in various developmental states (including perfectly functional!) are often hosted on &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt; before they make their way onto CRAN. Simply telling R &lt;code&gt;install.packages(&#34;packagename&#34;)&lt;/code&gt; will fail to find it (as R only looks in CRAN for packages), so you must use another package called &lt;code&gt;devtools&lt;/code&gt;&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; to install packages directly from Github:&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;quot;username/packagename&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For example, to install Hadley Wickham’s package &lt;code&gt;r4ds&lt;/code&gt; from its Github page &lt;a href=&#34;https://github.com/hadley/r4ds&#34;&gt;https://github.com/hadley/r4ds&lt;/a&gt;, we would type:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;quot;hadley/r4ds&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To &lt;strong&gt;use&lt;/strong&gt; a package, you need to ensure it is loaded to your workspace (you only need to do this once)^[When we learn how to write &lt;code&gt;R Markdown&lt;/code&gt; documents, . with &lt;code&gt;library(&#34;package_name&#34;)&lt;/code&gt;.&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;getting-help-for-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Getting Help for R&lt;/h2&gt;
+&lt;p&gt;For specific functions or commands, you can simply type:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;?functionname()
+
+# example
+?mean()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will display a help page specific to that function in the Viewer pane. R functions and packages are extremely well-documented; help pages &lt;a href=&#34;http://socviz.co/assets/ch-09-read-a-help-page.png&#34;&gt;normally&lt;/a&gt;&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt; a short description of the function, arguments and options (as well as their default values), and several examples or vignettes to demonstrate usage of the function.&lt;/p&gt;
+&lt;p&gt;Additionally, you can turn to the community by searching on Google or better yet, StackExchange.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-useful-commands-to-know&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other Useful Commands to Know&lt;/h2&gt;
+&lt;p&gt;One of the best/worst things about &lt;code&gt;R&lt;/code&gt; is that it is a language, meaning there are multiple ways that you can accomplish the same task. Here are a few alternative methods relevant to what we have learned so far that might prove useful.&lt;/p&gt;
+&lt;div id=&#34;creating-vectors&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Creating Vectors&lt;/h3&gt;
+&lt;p&gt;We know vectors can be created with the &lt;code&gt;c()&lt;/code&gt; command (and stored with &lt;code&gt;=&lt;/code&gt; or &lt;code&gt;&amp;lt;-&lt;/code&gt;), but there are other shortcuts to combine objects into a vector, particularly numeric data:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;code&gt;:&lt;/code&gt; creates a series of integers&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;1:5 # create a vector of 1 through 5&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 1 2 3 4 5&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;12:17 # create a vector of 12 through 17&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 12 13 14 15 16 17&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;seq(from = , to = , by = )&lt;/code&gt; creates a numeric sequence, and is not restricted to integers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;seq(from = 1, to = 10, by = 2) # sequence from 1 to 10, by 2s&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 1 3 5 7 9&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# note you do not need to fully write out the name of each argument, just the input!
+
+seq(32.5,40,1.5) # sequence from 32.5 to 40, by 1.5&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 32.5 34.0 35.5 37.0 38.5 40.0&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;code&gt;rep(., times =)&lt;/code&gt;&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt; repeats an element a specified number of times&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rep(2, times = 4) # repeat &amp;quot;2&amp;quot; four times&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 2 2 2 2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rep(2, 4) # does the same thing&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 2 2 2 2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# the thing repeated could itself be a vector
+rep(c(1,4,7), 3) # repeat the vector &amp;quot;1, 4, 7&amp;quot; three times&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 1 4 7 1 4 7 1 4 7&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;We can combine these:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# combine (the sequence of 4 to 8 by 2&amp;#39;s repeated three times) and 1 and 5
+
+c(rep(seq(4,8,2),3),1,5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 4 6 8 4 6 8 4 6 8 1 5&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;suggested-style-guide-for-coding&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Suggested Style Guide for Coding&lt;/h2&gt;
+&lt;p&gt;We want to maximize &lt;em&gt;human&lt;/em&gt;-readability of code, not just machine-readability. I try to follow &lt;a href=&#34;http://adv-r.had.co.nz/Style.html&#34;&gt;Hadley Wickham’s style guide&lt;/a&gt; for all of my code, including that in this class.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;You will not be graded on the style of your code.&lt;/em&gt; But now’s the best time to learn best practices (while you don’t know any alternatives!) to save yourself and your potential colleagues (including your future self) from unnecessary frustration.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;comment above for overall idea&lt;/li&gt;
+&lt;li&gt;comment on side for individual elements of long commands&lt;/li&gt;
+&lt;li&gt;name with &lt;code&gt;_&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;use &lt;code&gt;%&amp;gt;%&lt;/code&gt; wherever possible&lt;/li&gt;
+&lt;li&gt;spaces betweeen all operators: &lt;code&gt;&amp;lt;-&lt;/code&gt;, &lt;code&gt;=&lt;/code&gt;, &lt;code&gt;+&lt;/code&gt;, etc.
+&lt;ul&gt;
+&lt;li&gt;Exception: &lt;code&gt;:&lt;/code&gt; and &lt;code&gt;::&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;line breaks between multiple arguments to a function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p&amp;lt;-ggplot(data=data, aes(x=x,y=y,fill=fill))+geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;becomes&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p &amp;lt;- ggplot(data = data,
+       aes(x = x,
+           y = y,
+           fill = fill))+
+  geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;&lt;a href=&#34;http://r4ds.had.co.nz/introduction.html&#34; class=&#34;uri&#34;&gt;http://r4ds.had.co.nz/introduction.html&lt;/a&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;The Comprehensive R Archive Network&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Note the plural &lt;code&gt;s&lt;/code&gt; on &lt;code&gt;packages&lt;/code&gt;, and the quotes around the “package name”&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Which you will need to install first if you (probably) don’t already have it!&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;Note the &lt;code&gt;::&lt;/code&gt; allows you to use the function &lt;code&gt;install_github()&lt;/code&gt; from the &lt;code&gt;devtools&lt;/code&gt; package without having to first load the devtools package with &lt;code&gt;library(devtools)&lt;/code&gt;.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;Quotes are not necessary this time.&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;This useful guide comes from Kieran Healy’s excellent (free online!) &lt;a href=&#34;http://socviz.co/&#34;&gt;book on Data Visualization&lt;/a&gt;.&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;The &lt;code&gt;.&lt;/code&gt; is a placeholder here.&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/div&gt;
 </description>
     </item>

@@ -50,6 +50,6 @@ The lower button will allow you to download a PDF version of the slides. I sugge
 
 ## <i class="fas fa-laptop-code"></i> Assignments
 
-### Preliminary Math Survey Due Sunday Feb 7
+### Preliminary Math Survey Due Sunday August 29
 
 Please take the [preliminary survey](/assignment/00-preliminary-survey) on your statistics and software background by 11:59 PM Sunday. This will help us all have a productive semester together.

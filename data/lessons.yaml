@@ -10,6 +10,9 @@ lessons:
     slides: "1.1-slides"
     
   - title: "1.2 Meet R"
+    content: "1.2-content"
+    slides: "1.2-slides"
+    r: "1.2-r"
 
   - title: "1.3 Data Visualization with ggplot2"
 
