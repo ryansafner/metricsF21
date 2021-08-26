@@ -12,6 +12,8 @@ output:
   blogdown::html_page:
     toc: true
 
+---
+
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 library(tidyverse)
 library(pander)
