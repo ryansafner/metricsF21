@@ -489,7 +489,7 @@ othersUseCamelCase
 ```
 ]
 
-.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; Also described in [today's course notes page](http://metricsF20.classes.ryansafner.com/class/1.2-class/) and the course [reference page](http://metricsF20.classes.ryansafner.com/reference).
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; Also described in [today's course notes page](http://metricsF21.classes.ryansafner.com/content/1.2-content/) and the course [resources](http://metricsF21.classes.ryansafner.com/resources/style).
 
 &lt;sup&gt;.magenta[‡]&lt;/sup&gt; Consider your folders on your computer as well...]
 
@@ -609,14 +609,14 @@ pi/2
 
 ```r
 # make an object
-my_object = -c(1,2,3,4,5)
+my_object = c(1,2,3,4,5)
 
 # look at it 
 my_object
 ```
 
 ```
-## [1] -1 -2 -3 -4 -5
+## [1] 1 2 3 4 5
 ```
 
 ```r
@@ -625,7 +625,7 @@ sum(my_object)
 ```
 
 ```
-## [1] -15
+## [1] 15
 ```
 
 ```r
@@ -634,7 +634,7 @@ mean(my_object)
 ```
 
 ```
-## [1] -3
+## [1] 3
 ```
 ]
 ---
@@ -668,7 +668,7 @@ round(my_object,2)
 ```
 
 ```
-## [1] -1 -2 -3 -4 -5
+## [1] 1 2 3 4 5
 ```
 
 ```r
@@ -724,7 +724,7 @@ x*y
 # Character
 
 .pull-left[
-- .hi[Character] objects are **"strings"** of text held inside quote marks
+- .hi[Character] objects are .hi-purple[“strings”] of text **held inside quote marks**
 
 - Can contain spaces, so long as contained within quote marks
 ]
@@ -757,8 +757,8 @@ address
 
 .pull-left[
 .smallest[
-- .hi[Logical] objects are **binary** `TRUE` or `FALSE` indicators
-- Used a lot to evaluate *conditionals*:
+- .hi[Logical] objects are .hi-purple[binary] `TRUE` or `FALSE` indicators
+- Used a lot to evaluate .hi-purple[conditionals]:
   - `&gt;`, `&lt;`: greater than, less than
   - `&gt;=`, `&lt;=`: greater than or equal to, less than or equal to
   - `==`, `!=`: is equal to, is not equal to&lt;sup&gt;.magenta[†]&lt;/sup&gt;
@@ -816,7 +816,7 @@ z &lt;= 1 | z==10 # is z &gt;= 1 OR equal to 10?
 
 # Factor
 
-- .hi[Factor] objects contain **categorical** data - membership in mutually exclusive groups
+- .hi[Factor] objects contain .hi-purple[categorical] data - membership in mutually exclusive groups
 
 - Look like strings, behave more like logicals, but with more than two options
 
@@ -850,16 +850,16 @@ class: inverse, center, middle
 
 .pull-left[
 
-- `Vector`: the simplest type of object, just a collection of objects
+- .hi[Vector]: the simplest type of object, just a collection of elements
 
-- Make a vector using the combine `c()` function
+- Make a vector using the **combine** `c()` function
 ]
 
 .pull-right[
 .code50[
 
 ```r
-# create a vector called vec
+# create a vector named vec
 vec = c(1,"orange", 83.5, pi)
 
 # look at vec
@@ -877,11 +877,11 @@ vec
 
 .pull-left[
 
-- `Data frame`: what we'll be using almost always
+- `Data.frame`: what we'll be using almost always
 
-- Think like a "spreadsheet"
+- Think like a .hi[“spreadsheet”]
 
-- Each .hi[column] is a vector (variable)
+- Each .hi-purple[column] is a vector (variable)
 
 - Each .hi-purple[row] is an observation (pair of values for all variables)
 ]
@@ -1233,7 +1233,7 @@ summary(df)
 
 # More on Data Frames V
 
-- `data.frame` objects can be viewed in their own panel by clicking on the name of the object
+- `data.frame` objects can be viewed in their own panel by clicking on the name of the object in the environment pane
 - Note you cannot edit anything in this pane, it is for viewing only 
 
 .center[
@@ -1243,12 +1243,20 @@ summary(df)
 
 # Functions Again I 
 
-- Functions in R are vectorized, meaning running a function on a vector applies it to *each* element
+- Functions in R are **vectorized**, meaning running a function on a vector applies it to *each* element
 
 
 ```r
-my_vector = c(2,4,5,10)
-my_vector+4 # add 4 to all elements
+my_vector = c(2,4,5,10) # create object called my_vector
+my_vector # look at it
+```
+
+```
+## [1]  2  4  5 10
+```
+
+```r
+my_vector+4 # add 4 to all elements of my_vector
 ```
 
 ```
@@ -1256,7 +1264,7 @@ my_vector+4 # add 4 to all elements
 ```
 
 ```r
-my_vector^2 # square all elements
+my_vector^2 # square all elements of my_vector
 ```
 
 ```
@@ -1269,9 +1277,10 @@ my_vector^2 # square all elements
 
 - But often we want to run functions on vectors that *aggregate* to a result (e.g. a statistic):
 
+.pull-left[
 
 ```r
-length(my_vector) # how many elements
+length(my_vector) # how many elements?
 ```
 
 ```
@@ -1279,7 +1288,7 @@ length(my_vector) # how many elements
 ```
 
 ```r
-sum(my_vector) # add all elements
+sum(my_vector) # add all elements together
 ```
 
 ```
@@ -1301,6 +1310,9 @@ min(my_vector) # find smallest element
 ```
 ## [1] 2
 ```
+]
+
+.pull-right[
 
 ```r
 mean(my_vector) # mean of all elements
@@ -1319,7 +1331,15 @@ median(my_vector) # median of all elements
 ```
 
 ```r
-sd(my_vector) # standard deviation
+var(my_vector) # variance of object
+```
+
+```
+## [1] 11.58333
+```
+
+```r
+sd(my_vector) # standard deviation of object
 ```
 
 ```
@@ -1375,19 +1395,21 @@ mtcars
 ## Merc 450SE        16.4   8 275.8 180 3.07 4.070 17.40
 ```
 ]
+
+.footnote[The `mtcars` dataset is automatically built in with `R.`]
 ]
 
 .pull-right[
 .smallest[
-- Each element in a data frame is .h1[indexed] by referring to its row and column: `df[r,c]`
-- To select elements by row and column (".h1[subset]"), type in the row(s) and/or column(s) to select
-    - Leaving `r` or `c` blank selects *all* rows or columns
-    - Select multiple values with `c()`&lt;sup&gt;1&lt;/sup&gt;
-    - Select a range of values with `:`
-    - Don't forget the comma between `r` and `c`! 
+- Each element in a data frame is .hi[indexed] by referring to its row and column: `df[r,c]`
+- To select elements by row and column (“.hi[subset]”), type in the row(s) and/or column(s) to select
+  - Leaving `r` or `c` blank selects *all* rows or columns
+  - Select multiple values with `c()`&lt;sup&gt;.magenta[†]&lt;/sup&gt;
+  - Select a range of values with `:`
+  - Don't forget the comma between `r` and `c`! 
 ]
 
-.footnote[&lt;sup&gt;1&lt;/sup&gt; You can also "negate" values, selecting everything *except* for values with a `-` in front of them.]
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; You can also "negate" values, selecting everything **except** for values with a `-` in front of them.]
 ]
 
 ---
@@ -1445,7 +1467,7 @@ mtcars[c(1,3,4),] # first, third, and fourth rows
 ```
 
 ```r
-mtcars[1:3,] # first three rows
+mtcars[1:3,] # first through third rows
 ```
 
 ```
@@ -1559,7 +1581,7 @@ mtcars
 .code50[
 
 ```r
-mtcars[[6]]
+mtcars[[6]] # select sixth column (wt)
 ```
 
 ```
@@ -1572,7 +1594,7 @@ mtcars[[6]]
 .code50[
 
 ```r
-mtcars$wt # same thing
+mtcars$wt # does the same thing!
 ```
 
 ```
@@ -1613,14 +1635,14 @@ mtcars
 
 .pull-right[
 
-- Select observations (rows) that meet logical criteria
+- Select observations (rows) that meet logical (conditional) criteria
 
-### Subset by Condition
+### Subset by a Condition
 
 .code50[
 
 ```r
-mtcars[mtcars$wt&gt;4,] # select obs with wt&gt;4
+mtcars[mtcars$wt&gt;4,] # select all obs with wt&gt;4
 ```
 
 ```
@@ -1629,7 +1651,7 @@ mtcars[mtcars$wt&gt;4,] # select obs with wt&gt;4
 ```
 
 ```r
-mtcars[mtcars$cyl==6,] # select obs with exactly 6 cyl
+mtcars[mtcars$cyl==6,] # select all obs with exactly 6 cyl
 ```
 
 ```
@@ -1641,9 +1663,19 @@ mtcars[mtcars$cyl==6,] # select obs with exactly 6 cyl
 ## Merc 280       19.2   6 167.6 123 3.92 3.440 18.30
 ## Merc 280C      17.8   6 167.6 123 3.92 3.440 18.90
 ```
+]
+
+]
+
+---
+
+# Indexing and Subsetting V
+
+.pull-left[
+.code50[
 
 ```r
-mtcars[mtcars$wt&lt;4 &amp; mtcars$wt&gt;2,] # select obs where 2&lt;wt&lt;4
+mtcars
 ```
 
 ```
@@ -1659,10 +1691,32 @@ mtcars[mtcars$wt&lt;4 &amp; mtcars$wt&gt;2,] # select obs where 2&lt;wt&lt;4
 ## Merc 230          22.8   4 140.8  95 3.92 3.150 22.90
 ## Merc 280          19.2   6 167.6 123 3.92 3.440 18.30
 ## Merc 280C         17.8   6 167.6 123 3.92 3.440 18.90
+## Merc 450SE        16.4   8 275.8 180 3.07 4.070 17.40
+```
+]
+]
+
+.pull-right[
+
+- Select observations (rows) that meet logical (conditional) criteria
+
+### Subset by a Condition
+
+.code50[
+
+```r
+mtcars[mtcars$wt&gt;2 &amp; mtcars$wt&lt;3,] # obs where 2&lt;wt&lt;3
+```
+
+```
+##                mpg cyl disp  hp drat    wt  qsec
+## Mazda RX4     21.0   6  160 110 3.90 2.620 16.46
+## Mazda RX4 Wag 21.0   6  160 110 3.90 2.875 17.02
+## Datsun 710    22.8   4  108  93 3.85 2.320 18.61
 ```
 
 ```r
-mtcars[mtcars$cyl==4 | mtcars$cyl==6,] # select obs with 4 OR 6 cyl
+mtcars[mtcars$cyl==4 | mtcars$cyl==6,] # obs with 4 OR 6 cyl
 ```
 
 ```
