@@ -31,9 +31,9 @@ Before we begin, start a new file with `File` $\rightarrow$ `New File` $\rightar
 
 Work on the following parts:
 
-a. Create a vector called `me` with two objects, your first name, and your last name.
-b. Call the vector to inspect it.
-c. Confirm it is a character class vector.
+- a. Create a vector called `me` with two objects, your first name, and your last name.
+- b. Call the vector to inspect it.
+- c. Confirm it is a character class vector.
 
 ## Question 2
 
