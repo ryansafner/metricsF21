@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-avatar_image: summer_2019.JPG
+avatar_image: myface2021.png
 bio:
 btn:
 - label: View CV
