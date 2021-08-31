@@ -1,7 +1,7 @@
 ---
 title: "1.3 — Data Visualization with ggplot2 — R Practice"
-author: "ECON 480 — Fall 2020"
-date: "Tuesday, August 25, 2020"
+author: "ECON 480 — Fall 2021"
+date: "Tuesday, August 31, 2021"
 output: pdf_document
 ---
 
@@ -14,8 +14,6 @@ knitr::opts_chunk$set(echo = TRUE)
 Before we begin, start a new file with `File` $\rightarrow$ `New File` $\rightarrow$ `R Script`. As you work through this sheet in the console in `R`, also add (copy/paste) your commands that work into this new file. At the end, save it, and run to execute all of your commands at once.
 
 ## “Our Plot” from Class
-
-- [<i class="fas fa-registered"></i> `R Script`](/r/plot-from-class.R) 
 
 Download and run in R Studio on your computer (or open the file in our R Studio cloud project and run it there) to see our plot from class.
 
