@@ -409,12 +409,12 @@ ggplot(.,
   geom_label(aes(x=mean(skill),y=10), label="Mean", color="purple")+
   geom_vline(aes(xintercept = median(skill)), color = "green", linetype="dotted", size=2)+
   geom_label(aes(x=median(skill),y=5), label="Median", color="green")+
-  scale_x_continuous(breaks=seq(1,10,1), limits = c(0,10))+
+  scale_x_continuous(breaks=seq(1,5,1), limits = c(0,6))+
   scale_y_continuous(breaks=seq(0,100,10),
                      limits = c(0,50),
                      expand = c(0,0),
                      labels=function(x) paste0(x, "%"))+
-  labs(x = "R Proficiency (1: least, 10: most)",
+  labs(x = "R Proficiency (1: least, 5: most)",
        y = "Percent")+
   theme_classic(base_family = "Fira Sans Condensed", base_size=14)
 
@@ -429,12 +429,12 @@ ggplot(.,
   geom_label(aes(x=mean(skill),y=10), label="Mean", color="purple")+
   geom_vline(aes(xintercept = median(skill)), color = "green", linetype="dotted", size=2)+
   geom_label(aes(x=median(skill),y=5), label="Median", color="green")+
-  scale_x_continuous(breaks=seq(1,10,1), limits = c(0,10))+
+  scale_x_continuous(breaks=seq(1,5,1), limits = c(0,6))+
   scale_y_continuous(breaks=seq(0,100,10),
                      limits = c(0,50),
                      expand = c(0,0),
                      labels=function(x) paste0(x, "%"))+
-  labs(x = "Excel Proficiency (1: least, 10: most)",
+  labs(x = "Excel Proficiency (1: least, 5: most)",
        y = "Percent")+
   theme_classic(base_family = "Fira Sans Condensed", base_size=14)
 
