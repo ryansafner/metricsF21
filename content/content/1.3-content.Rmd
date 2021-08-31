@@ -24,7 +24,7 @@ Today we start the fun stuff - data visualization. We will cover how to build pl
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
-- <i class="fas fa-external-link-square-alt"></i>Ch.3 in Wickham & Grolemund, [http://r4ds.had.co.nz/introduction.html](R for Data Science)
+- <i class="fas fa-external-link-square-alt"></i> Ch.3 in Wickham & Grolemund, [R for Data Science](http://r4ds.had.co.nz/)
 
 ### On `ggplot2`
 
@@ -66,6 +66,10 @@ Answers from last class’ practice problems on base R are posted [on that page]
 
 Learn more about each of these in context in the slides, but below are links to each packages’s online help pages, which include descriptions of how each function works, examples, and cheatsheets to help you
 
-- [`ggplot2`](https://ggplot2.tidyverse.org/) a grammar of graphics for ploting
+- [`ggplot2`](https://ggplot2.tidyverse.org/) a grammar of graphics for plotting
 
-Check back here later for more tips on plotting with ggplot2!
+You can find a running list of packages we use in this course in the [resources pages](resources/r-packages/).
+
+### ggplot2 Extensions
+
+I have put up an [additional resources page](/resources/ggplot2) on packages that extend `ggplot2` in various ways, as well as some ways to diagnose and improve several data visualization challenges.
