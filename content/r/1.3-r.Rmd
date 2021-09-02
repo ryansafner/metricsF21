@@ -21,6 +21,10 @@ library(pander)
 
 <p style="text-align:center"><a target="_blank" href="/r/1.3-r-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span></br></p>
 
+## Answers
+
+<p style="text-align:center"><a target="_blank" href="/r/1.3-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answer Key (html)</a> <a target="_blank" href="/r/1.3-r-answers-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Answer Key (PDF)</a> <a target="_blank" href="/r/1.3-r-answers.R"><span class="btn btn-primary btn-lg"><i class="fas fa-registered"></i> Answer Key (R Script)</a></span></p>
+
 # Getting Set Up
 
 Before we begin, start a new file with `File` $\rightarrow$ `New File` $\rightarrow$ `R Script`. As you work through this sheet in the console in `R`, also add (copy/paste) your commands that work into this new file. At the end, save it, and run to execute all of your commands at once.
