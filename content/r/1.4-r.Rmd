@@ -79,10 +79,10 @@ Get the average GDP per capita over time. Hint, first `group_by()` year.
 Get the average GDP per capita by continent.
 
 ## Question 16
-Get the average GDP per capita by year and by continent.^[Hint: do `year` first, if you do `continent` first, there are no years to group by!] Then save this as another `tibble` called `gdp`. Create a `ggplot` of a `line` graph of average continent GDP over time using the `gdp` data. 
+Get the average GDP per capita by year and by continent. [Hint: do `year` first, if you do `continent` first, there are no years to group by!] Then save this as another `tibble` called `gdp`. Create a `ggplot` of a `line` graph of average continent GDP over time using the `gdp` data. 
 
 ## Question 17
-Try it again all in one command with the pipe `%>%`. Instead of saving the data as `gdp`, pipe it right into `ggplot`!^[Hint: You can use `.` as a placeholder.] 
+Try it again all in one command with the pipe `%>%`. Instead of saving the data as `gdp`, pipe it right into `ggplot`! [Hint: You can use `.` as a placeholder.] 
 
 # Example: the Economics of College Majors
 
@@ -133,13 +133,13 @@ Which major has the *lowest* unemployment rate?
 ## Question 22
 What are the top 3 majors that have the highest percentage of women?
 
-### Question 23
+## Question 23
 Make a boxplot of `Median` wage by `Major_Category`. [You won't be able to read the labels easily, so add `theme(axis.text.x=element_text(angle=45, hjust=1)` to angle `x`-axis labels (and move them down by 1)]
 
-### Question 24
+## Question 24
 Which major category is the least popular in this sample? [Hint: use `group_by` first.]
 
-### Question 25
+## Question 25
 Is there a systematic difference in median earnings between STEM majors and non-STEM majors? First define: 
 
 ```{r}

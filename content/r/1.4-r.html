@@ -90,11 +90,11 @@ output:
 </div>
 <div id="question-16" class="section level2">
 <h2>Question 16</h2>
-<p>Get the average GDP per capita by year and by continent.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Then save this as another <code>tibble</code> called <code>gdp</code>. Create a <code>ggplot</code> of a <code>line</code> graph of average continent GDP over time using the <code>gdp</code> data.</p>
+<p>Get the average GDP per capita by year and by continent. [Hint: do <code>year</code> first, if you do <code>continent</code> first, there are no years to group by!] Then save this as another <code>tibble</code> called <code>gdp</code>. Create a <code>ggplot</code> of a <code>line</code> graph of average continent GDP over time using the <code>gdp</code> data.</p>
 </div>
 <div id="question-17" class="section level2">
 <h2>Question 17</h2>
-<p>Try it again all in one command with the pipe <code>%&gt;%</code>. Instead of saving the data as <code>gdp</code>, pipe it right into <code>ggplot</code>!<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>Try it again all in one command with the pipe <code>%&gt;%</code>. Instead of saving the data as <code>gdp</code>, pipe it right into <code>ggplot</code>! [Hint: You can use <code>.</code> as a placeholder.]</p>
 </div>
 </div>
 <div id="example-the-economics-of-college-majors" class="section level1">
@@ -221,16 +221,17 @@ The Economic Guide To Picking A College Major
 <div id="question-22" class="section level2">
 <h2>Question 22</h2>
 <p>What are the top 3 majors that have the highest percentage of women?</p>
-<div id="question-23" class="section level3">
-<h3>Question 23</h3>
+</div>
+<div id="question-23" class="section level2">
+<h2>Question 23</h2>
 <p>Make a boxplot of <code>Median</code> wage by <code>Major_Category</code>. [You won’t be able to read the labels easily, so add <code>theme(axis.text.x=element_text(angle=45, hjust=1)</code> to angle <code>x</code>-axis labels (and move them down by 1)]</p>
 </div>
-<div id="question-24" class="section level3">
-<h3>Question 24</h3>
+<div id="question-24" class="section level2">
+<h2>Question 24</h2>
 <p>Which major category is the least popular in this sample? [Hint: use <code>group_by</code> first.]</p>
 </div>
-<div id="question-25" class="section level3">
-<h3>Question 25</h3>
+<div id="question-25" class="section level2">
+<h2>Question 25</h2>
 <p>Is there a systematic difference in median earnings between STEM majors and non-STEM majors? First define:</p>
 <pre class="r"><code>stem_categories &lt;- c(&quot;Biology &amp; Life Science&quot;,
                      &quot;Computers &amp; Mathematics&quot;,
@@ -244,12 +245,4 @@ The Economic Guide To Picking A College Major
 <p>You’ll of course need to change the <code>do_this</code> into something!
 ]</p>
 </div>
-</div>
-</div>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Hint: do <code>year</code> first, if you do <code>continent</code> first, there are no years to group by!<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>Hint: You can use <code>.</code> as a placeholder.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
-</ol>
 </div>
