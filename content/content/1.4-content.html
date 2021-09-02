@@ -1,0 +1,103 @@
+---
+title: "1.4 — Data Wrangling in the tidyverse — Class Content"
+draft: false
+linktitle: "1.4 — Data Wrangling in the tidyverse"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 2
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "1.4-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a>
+<ul>
+<li><a href="#references-by-packagetask">References by Package/Task</a></li>
+</ul></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
+<li><a href="#additional-useful-information">Additional Useful Information</a>
+<ul>
+<li><a href="#new-packages-mentioned">New Packages Mentioned</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Thursday, September 2, 2021</em>
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we will cover the heart of <code>tidyverse</code> and use it for <a href="https://en.wikipedia.org/wiki/Data_wrangling">“data wrangling”</a>. Today will again be <em>a lot</em> of content thrown at you, so you can look back at this as a reference all semester. Then we will do more practice problems.</p>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-external-link-square-alt"></i> Chs. 5, 10-12, 18 in Wickham &amp; Grolemund, <a href="http://r4ds.had.co.nz/">R for Data Science</a></li>
+</ul>
+<div id="references-by-packagetask" class="section level3">
+<h3>References by Package/Task</h3>
+<ul>
+<li><code>tibble</code>
+<ul>
+<li><a href="https://r4ds.had.co.nz/tibbles.html"><em>R For Data Science</em>, Chapter 10: Tibbles</a></li>
+</ul></li>
+<li><code>readr</code> and importing data
+<ul>
+<li><a href="https://r4ds.had.co.nz/data-import.html"><em>R For Data Science</em>, Chapter 11: Data Import</a></li>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/#import">R Studio Cheatsheet: Data Import</a></li>
+</ul></li>
+<li><code>dplyr</code> and data wrangling
+<ul>
+<li><a href="https://r4ds.had.co.nz/tibbles.html"><em>R For Data Science</em>, Chapter 5: Data Transformation</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">R Studio Cheatsheet: Data Wrangling</a> (<a href="https://www.rstudio.com/resources/cheatsheets/#dplyr">New version</a>)</li>
+</ul></li>
+<li><code>tidyr</code> and tidying or reshaping data
+<ul>
+<li><a href="https://r4ds.had.co.nz/tidy-data.html"><em>R For Data Science</em>, Chapter 12: Tidy Data</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">R Studio Cheatsheet: Data Wrangling</a></li>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/#import">R Studio Cheatsheet: Data Import</a></li>
+</ul></li>
+<li>joining data
+<ul>
+<li><a href="https://r4ds.had.co.nz/relational-data.html"><em>R For Data Science</em>, Chapter 13: Relational Data</a></li>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/#dplyr">R Studio Cheatsheet: Data Transformation</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="r-practice" class="section level2">
+<h2><i class="fas fa-registered"></i> R Practice</h2>
+<p>Answers from last class’ practice problems on base R are posted <a href="/r/1.3-r">on that page</a>. Today you will be working on <a href="/r/1.4-r">R practice problems</a> on data visualization. Answers will be posted later on that page.</p>
+</div>
+<div id="additional-useful-information" class="section level2">
+<h2>Additional Useful Information</h2>
+<div id="new-packages-mentioned" class="section level3">
+<h3>New Packages Mentioned</h3>
+<p>Learn more about each of these in context in the slides, but below are links to each packages’s online help pages, which include descriptions of how each function works, examples, and cheatsheets to help you</p>
+<ul>
+<li><a href="https://tidyverse.org/"><code>tidyverse</code></a> collection of packages, including the following:</li>
+<li><a href="https://tibble.tidyverse.org/"><code>tibble</code></a> for friendlier, tidier dataframes</li>
+<li><a href="https://magrittr.tidyverse.org/"><code>magrittr</code></a> for use of the pipe (<code>%&gt;%</code>)</li>
+<li><a href="https://readr.tidyverse.org/"><code>readr</code></a>, <a href="https://readxl.tidyverse.org/"><code>readxl</code></a>, and <a href="https://haven.tidyverse.org/"><code>haven</code></a> for importing data</li>
+<li><a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a> for data wrangling and manipulation</li>
+<li><a href="https://tidyr.tidyverse.org/"><code>tidyr</code></a> for reshaping data</li>
+</ul>
+<p>You can find a running list of packages we use in this course in the <a href="resources/r-packages/">resources pages</a>.</p>
+</div>
+</div>

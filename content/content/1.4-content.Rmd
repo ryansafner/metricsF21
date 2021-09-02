@@ -1,0 +1,72 @@
+---
+title: "1.4 — Data Wrangling in the tidyverse — Class Content"
+draft: false
+linktitle: "1.4 — Data Wrangling in the tidyverse"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 2
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "1.4-slides"
+---
+
+{{% alert note %}}
+*Thursday, September 2, 2021*
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we will cover the heart of `tidyverse` and use it for ["data wrangling"](https://en.wikipedia.org/wiki/Data_wrangling). Today will again be *a lot* of content thrown at you, so you can look back at this as a reference all semester. Then we will do more practice problems.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-external-link-square-alt"></i> Chs. 5, 10-12, 18 in Wickham & Grolemund, [R for Data Science](http://r4ds.had.co.nz/)
+
+### References by Package/Task
+
+- `tibble`
+  - [*R For Data Science*, Chapter 10: Tibbles](https://r4ds.had.co.nz/tibbles.html)
+- `readr` and importing data
+  - [*R For Data Science*, Chapter 11: Data Import](https://r4ds.had.co.nz/data-import.html)
+  - [R Studio Cheatsheet: Data Import](https://www.rstudio.com/resources/cheatsheets/#import)
+- `dplyr` and data wrangling
+  - [*R For Data Science*, Chapter 5: Data Transformation](https://r4ds.had.co.nz/tibbles.html)
+  - [R Studio Cheatsheet: Data Wrangling](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) ([New version](https://www.rstudio.com/resources/cheatsheets/#dplyr))
+- `tidyr` and tidying or reshaping data
+  - [*R For Data Science*, Chapter 12: Tidy Data](https://r4ds.had.co.nz/tidy-data.html)
+  - [R Studio Cheatsheet: Data Wrangling](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+  - [R Studio Cheatsheet: Data Import](https://www.rstudio.com/resources/cheatsheets/#import)
+- joining data
+  - [*R For Data Science*, Chapter 13: Relational Data](https://r4ds.had.co.nz/relational-data.html)
+  - [R Studio Cheatsheet: Data Transformation](https://www.rstudio.com/resources/cheatsheets/#dplyr)
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`
+
+## <i class="fas fa-registered"></i> R Practice
+
+Answers from last class’ practice problems on base R are posted [on that page](/r/1.3-r). Today you will be working on [R practice problems](/r/1.4-r) on data visualization. Answers will be posted later on that page.
+
+## Additional Useful Information
+
+### New Packages Mentioned
+
+Learn more about each of these in context in the slides, but below are links to each packages’s online help pages, which include descriptions of how each function works, examples, and cheatsheets to help you
+
+- [`tidyverse`](https://tidyverse.org/) collection of packages, including the following:
+- [`tibble`](https://tibble.tidyverse.org/) for friendlier, tidier dataframes
+- [`magrittr`](https://magrittr.tidyverse.org/) for use of the pipe (`%>%`)
+- [`readr`](https://readr.tidyverse.org/), [`readxl`](https://readxl.tidyverse.org/), and [`haven`](https://haven.tidyverse.org/) for importing data
+- [`dplyr`](https://dplyr.tidyverse.org/) for data wrangling and manipulation
+- [`tidyr`](https://tidyr.tidyverse.org/) for reshaping data
+
+You can find a running list of packages we use in this course in the [resources pages](resources/r-packages/).
