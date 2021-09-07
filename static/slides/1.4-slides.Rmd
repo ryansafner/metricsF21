@@ -79,7 +79,7 @@ class: inverse, middle, center
 
 ### [tidyr: reshaping data](#133)
 
-### [dplyr: combining datasets](#134)
+### [dplyr: combining datasets](#143)
 
 ]
 
