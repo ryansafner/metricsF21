@@ -390,7 +390,7 @@ class: inverse, center, middle
 
 .pull-left[
 
-Entire document is written in a single file:&lt;sup&gt;.red[1]&lt;sup&gt; with three types of content:
+Entire document is written in a single file&lt;sup&gt;.magenta[1]&lt;/sup&gt; with three types of content:
 
 1. `YAML` header for metadata
 
@@ -398,7 +398,7 @@ Entire document is written in a single file:&lt;sup&gt;.red[1]&lt;sup&gt; with t
 
 3. `R` chunks for data analysis, plots, figures, tables, statistics, as necessary
 
-.footnote[&lt;sup&gt;.red[1]&lt;/sup&gt; The one exception is for managing bibliographies, this requires one additional `.bib` file!]
+.footnote[&lt;sup&gt;.magenta[1]&lt;/sup&gt; The one exception is for managing bibliographies, this requires one additional `.bib` file!]
 
 ]
 
@@ -414,7 +414,7 @@ Entire document is written in a single file:&lt;sup&gt;.red[1]&lt;sup&gt; with t
 
 # YAML Header I
 
-- Top of a document contains the `YAML`&lt;sup&gt;.red[1]&lt;/sup&gt; separated by three dashes `---` above and below
+- Top of a document contains the `YAML`&lt;sup&gt;.magenta[1]&lt;/sup&gt; separated by three dashes `---` above and below
 
 - Contains the **metadata** of the document, such as:
 
@@ -430,7 +430,7 @@ output: pdf_document
 
 - In most cases, you can safely ignore other things in the `yaml` until you are ready
 
-.footnote[&lt;sup&gt;.red[1]&lt;/sup&gt; YAML stands for "YAML Ain't Markup Language." Nerds love recursive acronyms.]
+.footnote[&lt;sup&gt;.magenta[1]&lt;/sup&gt; YAML stands for "YAML Ain't Markup Language." Nerds love recursive acronyms.]
 
 ---
 
@@ -470,8 +470,8 @@ header-includes:
 
 # R Chunks I
 
-- You can create a .hi["chunk"] of `R` code with .hi-purple[three backticks]&lt;sup&gt;.red[1]&lt;/sup&gt; above and below your code
-- After the first pair of backticks, signify the .hi-purple[language] of the code&lt;sup&gt;.red[2]&lt;/sup&gt; inside braces, e.g:
+- You can create a .hi["chunk"] of `R` code with .hi-purple[three backticks]&lt;sup&gt;.magenta[1]&lt;/sup&gt; above and below your code
+- After the first pair of backticks, signify the .hi-purple[language] of the code&lt;sup&gt;.magenta[2]&lt;/sup&gt; inside braces, e.g:
 
 .pull-left[
 
@@ -500,9 +500,9 @@ header-includes:
 
 ]
 
-.footnote[&lt;sup&gt;.red[1]&lt;/sup&gt; The key to the left of the #1 key on your keyboard.
+.footnote[&lt;sup&gt;.magenta[1]&lt;/sup&gt; The key to the left of the #1 key on your keyboard.
 
-&lt;sup&gt;.red[2]&lt;/sup&gt; Yes that does mean you can use other coding languages!]
+&lt;sup&gt;.magenta[2]&lt;/sup&gt; Yes that does mean you can use other coding languages!]
 
 ---
 
@@ -583,7 +583,7 @@ ggplot(data = mpg)+
 .quitesmall[
 - You can add [additional options](https://yihui.name/knitr/options/) inside the `{braces}` after `r`, some common options:
 
-- .hi-purple[Name]: you can name your chunk for further reference later (not required)&lt;sup&gt;.red[1]&lt;/sup&gt;
+- .hi-purple[Name]: you can name your chunk for further reference later (not required)&lt;sup&gt;.magenta[1]&lt;/sup&gt;
   - This is the only option that goes after `r` but *before* a comma
 
 - `echo`
@@ -1054,7 +1054,7 @@ class: inverse, center, middle
 .smallest[
 - When you are ready, you "compile" your markdown and code into an output format using: 
 
-- [`knitr`](https://yihui.name/knitr/)&lt;sup&gt;.red[1]&lt;/sup&gt;, an R package that "`knit`s" your R code and markdown `.Rmd` into a `.md` file for:  
+- [`knitr`](https://yihui.name/knitr/)&lt;sup&gt;.magenta[1]&lt;/sup&gt;, an R package that "`knit`s" your R code and markdown `.Rmd` into a `.md` file for:  
 
 - [pandoc](http://pandoc.org) is a "swiss-army knife" utility that can convert between *dozens* of document types
 
@@ -1067,7 +1067,7 @@ class: inverse, center, middle
 
 ]
 ]
-.footnote[&lt;sup&gt;.red[1]&lt;/sup&gt; `knitr` also relies on the `rmarkdown` package, which will probably be installed when you first `knit.`]
+.footnote[&lt;sup&gt;.magenta[1]&lt;/sup&gt; `knitr` also relies on the `rmarkdown` package, which will probably be installed when you first `knit.`]
 ---
 
 class: inverse, center, middle
@@ -1407,8 +1407,8 @@ Smart Sync - keep some files online only for space
 # My Workflow (that I suggest to you)
 
 .quitesmall[
-1. Create a new repository on Github.&lt;sup&gt;.red[*]&lt;/sup&gt;
-2. Start a New R Project in R Studio (link it to the github repository&lt;sup&gt;.red[*]&lt;/sup&gt; - [see guide](http://happygitwithr.com))
+1. Create a new repository on Github.&lt;sup&gt;.magenta[*]&lt;/sup&gt;
+2. Start a New R Project in R Studio (link it to the github repository&lt;sup&gt;.magenta[*]&lt;/sup&gt; - [see guide](http://happygitwithr.com))
 3. Create a logical file system ([see example](https://github.com/ryansafner/workflow)), such as:
 ```
 project # folder on my computer (the new working directory)
@@ -1422,11 +1422,11 @@ project # folder on my computer (the new working directory)
 4. Write document in `paper.Rmd`, loading/saving files from/to various folders in project
     - e.g. load data like `df&lt;-read_csv("Data/my_data")`; save plots like `ggsave("Figures/p.png")`
 5. Knit document to `pdf` or `html`.
-6. Occasionally, `stage` and `commit` changes with a description, `push` to GitHub.&lt;sup&gt;.red[*]&lt;/sup&gt;
+6. Occasionally, `stage` and `commit` changes with a description, `push` to GitHub.&lt;sup&gt;.magenta[*]&lt;/sup&gt;
 
 ]
 
-.footnote[&lt;sup&gt;.red[*]&lt;/sup&gt; Optional and a bit advanced, remember this is _my_ workflow.]
+.footnote[&lt;sup&gt;.magenta[*]&lt;/sup&gt; Optional and a bit advanced, remember this is _my_ workflow.]
 ---
 
 # Resources
