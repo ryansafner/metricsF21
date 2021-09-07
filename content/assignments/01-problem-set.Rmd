@@ -21,7 +21,7 @@ library(pander)
 {{% alert note %}}
 Please submit on Blackboard Assignments by class on Tuesday September 14.
 {{% /alert %}}
-xxxw
+
 Please read the [instructions](/assignments/problem-sets) for completing homeworks.
 
 <p style="text-align:center"><a target="_blank" href="/assignment/01-problem-set-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span> <a target="_blank" href="/assignment/01-problem-set.Rmd"><span class="btn btn-primary btn-lg"><i class="fab fa-markdown"></i> Download Markdown</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2845179"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> View Project on R Studio Cloud</a></span></p>
