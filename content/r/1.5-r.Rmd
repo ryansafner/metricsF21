@@ -73,4 +73,4 @@ Now we are just exposing you to more `.Rmd` files. Look at the answer key for [1
 
 ## Part 9
 
-Look at the <i class="fab fa-markdown"></i> `markdown` file in this week's [homework assignment](/assignment/01-problem-set). If you want, you can complete your homework using that file.
+Look at the <i class="fab fa-markdown"></i> `markdown` file in this week's [homework assignment](/assignments/01-problem-set). If you want, you can complete your homework using that file.
