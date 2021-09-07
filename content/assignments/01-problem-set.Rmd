@@ -1,7 +1,7 @@
 ---
-title: "Preliminary Survey on Statistics and Software"
+title: "Problem Set 1"
 draft: false
-linktitle: "Preliminary Survey"
+linktitle: "Problem Set 1"
 date: "2020-06-08"
 menu:
   assignments:

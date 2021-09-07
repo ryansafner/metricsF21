@@ -29,7 +29,7 @@ lessons:
     slides: "1.5-slides"
     r: "1.5-r"
     
-  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 1**'
+  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 1** due Sep 14'
     assignment: "01-problem-set"
 
   - title: '<span class="fake-header-table">II. Linear Regression and Statistical Inference</span>'
