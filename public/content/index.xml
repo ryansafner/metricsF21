@@ -478,5 +478,105 @@ c(rep(seq(4,8,2),3),1,5)&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
+    <item>
+      <title>1.5 — Optimize Your Workflow with Projects, Markdown, and Git — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/1.5-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/1.5-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#on-plain-text-workflow&#34;&gt;On Plain-Text Workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#on-markdown-syntax&#34;&gt;On Markdown Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#on-r-markdown&#34;&gt;On R Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#on-git-and-github&#34;&gt;On Git and Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-practice&#34;&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-1&#34;&gt;Problem Set 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Tuesday, September 7, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; is due by &lt;strong&gt;DATE&lt;/strong&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today I will give you about half the class period to finish your &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/1.5-r&#34;&gt;1.4 practice problems&lt;/a&gt; and I can answer questions. Then I will briefly show you how you the magic of how you can improve your workflow, efficiency, automation, reproducibility, and safe file backups with R Markdown, R Projects, git and github. All of these tools are slightly advanced, and &lt;em&gt;optional&lt;/em&gt; for you to use, but the learning curve pays off very high returns for the rest of your life! A good handful of people every semester tell me that they keep using these tools years in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Chs. 8, 27, 28, 29, 30 (but especially 27) in Wickham &amp;amp; Grolemund, &lt;a href=&#34;http://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;on-plain-text-workflow&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;On Plain-Text Workflow&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Healey, Kieran, &lt;a href=&#34;http://plain-text.co/&#34;&gt;&lt;em&gt;The Plain Person’s Guide to Plain Text Social Science&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;on-markdown-syntax&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;On Markdown Syntax&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.markdowntutorial.com/&#34;&gt;Markdown tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;on-r-markdown&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;On R Markdown&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Xie, Yihui, J.J. Allaire, and Garett Grolemund, &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34;&gt;&lt;em&gt;R Markdown: The Definitive Guide&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RStudio, &lt;a href=&#34;https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf&#34;&gt;&lt;em&gt;R Markdown Reference Guide&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RStudio, &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;&lt;em&gt;Overview of R Markdown&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rstudio, &lt;a href=&#34;https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf&#34;&gt;*R Markdown Cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;on-git-and-github&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;On Git and Github&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bryan, Jenny and Jim Hester, &lt;a href=&#34;https://happygitwithr.com/&#34;&gt;&lt;em&gt;Happy Git and GitHub for the useR&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.5-slides.html&#34;&gt;&lt;img src =&#34;/slides/1.5-slides.png&#34; alt = &#34;1.5-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/1.5-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-practice&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/h2&gt;
+&lt;p&gt;Answers from last class’ practice problems on base R are posted &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/1.4-r&#34;&gt;on that page&lt;/a&gt;. Today’s “&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/1.5-r&#34;&gt;practice problems&lt;/a&gt;” get you to practice the tools we are working with today. They are again not required, but will help you if you are interested.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 1&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; is posted and is due by &lt;strong&gt;DATE&lt;/strong&gt;. Please see the instructions for more information on how to submit your assignment (there are multiple ways!).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
