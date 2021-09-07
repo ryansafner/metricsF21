@@ -125,8 +125,8 @@ Install and load the package `babynames`. Get help for `?babynames` to see what 
 ## 8. 
 Download these two datasets that I've cleaned up a bit: [If you want a challenge, try downloading them from the websites and cleaning them up yourself!]
 
-- [<i class="fas fa-table"></i> `econ_freedom.csv`](http://metricsf20.classes.ryansafner.com/data/econ_freedom.csv)
-- [<i class="fas fa-table"></i> `pol_freedom.csv`](http://metricsf20.classes.ryansafner.com/data/pol_freedom.csv)
+- [<i class="fas fa-table"></i> `econ_freedom.csv`](http://metricsf21.classes.ryansafner.com/data/econ_freedom.csv)
+- [<i class="fas fa-table"></i> `pol_freedom.csv`](http://metricsf21.classes.ryansafner.com/data/pol_freedom.csv)
 
 Below is a brief description of the variables I've put in each dataset:
 
