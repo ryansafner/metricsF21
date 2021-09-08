@@ -21,7 +21,7 @@ library(pander)
 
 ## Answers
 
-<p style="text-align:center"><a target="_blank" href="/r/1.2-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answer Key (html)</a> <a target="_blank" href="/r/1.4-r-answers-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Answer Key (PDF)</a> <a target="_blank" href="/r/1.4-r-answers.R"><span class="btn btn-primary btn-lg"><i class="fas fa-registered"></i> Answer Key (R Script)</a></span></p>
+<p style="text-align:center"><a target="_blank" href="/r/1.4-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/r/1.4-r-answers-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fab fa-markdown"></i> Answers (Rmd)</a> <a target="_blank" href="/r/1.4-r-answers.R"><span class="btn btn-primary btn-lg"><i class="fas fa-registered"></i> Answers (R Script)</a></span></p>
 
 
 # Getting Set Up
