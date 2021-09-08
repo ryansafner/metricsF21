@@ -15,15 +15,15 @@ output:
 ---
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
-library(tidyverse)
-library(pander)
+#library(tidyverse)
+#library(pander)
 ```
 
 ## Part 1
 
 We are going to `clone` my repository on Github into R Studio on your computer. Go to my [workflow repository](https://github.com/ryansafner/workflow) on github. Click the green `code` button. See there are several options. Feel free to try each of them out:
 
-![](../../images/workflowgitdownload.png)
+<img src="../../images/workflowgitdownload.png" width=400">
 
 - **On Your Computer (Download)**: `Download ZIP` will download a zipped file to your computer containing the entire repository. You will need to unzip this (sometimes it’s automatic, as on a Mac), and then it will create a folder on your computer. Open up the `workflow.Rproj` file, which will open the project in `R Studio`.
 - **On R Studio Cloud**: Highlight the url code (or click the copy button on the right). On Rstudio Cloud, click on the arrow on the right of the `New Project` button and select `New Project from GitHub Repository`. Paste the url you copied from Github here. This will open the repository as a new project in your cloud workspace

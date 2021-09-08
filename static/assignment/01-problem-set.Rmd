@@ -2,14 +2,20 @@
 title: "Problem Set 1"
 author: "YOUR NAME HERE" # put your name here! 
 date: "ECON 480 — Fall 2021"
-output: html_document # change to pdf if you'd like, this will make a webpage (you can email it and open in any browser)
+output: html_document # change to pdf_document if you'd like, this will make a webpage (you can email it and open in any browser)
 ---
 
 <!--CLICK "KNIT" ABOVE TO RENDER TO HTML, PDF, OR WORD OUTPUT
 In fact, try knitting right away and see what this produces!
+
+To knit to PDF, you will need to install a LaTeX distribution, which you can do
+easily by running the following code in R:
+
+install.packages("tinytex")
+tinytex::install_tinytex()
 -->
 
-*Due by 11:59 PM Sunday September 6, 2020*
+*Due by Class Tuesday September 14*
 
 # The Popularity of Baby Names
 
@@ -50,7 +56,7 @@ Install and load the package `babynames`. Get help for `?babynames` to see what 
 
 
 ## 3. 
-**Find your name. [If your name isn't in there 😟, pick a random name.] `count` by `sex` how many babies since 1880 were named your name. [Hint: if you do this, you'll get the number of *rows* (years) there are in the data. You want to add the number of babies in each row (`n`), so inside `count`, add `wt = n` to weight the count by `n`.] Also add a variable for the percent of each sex.**
+**Find your name. [If your name isn't in there :(, pick a random name.] `count` by `sex` how many babies since 1880 were named your name. [Hint: if you do this, you'll get the number of *rows* (years) there are in the data. You want to add the number of babies in each row (`n`), so inside `count`, add `wt = n` to weight the count by `n`.] Also add a variable for the percent of each sex.**
 
 
 <!--WRITE YOUR ANSWERS BELOW -->

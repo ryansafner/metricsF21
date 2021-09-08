@@ -1,11 +1,11 @@
 ---
 date: "2019-05-05T00:00:00+01:00"
 draft: false
-linktitle: ggplot2 Extensions
+linktitle: Data Wrangling
 menu:
   resources:
     parent: R Resources
-title: ggplot2 Extensions
+title: "Data Wrangling Tips & Tricks"
 toc: true
 type: docs
 weight: 2

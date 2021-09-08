@@ -1,0 +1,105 @@
+---
+title: "Untitled"
+author: "Ryan Safner"
+date: "9/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r}
+ef<-read_csv("static/data/econ_freedom.csv")
+pol<-read_csv("static/data/pol_freedom.csv")
+freedom<-left_join(ef, pol, by=c("country","year"))
+```
+
+```{r}
+freedom
+```
+
+```{r}
+freedom %>%
+  filter(year==2018) %>%
+ggplot(data=., aes(x=ef_index,y=fh_score))+
+  geom_point(aes(color=continent))+
+  xlab("Economic Freedom Score")+ylab("Political Freedom Score")+theme_bw()+labs(caption="Sources: Frasier Institute, Freedom House")+
+    theme_classic(base_family = "Fira Sans Condensed", base_size=16)
+```
+
+```{r}
+freedom %>%
+  count(country)
+```
+```{r}
+library(gapminder)
+continent_colors
+#country_colors
+```
+
+```{r}
+
+
+countries <- freedom %>%
+  filter(year==2018,
+         country %in% c("United States",
+                        "United Kingdom",
+                        "Sweden",
+                        "China",
+                        "Singapore",
+                        "Russian Federation",
+                        "Korea, Rep.",
+                        "Hong Kong SAR, China"))
+
+continentcolors <- c("Africa" = "#7F3B08",
+                     "Americas" = "#A50026",
+                     "Asia" = "#40004B",
+                     "Europe" = "#276419",
+                     "Oceania" = "#313695")
+
+freedom %>%
+  filter(year==2018) %>%
+ggplot(data=., aes(x=ef_index,y=fh_score))+
+  geom_point(aes(fill=continent),
+             color = "white",
+             pch = 21,
+             size = 3)+
+  ggrepel::geom_label_repel(data = countries,
+                     aes(x = ef_index,
+                         y = fh_score,
+                         label = ISO,
+                         color = continent),
+                     alpha = 0.5,
+                     box.padding = 0.75, # control how far labels are from points
+                     show.legend = F)+ # don't want this to add to the legend
+  labs(x = "Economic Freedom Score",
+       y = "Political Freedom Score",
+       caption = "Sources: Frasier Institute, Freedom House",
+       fill = "Continent")+
+  scale_color_manual(values = continentcolors)+
+  scale_fill_manual(values = continentcolors)+
+  #scale_color_viridis_d(option = "default")+
+  #scale_fill_viridis_d(option = "default")+
+  theme_bw()+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)+
+  theme(legend.position = "bottom")
+```
+
+```{r}
+freedom %>%
+  filter(country == "Russia")
+```
+
+```{r}
+freedom %>%
+  #filter(year==2018) %>%
+  filter(ISO == "USA") %>%
+ggplot(data=., aes(x=ef_index,y=fh_score))+
+  geom_point(aes(color=continent))+
+  geom_path(aes(color=continent))+
+  ggrepel::geom_text_repel(aes(label = year))+
+  xlab("Economic Freedom Score")+ylab("Political Freedom Score")+theme_bw()+labs(caption="Sources: Frasier Institute, Freedom House")+
+    theme_classic(base_family = "Fira Sans Condensed", base_size=16)
+```

@@ -1,0 +1,46 @@
+---
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+linktitle: Unzipping Files
+menu:
+  resources:
+    parent: Guides
+title: Unzipping Files
+toc: true
+type: docs
+weight: 3
+---
+
+Since R projects typically consist of multiple files (R scripts, datasets, images, etc.) the easiest way to distribute and send them is to combine all the different files in to a single compressed `.zip` file. When you unzip a `.zip` file, your computer extracts all the files contained inside to a new folder on your computer.
+
+Unzipping files on macOS is simple, but unzipping files on Windows can cause problems if you don't pay careful attention. 
+
+## Unzipping files on macOS
+
+Double click on the downloaded `.zip` file. macOS will automatically create a new folder with the same name as the `.zip` file, and all the file's contents will be inside. Double click on the RStudio Project file (`.Rproj`) to get started.
+
+![](../../images/unzip-mac.png)
+
+## Unzipping files on Windows
+
+A long story short: right click on the `.zip` file, select "Extract All…", and work with the resulting unzipped folder.
+
+Unlike macOS, Windows does *not* automatically unzip things for you. If you double click on the `.zip` file, Windows will show you what's inside, but it will do so without actually extracting anything. This is quite annoying. Here's what it looks like—the only clues that this folder is really a `.zip` file are that there's a "Compressed Folder Tools" tab at the top with "Extract" in red. 
+
+![](../../images/inside-zip-windows.png)
+
+It is tempting to just open files from this view, but this causes problems. If you open the R Project file, for instance, RStudio will point to a bizarre working directory buried deep in some temporary folder:
+
+![](../../images/temp-wd-windows.png)
+
+Instead, you need to right click on the `.zip` file and select "Extract All…":
+
+![](../../images/extract-windows-1.png)
+
+Then choose where you want to unzip all the files and click on "Extract"
+
+![](../../images/extract-windows-2.png)
+
+You should then finally have a real folder with all the contents of the zipped file. Open the R Project file and RStudio will point to the correct working directory and everything will work.
+
+![](../../images/extract-windows-3.png)
