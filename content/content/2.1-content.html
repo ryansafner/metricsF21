@@ -1,0 +1,165 @@
+---
+title: "2.1 — Data 101 & Descriptive Statistics — Class Content"
+draft: false
+linktitle: "2.1 — Data 101 & Descriptive Statistics"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 7
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.1-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#problem-set-1">Problem Set 1</a></li>
+</ul></li>
+<li><a href="#math-appendix">Math Appendix</a>
+<ul>
+<li><a href="#the-summation-operator">The Summation Operator</a></li>
+<li><a href="#useful-properties-of-summation-operators">Useful Properties of Summation Operators</a></li>
+<li><a href="#advanced-useful-properties-for-regression">Advanced: Useful Properties for Regression</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Thursday, September 9, 2021</em>
+{{% /alert %}}</p>
+<p>{{% alert warning %}}
+<a href="/assignments/01-problem-set">Problem Set 1</a> is due by <strong>DATE</strong>.
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we begin with a review and overview of using data and descriptive statistics. We want to quantify characteristics about samples as <em>statistics</em>, which we will later use to <em>infer</em> things about populations (between which we will later <em>identify</em> causal relationships).</p>
+<p>Next class will be on random variables and distributions. This full week is your crash course/review of basic statistics that we will need to start the “meat and potatoes” of this class: linear regression next Thursday As such, I’ll give you a brief homework next week to review these statistical concepts (with minimal use of <code>R</code>!).</p>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Math and Probability Background Appendix A in Bailey</li>
+</ul>
+<p>Now that we return to the statistics, we will do a minimal overview of basic statistics and distributions. Review Bailey’s appendices. Today, only A is really useful, the rest will come next class.</p>
+<p>Chapter 2 is optional, but will give you a good overview of using data.
+## <i class="fas fa-chalkboard-teacher"></i> Slides</p>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="r-practice" class="section level2">
+<h2><i class="fas fa-registered"></i> R Practice</h2>
+<p>Answers from last class’ practice problems on base R are posted <a href="/r/1.4-r">on that page</a>. Today’s “<a href="/r/1.5-r">practice problems</a>” get you to practice the tools we are working with today. They are again not required, but will help you if you are interested.</p>
+</div>
+<div id="assignments" class="section level2">
+<h2><i class="fas fa-laptop-code"></i> Assignments</h2>
+<div id="problem-set-1" class="section level3">
+<h3>Problem Set 1</h3>
+<p><a href="/assignments/01-problem-set">Problem Set 1</a> is posted and is due by class Tuesday September 14. Please see the <a href="/assignments/problem-sets">instructions</a> for more information on how to submit your assignment (there are multiple ways!).</p>
+<p>Problem set 2 (on classes 2.1-2.2) will be posted shortly, and will be due by Tuesday September 21.</p>
+</div>
+</div>
+<div id="math-appendix" class="section level2">
+<h2>Math Appendix</h2>
+<div id="the-summation-operator" class="section level3">
+<h3>The Summation Operator</h3>
+<p>Many elementary propositions in econometrics (and statistics) involve the use of the sums of numbers. Mathematicians often use the summation operator (the greek letter <span class="math inline">\(\Sigma\)</span> –“sigma”) as a shorthand, rather than writing everything out the long way. It will be worth your time to understand the summation operator, and some of its properties, and how these can provide shortcuts to proving more advanced theorems in econometrics.</p>
+<p>Let <span class="math inline">\(X\)</span> be a random variable from which a sample of <span class="math inline">\(n\)</span> observations is observed, so we have a sequence <span class="math inline">\(\{x_1, x_2,...,x_n\}\)</span> i.e. $x_i, $ for <span class="math inline">\(i=1,2,...,n\)</span>. Then the total sum of the observations <span class="math inline">\((x_1+x_2+...+x_n)\)</span> can be represented as:</p>
+<p><span class="math display">\[\sum_{i=1}^n x_i = x_1+x_2+...+x_n\]</span></p>
+<ul>
+<li>The term beneath <span class="math inline">\(\Sigma\)</span> is known as the “index,” which tells us where to begin our adding (at the 1<sup>st</sup> individual <span class="math inline">\(x\)</span> term, <span class="math inline">\(x_1\)</span>)
+<ul>
+<li>Note other letters, such as <span class="math inline">\(j\)</span>, or <span class="math inline">\(k\)</span> may be used (especially if <span class="math inline">\(i\)</span> is defined elsewhere)</li>
+</ul></li>
+<li>The term above <span class="math inline">\(\Sigma\)</span> is the total number of <span class="math inline">\(x\)</span> terms we should add <span class="math inline">\((n)\)</span></li>
+<li>Essentially, read <span class="math inline">\(\displaystyle \sum_{i=1}^{n} x_i\)</span> as “add up all the individual <span class="math inline">\(x\)</span> observations from the 1<sup>st</sup> <span class="math inline">\((x_1)\)</span> to the final <span class="math inline">\(n\)</span> <span class="math inline">\((x_n)\)</span>.”</li>
+</ul>
+</div>
+<div id="useful-properties-of-summation-operators" class="section level3">
+<h3>Useful Properties of Summation Operators</h3>
+<p><strong>Rule 1</strong>: The summation of a constant <span class="math inline">\(k\)</span> times a random variable <span class="math inline">\(X_i\)</span> is equal to the constant times the summation of that random variable:</p>
+<p><span class="math display">\[\sum_{i=1}^n kX_i = k \sum^n_{i=1} X_i\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+\sum_{i=1}^n kX_i &amp;= k x_1 + kx_2 +...+ kx_n\\
+&amp;= k(x_1+x_2+...x_n)\\
+&amp;= k\sum_{i=1}^n X_i. \\
+\end{align*}\]</span></p>
+<p><strong>Rule 2</strong>: The summation of a sum of two random variables is equal to the sum of their summations:</p>
+<p><span class="math display">\[\sum_{i=1}^n (X_i+Y_i) = \sum_{i=1}^n X_i + \sum_{i=1}^n Y_i\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+\sum_{i=1}^n (X_i+Y_i) &amp;=(X_1+Y_1) + (X_2+Y_2) + ... (X_n+Y_n)\\
+&amp;=(X_1+X_2+...+X_n) + (Y_1+Y_2+...+Y_n)\\
+&amp;=\sum_{i=1}^n X_i + \sum_{i=1}^n Y_i\\
+\end{align*}\]</span></p>
+<p><strong>Rule 3</strong>: The summation of constant over <span class="math inline">\(n\)</span> observations is the product of the constant and <span class="math inline">\(n\)</span>:</p>
+<p><span class="math display">\[\sum_{i=1}^n k = nk\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\sum_{i=1}^n k = \underbrace{k + k + ... + k}_{n \text{ times}} = nk\]</span></p>
+<p><strong>Combining these 3 rules:</strong> for the sum of a linear combination of a random variable (<span class="math inline">\(a+bX\)</span>):</p>
+<p><span class="math display">\[\sum_{i=1}^n (a+bX_i) = na+b\sum_{i=1}^n X_i\]</span></p>
+<p>Proof: left to you as an exercise!</p>
+</div>
+<div id="advanced-useful-properties-for-regression" class="section level3">
+<h3>Advanced: Useful Properties for Regression</h3>
+<p>There are some additional properties of summations that may not be immediately obvious, but will be quite essential in proving properties of linear regressions.</p>
+<p>Using the properties above, we can describe the <strong>mean</strong>, <strong>variance</strong>, and <strong>covariance</strong> of random variables.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>First, define the mean of a sequence <span class="math inline">\(\{X_i: i=1,...,n\}\)</span> and <span class="math inline">\(\{Y_i: i=1,...,n\}\)</span> as:</p>
+<p><span class="math display">\[\bar{X}=\frac{1}{n}\sum^n_{i=1}X_i\]</span></p>
+<p>Second, the variance of <span class="math inline">\(X\)</span> is:</p>
+<p><span class="math display">\[var(X)=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})^2\]</span></p>
+<p>Third, the covariance of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> is:</p>
+<p><span class="math display">\[cov(X,Y)=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})(Y_i-\bar{Y})\]</span></p>
+<p><strong>Rule 4</strong>: The sum of the deviations of observations of <span class="math inline">\(X_i\)</span> from its mean (<span class="math inline">\(\bar{X}\)</span>) is 0:</p>
+<p><span class="math display">\[\sum^n_{i=1} (X_i-\bar{X})=0\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{x}) &amp;=\sum^n_{i=1}X_i-\sum^n_{i=1}\bar{X} &amp;&amp; \\
+    &amp;=\sum^n_{i=1}X_i-n\bar{X} &amp;&amp; \text{Since $\bar{x}$ is a constant}\\
+    &amp;=n\underbrace{\frac{\displaystyle\sum^n_{i=1}X_i}{n}}_{\bar{X}}-n\bar{X} &amp;&amp; \text{Multiply the first term by }\frac{n}{n}=1\\ 
+    &amp;=n\bar{X}-n\bar{X}&amp;&amp; \text{By the definition of the mean }\bar{X}\\
+    &amp;=0 &amp;&amp;  \\
+\end{align*}\]</span></p>
+<p><strong>Rule 5</strong>: The squared deviations of <span class="math inline">\(X\)</span> are equal to the product of <span class="math inline">\(X\)</span> times its deviations:</p>
+<p><span class="math display">\[\sum^n_{i=1} (X_i-\bar{X})^2=\sum^n_{i=1} X_i(X_i-\bar{X})\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})^2&amp;=\sum^n_{i=1} (X_i-\bar{X})(X_i-\bar{X})   &amp;&amp; \text{Expanding the square}\\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\sum^n_{i=1}\bar{X}(X_i-\bar{X}) &amp;&amp; \text{Breaking apart the first term} \\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\bar{X}\sum^n_{i=1}(X_i-\bar{X}) &amp;&amp; \text{Since }\bar{X} \text{ is constant, not depending on } i&#39;s\\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\bar{X}(0) &amp;&amp; \text{From rule 4} \\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X}) &amp;&amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]</span></p>
+<p><strong>Rule 6</strong>: The following summations involving <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are equivalent:</p>
+<p><span class="math display">\[\sum^n_{i=1} Y_i(X_i-\bar{X})=\sum^n_{i=1}X_i(Y_i-\bar{Y})=\sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y})\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y}) &amp;=\sum^n_{i=1} Y_i(X_i-\bar{X})-\sum^n_{i=1}\bar{Y}(X_i-\bar{X}) &amp;&amp; \text{Breaking apart the second term} \\
+    &amp;=\sum^n_{i=1} Y_i(X_i-\bar{X})-\bar{Y}(0) &amp;&amp; \text{From rule 4}\\
+    &amp;=\sum^n_{i=1} Y_i(X_i-\bar{X}) &amp;&amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]</span></p>
+<p>equivalently:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y}) &amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y})-\sum^n_{i=1}\bar{X}(Y_i-\bar{Y}) &amp;&amp; \text{Breaking apart the first term} \\
+    &amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y})-\bar{X}(0) &amp;&amp; \text{From rule 4}\\
+    &amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y}) &amp;&amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]</span></p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>For more beyond the mere definition, see the appendix on <strong>Covariance and Correlation</strong><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

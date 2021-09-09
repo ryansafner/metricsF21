@@ -29,17 +29,19 @@ lessons:
     slides: "1.5-slides"
     r: "1.5-r"
     
-  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 1** due Sep 14'
+  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 1** due Tues Sep 14'
     assignment: "01-problem-set"
 
   - title: '<span class="fake-header-table">II. Linear Regression and Statistical Inference</span>'
     header: True
 
   - title: "2.1 — Data 101 and Descriptive Statistics"
+    content: "2.1-content"
+    slides: "2.1-slides"
 
   - title: "2.2 — Random Variables and Distributions"
 
-  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 2**'
+  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 2** due Tues Sep 21'
 
   - title: "2.3 — OLS Linear Regression"
 

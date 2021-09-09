@@ -6,7 +6,7 @@ date: "2020-06-08"
 menu:
   content:
     parent: Course content
-    weight: 2
+    weight: 4
 type: docs
 output:
   blogdown::html_page:

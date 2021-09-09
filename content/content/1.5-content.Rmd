@@ -6,7 +6,7 @@ date: "2020-06-08"
 menu:
   content:
     parent: Course content
-    weight: 2
+    weight: 6
 type: docs
 output:
   blogdown::html_page:
@@ -64,4 +64,4 @@ Answers from last class’ practice problems on base R are posted [on that page]
 
 ### Problem Set 1
 
-[Problem Set 1](/assignments/01-problem-set) is posted and is due by **DATE**. Please see the instructions for more information on how to submit your assignment (there are multiple ways!).
+[Problem Set 1](/assignments/01-problem-set) is posted and is due by class Tuesday September 14. Please see the [instructions](/assignments/problem-sets) for more information on how to submit your assignment (there are multiple ways!).
