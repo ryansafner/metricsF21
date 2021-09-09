@@ -169,7 +169,7 @@ Import and save them each as an object using `my_df_name <- read_csv("name_of_th
 **Now let's join them together so that we can have a single dataset to work with. You can learn more about this [in the 1.4 slides](https://metricsf21.classes.ryansafner.com/slides/1.4-slides#143). Since both datasets have both `country` and `year` (spelled exactly the same in both!), we can use these two variables as a `key` to combine observations. Run the following code (substituting whatever you want to name your objects):**
 
 ```{r, echo = T, eval = F}
-freedom <- left_join(econ, pol, by=c("country", "year")
+freedom <- left_join(econ, pol, by=c("country", "year"))
 ```
 
 **Take a look at `freedom` to make sure it appears to have worked.**
@@ -182,7 +182,7 @@ freedom <- left_join(econ, pol, by=c("country", "year")
 
 ## 10.
 ### a.
-**Make a barplot of the 10 countries with the highest Economic Freedom index score. You may want to find this first and save it as an object for your plot's `data` layer. Use `geom_col()` since we will map `ef_index` to `y`. If you want to order the bars, set `x = fct_reorder(ISO, desc(ef_index))` to reorder `ISO` (or `country`, if you prefer) by EF score in descending order.**
+**Make a barplot of the 10 countries with the highest Economic Freedom index score in 2018. You may want to find this first and save it as an object for your plot's `data` layer. Use `geom_col()` since we will map `ef_index` to `y`. If you want to order the bars, set `x = fct_reorder(ISO, desc(ef_index))` to reorder `ISO` (or `country`, if you prefer) by EF score in descending order.**
 
 <!--WRITE YOUR ANSWERS BELOW -->
 
@@ -191,7 +191,13 @@ freedom <- left_join(econ, pol, by=c("country", "year")
 ```
 
 ### b.
-**Make a barplot of the 10 countries with the highest Freedom House index score, similar to what you did for Part A.**
+**Make a barplot of the 10 countries with the highest Freedom House index score in 2018, similar to what you did for Part A.**
+
+<!--WRITE YOUR ANSWERS BELOW -->
+
+```{r 10-b}
+# write your code here! 
+```
 
 ## 11.
 **Now make a scatterplot of Political freedom (`fh_score` as `y`) on Economic Freedom (`ef_index` as `x`) and `color` by `continent`.**

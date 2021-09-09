@@ -344,7 +344,7 @@ tinytex::install_tinytex()
 <div id="section-7" class="section level2">
 <h2>9.</h2>
 <p><strong>Now let’s join them together so that we can have a single dataset to work with. You can learn more about this <a href="https://metricsf21.classes.ryansafner.com/slides/1.4-slides#143">in the 1.4 slides</a>. Since both datasets have both <code>country</code> and <code>year</code> (spelled exactly the same in both!), we can use these two variables as a <code>key</code> to combine observations. Run the following code (substituting whatever you want to name your objects):</strong></p>
-<pre class="r"><code>freedom &lt;- left_join(econ, pol, by=c(&quot;country&quot;, &quot;year&quot;)</code></pre>
+<pre class="r"><code>freedom &lt;- left_join(econ, pol, by=c(&quot;country&quot;, &quot;year&quot;))</code></pre>
 <p><strong>Take a look at <code>freedom</code> to make sure it appears to have worked.</strong></p>
 <!--WRITE YOUR ANSWERS BELOW -->
 <pre class="r"><code># write your code here! </code></pre>
@@ -353,13 +353,15 @@ tinytex::install_tinytex()
 <h2>10.</h2>
 <div id="a.-3" class="section level3">
 <h3>a.</h3>
-<p><strong>Make a barplot of the 10 countries with the highest Economic Freedom index score. You may want to find this first and save it as an object for your plot’s <code>data</code> layer. Use <code>geom_col()</code> since we will map <code>ef_index</code> to <code>y</code>. If you want to order the bars, set <code>x = fct_reorder(ISO, desc(ef_index))</code> to reorder <code>ISO</code> (or <code>country</code>, if you prefer) by EF score in descending order.</strong></p>
+<p><strong>Make a barplot of the 10 countries with the highest Economic Freedom index score in 2018. You may want to find this first and save it as an object for your plot’s <code>data</code> layer. Use <code>geom_col()</code> since we will map <code>ef_index</code> to <code>y</code>. If you want to order the bars, set <code>x = fct_reorder(ISO, desc(ef_index))</code> to reorder <code>ISO</code> (or <code>country</code>, if you prefer) by EF score in descending order.</strong></p>
 <!--WRITE YOUR ANSWERS BELOW -->
 <pre class="r"><code># write your code here! </code></pre>
 </div>
 <div id="b.-3" class="section level3">
 <h3>b.</h3>
-<p><strong>Make a barplot of the 10 countries with the highest Freedom House index score, similar to what you did for Part A.</strong></p>
+<p><strong>Make a barplot of the 10 countries with the highest Freedom House index score in 2018, similar to what you did for Part A.</strong></p>
+<!--WRITE YOUR ANSWERS BELOW -->
+<pre class="r"><code># write your code here! </code></pre>
 </div>
 </div>
 <div id="section-9" class="section level2">

@@ -21,7 +21,7 @@ Please submit on Blackboard Assignments by class on Tuesday September 14.
 {{% /alert %}}</p>
 <p>Please read the <a href="/assignments/problem-sets">instructions</a> for completing homeworks.</p>
 <p style="text-align:center">
-<a target="_blank" href="/assignment/01-problem-set-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> PDF</a></span> <a target="_blank" href="/assignment/01-problem-set.Rmd"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2845179"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span>
+<a target="_blank" href="/assignment/01-problem-set-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> PDF</a></span> <a target="_blank" href="/assignment/01-problem-set.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2845179"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span>
 </p>
 <p>The <i class="fas fa-file-pdf"></i> PDF is useful if you want to print out the problem set. The <i class="fas fa-file-archive"></i> R project is a zipped <code>.zip</code> file which contains a <i class="fab fa-markdown"></i> <code>.Rmd</code> file to write answers in, and the data, all in a logical working directory. (<a href="/resources/unzipping_files">See this resource</a> for help unzipping files). You can also just write an <code>.R</code> file in the project if you don’t want to use markdown. If you use the <i class="fas fa-cloud"></i> cloud project, I have already installed <code>tidyverse</code> and <code>tinytex</code> (to produce pdfs).</p>
 <div id="the-popularity-of-baby-names" class="section level1">
@@ -171,11 +171,11 @@ Please submit on Blackboard Assignments by class on Tuesday September 14.
 <h2>Question 10</h2>
 <div id="part-a-3" class="section level3">
 <h3>Part A</h3>
-<p>Make a barplot of the 10 countries with the highest Economic Freedom index score. You may want to find this first and save it as an object for your plot’s <code>data</code> layer. Use <code>geom_col()</code> since we will map <code>ef_index</code> to <code>y</code>. If you want to order the bars, set <code>x = fct_reorder(ISO, desc(ef_index))</code> to reorder <code>ISO</code> (or <code>country</code>, if you prefer) by EF score in descending order.</p>
+<p>Make a barplot of the 10 countries with the highest Economic Freedom index score in 2018. You may want to find this first and save it as an object for your plot’s <code>data</code> layer. Use <code>geom_col()</code> since we will map <code>ef_index</code> to <code>y</code>. If you want to order the bars, set <code>x = fct_reorder(ISO, desc(ef_index))</code> to reorder <code>ISO</code> (or <code>country</code>, if you prefer) by EF score in descending order.</p>
 </div>
 <div id="part-b-3" class="section level3">
 <h3>Part B</h3>
-<p>Make a barplot of the 10 countries with the highest Freedom House index score, similar to what you did for Part A.</p>
+<p>Make a barplot of the 10 countries with the highest Freedom House index score in 2018, similar to what you did for Part A.</p>
 </div>
 </div>
 <div id="question-11" class="section level2">
