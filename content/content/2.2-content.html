@@ -1,0 +1,317 @@
+---
+title: "2.2 — Random Variables and Distributions — Class Content"
+draft: false
+linktitle: "2.2 — Random Variables & Distributions"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 8
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.2-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#problem-set-1">Problem Set 1</a></li>
+</ul></li>
+<li><a href="#math-appendix-properties-of-expected-value-and-variance">Math Appendix: Properties of Expected Value and Variance</a></li>
+<li><a href="#r-appendix-graphing-statistical-and-mathematical-functions-in-r">R Appendix: Graphing Statistical and Mathematical Functions in R</a>
+<ul>
+<li><a href="#creating-mathematical-functions">Creating Mathematical Functions</a></li>
+<li><a href="#graphing-mathematical-functions">Graphing Mathematical Functions</a></li>
+<li><a href="#bult-in-statistical-functions">Bult-in Statistical Functions</a></li>
+<li><a href="#some-common-examples">Some common examples:</a></li>
+<li><a href="#graphing-statistical-functions">Graphing Statistical Functions</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Tuesday, September 14, 2021</em>
+{{% /alert %}}</p>
+<p>{{% alert warning %}}
+<a href="/assignments/01-problem-set">Problem Set 1</a> is now due. <a href="/assignments/02-problem-set">Problem Set 2</a> is due by class Tuesday September 21.
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we finish your crash course/review of basic statistics with random variables and distributions.</p>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Math and Probability Background Appendices B-I in Bailey</li>
+</ul>
+<p>Now that we return to the statistics, we will do a minimal overview of basic statistics and distributions. Review all of Bailey’s appendices.</p>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="r-practice" class="section level2">
+<h2><i class="fas fa-registered"></i> R Practice</h2>
+<p>Answers from last class’ practice problems on base R are posted <a href="/r/1.4-r">on that page</a>. Today’s “<a href="/r/1.5-r">practice problems</a>” get you to practice the tools we are working with today. They are again not required, but will help you if you are interested.</p>
+</div>
+<div id="assignments" class="section level2">
+<h2><i class="fas fa-laptop-code"></i> Assignments</h2>
+<div id="problem-set-1" class="section level3">
+<h3>Problem Set 1</h3>
+<p><a href="/assignments/01-problem-set">Problem Set 1</a> is posted and is due by class Tuesday September 14. Please see the <a href="/assignments/problem-sets">instructions</a> for more information on how to submit your assignment (there are multiple ways!).</p>
+<p>Problem set 2 (on classes 2.1-2.2) will be posted shortly, and will be due by Tuesday September 21.</p>
+</div>
+</div>
+<div id="math-appendix-properties-of-expected-value-and-variance" class="section level1">
+<h1>Math Appendix: Properties of Expected Value and Variance</h1>
+<p>There are several useful mathematical properties of expected value and variance.</p>
+<p><strong>Property 1</strong>: the expected value of a constant is itself, and the variance of a constant is 0.</p>
+<p><span class="math display">\[\begin{align*}
+E(c)&amp;=c\\
+var(c)&amp;=0\\
+sd(c)&amp;=0\\
+\end{align*}\]</span></p>
+<p>For any constant, <span class="math inline">\(c\)</span></p>
+<ul>
+<li>Example: <span class="math inline">\(E(2)=2\)</span>, <span class="math inline">\(var(2)=0\)</span>, <span class="math inline">\(sd(2)=0\)</span></li>
+</ul>
+<p><strong>Property 2</strong>: adding or subtracting a constant to a random variable and then taking the mean or variance:</p>
+<p><span class="math display">\[\begin{align*}
+E(X \pm c)&amp;=E(X) \pm c\\
+var(X \pm c)&amp;=X\\
+sd(X \pm c)&amp;=X\\
+\end{align*}\]</span></p>
+<p>For any constant, <span class="math inline">\(c\)</span></p>
+<ul>
+<li>Example: <span class="math inline">\(E(2+X)=2+E(X)\)</span>, <span class="math inline">\(var(2+X)=var(X)\)</span>, <span class="math inline">\(sd(2+X)=sd(X)\)</span></li>
+</ul>
+<p><strong>Property 3</strong>: multiplying a constant to a random variable and then taking the mean or variance:</p>
+<p><span class="math display">\[\begin{align*}
+E(aX)&amp;=E(X) aE(X)\\
+var(aX)&amp;=a^2var(X)\\
+sd(aX)&amp;=|a|sd(X)\\
+\end{align*}\]</span></p>
+<p>For any constant, <span class="math inline">\(a\)</span></p>
+<ul>
+<li>Example: <span class="math inline">\(E(2X)=2E(X)\)</span>, <span class="math inline">\(var(2X)=4var(X)\)</span>, <span class="math inline">\(sd(2X)=2sd(X)\)</span></li>
+</ul>
+<p><strong>Property 4</strong>: the expected value of the sum of two random variables is equal to the sum of each random variable’s expected value:</p>
+<p><span class="math display">\[E(X \pm Y)=E(X) \pm E(Y)\]</span></p>
+</div>
+<div id="r-appendix-graphing-statistical-and-mathematical-functions-in-r" class="section level1">
+<h1>R Appendix: Graphing Statistical and Mathematical Functions in R</h1>
+<p>The <code>mosaic</code> package is useful for making and using mathematical functions in <code>R</code>.</p>
+<pre class="r"><code># install.packages(&quot;mosaic&quot;) install for first use
+library(mosaic) # load </code></pre>
+<div id="creating-mathematical-functions" class="section level2">
+<h2>Creating Mathematical Functions</h2>
+<p>You can create custom mathematical functions using mosaic by defining an R <code>function()</code> with multiple arguments. As a simple example, make the function <span class="math inline">\(f(x) = 10x-x^2\)</span> (with one argument, <span class="math inline">\(x\)</span> since it is a univariate function) as follows:</p>
+<pre class="r"><code># store as a named function, I&#39;ll call it &quot;my_function&quot;
+my_function&lt;-function(x){10*x-x^2}
+
+# look at it
+my_function</code></pre>
+<pre><code>## function(x){10*x-x^2}</code></pre>
+<p>There are some notational requirements from <code>R</code> for making functions. Any coefficient in front of a variable (such as the 10 in <code>10x</code> must be explicitly multiplied by the variable, as in <code>10*x</code>).</p>
+<p>To <em>use</em> the function to calculate its value at a particular value of <code>x</code>, simply define what the <code>(x)</code> is and run your named function on it:</p>
+<pre class="r"><code># f of 2 
+my_function(2)</code></pre>
+<pre><code>## [1] 16</code></pre>
+<pre class="r"><code># f of 2 and 4
+my_function(c(2,4))</code></pre>
+<pre><code>## [1] 16 24</code></pre>
+<pre class="r"><code># f of 2 through 7
+my_function(2:7)</code></pre>
+<pre><code>## [1] 16 21 24 25 24 21</code></pre>
+<pre class="r"><code># ALTERNATIVELY
+# define x first as a vector and then run function on it
+
+x&lt;-c(2,4)
+my_function(x)</code></pre>
+<pre><code>## [1] 16 24</code></pre>
+</div>
+<div id="graphing-mathematical-functions" class="section level2">
+<h2>Graphing Mathematical Functions</h2>
+<p>In <code>ggplot</code> there is a dedicated <code>stat_function()</code> (equivalent to a <code>geom_</code> layer) to graph mathematical and statistical functions. All that is needed is a <code>data.frame</code> of a range of <code>x</code> values to act as the source for <code>data</code>, and set <code>x</code> equal to those values for <code>aes</code>thetics.</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
+<pre><code>## ✓ tibble  3.1.4     ✓ purrr   0.3.4
+## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+## ✓ readr   2.0.0     ✓ forcats 0.5.1</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x mosaic::count()            masks dplyr::count()
+## x purrr::cross()             masks mosaic::cross()
+## x mosaic::do()               masks dplyr::do()
+## x tidyr::expand()            masks Matrix::expand()
+## x dplyr::filter()            masks stats::filter()
+## x ggstance::geom_errorbarh() masks ggplot2::geom_errorbarh()
+## x dplyr::lag()               masks stats::lag()
+## x tidyr::pack()              masks Matrix::pack()
+## x mosaic::stat()             masks ggplot2::stat()
+## x mosaic::tally()            masks dplyr::tally()
+## x tidyr::unpack()            masks Matrix::unpack()</code></pre>
+<pre class="r"><code># x values are integers 1 through 10
+ggplot(data = data.frame(x = 1:10))+
+  aes(x = x)</code></pre>
+<p><img src="/content/2.2-content_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Then we add the <code>stat_function</code>, where <code>fun =</code> is the most important argument where you define the to function to graph as your function created above, for example, our <code>my_function</code>.</p>
+<pre class="r"><code>ggplot(data = data.frame(x = 1:10))+
+  aes(x = x)+
+  stat_function(fun = my_function) </code></pre>
+<p><img src="/content/2.2-content_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>You can also adjust things like size, color, and line type.</p>
+<pre class="r"><code>ggplot(data = data.frame(x = 1:10))+
+  aes(x = x)+
+  stat_function(fun = my_function, color = &quot;blue&quot;, size = 2, linetype = &quot;dashed&quot;) </code></pre>
+<p><img src="/content/2.2-content_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+</div>
+<div id="bult-in-statistical-functions" class="section level2">
+<h2>Bult-in Statistical Functions</h2>
+<p>There are some standard statistical distributions built into R. They require a combination of a specific prefix and a distribution.</p>
+<p><strong>Prefixes</strong>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Action/Type</th>
+<th>Prefix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>random draw</td>
+<td><code>r</code></td>
+</tr>
+<tr class="even">
+<td>density (pdf)</td>
+<td><code>d</code></td>
+</tr>
+<tr class="odd">
+<td>cumulative density (cdf)</td>
+<td><code>p</code></td>
+</tr>
+<tr class="even">
+<td>quantile (inverse cdf)</td>
+<td><code>q</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Distributions</strong>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Distribution</th>
+<th>Name in R</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Normal</td>
+<td><code>norm</code></td>
+</tr>
+<tr class="even">
+<td>Uniform</td>
+<td><code>unif</code></td>
+</tr>
+<tr class="odd">
+<td>Student’s t</td>
+<td><code>t</code></td>
+</tr>
+<tr class="even">
+<td>Binomial</td>
+<td><code>binom</code></td>
+</tr>
+<tr class="odd">
+<td>Negative binomial</td>
+<td><code>nbinom</code></td>
+</tr>
+<tr class="even">
+<td>Hypergeometric</td>
+<td><code>hyper</code></td>
+</tr>
+<tr class="odd">
+<td>Weibull</td>
+<td><code>weibull</code></td>
+</tr>
+<tr class="even">
+<td>Beta</td>
+<td><code>beta</code></td>
+</tr>
+<tr class="odd">
+<td>Gamma</td>
+<td><code>gamma</code></td>
+</tr>
+</tbody>
+</table>
+<p>Thus, what you want is a combination of the prefix and the distribution.</p>
+</div>
+<div id="some-common-examples" class="section level2">
+<h2>Some common examples:</h2>
+<ol style="list-style-type: decimal">
+<li>Take random draws from a normal distribution:</li>
+</ol>
+<pre class="r"><code>rnorm(n = 10, # take 10 draws from a normal distribution with:
+      mean = 2, # mean of 2
+      sd = 1) # sd of 1</code></pre>
+<pre><code>##  [1]  0.8751869 -0.4419529  2.3895923  2.3047174  2.0611704  2.2500649
+##  [7]  0.7357762  2.6753682  3.2938103  2.5212611</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Get probability of a random variable being less than or equal to a value (cdf) from a normal distribution:</li>
+</ol>
+<pre class="r"><code># find probability of area to the LEFT of a number on pdf (note this = cdf of that number!)
+pnorm(q = 80, # number is 80 from a distribution where: 
+      mean = 200, # mean is 100
+      sd = 100, # sd is 100
+      lower.tail = TRUE) # looking to the LEFT in lower tail</code></pre>
+<pre><code>## [1] 0.1150697</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Find the value of a distribution that is a specified percentile.</li>
+</ol>
+<pre class="r"><code># find the 38th percentile value
+qnorm(p = 0.38, # 38th percentile from a distribution where:
+      mean = 200, # mean is 200
+      sd = 100) # sd is 100</code></pre>
+<pre><code>## [1] 169.4519</code></pre>
+</div>
+<div id="graphing-statistical-functions" class="section level2">
+<h2>Graphing Statistical Functions</h2>
+<p>You can also graph these commonly used statistical functions by setting <code>fun =</code> the named functions in your <code>stat_function()</code> layer. If you want to specify the mean and standard deviation, use <code>args = list()</code> to include the required arguments from the named function above (e.g. <code>dnorm</code> needs <code>mean</code> and <code>sd</code>).</p>
+<pre class="r"><code>ggplot(data = data.frame(x = -400:600))+
+  aes(x = x)+
+  stat_function(fun = dnorm, args = list(mean = 200, sd = 200), color = &quot;blue&quot;, size = 2, linetype = &quot;dashed&quot;) </code></pre>
+<p><img src="/content/2.2-content_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>If you don’t include this, it will graph the standard distribution:</p>
+<pre class="r"><code>ggplot(data = data.frame(x = -4:4))+
+  aes(x = x)+
+  stat_function(fun = dnorm, color = &quot;blue&quot;, size = 2, linetype = &quot;dashed&quot;) </code></pre>
+<p><img src="/content/2.2-content_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>To add shading under a distribution, simply add a duplicate of the <code>stat_function()</code> layer, but add <code>geom="area"</code> to indicate the area beneath the function should be filled, and you can limit the domain of the <code>fill</code> with <code>xlim=c(start,end)</code>, where <code>start</code> and <code>end</code> are the x-values for the endpoints of the <code>fill.</code></p>
+<pre class="r"><code># graph normal distribution and shade area between -2 and 2
+ggplot(data = data.frame(x = -4:4))+
+  aes(x = x)+
+  stat_function(fun = dnorm, color = &quot;blue&quot;, size = 2, linetype = &quot;dashed&quot;)+
+  stat_function(fun = dnorm, xlim = c(-2,2), geom = &quot;area&quot;, fill = &quot;green&quot;, alpha=0.5)</code></pre>
+<p><img src="/content/2.2-content_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>Hence, here is one graph from my slides:</p>
+<pre class="r"><code>ggplot(data = tibble(x=35:115))+
+  aes(x = x)+
+  stat_function(fun = dnorm, args = list(mean = 75, sd = 10), size = 2, color=&quot;blue&quot;)+
+  stat_function(fun = dnorm, args = list(mean = 75, sd = 10), geom = &quot;area&quot;, xlim = c(65,85), fill=&quot;blue&quot;, alpha=0.5)+
+  labs(x = &quot;X&quot;,
+       y = &quot;Probability&quot;)+
+  scale_x_continuous(breaks = seq(35,115,5))+
+  theme_classic(base_family = &quot;Fira Sans Condensed&quot;,
+           base_size=20)</code></pre>
+<p><img src="/content/2.2-content_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+</div>
+</div>

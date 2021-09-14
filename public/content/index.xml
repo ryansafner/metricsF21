@@ -572,7 +572,495 @@ c(rep(seq(4,8,2),3),1,5)&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
 &lt;div id=&#34;problem-set-1&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Problem Set 1&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; is posted and is due by &lt;strong&gt;DATE&lt;/strong&gt;. Please see the instructions for more information on how to submit your assignment (there are multiple ways!).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; is posted and is due by class Tuesday September 14. Please see the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/problem-sets&#34;&gt;instructions&lt;/a&gt; for more information on how to submit your assignment (there are multiple ways!).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2.1 — Data 101 &amp; Descriptive Statistics — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/2.1-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/2.1-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-practice&#34;&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-1&#34;&gt;Problem Set 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#math-appendix&#34;&gt;Math Appendix&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#the-summation-operator&#34;&gt;The Summation Operator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#useful-properties-of-summation-operators&#34;&gt;Useful Properties of Summation Operators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#advanced-useful-properties-for-regression&#34;&gt;Advanced: Useful Properties for Regression&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Thursday, September 9, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; is due by class Tuesday September 14 via Blackboard Assignments.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today we begin with a review and overview of using data and descriptive statistics. We want to quantify characteristics about samples as &lt;em&gt;statistics&lt;/em&gt;, which we will later use to &lt;em&gt;infer&lt;/em&gt; things about populations (between which we will later &lt;em&gt;identify&lt;/em&gt; causal relationships).&lt;/p&gt;
+&lt;p&gt;Next class will be on random variables and distributions. This full week is your crash course/review of basic statistics that we will need to start the “meat and potatoes” of this class: linear regression next Thursday As such, I’ll give you a brief homework next week to review these statistical concepts (with minimal use of &lt;code&gt;R&lt;/code&gt;!).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Math and Probability Background Appendix A in Bailey&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now that we return to the statistics, we will do a minimal overview of basic statistics and distributions. Review Bailey’s appendices. Today, only A is really useful, the rest will come next class.&lt;/p&gt;
+&lt;p&gt;Chapter 2 is optional, but will give you a good overview of using data.
+## &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/p&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.1-slides.html&#34;&gt;&lt;img src =&#34;/slides/2.1-slides.png&#34; alt = &#34;2.1-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.1-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-practice&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/h2&gt;
+&lt;p&gt;Answers from last class’ practice problems on base R are posted &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/1.4-r&#34;&gt;on that page&lt;/a&gt;. Today’s “&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/1.5-r&#34;&gt;practice problems&lt;/a&gt;” get you to practice the tools we are working with today. They are again not required, but will help you if you are interested.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 1&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; is posted and is due by class Tuesday September 14. Please see the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/problem-sets&#34;&gt;instructions&lt;/a&gt; for more information on how to submit your assignment (there are multiple ways!).&lt;/p&gt;
+&lt;p&gt;Problem set 2 (on classes 2.1-2.2) will be posted shortly, and will be due by Tuesday September 21.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;math-appendix&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Math Appendix&lt;/h2&gt;
+&lt;div id=&#34;the-summation-operator&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Summation Operator&lt;/h3&gt;
+&lt;p&gt;Many elementary propositions in econometrics (and statistics) involve the use of the sums of numbers. Mathematicians often use the summation operator (the greek letter &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; –“sigma”) as a shorthand, rather than writing everything out the long way. It will be worth your time to understand the summation operator, and some of its properties, and how these can provide shortcuts to proving more advanced theorems in econometrics.&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; be a random variable from which a sample of &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; observations is observed, so we have a sequence &lt;span class=&#34;math inline&#34;&gt;\(\{x_1, x_2,...,x_n\}\)&lt;/span&gt; i.e. $x_i, $ for &lt;span class=&#34;math inline&#34;&gt;\(i=1,2,...,n\)&lt;/span&gt;. Then the total sum of the observations &lt;span class=&#34;math inline&#34;&gt;\((x_1+x_2+...+x_n)\)&lt;/span&gt; can be represented as:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sum_{i=1}^n x_i = x_1+x_2+...+x_n\]&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The term beneath &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; is known as the “index,” which tells us where to begin our adding (at the 1&lt;sup&gt;st&lt;/sup&gt; individual &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; term, &lt;span class=&#34;math inline&#34;&gt;\(x_1\)&lt;/span&gt;)
+&lt;ul&gt;
+&lt;li&gt;Note other letters, such as &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, or &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; may be used (especially if &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; is defined elsewhere)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The term above &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; is the total number of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; terms we should add &lt;span class=&#34;math inline&#34;&gt;\((n)\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Essentially, read &lt;span class=&#34;math inline&#34;&gt;\(\displaystyle \sum_{i=1}^{n} x_i\)&lt;/span&gt; as “add up all the individual &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; observations from the 1&lt;sup&gt;st&lt;/sup&gt; &lt;span class=&#34;math inline&#34;&gt;\((x_1)\)&lt;/span&gt; to the final &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\((x_n)\)&lt;/span&gt;.”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;useful-properties-of-summation-operators&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Useful Properties of Summation Operators&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Rule 1&lt;/strong&gt;: The summation of a constant &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; times a random variable &lt;span class=&#34;math inline&#34;&gt;\(X_i\)&lt;/span&gt; is equal to the constant times the summation of that random variable:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sum_{i=1}^n kX_i = k \sum^n_{i=1} X_i\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Proof:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\sum_{i=1}^n kX_i &amp;amp;= k x_1 + kx_2 +...+ kx_n\\
+&amp;amp;= k(x_1+x_2+...x_n)\\
+&amp;amp;= k\sum_{i=1}^n X_i. \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rule 2&lt;/strong&gt;: The summation of a sum of two random variables is equal to the sum of their summations:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sum_{i=1}^n (X_i+Y_i) = \sum_{i=1}^n X_i + \sum_{i=1}^n Y_i\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Proof:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\sum_{i=1}^n (X_i+Y_i) &amp;amp;=(X_1+Y_1) + (X_2+Y_2) + ... (X_n+Y_n)\\
+&amp;amp;=(X_1+X_2+...+X_n) + (Y_1+Y_2+...+Y_n)\\
+&amp;amp;=\sum_{i=1}^n X_i + \sum_{i=1}^n Y_i\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rule 3&lt;/strong&gt;: The summation of constant over &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; observations is the product of the constant and &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sum_{i=1}^n k = nk\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Proof:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sum_{i=1}^n k = \underbrace{k + k + ... + k}_{n \text{ times}} = nk\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Combining these 3 rules:&lt;/strong&gt; for the sum of a linear combination of a random variable (&lt;span class=&#34;math inline&#34;&gt;\(a+bX\)&lt;/span&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sum_{i=1}^n (a+bX_i) = na+b\sum_{i=1}^n X_i\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Proof: left to you as an exercise!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;advanced-useful-properties-for-regression&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Advanced: Useful Properties for Regression&lt;/h3&gt;
+&lt;p&gt;There are some additional properties of summations that may not be immediately obvious, but will be quite essential in proving properties of linear regressions.&lt;/p&gt;
+&lt;p&gt;Using the properties above, we can describe the &lt;strong&gt;mean&lt;/strong&gt;, &lt;strong&gt;variance&lt;/strong&gt;, and &lt;strong&gt;covariance&lt;/strong&gt; of random variables.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;First, define the mean of a sequence &lt;span class=&#34;math inline&#34;&gt;\(\{X_i: i=1,...,n\}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\{Y_i: i=1,...,n\}\)&lt;/span&gt; as:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\bar{X}=\frac{1}{n}\sum^n_{i=1}X_i\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Second, the variance of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[var(X)=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})^2\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Third, the covariance of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; is:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[cov(X,Y)=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})(Y_i-\bar{Y})\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rule 4&lt;/strong&gt;: The sum of the deviations of observations of &lt;span class=&#34;math inline&#34;&gt;\(X_i\)&lt;/span&gt; from its mean (&lt;span class=&#34;math inline&#34;&gt;\(\bar{X}\)&lt;/span&gt;) is 0:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sum^n_{i=1} (X_i-\bar{X})=0\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Proof:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{x}) &amp;amp;=\sum^n_{i=1}X_i-\sum^n_{i=1}\bar{X} &amp;amp;&amp;amp; \\
+    &amp;amp;=\sum^n_{i=1}X_i-n\bar{X} &amp;amp;&amp;amp; \text{Since $\bar{x}$ is a constant}\\
+    &amp;amp;=n\underbrace{\frac{\displaystyle\sum^n_{i=1}X_i}{n}}_{\bar{X}}-n\bar{X} &amp;amp;&amp;amp; \text{Multiply the first term by }\frac{n}{n}=1\\ 
+    &amp;amp;=n\bar{X}-n\bar{X}&amp;amp;&amp;amp; \text{By the definition of the mean }\bar{X}\\
+    &amp;amp;=0 &amp;amp;&amp;amp;  \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rule 5&lt;/strong&gt;: The squared deviations of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; are equal to the product of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; times its deviations:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sum^n_{i=1} (X_i-\bar{X})^2=\sum^n_{i=1} X_i(X_i-\bar{X})\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Proof:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})^2&amp;amp;=\sum^n_{i=1} (X_i-\bar{X})(X_i-\bar{X})   &amp;amp;&amp;amp; \text{Expanding the square}\\
+    &amp;amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\sum^n_{i=1}\bar{X}(X_i-\bar{X}) &amp;amp;&amp;amp; \text{Breaking apart the first term} \\
+    &amp;amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\bar{X}\sum^n_{i=1}(X_i-\bar{X}) &amp;amp;&amp;amp; \text{Since }\bar{X} \text{ is constant, not depending on } i&amp;#39;s\\
+    &amp;amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\bar{X}(0) &amp;amp;&amp;amp; \text{From rule 4} \\
+    &amp;amp;=\sum^n_{i=1} X_i(X_i-\bar{X}) &amp;amp;&amp;amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rule 6&lt;/strong&gt;: The following summations involving &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; are equivalent:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sum^n_{i=1} Y_i(X_i-\bar{X})=\sum^n_{i=1}X_i(Y_i-\bar{Y})=\sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y})\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Proof:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y}) &amp;amp;=\sum^n_{i=1} Y_i(X_i-\bar{X})-\sum^n_{i=1}\bar{Y}(X_i-\bar{X}) &amp;amp;&amp;amp; \text{Breaking apart the second term} \\
+    &amp;amp;=\sum^n_{i=1} Y_i(X_i-\bar{X})-\bar{Y}(0) &amp;amp;&amp;amp; \text{From rule 4}\\
+    &amp;amp;=\sum^n_{i=1} Y_i(X_i-\bar{X}) &amp;amp;&amp;amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;equivalently:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y}) &amp;amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y})-\sum^n_{i=1}\bar{X}(Y_i-\bar{Y}) &amp;amp;&amp;amp; \text{Breaking apart the first term} \\
+    &amp;amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y})-\bar{X}(0) &amp;amp;&amp;amp; \text{From rule 4}\\
+    &amp;amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y}) &amp;amp;&amp;amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;For more beyond the mere definition, see the appendix on &lt;strong&gt;Covariance and Correlation&lt;/strong&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2.2 — Random Variables and Distributions — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/2.2-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/2.2-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-practice&#34;&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-1&#34;&gt;Problem Set 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#math-appendix-properties-of-expected-value-and-variance&#34;&gt;Math Appendix: Properties of Expected Value and Variance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-appendix-graphing-statistical-and-mathematical-functions-in-r&#34;&gt;R Appendix: Graphing Statistical and Mathematical Functions in R&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#creating-mathematical-functions&#34;&gt;Creating Mathematical Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#graphing-mathematical-functions&#34;&gt;Graphing Mathematical Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#bult-in-statistical-functions&#34;&gt;Bult-in Statistical Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#some-common-examples&#34;&gt;Some common examples:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#graphing-statistical-functions&#34;&gt;Graphing Statistical Functions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Tuesday, September 14, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; is now due. &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/02-problem-set&#34;&gt;Problem Set 2&lt;/a&gt; is due by class Tuesday September 21.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today we finish your crash course/review of basic statistics with random variables and distributions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Math and Probability Background Appendices B-I in Bailey&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now that we return to the statistics, we will do a minimal overview of basic statistics and distributions. Review all of Bailey’s appendices.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.2-slides.html&#34;&gt;&lt;img src =&#34;/slides/2.2-slides.png&#34; alt = &#34;2.2-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.2-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-practice&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/h2&gt;
+&lt;p&gt;Answers from last class’ practice problems on base R are posted &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/1.4-r&#34;&gt;on that page&lt;/a&gt;. Today’s “&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/1.5-r&#34;&gt;practice problems&lt;/a&gt;” get you to practice the tools we are working with today. They are again not required, but will help you if you are interested.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 1&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; is posted and is due by class Tuesday September 14. Please see the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/problem-sets&#34;&gt;instructions&lt;/a&gt; for more information on how to submit your assignment (there are multiple ways!).&lt;/p&gt;
+&lt;p&gt;Problem set 2 (on classes 2.1-2.2) will be posted shortly, and will be due by Tuesday September 21.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;math-appendix-properties-of-expected-value-and-variance&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Math Appendix: Properties of Expected Value and Variance&lt;/h1&gt;
+&lt;p&gt;There are several useful mathematical properties of expected value and variance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Property 1&lt;/strong&gt;: the expected value of a constant is itself, and the variance of a constant is 0.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+E(c)&amp;amp;=c\\
+var(c)&amp;amp;=0\\
+sd(c)&amp;amp;=0\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For any constant, &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Example: &lt;span class=&#34;math inline&#34;&gt;\(E(2)=2\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(var(2)=0\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(sd(2)=0\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Property 2&lt;/strong&gt;: adding or subtracting a constant to a random variable and then taking the mean or variance:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+E(X \pm c)&amp;amp;=E(X) \pm c\\
+var(X \pm c)&amp;amp;=X\\
+sd(X \pm c)&amp;amp;=X\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For any constant, &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Example: &lt;span class=&#34;math inline&#34;&gt;\(E(2+X)=2+E(X)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(var(2+X)=var(X)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(sd(2+X)=sd(X)\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Property 3&lt;/strong&gt;: multiplying a constant to a random variable and then taking the mean or variance:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+E(aX)&amp;amp;=E(X) aE(X)\\
+var(aX)&amp;amp;=a^2var(X)\\
+sd(aX)&amp;amp;=|a|sd(X)\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For any constant, &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Example: &lt;span class=&#34;math inline&#34;&gt;\(E(2X)=2E(X)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(var(2X)=4var(X)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(sd(2X)=2sd(X)\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Property 4&lt;/strong&gt;: the expected value of the sum of two random variables is equal to the sum of each random variable’s expected value:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E(X \pm Y)=E(X) \pm E(Y)\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-appendix-graphing-statistical-and-mathematical-functions-in-r&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R Appendix: Graphing Statistical and Mathematical Functions in R&lt;/h1&gt;
+&lt;p&gt;The &lt;code&gt;mosaic&lt;/code&gt; package is useful for making and using mathematical functions in &lt;code&gt;R&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# install.packages(&amp;quot;mosaic&amp;quot;) install for first use
+library(mosaic) # load &lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;creating-mathematical-functions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Creating Mathematical Functions&lt;/h2&gt;
+&lt;p&gt;You can create custom mathematical functions using mosaic by defining an R &lt;code&gt;function()&lt;/code&gt; with multiple arguments. As a simple example, make the function &lt;span class=&#34;math inline&#34;&gt;\(f(x) = 10x-x^2\)&lt;/span&gt; (with one argument, &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; since it is a univariate function) as follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# store as a named function, I&amp;#39;ll call it &amp;quot;my_function&amp;quot;
+my_function&amp;lt;-function(x){10*x-x^2}
+
+# look at it
+my_function&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## function(x){10*x-x^2}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are some notational requirements from &lt;code&gt;R&lt;/code&gt; for making functions. Any coefficient in front of a variable (such as the 10 in &lt;code&gt;10x&lt;/code&gt; must be explicitly multiplied by the variable, as in &lt;code&gt;10*x&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;To &lt;em&gt;use&lt;/em&gt; the function to calculate its value at a particular value of &lt;code&gt;x&lt;/code&gt;, simply define what the &lt;code&gt;(x)&lt;/code&gt; is and run your named function on it:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# f of 2 
+my_function(2)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 16&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# f of 2 and 4
+my_function(c(2,4))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 16 24&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# f of 2 through 7
+my_function(2:7)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 16 21 24 25 24 21&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# ALTERNATIVELY
+# define x first as a vector and then run function on it
+
+x&amp;lt;-c(2,4)
+my_function(x)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 16 24&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;graphing-mathematical-functions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Graphing Mathematical Functions&lt;/h2&gt;
+&lt;p&gt;In &lt;code&gt;ggplot&lt;/code&gt; there is a dedicated &lt;code&gt;stat_function()&lt;/code&gt; (equivalent to a &lt;code&gt;geom_&lt;/code&gt; layer) to graph mathematical and statistical functions. All that is needed is a &lt;code&gt;data.frame&lt;/code&gt; of a range of &lt;code&gt;x&lt;/code&gt; values to act as the source for &lt;code&gt;data&lt;/code&gt;, and set &lt;code&gt;x&lt;/code&gt; equal to those values for &lt;code&gt;aes&lt;/code&gt;thetics.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ✓ tibble  3.1.4     ✓ purrr   0.3.4
+## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+## ✓ readr   2.0.0     ✓ forcats 0.5.1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x mosaic::count()            masks dplyr::count()
+## x purrr::cross()             masks mosaic::cross()
+## x mosaic::do()               masks dplyr::do()
+## x tidyr::expand()            masks Matrix::expand()
+## x dplyr::filter()            masks stats::filter()
+## x ggstance::geom_errorbarh() masks ggplot2::geom_errorbarh()
+## x dplyr::lag()               masks stats::lag()
+## x tidyr::pack()              masks Matrix::pack()
+## x mosaic::stat()             masks ggplot2::stat()
+## x mosaic::tally()            masks dplyr::tally()
+## x tidyr::unpack()            masks Matrix::unpack()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# x values are integers 1 through 10
+ggplot(data = data.frame(x = 1:10))+
+  aes(x = x)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Then we add the &lt;code&gt;stat_function&lt;/code&gt;, where &lt;code&gt;fun =&lt;/code&gt; is the most important argument where you define the to function to graph as your function created above, for example, our &lt;code&gt;my_function&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = data.frame(x = 1:10))+
+  aes(x = x)+
+  stat_function(fun = my_function) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You can also adjust things like size, color, and line type.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = data.frame(x = 1:10))+
+  aes(x = x)+
+  stat_function(fun = my_function, color = &amp;quot;blue&amp;quot;, size = 2, linetype = &amp;quot;dashed&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bult-in-statistical-functions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Bult-in Statistical Functions&lt;/h2&gt;
+&lt;p&gt;There are some standard statistical distributions built into R. They require a combination of a specific prefix and a distribution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prefixes&lt;/strong&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Action/Type&lt;/th&gt;
+&lt;th&gt;Prefix&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;random draw&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;r&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;density (pdf)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;d&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;cumulative density (cdf)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;p&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;quantile (inverse cdf)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;q&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Distributions&lt;/strong&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Distribution&lt;/th&gt;
+&lt;th&gt;Name in R&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Normal&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;norm&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Uniform&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;unif&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Student’s t&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;t&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Binomial&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;binom&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Negative binomial&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;nbinom&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Hypergeometric&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;hyper&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Weibull&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;weibull&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Beta&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;beta&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Gamma&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;gamma&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Thus, what you want is a combination of the prefix and the distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;some-common-examples&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Some common examples:&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Take random draws from a normal distribution:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rnorm(n = 10, # take 10 draws from a normal distribution with:
+      mean = 2, # mean of 2
+      sd = 1) # sd of 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1]  0.8751869 -0.4419529  2.3895923  2.3047174  2.0611704  2.2500649
+##  [7]  0.7357762  2.6753682  3.2938103  2.5212611&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Get probability of a random variable being less than or equal to a value (cdf) from a normal distribution:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# find probability of area to the LEFT of a number on pdf (note this = cdf of that number!)
+pnorm(q = 80, # number is 80 from a distribution where: 
+      mean = 200, # mean is 100
+      sd = 100, # sd is 100
+      lower.tail = TRUE) # looking to the LEFT in lower tail&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.1150697&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Find the value of a distribution that is a specified percentile.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# find the 38th percentile value
+qnorm(p = 0.38, # 38th percentile from a distribution where:
+      mean = 200, # mean is 200
+      sd = 100) # sd is 100&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 169.4519&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;graphing-statistical-functions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Graphing Statistical Functions&lt;/h2&gt;
+&lt;p&gt;You can also graph these commonly used statistical functions by setting &lt;code&gt;fun =&lt;/code&gt; the named functions in your &lt;code&gt;stat_function()&lt;/code&gt; layer. If you want to specify the mean and standard deviation, use &lt;code&gt;args = list()&lt;/code&gt; to include the required arguments from the named function above (e.g. &lt;code&gt;dnorm&lt;/code&gt; needs &lt;code&gt;mean&lt;/code&gt; and &lt;code&gt;sd&lt;/code&gt;).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = data.frame(x = -400:600))+
+  aes(x = x)+
+  stat_function(fun = dnorm, args = list(mean = 200, sd = 200), color = &amp;quot;blue&amp;quot;, size = 2, linetype = &amp;quot;dashed&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If you don’t include this, it will graph the standard distribution:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = data.frame(x = -4:4))+
+  aes(x = x)+
+  stat_function(fun = dnorm, color = &amp;quot;blue&amp;quot;, size = 2, linetype = &amp;quot;dashed&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;To add shading under a distribution, simply add a duplicate of the &lt;code&gt;stat_function()&lt;/code&gt; layer, but add &lt;code&gt;geom=&#34;area&#34;&lt;/code&gt; to indicate the area beneath the function should be filled, and you can limit the domain of the &lt;code&gt;fill&lt;/code&gt; with &lt;code&gt;xlim=c(start,end)&lt;/code&gt;, where &lt;code&gt;start&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt; are the x-values for the endpoints of the &lt;code&gt;fill.&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# graph normal distribution and shade area between -2 and 2
+ggplot(data = data.frame(x = -4:4))+
+  aes(x = x)+
+  stat_function(fun = dnorm, color = &amp;quot;blue&amp;quot;, size = 2, linetype = &amp;quot;dashed&amp;quot;)+
+  stat_function(fun = dnorm, xlim = c(-2,2), geom = &amp;quot;area&amp;quot;, fill = &amp;quot;green&amp;quot;, alpha=0.5)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Hence, here is one graph from my slides:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = tibble(x=35:115))+
+  aes(x = x)+
+  stat_function(fun = dnorm, args = list(mean = 75, sd = 10), size = 2, color=&amp;quot;blue&amp;quot;)+
+  stat_function(fun = dnorm, args = list(mean = 75, sd = 10), geom = &amp;quot;area&amp;quot;, xlim = c(65,85), fill=&amp;quot;blue&amp;quot;, alpha=0.5)+
+  labs(x = &amp;quot;X&amp;quot;,
+       y = &amp;quot;Probability&amp;quot;)+
+  scale_x_continuous(breaks = seq(35,115,5))+
+  theme_classic(base_family = &amp;quot;Fira Sans Condensed&amp;quot;,
+           base_size=20)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>

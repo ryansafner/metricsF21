@@ -22,14 +22,14 @@
   
   
 
-  <meta name="author" content="Michael Vahn">
+  <meta name="author" content="Ryan Safner">
 
   
   
   
     
   
-  <meta name="description" content="Overview  Readings  Slides  Assignments  Exam 1 Week of Mar 1     Section 1: Wednesday, March 3, 2021 Section 2: Thursday, March 11, 20211   Overview Today we start looking on the supply side of the market for the next few weeks. You will ultimately see, we will use the same tools (and get basically the same results!) for studying producers (constrained optimization models) as we did for consumers.">
+  <meta name="description" content="Overview  Readings  R Practice  Assignments  Problem Set 1  Math Appendix  The Summation Operator Useful Properties of Summation Operators Advanced: Useful Properties for Regression     Thursday, September 9, 2021    Problem Set 1 is due by class Tuesday September 14 via Blackboard Assignments.    Overview Today we begin with a review and overview of using data and descriptive statistics.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://metricsf21.classes.ryansafner.com/content/2.1-content/">
@@ -85,7 +85,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.9f29d7dcb9767380c9efc051a1731b43.css">
+  <link rel="stylesheet" href="/css/academia.min.0c527bc9fd0ba6033034eb84176a3cc2.css">
 
   
 
@@ -113,13 +113,13 @@
   
   <meta property="og:site_name" content="ECON 480 — Econometrics">
   <meta property="og:url" content="https://metricsf21.classes.ryansafner.com/content/2.1-content/">
-  <meta property="og:title" content="2.1 — Production, Specialization, and Firms — Class Content | ECON 480 — Econometrics">
-  <meta property="og:description" content="Overview  Readings  Slides  Assignments  Exam 1 Week of Mar 1     Section 1: Wednesday, March 3, 2021 Section 2: Thursday, March 11, 20211   Overview Today we start looking on the supply side of the market for the next few weeks. You will ultimately see, we will use the same tools (and get basically the same results!) for studying producers (constrained optimization models) as we did for consumers."><meta property="og:image" content="https://metricsf21.classes.ryansafner.com/img/icon-192.png">
+  <meta property="og:title" content="2.1 — Data 101 &amp; Descriptive Statistics — Class Content | ECON 480 — Econometrics">
+  <meta property="og:description" content="Overview  Readings  R Practice  Assignments  Problem Set 1  Math Appendix  The Summation Operator Useful Properties of Summation Operators Advanced: Useful Properties for Regression     Thursday, September 9, 2021    Problem Set 1 is due by class Tuesday September 14 via Blackboard Assignments.    Overview Today we begin with a review and overview of using data and descriptive statistics."><meta property="og:image" content="https://metricsf21.classes.ryansafner.com/img/icon-192.png">
   <meta property="twitter:image" content="https://metricsf21.classes.ryansafner.com/img/icon-192.png"><meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2020-06-08T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2021-07-20T15:17:55-04:00">
+  <meta property="article:modified_time" content="2021-09-09T10:32:03-04:00">
   
 
   
@@ -131,7 +131,7 @@
 
 
 
-  <title>2.1 — Production, Specialization, and Firms — Class Content | ECON 480 — Econometrics</title>
+  <title>2.1 — Data 101 &amp; Descriptive Statistics — Class Content | ECON 480 — Econometrics</title>
 
 </head>
 
@@ -225,7 +225,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link  active" href="/content/"><span>Content</span></a>
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
         </li>
 
         
@@ -247,7 +247,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+          <a class="nav-link  active" href="/content/"><span>Content</span></a>
         </li>
 
         
@@ -315,7 +315,31 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>Rstudio.Cloud</span></a>
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span><i class="fas fa-cloud"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://hoodcollegeeconomics.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
         </li>
 
         
@@ -376,35 +400,27 @@
       </li>
       
       <li >
-        <a href="/content/1.2-content/">1.2 — Budget Constraint</a>
+        <a href="/content/1.2-content/">1.2 — Meet R</a>
       </li>
       
       <li >
-        <a href="/content/1.3-content/">1.3 — Preferences</a>
+        <a href="/content/1.3-content/">1.3 — Data Visualization with ggplot2</a>
       </li>
       
       <li >
-        <a href="/content/1.4-content/">1.4 — Utility Maximization</a>
+        <a href="/content/1.4-content/">1.4 — Data Wrangling in the tidyverse</a>
       </li>
       
       <li >
-        <a href="/content/1.5-content/">1.5 — Demand</a>
-      </li>
-      
-      <li >
-        <a href="/content/1.6-content/">1.6 — Income and Substitution Effects</a>
-      </li>
-      
-      <li >
-        <a href="/content/1.65-content/">1.65 — Income and Substitution Effects</a>
-      </li>
-      
-      <li >
-        <a href="/content/1.7-content/">1.7 — Price Elasticity</a>
+        <a href="/content/1.5-content/">1.5 — Optimize Your Workflow</a>
       </li>
       
       <li class="active">
-        <a href="/content/2.1-content/">2.1 — Production, Specialization, and Firms</a>
+        <a href="/content/2.1-content/">2.1 — Data 101 &amp; Descriptive Statistics</a>
+      </li>
+      
+      <li >
+        <a href="/content/2.2-content/">2.2 — Random Variables &amp; Distributions</a>
       </li>
       
     </ul>
@@ -424,7 +440,7 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">2.1 — Production, Specialization, and Firms — Class Content</h1>
+          <h1 itemprop="name">2.1 — Data 101 &amp; Descriptive Statistics — Class Content</h1>
 
           <div class="article-style" itemprop="articleBody">
             
@@ -434,49 +450,156 @@
 <ul>
 <li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
 <li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
-<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
 <li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
 <ul>
-<li><a href="#exam-1-week-of-mar-1">Exam 1 Week of Mar 1</a></li>
+<li><a href="#problem-set-1">Problem Set 1</a></li>
+</ul></li>
+<li><a href="#math-appendix">Math Appendix</a>
+<ul>
+<li><a href="#the-summation-operator">The Summation Operator</a></li>
+<li><a href="#useful-properties-of-summation-operators">Useful Properties of Summation Operators</a></li>
+<li><a href="#advanced-useful-properties-for-regression">Advanced: Useful Properties for Regression</a></li>
 </ul></li>
 </ul>
 </div>
 
-<ul>
-<li>Section 1: <em>Wednesday, March 3, 2021</em></li>
-<li>Section 2: <em>Thursday, March 11, 2021</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></li>
-</ul>
-<div id="overview" class="section level1">
-<h1><i class="fas fa-info-circle fa-lg"></i> Overview</h1>
-<p>Today we start looking on the supply side of the market for the next few weeks. You will ultimately see, we will use the same tools (and get basically the same results!) for studying producers (constrained optimization models) as we did for consumers. Sometimes, these models finally “click” for students the second time around, and production is often more intuitive than utility and consumption.</p>
-<p>Today we set up the problem, and discuss what it is that firms do. If you want to learn a lot more about the economics of organization and theory of the firm, see my <a href="https://ios20.classes.ryansafner.com">Industrial Organization class</a>.</p>
-<p>In the beginning, I introduce the canonical model of comparative advantage as a way to explore a lot of insights about production, the division of labor, specialization and trade, and the theory of the firm. Do not get too distracted in the graphs or mechanics of this model (though it should echo things that we have seen before), it is only a useful segue for what we will cover in the next 2-3 weeks. If you want to know more, I do a deep dive with these models to explain <a href="https://tradef20.classes.ryansafner.com">international trade in ECON 324</a>.</p>
+<p><div class="alert alert-note">
+  <div>
+    <em>Thursday, September 9, 2021</em>
+  </div>
 </div>
-<div id="readings" class="section level1">
-<h1><i class="fas fa-book-reader fa-lg"></i> Readings</h1>
+</p>
+<p><div class="alert alert-warning">
+  <div>
+    <a href="/assignments/01-problem-set">Problem Set 1</a> is due by class Tuesday September 14 via Blackboard Assignments.
+  </div>
+</div>
+</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we begin with a review and overview of using data and descriptive statistics. We want to quantify characteristics about samples as <em>statistics</em>, which we will later use to <em>infer</em> things about populations (between which we will later <em>identify</em> causal relationships).</p>
+<p>Next class will be on random variables and distributions. This full week is your crash course/review of basic statistics that we will need to start the “meat and potatoes” of this class: linear regression next Thursday As such, I’ll give you a brief homework next week to review these statistical concepts (with minimal use of <code>R</code>!).</p>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
 <ul>
-<li><i class="fas fa-book"></i> Ch. 14.4<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, 6.1, in Goolsbee, Levitt, and Syverson, 2019</li>
+<li><i class="fas fa-book"></i> Math and Probability Background Appendix A in Bailey</li>
+</ul>
+<p>Now that we return to the statistics, we will do a minimal overview of basic statistics and distributions. Review Bailey’s appendices. Today, only A is really useful, the rest will come next class.</p>
+<p>Chapter 2 is optional, but will give you a good overview of using data.
+## <i class="fas fa-chalkboard-teacher"></i> Slides</p>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>
+<p style="text-align:center;"><a target="_blank" href="/slides/2.1-slides.html"><img src ="/slides/2.1-slides.png" alt = "2.1-slides"></a></p>
+<p style="text-align:center;"><a class="btn btn-primary btn-lg" target="_blank" href="/slides/2.1-slides.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a></p>
+</p>
+</div>
+<div id="r-practice" class="section level2">
+<h2><i class="fas fa-registered"></i> R Practice</h2>
+<p>Answers from last class’ practice problems on base R are posted <a href="/r/1.4-r">on that page</a>. Today’s “<a href="/r/1.5-r">practice problems</a>” get you to practice the tools we are working with today. They are again not required, but will help you if you are interested.</p>
+</div>
+<div id="assignments" class="section level2">
+<h2><i class="fas fa-laptop-code"></i> Assignments</h2>
+<div id="problem-set-1" class="section level3">
+<h3>Problem Set 1</h3>
+<p><a href="/assignments/01-problem-set">Problem Set 1</a> is posted and is due by class Tuesday September 14. Please see the <a href="/assignments/problem-sets">instructions</a> for more information on how to submit your assignment (there are multiple ways!).</p>
+<p>Problem set 2 (on classes 2.1-2.2) will be posted shortly, and will be due by Tuesday September 21.</p>
+</div>
+</div>
+<div id="math-appendix" class="section level2">
+<h2>Math Appendix</h2>
+<div id="the-summation-operator" class="section level3">
+<h3>The Summation Operator</h3>
+<p>Many elementary propositions in econometrics (and statistics) involve the use of the sums of numbers. Mathematicians often use the summation operator (the greek letter <span class="math inline">\(\Sigma\)</span> –“sigma”) as a shorthand, rather than writing everything out the long way. It will be worth your time to understand the summation operator, and some of its properties, and how these can provide shortcuts to proving more advanced theorems in econometrics.</p>
+<p>Let <span class="math inline">\(X\)</span> be a random variable from which a sample of <span class="math inline">\(n\)</span> observations is observed, so we have a sequence <span class="math inline">\(\{x_1, x_2,...,x_n\}\)</span> i.e. $x_i, $ for <span class="math inline">\(i=1,2,...,n\)</span>. Then the total sum of the observations <span class="math inline">\((x_1+x_2+...+x_n)\)</span> can be represented as:</p>
+<p><span class="math display">\[\sum_{i=1}^n x_i = x_1+x_2+...+x_n\]</span></p>
+<ul>
+<li>The term beneath <span class="math inline">\(\Sigma\)</span> is known as the “index,” which tells us where to begin our adding (at the 1<sup>st</sup> individual <span class="math inline">\(x\)</span> term, <span class="math inline">\(x_1\)</span>)
+<ul>
+<li>Note other letters, such as <span class="math inline">\(j\)</span>, or <span class="math inline">\(k\)</span> may be used (especially if <span class="math inline">\(i\)</span> is defined elsewhere)</li>
+</ul></li>
+<li>The term above <span class="math inline">\(\Sigma\)</span> is the total number of <span class="math inline">\(x\)</span> terms we should add <span class="math inline">\((n)\)</span></li>
+<li>Essentially, read <span class="math inline">\(\displaystyle \sum_{i=1}^{n} x_i\)</span> as “add up all the individual <span class="math inline">\(x\)</span> observations from the 1<sup>st</sup> <span class="math inline">\((x_1)\)</span> to the final <span class="math inline">\(n\)</span> <span class="math inline">\((x_n)\)</span>.”</li>
 </ul>
 </div>
-<div id="slides" class="section level1">
-<h1><i class="fas fa-chalkboard-teacher"></i> Slides</h1>
-<p><a href="/slides/2.1-slides.html"><img src="/slides/2.1-slides.png" /></a></p>
-<ul>
-<li><a href="/slides/2.1-slides.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a></li>
-</ul>
+<div id="useful-properties-of-summation-operators" class="section level3">
+<h3>Useful Properties of Summation Operators</h3>
+<p><strong>Rule 1</strong>: The summation of a constant <span class="math inline">\(k\)</span> times a random variable <span class="math inline">\(X_i\)</span> is equal to the constant times the summation of that random variable:</p>
+<p><span class="math display">\[\sum_{i=1}^n kX_i = k \sum^n_{i=1} X_i\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+\sum_{i=1}^n kX_i &amp;= k x_1 + kx_2 +...+ kx_n\\
+&amp;= k(x_1+x_2+...x_n)\\
+&amp;= k\sum_{i=1}^n X_i. \\
+\end{align*}\]</span></p>
+<p><strong>Rule 2</strong>: The summation of a sum of two random variables is equal to the sum of their summations:</p>
+<p><span class="math display">\[\sum_{i=1}^n (X_i+Y_i) = \sum_{i=1}^n X_i + \sum_{i=1}^n Y_i\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+\sum_{i=1}^n (X_i+Y_i) &amp;=(X_1+Y_1) + (X_2+Y_2) + ... (X_n+Y_n)\\
+&amp;=(X_1+X_2+...+X_n) + (Y_1+Y_2+...+Y_n)\\
+&amp;=\sum_{i=1}^n X_i + \sum_{i=1}^n Y_i\\
+\end{align*}\]</span></p>
+<p><strong>Rule 3</strong>: The summation of constant over <span class="math inline">\(n\)</span> observations is the product of the constant and <span class="math inline">\(n\)</span>:</p>
+<p><span class="math display">\[\sum_{i=1}^n k = nk\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\sum_{i=1}^n k = \underbrace{k + k + ... + k}_{n \text{ times}} = nk\]</span></p>
+<p><strong>Combining these 3 rules:</strong> for the sum of a linear combination of a random variable (<span class="math inline">\(a+bX\)</span>):</p>
+<p><span class="math display">\[\sum_{i=1}^n (a+bX_i) = na+b\sum_{i=1}^n X_i\]</span></p>
+<p>Proof: left to you as an exercise!</p>
 </div>
-<div id="assignments" class="section level1">
-<h1><i class="fas fa-laptop-code"></i> Assignments</h1>
-<div id="exam-1-week-of-mar-1" class="section level2">
-<h2>Exam 1 Week of Mar 1</h2>
-<p><a href="/assignments/01-exam">Exam 1</a> (on 1.1-1.7) is currently available on Blackboard Assignments, and is due by 11:59 PM Sunday March 7 (for Section 1 M/W) or Wednesday March 10 (for Section 2 Tu/Th).</p>
+<div id="advanced-useful-properties-for-regression" class="section level3">
+<h3>Advanced: Useful Properties for Regression</h3>
+<p>There are some additional properties of summations that may not be immediately obvious, but will be quite essential in proving properties of linear regressions.</p>
+<p>Using the properties above, we can describe the <strong>mean</strong>, <strong>variance</strong>, and <strong>covariance</strong> of random variables.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>First, define the mean of a sequence <span class="math inline">\(\{X_i: i=1,...,n\}\)</span> and <span class="math inline">\(\{Y_i: i=1,...,n\}\)</span> as:</p>
+<p><span class="math display">\[\bar{X}=\frac{1}{n}\sum^n_{i=1}X_i\]</span></p>
+<p>Second, the variance of <span class="math inline">\(X\)</span> is:</p>
+<p><span class="math display">\[var(X)=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})^2\]</span></p>
+<p>Third, the covariance of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> is:</p>
+<p><span class="math display">\[cov(X,Y)=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})(Y_i-\bar{Y})\]</span></p>
+<p><strong>Rule 4</strong>: The sum of the deviations of observations of <span class="math inline">\(X_i\)</span> from its mean (<span class="math inline">\(\bar{X}\)</span>) is 0:</p>
+<p><span class="math display">\[\sum^n_{i=1} (X_i-\bar{X})=0\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{x}) &amp;=\sum^n_{i=1}X_i-\sum^n_{i=1}\bar{X} &amp;&amp; \\
+    &amp;=\sum^n_{i=1}X_i-n\bar{X} &amp;&amp; \text{Since $\bar{x}$ is a constant}\\
+    &amp;=n\underbrace{\frac{\displaystyle\sum^n_{i=1}X_i}{n}}_{\bar{X}}-n\bar{X} &amp;&amp; \text{Multiply the first term by }\frac{n}{n}=1\\ 
+    &amp;=n\bar{X}-n\bar{X}&amp;&amp; \text{By the definition of the mean }\bar{X}\\
+    &amp;=0 &amp;&amp;  \\
+\end{align*}\]</span></p>
+<p><strong>Rule 5</strong>: The squared deviations of <span class="math inline">\(X\)</span> are equal to the product of <span class="math inline">\(X\)</span> times its deviations:</p>
+<p><span class="math display">\[\sum^n_{i=1} (X_i-\bar{X})^2=\sum^n_{i=1} X_i(X_i-\bar{X})\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})^2&amp;=\sum^n_{i=1} (X_i-\bar{X})(X_i-\bar{X})   &amp;&amp; \text{Expanding the square}\\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\sum^n_{i=1}\bar{X}(X_i-\bar{X}) &amp;&amp; \text{Breaking apart the first term} \\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\bar{X}\sum^n_{i=1}(X_i-\bar{X}) &amp;&amp; \text{Since }\bar{X} \text{ is constant, not depending on } i&#39;s\\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\bar{X}(0) &amp;&amp; \text{From rule 4} \\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X}) &amp;&amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]</span></p>
+<p><strong>Rule 6</strong>: The following summations involving <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are equivalent:</p>
+<p><span class="math display">\[\sum^n_{i=1} Y_i(X_i-\bar{X})=\sum^n_{i=1}X_i(Y_i-\bar{Y})=\sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y})\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y}) &amp;=\sum^n_{i=1} Y_i(X_i-\bar{X})-\sum^n_{i=1}\bar{Y}(X_i-\bar{X}) &amp;&amp; \text{Breaking apart the second term} \\
+    &amp;=\sum^n_{i=1} Y_i(X_i-\bar{X})-\bar{Y}(0) &amp;&amp; \text{From rule 4}\\
+    &amp;=\sum^n_{i=1} Y_i(X_i-\bar{X}) &amp;&amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]</span></p>
+<p>equivalently:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y}) &amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y})-\sum^n_{i=1}\bar{X}(Y_i-\bar{Y}) &amp;&amp; \text{Breaking apart the first term} \\
+    &amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y})-\bar{X}(0) &amp;&amp; \text{From rule 4}\\
+    &amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y}) &amp;&amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]</span></p>
 </div>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Section 2, because of no class on Thursday Feb 18 and Tuesday Mar 9, is 2 classes behind Section 1.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>On the production possibilities frontier.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p>For more beyond the mere definition, see the appendix on <strong>Covariance and Correlation</strong><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 
@@ -495,9 +618,15 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/content/1.7-content/" rel="next">1.7 — Price Elasticity — Class Content</a>
+    <a href="/content/1.5-content/" rel="next">1.5 — Optimize Your Workflow with Projects, Markdown, and Git — Class Content</a>
   </div>
   
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/content/2.2-content/" rel="prev">2.2 — Random Variables and Distributions — Class Content</a>
+  </div>
   
 </div>
 
@@ -506,7 +635,7 @@
         </div>
 
         <div class="body-footer">
-          Last updated on Jul 20, 2021
+          Last updated on Sep 9, 2021
         </div>
 
       </article>
@@ -517,9 +646,7 @@
       <div class="col-md-6">
         
         <p>
-          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> 2021 by Ryan Safner &middot; 
-          Powered by
-          <a href="https://gethugothemes.com" target="_blank" rel="noopener">Gethugothemes</a>
+          Content <i class="fab fa-creative-commons"></i> 2021 <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a></a> <a href="https://ryansafner.com">Ryan Safner</a> &middot; <a href="Credits">Credits</a> &middot; Powered by <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a href="https://gohugo.io/">Hugo</a>
         </p>
       </div>
       <div class="col-md-6">

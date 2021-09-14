@@ -40,7 +40,9 @@ lessons:
     slides: "2.1-slides"
 
   - title: "2.2 — Random Variables and Distributions"
-
+    content: "2.2-content"
+    slides: "2.2-slides"
+    
   - title: '<i content="fas fa-laptop-code"></i> **Problem Set 2** due Tues Sep 21'
 
   - title: "2.3 — OLS Linear Regression"

@@ -19,7 +19,7 @@ slides: "2.1-slides"
 {{% /alert %}}
 
 {{% alert warning %}}
-[Problem Set 1](/assignments/01-problem-set) is due by **DATE**. 
+[Problem Set 1](/assignments/01-problem-set) is due by class Tuesday September 14 via Blackboard Assignments. 
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview

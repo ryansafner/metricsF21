@@ -1,0 +1,114 @@
+---
+title: "Problem Set 2"
+draft: false
+linktitle: "Problem Set 2"
+date: "2020-06-08"
+menu:
+  assignments:
+    parent: Problem Sets
+    weight: 3
+type: docs
+#output:
+#  blogdown::html_page:
+#    toc: true
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>{{% alert note %}}
+Please submit on Blackboard Assignments by class on Tuesday September 21.
+{{% /alert %}}</p>
+<p><strong>Check back later for downloading this assignment in various formats</strong></p>
+<p>Please read the <a href="/assignments/problem-sets">instructions</a> for completing homeworks.</p>
+<div id="theory-and-concepts" class="section level1">
+<h1>Theory and Concepts</h1>
+<div id="question-1" class="section level2">
+<h2>Question 1</h2>
+<p>In your own words, explain the difference between endogeneity and exogeneity.</p>
+</div>
+<div id="question-2" class="section level2">
+<h2>Question 2</h2>
+<div id="part-a" class="section level3">
+<h3>Part A</h3>
+<p>In your own words, explain what (sample) standard deviation <em>means</em>.</p>
+</div>
+<div id="part-b" class="section level3">
+<h3>Part B</h3>
+<p>In your own words, explain how (sample) standard deviation <em>is calculated.</em> You may also write the formula, but it is not necessary.</p>
+</div>
+</div>
+</div>
+<div id="problems" class="section level1">
+<h1>Problems</h1>
+<p>For the remaining questions, you may use <code>R</code> to <em>verify</em>, but please calculate all sample statistics by hand and show all work.</p>
+<div id="question-3" class="section level2">
+<h2>Question 3</h2>
+<p>Suppose you have a very small class of four students that all take a quiz. Their scores are reported as follows:</p>
+<p><span class="math display">\[\{83, 92, 72, 81\}\]</span></p>
+<div id="part-a-1" class="section level3">
+<h3>Part A</h3>
+<p>Calculate the median.</p>
+</div>
+<div id="part-b-1" class="section level3">
+<h3>Part B</h3>
+<p>Calculate the sample mean, <span class="math inline">\(\bar{x}\)</span>.</p>
+</div>
+<div id="part-c" class="section level3">
+<h3>Part C</h3>
+<p>Calculate the sample standard deviation, <span class="math inline">\(s\)</span>.</p>
+</div>
+<div id="part-d" class="section level3">
+<h3>Part D</h3>
+<p>Make or sketch a rough histogram of this data, with the size of each bin being 10 (i.e. 70’s, 80’s, 90’s, 100’s). You can draw this by hand or use <code>R</code>. [If you are using <code>ggplot</code>, you want to use <code>+geom_histogram(breaks=seq(start,end,by))</code> and add <code>+scale_x_continuous(breaks=seq(start,end,by))</code>. For each, it creates bins in the histogram, and ticks on the x axis by creating a <code>seq</code>uence starting at <code>start</code> (a number), ending at <code>end</code> (number), <code>by</code> a certain interval (i.e. by <code>10</code>s.).] Is this distribution roughly symmetric or skewed? What would we expect about the mean and the median?</p>
+</div>
+<div id="part-e" class="section level3">
+<h3>Part E</h3>
+<p>Suppose instead the person who got the 72 did not show up that day to class, and got a 0 instead. Recalculate the mean and median. What happened and why?</p>
+</div>
+</div>
+<div id="question-4" class="section level2">
+<h2>Question 4</h2>
+<p>Suppose the probabilities of a visitor to Amazon’s website buying 0, 1, or 2 books are 0.2, 0.4, and 0.4 respectively.</p>
+<div id="part-a-2" class="section level3">
+<h3>Part A</h3>
+<p>Calculate the <em>expected number</em> of books a visitor will purchase.</p>
+</div>
+<div id="part-b-2" class="section level3">
+<h3>Part B</h3>
+<p>Calculate the <em>standard deviation</em> of book purchases.</p>
+</div>
+<div id="part-c-1" class="section level3">
+<h3>Part C</h3>
+<p><strong>Bonus</strong>: try doing this in <code>R</code> by making an initial dataframe of the data, and then making new columns to the “table” like we did in class.</p>
+</div>
+</div>
+<div id="question-5" class="section level2">
+<h2>Question 5</h2>
+<p>Scores on the SAT (out of 1600) are approximately normally distributed with a mean of 500 and standard deviation of 100.</p>
+<div id="part-a-3" class="section level3">
+<h3>Part A</h3>
+<p>What is the probability of getting a score between a 400 and a 600?</p>
+</div>
+<div id="part-b-3" class="section level3">
+<h3>Part B</h3>
+<p>What is the probability of getting a score between a 300 and a 700?</p>
+</div>
+<div id="part-c-2" class="section level3">
+<h3>Part C</h3>
+<p>What is the probability of getting <em>at least</em> a 700?</p>
+</div>
+<div id="part-d-1" class="section level3">
+<h3>Part D</h3>
+<p>What is the probability of getting <em>at most</em> a 700?</p>
+</div>
+<div id="part-e-1" class="section level3">
+<h3>Part E</h3>
+<p>What is the probability of getting exactly a 500?</p>
+</div>
+</div>
+<div id="question-6" class="section level2">
+<h2>Question 6</h2>
+<p>Redo problem 5 by using the <code>pnorm()</code> command in <code>R</code>. [Hint: This function has four arguments: 1. the value of the random variable, 2. the mean of the distribution, 3. the sd of the distribution, and 4. <code>lower.tail</code> <code>TRUE</code> or <code>FALSE</code>.]</p>
+</div>
+</div>

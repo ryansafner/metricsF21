@@ -1,0 +1,4051 @@
+year,ISO,country,ef_index,rank,continent
+2018,ALB,Albania,7.8,26,Europe
+2018,DZA,Algeria,4.97,157,Africa
+2018,AGO,Angola,4.75,159,Africa
+2018,ARG,Argentina,5.78,144,Americas
+2018,ARM,Armenia,7.92,18,Asia
+2018,AUS,Australia,8.23,5,Oceania
+2018,AUT,Austria,7.8,26,Europe
+2018,AZE,Azerbaijan,6.37,112,Asia
+2018,BHS,"Bahamas, The",7.62,39,Americas
+2018,BHR,Bahrain,7.16,70,Asia
+2018,BGD,Bangladesh,6.04,133,Asia
+2018,BRB,Barbados,6.22,122,Americas
+2018,BLR,Belarus,6.35,114,Europe
+2018,BEL,Belgium,7.56,49,Europe
+2018,BLZ,Belize,6.6,101,Americas
+2018,BEN,Benin,6.2,125,Africa
+2018,BTN,Bhutan,6.63,98,Asia
+2018,BOL,Bolivia,6.3,116,Americas
+2018,BIH,Bosnia and Herzegovina,6.9,82,Europe
+2018,BWA,Botswana,7.6,43,Africa
+2018,BRA,Brazil,6.56,105,Americas
+2018,BRN,Brunei Darussalam,6.6,101,Asia
+2018,BGR,Bulgaria,7.74,32,Europe
+2018,BFA,Burkina Faso,5.85,139,Africa
+2018,BDI,Burundi,5.94,134,Africa
+2018,CPV,Cabo Verde,7.41,56,Africa
+2018,KHM,Cambodia,7.28,63,Asia
+2018,CMR,Cameroon,5.85,139,Africa
+2018,CAN,Canada,8.17,9,Americas
+2018,CAF,Central African Republic,5.27,153,Africa
+2018,TCD,Chad,5.71,145,Africa
+2018,CHL,Chile,7.96,14,Americas
+2018,CHN,China,6.21,124,Asia
+2018,COL,Colombia,6.71,92,Americas
+2018,COD,"Congo, Dem. Rep.",5.15,154,Africa
+2018,COG,"Congo, Rep.",5.03,156,Africa
+2018,CRI,Costa Rica,7.62,39,Americas
+2018,CIV,Cote d'Ivoire,6.09,128,Africa
+2018,HRV,Croatia,7.36,61,Europe
+2018,CYP,Cyprus,7.84,22,Asia
+2018,CZE,Czech Republic,7.81,25,Europe
+2018,DNK,Denmark,8.1,11,Europe
+2018,DOM,Dominican Republic,7.58,46,Americas
+2018,ECU,Ecuador,6.46,110,Americas
+2018,EGY,"Egypt, Arab Rep.",5.38,152,Africa
+2018,SLV,El Salvador,7.41,56,Americas
+2018,EST,Estonia,7.96,14,Europe
+2018,SWZ,Eswatini,6.27,119,Africa
+2018,ETH,Ethiopia,5.61,146,Africa
+2018,FJI,Fiji,6.5,108,Oceania
+2018,FIN,Finland,7.76,29,Europe
+2018,FRA,France,7.4,58,Europe
+2018,GAB,Gabon,5.86,138,Africa
+2018,GMB,"Gambia, The",7.14,72,Africa
+2018,GEO,Georgia,8.18,8,Asia
+2018,DEU,Germany,7.85,21,Europe
+2018,GHA,Ghana,6.65,96,Africa
+2018,GRC,Greece,6.71,92,Europe
+2018,GTM,Guatemala,7.7,35,Americas
+2018,GIN,Guinea,5.57,148,Africa
+2018,GNB,Guinea-Bissau,5.46,150,Africa
+2018,GUY,Guyana,6.68,95,Americas
+2018,HTI,Haiti,6.58,104,Americas
+2018,HND,Honduras,7.28,63,Americas
+2018,HKG,"Hong Kong SAR, China",8.94,1,Asia
+2018,HUN,Hungary,7.44,53,Europe
+2018,ISL,Iceland,7.71,34,Europe
+2018,IND,India,6.56,105,Asia
+2018,IDN,Indonesia,7.39,59,Asia
+2018,IRN,"Iran, Islamic Rep.",4.8,158,Asia
+2018,IRQ,Iraq,5.61,146,Asia
+2018,IRL,Ireland,8.13,10,Europe
+2018,ISR,Israel,7.62,39,Asia
+2018,ITA,Italy,7.51,51,Europe
+2018,JAM,Jamaica,7.69,36,Americas
+2018,JPN,Japan,7.88,20,Asia
+2018,JOR,Jordan,7.62,39,Asia
+2018,KAZ,Kazakhstan,7.12,73,Asia
+2018,KEN,Kenya,6.84,86,Africa
+2018,KOR,"Korea, Rep.",7.69,36,Asia
+2018,KWT,Kuwait,6.6,101,Asia
+2018,KGZ,Kyrgyz Republic,6.99,78,Asia
+2018,LAO,Lao PDR,6.62,99,Asia
+2018,LVA,Latvia,7.89,19,Europe
+2018,LBN,Lebanon,6.88,83,Asia
+2018,LSO,Lesotho,6.65,96,Africa
+2018,LBR,Liberia,6.28,118,Africa
+2018,LBY,Libya,4.72,160,Africa
+2018,LTU,Lithuania,8.1,11,Europe
+2018,LUX,Luxembourg,7.75,31,Europe
+2018,MDG,Madagascar,6.2,125,Africa
+2018,MWI,Malawi,5.79,143,Africa
+2018,MYS,Malaysia,7.58,46,Asia
+2018,MLI,Mali,5.93,136,Africa
+2018,MLT,Malta,7.94,16,Europe
+2018,MRT,Mauritania,6.22,122,Africa
+2018,MUS,Mauritius,8.21,7,Africa
+2018,MEX,Mexico,7.21,68,Americas
+2018,MDA,Moldova,6.99,78,Europe
+2018,MNG,Mongolia,7.43,54,Asia
+2018,MNE,Montenegro,6.94,80,Europe
+2018,MAR,Morocco,6.7,94,Africa
+2018,MOZ,Mozambique,5.94,134,Africa
+2018,MMR,Myanmar,5.81,142,Asia
+2018,NAM,Namibia,6.52,107,Africa
+2018,NPL,Nepal,6.48,109,Asia
+2018,NLD,Netherlands,7.82,24,Europe
+2018,NZL,New Zealand,8.53,3,Oceania
+2018,NIC,Nicaragua,7.05,74,Americas
+2018,NER,Niger,5.85,139,Africa
+2018,NGA,Nigeria,6.93,81,Africa
+2018,MKD,North Macedonia,7.15,71,Europe
+2018,NOR,Norway,7.6,43,Europe
+2018,OMN,Oman,6.79,87,Asia
+2018,PAK,Pakistan,6.07,129,Asia
+2018,PAN,Panama,7.8,26,Americas
+2018,PNG,Papua New Guinea,6.39,111,Oceania
+2018,PRY,Paraguay,7.23,67,Americas
+2018,PER,Peru,7.76,29,Americas
+2018,PHL,Philippines,7.43,54,Asia
+2018,POL,Poland,7.04,77,Europe
+2018,PRT,Portugal,7.6,43,Europe
+2018,QAT,Qatar,6.88,83,Asia
+2018,ROU,Romania,7.83,23,Europe
+2018,RUS,Russian Federation,6.74,89,Europe
+2018,RWA,Rwanda,7.39,59,Africa
+2018,SAU,Saudi Arabia,6.31,115,Asia
+2018,SEN,Senegal,6.27,119,Africa
+2018,SRB,Serbia,7.05,74,Europe
+2018,SYC,Seychelles,7.49,52,Africa
+2018,SLE,Sierra Leone,5.87,137,Africa
+2018,SGP,Singapore,8.65,2,Asia
+2018,SVK,Slovak Republic,7.63,38,Europe
+2018,SVN,Slovenia,7.33,62,Europe
+2018,ZAF,South Africa,6.73,90,Africa
+2018,ESP,Spain,7.73,33,Europe
+2018,LKA,Sri Lanka,6.88,83,Asia
+2018,SDN,Sudan,4.21,161,Africa
+2018,SUR,Suriname,6.37,112,Americas
+2018,SWE,Sweden,7.58,46,Europe
+2018,CHE,Switzerland,8.43,4,Europe
+2018,SYR,Syrian Arab Republic,5.45,151,Asia
+2018,TWN,Taiwan,7.94,16,Asia
+2018,TJK,Tajikistan,6.05,132,Asia
+2018,TZA,Tanzania,6.73,90,Africa
+2018,THA,Thailand,6.75,88,Asia
+2018,TLS,Timor-Leste,6.29,117,Asia
+2018,TGO,Togo,6.25,121,Africa
+2018,TTO,Trinidad and Tobago,7.26,65,Americas
+2018,TUN,Tunisia,6.07,129,Africa
+2018,TUR,Turkey,6.62,99,Asia
+2018,UGA,Uganda,7.55,50,Africa
+2018,UKR,Ukraine,6.06,131,Europe
+2018,ARE,United Arab Emirates,7.05,74,Asia
+2018,GBR,United Kingdom,8.08,13,Europe
+2018,USA,United States,8.22,6,Americas
+2018,URY,Uruguay,7.25,66,Americas
+2018,VEN,"Venezuela, RB",3.34,162,Americas
+2018,VNM,Vietnam,6.2,125,Asia
+2018,YEM,"Yemen, Rep.",5.51,149,Asia
+2018,ZMB,Zambia,7.19,69,Africa
+2018,ZWE,Zimbabwe,5.12,155,Africa
+2017,ALB,Albania,7.7,36,Europe
+2017,DZA,Algeria,4.98,157,Africa
+2017,AGO,Angola,4.86,159,Africa
+2017,ARG,Argentina,5.98,133,Americas
+2017,ARM,Armenia,7.85,21,Asia
+2017,AUS,Australia,8.18,7,Oceania
+2017,AUT,Austria,7.75,28,Europe
+2017,AZE,Azerbaijan,6.23,122,Asia
+2017,BHS,"Bahamas, The",7.31,59,Americas
+2017,BHR,Bahrain,7.18,68,Asia
+2017,BGD,Bangladesh,6.07,130,Asia
+2017,BRB,Barbados,6.33,115,Americas
+2017,BLR,Belarus,6.38,111,Europe
+2017,BEL,Belgium,7.53,49,Europe
+2017,BLZ,Belize,6.58,104,Americas
+2017,BEN,Benin,6.25,121,Africa
+2017,BTN,Bhutan,6.64,98,Asia
+2017,BOL,Bolivia,6.27,118,Americas
+2017,BIH,Bosnia and Herzegovina,6.89,81,Europe
+2017,BWA,Botswana,7.55,46,Africa
+2017,BRA,Brazil,6.54,106,Americas
+2017,BRN,Brunei Darussalam,6.69,92,Asia
+2017,BGR,Bulgaria,7.76,26,Europe
+2017,BFA,Burkina Faso,5.98,133,Africa
+2017,BDI,Burundi,6.02,132,Africa
+2017,CPV,Cabo Verde,7.34,58,Africa
+2017,KHM,Cambodia,7.24,63,Asia
+2017,CMR,Cameroon,5.83,142,Africa
+2017,CAN,Canada,8.26,6,Americas
+2017,CAF,Central African Republic,5.15,153,Africa
+2017,TCD,Chad,5.54,148,Africa
+2017,CHL,Chile,7.92,17,Americas
+2017,CHN,China,6.26,120,Asia
+2017,COL,Colombia,6.68,93,Americas
+2017,COD,"Congo, Dem. Rep.",4.99,156,Africa
+2017,COG,"Congo, Rep.",5.07,154,Africa
+2017,CRI,Costa Rica,7.65,39,Americas
+2017,CIV,Cote d'Ivoire,5.96,135,Africa
+2017,HRV,Croatia,7.41,55,Europe
+2017,CYP,Cyprus,7.82,23,Asia
+2017,CZE,Czech Republic,7.77,25,Europe
+2017,DNK,Denmark,8.05,11,Europe
+2017,DOM,Dominican Republic,7.46,52,Americas
+2017,ECU,Ecuador,6.37,112,Americas
+2017,EGY,"Egypt, Arab Rep.",4.91,158,Africa
+2017,SLV,El Salvador,7.44,53,Americas
+2017,EST,Estonia,7.93,16,Europe
+2017,SWZ,Eswatini,6.31,117,Africa
+2017,ETH,Ethiopia,5.65,144,Africa
+2017,FJI,Fiji,6.54,106,Oceania
+2017,FIN,Finland,7.73,29,Europe
+2017,FRA,France,7.44,53,Europe
+2017,GAB,Gabon,5.85,140,Africa
+2017,GMB,"Gambia, The",7.15,72,Africa
+2017,GEO,Georgia,8.14,9,Asia
+2017,DEU,Germany,7.87,18,Europe
+2017,GHA,Ghana,6.67,96,Africa
+2017,GRC,Greece,6.83,85,Europe
+2017,GTM,Guatemala,7.72,32,Americas
+2017,GIN,Guinea,5.46,150,Africa
+2017,GNB,Guinea-Bissau,5.32,151,Africa
+2017,GUY,Guyana,6.64,98,Americas
+2017,HTI,Haiti,6.62,101,Americas
+2017,HND,Honduras,7.24,63,Americas
+2017,HKG,"Hong Kong SAR, China",8.9,1,Asia
+2017,HUN,Hungary,7.53,49,Europe
+2017,ISL,Iceland,7.76,26,Europe
+2017,IND,India,6.68,93,Asia
+2017,IDN,Indonesia,7.27,62,Asia
+2017,IRN,"Iran, Islamic Rep.",5.49,149,Asia
+2017,IRQ,Iraq,5.57,147,Asia
+2017,IRL,Ireland,8.14,9,Europe
+2017,ISR,Israel,7.62,40,Asia
+2017,ITA,Italy,7.6,41,Europe
+2017,JAM,Jamaica,7.54,47,Americas
+2017,JPN,Japan,7.86,19,Asia
+2017,JOR,Jordan,7.54,47,Asia
+2017,KAZ,Kazakhstan,7.09,76,Asia
+2017,KEN,Kenya,6.86,82,Africa
+2017,KOR,"Korea, Rep.",7.72,32,Asia
+2017,KWT,Kuwait,6.56,105,Asia
+2017,KGZ,Kyrgyz Republic,7.05,77,Asia
+2017,LAO,Lao PDR,6.52,108,Asia
+2017,LVA,Latvia,7.97,15,Europe
+2017,LBN,Lebanon,6.95,80,Asia
+2017,LSO,Lesotho,6.67,96,Africa
+2017,LBR,Liberia,6.51,109,Africa
+2017,LBY,Libya,4.6,160,Africa
+2017,LTU,Lithuania,8.05,11,Europe
+2017,LUX,Luxembourg,7.73,29,Europe
+2017,MDG,Madagascar,6.14,126,Africa
+2017,MWI,Malawi,6.06,131,Africa
+2017,MYS,Malaysia,7.56,44,Asia
+2017,MLI,Mali,5.85,140,Africa
+2017,MLT,Malta,7.98,14,Europe
+2017,MRT,Mauritania,6.21,123,Africa
+2017,MUS,Mauritius,7.99,13,Africa
+2017,MEX,Mexico,7.16,71,Americas
+2017,MDA,Moldova,6.85,84,Europe
+2017,MNG,Mongolia,7.5,51,Asia
+2017,MNE,Montenegro,6.86,82,Europe
+2017,MAR,Morocco,6.61,102,Africa
+2017,MOZ,Mozambique,5.64,145,Africa
+2017,MMR,Myanmar,5.74,143,Asia
+2017,NAM,Namibia,6.4,110,Africa
+2017,NPL,Nepal,6.59,103,Asia
+2017,NLD,Netherlands,7.72,32,Europe
+2017,NZL,New Zealand,8.48,3,Oceania
+2017,NIC,Nicaragua,7.12,74,Americas
+2017,NER,Niger,5.94,136,Africa
+2017,NGA,Nigeria,6.83,85,Africa
+2017,MKD,North Macedonia,7.15,72,Europe
+2017,NOR,Norway,7.72,32,Europe
+2017,OMN,Oman,6.79,87,Asia
+2017,PAK,Pakistan,5.88,137,Asia
+2017,PAN,Panama,7.78,24,Americas
+2017,PNG,Papua New Guinea,6.37,112,Oceania
+2017,PRY,Paraguay,7.17,70,Americas
+2017,PER,Peru,7.73,29,Americas
+2017,PHL,Philippines,7.39,56,Asia
+2017,POL,Poland,7.31,59,Europe
+2017,PRT,Portugal,7.58,43,Europe
+2017,QAT,Qatar,6.96,79,Asia
+2017,ROU,Romania,7.86,19,Europe
+2017,RUS,Russian Federation,6.75,89,Europe
+2017,RWA,Rwanda,7.19,67,Africa
+2017,SAU,Saudi Arabia,6.27,118,Asia
+2017,SEN,Senegal,6.11,127,Africa
+2017,SRB,Serbia,7.01,78,Europe
+2017,SYC,Seychelles,7.37,57,Africa
+2017,SLE,Sierra Leone,5.61,146,Africa
+2017,SGP,Singapore,8.7,2,Asia
+2017,SVK,Slovak Republic,7.6,41,Europe
+2017,SVN,Slovenia,7.3,61,Europe
+2017,ZAF,South Africa,6.68,93,Africa
+2017,ESP,Spain,7.66,38,Europe
+2017,LKA,Sri Lanka,6.64,98,Asia
+2017,SDN,Sudan,4.49,161,Africa
+2017,SUR,Suriname,6.32,116,Americas
+2017,SWE,Sweden,7.67,37,Europe
+2017,CHE,Switzerland,8.42,4,Europe
+2017,SYR,Syrian Arab Republic,5.05,155,Asia
+2017,TWN,Taiwan,7.84,22,Asia
+2017,TJK,Tajikistan,5.86,138,Asia
+2017,TZA,Tanzania,6.78,88,Africa
+2017,THA,Thailand,6.75,89,Asia
+2017,TLS,Timor-Leste,6.36,114,Asia
+2017,TGO,Togo,6.19,124,Africa
+2017,TTO,Trinidad and Tobago,7.18,68,Americas
+2017,TUN,Tunisia,6.11,127,Africa
+2017,TUR,Turkey,6.73,91,Asia
+2017,UGA,Uganda,7.56,44,Africa
+2017,UKR,Ukraine,5.86,138,Europe
+2017,ARE,United Arab Emirates,7.1,75,Asia
+2017,GBR,United Kingdom,8.16,8,Europe
+2017,USA,United States,8.34,5,Americas
+2017,URY,Uruguay,7.23,65,Americas
+2017,VEN,"Venezuela, RB",2.72,162,Americas
+2017,VNM,Vietnam,6.16,125,Asia
+2017,YEM,"Yemen, Rep.",6.11,127,Asia
+2017,ZMB,Zambia,7.2,66,Africa
+2017,ZWE,Zimbabwe,5.16,152,Africa
+2016,ALB,Albania,7.69,36,Europe
+2016,DZA,Algeria,5.26,154,Africa
+2016,AGO,Angola,5.39,153,Africa
+2016,ARG,Argentina,5.55,148,Americas
+2016,ARM,Armenia,7.73,31,Asia
+2016,AUS,Australia,8.16,8,Oceania
+2016,AUT,Austria,7.76,28,Europe
+2016,AZE,Azerbaijan,6.34,113,Asia
+2016,BHS,"Bahamas, The",7.39,55,Americas
+2016,BHR,Bahrain,7.13,71,Asia
+2016,BGD,Bangladesh,6.13,126,Asia
+2016,BRB,Barbados,6.3,114,Americas
+2016,BLR,Belarus,5.9,133,Europe
+2016,BEL,Belgium,7.54,46,Europe
+2016,BLZ,Belize,6.78,89,Americas
+2016,BEN,Benin,6.06,129,Africa
+2016,BTN,Bhutan,6.81,88,Asia
+2016,BOL,Bolivia,6.27,117,Americas
+2016,BIH,Bosnia and Herzegovina,6.88,84,Europe
+2016,BWA,Botswana,7.5,48,Africa
+2016,BRA,Brazil,6.45,108,Americas
+2016,BRN,Brunei Darussalam,6.98,78,Asia
+2016,BGR,Bulgaria,7.6,41,Europe
+2016,BFA,Burkina Faso,6.07,128,Africa
+2016,BDI,Burundi,6.21,121,Africa
+2016,CPV,Cabo Verde,7.21,67,Africa
+2016,KHM,Cambodia,7.22,66,Asia
+2016,CMR,Cameroon,5.78,139,Africa
+2016,CAN,Canada,8.24,6,Americas
+2016,CAF,Central African Republic,5.22,155,Africa
+2016,TCD,Chad,5.44,152,Africa
+2016,CHL,Chile,7.92,18,Americas
+2016,CHN,China,6.25,118,Asia
+2016,COL,Colombia,6.68,97,Americas
+2016,COD,"Congo, Dem. Rep.",5.76,141,Africa
+2016,COG,"Congo, Rep.",4.87,161,Africa
+2016,CRI,Costa Rica,7.69,36,Americas
+2016,CIV,Cote d'Ivoire,5.95,132,Africa
+2016,HRV,Croatia,7.2,69,Europe
+2016,CYP,Cyprus,7.83,23,Asia
+2016,CZE,Czech Republic,7.87,20,Europe
+2016,DNK,Denmark,8.01,14,Europe
+2016,DOM,Dominican Republic,7.48,50,Americas
+2016,ECU,Ecuador,6.29,115,Americas
+2016,EGY,"Egypt, Arab Rep.",5.12,156,Africa
+2016,SLV,El Salvador,7.38,56,Americas
+2016,EST,Estonia,8.03,12,Europe
+2016,SWZ,Eswatini,6.21,121,Africa
+2016,ETH,Ethiopia,5.49,151,Africa
+2016,FJI,Fiji,6.44,109,Oceania
+2016,FIN,Finland,7.71,34,Europe
+2016,FRA,France,7.46,51,Europe
+2016,GAB,Gabon,5.75,142,Africa
+2016,GMB,"Gambia, The",7.24,63,Africa
+2016,GEO,Georgia,8.12,10,Asia
+2016,DEU,Germany,7.96,17,Europe
+2016,GHA,Ghana,6.6,101,Africa
+2016,GRC,Greece,6.69,96,Europe
+2016,GTM,Guatemala,7.79,26,Americas
+2016,GIN,Guinea,5.78,139,Africa
+2016,GNB,Guinea-Bissau,5,158,Africa
+2016,GUY,Guyana,6.57,103,Americas
+2016,HTI,Haiti,6.73,91,Americas
+2016,HND,Honduras,7.25,62,Americas
+2016,HKG,"Hong Kong SAR, China",8.86,1,Asia
+2016,HUN,Hungary,7.59,43,Europe
+2016,ISL,Iceland,7.75,29,Europe
+2016,IND,India,6.46,107,Asia
+2016,IDN,Indonesia,7.28,59,Asia
+2016,IRN,"Iran, Islamic Rep.",5.51,150,Asia
+2016,IRQ,Iraq,5.63,147,Asia
+2016,IRL,Ireland,8.2,7,Europe
+2016,ISR,Israel,7.56,45,Asia
+2016,ITA,Italy,7.66,39,Europe
+2016,JAM,Jamaica,7.6,41,Americas
+2016,JPN,Japan,7.84,21,Asia
+2016,JOR,Jordan,7.49,49,Asia
+2016,KAZ,Kazakhstan,7.02,77,Asia
+2016,KEN,Kenya,6.96,81,Africa
+2016,KOR,"Korea, Rep.",7.68,38,Asia
+2016,KWT,Kuwait,6.64,100,Asia
+2016,KGZ,Kyrgyz Republic,7.06,76,Asia
+2016,LAO,Lao PDR,6.43,110,Asia
+2016,LVA,Latvia,8.02,13,Europe
+2016,LBN,Lebanon,7.07,75,Asia
+2016,LSO,Lesotho,6.59,102,Africa
+2016,LBR,Liberia,6.67,98,Africa
+2016,LBY,Libya,5.02,157,Africa
+2016,LTU,Lithuania,8.09,11,Europe
+2016,LUX,Luxembourg,7.71,34,Europe
+2016,MDG,Madagascar,6.25,118,Africa
+2016,MWI,Malawi,5.98,131,Africa
+2016,MYS,Malaysia,7.52,47,Asia
+2016,MLI,Mali,5.85,137,Africa
+2016,MLT,Malta,8,15,Europe
+2016,MRT,Mauritania,6.17,124,Africa
+2016,MUS,Mauritius,7.98,16,Africa
+2016,MEX,Mexico,6.98,78,Americas
+2016,MDA,Moldova,6.82,87,Europe
+2016,MNG,Mongolia,7.1,73,Asia
+2016,MNE,Montenegro,6.86,86,Europe
+2016,MAR,Morocco,6.5,104,Africa
+2016,MOZ,Mozambique,5.55,148,Africa
+2016,MMR,Myanmar,5.7,145,Asia
+2016,NAM,Namibia,6.43,110,Africa
+2016,NPL,Nepal,6.48,105,Asia
+2016,NLD,Netherlands,7.82,25,Europe
+2016,NZL,New Zealand,8.53,3,Oceania
+2016,NIC,Nicaragua,7.17,70,Americas
+2016,NER,Niger,5.9,133,Africa
+2016,NGA,Nigeria,6.87,85,Africa
+2016,MKD,North Macedonia,7.21,67,Europe
+2016,NOR,Norway,7.75,29,Europe
+2016,OMN,Oman,6.71,93,Asia
+2016,PAK,Pakistan,5.9,133,Asia
+2016,PAN,Panama,7.84,21,Americas
+2016,PNG,Papua New Guinea,6.22,120,Oceania
+2016,PRY,Paraguay,7.11,72,Americas
+2016,PER,Peru,7.72,33,Americas
+2016,PHL,Philippines,7.4,53,Asia
+2016,POL,Poland,7.33,57,Europe
+2016,PRT,Portugal,7.57,44,Europe
+2016,QAT,Qatar,7.09,74,Asia
+2016,ROU,Romania,7.89,19,Europe
+2016,RUS,Russian Federation,6.7,94,Europe
+2016,RWA,Rwanda,7.23,64,Africa
+2016,SAU,Saudi Arabia,6.29,115,Asia
+2016,SEN,Senegal,6.09,127,Africa
+2016,SRB,Serbia,6.97,80,Europe
+2016,SYC,Seychelles,7.44,52,Africa
+2016,SLE,Sierra Leone,5.68,146,Africa
+2016,SGP,Singapore,8.65,2,Asia
+2016,SVK,Slovak Republic,7.62,40,Europe
+2016,SVN,Slovenia,7.31,58,Europe
+2016,ZAF,South Africa,6.67,98,Africa
+2016,ESP,Spain,7.79,26,Europe
+2016,LKA,Sri Lanka,6.7,94,Asia
+2016,SDN,Sudan,4.95,159,Africa
+2016,SUR,Suriname,5.75,142,Americas
+2016,SWE,Sweden,7.73,31,Europe
+2016,CHE,Switzerland,8.46,4,Europe
+2016,SYR,Syrian Arab Republic,4.88,160,Asia
+2016,TWN,Taiwan,7.83,23,Asia
+2016,TJK,Tajikistan,6.02,130,Asia
+2016,TZA,Tanzania,6.74,90,Africa
+2016,THA,Thailand,6.73,91,Asia
+2016,TLS,Timor-Leste,6.47,106,Asia
+2016,TGO,Togo,5.87,136,Africa
+2016,TTO,Trinidad and Tobago,7.23,64,Americas
+2016,TUN,Tunisia,6.2,123,Africa
+2016,TUR,Turkey,6.91,83,Asia
+2016,UGA,Uganda,7.4,53,Africa
+2016,UKR,Ukraine,5.84,138,Europe
+2016,ARE,United Arab Emirates,7.27,60,Asia
+2016,GBR,United Kingdom,8.15,9,Europe
+2016,USA,United States,8.32,5,Americas
+2016,URY,Uruguay,7.26,61,Americas
+2016,VEN,"Venezuela, RB",2.76,162,Americas
+2016,VNM,Vietnam,6.16,125,Asia
+2016,YEM,"Yemen, Rep.",6.4,112,Asia
+2016,ZMB,Zambia,6.94,82,Africa
+2016,ZWE,Zimbabwe,5.72,144,Africa
+2015,ALB,Albania,7.7,34,Europe
+2015,DZA,Algeria,4.94,155,Africa
+2015,AGO,Angola,5.64,142,Africa
+2015,ARG,Argentina,5.17,153,Americas
+2015,ARM,Armenia,7.8,28,Asia
+2015,AUS,Australia,8.1,11,Oceania
+2015,AUT,Austria,7.81,27,Europe
+2015,AZE,Azerbaijan,6.24,118,Asia
+2015,BHS,"Bahamas, The",7.44,50,Americas
+2015,BHR,Bahrain,7.23,65,Asia
+2015,BGD,Bangladesh,6.18,123,Asia
+2015,BRB,Barbados,6.36,113,Americas
+2015,BLR,Belarus,NA,NA,Europe
+2015,BEL,Belgium,7.63,39,Europe
+2015,BLZ,Belize,6.74,92,Americas
+2015,BEN,Benin,5.75,137,Africa
+2015,BTN,Bhutan,6.88,84,Asia
+2015,BOL,Bolivia,6.1,124,Americas
+2015,BIH,Bosnia and Herzegovina,6.91,81,Europe
+2015,BWA,Botswana,7.47,48,Africa
+2015,BRA,Brazil,6.2,121,Americas
+2015,BRN,Brunei Darussalam,6.83,87,Asia
+2015,BGR,Bulgaria,7.52,44,Europe
+2015,BFA,Burkina Faso,5.95,129,Africa
+2015,BDI,Burundi,6.09,125,Africa
+2015,CPV,Cabo Verde,7.18,67,Africa
+2015,KHM,Cambodia,7.19,66,Asia
+2015,CMR,Cameroon,5.71,138,Africa
+2015,CAN,Canada,8.19,7,Americas
+2015,CAF,Central African Republic,4.78,158,Africa
+2015,TCD,Chad,5.33,148,Africa
+2015,CHL,Chile,7.92,18,Americas
+2015,CHN,China,6.22,120,Asia
+2015,COL,Colombia,6.62,100,Americas
+2015,COD,"Congo, Dem. Rep.",5.6,143,Africa
+2015,COG,"Congo, Rep.",4.83,156,Africa
+2015,CRI,Costa Rica,7.7,34,Americas
+2015,CIV,Cote d'Ivoire,5.89,131,Africa
+2015,HRV,Croatia,7.25,63,Europe
+2015,CYP,Cyprus,7.82,26,Asia
+2015,CZE,Czech Republic,7.86,20,Europe
+2015,DNK,Denmark,7.96,16,Europe
+2015,DOM,Dominican Republic,7.51,46,Americas
+2015,ECU,Ecuador,6.42,110,Americas
+2015,EGY,"Egypt, Arab Rep.",5.24,150,Africa
+2015,SLV,El Salvador,7.35,56,Americas
+2015,EST,Estonia,8.09,12,Europe
+2015,SWZ,Eswatini,6.19,122,Africa
+2015,ETH,Ethiopia,5.29,149,Africa
+2015,FJI,Fiji,6.47,106,Oceania
+2015,FIN,Finland,7.75,31,Europe
+2015,FRA,France,7.54,41,Europe
+2015,GAB,Gabon,5.66,141,Africa
+2015,GMB,"Gambia, The",7.17,68,Africa
+2015,GEO,Georgia,8.14,9,Asia
+2015,DEU,Germany,7.97,15,Europe
+2015,GHA,Ghana,6.45,108,Africa
+2015,GRC,Greece,6.63,97,Europe
+2015,GTM,Guatemala,7.83,25,Americas
+2015,GIN,Guinea,5.23,151,Africa
+2015,GNB,Guinea-Bissau,5.18,152,Africa
+2015,GUY,Guyana,6.79,88,Americas
+2015,HTI,Haiti,6.78,90,Americas
+2015,HND,Honduras,7.37,55,Americas
+2015,HKG,"Hong Kong SAR, China",8.84,1,Asia
+2015,HUN,Hungary,7.39,54,Europe
+2015,ISL,Iceland,7.3,59,Europe
+2015,IND,India,6.47,106,Asia
+2015,IDN,Indonesia,7.12,72,Asia
+2015,IRN,"Iran, Islamic Rep.",5.4,146,Asia
+2015,IRQ,Iraq,NA,NA,Asia
+2015,IRL,Ireland,8.32,5,Europe
+2015,ISR,Israel,7.52,44,Asia
+2015,ITA,Italy,7.71,33,Europe
+2015,JAM,Jamaica,7.67,37,Americas
+2015,JPN,Japan,7.85,23,Asia
+2015,JOR,Jordan,7.54,41,Asia
+2015,KAZ,Kazakhstan,7.13,71,Asia
+2015,KEN,Kenya,7.12,72,Africa
+2015,KOR,"Korea, Rep.",7.63,39,Asia
+2015,KWT,Kuwait,6.43,109,Asia
+2015,KGZ,Kyrgyz Republic,6.88,84,Asia
+2015,LAO,Lao PDR,6.39,112,Asia
+2015,LVA,Latvia,8.12,10,Europe
+2015,LBN,Lebanon,7.06,75,Asia
+2015,LSO,Lesotho,6.71,95,Africa
+2015,LBR,Liberia,6.7,96,Africa
+2015,LBY,Libya,5.1,154,Africa
+2015,LTU,Lithuania,8.07,13,Europe
+2015,LUX,Luxembourg,7.73,32,Europe
+2015,MDG,Madagascar,6.4,111,Africa
+2015,MWI,Malawi,5.79,136,Africa
+2015,MYS,Malaysia,7.44,50,Asia
+2015,MLI,Mali,5.84,133,Africa
+2015,MLT,Malta,7.95,17,Europe
+2015,MRT,Mauritania,5.84,133,Africa
+2015,MUS,Mauritius,7.99,14,Africa
+2015,MEX,Mexico,7.07,74,Americas
+2015,MDA,Moldova,6.79,88,Europe
+2015,MNG,Mongolia,7.28,61,Asia
+2015,MNE,Montenegro,6.99,79,Europe
+2015,MAR,Morocco,6.48,105,Africa
+2015,MOZ,Mozambique,5.49,145,Africa
+2015,MMR,Myanmar,5.54,144,Asia
+2015,NAM,Namibia,6.63,97,Africa
+2015,NPL,Nepal,6.49,104,Asia
+2015,NLD,Netherlands,7.85,23,Europe
+2015,NZL,New Zealand,8.5,3,Oceania
+2015,NIC,Nicaragua,7.17,68,Americas
+2015,NER,Niger,5.71,138,Africa
+2015,NGA,Nigeria,6.63,97,Africa
+2015,MKD,North Macedonia,7.24,64,Europe
+2015,NOR,Norway,7.31,58,Europe
+2015,OMN,Oman,6.58,102,Asia
+2015,PAK,Pakistan,5.84,133,Asia
+2015,PAN,Panama,7.86,20,Americas
+2015,PNG,Papua New Guinea,6.26,117,Oceania
+2015,PRY,Paraguay,7.04,76,Americas
+2015,PER,Peru,7.76,30,Americas
+2015,PHL,Philippines,7.49,47,Asia
+2015,POL,Poland,7.45,49,Europe
+2015,PRT,Portugal,7.64,38,Europe
+2015,QAT,Qatar,7.03,78,Asia
+2015,ROU,Romania,7.86,20,Europe
+2015,RUS,Russian Federation,6.54,103,Europe
+2015,RWA,Rwanda,7.29,60,Africa
+2015,SAU,Saudi Arabia,5.93,130,Asia
+2015,SEN,Senegal,5.98,128,Africa
+2015,SRB,Serbia,6.91,81,Europe
+2015,SYC,Seychelles,7.43,52,Africa
+2015,SLE,Sierra Leone,5.67,140,Africa
+2015,SGP,Singapore,8.64,2,Asia
+2015,SVK,Slovak Republic,7.53,43,Europe
+2015,SVN,Slovenia,7.33,57,Europe
+2015,ZAF,South Africa,6.77,91,Africa
+2015,ESP,Spain,7.77,29,Europe
+2015,LKA,Sri Lanka,6.72,93,Asia
+2015,SDN,Sudan,NA,NA,Africa
+2015,SUR,Suriname,6.61,101,Americas
+2015,SWE,Sweden,7.87,19,Europe
+2015,CHE,Switzerland,8.43,4,Europe
+2015,SYR,Syrian Arab Republic,4.83,156,Asia
+2015,TWN,Taiwan,7.7,34,Asia
+2015,TJK,Tajikistan,6.03,127,Asia
+2015,TZA,Tanzania,6.87,86,Africa
+2015,THA,Thailand,6.72,93,Asia
+2015,TLS,Timor-Leste,6.36,113,Asia
+2015,TGO,Togo,5.85,132,Africa
+2015,TTO,Trinidad and Tobago,6.91,81,Americas
+2015,TUN,Tunisia,6.29,115,Africa
+2015,TUR,Turkey,6.94,80,Asia
+2015,UGA,Uganda,7.41,53,Africa
+2015,UKR,Ukraine,5.36,147,Europe
+2015,ARE,United Arab Emirates,7.14,70,Asia
+2015,GBR,United Kingdom,8.16,8,Europe
+2015,USA,United States,8.27,6,Americas
+2015,URY,Uruguay,7.26,62,Americas
+2015,VEN,"Venezuela, RB",2.84,159,Americas
+2015,VNM,Vietnam,6.04,126,Asia
+2015,YEM,"Yemen, Rep.",6.29,115,Asia
+2015,ZMB,Zambia,7.04,76,Africa
+2015,ZWE,Zimbabwe,6.24,118,Africa
+2014,ALB,Albania,7.65,37,Europe
+2014,DZA,Algeria,5.08,153,Africa
+2014,AGO,Angola,5.02,154,Africa
+2014,ARG,Argentina,4.69,158,Americas
+2014,ARM,Armenia,7.87,18,Asia
+2014,AUS,Australia,8.11,10,Oceania
+2014,AUT,Austria,7.84,21,Europe
+2014,AZE,Azerbaijan,6.21,119,Asia
+2014,BHS,"Bahamas, The",7.39,55,Americas
+2014,BHR,Bahrain,7.22,67,Asia
+2014,BGD,Bangladesh,6.2,120,Asia
+2014,BRB,Barbados,6.46,108,Americas
+2014,BLR,Belarus,NA,NA,Europe
+2014,BEL,Belgium,7.8,27,Europe
+2014,BLZ,Belize,6.71,93,Americas
+2014,BEN,Benin,6.11,125,Africa
+2014,BTN,Bhutan,6.68,94,Asia
+2014,BOL,Bolivia,6.24,118,Americas
+2014,BIH,Bosnia and Herzegovina,6.96,84,Europe
+2014,BWA,Botswana,7.43,51,Africa
+2014,BRA,Brazil,6.4,113,Americas
+2014,BRN,Brunei Darussalam,6.94,87,Asia
+2014,BGR,Bulgaria,7.58,40,Europe
+2014,BFA,Burkina Faso,5.94,132,Africa
+2014,BDI,Burundi,6.05,126,Africa
+2014,CPV,Cabo Verde,7.06,78,Africa
+2014,KHM,Cambodia,7.2,69,Asia
+2014,CMR,Cameroon,5.84,136,Africa
+2014,CAN,Canada,8.33,5,Americas
+2014,CAF,Central African Republic,4.89,155,Africa
+2014,TCD,Chad,5.25,148,Africa
+2014,CHL,Chile,7.94,15,Americas
+2014,CHN,China,6.2,120,Asia
+2014,COL,Colombia,6.63,98,Americas
+2014,COD,"Congo, Dem. Rep.",5.43,146,Africa
+2014,COG,"Congo, Rep.",4.87,156,Africa
+2014,CRI,Costa Rica,7.59,39,Americas
+2014,CIV,Cote d'Ivoire,5.88,134,Africa
+2014,HRV,Croatia,7.17,73,Europe
+2014,CYP,Cyprus,7.41,53,Asia
+2014,CZE,Czech Republic,7.84,21,Europe
+2014,DNK,Denmark,8.02,13,Europe
+2014,DOM,Dominican Republic,7.52,43,Americas
+2014,ECU,Ecuador,5.98,129,Americas
+2014,EGY,"Egypt, Arab Rep.",5.5,145,Africa
+2014,SLV,El Salvador,7.51,44,Americas
+2014,EST,Estonia,7.97,14,Europe
+2014,SWZ,Eswatini,6.46,108,Africa
+2014,ETH,Ethiopia,5.29,147,Africa
+2014,FJI,Fiji,6.6,101,Oceania
+2014,FIN,Finland,7.82,24,Europe
+2014,FRA,France,7.57,42,Europe
+2014,GAB,Gabon,5.54,144,Africa
+2014,GMB,"Gambia, The",7.18,72,Africa
+2014,GEO,Georgia,8.27,6,Asia
+2014,DEU,Germany,7.93,17,Europe
+2014,GHA,Ghana,6.31,117,Africa
+2014,GRC,Greece,7.09,75,Europe
+2014,GTM,Guatemala,7.8,27,Americas
+2014,GIN,Guinea,5.11,151,Africa
+2014,GNB,Guinea-Bissau,5.2,149,Africa
+2014,GUY,Guyana,6.49,107,Americas
+2014,HTI,Haiti,6.87,88,Americas
+2014,HND,Honduras,7.29,59,Americas
+2014,HKG,"Hong Kong SAR, China",8.85,1,Asia
+2014,HUN,Hungary,7.5,46,Europe
+2014,ISL,Iceland,7.25,63,Europe
+2014,IND,India,6.17,123,Asia
+2014,IDN,Indonesia,7.08,76,Asia
+2014,IRN,"Iran, Islamic Rep.",5.14,150,Asia
+2014,IRQ,Iraq,NA,NA,Asia
+2014,IRL,Ireland,8.2,7,Europe
+2014,ISR,Israel,7.5,46,Asia
+2014,ITA,Italy,7.68,35,Europe
+2014,JAM,Jamaica,7.51,44,Americas
+2014,JPN,Japan,7.78,29,Asia
+2014,JOR,Jordan,7.49,48,Asia
+2014,KAZ,Kazakhstan,7.05,80,Asia
+2014,KEN,Kenya,7.2,69,Africa
+2014,KOR,"Korea, Rep.",7.58,40,Asia
+2014,KWT,Kuwait,6.6,101,Asia
+2014,KGZ,Kyrgyz Republic,7.05,80,Asia
+2014,LAO,Lao PDR,6.44,110,Asia
+2014,LVA,Latvia,8.11,10,Europe
+2014,LBN,Lebanon,7.08,76,Asia
+2014,LSO,Lesotho,6.57,103,Africa
+2014,LBR,Liberia,7.06,78,Africa
+2014,LBY,Libya,5.11,151,Africa
+2014,LTU,Lithuania,8.12,9,Europe
+2014,LUX,Luxembourg,7.83,23,Europe
+2014,MDG,Madagascar,6.43,111,Africa
+2014,MWI,Malawi,5.95,131,Africa
+2014,MYS,Malaysia,7.36,56,Asia
+2014,MLI,Mali,5.77,139,Africa
+2014,MLT,Malta,7.94,15,Europe
+2014,MRT,Mauritania,5.85,135,Africa
+2014,MUS,Mauritius,7.82,24,Africa
+2014,MEX,Mexico,7,83,Americas
+2014,MDA,Moldova,6.86,89,Europe
+2014,MNG,Mongolia,7.22,67,Asia
+2014,MNE,Montenegro,7.34,57,Europe
+2014,MAR,Morocco,6.4,113,Africa
+2014,MOZ,Mozambique,5.6,143,Africa
+2014,MMR,Myanmar,5.71,141,Asia
+2014,NAM,Namibia,6.63,98,Africa
+2014,NPL,Nepal,6.66,95,Asia
+2014,NLD,Netherlands,7.82,24,Europe
+2014,NZL,New Zealand,8.46,3,Oceania
+2014,NIC,Nicaragua,7.29,59,Americas
+2014,NER,Niger,5.68,142,Africa
+2014,NGA,Nigeria,6.65,97,Africa
+2014,MKD,North Macedonia,7.14,74,Europe
+2014,NOR,Norway,7.73,30,Europe
+2014,OMN,Oman,6.95,85,Asia
+2014,PAK,Pakistan,5.77,139,Asia
+2014,PAN,Panama,7.72,32,Americas
+2014,PNG,Papua New Guinea,6.37,116,Oceania
+2014,PRY,Paraguay,7.02,82,Americas
+2014,PER,Peru,7.73,30,Americas
+2014,PHL,Philippines,7.43,51,Asia
+2014,POL,Poland,7.47,50,Europe
+2014,PRT,Portugal,7.67,36,Europe
+2014,QAT,Qatar,7.28,62,Asia
+2014,ROU,Romania,7.87,18,Europe
+2014,RUS,Russian Federation,6.52,105,Europe
+2014,RWA,Rwanda,7.25,63,Africa
+2014,SAU,Saudi Arabia,6.19,122,Asia
+2014,SEN,Senegal,5.99,128,Africa
+2014,SRB,Serbia,6.8,91,Europe
+2014,SYC,Seychelles,7.48,49,Africa
+2014,SLE,Sierra Leone,5.93,133,Africa
+2014,SGP,Singapore,8.64,2,Asia
+2014,SVK,Slovak Republic,7.69,33,Europe
+2014,SVN,Slovenia,7.31,58,Europe
+2014,ZAF,South Africa,6.81,90,Africa
+2014,ESP,Spain,7.69,33,Europe
+2014,LKA,Sri Lanka,6.62,100,Asia
+2014,SDN,Sudan,NA,NA,Africa
+2014,SUR,Suriname,6.57,103,Americas
+2014,SWE,Sweden,7.85,20,Europe
+2014,CHE,Switzerland,8.4,4,Europe
+2014,SYR,Syrian Arab Republic,4.87,156,Asia
+2014,TWN,Taiwan,7.62,38,Asia
+2014,TJK,Tajikistan,6.14,124,Asia
+2014,TZA,Tanzania,6.75,92,Africa
+2014,THA,Thailand,6.5,106,Asia
+2014,TLS,Timor-Leste,6.4,113,Asia
+2014,TGO,Togo,5.83,137,Africa
+2014,TTO,Trinidad and Tobago,7.19,71,Americas
+2014,TUN,Tunisia,6.41,112,Africa
+2014,TUR,Turkey,6.95,85,Asia
+2014,UGA,Uganda,7.41,53,Africa
+2014,UKR,Ukraine,5.96,130,Europe
+2014,ARE,United Arab Emirates,7.29,59,Asia
+2014,GBR,United Kingdom,8.07,12,Europe
+2014,USA,United States,8.16,8,Americas
+2014,URY,Uruguay,7.23,66,Americas
+2014,VEN,"Venezuela, RB",3.09,159,Americas
+2014,VNM,Vietnam,6.03,127,Asia
+2014,YEM,"Yemen, Rep.",6.66,95,Asia
+2014,ZMB,Zambia,7.25,63,Africa
+2014,ZWE,Zimbabwe,5.8,138,Africa
+2013,ALB,Albania,7.55,42,Europe
+2013,DZA,Algeria,5.16,150,Africa
+2013,AGO,Angola,5.11,153,Africa
+2013,ARG,Argentina,5.14,152,Americas
+2013,ARM,Armenia,7.85,19,Asia
+2013,AUS,Australia,8.02,9,Oceania
+2013,AUT,Austria,7.79,22,Europe
+2013,AZE,Azerbaijan,6.07,124,Asia
+2013,BHS,"Bahamas, The",7.4,51,Americas
+2013,BHR,Bahrain,7.18,66,Asia
+2013,BGD,Bangladesh,6.31,118,Asia
+2013,BRB,Barbados,6.7,95,Americas
+2013,BLR,Belarus,NA,NA,Europe
+2013,BEL,Belgium,7.58,41,Europe
+2013,BLZ,Belize,6.82,85,Americas
+2013,BEN,Benin,6.18,121,Africa
+2013,BTN,Bhutan,6.66,98,Asia
+2013,BOL,Bolivia,6.39,114,Americas
+2013,BIH,Bosnia and Herzegovina,6.89,83,Europe
+2013,BWA,Botswana,7.39,53,Africa
+2013,BRA,Brazil,6.5,109,Americas
+2013,BRN,Brunei Darussalam,6.81,86,Asia
+2013,BGR,Bulgaria,7.59,40,Europe
+2013,BFA,Burkina Faso,5.91,133,Africa
+2013,BDI,Burundi,6.03,126,Africa
+2013,CPV,Cabo Verde,6.77,91,Africa
+2013,KHM,Cambodia,7.23,62,Asia
+2013,CMR,Cameroon,5.86,136,Africa
+2013,CAN,Canada,8.23,5,Americas
+2013,CAF,Central African Republic,5.66,140,Africa
+2013,TCD,Chad,5.25,149,Africa
+2013,CHL,Chile,7.96,13,Americas
+2013,CHN,China,6.19,120,Asia
+2013,COL,Colombia,6.78,88,Americas
+2013,COD,"Congo, Dem. Rep.",5.58,143,Africa
+2013,COG,"Congo, Rep.",4.84,155,Africa
+2013,CRI,Costa Rica,7.63,33,Americas
+2013,CIV,Cote d'Ivoire,5.88,135,Africa
+2013,HRV,Croatia,7.09,73,Europe
+2013,CYP,Cyprus,7.14,69,Asia
+2013,CZE,Czech Republic,7.71,27,Europe
+2013,DNK,Denmark,7.98,11,Europe
+2013,DOM,Dominican Republic,7.48,46,Americas
+2013,ECU,Ecuador,6.13,122,Americas
+2013,EGY,"Egypt, Arab Rep.",5.74,138,Africa
+2013,SLV,El Salvador,7.35,54,Americas
+2013,EST,Estonia,7.87,17,Europe
+2013,SWZ,Eswatini,6.48,110,Africa
+2013,ETH,Ethiopia,5.33,147,Africa
+2013,FJI,Fiji,6.51,108,Oceania
+2013,FIN,Finland,7.76,24,Europe
+2013,FRA,France,7.45,49,Europe
+2013,GAB,Gabon,5.32,148,Africa
+2013,GMB,"Gambia, The",7.21,63,Africa
+2013,GEO,Georgia,8.19,6,Asia
+2013,DEU,Germany,7.91,15,Europe
+2013,GHA,Ghana,6.69,96,Africa
+2013,GRC,Greece,7.01,78,Europe
+2013,GTM,Guatemala,7.81,20,Americas
+2013,GIN,Guinea,5.15,151,Africa
+2013,GNB,Guinea-Bissau,5.4,146,Africa
+2013,GUY,Guyana,6.32,117,Americas
+2013,HTI,Haiti,6.63,101,Americas
+2013,HND,Honduras,7.26,59,Americas
+2013,HKG,"Hong Kong SAR, China",8.81,1,Asia
+2013,HUN,Hungary,7.46,47,Europe
+2013,ISL,Iceland,7.06,77,Europe
+2013,IND,India,6.34,115,Asia
+2013,IDN,Indonesia,7.09,73,Asia
+2013,IRN,"Iran, Islamic Rep.",5.42,145,Asia
+2013,IRQ,Iraq,NA,NA,Asia
+2013,IRL,Ireland,8.14,7,Europe
+2013,ISR,Israel,7.46,47,Asia
+2013,ITA,Italy,7.62,35,Europe
+2013,JAM,Jamaica,7.63,33,Americas
+2013,JPN,Japan,7.81,20,Asia
+2013,JOR,Jordan,7.61,37,Asia
+2013,KAZ,Kazakhstan,7.01,78,Asia
+2013,KEN,Kenya,7.15,68,Africa
+2013,KOR,"Korea, Rep.",7.53,43,Asia
+2013,KWT,Kuwait,6.69,96,Asia
+2013,KGZ,Kyrgyz Republic,6.78,88,Asia
+2013,LAO,Lao PDR,NA,NA,Asia
+2013,LVA,Latvia,7.97,12,Europe
+2013,LBN,Lebanon,7.12,71,Asia
+2013,LSO,Lesotho,6.54,106,Africa
+2013,LBR,Liberia,NA,NA,Africa
+2013,LBY,Libya,5.09,154,Africa
+2013,LTU,Lithuania,7.94,14,Europe
+2013,LUX,Luxembourg,7.67,31,Europe
+2013,MDG,Madagascar,6.64,100,Africa
+2013,MWI,Malawi,5.98,129,Africa
+2013,MYS,Malaysia,7.24,60,Asia
+2013,MLI,Mali,5.93,132,Africa
+2013,MLT,Malta,7.87,17,Europe
+2013,MRT,Mauritania,5.8,137,Africa
+2013,MUS,Mauritius,7.88,16,Africa
+2013,MEX,Mexico,6.91,82,Americas
+2013,MDA,Moldova,6.75,93,Europe
+2013,MNG,Mongolia,7.17,67,Asia
+2013,MNE,Montenegro,7.49,45,Europe
+2013,MAR,Morocco,6.48,110,Africa
+2013,MOZ,Mozambique,5.68,139,Africa
+2013,MMR,Myanmar,5.59,142,Asia
+2013,NAM,Namibia,6.63,101,Africa
+2013,NPL,Nepal,6.6,104,Asia
+2013,NLD,Netherlands,7.71,27,Europe
+2013,NZL,New Zealand,8.44,3,Oceania
+2013,NIC,Nicaragua,7.34,55,Americas
+2013,NER,Niger,5.62,141,Africa
+2013,NGA,Nigeria,6.65,99,Africa
+2013,MKD,North Macedonia,7.11,72,Europe
+2013,NOR,Norway,7.73,26,Europe
+2013,OMN,Oman,6.86,84,Asia
+2013,PAK,Pakistan,5.95,131,Asia
+2013,PAN,Panama,7.61,37,Americas
+2013,PNG,Papua New Guinea,6.78,88,Oceania
+2013,PRY,Paraguay,7.08,76,Americas
+2013,PER,Peru,7.71,27,Americas
+2013,PHL,Philippines,7.5,44,Asia
+2013,POL,Poland,7.27,58,Europe
+2013,PRT,Portugal,7.69,30,Europe
+2013,QAT,Qatar,7.14,69,Asia
+2013,ROU,Romania,7.78,23,Europe
+2013,RUS,Russian Federation,6.55,105,Europe
+2013,RWA,Rwanda,7.24,60,Africa
+2013,SAU,Saudi Arabia,6.23,119,Asia
+2013,SEN,Senegal,5.97,130,Africa
+2013,SRB,Serbia,6.77,91,Europe
+2013,SYC,Seychelles,7.29,57,Africa
+2013,SLE,Sierra Leone,6,128,Africa
+2013,SGP,Singapore,8.46,2,Asia
+2013,SVK,Slovak Republic,7.64,32,Europe
+2013,SVN,Slovenia,7.09,73,Europe
+2013,ZAF,South Africa,6.92,80,Africa
+2013,ESP,Spain,7.61,37,Europe
+2013,LKA,Sri Lanka,6.73,94,Asia
+2013,SDN,Sudan,NA,NA,Africa
+2013,SUR,Suriname,6.63,101,Americas
+2013,SWE,Sweden,7.75,25,Europe
+2013,CHE,Switzerland,8.33,4,Europe
+2013,SYR,Syrian Arab Republic,4.6,156,Asia
+2013,TWN,Taiwan,7.62,35,Asia
+2013,TJK,Tajikistan,6.07,124,Asia
+2013,TZA,Tanzania,6.81,86,Africa
+2013,THA,Thailand,6.53,107,Asia
+2013,TLS,Timor-Leste,6.45,113,Asia
+2013,TGO,Togo,5.9,134,Africa
+2013,TTO,Trinidad and Tobago,7.21,63,Americas
+2013,TUN,Tunisia,6.34,115,Africa
+2013,TUR,Turkey,6.92,80,Asia
+2013,UGA,Uganda,7.42,50,Africa
+2013,UKR,Ukraine,6.13,122,Europe
+2013,ARE,United Arab Emirates,7.4,51,Asia
+2013,GBR,United Kingdom,8.01,10,Europe
+2013,USA,United States,8.07,8,Americas
+2013,URY,Uruguay,7.34,55,Americas
+2013,VEN,"Venezuela, RB",3.16,157,Americas
+2013,VNM,Vietnam,6.02,127,Asia
+2013,YEM,"Yemen, Rep.",6.47,112,Asia
+2013,ZMB,Zambia,7.21,63,Africa
+2013,ZWE,Zimbabwe,5.46,144,Africa
+2012,ALB,Albania,7.46,46,Europe
+2012,DZA,Algeria,4.95,150,Africa
+2012,AGO,Angola,5.45,139,Africa
+2012,ARG,Argentina,5.33,142,Americas
+2012,ARM,Armenia,7.78,19,Asia
+2012,AUS,Australia,8.09,10,Oceania
+2012,AUT,Austria,7.78,19,Europe
+2012,AZE,Azerbaijan,6.13,122,Asia
+2012,BHS,"Bahamas, The",7.34,52,Americas
+2012,BHR,Bahrain,7.14,65,Asia
+2012,BGD,Bangladesh,6.16,119,Asia
+2012,BRB,Barbados,6.32,113,Americas
+2012,BLR,Belarus,NA,NA,Europe
+2012,BEL,Belgium,7.55,37,Europe
+2012,BLZ,Belize,6.8,87,Americas
+2012,BEN,Benin,5.89,131,Africa
+2012,BTN,Bhutan,NA,NA,Asia
+2012,BOL,Bolivia,6.38,110,Americas
+2012,BIH,Bosnia and Herzegovina,6.94,79,Europe
+2012,BWA,Botswana,7.33,55,Africa
+2012,BRA,Brazil,6.63,95,Americas
+2012,BRN,Brunei Darussalam,6.98,77,Asia
+2012,BGR,Bulgaria,7.65,29,Europe
+2012,BFA,Burkina Faso,5.72,134,Africa
+2012,BDI,Burundi,5.43,140,Africa
+2012,CPV,Cabo Verde,6.72,90,Africa
+2012,KHM,Cambodia,7.01,73,Asia
+2012,CMR,Cameroon,5.98,128,Africa
+2012,CAN,Canada,8.18,5,Americas
+2012,CAF,Central African Republic,5.27,145,Africa
+2012,TCD,Chad,5.04,149,Africa
+2012,CHL,Chile,7.86,16,Americas
+2012,CHN,China,6.15,120,Asia
+2012,COL,Colombia,6.85,84,Americas
+2012,COD,"Congo, Dem. Rep.",5.65,136,Africa
+2012,COG,"Congo, Rep.",4.62,152,Africa
+2012,CRI,Costa Rica,7.7,27,Americas
+2012,CIV,Cote d'Ivoire,5.61,137,Africa
+2012,HRV,Croatia,7.2,62,Europe
+2012,CYP,Cyprus,7.54,38,Asia
+2012,CZE,Czech Republic,7.78,19,Europe
+2012,DNK,Denmark,7.89,13,Europe
+2012,DOM,Dominican Republic,7.23,60,Americas
+2012,ECU,Ecuador,6.22,117,Americas
+2012,EGY,"Egypt, Arab Rep.",6.07,125,Africa
+2012,SLV,El Salvador,7.34,52,Americas
+2012,EST,Estonia,7.88,14,Europe
+2012,SWZ,Eswatini,6.33,112,Africa
+2012,ETH,Ethiopia,5.25,147,Africa
+2012,FJI,Fiji,6.74,88,Oceania
+2012,FIN,Finland,7.91,12,Europe
+2012,FRA,France,7.47,44,Europe
+2012,GAB,Gabon,5.28,144,Africa
+2012,GMB,"Gambia, The",6.87,81,Africa
+2012,GEO,Georgia,8.13,7,Asia
+2012,DEU,Germany,7.84,17,Europe
+2012,GHA,Ghana,6.69,93,Africa
+2012,GRC,Greece,7.06,70,Europe
+2012,GTM,Guatemala,7.62,32,Americas
+2012,GIN,Guinea,NA,NA,Africa
+2012,GNB,Guinea-Bissau,5.84,132,Africa
+2012,GUY,Guyana,6.48,104,Americas
+2012,HTI,Haiti,6.15,120,Americas
+2012,HND,Honduras,7.22,61,Americas
+2012,HKG,"Hong Kong SAR, China",8.84,1,Asia
+2012,HUN,Hungary,7.52,40,Europe
+2012,ISL,Iceland,7,75,Europe
+2012,IND,India,6.51,101,Asia
+2012,IDN,Indonesia,6.88,80,Asia
+2012,IRN,"Iran, Islamic Rep.",5.26,146,Asia
+2012,IRQ,Iraq,NA,NA,Asia
+2012,IRL,Ireland,8.1,8,Europe
+2012,ISR,Israel,7.36,50,Asia
+2012,ITA,Italy,7.61,34,Europe
+2012,JAM,Jamaica,7.44,47,Americas
+2012,JPN,Japan,7.77,22,Asia
+2012,JOR,Jordan,7.47,44,Asia
+2012,KAZ,Kazakhstan,7,75,Asia
+2012,KEN,Kenya,7.18,63,Africa
+2012,KOR,"Korea, Rep.",7.58,35,Asia
+2012,KWT,Kuwait,6.72,90,Asia
+2012,KGZ,Kyrgyz Republic,6.72,90,Asia
+2012,LAO,Lao PDR,NA,NA,Asia
+2012,LVA,Latvia,7.88,14,Europe
+2012,LBN,Lebanon,7.07,68,Asia
+2012,LSO,Lesotho,6.27,115,Africa
+2012,LBR,Liberia,NA,NA,Africa
+2012,LBY,Libya,NA,NA,Africa
+2012,LTU,Lithuania,7.69,28,Europe
+2012,LUX,Luxembourg,7.52,40,Europe
+2012,MDG,Madagascar,6.37,111,Africa
+2012,MWI,Malawi,6.09,124,Africa
+2012,MYS,Malaysia,6.63,95,Asia
+2012,MLI,Mali,6.06,126,Africa
+2012,MLT,Malta,7.8,18,Europe
+2012,MRT,Mauritania,5.97,129,Africa
+2012,MUS,Mauritius,7.97,11,Africa
+2012,MEX,Mexico,6.82,85,Americas
+2012,MDA,Moldova,6.82,85,Europe
+2012,MNG,Mongolia,7.04,71,Asia
+2012,MNE,Montenegro,7.34,52,Europe
+2012,MAR,Morocco,6.46,105,Africa
+2012,MOZ,Mozambique,5.75,133,Africa
+2012,MMR,Myanmar,5.33,142,Asia
+2012,NAM,Namibia,6.66,94,Africa
+2012,NPL,Nepal,6.44,106,Asia
+2012,NLD,Netherlands,7.73,25,Europe
+2012,NZL,New Zealand,8.43,3,Oceania
+2012,NIC,Nicaragua,7.31,56,Americas
+2012,NER,Niger,5.54,138,Africa
+2012,NGA,Nigeria,6.42,107,Africa
+2012,MKD,North Macedonia,7.07,68,Europe
+2012,NOR,Norway,7.72,26,Europe
+2012,OMN,Oman,6.87,81,Asia
+2012,PAK,Pakistan,6.02,127,Asia
+2012,PAN,Panama,7.5,42,Americas
+2012,PNG,Papua New Guinea,7.01,73,Oceania
+2012,PRY,Paraguay,7.1,67,Americas
+2012,PER,Peru,7.74,24,Americas
+2012,PHL,Philippines,7.25,59,Asia
+2012,POL,Poland,7.36,50,Europe
+2012,PRT,Portugal,7.57,36,Europe
+2012,QAT,Qatar,7.11,66,Asia
+2012,ROU,Romania,7.63,30,Europe
+2012,RUS,Russian Federation,6.6,97,Europe
+2012,RWA,Rwanda,7.26,58,Africa
+2012,SAU,Saudi Arabia,6.13,122,Asia
+2012,SEN,Senegal,5.7,135,Africa
+2012,SRB,Serbia,6.74,88,Europe
+2012,SYC,Seychelles,NA,NA,Africa
+2012,SLE,Sierra Leone,6.24,116,Africa
+2012,SGP,Singapore,8.44,2,Asia
+2012,SVK,Slovak Republic,7.63,30,Europe
+2012,SVN,Slovenia,7.17,64,Europe
+2012,ZAF,South Africa,6.87,81,Africa
+2012,ESP,Spain,7.62,32,Europe
+2012,LKA,Sri Lanka,6.59,99,Asia
+2012,SDN,Sudan,NA,NA,Africa
+2012,SUR,Suriname,6.54,100,Americas
+2012,SWE,Sweden,7.77,22,Europe
+2012,CHE,Switzerland,8.34,4,Europe
+2012,SYR,Syrian Arab Republic,4.95,150,Asia
+2012,TWN,Taiwan,7.53,39,Asia
+2012,TJK,Tajikistan,6.39,109,Asia
+2012,TZA,Tanzania,6.6,97,Africa
+2012,THA,Thailand,6.51,101,Asia
+2012,TLS,Timor-Leste,6.41,108,Asia
+2012,TGO,Togo,5.38,141,Africa
+2012,TTO,Trinidad and Tobago,6.98,77,Americas
+2012,TUN,Tunisia,6.28,114,Africa
+2012,TUR,Turkey,7.03,72,Asia
+2012,UGA,Uganda,7.31,56,Africa
+2012,UKR,Ukraine,6.2,118,Europe
+2012,ARE,United Arab Emirates,7.49,43,Asia
+2012,GBR,United Kingdom,8.1,8,Europe
+2012,USA,United States,8.15,6,Americas
+2012,URY,Uruguay,7.44,47,Americas
+2012,VEN,"Venezuela, RB",3.67,153,Americas
+2012,VNM,Vietnam,5.92,130,Asia
+2012,YEM,"Yemen, Rep.",6.49,103,Asia
+2012,ZMB,Zambia,7.39,49,Africa
+2012,ZWE,Zimbabwe,5.08,148,Africa
+2011,ALB,Albania,7.51,39,Europe
+2011,DZA,Algeria,5.12,149,Africa
+2011,AGO,Angola,5.25,146,Africa
+2011,ARG,Argentina,5.85,134,Americas
+2011,ARM,Armenia,7.72,26,Asia
+2011,AUS,Australia,8.1,5,Oceania
+2011,AUT,Austria,7.8,19,Europe
+2011,AZE,Azerbaijan,5.97,129,Asia
+2011,BHS,"Bahamas, The",7.34,51,Americas
+2011,BHR,Bahrain,7.29,54,Asia
+2011,BGD,Bangladesh,6.16,119,Asia
+2011,BRB,Barbados,6.64,94,Americas
+2011,BLR,Belarus,NA,NA,Europe
+2011,BEL,Belgium,7.58,36,Europe
+2011,BLZ,Belize,6.8,83,Americas
+2011,BEN,Benin,6.06,126,Africa
+2011,BTN,Bhutan,NA,NA,Asia
+2011,BOL,Bolivia,6.31,115,Americas
+2011,BIH,Bosnia and Herzegovina,7,73,Europe
+2011,BWA,Botswana,7.24,58,Africa
+2011,BRA,Brazil,6.68,92,Americas
+2011,BRN,Brunei Darussalam,6.83,81,Asia
+2011,BGR,Bulgaria,7.6,34,Europe
+2011,BFA,Burkina Faso,5.86,133,Africa
+2011,BDI,Burundi,5.44,141,Africa
+2011,CPV,Cabo Verde,6.62,96,Africa
+2011,KHM,Cambodia,6.75,90,Asia
+2011,CMR,Cameroon,5.98,128,Africa
+2011,CAN,Canada,8.08,6,Americas
+2011,CAF,Central African Republic,5.37,143,Africa
+2011,TCD,Chad,5.25,146,Africa
+2011,CHL,Chile,7.95,12,Americas
+2011,CHN,China,6.07,125,Asia
+2011,COL,Colombia,6.77,86,Americas
+2011,COD,"Congo, Dem. Rep.",5.6,138,Africa
+2011,COG,"Congo, Rep.",4.67,151,Africa
+2011,CRI,Costa Rica,7.74,24,Americas
+2011,CIV,Cote d'Ivoire,5.63,137,Africa
+2011,HRV,Croatia,7.2,63,Europe
+2011,CYP,Cyprus,7.74,24,Asia
+2011,CZE,Czech Republic,7.69,29,Europe
+2011,DNK,Denmark,7.93,14,Europe
+2011,DOM,Dominican Republic,7.46,46,Americas
+2011,ECU,Ecuador,6.11,122,Americas
+2011,EGY,"Egypt, Arab Rep.",6.12,120,Africa
+2011,SLV,El Salvador,7.41,50,Americas
+2011,EST,Estonia,7.95,12,Europe
+2011,SWZ,Eswatini,6.44,109,Africa
+2011,ETH,Ethiopia,5.18,148,Africa
+2011,FJI,Fiji,6.87,80,Oceania
+2011,FIN,Finland,7.98,11,Europe
+2011,FRA,France,7.5,41,Europe
+2011,GAB,Gabon,5.29,145,Africa
+2011,GMB,"Gambia, The",7,73,Africa
+2011,GEO,Georgia,7.99,10,Asia
+2011,DEU,Germany,7.87,16,Europe
+2011,GHA,Ghana,6.82,82,Africa
+2011,GRC,Greece,7.12,67,Europe
+2011,GTM,Guatemala,7.53,38,Americas
+2011,GIN,Guinea,NA,NA,Africa
+2011,GNB,Guinea-Bissau,5.34,144,Africa
+2011,GUY,Guyana,6.49,105,Americas
+2011,HTI,Haiti,6.47,108,Americas
+2011,HND,Honduras,7.31,53,Americas
+2011,HKG,"Hong Kong SAR, China",8.88,1,Asia
+2011,HUN,Hungary,7.62,32,Europe
+2011,ISL,Iceland,6.9,79,Europe
+2011,IND,India,6.52,102,Asia
+2011,IDN,Indonesia,6.95,76,Asia
+2011,IRN,"Iran, Islamic Rep.",5.4,142,Asia
+2011,IRQ,Iraq,NA,NA,Asia
+2011,IRL,Ireland,8.04,8,Europe
+2011,ISR,Israel,7.32,52,Asia
+2011,ITA,Italy,7.61,33,Europe
+2011,JAM,Jamaica,7.25,57,Americas
+2011,JPN,Japan,7.71,27,Asia
+2011,JOR,Jordan,7.48,45,Asia
+2011,KAZ,Kazakhstan,6.76,87,Asia
+2011,KEN,Kenya,7.05,71,Africa
+2011,KOR,"Korea, Rep.",7.6,34,Asia
+2011,KWT,Kuwait,6.64,94,Asia
+2011,KGZ,Kyrgyz Republic,6.76,87,Asia
+2011,LAO,Lao PDR,NA,NA,Asia
+2011,LVA,Latvia,7.76,21,Europe
+2011,LBN,Lebanon,7.23,60,Asia
+2011,LSO,Lesotho,6.35,114,Africa
+2011,LBR,Liberia,NA,NA,Africa
+2011,LBY,Libya,NA,NA,Africa
+2011,LTU,Lithuania,7.65,31,Europe
+2011,LUX,Luxembourg,7.55,37,Europe
+2011,MDG,Madagascar,6.21,117,Africa
+2011,MWI,Malawi,6.43,111,Africa
+2011,MYS,Malaysia,6.61,97,Asia
+2011,MLI,Mali,5.93,130,Africa
+2011,MLT,Malta,7.86,17,Europe
+2011,MRT,Mauritania,6.04,127,Africa
+2011,MUS,Mauritius,7.92,15,Africa
+2011,MEX,Mexico,6.75,90,Americas
+2011,MDA,Moldova,6.79,84,Europe
+2011,MNG,Mongolia,7.17,65,Asia
+2011,MNE,Montenegro,7.24,58,Europe
+2011,MAR,Morocco,6.55,100,Africa
+2011,MOZ,Mozambique,5.51,139,Africa
+2011,MMR,Myanmar,4.18,152,Asia
+2011,NAM,Namibia,6.58,98,Africa
+2011,NPL,Nepal,6.44,109,Asia
+2011,NLD,Netherlands,7.75,23,Europe
+2011,NZL,New Zealand,8.28,4,Oceania
+2011,NIC,Nicaragua,7.26,56,Americas
+2011,NER,Niger,5.72,135,Africa
+2011,NGA,Nigeria,6.49,105,Africa
+2011,MKD,North Macedonia,7.1,68,Europe
+2011,NOR,Norway,7.67,30,Europe
+2011,OMN,Oman,6.76,87,Asia
+2011,PAK,Pakistan,6.11,122,Asia
+2011,PAN,Panama,7.42,48,Americas
+2011,PNG,Papua New Guinea,7,73,Oceania
+2011,PRY,Paraguay,7.2,63,Americas
+2011,PER,Peru,7.83,18,Americas
+2011,PHL,Philippines,7.22,62,Asia
+2011,POL,Poland,7.27,55,Europe
+2011,PRT,Portugal,7.5,41,Europe
+2011,QAT,Qatar,6.94,77,Asia
+2011,ROU,Romania,7.51,39,Europe
+2011,RUS,Russian Federation,6.51,103,Europe
+2011,RWA,Rwanda,7.1,68,Africa
+2011,SAU,Saudi Arabia,6.28,116,Asia
+2011,SEN,Senegal,5.72,135,Africa
+2011,SRB,Serbia,6.78,85,Europe
+2011,SYC,Seychelles,NA,NA,Africa
+2011,SLE,Sierra Leone,6.08,124,Africa
+2011,SGP,Singapore,8.54,2,Asia
+2011,SVK,Slovak Republic,7.7,28,Europe
+2011,SVN,Slovenia,7.16,66,Europe
+2011,ZAF,South Africa,6.91,78,Africa
+2011,ESP,Spain,7.76,21,Europe
+2011,LKA,Sri Lanka,6.56,99,Asia
+2011,SDN,Sudan,NA,NA,Africa
+2011,SUR,Suriname,6.38,112,Americas
+2011,SWE,Sweden,7.79,20,Europe
+2011,CHE,Switzerland,8.33,3,Europe
+2011,SYR,Syrian Arab Republic,5.91,131,Asia
+2011,TWN,Taiwan,7.5,41,Asia
+2011,TJK,Tajikistan,6.18,118,Asia
+2011,TZA,Tanzania,6.67,93,Africa
+2011,THA,Thailand,6.53,101,Asia
+2011,TLS,Timor-Leste,6.49,105,Asia
+2011,TGO,Togo,5.48,140,Africa
+2011,TTO,Trinidad and Tobago,7.03,72,Americas
+2011,TUN,Tunisia,6.5,104,Africa
+2011,TUR,Turkey,7.08,70,Asia
+2011,UGA,Uganda,7.23,60,Africa
+2011,UKR,Ukraine,6.12,120,Europe
+2011,ARE,United Arab Emirates,7.49,44,Asia
+2011,GBR,United Kingdom,8.04,8,Europe
+2011,USA,United States,8.07,7,Americas
+2011,URY,Uruguay,7.45,47,Americas
+2011,VEN,"Venezuela, RB",3.76,153,Americas
+2011,VNM,Vietnam,5.9,132,Asia
+2011,YEM,"Yemen, Rep.",6.36,113,Asia
+2011,ZMB,Zambia,7.42,48,Africa
+2011,ZWE,Zimbabwe,4.8,150,Africa
+2010,ALB,Albania,7.4,49,Europe
+2010,DZA,Algeria,5.13,149,Africa
+2010,AGO,Angola,5.39,144,Africa
+2010,ARG,Argentina,5.82,131,Americas
+2010,ARM,Armenia,7.69,25,Asia
+2010,AUS,Australia,8.1,7,Oceania
+2010,AUT,Austria,7.77,20,Europe
+2010,AZE,Azerbaijan,5.82,131,Asia
+2010,BHS,"Bahamas, The",7.42,46,Americas
+2010,BHR,Bahrain,7.18,57,Asia
+2010,BGD,Bangladesh,6.2,115,Asia
+2010,BRB,Barbados,6.22,114,Americas
+2010,BLR,Belarus,NA,NA,Europe
+2010,BEL,Belgium,7.63,30,Europe
+2010,BLZ,Belize,6.46,101,Americas
+2010,BEN,Benin,6.11,121,Africa
+2010,BTN,Bhutan,NA,NA,Asia
+2010,BOL,Bolivia,6.37,107,Americas
+2010,BIH,Bosnia and Herzegovina,6.74,86,Europe
+2010,BWA,Botswana,7.03,70,Africa
+2010,BRA,Brazil,6.66,93,Americas
+2010,BRN,Brunei Darussalam,6.99,73,Asia
+2010,BGR,Bulgaria,7.68,27,Europe
+2010,BFA,Burkina Faso,5.9,128,Africa
+2010,BDI,Burundi,5.31,146,Africa
+2010,CPV,Cabo Verde,6.44,106,Africa
+2010,KHM,Cambodia,6.96,75,Asia
+2010,CMR,Cameroon,6.03,126,Africa
+2010,CAN,Canada,8.18,5,Americas
+2010,CAF,Central African Republic,5.31,146,Africa
+2010,TCD,Chad,5.63,138,Africa
+2010,CHL,Chile,7.94,10,Americas
+2010,CHN,China,6.04,123,Asia
+2010,COL,Colombia,6.72,87,Americas
+2010,COD,"Congo, Dem. Rep.",5.55,139,Africa
+2010,COG,"Congo, Rep.",4.72,150,Africa
+2010,CRI,Costa Rica,7.4,49,Americas
+2010,CIV,Cote d'Ivoire,5.67,136,Africa
+2010,HRV,Croatia,6.96,75,Europe
+2010,CYP,Cyprus,7.81,15,Asia
+2010,CZE,Czech Republic,7.64,29,Europe
+2010,DNK,Denmark,7.93,11,Europe
+2010,DOM,Dominican Republic,7.42,46,Americas
+2010,ECU,Ecuador,6.2,115,Americas
+2010,EGY,"Egypt, Arab Rep.",6.18,117,Africa
+2010,SLV,El Salvador,7.47,42,Americas
+2010,EST,Estonia,8.02,9,Europe
+2010,SWZ,Eswatini,6.33,110,Africa
+2010,ETH,Ethiopia,5.33,145,Africa
+2010,FJI,Fiji,6.77,85,Oceania
+2010,FIN,Finland,7.92,12,Europe
+2010,FRA,France,7.59,34,Europe
+2010,GAB,Gabon,5.55,139,Africa
+2010,GMB,"Gambia, The",7.02,71,Africa
+2010,GEO,Georgia,7.76,21,Asia
+2010,DEU,Germany,7.78,19,Europe
+2010,GHA,Ghana,6.91,79,Africa
+2010,GRC,Greece,7.12,63,Europe
+2010,GTM,Guatemala,7.49,40,Americas
+2010,GIN,Guinea,NA,NA,Africa
+2010,GNB,Guinea-Bissau,5.16,148,Africa
+2010,GUY,Guyana,6.52,97,Americas
+2010,HTI,Haiti,6.45,105,Americas
+2010,HND,Honduras,7.32,53,Americas
+2010,HKG,"Hong Kong SAR, China",8.91,1,Asia
+2010,HUN,Hungary,7.6,32,Europe
+2010,ISL,Iceland,6.5,99,Europe
+2010,IND,India,6.37,107,Asia
+2010,IDN,Indonesia,6.97,74,Asia
+2010,IRN,"Iran, Islamic Rep.",5.54,141,Asia
+2010,IRQ,Iraq,NA,NA,Asia
+2010,IRL,Ireland,7.89,14,Europe
+2010,ISR,Israel,7.31,54,Asia
+2010,ITA,Italy,7.57,36,Europe
+2010,JAM,Jamaica,7.21,56,Americas
+2010,JPN,Japan,7.79,18,Asia
+2010,JOR,Jordan,7.46,43,Asia
+2010,KAZ,Kazakhstan,6.79,84,Asia
+2010,KEN,Kenya,7.02,71,Africa
+2010,KOR,"Korea, Rep.",7.6,32,Asia
+2010,KWT,Kuwait,6.68,91,Asia
+2010,KGZ,Kyrgyz Republic,6.8,81,Asia
+2010,LAO,Lao PDR,NA,NA,Asia
+2010,LVA,Latvia,7.74,23,Europe
+2010,LBN,Lebanon,7.13,61,Asia
+2010,LSO,Lesotho,6.17,118,Africa
+2010,LBR,Liberia,NA,NA,Africa
+2010,LBY,Libya,NA,NA,Africa
+2010,LTU,Lithuania,7.58,35,Europe
+2010,LUX,Luxembourg,7.53,38,Europe
+2010,MDG,Madagascar,6.29,112,Africa
+2010,MWI,Malawi,6.17,118,Africa
+2010,MYS,Malaysia,6.57,95,Asia
+2010,MLI,Mali,6.04,123,Africa
+2010,MLT,Malta,7.75,22,Europe
+2010,MRT,Mauritania,5.88,130,Africa
+2010,MUS,Mauritius,7.92,12,Africa
+2010,MEX,Mexico,6.8,81,Americas
+2010,MDA,Moldova,6.71,88,Europe
+2010,MNG,Mongolia,7.09,67,Asia
+2010,MNE,Montenegro,7.34,52,Europe
+2010,MAR,Morocco,6.46,101,Africa
+2010,MOZ,Mozambique,5.44,143,Africa
+2010,MMR,Myanmar,3.93,152,Asia
+2010,NAM,Namibia,6.69,90,Africa
+2010,NPL,Nepal,6.52,97,Asia
+2010,NLD,Netherlands,7.7,24,Europe
+2010,NZL,New Zealand,8.24,4,Oceania
+2010,NIC,Nicaragua,7.18,57,Americas
+2010,NER,Niger,5.8,133,Africa
+2010,NGA,Nigeria,6.17,118,Africa
+2010,MKD,North Macedonia,7.06,68,Europe
+2010,NOR,Norway,7.62,31,Europe
+2010,OMN,Oman,6.8,81,Asia
+2010,PAK,Pakistan,6.04,123,Asia
+2010,PAN,Panama,7.52,39,Americas
+2010,PNG,Papua New Guinea,6.96,75,Oceania
+2010,PRY,Paraguay,7.11,64,Americas
+2010,PER,Peru,7.81,15,Americas
+2010,PHL,Philippines,7.16,60,Asia
+2010,POL,Poland,7.17,59,Europe
+2010,PRT,Portugal,7.28,55,Europe
+2010,QAT,Qatar,7.13,61,Asia
+2010,ROU,Romania,7.49,40,Europe
+2010,RUS,Russian Federation,6.48,100,Europe
+2010,RWA,Rwanda,7.1,65,Africa
+2010,SAU,Saudi Arabia,6.46,101,Asia
+2010,SEN,Senegal,5.74,134,Africa
+2010,SRB,Serbia,6.7,89,Europe
+2010,SYC,Seychelles,NA,NA,Africa
+2010,SLE,Sierra Leone,6.37,107,Africa
+2010,SGP,Singapore,8.55,2,Asia
+2010,SVK,Slovak Republic,7.69,25,Europe
+2010,SVN,Slovenia,7.1,65,Europe
+2010,ZAF,South Africa,6.86,80,Africa
+2010,ESP,Spain,7.65,28,Europe
+2010,LKA,Sri Lanka,6.46,101,Asia
+2010,SDN,Sudan,NA,NA,Africa
+2010,SUR,Suriname,6.58,94,Americas
+2010,SWE,Sweden,7.81,15,Europe
+2010,CHE,Switzerland,8.4,3,Europe
+2010,SYR,Syrian Arab Republic,5.67,136,Asia
+2010,TWN,Taiwan,7.57,36,Asia
+2010,TJK,Tajikistan,6.08,122,Asia
+2010,TZA,Tanzania,6.67,92,Africa
+2010,THA,Thailand,6.55,96,Asia
+2010,TLS,Timor-Leste,5.72,135,Asia
+2010,TGO,Togo,5.52,142,Africa
+2010,TTO,Trinidad and Tobago,7.04,69,Americas
+2010,TUN,Tunisia,6.23,113,Africa
+2010,TUR,Turkey,6.96,75,Asia
+2010,UGA,Uganda,7.43,44,Africa
+2010,UKR,Ukraine,5.9,128,Europe
+2010,ARE,United Arab Emirates,7.43,44,Asia
+2010,GBR,United Kingdom,8.05,8,Europe
+2010,USA,United States,8.12,6,Americas
+2010,URY,Uruguay,7.42,46,Americas
+2010,VEN,"Venezuela, RB",3.79,153,Americas
+2010,VNM,Vietnam,5.96,127,Asia
+2010,YEM,"Yemen, Rep.",6.33,110,Asia
+2010,ZMB,Zambia,7.4,49,Africa
+2010,ZWE,Zimbabwe,4.34,151,Africa
+2009,ALB,Albania,7.27,47,Europe
+2009,DZA,Algeria,5.17,137,Africa
+2009,AGO,Angola,5.32,135,Africa
+2009,ARG,Argentina,6.02,116,Americas
+2009,ARM,Armenia,7.68,22,Asia
+2009,AUS,Australia,8.14,6,Oceania
+2009,AUT,Austria,7.76,16,Europe
+2009,AZE,Azerbaijan,5.93,120,Asia
+2009,BHS,"Bahamas, The",7.47,39,Americas
+2009,BHR,Bahrain,7.14,58,Asia
+2009,BGD,Bangladesh,6.22,104,Asia
+2009,BRB,Barbados,6.21,106,Americas
+2009,BLR,Belarus,NA,NA,Europe
+2009,BEL,Belgium,7.52,35,Europe
+2009,BLZ,Belize,7.03,65,Americas
+2009,BEN,Benin,6.27,101,Africa
+2009,BTN,Bhutan,NA,NA,Asia
+2009,BOL,Bolivia,6.39,95,Americas
+2009,BIH,Bosnia and Herzegovina,6.74,82,Europe
+2009,BWA,Botswana,6.8,80,Africa
+2009,BRA,Brazil,6.49,93,Americas
+2009,BRN,Brunei Darussalam,NA,NA,Asia
+2009,BGR,Bulgaria,7.63,26,Europe
+2009,BFA,Burkina Faso,6.02,116,Africa
+2009,BDI,Burundi,5.53,130,Africa
+2009,CPV,Cabo Verde,NA,NA,Africa
+2009,KHM,Cambodia,NA,NA,Asia
+2009,CMR,Cameroon,5.83,124,Africa
+2009,CAN,Canada,8.18,5,Americas
+2009,CAF,Central African Republic,5.42,134,Africa
+2009,TCD,Chad,5.45,133,Africa
+2009,CHL,Chile,7.9,9,Americas
+2009,CHN,China,6.07,112,Asia
+2009,COL,Colombia,6.68,85,Americas
+2009,COD,"Congo, Dem. Rep.",5.51,131,Africa
+2009,COG,"Congo, Rep.",4.8,138,Africa
+2009,CRI,Costa Rica,7.44,42,Americas
+2009,CIV,Cote d'Ivoire,5.85,123,Africa
+2009,HRV,Croatia,6.88,73,Europe
+2009,CYP,Cyprus,7.76,16,Asia
+2009,CZE,Czech Republic,7.58,30,Europe
+2009,DNK,Denmark,7.85,12,Europe
+2009,DOM,Dominican Republic,7.19,56,Americas
+2009,ECU,Ecuador,6.16,109,Americas
+2009,EGY,"Egypt, Arab Rep.",6.09,111,Africa
+2009,SLV,El Salvador,7.53,33,Americas
+2009,EST,Estonia,7.86,11,Europe
+2009,SWZ,Eswatini,NA,NA,Africa
+2009,ETH,Ethiopia,5.51,131,Africa
+2009,FJI,Fiji,6.89,72,Oceania
+2009,FIN,Finland,7.8,13,Europe
+2009,FRA,France,7.55,31,Europe
+2009,GAB,Gabon,5.91,121,Africa
+2009,GMB,"Gambia, The",NA,NA,Africa
+2009,GEO,Georgia,7.59,27,Asia
+2009,DEU,Germany,7.76,16,Europe
+2009,GHA,Ghana,7.07,62,Africa
+2009,GRC,Greece,7.03,65,Europe
+2009,GTM,Guatemala,7.43,43,Americas
+2009,GIN,Guinea,NA,NA,Africa
+2009,GNB,Guinea-Bissau,5.28,136,Africa
+2009,GUY,Guyana,6.53,91,Americas
+2009,HTI,Haiti,7.03,65,Americas
+2009,HND,Honduras,7.27,47,Americas
+2009,HKG,"Hong Kong SAR, China",8.9,1,Asia
+2009,HUN,Hungary,7.54,32,Europe
+2009,ISL,Iceland,6.65,88,Europe
+2009,IND,India,6.36,99,Asia
+2009,IDN,Indonesia,6.68,85,Asia
+2009,IRN,"Iran, Islamic Rep.",5.6,128,Asia
+2009,IRQ,Iraq,NA,NA,Asia
+2009,IRL,Ireland,7.8,13,Europe
+2009,ISR,Israel,7.09,61,Asia
+2009,ITA,Italy,7.41,45,Europe
+2009,JAM,Jamaica,7.2,54,Americas
+2009,JPN,Japan,7.72,19,Asia
+2009,JOR,Jordan,7.23,50,Asia
+2009,KAZ,Kazakhstan,6.87,76,Asia
+2009,KEN,Kenya,7.01,69,Africa
+2009,KOR,"Korea, Rep.",7.47,39,Asia
+2009,KWT,Kuwait,6.87,76,Asia
+2009,KGZ,Kyrgyz Republic,6.91,70,Asia
+2009,LAO,Lao PDR,NA,NA,Asia
+2009,LVA,Latvia,7.78,15,Europe
+2009,LBN,Lebanon,NA,NA,Asia
+2009,LSO,Lesotho,6.24,102,Africa
+2009,LBR,Liberia,NA,NA,Africa
+2009,LBY,Libya,NA,NA,Africa
+2009,LTU,Lithuania,7.48,37,Europe
+2009,LUX,Luxembourg,7.59,27,Europe
+2009,MDG,Madagascar,6.24,102,Africa
+2009,MWI,Malawi,6.2,107,Africa
+2009,MYS,Malaysia,6.37,97,Asia
+2009,MLI,Mali,6.07,112,Africa
+2009,MLT,Malta,7.69,21,Europe
+2009,MRT,Mauritania,6.12,110,Africa
+2009,MUS,Mauritius,7.89,10,Africa
+2009,MEX,Mexico,6.66,87,Americas
+2009,MDA,Moldova,6.54,90,Europe
+2009,MNG,Mongolia,7.11,59,Asia
+2009,MNE,Montenegro,7.2,54,Europe
+2009,MAR,Morocco,6.39,95,Africa
+2009,MOZ,Mozambique,5.59,129,Africa
+2009,MMR,Myanmar,3.94,141,Asia
+2009,NAM,Namibia,6.75,81,Africa
+2009,NPL,Nepal,6.22,104,Asia
+2009,NLD,Netherlands,7.66,23,Europe
+2009,NZL,New Zealand,8.24,4,Oceania
+2009,NIC,Nicaragua,7.1,60,Americas
+2009,NER,Niger,5.79,125,Africa
+2009,NGA,Nigeria,6.03,115,Africa
+2009,MKD,North Macedonia,7.06,63,Europe
+2009,NOR,Norway,7.59,27,Europe
+2009,OMN,Oman,6.86,78,Asia
+2009,PAK,Pakistan,6.04,114,Asia
+2009,PAN,Panama,7.48,37,Americas
+2009,PNG,Papua New Guinea,6.9,71,Oceania
+2009,PRY,Paraguay,7.04,64,Americas
+2009,PER,Peru,7.7,20,Americas
+2009,PHL,Philippines,6.88,73,Asia
+2009,POL,Poland,7.16,57,Europe
+2009,PRT,Portugal,7.23,50,Europe
+2009,QAT,Qatar,NA,NA,Asia
+2009,ROU,Romania,7.5,36,Europe
+2009,RUS,Russian Federation,6.32,100,Europe
+2009,RWA,Rwanda,6.82,79,Africa
+2009,SAU,Saudi Arabia,NA,NA,Asia
+2009,SEN,Senegal,5.99,118,Africa
+2009,SRB,Serbia,6.72,84,Europe
+2009,SYC,Seychelles,NA,NA,Africa
+2009,SLE,Sierra Leone,6.47,94,Africa
+2009,SGP,Singapore,8.6,2,Asia
+2009,SVK,Slovak Republic,7.66,23,Europe
+2009,SVN,Slovenia,7.22,53,Europe
+2009,ZAF,South Africa,6.73,83,Africa
+2009,ESP,Spain,7.53,33,Europe
+2009,LKA,Sri Lanka,6.19,108,Asia
+2009,SDN,Sudan,NA,NA,Africa
+2009,SUR,Suriname,NA,NA,Americas
+2009,SWE,Sweden,7.64,25,Europe
+2009,CHE,Switzerland,8.36,3,Europe
+2009,SYR,Syrian Arab Republic,5.63,127,Asia
+2009,TWN,Taiwan,7.46,41,Asia
+2009,TJK,Tajikistan,NA,NA,Asia
+2009,TZA,Tanzania,6.52,92,Africa
+2009,THA,Thailand,6.59,89,Asia
+2009,TLS,Timor-Leste,NA,NA,Asia
+2009,TGO,Togo,5.74,126,Africa
+2009,TTO,Trinidad and Tobago,7.03,65,Americas
+2009,TUN,Tunisia,6.37,97,Africa
+2009,TUR,Turkey,6.88,73,Asia
+2009,UGA,Uganda,7.43,43,Africa
+2009,UKR,Ukraine,5.86,122,Europe
+2009,ARE,United Arab Emirates,7.25,49,Asia
+2009,GBR,United Kingdom,8.02,8,Europe
+2009,USA,United States,8.03,7,Americas
+2009,URY,Uruguay,7.23,50,Americas
+2009,VEN,"Venezuela, RB",4.22,139,Americas
+2009,VNM,Vietnam,5.97,119,Asia
+2009,YEM,"Yemen, Rep.",NA,NA,Asia
+2009,ZMB,Zambia,7.29,46,Africa
+2009,ZWE,Zimbabwe,4.21,140,Africa
+2008,ALB,Albania,7.27,51,Europe
+2008,DZA,Algeria,5.21,133,Africa
+2008,AGO,Angola,4.58,138,Africa
+2008,ARG,Argentina,6.22,103,Americas
+2008,ARM,Armenia,7.69,26,Asia
+2008,AUS,Australia,8.15,7,Oceania
+2008,AUT,Austria,7.79,18,Europe
+2008,AZE,Azerbaijan,5.98,116,Asia
+2008,BHS,"Bahamas, The",7.59,33,Americas
+2008,BHR,Bahrain,7.35,48,Asia
+2008,BGD,Bangladesh,6.05,113,Asia
+2008,BRB,Barbados,6.03,115,Americas
+2008,BLR,Belarus,NA,NA,Europe
+2008,BEL,Belgium,7.56,34,Europe
+2008,BLZ,Belize,7.28,50,Americas
+2008,BEN,Benin,6.14,107,Africa
+2008,BTN,Bhutan,NA,NA,Asia
+2008,BOL,Bolivia,6.19,104,Americas
+2008,BIH,Bosnia and Herzegovina,6.77,80,Europe
+2008,BWA,Botswana,6.95,69,Africa
+2008,BRA,Brazil,6.5,92,Americas
+2008,BRN,Brunei Darussalam,NA,NA,Asia
+2008,BGR,Bulgaria,7.51,35,Europe
+2008,BFA,Burkina Faso,6.06,112,Africa
+2008,BDI,Burundi,5.17,134,Africa
+2008,CPV,Cabo Verde,NA,NA,Africa
+2008,KHM,Cambodia,NA,NA,Asia
+2008,CMR,Cameroon,5.58,127,Africa
+2008,CAN,Canada,8.21,6,Americas
+2008,CAF,Central African Republic,5.44,130,Africa
+2008,TCD,Chad,5.5,128,Africa
+2008,CHL,Chile,7.89,13,Americas
+2008,CHN,China,6.04,114,Asia
+2008,COL,Colombia,6.67,88,Americas
+2008,COD,"Congo, Dem. Rep.",5.23,132,Africa
+2008,COG,"Congo, Rep.",4.82,137,Africa
+2008,CRI,Costa Rica,7.44,41,Americas
+2008,CIV,Cote d'Ivoire,5.68,126,Africa
+2008,HRV,Croatia,6.84,77,Europe
+2008,CYP,Cyprus,7.82,16,Asia
+2008,CZE,Czech Republic,7.62,30,Europe
+2008,DNK,Denmark,7.95,10,Europe
+2008,DOM,Dominican Republic,6.68,87,Americas
+2008,ECU,Ecuador,6.29,100,Americas
+2008,EGY,"Egypt, Arab Rep.",6.34,98,Africa
+2008,SLV,El Salvador,7.76,21,Americas
+2008,EST,Estonia,7.9,12,Europe
+2008,SWZ,Eswatini,NA,NA,Africa
+2008,ETH,Ethiopia,5.11,135,Africa
+2008,FJI,Fiji,6.93,71,Oceania
+2008,FIN,Finland,7.82,16,Europe
+2008,FRA,France,7.63,29,Europe
+2008,GAB,Gabon,5.89,119,Africa
+2008,GMB,"Gambia, The",NA,NA,Africa
+2008,GEO,Georgia,7.78,20,Asia
+2008,DEU,Germany,7.72,23,Europe
+2008,GHA,Ghana,7.02,65,Africa
+2008,GRC,Greece,7.17,57,Europe
+2008,GTM,Guatemala,7.51,35,Americas
+2008,GIN,Guinea,NA,NA,Africa
+2008,GNB,Guinea-Bissau,5.03,136,Africa
+2008,GUY,Guyana,6.53,90,Americas
+2008,HTI,Haiti,6.97,68,Americas
+2008,HND,Honduras,7.39,47,Americas
+2008,HKG,"Hong Kong SAR, China",8.97,1,Asia
+2008,HUN,Hungary,7.45,40,Europe
+2008,ISL,Iceland,7.05,63,Europe
+2008,IND,India,6.4,95,Asia
+2008,IDN,Indonesia,6.52,91,Asia
+2008,IRN,"Iran, Islamic Rep.",5.71,125,Asia
+2008,IRQ,Iraq,NA,NA,Asia
+2008,IRL,Ireland,7.98,9,Europe
+2008,ISR,Israel,7.16,59,Asia
+2008,ITA,Italy,7.47,39,Europe
+2008,JAM,Jamaica,7.14,61,Americas
+2008,JPN,Japan,7.85,15,Asia
+2008,JOR,Jordan,7.17,57,Asia
+2008,KAZ,Kazakhstan,6.87,75,Asia
+2008,KEN,Kenya,6.9,74,Africa
+2008,KOR,"Korea, Rep.",7.5,37,Asia
+2008,KWT,Kuwait,6.92,72,Asia
+2008,KGZ,Kyrgyz Republic,6.81,79,Asia
+2008,LAO,Lao PDR,NA,NA,Asia
+2008,LVA,Latvia,7.88,14,Europe
+2008,LBN,Lebanon,NA,NA,Asia
+2008,LSO,Lesotho,6.23,102,Africa
+2008,LBR,Liberia,NA,NA,Africa
+2008,LBY,Libya,NA,NA,Africa
+2008,LTU,Lithuania,7.49,38,Europe
+2008,LUX,Luxembourg,7.69,26,Europe
+2008,MDG,Madagascar,6.18,105,Africa
+2008,MWI,Malawi,6.12,109,Africa
+2008,MYS,Malaysia,6.47,93,Asia
+2008,MLI,Mali,5.98,116,Africa
+2008,MLT,Malta,7.62,30,Europe
+2008,MRT,Mauritania,6.1,110,Africa
+2008,MUS,Mauritius,7.92,11,Africa
+2008,MEX,Mexico,6.72,85,Americas
+2008,MDA,Moldova,6.65,89,Europe
+2008,MNG,Mongolia,6.87,75,Asia
+2008,MNE,Montenegro,7.19,54,Europe
+2008,MAR,Morocco,6.25,101,Africa
+2008,MOZ,Mozambique,5.8,124,Africa
+2008,MMR,Myanmar,3.61,141,Asia
+2008,NAM,Namibia,6.75,81,Africa
+2008,NPL,Nepal,6.34,98,Asia
+2008,NLD,Netherlands,7.79,18,Europe
+2008,NZL,New Zealand,8.32,5,Oceania
+2008,NIC,Nicaragua,7.15,60,Americas
+2008,NER,Niger,5.47,129,Africa
+2008,NGA,Nigeria,6.14,107,Africa
+2008,MKD,North Macedonia,7.03,64,Europe
+2008,NOR,Norway,7.64,28,Europe
+2008,OMN,Oman,6.94,70,Asia
+2008,PAK,Pakistan,5.82,123,Asia
+2008,PAN,Panama,7.42,44,Americas
+2008,PNG,Papua New Guinea,6.82,78,Oceania
+2008,PRY,Paraguay,7.01,66,Americas
+2008,PER,Peru,7.7,24,Americas
+2008,PHL,Philippines,6.92,72,Asia
+2008,POL,Poland,7.09,62,Europe
+2008,PRT,Portugal,7.4,45,Europe
+2008,QAT,Qatar,NA,NA,Asia
+2008,ROU,Romania,7.4,45,Europe
+2008,RUS,Russian Federation,6.4,95,Europe
+2008,RWA,Rwanda,6.75,81,Africa
+2008,SAU,Saudi Arabia,NA,NA,Asia
+2008,SEN,Senegal,5.87,121,Africa
+2008,SRB,Serbia,6.7,86,Europe
+2008,SYC,Seychelles,NA,NA,Africa
+2008,SLE,Sierra Leone,6.41,94,Africa
+2008,SGP,Singapore,8.64,2,Asia
+2008,SVK,Slovak Republic,7.76,21,Europe
+2008,SVN,Slovenia,7.25,52,Europe
+2008,ZAF,South Africa,6.74,84,Africa
+2008,ESP,Spain,7.7,24,Europe
+2008,LKA,Sri Lanka,6.09,111,Asia
+2008,SDN,Sudan,NA,NA,Africa
+2008,SUR,Suriname,NA,NA,Americas
+2008,SWE,Sweden,7.62,30,Europe
+2008,CHE,Switzerland,8.35,3,Europe
+2008,SYR,Syrian Arab Republic,5.43,131,Asia
+2008,TWN,Taiwan,7.43,43,Asia
+2008,TJK,Tajikistan,NA,NA,Asia
+2008,TZA,Tanzania,6.18,105,Africa
+2008,THA,Thailand,6.75,81,Asia
+2008,TLS,Timor-Leste,NA,NA,Asia
+2008,TGO,Togo,5.88,120,Africa
+2008,TTO,Trinidad and Tobago,7.18,55,Americas
+2008,TUN,Tunisia,6.38,97,Africa
+2008,TUR,Turkey,6.99,67,Asia
+2008,UGA,Uganda,7.33,49,Africa
+2008,UKR,Ukraine,5.9,118,Europe
+2008,ARE,United Arab Emirates,7.44,41,Asia
+2008,GBR,United Kingdom,8.13,8,Europe
+2008,USA,United States,8.34,4,Americas
+2008,URY,Uruguay,7.18,55,Americas
+2008,VEN,"Venezuela, RB",4.32,140,Americas
+2008,VNM,Vietnam,5.84,122,Asia
+2008,YEM,"Yemen, Rep.",NA,NA,Asia
+2008,ZMB,Zambia,7.21,53,Africa
+2008,ZWE,Zimbabwe,4.39,139,Africa
+2007,ALB,Albania,7.31,54,Europe
+2007,DZA,Algeria,5.33,133,Africa
+2007,AGO,Angola,4.67,138,Africa
+2007,ARG,Argentina,6.31,102,Americas
+2007,ARM,Armenia,7.7,27,Asia
+2007,AUS,Australia,8.21,8,Oceania
+2007,AUT,Austria,7.87,16,Europe
+2007,AZE,Azerbaijan,5.85,121,Asia
+2007,BHS,"Bahamas, The",7.56,40,Americas
+2007,BHR,Bahrain,7.41,50,Asia
+2007,BGD,Bangladesh,6.01,114,Asia
+2007,BRB,Barbados,6.04,112,Americas
+2007,BLR,Belarus,NA,NA,Europe
+2007,BEL,Belgium,7.6,37,Europe
+2007,BLZ,Belize,7.21,60,Americas
+2007,BEN,Benin,6.25,104,Africa
+2007,BTN,Bhutan,NA,NA,Asia
+2007,BOL,Bolivia,6.24,105,Americas
+2007,BIH,Bosnia and Herzegovina,6.76,81,Europe
+2007,BWA,Botswana,7.2,61,Africa
+2007,BRA,Brazil,6.36,99,Americas
+2007,BRN,Brunei Darussalam,NA,NA,Asia
+2007,BGR,Bulgaria,7.46,45,Europe
+2007,BFA,Burkina Faso,6.11,110,Africa
+2007,BDI,Burundi,5.64,129,Africa
+2007,CPV,Cabo Verde,NA,NA,Africa
+2007,KHM,Cambodia,NA,NA,Asia
+2007,CMR,Cameroon,5.66,128,Africa
+2007,CAN,Canada,8.23,7,Americas
+2007,CAF,Central African Republic,5.47,131,Africa
+2007,TCD,Chad,5.55,130,Africa
+2007,CHL,Chile,7.97,12,Americas
+2007,CHN,China,6.04,112,Asia
+2007,COL,Colombia,6.58,87,Americas
+2007,COD,"Congo, Dem. Rep.",5.21,135,Africa
+2007,COG,"Congo, Rep.",4.71,137,Africa
+2007,CRI,Costa Rica,7.59,38,Americas
+2007,CIV,Cote d'Ivoire,5.71,126,Africa
+2007,HRV,Croatia,6.72,84,Europe
+2007,CYP,Cyprus,7.84,19,Asia
+2007,CZE,Czech Republic,7.61,35,Europe
+2007,DNK,Denmark,8.01,11,Europe
+2007,DOM,Dominican Republic,6.76,81,Americas
+2007,ECU,Ecuador,6.15,108,Americas
+2007,EGY,"Egypt, Arab Rep.",6.42,95,Africa
+2007,SLV,El Salvador,7.78,22,Americas
+2007,EST,Estonia,8.02,10,Europe
+2007,SWZ,Eswatini,NA,NA,Africa
+2007,ETH,Ethiopia,5.47,131,Africa
+2007,FJI,Fiji,6.85,77,Oceania
+2007,FIN,Finland,7.89,15,Europe
+2007,FRA,France,7.67,29,Europe
+2007,GAB,Gabon,5.84,122,Africa
+2007,GMB,"Gambia, The",NA,NA,Africa
+2007,GEO,Georgia,7.79,21,Asia
+2007,DEU,Germany,7.76,23,Europe
+2007,GHA,Ghana,7.07,67,Africa
+2007,GRC,Greece,7.43,48,Europe
+2007,GTM,Guatemala,7.58,39,Americas
+2007,GIN,Guinea,NA,NA,Africa
+2007,GNB,Guinea-Bissau,4.99,136,Africa
+2007,GUY,Guyana,6.4,96,Americas
+2007,HTI,Haiti,6.89,74,Americas
+2007,HND,Honduras,7.39,51,Americas
+2007,HKG,"Hong Kong SAR, China",8.93,1,Asia
+2007,HUN,Hungary,7.42,49,Europe
+2007,ISL,Iceland,7.85,17,Europe
+2007,IND,India,6.43,94,Asia
+2007,IDN,Indonesia,6.54,89,Asia
+2007,IRN,"Iran, Islamic Rep.",5.87,120,Asia
+2007,IRQ,Iraq,NA,NA,Asia
+2007,IRL,Ireland,8.17,9,Europe
+2007,ISR,Israel,7.23,58,Asia
+2007,ITA,Italy,7.53,41,Europe
+2007,JAM,Jamaica,7.36,52,Americas
+2007,JPN,Japan,7.97,12,Asia
+2007,JOR,Jordan,7.29,55,Asia
+2007,KAZ,Kazakhstan,6.92,72,Asia
+2007,KEN,Kenya,7.28,56,Africa
+2007,KOR,"Korea, Rep.",7.66,32,Asia
+2007,KWT,Kuwait,7.19,63,Asia
+2007,KGZ,Kyrgyz Republic,6.89,74,Asia
+2007,LAO,Lao PDR,NA,NA,Asia
+2007,LVA,Latvia,7.94,14,Europe
+2007,LBN,Lebanon,NA,NA,Asia
+2007,LSO,Lesotho,6.36,99,Africa
+2007,LBR,Liberia,NA,NA,Africa
+2007,LBY,Libya,NA,NA,Africa
+2007,LTU,Lithuania,7.67,29,Europe
+2007,LUX,Luxembourg,7.68,28,Europe
+2007,MDG,Madagascar,6.06,111,Africa
+2007,MWI,Malawi,5.78,124,Africa
+2007,MYS,Malaysia,6.64,86,Asia
+2007,MLI,Mali,6.14,109,Africa
+2007,MLT,Malta,7.67,29,Europe
+2007,MRT,Mauritania,5.99,115,Africa
+2007,MUS,Mauritius,7.82,20,Africa
+2007,MEX,Mexico,6.82,79,Americas
+2007,MDA,Moldova,6.56,88,Europe
+2007,MNG,Mongolia,7.09,66,Asia
+2007,MNE,Montenegro,7.11,65,Europe
+2007,MAR,Morocco,6.21,107,Africa
+2007,MOZ,Mozambique,5.73,125,Africa
+2007,MMR,Myanmar,3.31,140,Asia
+2007,NAM,Namibia,6.8,80,Africa
+2007,NPL,Nepal,6.51,91,Asia
+2007,NLD,Netherlands,7.85,17,Europe
+2007,NZL,New Zealand,8.35,5,Oceania
+2007,NIC,Nicaragua,7.46,45,Americas
+2007,NER,Niger,5.31,134,Africa
+2007,NGA,Nigeria,6.38,98,Africa
+2007,MKD,North Macedonia,7.01,71,Europe
+2007,NOR,Norway,7.72,26,Europe
+2007,OMN,Oman,7.05,68,Asia
+2007,PAK,Pakistan,5.96,116,Asia
+2007,PAN,Panama,7.61,35,Americas
+2007,PNG,Papua New Guinea,6.74,83,Oceania
+2007,PRY,Paraguay,6.9,73,Americas
+2007,PER,Peru,7.62,34,Americas
+2007,PHL,Philippines,7.03,69,Asia
+2007,POL,Poland,7.03,69,Europe
+2007,PRT,Portugal,7.47,43,Europe
+2007,QAT,Qatar,NA,NA,Asia
+2007,ROU,Romania,7.53,41,Europe
+2007,RUS,Russian Federation,6.35,101,Europe
+2007,RWA,Rwanda,6.46,92,Africa
+2007,SAU,Saudi Arabia,NA,NA,Asia
+2007,SEN,Senegal,5.82,123,Africa
+2007,SRB,Serbia,6.85,77,Europe
+2007,SYC,Seychelles,NA,NA,Africa
+2007,SLE,Sierra Leone,6.45,93,Africa
+2007,SGP,Singapore,8.67,2,Asia
+2007,SVK,Slovak Republic,7.75,24,Europe
+2007,SVN,Slovenia,7.22,59,Europe
+2007,ZAF,South Africa,6.88,76,Africa
+2007,ESP,Spain,7.75,24,Europe
+2007,LKA,Sri Lanka,6.26,103,Asia
+2007,SDN,Sudan,NA,NA,Africa
+2007,SUR,Suriname,NA,NA,Americas
+2007,SWE,Sweden,7.64,33,Europe
+2007,CHE,Switzerland,8.51,4,Europe
+2007,SYR,Syrian Arab Republic,5.71,126,Asia
+2007,TWN,Taiwan,7.44,47,Asia
+2007,TJK,Tajikistan,NA,NA,Asia
+2007,TZA,Tanzania,6.23,106,Africa
+2007,THA,Thailand,6.7,85,Asia
+2007,TLS,Timor-Leste,NA,NA,Asia
+2007,TGO,Togo,5.93,118,Africa
+2007,TTO,Trinidad and Tobago,7.32,53,Americas
+2007,TUN,Tunisia,6.4,96,Africa
+2007,TUR,Turkey,6.53,90,Asia
+2007,UGA,Uganda,7.28,56,Africa
+2007,UKR,Ukraine,5.92,119,Europe
+2007,ARE,United Arab Emirates,7.47,43,Asia
+2007,GBR,United Kingdom,8.25,6,Europe
+2007,USA,United States,8.53,3,Americas
+2007,URY,Uruguay,7.14,64,Americas
+2007,VEN,"Venezuela, RB",4.42,139,Americas
+2007,VNM,Vietnam,5.94,117,Asia
+2007,YEM,"Yemen, Rep.",NA,NA,Asia
+2007,ZMB,Zambia,7.2,61,Africa
+2007,ZWE,Zimbabwe,3.18,141,Africa
+2006,ALB,Albania,7.28,51,Europe
+2006,DZA,Algeria,5.44,130,Africa
+2006,AGO,Angola,4.62,139,Africa
+2006,ARG,Argentina,6.13,105,Americas
+2006,ARM,Armenia,7.71,23,Asia
+2006,AUS,Australia,8.17,8,Oceania
+2006,AUT,Austria,7.87,16,Europe
+2006,AZE,Azerbaijan,6.06,111,Asia
+2006,BHS,"Bahamas, The",7.51,37,Americas
+2006,BHR,Bahrain,7.2,54,Asia
+2006,BGD,Bangladesh,6.03,113,Asia
+2006,BRB,Barbados,6.07,109,Americas
+2006,BLR,Belarus,NA,NA,Europe
+2006,BEL,Belgium,7.57,34,Europe
+2006,BLZ,Belize,7.2,54,Americas
+2006,BEN,Benin,6.11,106,Africa
+2006,BTN,Bhutan,NA,NA,Asia
+2006,BOL,Bolivia,6.43,92,Americas
+2006,BIH,Bosnia and Herzegovina,6.59,83,Europe
+2006,BWA,Botswana,7.11,62,Africa
+2006,BRA,Brazil,6.39,96,Americas
+2006,BRN,Brunei Darussalam,NA,NA,Asia
+2006,BGR,Bulgaria,7.4,46,Europe
+2006,BFA,Burkina Faso,5.83,120,Africa
+2006,BDI,Burundi,5.69,126,Africa
+2006,CPV,Cabo Verde,NA,NA,Africa
+2006,KHM,Cambodia,NA,NA,Asia
+2006,CMR,Cameroon,5.73,125,Africa
+2006,CAN,Canada,8.27,6,Americas
+2006,CAF,Central African Republic,5.19,134,Africa
+2006,TCD,Chad,5.64,127,Africa
+2006,CHL,Chile,7.87,16,Americas
+2006,CHN,China,5.93,119,Asia
+2006,COL,Colombia,6.52,89,Americas
+2006,COD,"Congo, Dem. Rep.",5.17,135,Africa
+2006,COG,"Congo, Rep.",4.95,137,Africa
+2006,CRI,Costa Rica,7.76,22,Americas
+2006,CIV,Cote d'Ivoire,5.76,124,Africa
+2006,HRV,Croatia,6.7,79,Europe
+2006,CYP,Cyprus,7.47,41,Asia
+2006,CZE,Czech Republic,7.44,44,Europe
+2006,DNK,Denmark,8,11,Europe
+2006,DOM,Dominican Republic,6.62,81,Americas
+2006,ECU,Ecuador,6.22,103,Americas
+2006,EGY,"Egypt, Arab Rep.",6.25,102,Africa
+2006,SLV,El Salvador,7.67,24,Americas
+2006,EST,Estonia,8.05,10,Europe
+2006,SWZ,Eswatini,NA,NA,Africa
+2006,ETH,Ethiopia,5.41,131,Africa
+2006,FJI,Fiji,6.95,70,Oceania
+2006,FIN,Finland,7.85,18,Europe
+2006,FRA,France,7.51,37,Europe
+2006,GAB,Gabon,5.82,122,Africa
+2006,GMB,"Gambia, The",NA,NA,Africa
+2006,GEO,Georgia,7.93,14,Asia
+2006,DEU,Germany,7.8,19,Europe
+2006,GHA,Ghana,7.04,68,Africa
+2006,GRC,Greece,7.42,45,Europe
+2006,GTM,Guatemala,7.58,33,Americas
+2006,GIN,Guinea,NA,NA,Africa
+2006,GNB,Guinea-Bissau,5.15,136,Africa
+2006,GUY,Guyana,6.35,98,Americas
+2006,HTI,Haiti,6.83,76,Americas
+2006,HND,Honduras,7.38,47,Americas
+2006,HKG,"Hong Kong SAR, China",8.92,1,Asia
+2006,HUN,Hungary,7.38,47,Europe
+2006,ISL,Iceland,7.98,12,Europe
+2006,IND,India,6.39,96,Asia
+2006,IDN,Indonesia,6.47,90,Asia
+2006,IRN,"Iran, Islamic Rep.",6.07,109,Asia
+2006,IRQ,Iraq,NA,NA,Asia
+2006,IRL,Ireland,8.15,9,Europe
+2006,ISR,Israel,7.18,57,Asia
+2006,ITA,Italy,7.56,35,Europe
+2006,JAM,Jamaica,7.52,36,Americas
+2006,JPN,Japan,7.95,13,Asia
+2006,JOR,Jordan,7.16,59,Asia
+2006,KAZ,Kazakhstan,6.72,78,Asia
+2006,KEN,Kenya,7.16,59,Africa
+2006,KOR,"Korea, Rep.",7.63,30,Asia
+2006,KWT,Kuwait,7.05,66,Asia
+2006,KGZ,Kyrgyz Republic,6.81,77,Asia
+2006,LAO,Lao PDR,NA,NA,Asia
+2006,LVA,Latvia,7.9,15,Europe
+2006,LBN,Lebanon,NA,NA,Asia
+2006,LSO,Lesotho,6.31,99,Africa
+2006,LBR,Liberia,NA,NA,Africa
+2006,LBY,Libya,NA,NA,Africa
+2006,LTU,Lithuania,7.67,24,Europe
+2006,LUX,Luxembourg,7.63,30,Europe
+2006,MDG,Madagascar,5.94,118,Africa
+2006,MWI,Malawi,5.47,129,Africa
+2006,MYS,Malaysia,6.54,87,Asia
+2006,MLI,Mali,5.83,120,Africa
+2006,MLT,Malta,7.38,47,Europe
+2006,MRT,Mauritania,5.98,114,Africa
+2006,MUS,Mauritius,7.48,39,Africa
+2006,MEX,Mexico,6.89,74,Americas
+2006,MDA,Moldova,6.55,85,Europe
+2006,MNG,Mongolia,7.26,53,Asia
+2006,MNE,Montenegro,7.09,65,Europe
+2006,MAR,Morocco,6.16,104,Africa
+2006,MOZ,Mozambique,5.58,128,Africa
+2006,MMR,Myanmar,3.62,140,Asia
+2006,NAM,Namibia,6.55,85,Africa
+2006,NPL,Nepal,6.62,81,Asia
+2006,NLD,Netherlands,7.78,20,Europe
+2006,NZL,New Zealand,8.25,7,Oceania
+2006,NIC,Nicaragua,7.46,43,Americas
+2006,NER,Niger,5.37,132,Africa
+2006,NGA,Nigeria,6.47,90,Africa
+2006,MKD,North Macedonia,6.9,73,Europe
+2006,NOR,Norway,7.6,32,Europe
+2006,OMN,Oman,6.91,71,Asia
+2006,PAK,Pakistan,5.98,114,Asia
+2006,PAN,Panama,7.64,28,Americas
+2006,PNG,Papua New Guinea,6.54,87,Oceania
+2006,PRY,Paraguay,6.91,71,Americas
+2006,PER,Peru,7.65,26,Americas
+2006,PHL,Philippines,7.05,66,Asia
+2006,POL,Poland,7.04,68,Europe
+2006,PRT,Portugal,7.47,41,Europe
+2006,QAT,Qatar,NA,NA,Asia
+2006,ROU,Romania,7.14,61,Europe
+2006,RUS,Russian Federation,6.11,106,Europe
+2006,RWA,Rwanda,6.26,101,Africa
+2006,SAU,Saudi Arabia,NA,NA,Asia
+2006,SEN,Senegal,5.8,123,Africa
+2006,SRB,Serbia,6.57,84,Europe
+2006,SYC,Seychelles,NA,NA,Africa
+2006,SLE,Sierra Leone,6.11,106,Africa
+2006,SGP,Singapore,8.67,2,Asia
+2006,SVK,Slovak Republic,7.64,28,Europe
+2006,SVN,Slovenia,7.11,62,Europe
+2006,ZAF,South Africa,6.89,74,Africa
+2006,ESP,Spain,7.77,21,Europe
+2006,LKA,Sri Lanka,6.4,94,Asia
+2006,SDN,Sudan,NA,NA,Africa
+2006,SUR,Suriname,NA,NA,Americas
+2006,SWE,Sweden,7.65,26,Europe
+2006,CHE,Switzerland,8.48,4,Europe
+2006,SYR,Syrian Arab Republic,5.32,133,Asia
+2006,TWN,Taiwan,7.48,39,Asia
+2006,TJK,Tajikistan,NA,NA,Asia
+2006,TZA,Tanzania,6.29,100,Africa
+2006,THA,Thailand,6.68,80,Asia
+2006,TLS,Timor-Leste,NA,NA,Asia
+2006,TGO,Togo,6.06,111,Africa
+2006,TTO,Trinidad and Tobago,7.28,51,Americas
+2006,TUN,Tunisia,6.41,93,Africa
+2006,TUR,Turkey,6.4,94,Asia
+2006,UGA,Uganda,7.19,56,Africa
+2006,UKR,Ukraine,5.95,117,Europe
+2006,ARE,United Arab Emirates,7.38,47,Asia
+2006,GBR,United Kingdom,8.31,5,Europe
+2006,USA,United States,8.49,3,Americas
+2006,URY,Uruguay,7.11,62,Americas
+2006,VEN,"Venezuela, RB",4.78,138,Americas
+2006,VNM,Vietnam,5.96,116,Asia
+2006,YEM,"Yemen, Rep.",NA,NA,Asia
+2006,ZMB,Zambia,7.18,57,Africa
+2006,ZWE,Zimbabwe,2.95,141,Africa
+2005,ALB,Albania,7.13,59,Europe
+2005,DZA,Algeria,5.3,131,Africa
+2005,AGO,Angola,4.25,139,Africa
+2005,ARG,Argentina,6.08,106,Americas
+2005,ARM,Armenia,7.58,32,Asia
+2005,AUS,Australia,8.1,9,Oceania
+2005,AUT,Austria,7.87,15,Europe
+2005,AZE,Azerbaijan,6.11,105,Asia
+2005,BHS,"Bahamas, The",7.03,62,Americas
+2005,BHR,Bahrain,6.87,72,Asia
+2005,BGD,Bangladesh,5.94,113,Asia
+2005,BRB,Barbados,6.27,97,Americas
+2005,BLR,Belarus,NA,NA,Europe
+2005,BEL,Belgium,7.61,31,Europe
+2005,BLZ,Belize,7.27,48,Americas
+2005,BEN,Benin,5.99,110,Africa
+2005,BTN,Bhutan,NA,NA,Asia
+2005,BOL,Bolivia,6.52,83,Americas
+2005,BIH,Bosnia and Herzegovina,6.49,85,Europe
+2005,BWA,Botswana,7.14,58,Africa
+2005,BRA,Brazil,6.38,94,Americas
+2005,BRN,Brunei Darussalam,NA,NA,Asia
+2005,BGR,Bulgaria,7.17,56,Europe
+2005,BFA,Burkina Faso,5.82,118,Africa
+2005,BDI,Burundi,5.6,126,Africa
+2005,CPV,Cabo Verde,NA,NA,Africa
+2005,KHM,Cambodia,NA,NA,Asia
+2005,CMR,Cameroon,5.69,123,Africa
+2005,CAN,Canada,8.26,7,Americas
+2005,CAF,Central African Republic,5.1,134,Africa
+2005,TCD,Chad,5.54,127,Africa
+2005,CHL,Chile,7.85,16,Americas
+2005,CHN,China,5.86,116,Asia
+2005,COL,Colombia,6.48,86,Americas
+2005,COD,"Congo, Dem. Rep.",4.66,138,Africa
+2005,COG,"Congo, Rep.",4.99,136,Africa
+2005,CRI,Costa Rica,7.58,32,Americas
+2005,CIV,Cote d'Ivoire,5.96,112,Africa
+2005,HRV,Croatia,6.58,79,Europe
+2005,CYP,Cyprus,7.5,36,Asia
+2005,CZE,Czech Republic,7.39,44,Europe
+2005,DNK,Denmark,7.93,13,Europe
+2005,DOM,Dominican Republic,6.63,77,Americas
+2005,ECU,Ecuador,6.17,100,Americas
+2005,EGY,"Egypt, Arab Rep.",6.15,101,Africa
+2005,SLV,El Salvador,7.67,27,Americas
+2005,EST,Estonia,8.04,10,Europe
+2005,SWZ,Eswatini,NA,NA,Africa
+2005,ETH,Ethiopia,5.3,131,Africa
+2005,FJI,Fiji,7.1,60,Oceania
+2005,FIN,Finland,7.92,14,Europe
+2005,FRA,France,7.5,36,Europe
+2005,GAB,Gabon,5.77,121,Africa
+2005,GMB,"Gambia, The",NA,NA,Africa
+2005,GEO,Georgia,7.85,16,Asia
+2005,DEU,Germany,7.83,19,Europe
+2005,GHA,Ghana,6.39,93,Africa
+2005,GRC,Greece,7.39,44,Europe
+2005,GTM,Guatemala,7.46,40,Americas
+2005,GIN,Guinea,NA,NA,Africa
+2005,GNB,Guinea-Bissau,5.09,135,Africa
+2005,GUY,Guyana,6.5,84,Americas
+2005,HTI,Haiti,6.87,72,Americas
+2005,HND,Honduras,7.2,51,Americas
+2005,HKG,"Hong Kong SAR, China",8.87,1,Asia
+2005,HUN,Hungary,7.45,41,Europe
+2005,ISL,Iceland,8,11,Europe
+2005,IND,India,6.48,86,Asia
+2005,IDN,Indonesia,6.43,91,Asia
+2005,IRN,"Iran, Islamic Rep.",5.98,111,Asia
+2005,IRQ,Iraq,NA,NA,Asia
+2005,IRL,Ireland,8.26,7,Europe
+2005,ISR,Israel,7.24,50,Asia
+2005,ITA,Italy,7.68,26,Europe
+2005,JAM,Jamaica,7.52,34,Americas
+2005,JPN,Japan,7.99,12,Asia
+2005,JOR,Jordan,7.25,49,Asia
+2005,KAZ,Kazakhstan,6.71,76,Asia
+2005,KEN,Kenya,7.18,54,Africa
+2005,KOR,"Korea, Rep.",7.49,38,Asia
+2005,KWT,Kuwait,6.9,70,Asia
+2005,KGZ,Kyrgyz Republic,6.73,74,Asia
+2005,LAO,Lao PDR,NA,NA,Asia
+2005,LVA,Latvia,7.77,21,Europe
+2005,LBN,Lebanon,NA,NA,Asia
+2005,LSO,Lesotho,6,109,Africa
+2005,LBR,Liberia,NA,NA,Africa
+2005,LBY,Libya,NA,NA,Africa
+2005,LTU,Lithuania,7.69,23,Europe
+2005,LUX,Luxembourg,7.64,30,Europe
+2005,MDG,Madagascar,5.67,124,Africa
+2005,MWI,Malawi,5.34,130,Africa
+2005,MYS,Malaysia,6.54,82,Asia
+2005,MLI,Mali,5.72,122,Africa
+2005,MLT,Malta,7.47,39,Europe
+2005,MRT,Mauritania,6.13,104,Africa
+2005,MUS,Mauritius,7.52,34,Africa
+2005,MEX,Mexico,6.9,70,Americas
+2005,MDA,Moldova,6.58,79,Europe
+2005,MNG,Mongolia,7.19,52,Asia
+2005,MNE,Montenegro,6.47,89,Europe
+2005,MAR,Morocco,6.15,101,Africa
+2005,MOZ,Mozambique,5.44,129,Africa
+2005,MMR,Myanmar,3.6,140,Asia
+2005,NAM,Namibia,6.59,78,Africa
+2005,NPL,Nepal,6.46,90,Asia
+2005,NLD,Netherlands,7.85,16,Europe
+2005,NZL,New Zealand,8.35,5,Oceania
+2005,NIC,Nicaragua,7.43,43,Americas
+2005,NER,Niger,5.12,133,Africa
+2005,NGA,Nigeria,6.19,98,Africa
+2005,MKD,North Macedonia,6.73,74,Europe
+2005,NOR,Norway,7.7,22,Europe
+2005,OMN,Oman,6.95,67,Asia
+2005,PAK,Pakistan,5.92,114,Asia
+2005,PAN,Panama,7.67,27,Americas
+2005,PNG,Papua New Guinea,6.48,86,Oceania
+2005,PRY,Paraguay,6.96,66,Americas
+2005,PER,Peru,7.69,23,Americas
+2005,PHL,Philippines,7.01,63,Asia
+2005,POL,Poland,6.99,64,Europe
+2005,PRT,Portugal,7.38,46,Europe
+2005,QAT,Qatar,NA,NA,Asia
+2005,ROU,Romania,7.28,47,Europe
+2005,RUS,Russian Federation,6.05,107,Europe
+2005,RWA,Rwanda,6.14,103,Africa
+2005,SAU,Saudi Arabia,NA,NA,Asia
+2005,SEN,Senegal,5.88,115,Africa
+2005,SRB,Serbia,6.02,108,Europe
+2005,SYC,Seychelles,NA,NA,Africa
+2005,SLE,Sierra Leone,5.67,124,Africa
+2005,SGP,Singapore,8.65,2,Asia
+2005,SVK,Slovak Republic,7.67,27,Europe
+2005,SVN,Slovenia,7.04,61,Europe
+2005,ZAF,South Africa,6.95,67,Africa
+2005,ESP,Spain,7.82,20,Europe
+2005,LKA,Sri Lanka,6.32,96,Asia
+2005,SDN,Sudan,NA,NA,Africa
+2005,SUR,Suriname,NA,NA,Americas
+2005,SWE,Sweden,7.69,23,Europe
+2005,CHE,Switzerland,8.43,4,Europe
+2005,SYR,Syrian Arab Republic,5.48,128,Asia
+2005,TWN,Taiwan,7.45,41,Asia
+2005,TJK,Tajikistan,NA,NA,Asia
+2005,TZA,Tanzania,6.18,99,Africa
+2005,THA,Thailand,6.58,79,Asia
+2005,TLS,Timor-Leste,NA,NA,Asia
+2005,TGO,Togo,5.79,120,Africa
+2005,TTO,Trinidad and Tobago,7.16,57,Americas
+2005,TUN,Tunisia,6.42,92,Africa
+2005,TUR,Turkey,6.37,95,Asia
+2005,UGA,Uganda,6.99,64,Africa
+2005,UKR,Ukraine,5.8,119,Europe
+2005,ARE,United Arab Emirates,7.18,54,Asia
+2005,GBR,United Kingdom,8.35,5,Europe
+2005,USA,United States,8.49,3,Americas
+2005,URY,Uruguay,7.19,52,Americas
+2005,VEN,"Venezuela, RB",4.83,137,Americas
+2005,VNM,Vietnam,5.86,116,Asia
+2005,YEM,"Yemen, Rep.",NA,NA,Asia
+2005,ZMB,Zambia,6.92,69,Africa
+2005,ZWE,Zimbabwe,2.84,141,Africa
+2004,ALB,Albania,7.24,48,Europe
+2004,DZA,Algeria,5.04,125,Africa
+2004,AGO,Angola,NA,NA,Africa
+2004,ARG,Argentina,6.3,84,Americas
+2004,ARM,Armenia,7.76,23,Asia
+2004,AUS,Australia,8.04,12,Oceania
+2004,AUT,Austria,7.99,15,Europe
+2004,AZE,Azerbaijan,6.27,86,Asia
+2004,BHS,"Bahamas, The",6.9,67,Americas
+2004,BHR,Bahrain,7.01,57,Asia
+2004,BGD,Bangladesh,5.77,107,Asia
+2004,BRB,Barbados,6.25,89,Americas
+2004,BLR,Belarus,NA,NA,Europe
+2004,BEL,Belgium,7.74,25,Europe
+2004,BLZ,Belize,6.87,68,Americas
+2004,BEN,Benin,6,98,Africa
+2004,BTN,Bhutan,NA,NA,Asia
+2004,BOL,Bolivia,6.63,75,Americas
+2004,BIH,Bosnia and Herzegovina,NA,NA,Europe
+2004,BWA,Botswana,7.27,47,Africa
+2004,BRA,Brazil,6.27,86,Americas
+2004,BRN,Brunei Darussalam,NA,NA,Asia
+2004,BGR,Bulgaria,7.01,57,Europe
+2004,BFA,Burkina Faso,NA,NA,Africa
+2004,BDI,Burundi,5.14,122,Africa
+2004,CPV,Cabo Verde,NA,NA,Africa
+2004,KHM,Cambodia,NA,NA,Asia
+2004,CMR,Cameroon,5.69,112,Africa
+2004,CAN,Canada,8.35,7,Americas
+2004,CAF,Central African Republic,5.2,120,Africa
+2004,TCD,Chad,5.62,116,Africa
+2004,CHL,Chile,7.85,20,Americas
+2004,CHN,China,5.7,111,Asia
+2004,COL,Colombia,6.38,79,Americas
+2004,COD,"Congo, Dem. Rep.",4.69,128,Africa
+2004,COG,"Congo, Rep.",4.92,126,Africa
+2004,CRI,Costa Rica,7.42,41,Americas
+2004,CIV,Cote d'Ivoire,5.81,106,Africa
+2004,HRV,Croatia,6.36,81,Europe
+2004,CYP,Cyprus,7.66,30,Asia
+2004,CZE,Czech Republic,7.37,43,Europe
+2004,DNK,Denmark,8.1,10,Europe
+2004,DOM,Dominican Republic,5.9,102,Americas
+2004,ECU,Ecuador,5.95,100,Americas
+2004,EGY,"Egypt, Arab Rep.",6.05,95,Africa
+2004,SLV,El Salvador,7.72,26,Americas
+2004,EST,Estonia,8.14,9,Europe
+2004,SWZ,Eswatini,NA,NA,Africa
+2004,ETH,Ethiopia,NA,NA,Africa
+2004,FJI,Fiji,6.99,62,Oceania
+2004,FIN,Finland,7.99,15,Europe
+2004,FRA,France,7.58,36,Europe
+2004,GAB,Gabon,5.74,109,Africa
+2004,GMB,"Gambia, The",NA,NA,Africa
+2004,GEO,Georgia,7.61,34,Asia
+2004,DEU,Germany,7.9,18,Europe
+2004,GHA,Ghana,6.29,85,Africa
+2004,GRC,Greece,7.4,42,Europe
+2004,GTM,Guatemala,7.44,40,Americas
+2004,GIN,Guinea,NA,NA,Africa
+2004,GNB,Guinea-Bissau,5.18,121,Africa
+2004,GUY,Guyana,6.15,93,Americas
+2004,HTI,Haiti,6.85,70,Americas
+2004,HND,Honduras,7.08,56,Americas
+2004,HKG,"Hong Kong SAR, China",8.71,1,Asia
+2004,HUN,Hungary,7.52,37,Europe
+2004,ISL,Iceland,8.09,11,Europe
+2004,IND,India,6.33,83,Asia
+2004,IDN,Indonesia,6.23,90,Asia
+2004,IRN,"Iran, Islamic Rep.",6.01,97,Asia
+2004,IRQ,Iraq,NA,NA,Asia
+2004,IRL,Ireland,8.18,8,Europe
+2004,ISR,Israel,7.24,48,Asia
+2004,ITA,Italy,7.67,29,Europe
+2004,JAM,Jamaica,7.5,38,Americas
+2004,JPN,Japan,8.01,13,Asia
+2004,JOR,Jordan,7.17,53,Asia
+2004,KAZ,Kazakhstan,NA,NA,Asia
+2004,KEN,Kenya,6.8,72,Africa
+2004,KOR,"Korea, Rep.",7.45,39,Asia
+2004,KWT,Kuwait,6.95,63,Asia
+2004,KGZ,Kyrgyz Republic,NA,NA,Asia
+2004,LAO,Lao PDR,NA,NA,Asia
+2004,LVA,Latvia,7.82,21,Europe
+2004,LBN,Lebanon,NA,NA,Asia
+2004,LSO,Lesotho,NA,NA,Africa
+2004,LBR,Liberia,NA,NA,Africa
+2004,LBY,Libya,NA,NA,Africa
+2004,LTU,Lithuania,7.68,28,Europe
+2004,LUX,Luxembourg,7.94,17,Europe
+2004,MDG,Madagascar,5.84,104,Africa
+2004,MWI,Malawi,5.13,123,Africa
+2004,MYS,Malaysia,6.26,88,Asia
+2004,MLI,Mali,5.53,117,Africa
+2004,MLT,Malta,7.21,52,Europe
+2004,MRT,Mauritania,NA,NA,Africa
+2004,MUS,Mauritius,7.24,48,Africa
+2004,MEX,Mexico,6.86,69,Americas
+2004,MDA,Moldova,NA,NA,Europe
+2004,MNG,Mongolia,7.11,54,Asia
+2004,MNE,Montenegro,NA,NA,Europe
+2004,MAR,Morocco,5.96,99,Africa
+2004,MOZ,Mozambique,5.74,109,Africa
+2004,MMR,Myanmar,3.44,129,Asia
+2004,NAM,Namibia,6.4,78,Africa
+2004,NPL,Nepal,6.43,77,Asia
+2004,NLD,Netherlands,7.89,19,Europe
+2004,NZL,New Zealand,8.41,5,Oceania
+2004,NIC,Nicaragua,7.28,46,Americas
+2004,NER,Niger,5.13,123,Africa
+2004,NGA,Nigeria,5.65,115,Africa
+2004,MKD,North Macedonia,6.55,76,Europe
+2004,NOR,Norway,7.66,30,Europe
+2004,OMN,Oman,7.01,57,Asia
+2004,PAK,Pakistan,5.68,114,Asia
+2004,PAN,Panama,7.78,22,Americas
+2004,PNG,Papua New Guinea,5.94,101,Oceania
+2004,PRY,Paraguay,6.93,64,Americas
+2004,PER,Peru,7.72,26,Americas
+2004,PHL,Philippines,7,61,Asia
+2004,POL,Poland,6.91,66,Europe
+2004,PRT,Portugal,7.63,33,Europe
+2004,QAT,Qatar,NA,NA,Asia
+2004,ROU,Romania,6.7,74,Europe
+2004,RUS,Russian Federation,6.11,94,Europe
+2004,RWA,Rwanda,6.05,95,Africa
+2004,SAU,Saudi Arabia,NA,NA,Asia
+2004,SEN,Senegal,5.69,112,Africa
+2004,SRB,Serbia,NA,NA,Europe
+2004,SYC,Seychelles,NA,NA,Africa
+2004,SLE,Sierra Leone,5.33,118,Africa
+2004,SGP,Singapore,8.6,4,Asia
+2004,SVK,Slovak Republic,7.64,32,Europe
+2004,SVN,Slovenia,7.09,55,Europe
+2004,ZAF,South Africa,6.81,71,Africa
+2004,ESP,Spain,8,14,Europe
+2004,LKA,Sri Lanka,6.37,80,Asia
+2004,SDN,Sudan,NA,NA,Africa
+2004,SUR,Suriname,NA,NA,Americas
+2004,SWE,Sweden,7.75,24,Europe
+2004,CHE,Switzerland,8.61,2,Europe
+2004,SYR,Syrian Arab Republic,5.22,119,Asia
+2004,TWN,Taiwan,7.61,34,Asia
+2004,TJK,Tajikistan,NA,NA,Asia
+2004,TZA,Tanzania,6.21,91,Africa
+2004,THA,Thailand,6.74,73,Asia
+2004,TLS,Timor-Leste,NA,NA,Asia
+2004,TGO,Togo,5.85,103,Africa
+2004,TTO,Trinidad and Tobago,7.32,44,Americas
+2004,TUN,Tunisia,6.34,82,Africa
+2004,TUR,Turkey,6.19,92,Asia
+2004,UGA,Uganda,6.92,65,Africa
+2004,UKR,Ukraine,5.75,108,Europe
+2004,ARE,United Arab Emirates,7.32,44,Asia
+2004,GBR,United Kingdom,8.37,6,Europe
+2004,USA,United States,8.61,2,Americas
+2004,URY,Uruguay,7.23,51,Americas
+2004,VEN,"Venezuela, RB",4.91,127,Americas
+2004,VNM,Vietnam,5.83,105,Asia
+2004,YEM,"Yemen, Rep.",NA,NA,Asia
+2004,ZMB,Zambia,7.01,57,Africa
+2004,ZWE,Zimbabwe,2.8,130,Africa
+2003,ALB,Albania,7.47,35,Europe
+2003,DZA,Algeria,4.93,124,Africa
+2003,AGO,Angola,NA,NA,Africa
+2003,ARG,Argentina,6.24,84,Americas
+2003,ARM,Armenia,NA,NA,Asia
+2003,AUS,Australia,8.09,9,Oceania
+2003,AUT,Austria,8.04,12,Europe
+2003,AZE,Azerbaijan,NA,NA,Asia
+2003,BHS,"Bahamas, The",6.84,62,Americas
+2003,BHR,Bahrain,7.09,52,Asia
+2003,BGD,Bangladesh,5.87,99,Asia
+2003,BRB,Barbados,6.14,91,Americas
+2003,BLR,Belarus,NA,NA,Europe
+2003,BEL,Belgium,7.77,21,Europe
+2003,BLZ,Belize,6.03,95,Americas
+2003,BEN,Benin,6.18,90,Africa
+2003,BTN,Bhutan,NA,NA,Asia
+2003,BOL,Bolivia,6.67,68,Americas
+2003,BIH,Bosnia and Herzegovina,NA,NA,Europe
+2003,BWA,Botswana,7.16,50,Africa
+2003,BRA,Brazil,6.11,92,Americas
+2003,BRN,Brunei Darussalam,NA,NA,Asia
+2003,BGR,Bulgaria,7.03,58,Europe
+2003,BFA,Burkina Faso,NA,NA,Africa
+2003,BDI,Burundi,5.25,119,Africa
+2003,CPV,Cabo Verde,NA,NA,Africa
+2003,KHM,Cambodia,NA,NA,Asia
+2003,CMR,Cameroon,5.63,109,Africa
+2003,CAN,Canada,8.31,7,Americas
+2003,CAF,Central African Republic,5.42,116,Africa
+2003,TCD,Chad,5.77,103,Africa
+2003,CHL,Chile,7.85,20,Americas
+2003,CHN,China,5.82,101,Asia
+2003,COL,Colombia,6.23,87,Americas
+2003,COD,"Congo, Dem. Rep.",4.94,123,Africa
+2003,COG,"Congo, Rep.",5.06,121,Africa
+2003,CRI,Costa Rica,7.57,33,Americas
+2003,CIV,Cote d'Ivoire,5.77,103,Africa
+2003,HRV,Croatia,6.34,81,Europe
+2003,CYP,Cyprus,6.95,59,Asia
+2003,CZE,Czech Republic,7.22,45,Europe
+2003,DNK,Denmark,8.06,10,Europe
+2003,DOM,Dominican Republic,6.36,80,Americas
+2003,ECU,Ecuador,6.24,84,Americas
+2003,EGY,"Egypt, Arab Rep.",5.86,100,Africa
+2003,SLV,El Salvador,7.63,28,Americas
+2003,EST,Estonia,8.06,10,Europe
+2003,SWZ,Eswatini,NA,NA,Africa
+2003,ETH,Ethiopia,NA,NA,Africa
+2003,FJI,Fiji,6.81,64,Oceania
+2003,FIN,Finland,7.97,15,Europe
+2003,FRA,France,7.55,34,Europe
+2003,GAB,Gabon,5.52,111,Africa
+2003,GMB,"Gambia, The",NA,NA,Africa
+2003,GEO,Georgia,7.6,30,Asia
+2003,DEU,Germany,7.94,18,Europe
+2003,GHA,Ghana,6.39,78,Africa
+2003,GRC,Greece,7.38,37,Europe
+2003,GTM,Guatemala,7.3,42,Americas
+2003,GIN,Guinea,NA,NA,Africa
+2003,GNB,Guinea-Bissau,5.24,120,Africa
+2003,GUY,Guyana,6.32,82,Americas
+2003,HTI,Haiti,6.79,65,Americas
+2003,HND,Honduras,7.07,54,Americas
+2003,HKG,"Hong Kong SAR, China",8.66,1,Asia
+2003,HUN,Hungary,7.38,37,Europe
+2003,ISL,Iceland,8.04,12,Europe
+2003,IND,India,6.38,79,Asia
+2003,IDN,Indonesia,6.24,84,Asia
+2003,IRN,"Iran, Islamic Rep.",6,96,Asia
+2003,IRQ,Iraq,NA,NA,Asia
+2003,IRL,Ireland,8.14,8,Europe
+2003,ISR,Israel,7.21,46,Asia
+2003,ITA,Italy,7.62,29,Europe
+2003,JAM,Jamaica,7.45,36,Americas
+2003,JPN,Japan,8.03,14,Asia
+2003,JOR,Jordan,7.1,51,Asia
+2003,KAZ,Kazakhstan,NA,NA,Asia
+2003,KEN,Kenya,6.67,68,Africa
+2003,KOR,"Korea, Rep.",7.36,39,Asia
+2003,KWT,Kuwait,7.17,49,Asia
+2003,KGZ,Kyrgyz Republic,NA,NA,Asia
+2003,LAO,Lao PDR,NA,NA,Asia
+2003,LVA,Latvia,7.77,21,Europe
+2003,LBN,Lebanon,NA,NA,Asia
+2003,LSO,Lesotho,NA,NA,Africa
+2003,LBR,Liberia,NA,NA,Africa
+2003,LBY,Libya,NA,NA,Africa
+2003,LTU,Lithuania,7.67,27,Europe
+2003,LUX,Luxembourg,7.95,17,Europe
+2003,MDG,Madagascar,6.07,94,Africa
+2003,MWI,Malawi,5.29,117,Africa
+2003,MYS,Malaysia,6.23,87,Asia
+2003,MLI,Mali,5.69,106,Africa
+2003,MLT,Malta,6.41,77,Europe
+2003,MRT,Mauritania,NA,NA,Africa
+2003,MUS,Mauritius,7.18,48,Africa
+2003,MEX,Mexico,6.71,66,Americas
+2003,MDA,Moldova,NA,NA,Europe
+2003,MNG,Mongolia,NA,NA,Asia
+2003,MNE,Montenegro,NA,NA,Europe
+2003,MAR,Morocco,5.96,97,Africa
+2003,MOZ,Mozambique,5.51,113,Africa
+2003,MMR,Myanmar,3.23,127,Asia
+2003,NAM,Namibia,6.43,76,Africa
+2003,NPL,Nepal,6.47,74,Asia
+2003,NLD,Netherlands,7.88,19,Europe
+2003,NZL,New Zealand,8.41,6,Oceania
+2003,NIC,Nicaragua,7.36,39,Americas
+2003,NER,Niger,5.51,113,Africa
+2003,NGA,Nigeria,5.52,111,Africa
+2003,MKD,North Macedonia,6.54,71,Europe
+2003,NOR,Norway,7.75,23,Europe
+2003,OMN,Oman,7.24,43,Asia
+2003,PAK,Pakistan,5.69,106,Asia
+2003,PAN,Panama,7.73,25,Americas
+2003,PNG,Papua New Guinea,5.82,101,Oceania
+2003,PRY,Paraguay,6.93,61,Americas
+2003,PER,Peru,7.7,26,Americas
+2003,PHL,Philippines,7.19,47,Asia
+2003,POL,Poland,6.66,70,Europe
+2003,PRT,Portugal,7.6,30,Europe
+2003,QAT,Qatar,NA,NA,Asia
+2003,ROU,Romania,6.54,71,Europe
+2003,RUS,Russian Federation,5.77,103,Europe
+2003,RWA,Rwanda,6.47,74,Africa
+2003,SAU,Saudi Arabia,NA,NA,Asia
+2003,SEN,Senegal,5.69,106,Africa
+2003,SRB,Serbia,NA,NA,Europe
+2003,SYC,Seychelles,NA,NA,Africa
+2003,SLE,Sierra Leone,5.27,118,Africa
+2003,SGP,Singapore,8.57,4,Asia
+2003,SVK,Slovak Republic,7.05,57,Europe
+2003,SVN,Slovenia,7.07,54,Europe
+2003,ZAF,South Africa,6.82,63,Africa
+2003,ESP,Spain,7.97,15,Europe
+2003,LKA,Sri Lanka,6.5,73,Asia
+2003,SDN,Sudan,NA,NA,Africa
+2003,SUR,Suriname,NA,NA,Americas
+2003,SWE,Sweden,7.75,23,Europe
+2003,CHE,Switzerland,8.66,1,Europe
+2003,SYR,Syrian Arab Republic,4.98,122,Asia
+2003,TWN,Taiwan,7.59,32,Asia
+2003,TJK,Tajikistan,NA,NA,Asia
+2003,TZA,Tanzania,6.28,83,Africa
+2003,THA,Thailand,6.71,66,Asia
+2003,TLS,Timor-Leste,NA,NA,Asia
+2003,TGO,Togo,5.89,98,Africa
+2003,TTO,Trinidad and Tobago,7.23,44,Americas
+2003,TUN,Tunisia,6.22,89,Africa
+2003,TUR,Turkey,6.08,93,Asia
+2003,UGA,Uganda,6.95,59,Africa
+2003,UKR,Ukraine,5.59,110,Europe
+2003,ARE,United Arab Emirates,7.31,41,Asia
+2003,GBR,United Kingdom,8.46,5,Europe
+2003,USA,United States,8.59,3,Americas
+2003,URY,Uruguay,7.09,52,Americas
+2003,VEN,"Venezuela, RB",4.37,125,Americas
+2003,VNM,Vietnam,5.49,115,Asia
+2003,YEM,"Yemen, Rep.",NA,NA,Asia
+2003,ZMB,Zambia,7.06,56,Africa
+2003,ZWE,Zimbabwe,3.66,126,Africa
+2002,ALB,Albania,6.94,57,Europe
+2002,DZA,Algeria,4.79,119,Africa
+2002,AGO,Angola,NA,NA,Africa
+2002,ARG,Argentina,6.3,79,Americas
+2002,ARM,Armenia,NA,NA,Asia
+2002,AUS,Australia,8.07,8,Oceania
+2002,AUT,Austria,7.94,13,Europe
+2002,AZE,Azerbaijan,NA,NA,Asia
+2002,BHS,"Bahamas, The",6.83,60,Americas
+2002,BHR,Bahrain,7,53,Asia
+2002,BGD,Bangladesh,5.88,98,Asia
+2002,BRB,Barbados,6.24,82,Americas
+2002,BLR,Belarus,NA,NA,Europe
+2002,BEL,Belgium,7.76,21,Europe
+2002,BLZ,Belize,5.95,93,Americas
+2002,BEN,Benin,6.15,88,Africa
+2002,BTN,Bhutan,NA,NA,Asia
+2002,BOL,Bolivia,6.76,65,Americas
+2002,BIH,Bosnia and Herzegovina,NA,NA,Europe
+2002,BWA,Botswana,7.2,45,Africa
+2002,BRA,Brazil,6.31,78,Americas
+2002,BRN,Brunei Darussalam,NA,NA,Asia
+2002,BGR,Bulgaria,6.77,64,Europe
+2002,BFA,Burkina Faso,NA,NA,Africa
+2002,BDI,Burundi,5.59,107,Africa
+2002,CPV,Cabo Verde,NA,NA,Africa
+2002,KHM,Cambodia,NA,NA,Asia
+2002,CMR,Cameroon,5.57,108,Africa
+2002,CAN,Canada,8.28,7,Americas
+2002,CAF,Central African Republic,5.23,113,Africa
+2002,TCD,Chad,5.89,97,Africa
+2002,CHL,Chile,7.71,24,Americas
+2002,CHN,China,5.76,101,Asia
+2002,COL,Colombia,6.16,87,Americas
+2002,COD,"Congo, Dem. Rep.",4.5,121,Africa
+2002,COG,"Congo, Rep.",4.85,118,Africa
+2002,CRI,Costa Rica,7.46,33,Americas
+2002,CIV,Cote d'Ivoire,5.68,105,Africa
+2002,HRV,Croatia,6.25,81,Europe
+2002,CYP,Cyprus,6.97,54,Asia
+2002,CZE,Czech Republic,7.3,39,Europe
+2002,DNK,Denmark,7.99,10,Europe
+2002,DOM,Dominican Republic,6.79,63,Americas
+2002,ECU,Ecuador,6.23,83,Americas
+2002,EGY,"Egypt, Arab Rep.",6.01,90,Africa
+2002,SLV,El Salvador,7.55,32,Americas
+2002,EST,Estonia,7.92,14,Europe
+2002,SWZ,Eswatini,NA,NA,Africa
+2002,ETH,Ethiopia,NA,NA,Africa
+2002,FJI,Fiji,6.83,60,Oceania
+2002,FIN,Finland,7.98,11,Europe
+2002,FRA,France,7.56,31,Europe
+2002,GAB,Gabon,5.57,108,Africa
+2002,GMB,"Gambia, The",NA,NA,Africa
+2002,GEO,Georgia,NA,NA,Asia
+2002,DEU,Germany,7.88,15,Europe
+2002,GHA,Ghana,6.14,89,Africa
+2002,GRC,Greece,7.37,35,Europe
+2002,GTM,Guatemala,7.25,43,Americas
+2002,GIN,Guinea,NA,NA,Africa
+2002,GNB,Guinea-Bissau,5.19,115,Africa
+2002,GUY,Guyana,6.39,76,Americas
+2002,HTI,Haiti,6.75,66,Americas
+2002,HND,Honduras,7.08,51,Americas
+2002,HKG,"Hong Kong SAR, China",8.67,2,Asia
+2002,HUN,Hungary,7.26,42,Europe
+2002,ISL,Iceland,7.88,15,Europe
+2002,IND,India,6.28,80,Asia
+2002,IDN,Indonesia,6,91,Asia
+2002,IRN,"Iran, Islamic Rep.",5.94,94,Asia
+2002,IRQ,Iraq,NA,NA,Asia
+2002,IRL,Ireland,8.06,9,Europe
+2002,ISR,Israel,7.14,46,Asia
+2002,ITA,Italy,7.71,24,Europe
+2002,JAM,Jamaica,7.37,35,Americas
+2002,JPN,Japan,7.85,18,Asia
+2002,JOR,Jordan,7.13,47,Asia
+2002,KAZ,Kazakhstan,NA,NA,Asia
+2002,KEN,Kenya,6.69,69,Africa
+2002,KOR,"Korea, Rep.",7.36,37,Asia
+2002,KWT,Kuwait,7.09,50,Asia
+2002,KGZ,Kyrgyz Republic,NA,NA,Asia
+2002,LAO,Lao PDR,NA,NA,Asia
+2002,LVA,Latvia,7.82,20,Europe
+2002,LBN,Lebanon,NA,NA,Asia
+2002,LSO,Lesotho,NA,NA,Africa
+2002,LBR,Liberia,NA,NA,Africa
+2002,LBY,Libya,NA,NA,Africa
+2002,LTU,Lithuania,7.68,27,Europe
+2002,LUX,Luxembourg,7.95,12,Europe
+2002,MDG,Madagascar,5.96,92,Africa
+2002,MWI,Malawi,5.42,112,Africa
+2002,MYS,Malaysia,6.18,86,Asia
+2002,MLI,Mali,5.43,111,Africa
+2002,MLT,Malta,6.73,67,Europe
+2002,MRT,Mauritania,NA,NA,Africa
+2002,MUS,Mauritius,7.24,44,Africa
+2002,MEX,Mexico,6.71,68,Americas
+2002,MDA,Moldova,NA,NA,Europe
+2002,MNG,Mongolia,NA,NA,Asia
+2002,MNE,Montenegro,NA,NA,Europe
+2002,MAR,Morocco,5.86,99,Africa
+2002,MOZ,Mozambique,NA,NA,Africa
+2002,MMR,Myanmar,3.26,123,Asia
+2002,NAM,Namibia,6.39,76,Africa
+2002,NPL,Nepal,6.43,73,Asia
+2002,NLD,Netherlands,7.86,17,Europe
+2002,NZL,New Zealand,8.32,6,Oceania
+2002,NIC,Nicaragua,7.34,38,Americas
+2002,NER,Niger,5.14,116,Africa
+2002,NGA,Nigeria,5.45,110,Africa
+2002,MKD,North Macedonia,NA,NA,Europe
+2002,NOR,Norway,7.66,28,Europe
+2002,OMN,Oman,7.12,49,Asia
+2002,PAK,Pakistan,5.74,102,Asia
+2002,PAN,Panama,7.71,24,Americas
+2002,PNG,Papua New Guinea,5.9,95,Oceania
+2002,PRY,Paraguay,6.97,54,Americas
+2002,PER,Peru,7.73,23,Americas
+2002,PHL,Philippines,7.13,47,Asia
+2002,POL,Poland,6.67,70,Europe
+2002,PRT,Portugal,7.62,29,Europe
+2002,QAT,Qatar,NA,NA,Asia
+2002,ROU,Romania,6.41,74,Europe
+2002,RUS,Russian Federation,5.71,104,Europe
+2002,RWA,Rwanda,6.5,72,Africa
+2002,SAU,Saudi Arabia,NA,NA,Asia
+2002,SEN,Senegal,5.74,102,Africa
+2002,SRB,Serbia,NA,NA,Europe
+2002,SYC,Seychelles,NA,NA,Africa
+2002,SLE,Sierra Leone,5.23,113,Africa
+2002,SGP,Singapore,8.59,3,Asia
+2002,SVK,Slovak Republic,6.95,56,Europe
+2002,SVN,Slovenia,6.93,58,Europe
+2002,ZAF,South Africa,6.8,62,Africa
+2002,ESP,Spain,7.85,18,Europe
+2002,LKA,Sri Lanka,6.41,74,Asia
+2002,SDN,Sudan,NA,NA,Africa
+2002,SUR,Suriname,NA,NA,Americas
+2002,SWE,Sweden,7.75,22,Europe
+2002,CHE,Switzerland,8.76,1,Europe
+2002,SYR,Syrian Arab Republic,5.02,117,Asia
+2002,TWN,Taiwan,7.59,30,Asia
+2002,TJK,Tajikistan,NA,NA,Asia
+2002,TZA,Tanzania,6.2,85,Africa
+2002,THA,Thailand,6.61,71,Asia
+2002,TLS,Timor-Leste,NA,NA,Asia
+2002,TGO,Togo,5.9,95,Africa
+2002,TTO,Trinidad and Tobago,7.3,39,Americas
+2002,TUN,Tunisia,6.22,84,Africa
+2002,TUR,Turkey,5.79,100,Asia
+2002,UGA,Uganda,7.01,52,Africa
+2002,UKR,Ukraine,5.66,106,Europe
+2002,ARE,United Arab Emirates,7.38,34,Asia
+2002,GBR,United Kingdom,8.47,5,Europe
+2002,USA,United States,8.59,3,Americas
+2002,URY,Uruguay,7.3,39,Americas
+2002,VEN,"Venezuela, RB",4.79,119,Americas
+2002,VNM,Vietnam,NA,NA,Asia
+2002,YEM,"Yemen, Rep.",NA,NA,Asia
+2002,ZMB,Zambia,6.84,59,Africa
+2002,ZWE,Zimbabwe,3.66,122,Africa
+2001,ALB,Albania,6.75,65,Europe
+2001,DZA,Algeria,4.92,119,Africa
+2001,AGO,Angola,NA,NA,Africa
+2001,ARG,Argentina,6.8,64,Americas
+2001,ARM,Armenia,NA,NA,Asia
+2001,AUS,Australia,8.04,9,Oceania
+2001,AUT,Austria,7.9,13,Europe
+2001,AZE,Azerbaijan,NA,NA,Asia
+2001,BHS,"Bahamas, The",6.84,61,Americas
+2001,BHR,Bahrain,7.06,50,Asia
+2001,BGD,Bangladesh,5.84,95,Asia
+2001,BRB,Barbados,6.18,85,Americas
+2001,BLR,Belarus,NA,NA,Europe
+2001,BEL,Belgium,7.57,28,Europe
+2001,BLZ,Belize,5.63,104,Americas
+2001,BEN,Benin,5.88,93,Africa
+2001,BTN,Bhutan,NA,NA,Asia
+2001,BOL,Bolivia,6.84,61,Americas
+2001,BIH,Bosnia and Herzegovina,NA,NA,Europe
+2001,BWA,Botswana,7.23,38,Africa
+2001,BRA,Brazil,5.95,89,Americas
+2001,BRN,Brunei Darussalam,NA,NA,Asia
+2001,BGR,Bulgaria,6.33,75,Europe
+2001,BFA,Burkina Faso,NA,NA,Africa
+2001,BDI,Burundi,5.65,102,Africa
+2001,CPV,Cabo Verde,NA,NA,Africa
+2001,KHM,Cambodia,NA,NA,Asia
+2001,CMR,Cameroon,5.52,108,Africa
+2001,CAN,Canada,8.2,7,Americas
+2001,CAF,Central African Republic,5.35,111,Africa
+2001,TCD,Chad,5.78,96,Africa
+2001,CHL,Chile,7.66,25,Americas
+2001,CHN,China,5.59,106,Asia
+2001,COL,Colombia,6.04,88,Americas
+2001,COD,"Congo, Dem. Rep.",3.72,122,Africa
+2001,COG,"Congo, Rep.",4.99,118,Africa
+2001,CRI,Costa Rica,7.5,30,Americas
+2001,CIV,Cote d'Ivoire,5.91,90,Africa
+2001,HRV,Croatia,6.25,81,Europe
+2001,CYP,Cyprus,6.55,69,Asia
+2001,CZE,Czech Republic,7.2,41,Europe
+2001,DNK,Denmark,7.92,12,Europe
+2001,DOM,Dominican Republic,6.85,59,Americas
+2001,ECU,Ecuador,5.67,100,Americas
+2001,EGY,"Egypt, Arab Rep.",6.33,75,Africa
+2001,SLV,El Salvador,7.67,23,Americas
+2001,EST,Estonia,7.89,14,Europe
+2001,SWZ,Eswatini,NA,NA,Africa
+2001,ETH,Ethiopia,NA,NA,Africa
+2001,FJI,Fiji,6.73,66,Oceania
+2001,FIN,Finland,7.97,11,Europe
+2001,FRA,France,7.48,32,Europe
+2001,GAB,Gabon,5.6,105,Africa
+2001,GMB,"Gambia, The",NA,NA,Africa
+2001,GEO,Georgia,NA,NA,Asia
+2001,DEU,Germany,7.83,18,Europe
+2001,GHA,Ghana,5.9,92,Africa
+2001,GRC,Greece,7.21,39,Europe
+2001,GTM,Guatemala,7.12,45,Americas
+2001,GIN,Guinea,NA,NA,Africa
+2001,GNB,Guinea-Bissau,5.12,115,Africa
+2001,GUY,Guyana,6.34,73,Americas
+2001,HTI,Haiti,6.86,57,Americas
+2001,HND,Honduras,6.87,56,Americas
+2001,HKG,"Hong Kong SAR, China",8.78,1,Asia
+2001,HUN,Hungary,7.49,31,Europe
+2001,ISL,Iceland,7.87,15,Europe
+2001,IND,India,6.21,82,Asia
+2001,IDN,Indonesia,5.78,96,Asia
+2001,IRN,"Iran, Islamic Rep.",6.09,86,Asia
+2001,IRQ,Iraq,NA,NA,Asia
+2001,IRL,Ireland,8.01,10,Europe
+2001,ISR,Israel,6.84,61,Asia
+2001,ITA,Italy,7.66,25,Europe
+2001,JAM,Jamaica,7.28,36,Americas
+2001,JPN,Japan,7.87,15,Asia
+2001,JOR,Jordan,7.04,51,Asia
+2001,KAZ,Kazakhstan,NA,NA,Asia
+2001,KEN,Kenya,6.7,67,Africa
+2001,KOR,"Korea, Rep.",7.3,34,Asia
+2001,KWT,Kuwait,7.1,46,Asia
+2001,KGZ,Kyrgyz Republic,NA,NA,Asia
+2001,LAO,Lao PDR,NA,NA,Asia
+2001,LVA,Latvia,7.71,20,Europe
+2001,LBN,Lebanon,NA,NA,Asia
+2001,LSO,Lesotho,NA,NA,Africa
+2001,LBR,Liberia,NA,NA,Africa
+2001,LBY,Libya,NA,NA,Africa
+2001,LTU,Lithuania,7.3,34,Europe
+2001,LUX,Luxembourg,8.18,8,Europe
+2001,MDG,Madagascar,6.19,83,Africa
+2001,MWI,Malawi,5.4,110,Africa
+2001,MYS,Malaysia,6.09,86,Asia
+2001,MLI,Mali,5.66,101,Africa
+2001,MLT,Malta,6.86,57,Europe
+2001,MRT,Mauritania,NA,NA,Africa
+2001,MUS,Mauritius,7.21,39,Africa
+2001,MEX,Mexico,6.62,68,Americas
+2001,MDA,Moldova,NA,NA,Europe
+2001,MNG,Mongolia,NA,NA,Asia
+2001,MNE,Montenegro,NA,NA,Europe
+2001,MAR,Morocco,5.91,90,Africa
+2001,MOZ,Mozambique,NA,NA,Africa
+2001,MMR,Myanmar,3.74,121,Asia
+2001,NAM,Namibia,6.27,80,Africa
+2001,NPL,Nepal,6.31,79,Asia
+2001,NLD,Netherlands,7.85,17,Europe
+2001,NZL,New Zealand,8.27,6,Oceania
+2001,NIC,Nicaragua,6.97,53,Americas
+2001,NER,Niger,5.06,116,Africa
+2001,NGA,Nigeria,5,117,Africa
+2001,MKD,North Macedonia,NA,NA,Europe
+2001,NOR,Norway,7.71,20,Europe
+2001,OMN,Oman,7.09,47,Asia
+2001,PAK,Pakistan,5.5,109,Asia
+2001,PAN,Panama,7.71,20,Americas
+2001,PNG,Papua New Guinea,5.88,93,Oceania
+2001,PRY,Paraguay,7.09,47,Americas
+2001,PER,Peru,7.65,27,Americas
+2001,PHL,Philippines,7.03,52,Asia
+2001,POL,Poland,6.41,72,Europe
+2001,PRT,Portugal,7.52,29,Europe
+2001,QAT,Qatar,NA,NA,Asia
+2001,ROU,Romania,5.75,98,Europe
+2001,RUS,Russian Federation,5.29,112,Europe
+2001,RWA,Rwanda,6.34,73,Africa
+2001,SAU,Saudi Arabia,NA,NA,Asia
+2001,SEN,Senegal,5.65,102,Africa
+2001,SRB,Serbia,NA,NA,Europe
+2001,SYC,Seychelles,NA,NA,Africa
+2001,SLE,Sierra Leone,4.91,120,Africa
+2001,SGP,Singapore,8.43,4,Asia
+2001,SVK,Slovak Republic,6.88,55,Europe
+2001,SVN,Slovenia,6.9,54,Europe
+2001,ZAF,South Africa,6.85,59,Africa
+2001,ESP,Spain,7.83,18,Europe
+2001,LKA,Sri Lanka,6.32,78,Asia
+2001,SDN,Sudan,NA,NA,Africa
+2001,SUR,Suriname,NA,NA,Americas
+2001,SWE,Sweden,7.67,23,Europe
+2001,CHE,Switzerland,8.63,2,Europe
+2001,SYR,Syrian Arab Republic,5.17,114,Asia
+2001,TWN,Taiwan,7.47,33,Asia
+2001,TJK,Tajikistan,NA,NA,Asia
+2001,TZA,Tanzania,6.33,75,Africa
+2001,THA,Thailand,6.52,70,Asia
+2001,TLS,Timor-Leste,NA,NA,Asia
+2001,TGO,Togo,5.72,99,Africa
+2001,TTO,Trinidad and Tobago,7.27,37,Americas
+2001,TUN,Tunisia,6.42,71,Africa
+2001,TUR,Turkey,5.54,107,Asia
+2001,UGA,Uganda,7.09,47,Africa
+2001,UKR,Ukraine,5.18,113,Europe
+2001,ARE,United Arab Emirates,7.19,42,Asia
+2001,GBR,United Kingdom,8.42,5,Europe
+2001,USA,United States,8.52,3,Americas
+2001,URY,Uruguay,7.15,43,Americas
+2001,VEN,"Venezuela, RB",6.19,83,Americas
+2001,VNM,Vietnam,NA,NA,Asia
+2001,YEM,"Yemen, Rep.",NA,NA,Asia
+2001,ZMB,Zambia,7.15,43,Africa
+2001,ZWE,Zimbabwe,3.71,123,Africa
+2000,ALB,Albania,6.66,67,Europe
+2000,DZA,Algeria,4.87,119,Africa
+2000,AGO,Angola,NA,NA,Africa
+2000,ARG,Argentina,7.3,37,Americas
+2000,ARM,Armenia,NA,NA,Asia
+2000,AUS,Australia,8.12,9,Oceania
+2000,AUT,Austria,8.02,15,Europe
+2000,AZE,Azerbaijan,NA,NA,Asia
+2000,BHS,"Bahamas, The",6.73,63,Americas
+2000,BHR,Bahrain,7.22,39,Asia
+2000,BGD,Bangladesh,5.94,87,Asia
+2000,BRB,Barbados,6.36,79,Americas
+2000,BLR,Belarus,NA,NA,Europe
+2000,BEL,Belgium,7.84,20,Europe
+2000,BLZ,Belize,5.83,96,Americas
+2000,BEN,Benin,5.84,95,Africa
+2000,BTN,Bhutan,NA,NA,Asia
+2000,BOL,Bolivia,7,52,Americas
+2000,BIH,Bosnia and Herzegovina,NA,NA,Europe
+2000,BWA,Botswana,7.38,34,Africa
+2000,BRA,Brazil,5.92,91,Americas
+2000,BRN,Brunei Darussalam,NA,NA,Asia
+2000,BGR,Bulgaria,5.73,99,Europe
+2000,BFA,Burkina Faso,NA,NA,Africa
+2000,BDI,Burundi,5.38,110,Africa
+2000,CPV,Cabo Verde,NA,NA,Africa
+2000,KHM,Cambodia,NA,NA,Asia
+2000,CMR,Cameroon,5.39,109,Africa
+2000,CAN,Canada,8.27,7,Americas
+2000,CAF,Central African Republic,5.13,114,Africa
+2000,TCD,Chad,5.93,88,Africa
+2000,CHL,Chile,7.44,32,Americas
+2000,CHN,China,5.52,107,Asia
+2000,COL,Colombia,5.89,92,Americas
+2000,COD,"Congo, Dem. Rep.",3.8,124,Africa
+2000,COG,"Congo, Rep.",4.75,121,Africa
+2000,CRI,Costa Rica,7.6,28,Americas
+2000,CIV,Cote d'Ivoire,5.86,93,Africa
+2000,HRV,Croatia,6.24,82,Europe
+2000,CYP,Cyprus,6.5,71,Asia
+2000,CZE,Czech Republic,6.98,53,Europe
+2000,DNK,Denmark,8.08,11,Europe
+2000,DOM,Dominican Republic,6.67,65,Americas
+2000,ECU,Ecuador,5.7,101,Americas
+2000,EGY,"Egypt, Arab Rep.",6.4,76,Africa
+2000,SLV,El Salvador,7.81,21,Americas
+2000,EST,Estonia,7.79,22,Europe
+2000,SWZ,Eswatini,NA,NA,Africa
+2000,ETH,Ethiopia,NA,NA,Africa
+2000,FJI,Fiji,6.85,59,Oceania
+2000,FIN,Finland,8.03,13,Europe
+2000,FRA,France,7.64,27,Europe
+2000,GAB,Gabon,5.64,104,Africa
+2000,GMB,"Gambia, The",NA,NA,Africa
+2000,GEO,Georgia,6.97,54,Asia
+2000,DEU,Germany,7.96,16,Europe
+2000,GHA,Ghana,5.8,98,Africa
+2000,GRC,Greece,7.33,35,Europe
+2000,GTM,Guatemala,6.9,56,Americas
+2000,GIN,Guinea,NA,NA,Africa
+2000,GNB,Guinea-Bissau,4.57,122,Africa
+2000,GUY,Guyana,6.55,70,Americas
+2000,HTI,Haiti,6.93,55,Americas
+2000,HND,Honduras,6.83,61,Americas
+2000,HKG,"Hong Kong SAR, China",8.76,1,Asia
+2000,HUN,Hungary,7.01,50,Europe
+2000,ISL,Iceland,7.94,17,Europe
+2000,IND,India,6.27,81,Asia
+2000,IDN,Indonesia,6.02,84,Asia
+2000,IRN,"Iran, Islamic Rep.",5.7,101,Asia
+2000,IRQ,Iraq,NA,NA,Asia
+2000,IRL,Ireland,8.12,9,Europe
+2000,ISR,Israel,6.72,64,Asia
+2000,ITA,Italy,7.75,24,Europe
+2000,JAM,Jamaica,7.43,33,Americas
+2000,JPN,Japan,8.05,12,Asia
+2000,JOR,Jordan,7.14,42,Asia
+2000,KAZ,Kazakhstan,NA,NA,Asia
+2000,KEN,Kenya,6.66,67,Africa
+2000,KOR,"Korea, Rep.",7.08,47,Asia
+2000,KWT,Kuwait,6.74,62,Asia
+2000,KGZ,Kyrgyz Republic,NA,NA,Asia
+2000,LAO,Lao PDR,NA,NA,Asia
+2000,LVA,Latvia,7.59,29,Europe
+2000,LBN,Lebanon,NA,NA,Asia
+2000,LSO,Lesotho,NA,NA,Africa
+2000,LBR,Liberia,NA,NA,Africa
+2000,LBY,Libya,NA,NA,Africa
+2000,LTU,Lithuania,7.14,42,Europe
+2000,LUX,Luxembourg,8.15,8,Europe
+2000,MDG,Madagascar,5.82,97,Africa
+2000,MWI,Malawi,5.12,115,Africa
+2000,MYS,Malaysia,6.49,73,Asia
+2000,MLI,Mali,5.95,86,Africa
+2000,MLT,Malta,6.85,59,Europe
+2000,MRT,Mauritania,NA,NA,Africa
+2000,MUS,Mauritius,7.31,36,Africa
+2000,MEX,Mexico,6.63,69,Americas
+2000,MDA,Moldova,NA,NA,Europe
+2000,MNG,Mongolia,NA,NA,Asia
+2000,MNE,Montenegro,NA,NA,Europe
+2000,MAR,Morocco,5.93,88,Africa
+2000,MOZ,Mozambique,NA,NA,Africa
+2000,MMR,Myanmar,3.68,125,Asia
+2000,NAM,Namibia,6.42,75,Africa
+2000,NPL,Nepal,6.02,84,Asia
+2000,NLD,Netherlands,8.03,13,Europe
+2000,NZL,New Zealand,8.4,6,Oceania
+2000,NIC,Nicaragua,7.14,42,Americas
+2000,NER,Niger,5.35,111,Africa
+2000,NGA,Nigeria,4.95,117,Africa
+2000,MKD,North Macedonia,NA,NA,Europe
+2000,NOR,Norway,7.77,23,Europe
+2000,OMN,Oman,7.04,49,Asia
+2000,PAK,Pakistan,5.3,112,Asia
+2000,PAN,Panama,7.65,25,Americas
+2000,PNG,Papua New Guinea,5.86,93,Oceania
+2000,PRY,Paraguay,7.01,50,Americas
+2000,PER,Peru,7.45,31,Americas
+2000,PHL,Philippines,7.08,47,Asia
+2000,POL,Poland,6.4,76,Europe
+2000,PRT,Portugal,7.65,25,Europe
+2000,QAT,Qatar,NA,NA,Asia
+2000,ROU,Romania,5.48,108,Europe
+2000,RUS,Russian Federation,5.23,113,Europe
+2000,RWA,Rwanda,6.22,83,Africa
+2000,SAU,Saudi Arabia,NA,NA,Asia
+2000,SEN,Senegal,5.73,99,Africa
+2000,SRB,Serbia,NA,NA,Europe
+2000,SYC,Seychelles,NA,NA,Africa
+2000,SLE,Sierra Leone,4.98,116,Africa
+2000,SGP,Singapore,8.46,5,Asia
+2000,SVK,Slovak Republic,6.9,56,Europe
+2000,SVN,Slovenia,6.67,65,Europe
+2000,ZAF,South Africa,6.87,58,Africa
+2000,ESP,Spain,7.89,18,Europe
+2000,LKA,Sri Lanka,6.47,74,Asia
+2000,SDN,Sudan,NA,NA,Africa
+2000,SUR,Suriname,NA,NA,Americas
+2000,SWE,Sweden,7.86,19,Europe
+2000,CHE,Switzerland,8.75,2,Europe
+2000,SYR,Syrian Arab Republic,4.87,119,Asia
+2000,TWN,Taiwan,7.53,30,Asia
+2000,TJK,Tajikistan,NA,NA,Asia
+2000,TZA,Tanzania,6.31,80,Africa
+2000,THA,Thailand,6.5,71,Asia
+2000,TLS,Timor-Leste,NA,NA,Asia
+2000,TGO,Togo,5.66,103,Africa
+2000,TTO,Trinidad and Tobago,7.3,37,Americas
+2000,TUN,Tunisia,6.39,78,Africa
+2000,TUR,Turkey,5.58,105,Asia
+2000,UGA,Uganda,7.09,46,Africa
+2000,UKR,Ukraine,4.88,118,Europe
+2000,ARE,United Arab Emirates,7.22,39,Asia
+2000,GBR,United Kingdom,8.52,4,Europe
+2000,USA,United States,8.67,3,Americas
+2000,URY,Uruguay,7.18,41,Americas
+2000,VEN,"Venezuela, RB",5.93,88,Americas
+2000,VNM,Vietnam,5.56,106,Asia
+2000,YEM,"Yemen, Rep.",NA,NA,Asia
+2000,ZMB,Zambia,7.13,45,Africa
+2000,ZWE,Zimbabwe,4.24,123,Africa
+1995,ALB,Albania,5.27,90,Europe
+1995,DZA,Algeria,3.82,117,Africa
+1995,AGO,Angola,NA,NA,Africa
+1995,ARG,Argentina,7.05,35,Americas
+1995,ARM,Armenia,NA,NA,Asia
+1995,AUS,Australia,8.09,7,Oceania
+1995,AUT,Austria,7.51,22,Europe
+1995,AZE,Azerbaijan,NA,NA,Asia
+1995,BHS,"Bahamas, The",6.85,41,Americas
+1995,BHR,Bahrain,6.97,38,Asia
+1995,BGD,Bangladesh,4.93,96,Asia
+1995,BRB,Barbados,6.52,49,Americas
+1995,BLR,Belarus,NA,NA,Europe
+1995,BEL,Belgium,7.67,18,Europe
+1995,BLZ,Belize,6.43,50,Americas
+1995,BEN,Benin,4.73,102,Africa
+1995,BTN,Bhutan,NA,NA,Asia
+1995,BOL,Bolivia,6.54,47,Americas
+1995,BIH,Bosnia and Herzegovina,NA,NA,Europe
+1995,BWA,Botswana,6.29,57,Africa
+1995,BRA,Brazil,4.61,105,Americas
+1995,BRN,Brunei Darussalam,NA,NA,Asia
+1995,BGR,Bulgaria,4.7,104,Europe
+1995,BFA,Burkina Faso,NA,NA,Africa
+1995,BDI,Burundi,4.47,109,Africa
+1995,CPV,Cabo Verde,NA,NA,Africa
+1995,KHM,Cambodia,NA,NA,Asia
+1995,CMR,Cameroon,5.28,89,Africa
+1995,CAN,Canada,7.99,9,Americas
+1995,CAF,Central African Republic,4.54,107,Africa
+1995,TCD,Chad,5.45,86,Africa
+1995,CHL,Chile,7.47,23,Americas
+1995,CHN,China,4.92,97,Asia
+1995,COL,Colombia,5.91,69,Americas
+1995,COD,"Congo, Dem. Rep.",3.38,122,Africa
+1995,COG,"Congo, Rep.",5.33,88,Africa
+1995,CRI,Costa Rica,7.37,26,Americas
+1995,CIV,Cote d'Ivoire,4.87,99,Africa
+1995,HRV,Croatia,4.35,113,Europe
+1995,CYP,Cyprus,6.39,54,Asia
+1995,CZE,Czech Republic,6.41,52,Europe
+1995,DNK,Denmark,7.81,14,Europe
+1995,DOM,Dominican Republic,5.88,70,Americas
+1995,ECU,Ecuador,6.29,57,Americas
+1995,EGY,"Egypt, Arab Rep.",5.66,78,Africa
+1995,SLV,El Salvador,7.23,30,Americas
+1995,EST,Estonia,6.31,56,Europe
+1995,SWZ,Eswatini,NA,NA,Africa
+1995,ETH,Ethiopia,NA,NA,Africa
+1995,FJI,Fiji,6.18,62,Oceania
+1995,FIN,Finland,7.81,14,Europe
+1995,FRA,France,7.35,27,Europe
+1995,GAB,Gabon,5.24,92,Africa
+1995,GMB,"Gambia, The",NA,NA,Africa
+1995,GEO,Georgia,NA,NA,Asia
+1995,DEU,Germany,7.87,11,Europe
+1995,GHA,Ghana,5.21,94,Africa
+1995,GRC,Greece,6.53,48,Europe
+1995,GTM,Guatemala,6.99,36,Americas
+1995,GIN,Guinea,NA,NA,Africa
+1995,GNB,Guinea-Bissau,3.62,119,Africa
+1995,GUY,Guyana,5.06,95,Americas
+1995,HTI,Haiti,5.98,67,Americas
+1995,HND,Honduras,6.26,59,Americas
+1995,HKG,"Hong Kong SAR, China",9.06,1,Asia
+1995,HUN,Hungary,6.59,43,Europe
+1995,ISL,Iceland,7.73,16,Europe
+1995,IND,India,5.74,75,Asia
+1995,IDN,Indonesia,6.24,60,Asia
+1995,IRN,"Iran, Islamic Rep.",3.91,116,Asia
+1995,IRQ,Iraq,NA,NA,Asia
+1995,IRL,Ireland,8.06,8,Europe
+1995,ISR,Israel,6.06,64,Asia
+1995,ITA,Italy,7.26,28,Europe
+1995,JAM,Jamaica,6.56,45,Americas
+1995,JPN,Japan,7.67,18,Asia
+1995,JOR,Jordan,5.98,67,Asia
+1995,KAZ,Kazakhstan,NA,NA,Asia
+1995,KEN,Kenya,5.84,74,Africa
+1995,KOR,"Korea, Rep.",7.15,32,Asia
+1995,KWT,Kuwait,6.2,61,Asia
+1995,KGZ,Kyrgyz Republic,NA,NA,Asia
+1995,LAO,Lao PDR,NA,NA,Asia
+1995,LVA,Latvia,5.86,72,Europe
+1995,LBN,Lebanon,NA,NA,Asia
+1995,LSO,Lesotho,NA,NA,Africa
+1995,LBR,Liberia,NA,NA,Africa
+1995,LBY,Libya,NA,NA,Africa
+1995,LTU,Lithuania,5.68,77,Europe
+1995,LUX,Luxembourg,7.91,10,Europe
+1995,MDG,Madagascar,4.36,112,Africa
+1995,MWI,Malawi,4.45,110,Africa
+1995,MYS,Malaysia,7.17,31,Asia
+1995,MLI,Mali,5.57,81,Africa
+1995,MLT,Malta,6.92,39,Europe
+1995,MRT,Mauritania,NA,NA,Africa
+1995,MUS,Mauritius,7.12,34,Africa
+1995,MEX,Mexico,6.55,46,Americas
+1995,MDA,Moldova,NA,NA,Europe
+1995,MNG,Mongolia,NA,NA,Asia
+1995,MNE,Montenegro,NA,NA,Europe
+1995,MAR,Morocco,5.69,76,Africa
+1995,MOZ,Mozambique,NA,NA,Africa
+1995,MMR,Myanmar,2.8,123,Asia
+1995,NAM,Namibia,5.54,82,Africa
+1995,NPL,Nepal,5.38,87,Asia
+1995,NLD,Netherlands,7.84,12,Europe
+1995,NZL,New Zealand,8.64,3,Oceania
+1995,NIC,Nicaragua,6.08,63,Americas
+1995,NER,Niger,4.5,108,Africa
+1995,NGA,Nigeria,3.45,121,Africa
+1995,MKD,North Macedonia,NA,NA,Europe
+1995,NOR,Norway,7.82,13,Europe
+1995,OMN,Oman,6.57,44,Asia
+1995,PAK,Pakistan,5.23,93,Asia
+1995,PAN,Panama,7.68,17,Americas
+1995,PNG,Papua New Guinea,5.88,70,Oceania
+1995,PRY,Paraguay,6.98,37,Americas
+1995,PER,Peru,6.36,55,Americas
+1995,PHL,Philippines,7.24,29,Asia
+1995,POL,Poland,5.48,85,Europe
+1995,PRT,Portugal,7.41,25,Europe
+1995,QAT,Qatar,NA,NA,Asia
+1995,ROU,Romania,4.11,115,Europe
+1995,RUS,Russian Federation,4.55,106,Europe
+1995,RWA,Rwanda,4.14,114,Africa
+1995,SAU,Saudi Arabia,NA,NA,Asia
+1995,SEN,Senegal,4.86,100,Africa
+1995,SRB,Serbia,NA,NA,Europe
+1995,SYC,Seychelles,NA,NA,Africa
+1995,SLE,Sierra Leone,4.39,111,Africa
+1995,SGP,Singapore,8.68,2,Asia
+1995,SVK,Slovak Republic,6.01,66,Europe
+1995,SVN,Slovenia,5.54,82,Europe
+1995,ZAF,South Africa,6.05,65,Africa
+1995,ESP,Spain,7.57,20,Europe
+1995,LKA,Sri Lanka,6.43,50,Asia
+1995,SDN,Sudan,NA,NA,Africa
+1995,SUR,Suriname,NA,NA,Americas
+1995,SWE,Sweden,7.42,24,Europe
+1995,CHE,Switzerland,8.27,6,Europe
+1995,SYR,Syrian Arab Republic,3.7,118,Asia
+1995,TWN,Taiwan,7.52,21,Asia
+1995,TJK,Tajikistan,NA,NA,Asia
+1995,TZA,Tanzania,5.5,84,Africa
+1995,THA,Thailand,7.15,32,Asia
+1995,TLS,Timor-Leste,NA,NA,Asia
+1995,TGO,Togo,4.85,101,Africa
+1995,TTO,Trinidad and Tobago,6.92,39,Americas
+1995,TUN,Tunisia,5.6,79,Africa
+1995,TUR,Turkey,5.86,72,Asia
+1995,UGA,Uganda,5.27,90,Africa
+1995,UKR,Ukraine,3.58,120,Europe
+1995,ARE,United Arab Emirates,6.71,42,Asia
+1995,GBR,United Kingdom,8.29,5,Europe
+1995,USA,United States,8.58,4,Americas
+1995,URY,Uruguay,6.4,53,Americas
+1995,VEN,"Venezuela, RB",4.72,103,Americas
+1995,VNM,Vietnam,NA,NA,Asia
+1995,YEM,"Yemen, Rep.",NA,NA,Asia
+1995,ZMB,Zambia,4.88,98,Africa
+1995,ZWE,Zimbabwe,5.59,80,Africa
+1990,ALB,Albania,4.74,88,Europe
+1990,DZA,Algeria,3.42,110,Africa
+1990,AGO,Angola,NA,NA,Africa
+1990,ARG,Argentina,4.5,95,Americas
+1990,ARM,Armenia,NA,NA,Asia
+1990,AUS,Australia,8.12,8,Oceania
+1990,AUT,Austria,7.35,16,Europe
+1990,AZE,Azerbaijan,NA,NA,Asia
+1990,BHS,"Bahamas, The",6.73,29,Americas
+1990,BHR,Bahrain,6.51,33,Asia
+1990,BGD,Bangladesh,4.38,100,Asia
+1990,BRB,Barbados,6.06,39,Americas
+1990,BLR,Belarus,NA,NA,Europe
+1990,BEL,Belgium,7.59,13,Europe
+1990,BLZ,Belize,5.94,46,Americas
+1990,BEN,Benin,5.17,77,Africa
+1990,BTN,Bhutan,NA,NA,Asia
+1990,BOL,Bolivia,5.82,48,Americas
+1990,BIH,Bosnia and Herzegovina,NA,NA,Europe
+1990,BWA,Botswana,6.05,41,Africa
+1990,BRA,Brazil,4.32,101,Americas
+1990,BRN,Brunei Darussalam,NA,NA,Asia
+1990,BGR,Bulgaria,4.57,92,Europe
+1990,BFA,Burkina Faso,NA,NA,Africa
+1990,BDI,Burundi,5.2,73,Africa
+1990,CPV,Cabo Verde,NA,NA,Africa
+1990,KHM,Cambodia,NA,NA,Asia
+1990,CMR,Cameroon,5.27,69,Africa
+1990,CAN,Canada,8.24,6,Americas
+1990,CAF,Central African Republic,4.71,90,Africa
+1990,TCD,Chad,5.51,62,Africa
+1990,CHL,Chile,6.79,28,Americas
+1990,CHN,China,3.69,107,Asia
+1990,COL,Colombia,5.31,67,Americas
+1990,COD,"Congo, Dem. Rep.",3.07,115,Africa
+1990,COG,"Congo, Rep.",4.92,85,Africa
+1990,CRI,Costa Rica,7.12,21,Americas
+1990,CIV,Cote d'Ivoire,4.98,82,Africa
+1990,HRV,Croatia,NA,NA,Europe
+1990,CYP,Cyprus,5.69,54,Asia
+1990,CZE,Czech Republic,NA,NA,Europe
+1990,DNK,Denmark,7.5,14,Europe
+1990,DOM,Dominican Republic,4.15,103,Americas
+1990,ECU,Ecuador,5.34,65,Americas
+1990,EGY,"Egypt, Arab Rep.",4.64,91,Africa
+1990,SLV,El Salvador,5.19,75,Americas
+1990,EST,Estonia,4.47,98,Europe
+1990,SWZ,Eswatini,NA,NA,Africa
+1990,ETH,Ethiopia,NA,NA,Africa
+1990,FJI,Fiji,5.65,55,Oceania
+1990,FIN,Finland,7.4,15,Europe
+1990,FRA,France,7.18,20,Europe
+1990,GAB,Gabon,5.53,60,Africa
+1990,GMB,"Gambia, The",NA,NA,Africa
+1990,GEO,Georgia,NA,NA,Asia
+1990,DEU,Germany,7.84,11,Europe
+1990,GHA,Ghana,4.53,93,Africa
+1990,GRC,Greece,6.04,42,Europe
+1990,GTM,Guatemala,6.12,38,Americas
+1990,GIN,Guinea,NA,NA,Africa
+1990,GNB,Guinea-Bissau,3.24,112,Africa
+1990,GUY,Guyana,4.47,98,Americas
+1990,HTI,Haiti,5.54,59,Americas
+1990,HND,Honduras,5.74,52,Americas
+1990,HKG,"Hong Kong SAR, China",9,1,Asia
+1990,HUN,Hungary,5.12,79,Europe
+1990,ISL,Iceland,6.86,27,Europe
+1990,IND,India,5.04,80,Asia
+1990,IDN,Indonesia,6.06,39,Asia
+1990,IRN,"Iran, Islamic Rep.",4.73,89,Asia
+1990,IRQ,Iraq,NA,NA,Asia
+1990,IRL,Ireland,7.01,25,Europe
+1990,ISR,Israel,4.93,83,Asia
+1990,ITA,Italy,6.92,26,Europe
+1990,JAM,Jamaica,5.8,49,Americas
+1990,JPN,Japan,8.15,7,Asia
+1990,JOR,Jordan,5.34,65,Asia
+1990,KAZ,Kazakhstan,NA,NA,Asia
+1990,KEN,Kenya,5.24,70,Africa
+1990,KOR,"Korea, Rep.",6.66,30,Asia
+1990,KWT,Kuwait,5.8,49,Asia
+1990,KGZ,Kyrgyz Republic,NA,NA,Asia
+1990,LAO,Lao PDR,NA,NA,Asia
+1990,LVA,Latvia,NA,NA,Europe
+1990,LBN,Lebanon,NA,NA,Asia
+1990,LSO,Lesotho,NA,NA,Africa
+1990,LBR,Liberia,NA,NA,Africa
+1990,LBY,Libya,NA,NA,Africa
+1990,LTU,Lithuania,5.43,64,Europe
+1990,LUX,Luxembourg,8.03,9,Europe
+1990,MDG,Madagascar,4.49,96,Africa
+1990,MWI,Malawi,5.2,73,Africa
+1990,MYS,Malaysia,7.27,17,Asia
+1990,MLI,Mali,5.88,47,Africa
+1990,MLT,Malta,5.63,56,Europe
+1990,MRT,Mauritania,NA,NA,Africa
+1990,MUS,Mauritius,6.02,43,Africa
+1990,MEX,Mexico,5.95,45,Americas
+1990,MDA,Moldova,NA,NA,Europe
+1990,MNG,Mongolia,NA,NA,Asia
+1990,MNE,Montenegro,NA,NA,Europe
+1990,MAR,Morocco,5.16,78,Africa
+1990,MOZ,Mozambique,NA,NA,Africa
+1990,MMR,Myanmar,2.48,117,Asia
+1990,NAM,Namibia,5.28,68,Africa
+1990,NPL,Nepal,4.77,87,Asia
+1990,NLD,Netherlands,7.62,12,Europe
+1990,NZL,New Zealand,7.97,10,Oceania
+1990,NIC,Nicaragua,3.22,114,Americas
+1990,NER,Niger,4.84,86,Africa
+1990,NGA,Nigeria,3.79,106,Africa
+1990,MKD,North Macedonia,NA,NA,Europe
+1990,NOR,Norway,7.21,19,Europe
+1990,OMN,Oman,6.33,35,Asia
+1990,PAK,Pakistan,4.93,83,Asia
+1990,PAN,Panama,7.22,18,Americas
+1990,PNG,Papua New Guinea,6.01,44,Oceania
+1990,PRY,Paraguay,5.74,52,Americas
+1990,PER,Peru,4.15,103,Americas
+1990,PHL,Philippines,6.23,36,Asia
+1990,POL,Poland,3.92,105,Europe
+1990,PRT,Portugal,6.19,37,Europe
+1990,QAT,Qatar,NA,NA,Asia
+1990,ROU,Romania,4.49,96,Europe
+1990,RUS,Russian Federation,3.28,111,Europe
+1990,RWA,Rwanda,4.51,94,Africa
+1990,SAU,Saudi Arabia,NA,NA,Asia
+1990,SEN,Senegal,5.18,76,Africa
+1990,SRB,Serbia,NA,NA,Europe
+1990,SYC,Seychelles,NA,NA,Africa
+1990,SLE,Sierra Leone,3.43,109,Africa
+1990,SGP,Singapore,8.42,3,Asia
+1990,SVK,Slovak Republic,NA,NA,Europe
+1990,SVN,Slovenia,NA,NA,Europe
+1990,ZAF,South Africa,5.52,61,Africa
+1990,ESP,Spain,6.58,31,Europe
+1990,LKA,Sri Lanka,5.56,57,Asia
+1990,SDN,Sudan,NA,NA,Africa
+1990,SUR,Suriname,NA,NA,Americas
+1990,SWE,Sweden,7.08,23,Europe
+1990,CHE,Switzerland,8.42,3,Europe
+1990,SYR,Syrian Arab Republic,3.23,113,Asia
+1990,TWN,Taiwan,7.12,21,Asia
+1990,TJK,Tajikistan,NA,NA,Asia
+1990,TZA,Tanzania,4.16,102,Africa
+1990,THA,Thailand,6.56,32,Asia
+1990,TLS,Timor-Leste,NA,NA,Asia
+1990,TGO,Togo,5.24,70,Africa
+1990,TTO,Trinidad and Tobago,5.56,57,Americas
+1990,TUN,Tunisia,5.45,63,Africa
+1990,TUR,Turkey,5.22,72,Asia
+1990,UGA,Uganda,3,116,Africa
+1990,UKR,Ukraine,NA,NA,Europe
+1990,ARE,United Arab Emirates,7.08,23,Asia
+1990,GBR,United Kingdom,8.4,5,Europe
+1990,USA,United States,8.56,2,Americas
+1990,URY,Uruguay,6.4,34,Americas
+1990,VEN,"Venezuela, RB",5.78,51,Americas
+1990,VNM,Vietnam,NA,NA,Asia
+1990,YEM,"Yemen, Rep.",NA,NA,Asia
+1990,ZMB,Zambia,3.55,108,Africa
+1990,ZWE,Zimbabwe,5,81,Africa
+1985,ALB,Albania,NA,NA,Europe
+1985,DZA,Algeria,3.21,106,Africa
+1985,AGO,Angola,NA,NA,Africa
+1985,ARG,Argentina,3.68,101,Americas
+1985,ARM,Armenia,NA,NA,Asia
+1985,AUS,Australia,7.71,8,Oceania
+1985,AUT,Austria,6.97,14,Europe
+1985,AZE,Azerbaijan,NA,NA,Asia
+1985,BHS,"Bahamas, The",6.59,23,Americas
+1985,BHR,Bahrain,6.64,20,Asia
+1985,BGD,Bangladesh,4.05,97,Asia
+1985,BRB,Barbados,5.95,34,Americas
+1985,BLR,Belarus,NA,NA,Europe
+1985,BEL,Belgium,7.38,12,Europe
+1985,BLZ,Belize,5.67,43,Americas
+1985,BEN,Benin,4.39,90,Africa
+1985,BTN,Bhutan,NA,NA,Asia
+1985,BOL,Bolivia,4.03,98,Americas
+1985,BIH,Bosnia and Herzegovina,NA,NA,Europe
+1985,BWA,Botswana,5.65,44,Africa
+1985,BRA,Brazil,3.17,107,Americas
+1985,BRN,Brunei Darussalam,NA,NA,Asia
+1985,BGR,Bulgaria,4.44,84,Europe
+1985,BFA,Burkina Faso,NA,NA,Africa
+1985,BDI,Burundi,5.12,64,Africa
+1985,CPV,Cabo Verde,NA,NA,Africa
+1985,KHM,Cambodia,NA,NA,Asia
+1985,CMR,Cameroon,5.11,65,Africa
+1985,CAN,Canada,8.06,6,Americas
+1985,CAF,Central African Republic,4.65,83,Africa
+1985,TCD,Chad,5.36,54,Africa
+1985,CHL,Chile,5.72,40,Americas
+1985,CHN,China,4.38,91,Asia
+1985,COL,Colombia,5.23,59,Americas
+1985,COD,"Congo, Dem. Rep.",3.41,104,Africa
+1985,COG,"Congo, Rep.",4.2,94,Africa
+1985,CRI,Costa Rica,5.6,46,Americas
+1985,CIV,Cote d'Ivoire,5.38,53,Africa
+1985,HRV,Croatia,NA,NA,Europe
+1985,CYP,Cyprus,5.58,48,Asia
+1985,CZE,Czech Republic,NA,NA,Europe
+1985,DNK,Denmark,6.62,21,Europe
+1985,DOM,Dominican Republic,5.11,65,Americas
+1985,ECU,Ecuador,4.91,73,Americas
+1985,EGY,"Egypt, Arab Rep.",4.41,88,Africa
+1985,SLV,El Salvador,4.44,84,Americas
+1985,EST,Estonia,NA,NA,Europe
+1985,SWZ,Eswatini,NA,NA,Africa
+1985,ETH,Ethiopia,NA,NA,Africa
+1985,FJI,Fiji,5.89,35,Oceania
+1985,FIN,Finland,7.16,13,Europe
+1985,FRA,France,6.26,29,Europe
+1985,GAB,Gabon,5.34,55,Africa
+1985,GMB,"Gambia, The",NA,NA,Africa
+1985,GEO,Georgia,NA,NA,Asia
+1985,DEU,Germany,7.68,9,Europe
+1985,GHA,Ghana,3.11,108,Africa
+1985,GRC,Greece,5.23,59,Europe
+1985,GTM,Guatemala,5.17,62,Americas
+1985,GIN,Guinea,NA,NA,Africa
+1985,GNB,Guinea-Bissau,2.75,112,Africa
+1985,GUY,Guyana,4.41,88,Americas
+1985,HTI,Haiti,5.6,46,Americas
+1985,HND,Honduras,5.87,36,Americas
+1985,HKG,"Hong Kong SAR, China",8.66,1,Asia
+1985,HUN,Hungary,4.43,86,Europe
+1985,ISL,Iceland,5.46,50,Europe
+1985,IND,India,4.76,79,Asia
+1985,IDN,Indonesia,5.99,33,Asia
+1985,IRN,"Iran, Islamic Rep.",4.14,95,Asia
+1985,IRQ,Iraq,NA,NA,Asia
+1985,IRL,Ireland,6.85,16,Europe
+1985,ISR,Israel,4.35,92,Asia
+1985,ITA,Italy,5.79,37,Europe
+1985,JAM,Jamaica,5.41,52,Americas
+1985,JPN,Japan,7.8,7,Asia
+1985,JOR,Jordan,5.65,44,Asia
+1985,KAZ,Kazakhstan,NA,NA,Asia
+1985,KEN,Kenya,5.07,67,Africa
+1985,KOR,"Korea, Rep.",5.68,42,Asia
+1985,KWT,Kuwait,5.76,38,Asia
+1985,KGZ,Kyrgyz Republic,NA,NA,Asia
+1985,LAO,Lao PDR,NA,NA,Asia
+1985,LVA,Latvia,NA,NA,Europe
+1985,LBN,Lebanon,NA,NA,Asia
+1985,LSO,Lesotho,NA,NA,Africa
+1985,LBR,Liberia,NA,NA,Africa
+1985,LBY,Libya,NA,NA,Africa
+1985,LTU,Lithuania,NA,NA,Europe
+1985,LUX,Luxembourg,8.36,3,Europe
+1985,MDG,Madagascar,4.24,93,Africa
+1985,MWI,Malawi,5.02,70,Africa
+1985,MYS,Malaysia,6.74,19,Asia
+1985,MLI,Mali,5.55,49,Africa
+1985,MLT,Malta,5.28,58,Europe
+1985,MRT,Mauritania,NA,NA,Africa
+1985,MUS,Mauritius,6.32,27,Africa
+1985,MEX,Mexico,4.68,82,Americas
+1985,MDA,Moldova,NA,NA,Europe
+1985,MNG,Mongolia,NA,NA,Asia
+1985,MNE,Montenegro,NA,NA,Europe
+1985,MAR,Morocco,4.99,71,Africa
+1985,MOZ,Mozambique,NA,NA,Africa
+1985,MMR,Myanmar,3.24,105,Asia
+1985,NAM,Namibia,NA,NA,Africa
+1985,NPL,Nepal,4.73,80,Asia
+1985,NLD,Netherlands,7.45,11,Europe
+1985,NZL,New Zealand,6.61,22,Oceania
+1985,NIC,Nicaragua,2.43,113,Americas
+1985,NER,Niger,5.31,56,Africa
+1985,NGA,Nigeria,4.43,86,Africa
+1985,MKD,North Macedonia,NA,NA,Europe
+1985,NOR,Norway,6.8,18,Europe
+1985,OMN,Oman,6.49,24,Asia
+1985,PAK,Pakistan,4.8,77,Asia
+1985,PAN,Panama,6.83,17,Americas
+1985,PNG,Papua New Guinea,6.21,30,Oceania
+1985,PRY,Paraguay,4.95,72,Americas
+1985,PER,Peru,2.81,110,Americas
+1985,PHL,Philippines,5.03,69,Asia
+1985,POL,Poland,3.88,100,Europe
+1985,PRT,Portugal,5.73,39,Europe
+1985,QAT,Qatar,NA,NA,Asia
+1985,ROU,Romania,4.91,73,Europe
+1985,RUS,Russian Federation,3.6,102,Europe
+1985,RWA,Rwanda,4.71,81,Africa
+1985,SAU,Saudi Arabia,NA,NA,Asia
+1985,SEN,Senegal,5.13,63,Africa
+1985,SRB,Serbia,NA,NA,Europe
+1985,SYC,Seychelles,NA,NA,Africa
+1985,SLE,Sierra Leone,3.47,103,Africa
+1985,SGP,Singapore,7.6,10,Asia
+1985,SVK,Slovak Republic,NA,NA,Europe
+1985,SVN,Slovenia,NA,NA,Europe
+1985,ZAF,South Africa,5.06,68,Africa
+1985,ESP,Spain,6.32,27,Europe
+1985,LKA,Sri Lanka,5.45,51,Asia
+1985,SDN,Sudan,NA,NA,Africa
+1985,SUR,Suriname,NA,NA,Americas
+1985,SWE,Sweden,6.95,15,Europe
+1985,CHE,Switzerland,8.32,4,Europe
+1985,SYR,Syrian Arab Republic,2.97,109,Asia
+1985,TWN,Taiwan,6.49,24,Asia
+1985,TJK,Tajikistan,NA,NA,Asia
+1985,TZA,Tanzania,3.95,99,Africa
+1985,THA,Thailand,5.72,40,Asia
+1985,TLS,Timor-Leste,NA,NA,Asia
+1985,TGO,Togo,5.22,61,Africa
+1985,TTO,Trinidad and Tobago,5.3,57,Americas
+1985,TUN,Tunisia,4.85,76,Africa
+1985,TUR,Turkey,4.78,78,Asia
+1985,UGA,Uganda,2.76,111,Africa
+1985,UKR,Ukraine,NA,NA,Europe
+1985,ARE,United Arab Emirates,6.39,26,Asia
+1985,GBR,United Kingdom,8.21,5,Europe
+1985,USA,United States,8.42,2,Americas
+1985,URY,Uruguay,6.08,31,Americas
+1985,VEN,"Venezuela, RB",6.03,32,Americas
+1985,VNM,Vietnam,NA,NA,Asia
+1985,YEM,"Yemen, Rep.",NA,NA,Asia
+1985,ZMB,Zambia,4.06,96,Africa
+1985,ZWE,Zimbabwe,4.9,75,Africa
+1980,ALB,Albania,NA,NA,Europe
+1980,DZA,Algeria,3.59,106,Africa
+1980,AGO,Angola,NA,NA,Africa
+1980,ARG,Argentina,4.57,79,Americas
+1980,ARM,Armenia,NA,NA,Asia
+1980,AUS,Australia,7.28,10,Oceania
+1980,AUT,Austria,6.83,14,Europe
+1980,AZE,Azerbaijan,NA,NA,Asia
+1980,BHS,"Bahamas, The",6.66,17,Americas
+1980,BHR,Bahrain,6.72,16,Asia
+1980,BGD,Bangladesh,3.63,104,Asia
+1980,BRB,Barbados,5.73,38,Americas
+1980,BLR,Belarus,NA,NA,Europe
+1980,BEL,Belgium,7.36,8,Europe
+1980,BLZ,Belize,5.97,30,Americas
+1980,BEN,Benin,4.54,81,Africa
+1980,BTN,Bhutan,NA,NA,Asia
+1980,BOL,Bolivia,4.51,83,Americas
+1980,BIH,Bosnia and Herzegovina,NA,NA,Europe
+1980,BWA,Botswana,5.91,33,Africa
+1980,BRA,Brazil,4.11,94,Americas
+1980,BRN,Brunei Darussalam,NA,NA,Asia
+1980,BGR,Bulgaria,NA,NA,Europe
+1980,BFA,Burkina Faso,NA,NA,Africa
+1980,BDI,Burundi,4.5,84,Africa
+1980,CPV,Cabo Verde,NA,NA,Africa
+1980,KHM,Cambodia,NA,NA,Asia
+1980,CMR,Cameroon,5.14,58,Africa
+1980,CAN,Canada,8.01,4,Americas
+1980,CAF,Central African Republic,4.6,77,Africa
+1980,TCD,Chad,5.31,51,Africa
+1980,CHL,Chile,5.03,63,Americas
+1980,CHN,China,3.91,99,Asia
+1980,COL,Colombia,4.82,69,Americas
+1980,COD,"Congo, Dem. Rep.",2.94,111,Africa
+1980,COG,"Congo, Rep.",4.3,90,Africa
+1980,CRI,Costa Rica,5.95,31,Americas
+1980,CIV,Cote d'Ivoire,4.97,65,Africa
+1980,HRV,Croatia,NA,NA,Europe
+1980,CYP,Cyprus,5.28,52,Asia
+1980,CZE,Czech Republic,NA,NA,Europe
+1980,DNK,Denmark,6.4,21,Europe
+1980,DOM,Dominican Republic,5.42,45,Americas
+1980,ECU,Ecuador,5.98,29,Americas
+1980,EGY,"Egypt, Arab Rep.",4.66,74,Africa
+1980,SLV,El Salvador,4.22,92,Americas
+1980,EST,Estonia,NA,NA,Europe
+1980,SWZ,Eswatini,NA,NA,Africa
+1980,ETH,Ethiopia,NA,NA,Africa
+1980,FJI,Fiji,5.52,42,Oceania
+1980,FIN,Finland,6.99,13,Europe
+1980,FRA,France,6.31,24,Europe
+1980,GAB,Gabon,4.6,77,Africa
+1980,GMB,"Gambia, The",NA,NA,Africa
+1980,GEO,Georgia,NA,NA,Asia
+1980,DEU,Germany,7.52,6,Europe
+1980,GHA,Ghana,2.95,110,Africa
+1980,GRC,Greece,5.75,37,Europe
+1980,GTM,Guatemala,6.21,25,Americas
+1980,GIN,Guinea,NA,NA,Africa
+1980,GNB,Guinea-Bissau,NA,NA,Africa
+1980,GUY,Guyana,4.43,86,Americas
+1980,HTI,Haiti,5.41,46,Americas
+1980,HND,Honduras,5.5,43,Americas
+1980,HKG,"Hong Kong SAR, China",8.51,1,Asia
+1980,HUN,Hungary,4.43,86,Europe
+1980,ISL,Iceland,5.35,48,Europe
+1980,IND,India,4.83,68,Asia
+1980,IDN,Indonesia,5.04,62,Asia
+1980,IRN,"Iran, Islamic Rep.",4.01,98,Asia
+1980,IRQ,Iraq,NA,NA,Asia
+1980,IRL,Ireland,6.64,18,Europe
+1980,ISR,Israel,4.09,96,Asia
+1980,ITA,Italy,5.54,39,Europe
+1980,JAM,Jamaica,4.53,82,Americas
+1980,JPN,Japan,7.38,7,Asia
+1980,JOR,Jordan,5.34,49,Asia
+1980,KAZ,Kazakhstan,NA,NA,Asia
+1980,KEN,Kenya,4.81,70,Africa
+1980,KOR,"Korea, Rep.",5.27,53,Asia
+1980,KWT,Kuwait,4.21,93,Asia
+1980,KGZ,Kyrgyz Republic,NA,NA,Asia
+1980,LAO,Lao PDR,NA,NA,Asia
+1980,LVA,Latvia,NA,NA,Europe
+1980,LBN,Lebanon,NA,NA,Asia
+1980,LSO,Lesotho,NA,NA,Africa
+1980,LBR,Liberia,NA,NA,Africa
+1980,LBY,Libya,NA,NA,Africa
+1980,LTU,Lithuania,NA,NA,Europe
+1980,LUX,Luxembourg,8.09,3,Europe
+1980,MDG,Madagascar,3.81,100,Africa
+1980,MWI,Malawi,4.63,75,Africa
+1980,MYS,Malaysia,6.55,19,Asia
+1980,MLI,Mali,5.79,36,Africa
+1980,MLT,Malta,5.12,60,Europe
+1980,MRT,Mauritania,NA,NA,Africa
+1980,MUS,Mauritius,5.13,59,Africa
+1980,MEX,Mexico,5.21,54,Americas
+1980,MDA,Moldova,NA,NA,Europe
+1980,MNG,Mongolia,NA,NA,Asia
+1980,MNE,Montenegro,NA,NA,Europe
+1980,MAR,Morocco,4.63,75,Africa
+1980,MOZ,Mozambique,NA,NA,Africa
+1980,MMR,Myanmar,3.21,109,Asia
+1980,NAM,Namibia,NA,NA,Africa
+1980,NPL,Nepal,4.85,67,Asia
+1980,NLD,Netherlands,7.36,8,Europe
+1980,NZL,New Zealand,6.39,22,Oceania
+1980,NIC,Nicaragua,4.04,97,Americas
+1980,NER,Niger,5.12,60,Africa
+1980,NGA,Nigeria,3.74,102,Africa
+1980,MKD,North Macedonia,NA,NA,Europe
+1980,NOR,Norway,6.36,23,Europe
+1980,OMN,Oman,4.97,65,Asia
+1980,PAK,Pakistan,4.35,88,Asia
+1980,PAN,Panama,6.09,27,Americas
+1980,PNG,Papua New Guinea,5.54,39,Oceania
+1980,PRY,Paraguay,5.92,32,Americas
+1980,PER,Peru,3.49,107,Americas
+1980,PHL,Philippines,5.16,56,Asia
+1980,POL,Poland,5.39,47,Europe
+1980,PRT,Portugal,5.54,39,Europe
+1980,QAT,Qatar,NA,NA,Asia
+1980,ROU,Romania,4.67,73,Europe
+1980,RUS,Russian Federation,3.35,108,Europe
+1980,RWA,Rwanda,4.11,94,Africa
+1980,SAU,Saudi Arabia,NA,NA,Asia
+1980,SEN,Senegal,5.15,57,Africa
+1980,SRB,Serbia,NA,NA,Europe
+1980,SYC,Seychelles,NA,NA,Africa
+1980,SLE,Sierra Leone,4.5,84,Africa
+1980,SGP,Singapore,7.1,11,Asia
+1980,SVK,Slovak Republic,NA,NA,Europe
+1980,SVN,Slovenia,NA,NA,Europe
+1980,ZAF,South Africa,5.02,64,Africa
+1980,ESP,Spain,5.87,34,Europe
+1980,LKA,Sri Lanka,5.19,55,Asia
+1980,SDN,Sudan,NA,NA,Africa
+1980,SUR,Suriname,NA,NA,Americas
+1980,SWE,Sweden,6.46,20,Europe
+1980,CHE,Switzerland,7.75,5,Europe
+1980,SYR,Syrian Arab Republic,3.75,101,Asia
+1980,TWN,Taiwan,6.02,28,Asia
+1980,TJK,Tajikistan,NA,NA,Asia
+1980,TZA,Tanzania,4.33,89,Africa
+1980,THA,Thailand,5.49,44,Asia
+1980,TLS,Timor-Leste,NA,NA,Asia
+1980,TGO,Togo,4.24,91,Africa
+1980,TTO,Trinidad and Tobago,5.33,50,Americas
+1980,TUN,Tunisia,4.76,71,Africa
+1980,TUR,Turkey,3.61,105,Asia
+1980,UGA,Uganda,3.69,103,Africa
+1980,UKR,Ukraine,NA,NA,Europe
+1980,ARE,United Arab Emirates,6.2,26,Asia
+1980,GBR,United Kingdom,7.01,12,Europe
+1980,USA,United States,8.13,2,Americas
+1980,URY,Uruguay,5.82,35,Americas
+1980,VEN,"Venezuela, RB",6.79,15,Americas
+1980,VNM,Vietnam,NA,NA,Asia
+1980,YEM,"Yemen, Rep.",NA,NA,Asia
+1980,ZMB,Zambia,4.76,71,Africa
+1980,ZWE,Zimbabwe,4.55,80,Africa
+1975,ALB,Albania,NA,NA,Europe
+1975,DZA,Algeria,4.24,85,Africa
+1975,AGO,Angola,NA,NA,Africa
+1975,ARG,Argentina,3.75,97,Americas
+1975,ARM,Armenia,NA,NA,Asia
+1975,AUS,Australia,7.01,9,Oceania
+1975,AUT,Austria,6.74,15,Europe
+1975,AZE,Azerbaijan,NA,NA,Asia
+1975,BHS,"Bahamas, The",6.69,16,Americas
+1975,BHR,Bahrain,5.99,31,Asia
+1975,BGD,Bangladesh,3.79,96,Asia
+1975,BRB,Barbados,5.78,35,Americas
+1975,BLR,Belarus,NA,NA,Europe
+1975,BEL,Belgium,6.96,10,Europe
+1975,BLZ,Belize,NA,NA,Americas
+1975,BEN,Benin,4.63,77,Africa
+1975,BTN,Bhutan,NA,NA,Asia
+1975,BOL,Bolivia,5.3,51,Americas
+1975,BIH,Bosnia and Herzegovina,NA,NA,Europe
+1975,BWA,Botswana,5.34,47,Africa
+1975,BRA,Brazil,4.16,91,Americas
+1975,BRN,Brunei Darussalam,NA,NA,Asia
+1975,BGR,Bulgaria,NA,NA,Europe
+1975,BFA,Burkina Faso,NA,NA,Africa
+1975,BDI,Burundi,4.37,83,Africa
+1975,CPV,Cabo Verde,NA,NA,Africa
+1975,KHM,Cambodia,NA,NA,Asia
+1975,CMR,Cameroon,5.25,53,Africa
+1975,CAN,Canada,7.75,4,Americas
+1975,CAF,Central African Republic,NA,NA,Africa
+1975,TCD,Chad,5.46,44,Africa
+1975,CHL,Chile,3.82,95,Americas
+1975,CHN,China,NA,NA,Asia
+1975,COL,Colombia,4.94,65,Americas
+1975,COD,"Congo, Dem. Rep.",3.6,101,Africa
+1975,COG,"Congo, Rep.",4.73,74,Africa
+1975,CRI,Costa Rica,6.78,12,Americas
+1975,CIV,Cote d'Ivoire,4.8,72,Africa
+1975,HRV,Croatia,NA,NA,Europe
+1975,CYP,Cyprus,5.47,43,Asia
+1975,CZE,Czech Republic,NA,NA,Europe
+1975,DNK,Denmark,6.34,27,Europe
+1975,DOM,Dominican Republic,4.32,84,Americas
+1975,ECU,Ecuador,5.58,40,Americas
+1975,EGY,"Egypt, Arab Rep.",4.17,90,Africa
+1975,SLV,El Salvador,5.2,54,Americas
+1975,EST,Estonia,NA,NA,Europe
+1975,SWZ,Eswatini,NA,NA,Africa
+1975,ETH,Ethiopia,NA,NA,Africa
+1975,FJI,Fiji,5.32,49,Oceania
+1975,FIN,Finland,6.78,12,Europe
+1975,FRA,France,6.43,23,Europe
+1975,GAB,Gabon,4.4,81,Africa
+1975,GMB,"Gambia, The",NA,NA,Africa
+1975,GEO,Georgia,NA,NA,Asia
+1975,DEU,Germany,7.21,5,Europe
+1975,GHA,Ghana,3.37,104,Africa
+1975,GRC,Greece,5.73,37,Europe
+1975,GTM,Guatemala,6.34,27,Americas
+1975,GIN,Guinea,NA,NA,Africa
+1975,GNB,Guinea-Bissau,NA,NA,Africa
+1975,GUY,Guyana,NA,NA,Americas
+1975,HTI,Haiti,5.83,33,Americas
+1975,HND,Honduras,6.66,18,Americas
+1975,HKG,"Hong Kong SAR, China",8.57,1,Asia
+1975,HUN,Hungary,4.66,76,Europe
+1975,ISL,Iceland,5.07,60,Europe
+1975,IND,India,4.7,75,Asia
+1975,IDN,Indonesia,4.93,67,Asia
+1975,IRN,"Iran, Islamic Rep.",5.48,42,Asia
+1975,IRQ,Iraq,NA,NA,Asia
+1975,IRL,Ireland,6.35,26,Europe
+1975,ISR,Israel,4.13,93,Asia
+1975,ITA,Italy,5.78,35,Europe
+1975,JAM,Jamaica,5.33,48,Americas
+1975,JPN,Japan,7.17,7,Asia
+1975,JOR,Jordan,4.99,63,Asia
+1975,KAZ,Kazakhstan,NA,NA,Asia
+1975,KEN,Kenya,5.18,55,Africa
+1975,KOR,"Korea, Rep.",5.26,52,Asia
+1975,KWT,Kuwait,4.59,78,Asia
+1975,KGZ,Kyrgyz Republic,NA,NA,Asia
+1975,LAO,Lao PDR,NA,NA,Asia
+1975,LVA,Latvia,NA,NA,Europe
+1975,LBN,Lebanon,NA,NA,Asia
+1975,LSO,Lesotho,NA,NA,Africa
+1975,LBR,Liberia,NA,NA,Africa
+1975,LBY,Libya,NA,NA,Africa
+1975,LTU,Lithuania,NA,NA,Europe
+1975,LUX,Luxembourg,8.12,2,Europe
+1975,MDG,Madagascar,4.55,79,Africa
+1975,MWI,Malawi,4.94,65,Africa
+1975,MYS,Malaysia,6.38,25,Asia
+1975,MLI,Mali,5.17,56,Africa
+1975,MLT,Malta,5.87,32,Europe
+1975,MRT,Mauritania,NA,NA,Africa
+1975,MUS,Mauritius,4.99,63,Africa
+1975,MEX,Mexico,6.49,20,Americas
+1975,MDA,Moldova,NA,NA,Europe
+1975,MNG,Mongolia,NA,NA,Asia
+1975,MNE,Montenegro,NA,NA,Europe
+1975,MAR,Morocco,4.88,70,Africa
+1975,MOZ,Mozambique,NA,NA,Africa
+1975,MMR,Myanmar,2.44,106,Asia
+1975,NAM,Namibia,NA,NA,Africa
+1975,NPL,Nepal,4.16,91,Asia
+1975,NLD,Netherlands,7.08,8,Europe
+1975,NZL,New Zealand,6.11,30,Oceania
+1975,NIC,Nicaragua,6.67,17,Americas
+1975,NER,Niger,5.4,45,Africa
+1975,NGA,Nigeria,3.74,99,Africa
+1975,MKD,North Macedonia,NA,NA,Europe
+1975,NOR,Norway,6.53,19,Europe
+1975,OMN,Oman,4.91,68,Asia
+1975,PAK,Pakistan,3.75,97,Asia
+1975,PAN,Panama,6.49,20,Americas
+1975,PNG,Papua New Guinea,5.17,56,Oceania
+1975,PRY,Paraguay,5.67,39,Americas
+1975,PER,Peru,3.67,100,Americas
+1975,PHL,Philippines,4.86,71,Asia
+1975,POL,Poland,5.35,46,Europe
+1975,PRT,Portugal,4.45,80,Europe
+1975,QAT,Qatar,NA,NA,Asia
+1975,ROU,Romania,NA,NA,Europe
+1975,RUS,Russian Federation,3.38,103,Europe
+1975,RWA,Rwanda,3.34,105,Africa
+1975,SAU,Saudi Arabia,NA,NA,Asia
+1975,SEN,Senegal,5.14,58,Africa
+1975,SRB,Serbia,NA,NA,Europe
+1975,SYC,Seychelles,NA,NA,Africa
+1975,SLE,Sierra Leone,4.79,73,Africa
+1975,SGP,Singapore,6.85,11,Asia
+1975,SVK,Slovak Republic,NA,NA,Europe
+1975,SVN,Slovenia,NA,NA,Europe
+1975,ZAF,South Africa,5.14,58,Africa
+1975,ESP,Spain,5.52,41,Europe
+1975,LKA,Sri Lanka,5.01,62,Asia
+1975,SDN,Sudan,NA,NA,Africa
+1975,SUR,Suriname,NA,NA,Americas
+1975,SWE,Sweden,6.48,22,Europe
+1975,CHE,Switzerland,7.2,6,Europe
+1975,SYR,Syrian Arab Republic,4.24,85,Asia
+1975,TWN,Taiwan,5.79,34,Asia
+1975,TJK,Tajikistan,NA,NA,Asia
+1975,TZA,Tanzania,3.91,94,Africa
+1975,THA,Thailand,5.69,38,Asia
+1975,TLS,Timor-Leste,NA,NA,Asia
+1975,TGO,Togo,4.24,85,Africa
+1975,TTO,Trinidad and Tobago,5.05,61,Americas
+1975,TUN,Tunisia,4.91,68,Africa
+1975,TUR,Turkey,4.4,81,Asia
+1975,UGA,Uganda,3.41,102,Africa
+1975,UKR,Ukraine,NA,NA,Europe
+1975,ARE,United Arab Emirates,6.42,24,Asia
+1975,GBR,United Kingdom,6.16,29,Europe
+1975,USA,United States,7.95,3,Americas
+1975,URY,Uruguay,5.32,49,Americas
+1975,VEN,"Venezuela, RB",6.77,14,Americas
+1975,VNM,Vietnam,NA,NA,Asia
+1975,YEM,"Yemen, Rep.",NA,NA,Asia
+1975,ZMB,Zambia,4.24,85,Africa
+1975,ZWE,Zimbabwe,4.19,89,Africa
+1970,ALB,Albania,NA,NA,Europe
+1970,DZA,Algeria,4.45,75,Africa
+1970,AGO,Angola,NA,NA,Africa
+1970,ARG,Argentina,6.17,30,Americas
+1970,ARM,Armenia,NA,NA,Asia
+1970,AUS,Australia,7.4,8,Oceania
+1970,AUT,Austria,6.22,28,Europe
+1970,AZE,Azerbaijan,NA,NA,Asia
+1970,BHS,"Bahamas, The",NA,NA,Americas
+1970,BHR,Bahrain,NA,NA,Asia
+1970,BGD,Bangladesh,NA,NA,Asia
+1970,BRB,Barbados,NA,NA,Americas
+1970,BLR,Belarus,NA,NA,Europe
+1970,BEL,Belgium,7.42,7,Europe
+1970,BLZ,Belize,NA,NA,Americas
+1970,BEN,Benin,5.14,61,Africa
+1970,BTN,Bhutan,NA,NA,Asia
+1970,BOL,Bolivia,5.33,51,Americas
+1970,BIH,Bosnia and Herzegovina,NA,NA,Europe
+1970,BWA,Botswana,NA,NA,Africa
+1970,BRA,Brazil,5.08,62,Americas
+1970,BRN,Brunei Darussalam,NA,NA,Asia
+1970,BGR,Bulgaria,NA,NA,Europe
+1970,BFA,Burkina Faso,NA,NA,Africa
+1970,BDI,Burundi,5.82,42,Africa
+1970,CPV,Cabo Verde,NA,NA,Africa
+1970,KHM,Cambodia,NA,NA,Asia
+1970,CMR,Cameroon,NA,NA,Africa
+1970,CAN,Canada,7.85,2,Americas
+1970,CAF,Central African Republic,NA,NA,Africa
+1970,TCD,Chad,NA,NA,Africa
+1970,CHL,Chile,4.6,73,Americas
+1970,CHN,China,NA,NA,Asia
+1970,COL,Colombia,5.49,48,Americas
+1970,COD,"Congo, Dem. Rep.",4.04,82,Africa
+1970,COG,"Congo, Rep.",5.21,57,Africa
+1970,CRI,Costa Rica,7.53,5,Americas
+1970,CIV,Cote d'Ivoire,NA,NA,Africa
+1970,HRV,Croatia,NA,NA,Europe
+1970,CYP,Cyprus,5.64,44,Asia
+1970,CZE,Czech Republic,NA,NA,Europe
+1970,DNK,Denmark,6.45,22,Europe
+1970,DOM,Dominican Republic,5.22,56,Americas
+1970,ECU,Ecuador,5.19,58,Americas
+1970,EGY,"Egypt, Arab Rep.",NA,NA,Africa
+1970,SLV,El Salvador,5.47,49,Americas
+1970,EST,Estonia,NA,NA,Europe
+1970,SWZ,Eswatini,NA,NA,Africa
+1970,ETH,Ethiopia,NA,NA,Africa
+1970,FJI,Fiji,6,36,Oceania
+1970,FIN,Finland,7.29,11,Europe
+1970,FRA,France,6.36,24,Europe
+1970,GAB,Gabon,4.73,72,Africa
+1970,GMB,"Gambia, The",NA,NA,Africa
+1970,GEO,Georgia,NA,NA,Asia
+1970,DEU,Germany,7.48,6,Europe
+1970,GHA,Ghana,4.4,77,Africa
+1970,GRC,Greece,6.1,32,Europe
+1970,GTM,Guatemala,6,36,Americas
+1970,GIN,Guinea,NA,NA,Africa
+1970,GNB,Guinea-Bissau,NA,NA,Africa
+1970,GUY,Guyana,6.1,32,Americas
+1970,HTI,Haiti,6.49,21,Americas
+1970,HND,Honduras,6.35,25,Americas
+1970,HKG,"Hong Kong SAR, China",8.1,1,Asia
+1970,HUN,Hungary,4.45,75,Europe
+1970,ISL,Iceland,5.83,41,Europe
+1970,IND,India,5.26,55,Asia
+1970,IDN,Indonesia,4.47,74,Asia
+1970,IRN,"Iran, Islamic Rep.",5.31,52,Asia
+1970,IRQ,Iraq,NA,NA,Asia
+1970,IRL,Ireland,6.55,19,Europe
+1970,ISR,Israel,4.8,66,Asia
+1970,ITA,Italy,6.17,30,Europe
+1970,JAM,Jamaica,NA,NA,Americas
+1970,JPN,Japan,7.22,12,Asia
+1970,JOR,Jordan,4.79,67,Asia
+1970,KAZ,Kazakhstan,NA,NA,Asia
+1970,KEN,Kenya,4.99,64,Africa
+1970,KOR,"Korea, Rep.",5.58,46,Asia
+1970,KWT,Kuwait,NA,NA,Asia
+1970,KGZ,Kyrgyz Republic,NA,NA,Asia
+1970,LAO,Lao PDR,NA,NA,Asia
+1970,LVA,Latvia,NA,NA,Europe
+1970,LBN,Lebanon,NA,NA,Asia
+1970,LSO,Lesotho,NA,NA,Africa
+1970,LBR,Liberia,NA,NA,Africa
+1970,LBY,Libya,NA,NA,Africa
+1970,LTU,Lithuania,NA,NA,Europe
+1970,LUX,Luxembourg,7.71,3,Europe
+1970,MDG,Madagascar,5.62,45,Africa
+1970,MWI,Malawi,5.31,52,Africa
+1970,MYS,Malaysia,6.26,27,Asia
+1970,MLI,Mali,NA,NA,Africa
+1970,MLT,Malta,6.42,23,Europe
+1970,MRT,Mauritania,NA,NA,Africa
+1970,MUS,Mauritius,6.6,16,Africa
+1970,MEX,Mexico,6.54,20,Americas
+1970,MDA,Moldova,NA,NA,Europe
+1970,MNG,Mongolia,NA,NA,Asia
+1970,MNE,Montenegro,NA,NA,Europe
+1970,MAR,Morocco,5.17,59,Africa
+1970,MOZ,Mozambique,NA,NA,Africa
+1970,MMR,Myanmar,3.33,84,Asia
+1970,NAM,Namibia,NA,NA,Africa
+1970,NPL,Nepal,NA,NA,Asia
+1970,NLD,Netherlands,7.13,14,Europe
+1970,NZL,New Zealand,6.28,26,Oceania
+1970,NIC,Nicaragua,6.58,17,Americas
+1970,NER,Niger,NA,NA,Africa
+1970,NGA,Nigeria,4.12,80,Africa
+1970,MKD,North Macedonia,NA,NA,Europe
+1970,NOR,Norway,6.65,15,Europe
+1970,OMN,Oman,NA,NA,Asia
+1970,PAK,Pakistan,4.76,71,Asia
+1970,PAN,Panama,7.16,13,Americas
+1970,PNG,Papua New Guinea,NA,NA,Oceania
+1970,PRY,Paraguay,6.18,29,Americas
+1970,PER,Peru,4.89,65,Americas
+1970,PHL,Philippines,5.15,60,Asia
+1970,POL,Poland,NA,NA,Europe
+1970,PRT,Portugal,5.43,50,Europe
+1970,QAT,Qatar,NA,NA,Asia
+1970,ROU,Romania,NA,NA,Europe
+1970,RUS,Russian Federation,NA,NA,Europe
+1970,RWA,Rwanda,4.77,70,Africa
+1970,SAU,Saudi Arabia,NA,NA,Asia
+1970,SEN,Senegal,5,63,Africa
+1970,SRB,Serbia,NA,NA,Europe
+1970,SYC,Seychelles,NA,NA,Africa
+1970,SLE,Sierra Leone,NA,NA,Africa
+1970,SGP,Singapore,6.58,17,Asia
+1970,SVK,Slovak Republic,NA,NA,Europe
+1970,SVN,Slovenia,NA,NA,Europe
+1970,ZAF,South Africa,5.56,47,Africa
+1970,ESP,Spain,5.72,43,Europe
+1970,LKA,Sri Lanka,4.79,67,Asia
+1970,SDN,Sudan,NA,NA,Africa
+1970,SUR,Suriname,NA,NA,Americas
+1970,SWE,Sweden,6.06,35,Europe
+1970,CHE,Switzerland,7.37,9,Europe
+1970,SYR,Syrian Arab Republic,4.3,79,Asia
+1970,TWN,Taiwan,6.08,34,Asia
+1970,TJK,Tajikistan,NA,NA,Asia
+1970,TZA,Tanzania,4.36,78,Africa
+1970,THA,Thailand,5.84,39,Asia
+1970,TLS,Timor-Leste,NA,NA,Asia
+1970,TGO,Togo,NA,NA,Africa
+1970,TTO,Trinidad and Tobago,NA,NA,Americas
+1970,TUN,Tunisia,4.78,69,Africa
+1970,TUR,Turkey,3.96,83,Asia
+1970,UGA,Uganda,4.05,81,Africa
+1970,UKR,Ukraine,NA,NA,Europe
+1970,ARE,United Arab Emirates,NA,NA,Asia
+1970,GBR,United Kingdom,5.99,38,Europe
+1970,USA,United States,7.55,4,Americas
+1970,URY,Uruguay,5.84,39,Americas
+1970,VEN,"Venezuela, RB",7.33,10,Americas
+1970,VNM,Vietnam,NA,NA,Asia
+1970,YEM,"Yemen, Rep.",NA,NA,Asia
+1970,ZMB,Zambia,5.27,54,Africa
+1970,ZWE,Zimbabwe,NA,NA,Africa
