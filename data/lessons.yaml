@@ -44,6 +44,7 @@ lessons:
     slides: "2.2-slides"
     
   - title: '<i content="fas fa-laptop-code"></i> **Problem Set 2** due Tues Sep 21'
+    assignment: "02-problem-set"
 
   - title: "2.3 — OLS Linear Regression"
 

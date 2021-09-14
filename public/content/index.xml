@@ -765,13 +765,14 @@ c(rep(seq(4,8,2),3),1,5)&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#problem-set-1&#34;&gt;Problem Set 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#math-appendix-properties-of-expected-value-and-variance&#34;&gt;Math Appendix: Properties of Expected Value and Variance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#r-appendix-graphing-statistical-and-mathematical-functions-in-r&#34;&gt;R Appendix: Graphing Statistical and Mathematical Functions in R&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#math-appendix&#34;&gt;Math Appendix&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#creating-mathematical-functions&#34;&gt;Creating Mathematical Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#properties-of-expected-value-and-variance&#34;&gt;Properties of Expected Value and Variance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-appendix&#34;&gt;R Appendix&lt;/a&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#graphing-mathematical-functions&#34;&gt;Graphing Mathematical Functions&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#bult-in-statistical-functions&#34;&gt;Bult-in Statistical Functions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#some-common-examples&#34;&gt;Some common examples:&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#graphing-statistical-functions&#34;&gt;Graphing Statistical Functions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -821,8 +822,10 @@ c(rep(seq(4,8,2),3),1,5)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Problem set 2 (on classes 2.1-2.2) will be posted shortly, and will be due by Tuesday September 21.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;math-appendix-properties-of-expected-value-and-variance&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Math Appendix: Properties of Expected Value and Variance&lt;/h1&gt;
+&lt;div id=&#34;math-appendix&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Math Appendix&lt;/h2&gt;
+&lt;div id=&#34;properties-of-expected-value-and-variance&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Properties of Expected Value and Variance&lt;/h3&gt;
 &lt;p&gt;There are several useful mathematical properties of expected value and variance.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Property 1&lt;/strong&gt;: the expected value of a constant is itself, and the variance of a constant is 0.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
@@ -857,13 +860,11 @@ sd(aX)&amp;amp;=|a|sd(X)\\
 &lt;p&gt;&lt;strong&gt;Property 4&lt;/strong&gt;: the expected value of the sum of two random variables is equal to the sum of each random variable’s expected value:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E(X \pm Y)=E(X) \pm E(Y)\]&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;r-appendix-graphing-statistical-and-mathematical-functions-in-r&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Appendix: Graphing Statistical and Mathematical Functions in R&lt;/h1&gt;
-&lt;p&gt;The &lt;code&gt;mosaic&lt;/code&gt; package is useful for making and using mathematical functions in &lt;code&gt;R&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# install.packages(&amp;quot;mosaic&amp;quot;) install for first use
-library(mosaic) # load &lt;/code&gt;&lt;/pre&gt;
-&lt;div id=&#34;creating-mathematical-functions&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Creating Mathematical Functions&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-appendix&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R Appendix&lt;/h2&gt;
+&lt;div id=&#34;creating-mathematical-functions&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Creating Mathematical Functions&lt;/h4&gt;
 &lt;p&gt;You can create custom mathematical functions using mosaic by defining an R &lt;code&gt;function()&lt;/code&gt; with multiple arguments. As a simple example, make the function &lt;span class=&#34;math inline&#34;&gt;\(f(x) = 10x-x^2\)&lt;/span&gt; (with one argument, &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; since it is a univariate function) as follows:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# store as a named function, I&amp;#39;ll call it &amp;quot;my_function&amp;quot;
 my_function&amp;lt;-function(x){10*x-x^2}
@@ -889,43 +890,35 @@ x&amp;lt;-c(2,4)
 my_function(x)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] 16 24&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;div id=&#34;graphing-mathematical-functions&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Graphing Mathematical Functions&lt;/h2&gt;
+&lt;div id=&#34;graphing-mathematical-functions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Graphing Mathematical Functions&lt;/h3&gt;
 &lt;p&gt;In &lt;code&gt;ggplot&lt;/code&gt; there is a dedicated &lt;code&gt;stat_function()&lt;/code&gt; (equivalent to a &lt;code&gt;geom_&lt;/code&gt; layer) to graph mathematical and statistical functions. All that is needed is a &lt;code&gt;data.frame&lt;/code&gt; of a range of &lt;code&gt;x&lt;/code&gt; values to act as the source for &lt;code&gt;data&lt;/code&gt;, and set &lt;code&gt;x&lt;/code&gt; equal to those values for &lt;code&gt;aes&lt;/code&gt;thetics.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## ✓ tibble  3.1.4     ✓ purrr   0.3.4
+&lt;pre&gt;&lt;code&gt;## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+## ✓ tibble  3.1.4     ✓ dplyr   1.0.7
 ## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
 ## ✓ readr   2.0.0     ✓ forcats 0.5.1&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## x mosaic::count()            masks dplyr::count()
-## x purrr::cross()             masks mosaic::cross()
-## x mosaic::do()               masks dplyr::do()
-## x tidyr::expand()            masks Matrix::expand()
-## x dplyr::filter()            masks stats::filter()
-## x ggstance::geom_errorbarh() masks ggplot2::geom_errorbarh()
-## x dplyr::lag()               masks stats::lag()
-## x tidyr::pack()              masks Matrix::pack()
-## x mosaic::stat()             masks ggplot2::stat()
-## x mosaic::tally()            masks dplyr::tally()
-## x tidyr::unpack()            masks Matrix::unpack()&lt;/code&gt;&lt;/pre&gt;
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# x values are integers 1 through 10
 ggplot(data = data.frame(x = 1:10))+
   aes(x = x)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Then we add the &lt;code&gt;stat_function&lt;/code&gt;, where &lt;code&gt;fun =&lt;/code&gt; is the most important argument where you define the to function to graph as your function created above, for example, our &lt;code&gt;my_function&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = data.frame(x = 1:10))+
   aes(x = x)+
   stat_function(fun = my_function) &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;You can also adjust things like size, color, and line type.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = data.frame(x = 1:10))+
   aes(x = x)+
   stat_function(fun = my_function, color = &amp;quot;blue&amp;quot;, size = 2, linetype = &amp;quot;dashed&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;bult-in-statistical-functions&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Bult-in Statistical Functions&lt;/h2&gt;
+&lt;div id=&#34;bult-in-statistical-functions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bult-in Statistical Functions&lt;/h3&gt;
 &lt;p&gt;There are some standard statistical distributions built into R. They require a combination of a specific prefix and a distribution.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Prefixes&lt;/strong&gt;:&lt;/p&gt;
 &lt;table&gt;
@@ -1002,17 +995,16 @@ ggplot(data = data.frame(x = 1:10))+
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Thus, what you want is a combination of the prefix and the distribution.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;some-common-examples&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Some common examples:&lt;/h2&gt;
+&lt;div id=&#34;some-common-examples&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Some common examples:&lt;/h4&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Take random draws from a normal distribution:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rnorm(n = 10, # take 10 draws from a normal distribution with:
       mean = 2, # mean of 2
       sd = 1) # sd of 1&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##  [1]  0.8751869 -0.4419529  2.3895923  2.3047174  2.0611704  2.2500649
-##  [7]  0.7357762  2.6753682  3.2938103  2.5212611&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.7168330 2.1031410 4.3439892 2.3242999 0.3760681 2.0087404 2.9334992
+##  [8] 2.4179742 2.1200159 2.8587052&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Get probability of a random variable being less than or equal to a value (cdf) from a normal distribution:&lt;/li&gt;
 &lt;/ol&gt;
@@ -1031,25 +1023,26 @@ qnorm(p = 0.38, # 38th percentile from a distribution where:
       sd = 100) # sd is 100&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] 169.4519&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;div id=&#34;graphing-statistical-functions&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Graphing Statistical Functions&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;graphing-statistical-functions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Graphing Statistical Functions&lt;/h3&gt;
 &lt;p&gt;You can also graph these commonly used statistical functions by setting &lt;code&gt;fun =&lt;/code&gt; the named functions in your &lt;code&gt;stat_function()&lt;/code&gt; layer. If you want to specify the mean and standard deviation, use &lt;code&gt;args = list()&lt;/code&gt; to include the required arguments from the named function above (e.g. &lt;code&gt;dnorm&lt;/code&gt; needs &lt;code&gt;mean&lt;/code&gt; and &lt;code&gt;sd&lt;/code&gt;).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = data.frame(x = -400:600))+
   aes(x = x)+
   stat_function(fun = dnorm, args = list(mean = 200, sd = 200), color = &amp;quot;blue&amp;quot;, size = 2, linetype = &amp;quot;dashed&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;If you don’t include this, it will graph the standard distribution:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = data.frame(x = -4:4))+
   aes(x = x)+
   stat_function(fun = dnorm, color = &amp;quot;blue&amp;quot;, size = 2, linetype = &amp;quot;dashed&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;To add shading under a distribution, simply add a duplicate of the &lt;code&gt;stat_function()&lt;/code&gt; layer, but add &lt;code&gt;geom=&#34;area&#34;&lt;/code&gt; to indicate the area beneath the function should be filled, and you can limit the domain of the &lt;code&gt;fill&lt;/code&gt; with &lt;code&gt;xlim=c(start,end)&lt;/code&gt;, where &lt;code&gt;start&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt; are the x-values for the endpoints of the &lt;code&gt;fill.&lt;/code&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# graph normal distribution and shade area between -2 and 2
 ggplot(data = data.frame(x = -4:4))+
   aes(x = x)+
   stat_function(fun = dnorm, color = &amp;quot;blue&amp;quot;, size = 2, linetype = &amp;quot;dashed&amp;quot;)+
   stat_function(fun = dnorm, xlim = c(-2,2), geom = &amp;quot;area&amp;quot;, fill = &amp;quot;green&amp;quot;, alpha=0.5)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Hence, here is one graph from my slides:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = tibble(x=35:115))+
   aes(x = x)+
@@ -1060,7 +1053,7 @@ ggplot(data = data.frame(x = -4:4))+
   scale_x_continuous(breaks = seq(35,115,5))+
   theme_classic(base_family = &amp;quot;Fira Sans Condensed&amp;quot;,
            base_size=20)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
