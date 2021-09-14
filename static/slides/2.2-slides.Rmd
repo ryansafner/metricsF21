@@ -626,6 +626,11 @@ $$P(X \geq k)=1-P(X \leq k)$$
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: $P(X \geq 2) = 1 - P(X \leq 2)$
 ]
+
+.smallest[
+$P(X \geq 2)=$ area under the curve to the right of 2
+]
+
 ]
 
 .pull-right[
@@ -648,11 +653,6 @@ ggplot(data = tibble(x=-4:4))+
            base_size=20)
 ```
 
-.center[
-.smallest[
-$P(X \geq 2)=$ area under the curve to the right of 2
-]
-]
 ]
 
 ---
