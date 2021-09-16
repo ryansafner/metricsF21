@@ -797,7 +797,7 @@ c(rep(seq(4,8,2),3),1,5)&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Math and Probability Background Appendices B-I in Bailey&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Math and Probability Background Appendices B-I in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Now that we return to the statistics, we will do a minimal overview of basic statistics and distributions. Review all of Bailey’s appendices.&lt;/p&gt;
 &lt;/div&gt;
@@ -1003,8 +1003,8 @@ ggplot(data = data.frame(x = 1:10))+
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rnorm(n = 10, # take 10 draws from a normal distribution with:
       mean = 2, # mean of 2
       sd = 1) # sd of 1&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##  [1] 0.7168330 2.1031410 4.3439892 2.3242999 0.3760681 2.0087404 2.9334992
-##  [8] 2.4179742 2.1200159 2.8587052&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.9306446 1.9587986 1.7016603 1.2481484 1.3399839 1.9677189 0.3313595
+##  [8] 1.6183993 2.5601664 0.5277235&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Get probability of a random variable being less than or equal to a value (cdf) from a normal distribution:&lt;/li&gt;
 &lt;/ol&gt;
@@ -1055,6 +1055,196 @@ ggplot(data = data.frame(x = -4:4))+
            base_size=20)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.2-content_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2.93 — OLS Regression — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/2.3-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/2.3-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-1&#34;&gt;Problem Set 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#math-appendix&#34;&gt;Math Appendix&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#variance&#34;&gt;Variance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#covariance&#34;&gt;Covariance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#correlation&#34;&gt;Correlation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Thursday, September 16, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/01-problem-set&#34;&gt;Problem Set 1&lt;/a&gt; answers are posted on that page. &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/02-problem-set&#34;&gt;Problem Set 2&lt;/a&gt; is due by class Tuesday September 21.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today we start looking at &lt;em&gt;associations&lt;/em&gt; between variables, which we will first attempt to quantify with measures like &lt;em&gt;covariance&lt;/em&gt; and &lt;em&gt;correlation&lt;/em&gt;. Then we turn to fitting a line to data via &lt;em&gt;linear regression&lt;/em&gt;. We overview the basic regression model, the parameters and how they are derived, and see how to work with regressions in &lt;code&gt;R&lt;/code&gt; with &lt;code&gt;lm&lt;/code&gt; and the tidyverse package &lt;a href=&#34;https://broom.tidyverse.org/&#34;&gt;&lt;code&gt;broom&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We consider an extended example about class sizes and test scores, which comes from a (Stata) dataset from an old textbook that I used to use, &lt;a href=&#34;https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-Update-3rd-Edition/9780133486872.html?tab=resources&#34;&gt;Stock and Watson, 2007&lt;/a&gt;. Download and follow along with the data from today’s example:&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://metricsf210.classes.ryansafner.com/data/caschool.dta&#34;&gt;&lt;i class=&#34;fas fa-table&#34;&gt;&lt;/i&gt; &lt;code&gt;caschool.dta&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 3.1, Math and Probability Background Appendices D-E in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.3-slides.html&#34;&gt;&lt;img src =&#34;/slides/2.3-slides.png&#34; alt = &#34;2.3-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.3-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 1&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/02-problem-set&#34;&gt;Problem Set 2&lt;/a&gt; is due by Tuesday September 21. Please see the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/problem-sets&#34;&gt;instructions&lt;/a&gt; for more information on how to submit your assignment (there are multiple ways!).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;math-appendix&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Math Appendix&lt;/h2&gt;
+&lt;div id=&#34;variance&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Variance&lt;/h3&gt;
+&lt;p&gt;Recall the variance of a &lt;em&gt;discrete&lt;/em&gt; random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, denoted &lt;span class=&#34;math inline&#34;&gt;\(var(X)\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(\sigma^2\)&lt;/span&gt;, is the expected value (probability-weighted average) of the squared deviations of &lt;span class=&#34;math inline&#34;&gt;\(X_i\)&lt;/span&gt; from it’s mean (or expected value) &lt;span class=&#34;math inline&#34;&gt;\(\bar{X}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(E(X)\)&lt;/span&gt;.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\sigma_X^2&amp;amp;=E(X-E(X))\\
+&amp;amp;=\sum^n_{i=1} (X_i-\bar{X})^2 p_i
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Fpr &lt;em&gt;continuous&lt;/em&gt; data (if all possible values of &lt;span class=&#34;math inline&#34;&gt;\(X_i\)&lt;/span&gt; are equally likely or we don’t know the probabilities), we can write variance as a simple average of squared deviations from the mean:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\sigma_X^2&amp;amp;=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})^2  
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Variance has some useful properties:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Property 1&lt;/strong&gt;: The variance of a constant is 0&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[var(c)=0 \text{ iff } P(X=c)=1\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If a random variable takes the same value (e.g. 2) with probability 1.00, &lt;span class=&#34;math inline&#34;&gt;\(E(2)=2\)&lt;/span&gt;, so the average squared deviation from the mean is 0, because there are never any values other than 2.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Property 2&lt;/strong&gt;: The variance is unchanged for a random variable plus/minus a constant&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[var(X\pm c)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since the variance of a constant is 0.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Property 3&lt;/strong&gt;: The variance of a scaled random variable is scaled by the square of the coefficient&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[var(aX)=a^2var(X)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Property 4&lt;/strong&gt;: The variance of a linear transformation of a random variable is scaled by the square of the coefficient&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[var(aX+b)=a^2var(X)\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;covariance&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Covariance&lt;/h3&gt;
+&lt;p&gt;For two random variables, &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;, we can measure their &lt;strong&gt;covariance&lt;/strong&gt; (denoted &lt;span class=&#34;math inline&#34;&gt;\(cov(X,Y)\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{X,Y}\)&lt;/span&gt;)&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; to quantify how they vary &lt;em&gt;together&lt;/em&gt;. A good way to think about this is: when &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is above its mean, would we expect &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; to also be above its mean (and covary positively), or below its mean (and covary negatively). Remember, this is describing the &lt;em&gt;joint&lt;/em&gt; probability distribution for two random variables.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\sigma_{X,Y}&amp;amp;=E\big[(X-\bar{X})(Y-\bar{Y})\big]
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Again, in the case of equally probable values for both &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;, covariance is sometimes written:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\sigma_{X,Y}&amp;amp;=\frac{1}{N}\sum_{i=1}^n(X-\bar{X})(Y-\bar{Y})
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Covariance also has a number of useful properties:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Property 1&lt;/strong&gt;: The covariance of a random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and a constant &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt; is 0&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[cov(X,c)=0\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Property 2&lt;/strong&gt;: The covariance of a random variable and itself is the variable’s variance&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    cov(X,X)&amp;amp;=var(X)\\
+    \sigma_{X,X}&amp;amp;=\sigma^2_X\\
+    \end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Property 3&lt;/strong&gt;: The covariance of a two random variables &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; each scaled by a constant &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; is the product of the covariance and the constants&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[cov(aX,bY)=a\times b \times cov(X,Y)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Property 4&lt;/strong&gt;: If two random variables are independent, their covariance is 0&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[cov(X,Y)=0 \text{ iff } X \text{ and } Y \text{ are independent:}  E(XY)=E(X)\times E(Y)\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;correlation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Correlation&lt;/h3&gt;
+&lt;p&gt;Covariance, like variance, is often cumbersome, and the numerical value of the covariance of two random variables does not really mean much. It is often convenient to normalize the covariance to a decimal between &lt;span class=&#34;math inline&#34;&gt;\(-1\)&lt;/span&gt; and 1. We do this by dividing by the product of the standard deviations of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;. This is known as the &lt;strong&gt;correlation coefficient&lt;/strong&gt; between &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;, denoted &lt;span class=&#34;math inline&#34;&gt;\(corr(X,Y)\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(\rho_{X,Y}\)&lt;/span&gt; (for populations) or &lt;span class=&#34;math inline&#34;&gt;\(r_{X,Y}\)&lt;/span&gt; (for samples):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}    
+r_{X,Y}&amp;amp;=\frac{cov(X,Y)}{sd(X)sd(Y)}\\
+&amp;amp;=\frac{E\big[(X-\bar{X})(Y-\bar{Y})\big]}{\sqrt{E\big[X-\bar{X}\big]}\sqrt{E\big[Y-\bar{Y}\big]}}\\
+&amp;amp;=\frac{\sigma_{X,Y}}{\sigma_X \sigma_Y}\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Note this also means that covariance is the product of the standard deviation of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; and their correlation coefficient:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\sigma_{X,Y}&amp;amp;=r_{X,Y}\sigma_X \sigma_Y  \\
+cov(X,Y)&amp;amp;=corr(X,Y)\times sd(X) \times sd(Y)    \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Another way to reach the (sample) correlation coefficient is by finding the average joint &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;-score of each pair of &lt;span class=&#34;math inline&#34;&gt;\((X_i,Y_i)\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}    
+r_{X,Y}&amp;amp;=\frac{1}{n}\frac{\displaystyle\sum^n_{i=1}(X_i-\bar{X})(Y_i-\bar{Y}))}{s_X s_Y} &amp;amp;&amp;amp; \text{Definition of sample correlation}\\
+&amp;amp;=\frac{1}{n}\displaystyle\sum^n_{i=1}\bigg(\frac{X_i-\bar{X}}{s_X}\bigg)\bigg(\frac{Y_i-\bar{Y}}{s_Y}\bigg) &amp;amp;&amp;amp; \text{Breaking into separate sums} \\
+&amp;amp;=\frac{1}{n}\displaystyle\sum^n_{i=1}(Z_X)(Z_Y) &amp;amp;&amp;amp; \text{Recognize each sum is the z-score for that r.v.} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Correlation has some useful properties that should be familiar to you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Correlation is between &lt;span class=&#34;math inline&#34;&gt;\(-1\)&lt;/span&gt; and 1&lt;/li&gt;
+&lt;li&gt;A correlation of -1 is a downward sloping straight line&lt;/li&gt;
+&lt;li&gt;A correlation of 1 is an upward sloping straight line&lt;/li&gt;
+&lt;li&gt;A correlation of 0 implies no relationship&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;calculating-correlation-example&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Calculating Correlation Example&lt;/h4&gt;
+&lt;p&gt;We can calculate the correlation of a simple data set (of 4 observations) using &lt;code&gt;R&lt;/code&gt; to show how correlation is calculated. We will use the &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;-score method. Begin with a simple set of data in &lt;span class=&#34;math inline&#34;&gt;\((X_i, Y_i)\)&lt;/span&gt; points:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ (1,1), (2,2), (3,4), (4,9) \]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+
+corr_example&amp;lt;-tibble(x=c(1,2,3,4),
+                         y=c(1,2,4,9))
+
+ggplot(corr_example,aes(x=x,y=y))+geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.3-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;corr_example %&amp;gt;%
+  summarize(mean_x = mean(x), #find mean of x, its 2.5
+            sd_x = sd(x), #find sd of x, its 1.291
+            mean_y = mean(y), #find mean of y, its 4
+            sd_y = sd(y)) #find sd of y, its 3.559&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 × 4
+##   mean_x  sd_x mean_y  sd_y
+##    &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1    2.5  1.29      4  3.56&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#take z score of x,y for each pair and multiply them
+
+corr_example &amp;lt;- corr_example %&amp;gt;%
+  mutate(z_product = ((x-mean(x))/sd(x)) * ((y-mean(y))/sd(y)))
+
+corr_example %&amp;gt;%
+  summarize(avg_z_product = sum(z_product)/(n()-1), # average z products over n-1
+            actual_corr = cor(x,y), #compare our answer to actual cor() command!
+            covariance = cov(x,y)) # just for kicks, what&amp;#39;s the covariance? &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 × 3
+##   avg_z_product actual_corr covariance
+##           &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;      &amp;lt;dbl&amp;gt;
+## 1         0.943       0.943       4.33&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Note this is a &lt;code&gt;.dta&lt;/code&gt; Stata file. You will need to (install and) load the package &lt;code&gt;haven&lt;/code&gt; to &lt;code&gt;read_dta()&lt;/code&gt; Stata files into a dataframe.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Note there will be a different in notation depending on whether we refer to a population (e.g. &lt;span class=&#34;math inline&#34;&gt;\(\mu_{X}\)&lt;/span&gt;) or to a sample (e.g. &lt;span class=&#34;math inline&#34;&gt;\(\bar{X}\)&lt;/span&gt;). As the overwhelming majority of cases we will deal with samples, I will use sample notation for means).&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Again, to be technically correct, &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{X,Y}\)&lt;/span&gt; refers to populations, &lt;span class=&#34;math inline&#34;&gt;\(s_{X,Y}\)&lt;/span&gt; refers to samples, in line with population vs. sample variance and standard deviation. Recall also that sample estimates of variance and standard deviation divide by &lt;span class=&#34;math inline&#34;&gt;\(n-1\)&lt;/span&gt;, rather than &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;. In large sample sizes, this difference is negligible.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/div&gt;
 </description>
     </item>

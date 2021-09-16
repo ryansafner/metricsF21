@@ -28,7 +28,7 @@ Today we finish your crash course/review of basic statistics with random variabl
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
-- <i class="fas fa-book"></i> Math and Probability Background Appendices B-I in Bailey
+- <i class="fas fa-book"></i> Math and Probability Background Appendices B-I in Bailey, *Real Econometrics*
 
 Now that we return to the statistics, we will do a minimal overview of basic statistics and distributions. Review all of Bailey's appendices.
 

@@ -1,0 +1,187 @@
+---
+title: "2.93 — OLS Regression — Class Content"
+draft: false
+linktitle: "2.3 — OLS Regression"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 9
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.3-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#problem-set-1">Problem Set 1</a></li>
+</ul></li>
+<li><a href="#math-appendix">Math Appendix</a>
+<ul>
+<li><a href="#variance">Variance</a></li>
+<li><a href="#covariance">Covariance</a></li>
+<li><a href="#correlation">Correlation</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Thursday, September 16, 2021</em>
+{{% /alert %}}</p>
+<p>{{% alert warning %}}
+<a href="/assignments/01-problem-set">Problem Set 1</a> answers are posted on that page. <a href="/assignments/02-problem-set">Problem Set 2</a> is due by class Tuesday September 21.
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we start looking at <em>associations</em> between variables, which we will first attempt to quantify with measures like <em>covariance</em> and <em>correlation</em>. Then we turn to fitting a line to data via <em>linear regression</em>. We overview the basic regression model, the parameters and how they are derived, and see how to work with regressions in <code>R</code> with <code>lm</code> and the tidyverse package <a href="https://broom.tidyverse.org/"><code>broom</code></a>.</p>
+<p>We consider an extended example about class sizes and test scores, which comes from a (Stata) dataset from an old textbook that I used to use, <a href="https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-Update-3rd-Edition/9780133486872.html?tab=resources">Stock and Watson, 2007</a>. Download and follow along with the data from today’s example:<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<ul>
+<li><a href="http://metricsf210.classes.ryansafner.com/data/caschool.dta"><i class="fas fa-table"></i> <code>caschool.dta</code></a></li>
+</ul>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Ch. 3.1, Math and Probability Background Appendices D-E in Bailey, <em>Real Econometrics</em></li>
+</ul>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="assignments" class="section level2">
+<h2><i class="fas fa-laptop-code"></i> Assignments</h2>
+<div id="problem-set-1" class="section level3">
+<h3>Problem Set 1</h3>
+<p><a href="/assignments/02-problem-set">Problem Set 2</a> is due by Tuesday September 21. Please see the <a href="/assignments/problem-sets">instructions</a> for more information on how to submit your assignment (there are multiple ways!).</p>
+</div>
+</div>
+<div id="math-appendix" class="section level2">
+<h2>Math Appendix</h2>
+<div id="variance" class="section level3">
+<h3>Variance</h3>
+<p>Recall the variance of a <em>discrete</em> random variable <span class="math inline">\(X\)</span>, denoted <span class="math inline">\(var(X)\)</span> or <span class="math inline">\(\sigma^2\)</span>, is the expected value (probability-weighted average) of the squared deviations of <span class="math inline">\(X_i\)</span> from it’s mean (or expected value) <span class="math inline">\(\bar{X}\)</span> or <span class="math inline">\(E(X)\)</span>.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p><span class="math display">\[\begin{align*}
+\sigma_X^2&amp;=E(X-E(X))\\
+&amp;=\sum^n_{i=1} (X_i-\bar{X})^2 p_i
+\end{align*}\]</span></p>
+<p>Fpr <em>continuous</em> data (if all possible values of <span class="math inline">\(X_i\)</span> are equally likely or we don’t know the probabilities), we can write variance as a simple average of squared deviations from the mean:</p>
+<p><span class="math display">\[\begin{align*}
+\sigma_X^2&amp;=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})^2  
+\end{align*}\]</span></p>
+<p>Variance has some useful properties:</p>
+<p><strong>Property 1</strong>: The variance of a constant is 0</p>
+<p><span class="math display">\[var(c)=0 \text{ iff } P(X=c)=1\]</span></p>
+<p>If a random variable takes the same value (e.g. 2) with probability 1.00, <span class="math inline">\(E(2)=2\)</span>, so the average squared deviation from the mean is 0, because there are never any values other than 2.</p>
+<p><strong>Property 2</strong>: The variance is unchanged for a random variable plus/minus a constant</p>
+<p><span class="math display">\[var(X\pm c)\]</span></p>
+<p>Since the variance of a constant is 0.</p>
+<p><strong>Property 3</strong>: The variance of a scaled random variable is scaled by the square of the coefficient</p>
+<p><span class="math display">\[var(aX)=a^2var(X)\]</span></p>
+<p><strong>Property 4</strong>: The variance of a linear transformation of a random variable is scaled by the square of the coefficient</p>
+<p><span class="math display">\[var(aX+b)=a^2var(X)\]</span></p>
+</div>
+<div id="covariance" class="section level3">
+<h3>Covariance</h3>
+<p>For two random variables, <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, we can measure their <strong>covariance</strong> (denoted <span class="math inline">\(cov(X,Y)\)</span> or <span class="math inline">\(\sigma_{X,Y}\)</span>)<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> to quantify how they vary <em>together</em>. A good way to think about this is: when <span class="math inline">\(X\)</span> is above its mean, would we expect <span class="math inline">\(Y\)</span> to also be above its mean (and covary positively), or below its mean (and covary negatively). Remember, this is describing the <em>joint</em> probability distribution for two random variables.</p>
+<p><span class="math display">\[\begin{align*}
+\sigma_{X,Y}&amp;=E\big[(X-\bar{X})(Y-\bar{Y})\big]
+\end{align*}\]</span></p>
+<p>Again, in the case of equally probable values for both <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, covariance is sometimes written:</p>
+<p><span class="math display">\[\begin{align*}
+\sigma_{X,Y}&amp;=\frac{1}{N}\sum_{i=1}^n(X-\bar{X})(Y-\bar{Y})
+\end{align*}\]</span></p>
+<p>Covariance also has a number of useful properties:</p>
+<p><strong>Property 1</strong>: The covariance of a random variable <span class="math inline">\(X\)</span> and a constant <span class="math inline">\(c\)</span> is 0</p>
+<p><span class="math display">\[cov(X,c)=0\]</span></p>
+<p><strong>Property 2</strong>: The covariance of a random variable and itself is the variable’s variance</p>
+<p><span class="math display">\[\begin{align*}
+    cov(X,X)&amp;=var(X)\\
+    \sigma_{X,X}&amp;=\sigma^2_X\\
+    \end{align*}\]</span></p>
+<p><strong>Property 3</strong>: The covariance of a two random variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> each scaled by a constant <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is the product of the covariance and the constants</p>
+<p><span class="math display">\[cov(aX,bY)=a\times b \times cov(X,Y)\]</span></p>
+<p><strong>Property 4</strong>: If two random variables are independent, their covariance is 0</p>
+<p><span class="math display">\[cov(X,Y)=0 \text{ iff } X \text{ and } Y \text{ are independent:}  E(XY)=E(X)\times E(Y)\]</span></p>
+</div>
+<div id="correlation" class="section level3">
+<h3>Correlation</h3>
+<p>Covariance, like variance, is often cumbersome, and the numerical value of the covariance of two random variables does not really mean much. It is often convenient to normalize the covariance to a decimal between <span class="math inline">\(-1\)</span> and 1. We do this by dividing by the product of the standard deviations of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. This is known as the <strong>correlation coefficient</strong> between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, denoted <span class="math inline">\(corr(X,Y)\)</span> or <span class="math inline">\(\rho_{X,Y}\)</span> (for populations) or <span class="math inline">\(r_{X,Y}\)</span> (for samples):</p>
+<p><span class="math display">\[\begin{align*}    
+r_{X,Y}&amp;=\frac{cov(X,Y)}{sd(X)sd(Y)}\\
+&amp;=\frac{E\big[(X-\bar{X})(Y-\bar{Y})\big]}{\sqrt{E\big[X-\bar{X}\big]}\sqrt{E\big[Y-\bar{Y}\big]}}\\
+&amp;=\frac{\sigma_{X,Y}}{\sigma_X \sigma_Y}\\
+\end{align*}\]</span></p>
+<p>Note this also means that covariance is the product of the standard deviation of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> and their correlation coefficient:</p>
+<p><span class="math display">\[\begin{align*}
+\sigma_{X,Y}&amp;=r_{X,Y}\sigma_X \sigma_Y  \\
+cov(X,Y)&amp;=corr(X,Y)\times sd(X) \times sd(Y)    \\
+\end{align*}\]</span></p>
+<p>Another way to reach the (sample) correlation coefficient is by finding the average joint <span class="math inline">\(Z\)</span>-score of each pair of <span class="math inline">\((X_i,Y_i)\)</span>:</p>
+<p><span class="math display">\[\begin{align*}    
+r_{X,Y}&amp;=\frac{1}{n}\frac{\displaystyle\sum^n_{i=1}(X_i-\bar{X})(Y_i-\bar{Y}))}{s_X s_Y} &amp;&amp; \text{Definition of sample correlation}\\
+&amp;=\frac{1}{n}\displaystyle\sum^n_{i=1}\bigg(\frac{X_i-\bar{X}}{s_X}\bigg)\bigg(\frac{Y_i-\bar{Y}}{s_Y}\bigg) &amp;&amp; \text{Breaking into separate sums} \\
+&amp;=\frac{1}{n}\displaystyle\sum^n_{i=1}(Z_X)(Z_Y) &amp;&amp; \text{Recognize each sum is the z-score for that r.v.} \\
+\end{align*}\]</span></p>
+<p>Correlation has some useful properties that should be familiar to you:</p>
+<ul>
+<li>Correlation is between <span class="math inline">\(-1\)</span> and 1</li>
+<li>A correlation of -1 is a downward sloping straight line</li>
+<li>A correlation of 1 is an upward sloping straight line</li>
+<li>A correlation of 0 implies no relationship</li>
+</ul>
+<div id="calculating-correlation-example" class="section level4">
+<h4>Calculating Correlation Example</h4>
+<p>We can calculate the correlation of a simple data set (of 4 observations) using <code>R</code> to show how correlation is calculated. We will use the <span class="math inline">\(Z\)</span>-score method. Begin with a simple set of data in <span class="math inline">\((X_i, Y_i)\)</span> points:</p>
+<p><span class="math display">\[ (1,1), (2,2), (3,4), (4,9) \]</span></p>
+<pre class="r"><code>library(tidyverse)
+
+corr_example&lt;-tibble(x=c(1,2,3,4),
+                         y=c(1,2,4,9))
+
+ggplot(corr_example,aes(x=x,y=y))+geom_point()</code></pre>
+<p><img src="/content/2.3-content_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>corr_example %&gt;%
+  summarize(mean_x = mean(x), #find mean of x, its 2.5
+            sd_x = sd(x), #find sd of x, its 1.291
+            mean_y = mean(y), #find mean of y, its 4
+            sd_y = sd(y)) #find sd of y, its 3.559</code></pre>
+<pre><code>## # A tibble: 1 × 4
+##   mean_x  sd_x mean_y  sd_y
+##    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;
+## 1    2.5  1.29      4  3.56</code></pre>
+<pre class="r"><code>#take z score of x,y for each pair and multiply them
+
+corr_example &lt;- corr_example %&gt;%
+  mutate(z_product = ((x-mean(x))/sd(x)) * ((y-mean(y))/sd(y)))
+
+corr_example %&gt;%
+  summarize(avg_z_product = sum(z_product)/(n()-1), # average z products over n-1
+            actual_corr = cor(x,y), #compare our answer to actual cor() command!
+            covariance = cov(x,y)) # just for kicks, what&#39;s the covariance? </code></pre>
+<pre><code>## # A tibble: 1 × 3
+##   avg_z_product actual_corr covariance
+##           &lt;dbl&gt;       &lt;dbl&gt;      &lt;dbl&gt;
+## 1         0.943       0.943       4.33</code></pre>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Note this is a <code>.dta</code> Stata file. You will need to (install and) load the package <code>haven</code> to <code>read_dta()</code> Stata files into a dataframe.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Note there will be a different in notation depending on whether we refer to a population (e.g. <span class="math inline">\(\mu_{X}\)</span>) or to a sample (e.g. <span class="math inline">\(\bar{X}\)</span>). As the overwhelming majority of cases we will deal with samples, I will use sample notation for means).<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Again, to be technically correct, <span class="math inline">\(\sigma_{X,Y}\)</span> refers to populations, <span class="math inline">\(s_{X,Y}\)</span> refers to samples, in line with population vs. sample variance and standard deviation. Recall also that sample estimates of variance and standard deviation divide by <span class="math inline">\(n-1\)</span>, rather than <span class="math inline">\(n\)</span>. In large sample sizes, this difference is negligible.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

@@ -47,7 +47,9 @@ lessons:
     assignment: "02-problem-set"
 
   - title: "2.3 — OLS Linear Regression"
-
+    content: "2.3-content"
+    slides: "2.3-slides"
+    
   - title: "2.4 — OLS: Goodness of Fit and Bias"
 
   - title: "2.5 — OLS: Precision and Diagnostics"
