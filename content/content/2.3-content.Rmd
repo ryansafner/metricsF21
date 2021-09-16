@@ -1,7 +1,7 @@
 ---
-title: "2.93 — OLS Regression — Class Content"
+title: "2.93 — OLS Linear Regression — Class Content"
 draft: false
-linktitle: "2.3 — OLS Regression"
+linktitle: "2.3 — OLS Linear Regression"
 date: "2020-06-08"
 menu:
   content:
