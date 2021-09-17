@@ -28,6 +28,10 @@ Please read the [instructions](/assignments/problem-sets) for completing homewor
 
 The <i class="fas fa-file-pdf"></i> PDF is useful if you want to print out the problem set. The <i class="fas fa-file-archive"></i> R project is a zipped `.zip` file which contains a <i class="fab fa-markdown"></i> `.Rmd` file to write answers in, and the data, all in a logical working directory. ([See this resource](/resources/unzipping_files) for help unzipping files). You can also just write an `.R` file in the project if you don't want to use markdown. If you use the <i class="fas fa-cloud"></i> cloud project, I have already installed `tidyverse` and `tinytex` (to produce pdfs).
 
+## Answers
+
+<p style="text-align:center"><a target="_blank" href="/assignment/01-problem-set-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answer Key (html)</a> <a target="_blank" href="/assignment/01-problem-set-answers-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Answer Key (PDF)</a> <a target="_blank" href="/assignment/01-problem-set-answers.Rmd"><span class="btn btn-primary btn-lg"><i class="fab fa-markdown"></i> Answers (Rmd)</a> <a target="_blank" href="/assignment/01-problem-set-answers.R"><span class="btn btn-primary btn-lg"><i class="fas fa-registered"></i> Answer Key (R Script)</a></span></p>
+
 # The Popularity of Baby Names
 
 Install and load the package `babynames`. Get help for `?babynames` to see what the data includes.
