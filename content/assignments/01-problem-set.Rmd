@@ -30,7 +30,7 @@ The <i class="fas fa-file-pdf"></i> PDF is useful if you want to print out the p
 
 ## Answers
 
-<p style="text-align:center"><a target="_blank" href="/assignment/01-problem-set-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answer Key (html)</a> <a target="_blank" href="/assignment/01-problem-set-answers-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Answer Key (PDF)</a> <a target="_blank" href="/assignment/01-problem-set-answers.Rmd"><span class="btn btn-primary btn-lg"><i class="fab fa-markdown"></i> Answers (Rmd)</a> <a target="_blank" href="/assignment/01-problem-set-answers.R"><span class="btn btn-primary btn-lg"><i class="fas fa-registered"></i> Answer Key (R Script)</a></span></p>
+<p style="text-align:center"><a target="_blank" href="/assignment/01-problem-set-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/assignment/01-problem-set-answers-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Answers (PDF)</a> <a target="_blank" href="/assignment/01-problem-set-answers.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> Answers (Rmd)</a> <a target="_blank" href="/assignment/01-problem-set-answers.R"><span class="btn btn-primary btn-lg"><i class="fas fa-registered"></i> Answers (R Script)</a></span></p>
 
 # The Popularity of Baby Names
 
