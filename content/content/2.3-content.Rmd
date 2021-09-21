@@ -28,7 +28,7 @@ Today we start looking at *associations* between variables, which we will first 
 
 We consider an extended example about class sizes and test scores, which comes from a (Stata) dataset from an old textbook that I used to use, [Stock and Watson, 2007](https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-Update-3rd-Edition/9780133486872.html?tab=resources). Download and follow along with the data from today's example:^[Note this is a `.dta` Stata file. You will need to (install and) load the package `haven` to `read_dta()` Stata files into a dataframe.]
 
-- [<i class="fas fa-table"></i> `caschool.dta`](http://metricsf210.classes.ryansafner.com/data/caschool.dta)
+- [<i class="fas fa-table"></i> `caschool.dta`](http://metricsf21.classes.ryansafner.com/data/caschool.dta)
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 

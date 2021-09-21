@@ -51,6 +51,8 @@ lessons:
     slides: "2.3-slides"
     
   - title: "2.4 — OLS: Goodness of Fit and Bias"
+    content: "2.4-content"
+    slides: "2.4-slides"
 
   - title: "2.5 — OLS: Precision and Diagnostics"
 
