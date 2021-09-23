@@ -1,7 +1,7 @@
 ---
 title: "2.4 — OLS: Goodness of Fit and Bias"
-subtitle: "ECON 480 • Econometrics • Fall 2020"
-author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF20"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF20</a><br> <a href="https://metricsF20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF20.classes.ryansafner.com</a><br>'
+subtitle: "ECON 480 • Econometrics • Fall 2021"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF21"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF21</a><br> <a href="https://metricsF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF21.classes.ryansafner.com</a><br>'
 #date:
 output:
   xaringan::moon_reader:
