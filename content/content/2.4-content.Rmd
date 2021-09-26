@@ -1,7 +1,7 @@
 ---
 title: "2.4 — OLS: Goodness of Fit and Bias — Class Content"
 draft: false
-linktitle: "2.4 — OLS Goodness of Fit & Bias"
+linktitle: "2.4 — OLS: Goodness of Fit & Bias"
 date: "2020-06-08"
 menu:
   content:
@@ -15,11 +15,11 @@ slides: "2.4-slides"
 ---
 
 {{% alert note %}}
-*Thursday, September 16, 2021*
+*Tuesday, September 21, 2021*
 {{% /alert %}}
 
 {{% alert warning %}}
-[Problem Set 1](/assignments/01-problem-set) answers are posted on that page. [Problem Set 2](/assignments/02-problem-set) is due by class Tuesday September 21.
+[Problem Set 2](/assignments/02-problem-set) is due by the end of the day today.
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
@@ -34,7 +34,7 @@ We continue the extended example about class sizes and test scores, which comes 
 
 I have also made a RStudio Cloud project documenting all of the things we have been doing with this data that may help you when you start working with regressions (next class):
 
-- [<i class="fas fa-cloud"></i> Class Size Regression Analysis](https://rstudio.cloud/spaces/83147/project/1611251)
+- [<i class="fas fa-cloud"></i> Class Size Regression Analysis](https://rstudio.cloud/spaces/163934/project/2940189)
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
@@ -50,7 +50,7 @@ The lower button will allow you to download a PDF version of the slides. I sugge
 
 ## <i class="fas fa-laptop-code"></i> Assignments
 
-### Problem Set 1
+### Problem Set 2
 
 [Problem Set 2](/assignments/02-problem-set) is due by Tuesday September 21. Please see the [instructions](/assignments/problem-sets) for more information on how to submit your assignment (there are multiple ways!).
 

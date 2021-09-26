@@ -1,0 +1,238 @@
+---
+title: "2.5 — OLS: Precision and Diagnostics — Practice"
+draft: false
+date: "2020-06-08"
+linktitle: "2.5 — OLS: Precision and Diagnostics"
+menu:
+  r:
+    parent: R Practice
+    weight: 5
+type: docs
+output:
+  blogdown::html_page:
+    toc: false
+
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>To minimize confusion, I suggest creating a new <code>R Project</code> (e.g. <code>regression_practice</code>) and storing any data in that folder on your computer.</p>
+<p>I have already made an R project you can download (as a <code>.zip</code>), unzip, and open the <code>.Rproj</code> file in R Studio, or there is an R project you can use on the cloud:</p>
+<p style="text-align:center">
+<a target="_blank" href="/r/2.5-r.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2940155"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span>
+</p>
+<div id="data-cleaning" class="section level1">
+<h1>Data Cleaning</h1>
+<p>How did the results of the 2016 election in their district affect how often Members of Congress during the Trump Administration voted with the President?</p>
+<p>First, as always, load <code>tidyverse</code>!</p>
+<div id="question-1" class="section level2">
+<h2>Question 1</h2>
+<p>Our <a href="https://github.com/fivethirtyeight/data/tree/master/congress-trump-score">data</a> comes from fivethirtyeight’s <a href="https://projects.fivethirtyeight.com/congress-trump-score/">Trump Congress tracker</a>. Fivethirtyeight has a great <a href="https://data.fivethirtyeight.com/">public archive</a> of all of the data they use for their articles. I have saved a copy to this website so you can download it below. Download and import (<code>read_csv()</code>) the data into an object.</p>
+<ul>
+<li><a href="/data/congress-trump-score.csv"><i class="fas fa-table"></i> <code>congress-trump-score.csv</code></a></li>
+</ul>
+<p>The variables that we care about are</p>
+<table>
+<colgroup>
+<col width="43%" />
+<col width="56%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>congress</code></td>
+<td>Congressional session</td>
+</tr>
+<tr class="even">
+<td><code>chamber</code></td>
+<td>Chamber of Congress</td>
+</tr>
+<tr class="odd">
+<td><code>last_name</code></td>
+<td>Member of Congress</td>
+</tr>
+<tr class="even">
+<td><code>party</code></td>
+<td>Political Party</td>
+</tr>
+<tr class="odd">
+<td><code>state</code></td>
+<td>U.S. State</td>
+</tr>
+<tr class="even">
+<td><code>district</code></td>
+<td>Congressional district</td>
+</tr>
+<tr class="odd">
+<td><code>agree_pct</code></td>
+<td>Proportion of votes that agree with President Trump (0-1)</td>
+</tr>
+<tr class="even">
+<td><code>net_trump_vote</code></td>
+<td>District’s margin of victory in 2016 election (positive is Trump win, negative is Clinton win)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="question-2" class="section level2">
+<h2>Question 2</h2>
+<p>Look at the data with <code>glimpse()</code>. How many variables are there? How many observations?</p>
+</div>
+<div id="question-3" class="section level2">
+<h2>Question 3</h2>
+<p><code>agree_pct</code> is oddly named, given that its values range from 0 to 1. Make a new variable (you can overwrite <code>agree_pct</code>) that is a true percentage, from 0 to 100, and use this going forward (it will make interpretation of our results easier).</p>
+</div>
+<div id="question-4" class="section level2">
+<h2>Question 4</h2>
+<p>Make a scatterplot of <code>agree_pct</code> on <code>net_trump_vote</code>. Add a regression line by adding an additional layer of <code>geom_smooth(method = "lm")</code>.</p>
+</div>
+<div id="question-5" class="section level2">
+<h2>Question 5</h2>
+<p>Find the correlation between <code>agree_pct</code> and <code>net_trump_vote</code>. Hint: if using <code>tidyverse</code>, like calculating any statistic, we want the <code>summarize()</code> the data.</p>
+</div>
+</div>
+<div id="regression" class="section level1">
+<h1>Regression</h1>
+<div id="question-6" class="section level2">
+<h2>Question 6</h2>
+<p>We want to predict the following model:</p>
+<p><span class="math display">\[\widehat{\text{agree_pct}}= \hat{\beta_0}+\hat{\beta_1} \,\text{net_trump_vote}\]</span>
+Run a regression and save it as an object. Then get a <code>summary()</code> of the object.</p>
+<div id="part-a" class="section level3">
+<h3>Part A</h3>
+<p>What is <span class="math inline">\(\hat{\beta_0}\)</span> for this model? What does it mean in the context of our question?</p>
+</div>
+<div id="part-b" class="section level3">
+<h3>Part B</h3>
+<p>What is <span class="math inline">\(\hat{\beta_1}\)</span> for this model? What does it mean in the context of our question?</p>
+</div>
+<div id="part-c" class="section level3">
+<h3>Part C</h3>
+<p>What is <span class="math inline">\(R^2\)</span> for this model? What does it mean in the context of our question?</p>
+</div>
+<div id="part-d" class="section level3">
+<h3>Part D</h3>
+<p>What is the <span class="math inline">\(SER\)</span> for this model? What does it mean in the context of our question?</p>
+</div>
+</div>
+<div id="question-7" class="section level2">
+<h2>Question 7</h2>
+<p>We can look at regression outputs in a tidier way, with the <code>broom</code> package.</p>
+<div id="part-a-1" class="section level3">
+<h3>Part A</h3>
+<p>Install (if you have not yet done so) and load the <code>broom</code> package.</p>
+</div>
+<div id="part-b-1" class="section level3">
+<h3>Part B</h3>
+<p>Run the function <code>tidy()</code> on your regression object (saved in question 6). Save this result as an object and then look at it.</p>
+</div>
+<div id="part-c-1" class="section level3">
+<h3>Part C</h3>
+<p>Run the <code>glance()</code> function on your original regression object. What does it show you? Find <span class="math inline">\(R^2\)</span> and the SER and confirm they are the same from the Base R <code>lm</code> output.</p>
+</div>
+<div id="part-d-1" class="section level3">
+<h3>Part D</h3>
+<p>Now run the <code>augment()</code> function on your original regression object, and save this as an object. Look at it. What does it show you?</p>
+</div>
+</div>
+<div id="question-8" class="section level2">
+<h2>Question 8</h2>
+<p>Let’s use our <code>broom</code> results to calculate the goodness of fit statistics you found in question 6 to confirm.</p>
+<p>Calculate <span class="math inline">\(R^2\)</span> as <span class="math inline">\(\frac{ESS}{TSS}\)</span> by taking the variance of <span class="math inline">\(\widehat{\text{agree_pct}_i}\)</span> (<code>.fitted</code> in the <code>augment</code>ed object you made in Question 6D) over the variance of <span class="math inline">\(\text{agree_pct}\)</span>.</p>
+<p>Alternately, you can calculate <span class="math inline">\(R^2\)</span> as <span class="math inline">\(1-\frac{SSE}{TSS}\)</span> by taking 1 minus sum of squared <span class="math inline">\(\hat{u_i}\)</span> (<code>.resid</code> in that same <code>augment</code>ed object) over the variance of <span class="math inline">\(\text{agree_pct}\)</span>.</p>
+<p><strong>Optional</strong>: If you really want to be fancy, make your own function to calculate the sum of squares of <span class="math inline">\(\hat{Y}\)</span> and <span class="math inline">\(Y_i\)</span> (instead of variance), as I did, with:</p>
+<pre class="r"><code>sum_sq = function(x){sum((x - mean(x))^2)}</code></pre>
+<p>and then running this function on <code>agree_pct</code> and <code>.fitted</code>.</p>
+</div>
+<div id="question-9" class="section level2">
+<h2>Question 9</h2>
+<p>Now let’s try presenting your results in a regression table. Install and load the <code>huxtable</code> package, and run the <code>huxreg()</code> command. Your main input is your regression object you saved in Question 6. Feel free to customize the output of this table (see the slides).</p>
+</div>
+</div>
+<div id="regression-diagnostics" class="section level1">
+<h1>Regression Diagnostics</h1>
+<div id="question-10" class="section level2">
+<h2>Question 10</h2>
+<p>Now let’s start looking at the residuals of the regression.</p>
+<div id="part-a-2" class="section level3">
+<h3>Part A</h3>
+<p>Take the <code>augment</code>ed regression object from Question 7D and use it as the source of your data to create a histogram with <code>ggplot()</code>, setting <code>aes(x = .resid)</code>. Does it look roughly normal?</p>
+</div>
+<div id="part-b-2" class="section level3">
+<h3>Part B</h3>
+<p>Take the <code>augment</code>ed regression object and make a residual plot, which is a scatterplot where <code>x</code> is the normal <code>x</code> variable, and <code>y</code> is the <code>.resid</code>. Feel free to add a horizontal line at 0 with <code>geom_hline(yintercept = 0)</code> as an additional layer.</p>
+</div>
+</div>
+<div id="question-11" class="section level2">
+<h2>Question 11</h2>
+<p>Now let’s check for heteroskedasticity.</p>
+<div id="part-a-3" class="section level3">
+<h3>Part A</h3>
+<p>Looking at the scatterplot and residual plots in Questions 3 and 7B, do you think the errors are heteroskedastic or homoskedastic?</p>
+</div>
+<div id="part-b-3" class="section level3">
+<h3>Part B</h3>
+<p>Install and load the <code>lmtest</code> package and run <code>bptest()</code> on your saved <code>lm</code> object from Question 6. According to the test, is the data heteroskedastic or homoskedastic?</p>
+</div>
+<div id="part-c-2" class="section level3">
+<h3>Part C</h3>
+<p>Now let’s make some heteroskedasticity-robust standard errors. Install and load the <code>estimatr</code> package and use the <code>lm_robust()</code> command (instead of the <code>lm()</code> command) to run a new regression (and save it). Make sure you add <code>se_type = "stata"</code> inside the command to calculate robust SEs (in the same way that the Stata software does…long story). Look at it. What changes?</p>
+</div>
+<div id="part-d-2" class="section level3">
+<h3>Part D</h3>
+<p>Now let’s see this in a nice regression table. Use <code>huxreg()</code> again, but add both your original regression and your regression saved in part C. Notice any changes?</p>
+</div>
+</div>
+<div id="question-12" class="section level2">
+<h2>Question 12</h2>
+<p>Now let’s check for outliers.</p>
+<div id="part-a-4" class="section level3">
+<h3>Part A</h3>
+<p>Just looking at the scatterplot in Question 3, do you see any outliers?</p>
+</div>
+<div id="part-b-4" class="section level3">
+<h3>Part B</h3>
+<p>Install and load the <code>car</code> package. Run the <code>outlierTest</code> command on your regression object. Does it detect any outliers?</p>
+</div>
+<div id="part-c-3" class="section level3">
+<h3>Part C</h3>
+<p>Look in your original data to match this outlier with an observation. Hint: use the <code>slice()</code> command, as the outlier test gave you an observation (row) number!</p>
+</div>
+</div>
+<div id="question-13" class="section level2">
+<h2>Question 13</h2>
+<p>(<strong>Optional</strong>: Flexing your tidyverse skills)</p>
+<p>This data is still a bit messy. Let’s check your <code>tidyverse</code> skills again! For example, we’d probably like to plot our scatterplots with colors for Republican and Democratic party. Or plot by the House and the Senate.</p>
+<div id="part-a-5" class="section level3">
+<h3>Part A</h3>
+<p>First, the variable <code>congress</code> (session of Congress) seems a bit off. Get a <code>count()</code> of <code>congress</code>.</p>
+</div>
+<div id="part-b-5" class="section level3">
+<h3>Part B</h3>
+<p>Let’s get rid of the <code>0</code> values for <code>congress</code> (someone made a mistake coding this, probably).</p>
+</div>
+<div id="part-c-4" class="section level3">
+<h3>Part C</h3>
+<p>The variable <code>party</code> is also quite a mess. <code>count()</code> by <code>party</code> to see. Then let’s <code>mutate</code> a variable to make a better measure of political party - just <code>"Republican"</code>, <code>"Democrat"</code>, and <code>"Independent"</code>. Try doing this with the <code>case_when()</code> command (as your <code>mutate</code> formula).</p>
+<p>The syntax for <code>case_when()</code> is to have a series of <code>condition ~ "Outcome"</code>, separated by commas. For example, one condition is to assign both <code>"Democrat"</code> and <code>"D"</code> to <code>"Democrat"</code>, as in <code>party %in% c("Democrat", "D") ~ "Democrat"</code>. You could also do this with a few <code>ifelse()</code> commands, but that’s a bit more awkward.] When you’re done <code>count()</code> by your new party variable to make sure it worked.</p>
+</div>
+<div id="part-d-3" class="section level3">
+<h3>Part D</h3>
+<p>Now plot a scatterplot (same as Question 4) and set <code>color</code> to your party variable. Notice <code>R</code> uses its own default colors, which don’t match to the actual colors these political parties use! Make a vector where you define the party colors as follows:</p>
+<pre class="r"><code>party_colors &lt;- c(&quot;Democrat&quot; = &quot;blue&quot;,
+                  &quot;Republican&quot; = &quot;red&quot;,
+                  &quot;Independent&quot; = &quot;gray&quot;)</code></pre>
+<p>Then, run your plot again, adding the following layer to customize the colors <code>scale_colour_manual("Parties", values = party_colors)</code>. <code>"Parties"</code> is the title that will show up on the legend, feel free to edit it, or remove the legend with another layer <code>+guides(color = F)</code>.</p>
+</div>
+<div id="part-e" class="section level3">
+<h3>Part E</h3>
+<p>Now facet your scatterplot by <code>chamber</code> by adding a layer: <code>facet_wrap(~chamber)</code>.</p>
+</div>
+</div>
+</div>

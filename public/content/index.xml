@@ -1103,7 +1103,7 @@ ggplot(data = data.frame(x = -4:4))+
 &lt;p&gt;Today we start looking at &lt;em&gt;associations&lt;/em&gt; between variables, which we will first attempt to quantify with measures like &lt;em&gt;covariance&lt;/em&gt; and &lt;em&gt;correlation&lt;/em&gt;. Then we turn to fitting a line to data via &lt;em&gt;linear regression&lt;/em&gt;. We overview the basic regression model, the parameters and how they are derived, and see how to work with regressions in &lt;code&gt;R&lt;/code&gt; with &lt;code&gt;lm&lt;/code&gt; and the tidyverse package &lt;a href=&#34;https://broom.tidyverse.org/&#34;&gt;&lt;code&gt;broom&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We consider an extended example about class sizes and test scores, which comes from a (Stata) dataset from an old textbook that I used to use, &lt;a href=&#34;https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-Update-3rd-Edition/9780133486872.html?tab=resources&#34;&gt;Stock and Watson, 2007&lt;/a&gt;. Download and follow along with the data from today’s example:&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://metricsf210.classes.ryansafner.com/data/caschool.dta&#34;&gt;&lt;i class=&#34;fas fa-table&#34;&gt;&lt;/i&gt; &lt;code&gt;caschool.dta&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://metricsf21.classes.ryansafner.com/data/caschool.dta&#34;&gt;&lt;i class=&#34;fas fa-table&#34;&gt;&lt;/i&gt; &lt;code&gt;caschool.dta&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
@@ -1244,6 +1244,385 @@ corr_example %&amp;gt;%
 &lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Note this is a &lt;code&gt;.dta&lt;/code&gt; Stata file. You will need to (install and) load the package &lt;code&gt;haven&lt;/code&gt; to &lt;code&gt;read_dta()&lt;/code&gt; Stata files into a dataframe.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Note there will be a different in notation depending on whether we refer to a population (e.g. &lt;span class=&#34;math inline&#34;&gt;\(\mu_{X}\)&lt;/span&gt;) or to a sample (e.g. &lt;span class=&#34;math inline&#34;&gt;\(\bar{X}\)&lt;/span&gt;). As the overwhelming majority of cases we will deal with samples, I will use sample notation for means).&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Again, to be technically correct, &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{X,Y}\)&lt;/span&gt; refers to populations, &lt;span class=&#34;math inline&#34;&gt;\(s_{X,Y}\)&lt;/span&gt; refers to samples, in line with population vs. sample variance and standard deviation. Recall also that sample estimates of variance and standard deviation divide by &lt;span class=&#34;math inline&#34;&gt;\(n-1\)&lt;/span&gt;, rather than &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;. In large sample sizes, this difference is negligible.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2.4 — OLS: Goodness of Fit and Bias — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/2.4-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/2.4-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-2&#34;&gt;Problem Set 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#math-appendix&#34;&gt;Math Appendix&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#deriving-the-ols-estimators&#34;&gt;Deriving the OLS Estimators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#finding-hatbeta_0&#34;&gt;Finding &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_0}\)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#finding-hatbeta_1&#34;&gt;Finding &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#algebraic-properties-of-ols-estimators&#34;&gt;Algebraic Properties of OLS Estimators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#bias-in-hatbeta_1&#34;&gt;Bias in &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#proof-of-the-unbiasedness-of-hatbeta_1&#34;&gt;Proof of the Unbiasedness of &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Tuesday, September 21, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/02-problem-set&#34;&gt;Problem Set 2&lt;/a&gt; is due by the end of the day today.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today we continue looking at basic OLS regression. We will cover how to measure if a regression line is a good fit (using &lt;span class=&#34;math inline&#34;&gt;\(R^2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\sigma_u\)&lt;/span&gt; or SER), and whether OLS estimators are &lt;em&gt;biased&lt;/em&gt;. These will depend on four critical &lt;em&gt;assumptions about &lt;span class=&#34;math inline&#34;&gt;\(u\)&lt;/span&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In doing so, we begin an ongoing exploration into inferential statistics, which will finally become clear in another week. The most confusing part is recognizing that there is a &lt;em&gt;sampling distribution of each OLS estimator&lt;/em&gt;. We want to measure the center of that sampling distribution, to see if the estimator is &lt;em&gt;biased&lt;/em&gt;. Next class we will measure the spread of that distribution.&lt;/p&gt;
+&lt;p&gt;We continue the extended example about class sizes and test scores, which comes from a (Stata) dataset from an old textbook that I used to use, &lt;a href=&#34;https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-Update-3rd-Edition/9780133486872.html?tab=resources&#34;&gt;Stock and Watson, 2007&lt;/a&gt;. Download and follow along with the data from today’s example:&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://metricsf21.classes.ryansafner.com/data/caschool.dta&#34;&gt;&lt;i class=&#34;fas fa-table&#34;&gt;&lt;/i&gt; &lt;code&gt;caschool.dta&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have also made a RStudio Cloud project documenting all of the things we have been doing with this data that may help you when you start working with regressions (next class):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio.cloud/spaces/163934/project/2940189&#34;&gt;&lt;i class=&#34;fas fa-cloud&#34;&gt;&lt;/i&gt; Class Size Regression Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 3.2-3.4, 3.7-3.8 in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.4-slides.html&#34;&gt;&lt;img src =&#34;/slides/2.4-slides.png&#34; alt = &#34;2.4-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.4-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-2&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 2&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/02-problem-set&#34;&gt;Problem Set 2&lt;/a&gt; is due by Tuesday September 21. Please see the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/problem-sets&#34;&gt;instructions&lt;/a&gt; for more information on how to submit your assignment (there are multiple ways!).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;math-appendix&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Math Appendix&lt;/h2&gt;
+&lt;div id=&#34;deriving-the-ols-estimators&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Deriving the OLS Estimators&lt;/h3&gt;
+&lt;p&gt;The population linear regression model is:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Y_i=\beta_0+\beta_1 X_i + u _i\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The errors &lt;span class=&#34;math inline&#34;&gt;\((u_i)\)&lt;/span&gt; are unobserved, but for candidate values of &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_0}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt;, we can obtain an estimate of the residual. Algebraically, the error is:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{u_i}=    Y_i-\hat{\beta_0}-\hat{\beta_1}X_i\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Recall our goal is to find &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_0}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt; that &lt;em&gt;minimizes&lt;/em&gt; the sum of squared errors (SSE):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[SSE= \sum^n_{i=1} \hat{u_i}^2\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So our minimization problem is:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\min_{\hat{\beta_0}, \hat{\beta_1}} \sum^n_{i=1} (Y_i-\hat{\beta_0}-\hat{\beta_1}X_i)^2\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Using calculus, we take the partial derivatives and set it equal to 0 to find a minimum. The first order conditions are:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\frac{\partial SSE}{\partial \hat{\beta_0}}&amp;amp;=-2\displaystyle\sum^n_{i=1} (Y_i-\hat{\beta_0}-\hat{\beta_1} X_i)=0\\
+\frac{\partial SSE}{\partial \hat{\beta_1}}&amp;amp;=-2\displaystyle\sum^n_{i=1} (Y_i-\hat{\beta_0}-\hat{\beta_1} X_i)X_i=0\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;finding-hatbeta_0&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Finding &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_0}\)&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;Working with the first FOC, divide both sides by &lt;span class=&#34;math inline&#34;&gt;\(-2\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\displaystyle\sum^n_{i=1} (Y_i-\hat{\beta_0}-\hat{\beta_1} X_i)=0\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Then expand the summation across all terms and divide by &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\underbrace{\frac{1}{n}\sum^n_{i=1} Y_i}_{\bar{Y}}-\underbrace{\frac{1}{n}\sum^n_{i=1}\hat{\beta_0}}_{\hat{\beta_0}}-\underbrace{\frac{1}{n}\sum^n_{i=1} \hat{\beta_1} X_i}_{\hat{\beta_1}\bar{X}}=0\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Note the first term is &lt;span class=&#34;math inline&#34;&gt;\(\bar{Y}\)&lt;/span&gt;, the second is &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_0}\)&lt;/span&gt;, the third is &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\bar{X}\)&lt;/span&gt;.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So we can rewrite as:
+&lt;span class=&#34;math display&#34;&gt;\[\bar{Y}-\hat{\beta_0}-\beta_1=0\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Rearranging:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_0}=\bar{Y}-\bar{X}\beta_1\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;finding-hatbeta_1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Finding &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;To find &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt;, take the second FOC and divide by &lt;span class=&#34;math inline&#34;&gt;\(-2\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\displaystyle\sum^n_{i=1} (Y_i-\hat{\beta_0}-\hat{\beta_1} X_i)X_i=0\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From the formula for &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_0}\)&lt;/span&gt;, substitute in for &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_0}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\displaystyle\sum^n_{i=1} \bigg(Y_i-[\bar{Y}-\hat{\beta_1}\bar{X}]-\hat{\beta_1} X_i\bigg)X_i=0\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Combining similar terms:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\displaystyle\sum^n_{i=1} \bigg([Y_i-\bar{Y}]-[X_i-\bar{X}]\hat{\beta_1}\bigg)X_i=0\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Distribute &lt;span class=&#34;math inline&#34;&gt;\(X_i\)&lt;/span&gt; and expand terms into the subtraction of two sums (and pull out &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt; as a constant in the second sum:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\displaystyle\sum^n_{i=1} [Y_i-\bar{Y}]X_i-\hat{\beta_1}\displaystyle\sum^n_{i=1}[X_i-\bar{X}]X_i=0\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Move the second term to the righthand side:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\displaystyle\sum^n_{i=1} [Y_i-\bar{Y}]X_i=\hat{\beta_1}\displaystyle\sum^n_{i=1}[X_i-\bar{X}]X_i\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Divide to keep just &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt; on the right:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\frac{\displaystyle\sum^n_{i=1} [Y_i-\bar{Y}]X_i}{\displaystyle\sum^n_{i=1}[X_i-\bar{X}]X_i}=\hat{\beta_1}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Note that from the &lt;a href=&#34;https://metricsf19.classes.ryansafner.com/class/07-class/#the-summation-operatorproperties&#34;&gt;rules about summation operators&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\displaystyle\sum^n_{i=1} [Y_i-\bar{Y}]X_i=\displaystyle\sum^n_{i=1} (Y_i-\bar{Y})(X_i-\bar{X})\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\displaystyle\sum^n_{i=1} [X_i-\bar{X}]X_i=\displaystyle\sum^n_{i=1} (X_i-\bar{X})(X_i-\bar{X})=\displaystyle\sum^n_{i=1}(X_i-\bar{X})^2\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Plug in these two facts:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\frac{\displaystyle\sum^n_{i=1} (Y_i-\bar{Y})(X_i-\bar{X})}{\displaystyle\sum^n_{i=1}(X_i-\bar{X})^2}=\hat{\beta_1}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;algebraic-properties-of-ols-estimators&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Algebraic Properties of OLS Estimators&lt;/h3&gt;
+&lt;p&gt;The OLS residuals &lt;span class=&#34;math inline&#34;&gt;\(\hat{u}\)&lt;/span&gt; and predicted values &lt;span class=&#34;math inline&#34;&gt;\(\hat{Y}\)&lt;/span&gt; are chosen by the minimization problem to satisfy:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;The expected value (average) error is 0:
+&lt;span class=&#34;math display&#34;&gt;\[E(u_i)=\frac{1}{n}\displaystyle \sum_{i=1}^n \hat{u_i}=0\]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The covariance between &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and the errors is 0:
+&lt;span class=&#34;math display&#34;&gt;\[\hat{\sigma}_{X,u}=0\]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note the first two properties imply strict &lt;strong&gt;exogeneity&lt;/strong&gt;. That is, this is only a valid model if &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(u\)&lt;/span&gt; are not correlated.&lt;/p&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;The expected predicted value of &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; is equal to the expected value of &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[\bar{\hat{Y}}=\frac{1}{n} \displaystyle\sum_{i=1}^n \hat{Y_i} = \bar{Y}\]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Total sum of squares is equal to the explained sum of squares plus sum of squared errors:
+&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}TSS&amp;amp;=ESS+SSE\\
+\sum_{i=1}^n (Y_i-\bar{Y})^2&amp;amp;=\sum_{i=1}^n (\hat{Y_i}-\bar{Y})^2 + \sum_{i=1}^n {u}^2\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Recall &lt;span class=&#34;math inline&#34;&gt;\(R^2\)&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;\(\frac{ESS}{TSS}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(1-SSE\)&lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The regression line passes through the point &lt;span class=&#34;math inline&#34;&gt;\((\bar{X},\bar{Y})\)&lt;/span&gt;, i.e. the mean of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and the mean of &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bias-in-hatbeta_1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bias in &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;Begin with the formula we derived for &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\frac{\displaystyle \sum^n_{i=1} (Y_i-\bar{Y})(X_i-\bar{X})}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Recall from &lt;strong&gt;Rule 6&lt;/strong&gt; of summations, we can rewrite the numerator as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    =&amp;amp;\displaystyle \sum^n_{i=1} (Y_i-\bar{Y})(X_i-\bar{X})\\
+    =&amp;amp; \displaystyle \sum^n_{i=1} Y_i(X_i-\bar{X})\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\frac{\displaystyle \sum^n_{i=1} Y_i(X_i-\bar{X})}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We know the true population relationship is expressed as:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Y_i=\beta_0+\beta_1 X_i+u_i\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituting this in for &lt;span class=&#34;math inline&#34;&gt;\(Y_i\)&lt;/span&gt; in equation 2:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\frac{\displaystyle \sum^n_{i=1} (\beta_0+\beta_1X_i+u_i)(X_i-\bar{X})}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2}\]&lt;/span&gt;
+Breaking apart the sums in the numerator:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\frac{\displaystyle \sum^n_{i=1} \beta_0(X_i-\bar{X})+\displaystyle \sum^n_{i=1} \beta_1X_i(X_i-\bar{X})+\displaystyle \sum^n_{i=1} u_i(X_i-\bar{X})}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We can simplify equation 4 using &lt;strong&gt;Rules 4 and 5&lt;/strong&gt; of summations&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The first term in the numerator &lt;span class=&#34;math inline&#34;&gt;\(\left[\displaystyle \sum^n_{i=1} \beta_0(X_i-\bar{X})\right]\)&lt;/span&gt; has the constant &lt;span class=&#34;math inline&#34;&gt;\(\beta_0\)&lt;/span&gt;, which can be pulled out of the summation. This gives us the summation of deviations, which add up to 0 as per &lt;strong&gt;Rule 4&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\displaystyle \sum^n_{i=1} \beta_0(X_i-\bar{X})&amp;amp;= \beta_0 \displaystyle \sum^n_{i=1} (X_i-\bar{X})\\
+&amp;amp;=\beta_0 (0)\\
+&amp;amp;=0\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The second term in the numerator &lt;span class=&#34;math inline&#34;&gt;\(\left[\displaystyle \sum^n_{i=1} \beta_1X_i(X_i-\bar{X})\right]\)&lt;/span&gt; has the constant &lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt;, which can be pulled out of the summation. Additionally, &lt;strong&gt;Rule 5&lt;/strong&gt; tells us &lt;span class=&#34;math inline&#34;&gt;\(\displaystyle \sum^n_{i=1} X_i(X_i-\bar{X})=\displaystyle \sum^n_{i=1}(X_i-\bar{X})^2\)&lt;/span&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\displaystyle \sum^n_{i=1} \beta_1X_1(X_i-\bar{X})&amp;amp;= \beta_1 \displaystyle \sum^n_{i=1} X_i(X_i-\bar{X})\\
+&amp;amp;=\beta_1\displaystyle \sum^n_{i=1}(X_i-\bar{X})^2\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;When placed back in the context of being the numerator of a fraction, we can see this term simplifies to just &lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    \frac{\beta_1\displaystyle \sum^n_{i=1}(X_i-\bar{X})^2}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2} &amp;amp;=\frac{\beta_1}{1} \times \frac{\displaystyle \sum^n_{i=1}(X_i-\bar{X})^2}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2}\\
+    &amp;amp;=\beta_1   \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Thus, we are left with:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\beta_1+\frac{\displaystyle \sum^n_{i=1} u_i(X_i-\bar{X})}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now, take the expectation of both sides:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E[\hat{\beta_1}]=E\left[\beta_1+\frac{\displaystyle \sum^n_{i=1} u_i(X_i-\bar{X})}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2} \right]\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We can break this up, using properties of expectations. First, recall &lt;span class=&#34;math inline&#34;&gt;\(E[a+b]=E[a]+E[b]\)&lt;/span&gt;, so we can break apart the two terms.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E[\hat{\beta_1}]=E[\beta_1]+E\left[\frac{\displaystyle \sum^n_{i=1} u_i(X_i-\bar{X})}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2} \right]\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Second, the true population value of &lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt; is a constant, so &lt;span class=&#34;math inline&#34;&gt;\(E[\beta_1]=\beta_1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Third, since we assume &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is also “fixed” and not random, the variance of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\displaystyle\sum_{i=1}^n (X_i-\bar{X})\)&lt;/span&gt;, in the denominator, is just a constant, and can be brought outside the expectation.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E[\hat{\beta_1}]=\beta_1+\frac{E\left[\displaystyle \sum^n_{i=1} u_i(X_i-\bar{X})\right]  }{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Thus, the properties of the equation are primarily driven by the expectation &lt;span class=&#34;math inline&#34;&gt;\(E\bigg[\displaystyle \sum^n_{i=1} u_i(X_i-\bar{X})\bigg]\)&lt;/span&gt;. We now turn to this term.&lt;/p&gt;
+&lt;p&gt;Use the property of summation operators to expand the numerator term:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    \hat{\beta_1}&amp;amp;=\beta_1+\frac{\displaystyle \sum^n_{i=1} u_i(X_i-\bar{X})}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2} \\
+        \hat{\beta_1}&amp;amp;=\beta_1+\frac{\displaystyle \sum^n_{i=1} (u_i-\bar{u})(X_i-\bar{X})}{\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now divide the numerator and denominator of the second term by &lt;span class=&#34;math inline&#34;&gt;\(\frac{1}{n}\)&lt;/span&gt;. Realize this gives us the covariance between &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(u\)&lt;/span&gt; in the numerator and variance of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; in the denominator, based on their respective definitions.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+    \hat{\beta_1}&amp;amp;=\beta_1+\cfrac{\frac{1}{n}\displaystyle \sum^n_{i=1} (u_i-\bar{u})(X_i-\bar{X})}{\frac{1}{n}\displaystyle\sum^n_{i=1} (X_i-\bar{X})^2} \\
+    \hat{\beta_1}&amp;amp;=\beta_1+\cfrac{cov(X,u)}{var(X)} \\
+    \hat{\beta_1}&amp;amp;=\beta_1+\cfrac{s_{X,u}}{s_X^2} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;By the Zero Conditional Mean assumption of OLS, &lt;span class=&#34;math inline&#34;&gt;\(s_{X,u}=0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Alternatively, we can express the bias in terms of correlation instead of covariance:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E[\hat{\beta_1}]=\beta_1+\cfrac{cov(X,u)}{var(X)}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From the definition of correlation:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+     cor(X,u)&amp;amp;=\frac{cov(X,u)}{s_X s_u}\\
+     cor(X,u)s_Xs_u &amp;amp;=cov(X,u)\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Plugging this in:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+E[\hat{\beta_1}]&amp;amp;=\beta_1+\frac{cov(X,u)}{var(X)} \\
+E[\hat{\beta_1}]&amp;amp;=\beta_1+\frac{\big[cor(X,u)s_xs_u\big]}{s^2_X} \\
+E[\hat{\beta_1}]&amp;amp;=\beta_1+\frac{cor(X,u)s_u}{s_X} \\
+E[\hat{\beta_1}]&amp;amp;=\beta_1+cor(X,u)\frac{s_u}{s_X} \\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;proof-of-the-unbiasedness-of-hatbeta_1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Proof of the Unbiasedness of &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;Begin with equation:&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\frac{\sum Y_iX_i}{\sum X_i^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substitute for &lt;span class=&#34;math inline&#34;&gt;\(Y_i\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\frac{\sum (\beta_1 X_i+u_i)X_i}{\sum X_i^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Distribute &lt;span class=&#34;math inline&#34;&gt;\(X_i\)&lt;/span&gt; in the numerator:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\frac{\sum \beta_1 X_i^2+u_iX_i}{\sum X_i^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Separate the sum into additive pieces:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\frac{\sum \beta_1 X_i^2}{\sum X_i^2}+\frac{u_i X_i}{\sum X_i^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt; is constant, so we can pull it out of the first sum:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\beta_1 \frac{\sum X_i^2}{\sum X_i^2}+\frac{u_i X_i}{\sum X_i^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Simplifying the first term, we are left with:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{\beta_1}=\beta_1 +\frac{u_i X_i}{\sum X_i^2}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now if we take expectations of both sides:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E[\hat{\beta_1}]=E[\beta_1] +E\left[\frac{u_i X_i}{\sum X_i^2}\right]\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt; is a constant, so the expectation of &lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt; is itself.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E[\hat{\beta_1}]=\beta_1 +E\bigg[\frac{u_i X_i}{\sum X_i^2}\bigg]\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Using the properties of expectations, we can pull out &lt;span class=&#34;math inline&#34;&gt;\(\frac{1}{\sum X_i^2}\)&lt;/span&gt; as a constant:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E[\hat{\beta_1}]=\beta_1 +\frac{1}{\sum X_i^2} E\bigg[\sum u_i X_i\bigg]\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Again using the properties of expectations, we can put the expectation inside the summation operator (the expectation of a sum is the sum of expectations):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E[\hat{\beta_1}]=\beta_1 +\frac{1}{\sum X_i^2}\sum E[u_i X_i]\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Under the exogeneity condition, the correlation between &lt;span class=&#34;math inline&#34;&gt;\(X_i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(u_i\)&lt;/span&gt; is 0.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E[\hat{\beta_1}]=\beta_1\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Note this is a &lt;code&gt;.dta&lt;/code&gt; Stata file. You will need to (install and) load the package &lt;code&gt;haven&lt;/code&gt; to &lt;code&gt;read_dta()&lt;/code&gt; Stata files into a dataframe.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;From the &lt;a href=&#34;https://metricsf19.classes.ryansafner.com/class/07-class/#the-summation-operator&#34;&gt;rules about summation operators&lt;/a&gt;, we define the mean of a random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; as &lt;span class=&#34;math inline&#34;&gt;\(\bar{X}=\frac{1}{n}\displaystyle\sum_{i=1}^n X_i\)&lt;/span&gt;. The mean of a constant, like &lt;span class=&#34;math inline&#34;&gt;\(\beta_0\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt; is itself.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Admittedly, this is a simplified version where &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_0}=0\)&lt;/span&gt;, but there is no loss of generality in the results.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2.5 — OLS: Precision and Diagnostics — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/2.5-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/2.5-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-practice&#34;&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-2-answers&#34;&gt;Problem Set 2 Answers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#new-packages-mentioned&#34;&gt;New Packages Mentioned&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#appendix&#34;&gt;Appendix&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#robust-standard-errors-in-r&#34;&gt;Robust Standard Errors in R&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;em&gt;Thursday, September 23, 2021&lt;/em&gt; and &lt;em&gt;Tuesday, September 28, 2021&lt;/em&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Note: there is a video posted on Blackboard for the Thursday September 23 lecture.
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/02-problem-set&#34;&gt;Problem Set 2&lt;/a&gt; answers are posted on that page.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Last class and this class we are looking at the &lt;em&gt;sampling distibution&lt;/em&gt; of OLS estimators (particularly &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1})\)&lt;/span&gt;. Last class we looked at what the &lt;em&gt;center&lt;/em&gt; of the distribution was - the true &lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt; - so long as the assumptions about &lt;span class=&#34;math inline&#34;&gt;\(u\)&lt;/span&gt; hold:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When &lt;span class=&#34;math inline&#34;&gt;\(cor(X,u)=0\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is &lt;em&gt;exogenous&lt;/em&gt; and the OLS estimators are &lt;em&gt;unbiased&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;What &lt;span class=&#34;math inline&#34;&gt;\(cor(X,u)\neq 0\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is &lt;em&gt;endogenous&lt;/em&gt; and the OLS estimators are &lt;em&gt;biased&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Today we continue looking at the &lt;em&gt;sampling distibution&lt;/em&gt; by determining the variation in &lt;span class=&#34;math inline&#34;&gt;\(\hat{beta_1}\)&lt;/span&gt; (it’s variance or its standard error&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;). We look at the formula and see the three major determinants of variation in &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Goodness of fit of the regression &lt;span class=&#34;math inline&#34;&gt;\((SER\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(\hat{\sigma_u}\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Sample size &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Variation in &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We also look at the diagnostics of a regression by looking at its residuals &lt;span class=&#34;math inline&#34;&gt;\((\hat{u_i})\)&lt;/span&gt; for anomalies. We focus on the problem of &lt;em&gt;heteroskedasticity&lt;/em&gt; (where the variation in &lt;span class=&#34;math inline&#34;&gt;\(\hat{u_i])\)&lt;/span&gt; changes over the range of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, which violates assumption 2 (errors are homoskedastic): how to detect it, test it, and fix it with some packages. We also look at outliers, which can bias the regression. Finally, we also look at how to present regression results.&lt;/p&gt;
+&lt;p&gt;We continue the extended example about class sizes and test scores, which comes from a (Stata) dataset from an old textbook that I used to use, &lt;a href=&#34;https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-Update-3rd-Edition/9780133486872.html?tab=resources&#34;&gt;Stock and Watson, 2007&lt;/a&gt;. Download and follow along with the data from today’s example:&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://metricsf21.classes.ryansafner.com/data/caschool.dta&#34;&gt;&lt;i class=&#34;fas fa-table&#34;&gt;&lt;/i&gt; &lt;code&gt;caschool.dta&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have also made a RStudio Cloud project documenting all of the things we have been doing with this data that may help you when you start working with regressions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio.cloud/spaces/163934/project/2940189&#34;&gt;&lt;i class=&#34;fas fa-cloud&#34;&gt;&lt;/i&gt; Class Size Regression Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Finish Ch.3 in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.5-slides.html&#34;&gt;&lt;img src =&#34;/slides/2.5-slides.png&#34; alt = &#34;2.5-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.5-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-practice&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/h2&gt;
+&lt;p&gt;Today you will be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/2.5-r&#34;&gt;R practice problems&lt;/a&gt; on regression. Answers will be posted later on that page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-2-answers&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 2 Answers&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/02-problem-set&#34;&gt;Problem Set 2&lt;/a&gt; answers are posted on that page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;new-packages-mentioned&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;New Packages Mentioned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;broom&lt;/code&gt;: for tidy regression outputs, summary statistics, and adding &lt;span class=&#34;math inline&#34;&gt;\(\hat{Y_i}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat{u_i}\)&lt;/span&gt; into the dataframe&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;huxtable&lt;/code&gt;: to present regression output in a table with &lt;code&gt;huxreg()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lmtest&lt;/code&gt;: for testing for heteroskedasticity in errors with &lt;code&gt;bptest()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;car&lt;/code&gt;: for testing for outliers with &lt;code&gt;outlierTest()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;estimatr&lt;/code&gt;: for calculating robust standard errors with &lt;code&gt;lm_robust()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;appendix&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Appendix&lt;/h2&gt;
+&lt;div id=&#34;robust-standard-errors-in-r&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Robust Standard Errors in R&lt;/h3&gt;
+&lt;p&gt;This, since I started using &lt;code&gt;huxtable&lt;/code&gt; instead of another package (&lt;code&gt;stargazer&lt;/code&gt;) to make regression tables, I have gone all in on &lt;code&gt;estimatr&lt;/code&gt;’s &lt;code&gt;lm_robust()&lt;/code&gt; option to calculate robust standard errors. Before this, there were some other methods that I had to resort to. You can read about that in &lt;a href=&#34;http://ryansafner.com/post/replicating-statas-robust-option-for-ols-standard-errors-in-r&#34;&gt;this blog post&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;The square root of variance, as always!&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Note this is a &lt;code&gt;.dta&lt;/code&gt; Stata file. You will need to (install and) load the package &lt;code&gt;haven&lt;/code&gt; to &lt;code&gt;read_dta()&lt;/code&gt; Stata files into a dataframe.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>

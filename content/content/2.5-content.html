@@ -1,0 +1,113 @@
+---
+title: "2.5 — OLS: Precision and Diagnostics — Class Content"
+draft: false
+linktitle: "2.5 — OLS: Precision & Diagnostics"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 11
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.5-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#problem-set-2-answers">Problem Set 2 Answers</a></li>
+</ul></li>
+<li><a href="#new-packages-mentioned">New Packages Mentioned</a></li>
+<li><a href="#appendix">Appendix</a>
+<ul>
+<li><a href="#robust-standard-errors-in-r">Robust Standard Errors in R</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Thursday, September 23, 2021</em> and <em>Tuesday, September 28, 2021</em></p>
+<p>Note: there is a video posted on Blackboard for the Thursday September 23 lecture.
+{{% /alert %}}</p>
+<p>{{% alert warning %}}
+<a href="/assignments/02-problem-set">Problem Set 2</a> answers are posted on that page.
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Last class and this class we are looking at the <em>sampling distibution</em> of OLS estimators (particularly <span class="math inline">\(\hat{\beta_1})\)</span>. Last class we looked at what the <em>center</em> of the distribution was - the true <span class="math inline">\(\beta_1\)</span> - so long as the assumptions about <span class="math inline">\(u\)</span> hold:</p>
+<ul>
+<li>When <span class="math inline">\(cor(X,u)=0\)</span>, <span class="math inline">\(X\)</span> is <em>exogenous</em> and the OLS estimators are <em>unbiased</em>.</li>
+<li>What <span class="math inline">\(cor(X,u)\neq 0\)</span>, <span class="math inline">\(X\)</span> is <em>endogenous</em> and the OLS estimators are <em>biased</em>.</li>
+</ul>
+<p>Today we continue looking at the <em>sampling distibution</em> by determining the variation in <span class="math inline">\(\hat{beta_1}\)</span> (it’s variance or its standard error<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>). We look at the formula and see the three major determinants of variation in <span class="math inline">\(\hat{\beta_1}\)</span>:</p>
+<ol style="list-style-type: decimal">
+<li>Goodness of fit of the regression <span class="math inline">\((SER\)</span> or <span class="math inline">\(\hat{\sigma_u}\)</span></li>
+<li>Sample size <span class="math inline">\(n\)</span></li>
+<li>Variation in <span class="math inline">\(X\)</span></li>
+</ol>
+<p>We also look at the diagnostics of a regression by looking at its residuals <span class="math inline">\((\hat{u_i})\)</span> for anomalies. We focus on the problem of <em>heteroskedasticity</em> (where the variation in <span class="math inline">\(\hat{u_i])\)</span> changes over the range of <span class="math inline">\(X\)</span>, which violates assumption 2 (errors are homoskedastic): how to detect it, test it, and fix it with some packages. We also look at outliers, which can bias the regression. Finally, we also look at how to present regression results.</p>
+<p>We continue the extended example about class sizes and test scores, which comes from a (Stata) dataset from an old textbook that I used to use, <a href="https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-Update-3rd-Edition/9780133486872.html?tab=resources">Stock and Watson, 2007</a>. Download and follow along with the data from today’s example:<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<ul>
+<li><a href="http://metricsf21.classes.ryansafner.com/data/caschool.dta"><i class="fas fa-table"></i> <code>caschool.dta</code></a></li>
+</ul>
+<p>I have also made a RStudio Cloud project documenting all of the things we have been doing with this data that may help you when you start working with regressions:</p>
+<ul>
+<li><a href="https://rstudio.cloud/spaces/163934/project/2940189"><i class="fas fa-cloud"></i> Class Size Regression Analysis</a></li>
+</ul>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Finish Ch.3 in Bailey, <em>Real Econometrics</em></li>
+</ul>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="r-practice" class="section level2">
+<h2><i class="fas fa-registered"></i> R Practice</h2>
+<p>Today you will be working on <a href="/r/2.5-r">R practice problems</a> on regression. Answers will be posted later on that page.</p>
+</div>
+<div id="assignments" class="section level2">
+<h2><i class="fas fa-laptop-code"></i> Assignments</h2>
+<div id="problem-set-2-answers" class="section level3">
+<h3>Problem Set 2 Answers</h3>
+<p><a href="/assignments/02-problem-set">Problem Set 2</a> answers are posted on that page.</p>
+</div>
+</div>
+<div id="new-packages-mentioned" class="section level2">
+<h2>New Packages Mentioned</h2>
+<ul>
+<li><code>broom</code>: for tidy regression outputs, summary statistics, and adding <span class="math inline">\(\hat{Y_i}\)</span> and <span class="math inline">\(\hat{u_i}\)</span> into the dataframe</li>
+<li><code>huxtable</code>: to present regression output in a table with <code>huxreg()</code></li>
+<li><code>lmtest</code>: for testing for heteroskedasticity in errors with <code>bptest()</code></li>
+<li><code>car</code>: for testing for outliers with <code>outlierTest()</code></li>
+<li><code>estimatr</code>: for calculating robust standard errors with <code>lm_robust()</code></li>
+</ul>
+</div>
+<div id="appendix" class="section level2">
+<h2>Appendix</h2>
+<div id="robust-standard-errors-in-r" class="section level3">
+<h3>Robust Standard Errors in R</h3>
+<p>This, since I started using <code>huxtable</code> instead of another package (<code>stargazer</code>) to make regression tables, I have gone all in on <code>estimatr</code>’s <code>lm_robust()</code> option to calculate robust standard errors. Before this, there were some other methods that I had to resort to. You can read about that in <a href="http://ryansafner.com/post/replicating-statas-robust-option-for-ols-standard-errors-in-r">this blog post</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The square root of variance, as always!<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Note this is a <code>.dta</code> Stata file. You will need to (install and) load the package <code>haven</code> to <code>read_dta()</code> Stata files into a dataframe.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

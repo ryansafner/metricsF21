@@ -55,6 +55,9 @@ lessons:
     slides: "2.4-slides"
 
   - title: "2.5 — OLS: Precision and Diagnostics"
+    content: "2.5-content"
+    slides: "2.5-slides"
+    r: "2.5-r"
 
   - title: "2.6 — Statistical Inference"
 

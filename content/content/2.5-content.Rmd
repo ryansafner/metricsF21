@@ -1,0 +1,83 @@
+---
+title: "2.5 — OLS: Precision and Diagnostics — Class Content"
+draft: false
+linktitle: "2.5 — OLS: Precision & Diagnostics"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 11
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.5-slides"
+---
+
+{{% alert note %}}
+*Thursday, September 23, 2021* and *Tuesday, September 28, 2021*
+
+Note: there is a video posted on Blackboard for the Thursday September 23 lecture.
+{{% /alert %}}
+
+{{% alert warning %}}
+[Problem Set 2](/assignments/02-problem-set) answers are posted on that page.
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Last class and this class we are looking at the *sampling distibution* of OLS estimators (particularly $\hat{\beta_1})$. Last class we looked at what the *center* of the distribution was - the true $\beta_1$ - so long as the assumptions about $u$ hold:
+
+- When $cor(X,u)=0$, $X$ is *exogenous* and the OLS estimators are *unbiased*.
+- What $cor(X,u)\neq 0$, $X$ is *endogenous* and the OLS estimators are *biased*.
+
+Today we continue looking at the *sampling distibution* by determining the variation in $\hat{beta_1}$ (it's variance or its standard error^[The square root of variance, as always!]). We look at the formula and see the three major determinants of variation in $\hat{\beta_1}$:
+
+1. Goodness of fit of the regression $(SER$ or $\hat{\sigma_u}$
+2. Sample size $n$
+3. Variation in $X$
+
+We also look at the diagnostics of a regression by looking at its residuals $(\hat{u_i})$ for anomalies. We focus on the problem of *heteroskedasticity* (where the variation in $\hat{u_i])$ changes over the range of $X$, which violates assumption 2 (errors are homoskedastic): how to detect it, test it, and fix it with some packages. We also look at outliers, which can bias the regression. Finally, we also look at how to present regression results. 
+
+We continue the extended example about class sizes and test scores, which comes from a (Stata) dataset from an old textbook that I used to use, [Stock and Watson, 2007](https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-Update-3rd-Edition/9780133486872.html?tab=resources). Download and follow along with the data from today's example:^[Note this is a `.dta` Stata file. You will need to (install and) load the package `haven` to `read_dta()` Stata files into a dataframe.]
+
+- [<i class="fas fa-table"></i> `caschool.dta`](http://metricsf21.classes.ryansafner.com/data/caschool.dta)
+
+I have also made a RStudio Cloud project documenting all of the things we have been doing with this data that may help you when you start working with regressions:
+
+- [<i class="fas fa-cloud"></i> Class Size Regression Analysis](https://rstudio.cloud/spaces/163934/project/2940189)
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Finish Ch.3 in Bailey, *Real Econometrics*
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`
+
+## <i class="fas fa-registered"></i> R Practice
+
+Today you will be working on [R practice problems](/r/2.5-r) on regression. Answers will be posted later on that page.
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Problem Set 2 Answers
+[Problem Set 2](/assignments/02-problem-set) answers are posted on that page.
+
+## New Packages Mentioned
+
+- `broom`: for tidy regression outputs, summary statistics, and adding $\hat{Y_i}$ and $\hat{u_i}$ into the dataframe
+- `huxtable`: to present regression output in a table with `huxreg()`
+- `lmtest`: for testing for heteroskedasticity in errors with `bptest()`
+- `car`: for testing for outliers with `outlierTest()`
+- `estimatr`: for calculating robust standard errors with `lm_robust()`
+
+## Appendix
+
+### Robust Standard Errors in R
+
+This, since I started using `huxtable` instead of another package (`stargazer`) to make regression tables, I have gone all in on `estimatr`'s `lm_robust()` option to calculate robust standard errors. Before this, there were some other methods that I had to resort to. You can read about that in [this blog post](http://ryansafner.com/post/replicating-statas-robust-option-for-ols-standard-errors-in-r).
