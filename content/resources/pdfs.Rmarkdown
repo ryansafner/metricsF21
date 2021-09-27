@@ -4,14 +4,16 @@ draft: false
 linktitle: How to Make a PDF
 menu:
   resources:
-    parent: Guides
+    parent: Computing Guides
 title: How to Make a PDF
 toc: true
 type: docs
 weight: 2
----
+output:
+  blogdown::html_page:
+    toc: true
 
-# How to Make a PDF (For Submitting Assignments)
+---
 
 ## Using an App on Your Phone
 

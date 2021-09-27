@@ -8,7 +8,10 @@ menu:
 title: ggplot2 Extensions
 toc: true
 type: docs
-weight: 2
+weight: 4
+output:
+  blogdown::html_page:
+    toc: true
 ---
 
 ## Extensions to ggplot2

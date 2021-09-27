@@ -4,11 +4,15 @@ draft: false
 linktitle: Unzipping Files
 menu:
   resources:
-    parent: Guides
+    parent: Computing Guides
 title: Unzipping Files
 toc: true
 type: docs
 weight: 3
+output:
+  blogdown::html_page:
+    toc: true
+
 ---
 
 Since R projects typically consist of multiple files (R scripts, datasets, images, etc.) the easiest way to distribute and send them is to combine all the different files in to a single compressed `.zip` file. When you unzip a `.zip` file, your computer extracts all the files contained inside to a new folder on your computer.

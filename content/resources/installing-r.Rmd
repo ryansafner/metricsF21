@@ -19,7 +19,7 @@ We will do all of our work in this course with the free & open source programmin
 
 You will need to install *both*, but we will ever only open `R Studio.`
 
-## Installing `R`
+## Installing R
 
 First you will need to download and install `R` on your computer.
 

@@ -8,7 +8,11 @@ menu:
 title: R Packages We Use
 toc: true
 type: docs
-weight: 2
+weight: 3
+output:
+  blogdown::html_page:
+    toc: false
+
 ---
 
 The following is a compendium of all R packages used in this course (in order of appearance), their main uses, and what we use them for^[Note, many of these packages have multiple uses beyond our purposes!]. Each package name below is a **link** to the package's website and/or documentation.
