@@ -15,7 +15,7 @@ slides: "2.5-slides"
 ---
 
 {{% alert note %}}
-*Thursday, September 23, 2021* and *Tuesday, September 28, 2021*
+*Thursday, September 23, 2021* and *Tuesday, September 28, 2021* (for [R Practice](/r/2.5-r))
 
 Note: there is a video posted on Blackboard for the Thursday September 23 lecture.
 {{% /alert %}}

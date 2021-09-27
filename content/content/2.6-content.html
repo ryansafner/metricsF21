@@ -1,0 +1,273 @@
+---
+title: "2.6 — Statistical Inference — Class Content"
+draft: false
+linktitle: "2.6 — Statistical Inference"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 12
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "2.6-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#problem-set-3-due-thurs-oct-7">Problem Set 3 Due Thurs Oct 7</a></li>
+</ul></li>
+<li><a href="#new-packages-mentioned">New Packages Mentioned</a></li>
+<li><a href="#appendix">Appendix</a>
+<ul>
+<li><a href="#differences-between-what-we-learned-in-class-and-classical-statistics">Differences Between What We Learned in Class and Classical Statistics</a></li>
+<li><a href="#inferential-statistics-basics">Inferential Statistics Basics</a></li>
+<li><a href="#the-central-limit-theorem">The Central Limit Theorem</a></li>
+<li><a href="#if-we-dont-know-sigma-the-students-t-distribution">If We Don’t Know <span class="math inline">\(\sigma\)</span>: The Student’s <span class="math inline">\(t\)</span>-Distribution</a></li>
+<li><a href="#confidence-intervals">Confidence Intervals</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Tuesday, September 28, 2021</em>
+{{% /alert %}}</p>
+<p>{{% alert warning %}}
+<a href="/assignments/03-problem-set">Problem Set 3</a> is due by the end of the day Thursday, October 7.
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>We begin with some more time for you to work on the <a href="/r/2.5-r">R Practice</a> from last class.</p>
+<p>This week is about inferential statistics: using <em>statistics</em> calculated from a <em>sample</em> of data to <strong>infer</strong> the true (and unmeasurable) <em>parameters</em> that describe a <em>population.</em> In doing so, we can run <em>hypothesis tests</em> on our sample to determine a <em>point</em> estimate of a parameter, or construct a <em>confidence interval</em> from our sample to cast a range for the true parameter.</p>
+<p>This is standard principles of statistics - you hopefully should have learned it before. If it has been a while (or never) since your last statistics class, this is one of the hardest concepts to understand at first glance. I recommend <a href="https://www.khanacademy.org/math/statistics-probability">Khan Academy</a> [From sampling distributions through significance tests, for this. Though the whole class is helpful!] or Google for these concepts, as <em>every</em> statistics class will cover them in the standard way.</p>
+<p>That being said, I <em>do not</em> cover inferential statistics in the standard way (see the <a href="#Appendix">appendix</a> today below for an overview of the standard way). I think it will be more intuitive if I <em>show</em> you where these concepts come from by <em>simulating</em> a sampling distribution, as opposed to reciting the theoretical sampling distributions.</p>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Ch.4 in Bailey, <em>Real Econometrics</em></li>
+<li><a href="https://moderndive.netlify.com/10-inference-for-regression.html"><i class="fas fa-external-link-square-alt"></i> Ch. 10 (optionally 8-9) in <em>Modern Dive</em></a></li>
+<li><a href="https://seeing-theory.brown.edu/frequentist-inference/index.html"><i class="fas fa-external-link-square-alt"></i> Visualizing Probability and Inference</a></li>
+</ul>
+<p>Bailey teaches inferential statistics in the classical way (with reference to theoretical <span class="math inline">\(Z\)</span> and <span class="math inline">\(t\)</span> distributions, and <span class="math inline">\(Z\)</span> and <span class="math inline">\(t\)</span> tests). This is all valid. Again, you may wish to brush up with <a href="https://www.khanacademy.org/math/statistics-probability">Khan Academy</a> [From sampling distributions through significance tests, for this. Though the whole class is helpful!].</p>
+<p>The latter “book” (also free online, like R4DS) uses the <code>infer</code> package to run simulations for inferential statistics. Chapter 10 is focused on regression (but I also recommend the chapters leading up to it, which are on inferential statistics broadly, using this method).</p>
+<p>The final link is a great website for visualizing basic statistic concepts like probability, distributions, confidence intervals, hypothesis tests, central limit theorem, and regression.</p>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="r-practice" class="section level2">
+<h2><i class="fas fa-registered"></i> R Practice</h2>
+<p>Today you will be working on <a href="/r/2.5-r">R practice problems</a> on regression. Answers will be posted later on that page.</p>
+</div>
+<div id="assignments" class="section level2">
+<h2><i class="fas fa-laptop-code"></i> Assignments</h2>
+<div id="problem-set-3-due-thurs-oct-7" class="section level3">
+<h3>Problem Set 3 Due Thurs Oct 7</h3>
+<p><a href="/assignments/03-problem-set">Problem Set 3</a> is due by the end of the day on Thursday, October 7.</p>
+</div>
+</div>
+<div id="new-packages-mentioned" class="section level2">
+<h2>New Packages Mentioned</h2>
+<ul>
+<li><code>infer</code>: for simulation for statistical inference</li>
+</ul>
+</div>
+<div id="appendix" class="section level2">
+<h2>Appendix</h2>
+<div id="differences-between-what-we-learned-in-class-and-classical-statistics" class="section level3">
+<h3>Differences Between What We Learned in Class and Classical Statistics</h3>
+<p>In class, you learned the basics behind inferential statistics–p-values, confidence intervals, hypothesis testing–via <em>empirical simulation</em> of many samples permuted from our existing data. We took our sample, ran 1,000 simulations by permutation of our sample without replacement<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, calculated the statistic (<span class="math inline">\(\hat{\beta}_0\)</span>, the slope) of each simulation; this gave us a (sampling) distribution of our sample statistics, and then found the probability on that distribution that we would observe our <em>actual</em> statistic in our actual data – this is the <span class="math inline">\(p\)</span>-value.</p>
+<p>Classically, before the use of computers that could run and visualize 1,000s of simulations within seconds,<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> inferential statistics was taught using <em>theoretical</em> distributions. <strong>Essentially, we calculate a test-statistic by normalizing our finding against a theoretical (null) sampling distribution of our sample statistic, and find p-values by estimating the probability of observing that statistic on that theoretical distribution.</strong> These distributions are almost always <em>normal</em> or <em>normal-like</em> distributions. The distribution that we almost always use in econometrics is the (Student’s) <span class="math inline">\(t\)</span>-distribution.</p>
+<p>Furthermore, testing the null hypothesis <span class="math inline">\(H_0: \,\beta_1=0\)</span>, is not the only type of hypothesis test, nor is the slope the only statistic we can test. In fact, there are many different types of hypothesis tests that are well-known and well-used, we focused entirely on regression (since that is the largest tool of the course).</p>
+<p>This appendix will give you more background on the theory of inferential statistics, and is more in line with what you may have learned in earlier statistics courses.</p>
+</div>
+<div id="inferential-statistics-basics" class="section level3">
+<h3>Inferential Statistics Basics</h3>
+<p>It is important to remember several statistical distributions, tools, and facts. Most of them have to do with the <strong>normal distribution</strong>. If <span class="math inline">\(X\)</span> is normally distributed with mean <span class="math inline">\(\mu\)</span> and standard deviation <span class="math inline">\(\sigma\)</span>:</p>
+<p><span class="math display">\[X \sim N(\mu, \sigma)\]</span></p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+## ✓ tibble  3.1.4     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+## ✓ readr   2.0.0     ✓ forcats 0.5.1</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code># plot a theoretical normal distribution without any data
+
+# our &quot;geom&quot; here is the &quot;stat_function()&quot; command, which draws statistical functions
+
+normal.pdf &lt;- ggplot(data = data.frame(x = -4:4), # our &quot;data&quot; is just a sequence of x from -4 to 4
+                     aes(x = x))+
+  stat_function(fun = dnorm, # dnorm is the normal distributions
+                args = list(mean = 0, sd = 1), # set mean = 0 and sd = 1
+                color=&quot;blue&quot;)+
+  scale_x_continuous(breaks = seq(-4,4,1))+
+    xlab(&quot;X (or Z-score)&quot;)+ylab(&quot;p(X)&quot;)+
+  theme_light()
+
+normal.pdf</code></pre>
+<p><img src="/content/2.6-content_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>Then recall the <strong>68-95-99.7 empirical rule</strong>, that:</p>
+<ul>
+<li><span class="math inline">\(P(\mu-1 \sigma \leq X \leq \mu+ 1\sigma) \approx 0.68\)</span></li>
+<li><span class="math inline">\(P(\mu-2 \sigma \leq X \leq \mu+ 2\sigma) \approx 0.95\)</span></li>
+<li><span class="math inline">\(P(\mu-3 \sigma \leq X \leq \mu+ 3\sigma) \approx 0.997\)</span></li>
+</ul>
+<p>Again, in English: “68% of the observations fall within 1 standard deviation of the mean; 95% fall within 2 standard deviations of the mean, and 99.7% fall within 3 standard deviations of the mean.”</p>
+<p>If we have the <strong>standard normal distribution</strong> with mean 0 and standard deviation 1:</p>
+<p><img src="/content/2.6-content_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Again, we can <em>standardize</em> any normally-distributed random variable by finding the <strong>Z-score</strong> of each observation:</p>
+<p><span class="math display">\[Z=\frac{X_i - \mu}{\sigma}\]</span></p>
+<p>This ensures the mean will be 0 and standard deviation will be 1. Thus, <span class="math inline">\(Z\)</span> is the number of standard deviations above <span class="math inline">\((+)\)</span> or below <span class="math inline">\((-)\)</span> the mean an observation is.</p>
+<p>We can use <span class="math inline">\(Z\)</span>-scores to find the probability of any range of observations of <span class="math inline">\(X\)</span> occuring in the distribution.</p>
+<pre class="r"><code>pnorm(-2, mean = 0, sd = 1, lower.tail = TRUE) # area to left of -2</code></pre>
+<pre><code>## [1] 0.02275013</code></pre>
+<pre class="r"><code>pnorm(2, mean = 0, sd = 1, lower.tail = TRUE) # area to left of 2</code></pre>
+<pre><code>## [1] 0.9772499</code></pre>
+<pre class="r"><code>pnorm(2, mean = 0, sd = 1, lower.tail = FALSE) # area to RIGHT of 2</code></pre>
+<pre><code>## [1] 0.02275013</code></pre>
+<pre class="r"><code>pnorm(2, mean = 0, sd = 1, lower.tail = TRUE)- pnorm(-2, mean = 0, sd = 1, lower.tail = TRUE) # area between -2 and 2</code></pre>
+<pre><code>## [1] 0.9544997</code></pre>
+</div>
+<div id="the-central-limit-theorem" class="section level3">
+<h3>The Central Limit Theorem</h3>
+<p>Inferential statistics can be summarized in 2 sentences:</p>
+<blockquote>
+<p>There are unknown <strong>parameters</strong> that describe a <strong>population</strong> distribution that we want to know. We use <strong>statistics</strong> that describe a <strong>sample</strong> to <em>estimate</em> the population parameters.</p>
+</blockquote>
+<p>Recall there is an element of randomness in our sample statistics due to <strong>sampling variability</strong>. For example, if we take the mean of one sample, <span class="math inline">\(\bar{x}\)</span>, and then take the mean of a <em>different</em> sample, the <span class="math inline">\(\bar{x}\)</span>’s will be <em>slightly different</em>. We can conceive of a distribution of <span class="math inline">\(\bar{x}\)</span>’s across many different samples, and this is called the <strong>sampling distribution</strong> of the statistic <span class="math inline">\((\bar{x})\)</span>.</p>
+<p>Via the sampling distribution, the sample statistic <span class="math inline">\((\bar{X})\)</span> itself is distributed with</p>
+<ul>
+<li>mean <span class="math inline">\(E[\bar{x}]=\mu_X\)</span> (the true population mean)</li>
+<li>standard deviation <span class="math inline">\(\sigma_{\bar{x}}\)</span></li>
+</ul>
+<p><strong>Central Limit Theorem</strong>: <em>with large enough sample size (<span class="math inline">\(n\geq30\)</span>), the sampling distribution of a sample statistic is approximately normal</em><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>Thus, the <strong>sampling distribution of the sample mean</strong> (<span class="math inline">\(\bar{x}\)</span>):</p>
+<p><span class="math display">\[\bar{X} \sim \left(\mu_X, \frac{\sigma_X}{\sqrt{n}}\right)\]</span></p>
+<p>The second term we call the <strong>standard error of the sample mean</strong><a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>. Note that it takes the true standard deviation of the population (<span class="math inline">\(\sigma_X\)</span>)<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> and divides it by the square root of the sample size, <span class="math inline">\(\sqrt{n}\)</span>.</p>
+<p>Thus <strong>if we know the true population standard deviation</strong> (<span class="math inline">\(\sigma_X\)</span>) then we can simply use the normal distribution for confidence intervals and hypothesis tests of a sample statistic. Since we often do not, we need to use another distribution for inferential statistics, often the <span class="math inline">\(t\)</span>-distribution.</p>
+</div>
+<div id="if-we-dont-know-sigma-the-students-t-distribution" class="section level3">
+<h3>If We Don’t Know <span class="math inline">\(\sigma\)</span>: The Student’s <span class="math inline">\(t\)</span>-Distribution</h3>
+<p>We rarely, if ever, know the true population standard deviation for variable <span class="math inline">\(X\)</span>, <span class="math inline">\(\sigma_X\)</span>. Additionally, we sometimes have sample sizes of <span class="math inline">\(n &lt; 30\)</span>. If either of these conditions are true, we cannot use leverage the Central Limit Theorem and simplify with a standard normal distribution. Instead of the normal distribution, we use a <strong>Student’s t-Distribution</strong><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+<p><span class="math inline">\(t\)</span> is functionally equivalent to the idea of a <span class="math inline">\(Z\)</span>-score, with some slight modifications:</p>
+<p><span class="math display">\[t = \cfrac{\bar{x}-\mu}{\left(\frac{s}{\sqrt{n}}\right)}\]</span>
+- <span class="math inline">\(\bar{x}\)</span> is our estimated statistic (e.g. sample mean)
+- <span class="math inline">\(\mu\)</span> is the true population parametner (e.g. population mean)
+- <span class="math inline">\(s\)</span> is the sample standard deviation
+- <span class="math inline">\(n\)</span> is the sample size</p>
+<p><span class="math inline">\(t\)</span>-scores similarly measure the number of standard deviations an observation is above or below the mean.</p>
+<p>The other main difference between normal distributions/<span class="math inline">\(Z\)</span>-scores and <span class="math inline">\(t\)</span> distributions /<span class="math inline">\(t\)</span>-scores is that <span class="math inline">\(t\)</span> distributions have <span class="math inline">\(n-1\)</span> degrees of freedom.<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></p>
+<p><span class="math display">\[t \sim t_{n-1}\]</span></p>
+<pre><code>## Loading required package: viridisLite</code></pre>
+<p><img src="/content/2.6-content_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>The standard <span class="math inline">\(t\)</span>-distribution looks normal-ish, with a mean of 0, but with more area in the tails of the distribution. The exact shape depends on the degrees of freedom <span class="math inline">\((n-1)\)</span>. As <span class="math inline">\(\uparrow n\)</span>, <span class="math inline">\(\uparrow df\)</span>, the <span class="math inline">\(t\)</span>-distribution approximates a normal distribution.</p>
+<p>By convention, in regression we <em>always</em> use <span class="math inline">\(t\)</span>-distributions for confidence intervals and hypothesis tests. For nearly all of the confidence intervals and hypothesis tests below, we functionally replace <span class="math inline">\(Z\)</span> with <span class="math inline">\(t\)</span>.</p>
+</div>
+<div id="confidence-intervals" class="section level3">
+<h3>Confidence Intervals</h3>
+<p>A <strong>confidence interval</strong> describes the range of estimates for a population parameter in the form:</p>
+<p><span class="math display">\[(\text{estimate} - \text{margin of error}, \, \text{estimate} + \text{margin of error})\]</span></p>
+<p>Our <em>confidence level</em> is <span class="math inline">\(1-\alpha\)</span></p>
+<ul>
+<li><span class="math inline">\(\alpha\)</span> again is the “significance level”, the probability that the true population parameter is <em>not</em> within our confidence interval<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></li>
+<li>Typical confidence levels: 90%, 95%, 99%</li>
+</ul>
+<blockquote>
+<p>A confidence interval tells us that if we were to conduct many samples, (<span class="math inline">\(1-\alpha\)</span>)% would contain the true population parameter within the interval</p>
+</blockquote>
+<p>To construct a confidence interval, we do the following:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Calculate the sample statistic.</strong></p></li>
+<li><p><strong>Find <span class="math inline">\(Z\)</span>-score that corresponds to desired confidence level.</strong><a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> We need to find what are called the <strong>“critical values”</strong> of <span class="math inline">\(Z\)</span>, which we will call <span class="math inline">\(Z_{0.5\alpha}\)</span> on the normal distribution that puts (<span class="math inline">\(1-\alpha\)</span>) probability between <span class="math inline">\(\pm Z_{0.5\alpha}\)</span> and <span class="math inline">\(0.5\alpha\)</span> in each of the tails of the distribution. The distribution would look like this:</p></li>
+</ol>
+<pre><code>## Warning in is.na(x): is.na() applied to non-(list or vector) of type
+## &#39;expression&#39;
+
+## Warning in is.na(x): is.na() applied to non-(list or vector) of type
+## &#39;expression&#39;
+
+## Warning in is.na(x): is.na() applied to non-(list or vector) of type
+## &#39;expression&#39;</code></pre>
+<p><img src="/content/2.6-content_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<ul>
+<li>The confidence interval between the two <span class="math inline">\(Z\)</span>-scores <span class="math inline">\(-Z_{0.5\alpha}\)</span> and <span class="math inline">\(Z_{0.5\alpha}\)</span> contains the desired <span class="math inline">\((1-\alpha)%\)</span> of observations</li>
+<li>The area beyond each <span class="math inline">\(Z\)</span>-score contains <span class="math inline">\(0.5\alpha\)</span>% of observations in each direction, for a total of <span class="math inline">\(\alpha\)</span>% beyond the critical values of <span class="math inline">\(Z\)</span></li>
+</ul>
+<p>Note that the image above is abstract. So for example, if we wanted a (typical) <strong>95% confidence interval</strong> with <span class="math inline">\(\alpha=0.05\)</span>, the critical value(s) of <span class="math inline">\(Z\)</span> are <span class="math inline">\(\pm 1.96\)</span><a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a>, and looking on the distribution:</p>
+<p><img src="/content/2.6-content_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>The critical values of <span class="math inline">\(Z\)</span> are often given in <span class="math inline">\(Z\)</span>-tables, which you can find in classical statistics textbooks or online. Critical values of <span class="math inline">\(Z\)</span> for common confidence intervals values are well known:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Confidence Level</th>
+<th><span class="math inline">\(\alpha\)</span></th>
+<th><span class="math inline">\(\pm Z_{0.5\alpha}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>90%</td>
+<td>0.10</td>
+<td><span class="math inline">\(\pm 1.645\)</span></td>
+</tr>
+<tr class="even">
+<td>95%</td>
+<td>0.05</td>
+<td><span class="math inline">\(\pm 1.96\)</span></td>
+</tr>
+<tr class="odd">
+<td>99%</td>
+<td>0.01</td>
+<td><span class="math inline">\(\pm 2.58\)</span></td>
+</tr>
+</tbody>
+</table>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>Calculate the margin of error (MOE)</strong></li>
+</ol>
+<p>The margin of error is the critical value of <span class="math inline">\(Z\)</span> times the standard error of the estimate (<span class="math inline">\(\sigma\)</span>).</p>
+<p><span class="math display">\[MOE=Z_{0.5\alpha}\sigma\]</span></p>
+<ol start="4" style="list-style-type: decimal">
+<li><strong>Construct the confidence interval</strong></li>
+</ol>
+<p>The confidence interval is simply our estimate plus and minus the margin of error.</p>
+<p><span class="math display">\[CI = \left([\bar{x}-Z_{0.5}\sigma_{\bar{x}}], \, [\bar{x}+Z_{0.5}\sigma_{\bar{x}}]\right)\]</span></p>
+<ol start="5" style="list-style-type: decimal">
+<li><strong>Intepret the confidence interval in the context of the problem</strong></li>
+</ol>
+<blockquote>
+<p>“We estimate with [1-alpha]% confidence that the true [population parameter] is between [lowerbound] and [upperbound]”.</p>
+</blockquote>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>That is, for each simulation, we randomly selected observations from our existing sample to be in the simulation, and then did <em>not</em> put that observation back in the pool to possibly be selected again.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Even when <em>I</em> was in graduate school, 2011–2015<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>If samples are i.i.d. (independently and identically distributed if they are drawn from the same population randomly and then replaced) we don’t even need to know the population distribution to assume normality<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Instead of the “standard deviation”. “Standard error” refers to the sampling variability of a sample statistic, and is always talking about a sampling distribution.<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Which we need to know! We often do not know it!<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>“Student” was the penname of William Sealy Gosset, who has one of the more interesting stories in statistics. He worked for Guiness in Ireland testing the quality of beer. He found that with small sample sizes, normal distributions did not yield accurate results. He came up with a more accurate distribution, and since Guiness would not let him publish his findings, published it under the pseudonym of “Student.”<a href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p><strong>Degrees of freedom</strong>, <span class="math inline">\(df\)</span> are the number of independent values used for the calculation of a statistic minus the number of other statistics used as intermediate steps. For sample standard deviation <span class="math inline">\(s\)</span>, we use <span class="math inline">\(n\)</span> deviations <span class="math inline">\((x_i-\bar{x})\)</span> and 1 parameter <span class="math inline">\((\bar{x})\)</span>, hence <span class="math inline">\(df=n-1\)</span><a href="#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>Equivalently, <span class="math inline">\(\alpha\)</span> is the probability of a <strong>Type I error</strong>: a false positive finding where we incorrectly reject a null hypothesis when it the null hypothesis is in fact true.<a href="#fnref8" class="footnote-back">↩︎</a></p></li>
+<li id="fn9"><p>Of course, if we don’t know the population <span class="math inline">\(\sigma\)</span>, we need to use the <span class="math inline">\(t\)</span>-distribution and find critical <span class="math inline">\(t\)</span>-scores instead of <span class="math inline">\(Z\)</span>-scores. See above.<a href="#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p>Note this is the precise value behind the rule of thumb that 95% of observations fall within 2 standard deviations of the mean!<a href="#fnref10" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

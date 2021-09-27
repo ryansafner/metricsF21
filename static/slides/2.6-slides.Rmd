@@ -1,7 +1,7 @@
 ---
 title: "2.6 — Statistical Inference"
-subtitle: "ECON 480 • Econometrics • Fall 2020"
-author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF20"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF20</a><br> <a href="https://metricsF20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF20.classes.ryansafner.com</a><br>'
+subtitle: "ECON 480 • Econometrics • Fall 2021"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF21"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF21</a><br> <a href="https://metricsF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF21.classes.ryansafner.com</a><br>'
 #date:
 output:
   xaringan::moon_reader:
@@ -28,14 +28,19 @@ output:
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(echo=F,
                       message=F,
-                      warning=F,
-                      fig.retina =3)
+                      warning=F)
 library(tidyverse)
-library(parallel)
 library(ggthemes)
-library(broom)
+library(parallel)
+
 set.seed(256)
 update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_extra_styles(hover_code_line = TRUE)
+
 ```
 
 ```{r regression-setup, echo=F, results="hide"}
@@ -124,9 +129,9 @@ class: inverse, center, middle
 
 .pull-right[
 .center[
-![:scale 55%](https://www.dropbox.com/s/v5vwsadw5vs448t/causality.jpg?raw=1)
+![:scale 55%](../images/causality.jpg)
 
-![:scale 55%](https://www.dropbox.com/s/phhet82tcnuegxp/randomimage.jpg?raw=1)]
+![:scale 55%](../images/randomimage.jpg)]
 ]
 
 ---
@@ -148,7 +153,7 @@ class: inverse, center, middle
 # The Two Problems: Where We're Heading...Ultimately
 
 .center[
-.b[Sample] $\underbrace{\rightarrow}_{\text{statistical inference}}$ .b[Population] $\underbrace{\rightarrow}_{\text{causal indentification}}$ .b[Unobserved Parameters]
+.b[Sample] $\color{#6A5ACD}{\xrightarrow{\text{statistical inference}}}$ .b[Population] $\color{#e64173}{\xrightarrow{\text{causal indentification}}}$ .b[Unobserved Parameters]
 ]
 
 - We want to .hi[identify] causal relationships between **population** variables
@@ -378,7 +383,7 @@ $\hat{Y}_i = `r round(lm3$coefficients[1], 2)` + `r round(lm3$coefficients[2], 2
 --
 
 .pull-right[
-```{R, simulation-scatter, echo = F,cache = T}
+```{R, simulation-scatter, echo = F,cache = T, fig.height=4}
 # Reshape sim_df
 line_df <- tibble(
   intercept = sim_df %>% filter(term != "x") %>% select(estimate) %>% unlist(),
@@ -414,7 +419,7 @@ $$E[\hat{\beta_1}] =  \beta_1$$
 ]
 
 .pull-right[
-```{R, ref.label="simulation-scatter"}
+```{R, ref.label="simulation-scatter", fig.height=4}
 ```
 ]
 
@@ -437,24 +442,24 @@ class: inverse, center, middle
 # Statistical Inference
 
 .center[
-.hi[Sample] $\color{#e64173}{\xrightarrow{\text{statistical inference}}}$ .hi[Population] $\xrightarrow{\text{causal indentification}}$ .b[Unobserved Parameters]
+.b[Sample] $\color{#6A5ACD}{\xrightarrow{\text{statistical inference}}}$ .b[Population] $\color{#e64173}{\xrightarrow{\text{causal indentification}}}$ .b[Unobserved Parameters]
 ]
 
-- So what we naturally want to start doing is .hi[inferring] what the true population regression model is, using our estimated regression model from our sample
+- We want to start .hi-purple[inferring] what the true population regression model is, using our estimated regression model from our sample
 
 --
 
-$$\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}X \xrightarrow{\text{🤞 hopefully 🤞}} Y_i=\beta_0+\beta_1X+u_i$$ 
+$$\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}X \color{#6A5ACD}{\xrightarrow{\text{🤞 hopefully 🤞}}} Y_i=\beta_0+\beta_1X+u_i$$ 
 
-- We can’t yet make causal inferences about whether/how $X$ *causes* $Y$
+- We can’t yet make .hi[causal inferences] about whether/how $X$ *causes* $Y$
   - coming after the midterm!
 
 ---
 
 # Estimation and Statistical Inference
 
-.pull-leff[
-
+.pull-left[
+.smaller[
 - Our problem with .hi-purple[uncertainty] is we don’t know whether our sample estimate is *close* or *far* from the unknown population parameter
 
 - But we can use our errors to learn how well our model statistics likely estimate the true parameters
@@ -463,9 +468,12 @@ $$\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}X \xrightarrow{\text{🤞 hopefully 🤞}
 
 - We have two options...
 ]
+]
 
 .pull-right[
-
+.center[
+![](../images/randomimage.jpg)
+]
 ]
 ---
 
@@ -478,8 +486,8 @@ $$\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}X \xrightarrow{\text{🤞 hopefully 🤞}
 .hi[Point estimate]
 ]
 
-.smaller[
-- Use our $\hat{\beta_1}$ and $se(\hat{\beta_1})$ to determine whether we have statistically significant evidence to reject a hypothesized $\beta_1$
+.quitesmall[
+- Use our $\hat{\beta_1}$ and $se(\hat{\beta_1})$ to determine if we have statistically significant evidence to reject a hypothesized $\beta_1$
 
 - Reporting a *single* value $(\hat{\beta_1})$ is often not going to be the true population parameter $(\beta_1)$
 ]
@@ -492,7 +500,7 @@ $$\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}X \xrightarrow{\text{🤞 hopefully 🤞}
 .hi[Confidence interval]
 ]
 
-.smaller[
+.quitesmall[
 - Use $\hat{\beta_1}$ and $se(\hat{\beta_1})$ to create an *range* of values that gives us a good chance of capturing the true $\beta_1$
 ]
 ]
@@ -630,7 +638,7 @@ library(infer)
 .pull-left[
 ## Our Sample
 
-.smallest[
+.quitesmall[
 
 ```{r, echo = F}
 school_reg %>% tidy()
@@ -643,7 +651,7 @@ school_reg %>% tidy()
 .pull-right[
 ## Another “Sample”
 
-.smallest[
+.quitesmall[
 ```{r, echo = F}
 CASchool %>%
   specify(testscr ~ str) %>%
@@ -682,6 +690,7 @@ CASchool %>%
 ]
 
 .right-plot[
+.smallest[
 - Take our data and pipe it into the `specify()` function, which is essentially a `lm()` function for regression (for our purposes)
 
 ```{r, echo=T, eval=F}
@@ -689,7 +698,6 @@ CASchool %>%
   specify(testscr ~ str)
 ```
 
-.smallest[
 ```{r}
 CASchool %>%
   specify(testscr ~ str)%>%
@@ -728,8 +736,8 @@ CASchool %>%
 ```{r, echo=T, eval=F}
 CASchool %>%
   specify(testscr ~ str) %>%
-  generate(reps = 1000,
-           type = "bootstrap")
+  generate(reps = 1000, #<<
+           type = "bootstrap") #<<
 ```
 ]
 
@@ -781,7 +789,7 @@ CASchool %>%
   specify(testscr ~ str) %>%
   generate(reps = 1000,
            type = "bootstrap") %>%
-  calculate(stat = "slope")
+  calculate(stat = "slope") #<<
 ```
 
 - For each of the 1,000 replicates, calculate `slope` in `lm(testscr ~ str)`
@@ -904,8 +912,8 @@ ci
 .quitesmall[
 ```{r, echo = T, fig.height=4}
 sampling_dist+
-  geom_vline(data = ci, aes(xintercept = lower), size = 1, linetype="dashed")+
-  geom_vline(data = ci, aes(xintercept = upper), size = 1, linetype="dashed")
+  geom_vline(data = ci, aes(xintercept = lower), size = 1, linetype="dashed")+ #<<
+  geom_vline(data = ci, aes(xintercept = upper), size = 1, linetype="dashed") #<<
 ```
 ]
 ]
@@ -933,9 +941,9 @@ CASchool %>% #<< # save this
   generate(reps = 1000,
            type = "bootstrap") %>%
   calculate(stat = "slope") %>%
-  get_confidence_interval(level = 0.95,
-                          type = "se",
-                          point_estimate = -2.28)
+  get_confidence_interval(level = 0.95, #<<
+                          type = "se", #<<
+                          point_estimate = -2.28) #<<
 ```
 ]
 ]
@@ -989,7 +997,7 @@ CASchool %>% #<< # save this
   generate(reps = 1000,
            type = "bootstrap") %>%
   calculate(stat = "slope") %>%
-  visualize()
+  visualize() #<<
 ```
 
 ]
@@ -1020,11 +1028,11 @@ CASchool %>% #<< # save this
   generate(reps = 1000,
            type = "bootstrap") %>%
   calculate(stat = "slope") %>%
-  visualize()+shade_ci(endpoints = our_CI)
+  visualize()+shade_ci(endpoints = our_CI) #<<
 ```
 
 ]
-.smaller[
+.smallest[
 - If we have our confidence levels saved (`our_CI`) we can `shade_ci()` in `infer`'s `visualize()` function
 ]
 ]
@@ -1032,22 +1040,46 @@ CASchool %>% #<< # save this
 
 # Confidence Intervals
 
-.smallest[
-- In general, a .hi[confidence interval (CI)] takes a point estimate and extrapolates it within some .hi-purple[margin of error]:
-
-.center[
-$\bigg($ point estimate — margin of error, point estimate + margin of error $\bigg)$
+.pull-left[
+.smaller[
+- In general, a .hi[confidence interval (CI)] takes a point estimate and extrapolates it within some .hi-purple[margin of error (MOE)]:
 ]
 
+.quitesmall[
+.center[
+$\bigg( \big[$ estimate - MOE $\big]$, $\big[$ estimate + MOE $\big] \bigg)$
+]
+]
+
+.smaller[
 - The main question is, .hi-turquoise[how confident do we want to be] that our interval contains the true parameter?
   - Larger confidence level, larger margin of error (and thus larger interval)
+]
+]
 
-- .hi-purple[$1- \alpha$] is the .hi-purple[confidence level] of our confidence interval
-  - .hi-purple[$\alpha$] is the .hi-purple[“significance level”] that we use in hypothesis testing
-  - `\\(\alpha\\)`: probability that the true mean is *not* contained within our interval
+.pull-right[
+.center[
+![](../images/castnet2.jpg)
+]
+]
+
+---
+
+# Confidence Intervals
+
+.pull-left[
+- $\color{#6A5ACD}{(1- \alpha)}$ is the .hi-purple[confidence level] of our confidence interval
+  - $\color{#6A5ACD}{\alpha}$ is the .hi-purple[“significance level”] that we use in hypothesis testing
+  - $\color{#6A5ACD}{\alpha}=$ probability that the true parameter is *not* contained within our interval
 
 - Typical levels: 90%, 95%, 99%
-  - 95% is especially common, `\\(\alpha=0.05\\)`
+  - 95% is especially common, $\alpha=0.05$
+]
+
+.pull-right[
+.center[
+![](../images/castnet2.jpg)
+]
 ]
 
 ---
@@ -1055,9 +1087,9 @@ $\bigg($ point estimate — margin of error, point estimate + margin of error $\
 # Confidence Levels
 
 .pull-left[
-- Depending on our confidence level, we are essentially looking for the center $(1-\alpha)$% of the sampling distribution
+- Depending on our confidence level, we are essentially looking for the middle $(1-\alpha)$% of the sampling distribution
 
-- Puts $\frac{\alpha}{2}$ in each tail 
+- This puts $\alpha$ in the tails; $\frac{\alpha}{2}$ in each tail 
 ]
 
 .pull-right[
@@ -1133,16 +1165,42 @@ ggplot(data = tibble(x=-4:4))+
 
 --
 
-❌ 95% of the time, the true effect of class size on test score will be between  -3.22 and -1.33
+❌ .red[95% of the time, the true effect of class size on test score will be between  -3.22 and -1.33]
 
 --
 
-❌ We are 95% confident that a randomly selected school district will have an effect of class size on test score between -3.22 and -1.33
+❌ .red[We are 95% confident that a randomly selected school district will have an effect of class size on test score between -3.22 and -1.33]
 
 --
 
-❌ The effect of class size on test score is  -2.28 95% of the time.
+❌ .red[The effect of class size on test score is  -2.28 95% of the time.]
 
 --
 
-✅ We are 95% confident that in similarly constructed samples, the true effect is between  -3.22 and -1.33
+✅ .green[We are 95% confident that in similarly constructed samples, the true effect is between  -3.22 and -1.33]
+
+---
+
+# Estimating in R (Via Regression, rather than `infer`)
+
+.pull-left[
+
+.smallest[
+- Base R doesn't show confidence intervals in the `lm summary()` output, need the `confint` command
+
+```{r, echo = T}
+confint(school_reg)
+```
+]
+]
+
+.pull-right[
+.smallest[
+- `broom` can include confidence intervals
+
+```{r, echo = T}
+school_reg %>%
+  tidy(conf.int = TRUE) #<<
+```
+]
+]

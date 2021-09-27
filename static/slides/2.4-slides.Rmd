@@ -32,6 +32,11 @@ knitr::opts_chunk$set(echo=F,
 library(tidyverse)
 set.seed(256)
 update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_extra_styles(hover_code_line = TRUE)
+
 ```
 
 ```{r regression-setup, echo=F, results="hide"}
