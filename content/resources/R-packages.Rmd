@@ -13,10 +13,22 @@ weight: 2
 
 The following is a compendium of all R packages used in this course (in order of appearance), their main uses, and what we use them for^[Note, many of these packages have multiple uses beyond our purposes!]. Each package name below is a **link** to the package's website and/or documentation.
 
-Note: `ggplot2, tibble, magrittr, dplyr, readr` are all part of the `tidyverse`. 
+† Indicates package is part of the [`tidyverse`](https://tidyverse.org)
 
 | Name | Type | Description/Reason(s) for Use | Classes Used |
 |------|------|-------------|------|
-| [`ggplot2`†](https://ggplot2.tidyverse.org/) | Plotting | For nice plots | [[1.3](/content/1.3-content)] | 
+| [`ggplot2`†](https://ggplot2.tidyverse.org/) | Plotting | For nice plots | [[1.3](/content/1.3-content)] |
+| `gganimate` | Plotting | For animating plots | [[1.3](/content/1.3-content)] |
+| [`haven`†](https://haven.tidyverse.org/) | Data Wrangling | For importing nonstandard data files | [[1.4](/content/1.4-content)] |
+| [`dplyr`†](https://dplyr.tidyverse.org/) | Data Wrangling | For manipulating data (part of tidyverse) | [[1.4](/content/1.4-content)] |
+| [`readr`†](https://readr.tidyverse.org/) | Data Wrangling | For importing most data files | [[1.4](/content/1.4-content)] | 
+| [`tidyr`†](https://tidyr.tidyverse.org/) | Data Wrangling | For reshaping data (wide and long) | [[1.4](/content/1.4-content)] |
+| [`magrittr`†](https://magrittr.tidyverse.org/) | Data Wrangling | For the pipe | [[1.4](/content/1.4-content)] |
+| [`tibble`†](https://tibble.tidyverse.org/) | Data Wrangling | For a friendlier data.frame | [[1.4](/content/1.4-content)] | 
+| `ggrepel` | Plotting | For annotating text that doesn't cover observations | [[1.4](/content/2.5-content)] |
+| `broom` | Models | For tidying regression output | [[2.3](/content/2.3-content)] |
+| `car` | Models | For testing for outliers | [[2.5](/content/2.5-content)] |
+| `estimatr` | Models | For calculating robust standard errors | [[2.5](/content/2.5-content)] |
+| `lmtest` | Models | For testing for heteroskedasticity | [[2.5](/content/2.5-content)] |
+| `huxtable` | Models | For making nice regression tables | [[2.5](/content/2.5-content)] |
 
-† Indicates package is part of the [`tidyverse`](https://tidyverse.org)
