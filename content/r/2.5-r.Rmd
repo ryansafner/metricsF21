@@ -24,6 +24,10 @@ I have already made an R project you can download (as a `.zip`), unzip, and open
 
 <p style="text-align:center"><a target="_blank" href="/r/2.5-r.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2940155"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span></p>
 
+## Answers
+
+<p style="text-align:center"><a target="_blank" href="/r/2.5-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/r/2.5-r-answers.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> Answers (R Project)</a> <a target="_blank" href="/r/1.4-r-answers.R"><span class="btn btn-primary btn-lg"><i class="fas fa-registered"></i> Answers (R Script)</a></span></p>
+
 # Data Cleaning
 
 How did the results of the 2016 election in their district affect how often Members of Congress during the Trump Administration voted with the President? 
