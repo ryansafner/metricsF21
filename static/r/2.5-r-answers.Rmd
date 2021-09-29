@@ -597,6 +597,11 @@ The syntax for `case_when()` is to have a series of `condition ~ "Outcome"`, sep
 <!--ANSWER BELOW HERE-->
 
 ```{r}
+# a mess!
+congress %>%
+  count(party)
+
+# make it tidier
 congress_tidy <- congress_tidy %>%
   mutate(pol_party = case_when(
     party %in% c("Democrat", "D") ~ "Democrat",
