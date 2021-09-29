@@ -544,6 +544,11 @@ div.tocify {
 <span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>beta_0_hat <span class="co"># look at it</span></span></code></pre></div>
 <pre><code>## [1] 56.16</code></pre>
+<p>The estimated regression is:</p>
+<p><span class="math display">\[
+\widehat{\text{agree_pct}_i} = 56.16 + 0.99 \, \text{net_trump_vote}_i
+\]</span></p>
+<p><span class="math inline">\(\hat{\beta_0}\)</span> is 56.16. On the graph, this is where the estimated line crosses the vertical axis. We would predict that for a <code>net_trump_vote</code> of 0 (i.e. a 50-50 tie in the district between Clinton &amp; Trump), that district’s Member of Congress would vote <strong>56%</strong> of the time with President Trump.</p>
 <hr />
 </div>
 <div id="part-b" class="section level3">
@@ -558,6 +563,8 @@ div.tocify {
 <span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>beta_1_hat <span class="co"># look at it</span></span></code></pre></div>
 <pre><code>## [1] 0.99</code></pre>
+<p><span class="math inline">\(\hat{\beta_1}\)</span> is 0.99. This is the estimated slope of the line, and the marginal effect of (a 1 unit change in) <span class="math inline">\(X\)</span> on <span class="math inline">\(Y\)</span>.</p>
+<p>For every 1 additional point in <code>net_trump_vote</code> (i.e. a Trump win by 1 more point), that district’s Member of Congress would vote about <strong>1%</strong> more of the time with President Trump.</p>
 <hr />
 </div>
 <div id="part-c" class="section level3">
@@ -573,6 +580,7 @@ div.tocify {
 <span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>r_sq <span class="co"># look at it</span></span></code></pre></div>
 <pre><code>## [1] 0.61</code></pre>
+<p><span class="math inline">\(R^2\)</span> is 0.61. This means that about 61% of the variation in <code>agree_pct</code> is explained by our model.</p>
 <hr />
 </div>
 <div id="part-d" class="section level3">
@@ -588,6 +596,7 @@ div.tocify {
 <span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>ser <span class="co"># look at it</span></span></code></pre></div>
 <pre><code>## [1] 25.1</code></pre>
+<p>SER <span class="math inline">\((\hat{\sigma_u})\)</span> is 25.1. This means that the average prediction error (distance from any data point to the line) is 25 percentage points.</p>
 <hr />
 </div>
 </div>

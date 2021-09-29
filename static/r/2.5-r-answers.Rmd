@@ -160,6 +160,14 @@ beta_0_hat <- reg_tidy %>% # save this as beta_0_hat
 beta_0_hat # look at it
 ```
 
+The estimated regression is:
+
+$$
+\widehat{\text{agree_pct}_i} = 56.16 + 0.99 \, \text{net_trump_vote}_i
+$$
+
+$\hat{\beta_0}$ is `r round(beta_0_hat, 2)`. On the graph, this is where the estimated line crosses the vertical axis. We would predict that for a `net_trump_vote` of 0 (i.e. a 50-50 tie in the district between Clinton & Trump), that district's Member of Congress would vote **56%** of the time with President Trump.
+
 ---
 
 ### Part B
@@ -177,6 +185,10 @@ beta_1_hat <- reg_tidy %>% # save this as beta_0_hat
 
 beta_1_hat # look at it
 ```
+
+$\hat{\beta_1}$ is `r round(beta_1_hat, 2)`. This is the estimated slope of the line, and the marginal effect of (a 1 unit change in) $X$ on $Y$.
+
+For every 1 additional point in `net_trump_vote` (i.e. a Trump win by 1 more point), that district's Member of Congress would vote about **1%** more of the time with President Trump.
 
 ---
 
@@ -197,6 +209,8 @@ r_sq <- glance(reg) %>%
 r_sq # look at it
 ```
 
+$R^2$ is `r round(r_sq, 2)`. This means that about 61% of the variation in `agree_pct` is explained by our model.
+
 ---
 
 ### Part D
@@ -215,6 +229,8 @@ ser <- glance(reg) %>%
 
 ser # look at it
 ```
+
+SER $(\hat{\sigma_u})$ is `r round(ser, 2)`. This means that the average prediction error (distance from any data point to the line) is 25 percentage points.
 
 ---
 
