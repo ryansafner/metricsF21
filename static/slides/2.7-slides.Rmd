@@ -67,11 +67,11 @@ class: inverse
 
 ### [Digression: p-Values and the Philosophy of Science](#85)
 
-### [# Hypothesis Testing by Simulation, with *infer*](#)
+### [Hypothesis Testing by Simulation, with *infer*](#)
 
 ### [What R Calculates (Classical Statistical Inference)](#)
 
-### [# The Use and Abuse of $p$-values](#)
+### [The Use and Abuse of $p$-values](#)
 
 ---
 
@@ -83,18 +83,25 @@ class: inverse, center, middle
 
 # Estimation and Hypothesis Testing I
 
+.pull-left[
+.smallest[
 - We want to **test** if our estimates are .hi[statistically significant] and they describe the population
   - This is the "bread and butter" of inferential statistics and the purpose of regression
 
---
-
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Examples**]:
 - Does reducing class size actually improve test scores?
-- Do more years of education increase your wages? 
-- Is the gender wage gap between men and women really $0.77? 
+- Do more years of education increase your wages?
+- Is the gender wage gap between men and women 23%?
+]
+]
 ]
 
+.pull-right[
+.center[
+![](../images/scientifictesting.jpg)
+]
+]
 --
 
 - .hi-purple[All modern science is built upon statistical hypothesis testing, so understand it well!]
@@ -436,8 +443,6 @@ Sir Ronald A. Fisher
     - 1 sample vs. 2 samples
     - $\chi^2$ test
 
-- See today's [class notes](/class/2.7-class) page for more
-
 ---
 
 # Hypothesis Testing: Which Test? II
@@ -450,7 +455,7 @@ Sir Ronald A. Fisher
 
 # There is Only One Test
 
-- Fortunately, some clever statisticians realized ["**there is only one test**"](https://allendowney.blogspot.com/2011/05/there-is-only-one-test.html) and built a nice `R` package called `infer`
+- Fortunately, some clever statisticians realized [“**there is only one test**”](https://allendowney.blogspot.com/2011/05/there-is-only-one-test.html) and some built a nice `R` package called `infer`
 
 1. **Calculate** a statistic, $\delta_i$<sup>.magenta[†]</sup>, from a sample of data
 
@@ -471,7 +476,7 @@ Sir Ronald A. Fisher
 .center[
 ![:scale 80%](../images/onetest.png)
 
-[Alan Downey: "There is still only one test"](https://allendowney.blogspot.com/2016/06/there-is-still-only-one-test.html)
+[Alan Downey: “There is still only one test”](https://allendowney.blogspot.com/2016/06/there-is-still-only-one-test.html)
 ]
 
 ---
@@ -565,7 +570,7 @@ H_1: \; & \beta_1 \neq 0
 
 - .hi-purple[Rejection region]: if the test statistic reaches a .hi-purple["critical value"] of $\delta$, then we **reject** the null hypothesis
 
-.footnote[<sup>.magenta[†]</sup> Again, see today's [class notes](/class/2.7-class) for more on the t-distribution. `\\(k\\)` is the number of independent variables our model has, in this case, with just one `\\(X\\)`, `\\(k=1\\)`. We use two degrees of freedom to calculate `\\(\hat{\beta_0}\\)` and `\\(\hat{\beta_1}\\)`, hence we have `\\(n-2\\)` df.]
+.footnote[<sup>.magenta[†]</sup> Again, see last class's [appendix](/content/2.6-content#appendix) for more on the t-distribution. `\\(k\\)` is the number of independent variables our model has, in this case, with just one `\\(X\\)`, `\\(k=1\\)`. We use two degrees of freedom to calculate `\\(\hat{\beta_0}\\)` and `\\(\hat{\beta_1}\\)`, hence we have `\\(n-2\\)` df.]
 
 ---
 
@@ -627,6 +632,9 @@ CASchool %>%
 .smallest[
 - From that null world where $H_0: \, \beta_1=0$ is true, let's **simulate 1,000** samples and calculate slope $(\hat{\beta_1})$ for each
 
+]
+
+.quitesmall[
 ```{r}
 CASchool %>%
   specify(testscr ~ str) %>%
@@ -647,7 +655,7 @@ CASchool %>%
 
 ```{r, echo=T}
 # save as obs_slope
-sample_slope <- school_reg_tidy %>% # this is the regression tidied with broom
+sample_slope <- school_reg_tidy %>% # this is the regression tidied with broom's tidy()
   filter(term=="str") %>%
   pull(estimate)
 
@@ -735,7 +743,7 @@ CASchool %>%
 ```
 
 ]
-.tiny[<sup>.magenta[†]</sup> `type` can be either `point` (for specific point estimates for a single variable, such as a sample mean, `\\((\bar{x})\\)`, or `independence` (for hypotheses about two samples or a relationship between variables). See more [here](https://moderndive.netlify.com/9-hypothesis-testing.html).]
+.tiny[<sup>.magenta[†]</sup> See more [here](https://moderndive.netlify.com/9-hypothesis-testing.html) about what other hypotheses you can test with `infer`.]
 
 ]
 
@@ -765,7 +773,7 @@ CASchool %>%
 
 - Now the magic starts, as we run a number of simulated samples
 - Set the number of `reps` and set the `type` equal to `"permute"`
-  - we want `permutation` instead of a `bootstrap` for hypothesis testing!
+  - we want `permutation` (not `bootstrap`!) because we are simulating a world where $\beta_1=0$ by construction!
 
 ```{r, echo=T, eval=F}
 CASchool %>%
@@ -792,7 +800,7 @@ CASchool %>%
 
 .right-plot[
 
-.smallest[
+.quitesmall[
 ```{r}
 i<-CASchool %>%
   specify(testscr ~ str) %>%
@@ -835,7 +843,6 @@ CASchool %>%
   hypothesize(null = "independence") %>%
   generate(reps = 1000,
            type = "permute") %>%
-  generate(reps = 1000, type = "permute") %>% #<<
   calculate(stat = "slope") #<<
 ```
 
@@ -989,7 +996,7 @@ CASchool %>%
 
 .right-plot[
 .smallest[
-- Add `shade_p_value` to see what $p$ is
+- Add `shade_p_value()` to see what $p$ is
 
 ```{r, echo=T, fig.height=3, fig.retina=3, fig.align="center"}
 CASchool %>%
@@ -999,8 +1006,8 @@ CASchool %>%
            type = "permute") %>%
   calculate(stat = "slope") %>%
   visualize(obs_stat = sample_slope)+
-  shade_p_value(obs_stat = sample_slope,
-                direction = "two_sided")
+  shade_p_value(obs_stat = sample_slope, #<<
+                direction = "two_sided") #<<
 ```
 ]
 ]
@@ -1053,11 +1060,18 @@ simulations %>%
 simulations %>%
   ggplot(data = .)+
   aes(x = stat)+
-  geom_histogram(color="white", fill="indianred")+
+  geom_histogram(color="white", fill="#e64173")+
   geom_vline(xintercept = sample_slope,
              color = "blue",
              size = 2,
              linetype = "dashed")+
+  annotate(geom = "label",
+           x = -2.28,
+           y = 100,
+           label = expression(paste("Our ", hat(beta[1]))),
+           color = "blue")+
+  scale_y_continuous(lim=c(0,120),
+                     expand = c(0,0))+
   labs(x = expression(paste("Distribution of ", hat(beta[1]), " under ", H[0], " that ", beta[1]==0)),
        y = "Samples")+
     theme_classic(base_family = "Fira Sans Condensed",
@@ -1101,14 +1115,15 @@ $$\text{test statistic} = \frac{\text{estimate} - \text{null hypothesis}}{\text{
 ```{r, fig.retina=3, fig.align="center"}
 t_ex<-ggplot(data = tibble(x=-5:5))+
   aes(x = x)+
-  stat_function(fun = dt, args=list(df = 418), size=2, color="blue")+
+  stat_function(fun = dt, args=list(df = 418), size=2, color="#e64173")+
   #stat_function(fun=dt, geom="area", fill="blue", xlim=c(-5,4.75), alpha=0.5)+
   #stat_function(fun=dt, geom="area", fill="blue", xlim=c(4.75,5), alpha=0.5)+
-  geom_vline(xintercept = c(-4.75, 4.75), size = 1, color = "red", linetype = "dashed")+
-  geom_rect(xmin=-5,xmax=-4.75, ymin=0, ymax=0.4, fill="red", alpha=0.3)+
-  geom_rect(xmin=4.75,xmax=5, ymin=0, ymax=0.4, fill="red", alpha=0.3)+
-  labs(x = "t",
-       y = "Probability")+
+  #geom_vline(xintercept = c(-4.75, 4.75), size = 1, color = "red", linetype = "dashed")+
+  #geom_rect(xmin=-5,xmax=-4.75, ymin=0, ymax=0.4, fill="red", alpha=0.3)+
+  #geom_rect(xmin=4.75,xmax=5, ymin=0, ymax=0.4, fill="red", alpha=0.3)+
+  labs(x = "Test Statistic t",
+       y = "Probability",
+       caption = expression(paste("t measures our sample statistic (", t[i], ")'s deviation from ", H[0], " if ", H[0], " were True")))+
   scale_x_continuous(breaks = seq(-5,5,1),
                      lim = c(-5,5),
                      expand = c(0,0))+
@@ -1116,7 +1131,7 @@ t_ex<-ggplot(data = tibble(x=-5:5))+
                      lim = c(0,0.4),
                      expand = c(0,0))+
   theme_classic(base_family = "Fira Sans Condensed",
-           base_size=20)
+           base_size=16)
 t_ex
 ```
 
@@ -1192,14 +1207,17 @@ $p$-value: $Prob(t < t_i)$
 ```{r, fig.retina=3, fig.height=5, fig.align="center"}
 ggplot(data = tibble(x=-4:4))+
   aes(x = x)+
-  stat_function(fun = dnorm, size=2, color="blue")+
-  stat_function(fun=dnorm, xlim=c(-4,-2), geom="area", fill="blue", alpha=0.5)+
-  labs(x = "t",
-       y = "Probability")+
+  stat_function(fun = dnorm, size=2, color="#e64173")+
+  stat_function(fun=dnorm, xlim=c(-4,-2), geom="area", fill="#e64173", alpha=0.5)+
+  labs(x = "Test Statistic t",
+       y = "Probability",
+       caption = expression(paste("t measures our sample statistic (", t[i], ")'s deviation from ", H[0], " if ", H[0], " were True")))+
   scale_x_continuous(breaks=c(-2),
                       label=c(expression(-t[i])))+
+  scale_y_continuous(limits = c(0,0.45),
+                     expand = c(0,0))+
   theme_classic(base_family = "Fira Sans Condensed",
-           base_size=20)
+           base_size=16)
 
 ```
 
@@ -1213,14 +1231,17 @@ $p$-value: $Prob(t > t_i)$
 ```{r, fig.retina=3, fig.height=5, fig.align="center"}
 ggplot(data = tibble(x=-4:4))+
   aes(x = x)+
-  stat_function(fun = dnorm, size=2, color="blue")+
-  stat_function(fun=dnorm, xlim=c(2,4), geom="area", fill="blue", alpha=0.5)+
-  labs(x = "t",
-       y = "Probability")+
+  stat_function(fun = dnorm, size=2, color="#e64173")+
+  stat_function(fun=dnorm, xlim=c(2,4), geom="area", fill="#e64173", alpha=0.5)+
+  labs(x = "Test Statistic t",
+       y = "Probability",
+       caption = expression(paste("t measures our sample statistic (", t[i], ")'s deviation from ", H[0], " if ", H[0], " were True")))+
   scale_x_continuous(breaks=c(2),
                       label=c(expression(t[i])))+
+  scale_y_continuous(limits = c(0,0.45),
+                     expand = c(0,0))+
   theme_classic(base_family = "Fira Sans Condensed",
-           base_size=20)
+           base_size=16)
 ```
 
 
@@ -1238,22 +1259,27 @@ $p$-value: $2 \times Prob(t > |t_i|)$
 ```{r, fig.retina=3, fig.height=5, fig.align="center"}
 ggplot(data = tibble(x=-4:4))+
   aes(x = x)+
-  stat_function(fun = dnorm, size=2, color="blue")+
-  stat_function(fun=dnorm, xlim=c(-4,-2), geom="area", fill="blue", alpha=0.5)+
-  stat_function(fun=dnorm, xlim=c(2,4), geom="area", fill="blue", alpha=0.5)+
-  labs(x = expression(paste("Test Statistic t, (deviation from ", H[0], " if ", H[0], " were True)")),
-       y = "Probability")+
+  stat_function(fun = dnorm, size=2, color="#e64173")+
+  stat_function(fun=dnorm, xlim=c(2,4), geom="area", fill="#e64173", alpha=0.5)+
+  stat_function(fun=dnorm, xlim=c(-4,-2), geom="area", fill="#e64173", alpha=0.5)+
+  stat_function(fun=dnorm, xlim=c(2,4), geom="area", fill="#e64173", alpha=0.5)+
+  labs(x = "Test Statistic t",
+       y = "Probability",
+       caption = expression(paste("t measures our sample statistic (", t[i], ")'s deviation from ", H[0], " if ", H[0], " were True"))
+       )+
   scale_x_continuous(breaks=c(-2,2),
                       label=c(expression(-t[i]), expression(t[i])))+
+    scale_y_continuous(limits = c(0,0.45),
+                     expand = c(0,0))+
   theme_classic(base_family = "Fira Sans Condensed",
-           base_size=20)
+           base_size=16)
 ```
 
 ---
 
 # Hypothesis Tests in Regression Output I
 
-```{r, echo = T}
+```{r sch-reg, echo = T}
 summary(school_reg)
 ```
 
@@ -1263,8 +1289,15 @@ summary(school_reg)
 
 - In `broom`'s `tidy()` (with confidence intervals)
 
-```{r, echo = T}
+```{r, echo=T, eval = T}
 tidy(school_reg, conf.int=TRUE)
+```
+
+```{r, echo = F}
+library(kableExtra)
+tidy(school_reg, conf.int=TRUE) %>%
+  knitr::kable() %>%
+  column_spec(c(3,4), color = "#e64173")
 ```
 
 ---

@@ -67,6 +67,7 @@ lessons:
     content: "2.7-content"
     
   - title: '<i content="fas fa-laptop-code"></i> **Problem Set 3** due Thurs Oct 7'
+    assignment: "03-problem-set"
 
   - title: '<i content="fas fa-star"></i> **Midterm Exam** Thurs Oct 14'
 

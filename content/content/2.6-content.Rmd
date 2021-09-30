@@ -15,7 +15,7 @@ slides: "2.6-slides"
 ---
 
 {{% alert note %}}
-*Tuesday, September 28, 2021*
+*Thursday, September 30, 2021* (moved from Tuesday)
 {{% /alert %}}
 
 {{% alert warning %}}

@@ -15,7 +15,7 @@ output:
 ---
 
 {{% alert note %}}
-*Thursday, September 30, 2021* and likely *Tuesday, October 5, 2021*
+*Thursday, September 30, 2021* and *Tuesday, October 5, 2021*
 {{% /alert %}}
 
 {{% alert warning %}}
@@ -32,8 +32,9 @@ Today we finish our discussion of statistical inference, focusing on hypothesis 
 - [<i class="fas fa-external-link-square-alt"></i> Ch. 10 (optionally 8-9) in *Modern Dive* ](https://moderndive.netlify.com/10-inference-for-regression.html)
 - [<i class="fas fa-external-link-square-alt"></i> Visualizing Probability and Inference ](https://seeing-theory.brown.edu/frequentist-inference/index.html)
 - [<i class="fab fa-youtube"></i> *Last Week Tonight with John Oliver*: Scientific Studies](https://www.youtube.com/watch?v=0Rnq1NpHdmw)
+- [“There is Still Only One Test”](https://allendowney.blogspot.com/2016/06/there-is-still-only-one-test.html)
 
-The readings are the same as last class, plus one highly recommended additional video: be sure to watch the excellent and hilarious discussion of the limits and misuses of scientific studies and statistical significance $(p$-values) in the *Last Week Tonight* clip.
+The readings are the same as last class, plus one highly recommended additional video: be sure to watch the excellent and hilarious discussion of the limits and misuses of scientific studies and statistical significance $(p$-values) in the *Last Week Tonight* clip. I also added the blog post that I reference in class about all hypothesis testing is really one common procedure.
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
