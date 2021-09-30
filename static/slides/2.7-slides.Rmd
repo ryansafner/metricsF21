@@ -63,11 +63,11 @@ class: inverse
 
 # Outline
 
-### [Hypothesis Testing](#58)
+### [Hypothesis Testing](#3)
 
-### [Digression: p-Values and the Philosophy of Science](#85)
+### [Digression: p-Values and the Philosophy of Science](#33)
 
-### [Hypothesis Testing by Simulation, with *infer*](#)
+### [Hypothesis Testing by Simulation, with *infer*](#54)
 
 ### [What R Calculates (Classical Statistical Inference)](#)
 
@@ -86,25 +86,26 @@ class: inverse, center, middle
 .pull-left[
 .smallest[
 - We want to **test** if our estimates are .hi[statistically significant] and they describe the population
-  - This is the "bread and butter" of inferential statistics and the purpose of regression
-
+  - this is the “bread and butter” of using inferential statistics
+  
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Examples**]:
 - Does reducing class size actually improve test scores?
 - Do more years of education increase your wages?
 - Is the gender wage gap between men and women 23%?
 ]
+
 ]
+
 ]
 
 .pull-right[
 .center[
 ![](../images/scientifictesting.jpg)
 ]
-]
---
-
 - .hi-purple[All modern science is built upon statistical hypothesis testing, so understand it well!]
+
+]
 
 ---
 
@@ -801,6 +802,7 @@ CASchool %>%
 .right-plot[
 
 .quitesmall[
+
 ```{r}
 i<-CASchool %>%
   specify(testscr ~ str) %>%
@@ -1157,7 +1159,17 @@ $$\text{test statistic} = \frac{\text{estimate} - \text{null hypothesis}}{\text{
 .pull-right[
 
 ```{r, fig.retina=3, fig.align="center"}
-t_ex
+t_ex+
+  geom_vline(xintercept = -4.75,
+             color = "blue",
+             size = 2,
+             linetype = "dashed")+
+  annotate(geom = "label",
+           x = -4.6,
+           y = 0.38,
+           label = expression(paste("Our ",t[i])),
+           color = "blue")
+
 ```
 
 ]
@@ -1293,7 +1305,7 @@ summary(school_reg)
 tidy(school_reg, conf.int=TRUE)
 ```
 
-```{r, echo = F}
+```{r, echo = F, eval = F}
 library(kableExtra)
 tidy(school_reg, conf.int=TRUE) %>%
   knitr::kable() %>%
