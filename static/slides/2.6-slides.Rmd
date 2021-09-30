@@ -487,7 +487,7 @@ $$\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}X \color{#6A5ACD}{\xrightarrow{\text{🤞
 ]
 
 .quitesmall[
-- Use our $\hat{\beta_1}$ and $se(\hat{\beta_1})$ to determine if we have statistically significant evidence to reject a hypothesized $\beta_1$
+- Use our $\hat{\beta_1}$ & $se(\hat{\beta_1})$ to determine if statistically significant evidence to reject a hypothesized $\beta_1$
 
 - Reporting a *single* value $(\hat{\beta_1})$ is often not going to be the true population parameter $(\beta_1)$
 ]
@@ -501,7 +501,7 @@ $$\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}X \color{#6A5ACD}{\xrightarrow{\text{🤞
 ]
 
 .quitesmall[
-- Use $\hat{\beta_1}$ and $se(\hat{\beta_1})$ to create an *range* of values that gives us a good chance of capturing the true $\beta_1$
+- Use our $\hat{\beta_1}$ & $se(\hat{\beta_1})$ to create a *range* of values that gives us a good chance of capturing the true $\beta_1$
 ]
 ]
 
