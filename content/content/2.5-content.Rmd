@@ -45,7 +45,8 @@ We continue the extended example about class sizes and test scores, which comes 
 
 I have also made a RStudio Cloud project documenting all of the things we have been doing with this data that may help you when you start working with regressions:
 
-- [<i class="fas fa-cloud"></i> Class Size Regression Analysis](https://rstudio.cloud/spaces/163934/project/2940189)
+- [<i class="fas fa-cloud"></i> Class Size Regression Analysis (Cloud R project)](https://rstudio.cloud/spaces/163934/project/2940189)
+- [<i class="fas fa-external-link-square-alt"></i> Class Size Regression Analysis (output)](/data/class_size_regression_analysis.html)
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 

@@ -1,0 +1,337 @@
+---
+title: "Class Size & Test Scores Regression Analysis"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load-libraries, echo = F, warning = F, message = F}
+# note I have already installed all of these here!
+
+library(tidyverse) # always! 
+library(haven) # for importing .dta files
+library(broom) # for tidy regression commands
+library(equatiomatic) # if you want to write reg. eq'ns in markdown
+library(ggthemes) # for more ggplot themes
+library(huxtable) # for regression output tables
+library(lmtest) # for heteroskedasticity test
+library(estimatr) # for robust-SEs
+library(car) # for outlier test
+```
+
+# Loading In Data
+
+```{r load-data}
+CASchool <- read_dta("caschool.dta") # this is in the same directory as this Rmd file
+```
+
+```{r look-at-data-1}
+# see what it gives us
+# CASchool # don't run this in knitted markdown, it will print 420 rows!!
+ 
+# note since we have tidyverse loaded, it prints a nice tibble
+
+# look only at first 10 rows
+head(CASchool, n = 10)
+
+# get structure
+str(CASchool)
+
+# use tidyverse methods to look at structure
+glimpse(CASchool)
+```
+
+# Scatterplot
+
+```{r scatterplot, fig.retina=3}
+# save as scatter
+scatter <- ggplot(data = CASchool)+
+  aes(x = str,
+      y = testscr)+
+  geom_point(color = "blue")+
+  labs(x = "Student to Teacher Ratio",
+       y = "Test Score")+
+  theme_pander(base_family = "Fira Sans Condensed",
+           base_size = 20)
+
+# look at it 
+scatter
+```
+
+# Simple Linear Regression (1 Variable)
+
+```{r run-regression}
+# run simple regression, save as "reg"
+reg <- lm(testscr ~ str, data = CASchool)
+
+# print it (just gives us the coefficients)
+reg
+
+# get full summary
+summary(reg)
+
+# Note: this also works (tidyverse): 
+# reg %>% summary()
+```
+
+```{r broom-regression}
+# use broom for tidier output
+
+# tidy() gives us coefficients
+reg %>% tidy()
+
+# glance() gives us regression fit statistics
+reg %>% glance()
+
+# augment() creates observations for fitted and residual values (among other things)
+reg %>% augment() %>% head() # I added head() because otherwise it will print 420 rows!!
+```
+
+You can type out the regression equation in markdown using LaTeX math code:
+
+$$\widehat{\text{test score}}=689.9-2.28 \times str$$ 
+
+Or you can try out `equatiomatic`:
+
+```{r, results="asis"}
+# be sure to set chunk option to: results="asis"
+
+extract_eq(reg, # regression lm object
+           use_coefs = TRUE, # use names of variables
+           coef_digits = 2, # round to 2 digits
+           fix_signs = TRUE) # fix negatives (instead of + -)
+```
+
+Now let's go back to the scatterplot and add our regression line!
+
+```{r scatter-with-regression}
+scatter+
+  geom_smooth(method = "lm", # at minimum, must set method to linear model
+              color = "red", # change color
+              se = TRUE) # set to FALSE if you want to hide the SE range (gray)
+```
+
+Now let's print a nice regression output table
+
+```{r basic-output-table}
+huxreg(reg)
+```
+
+We can customize it a bit
+
+```{r fancier-output-table}
+huxreg("Test Score" = reg, # set Y name
+       coefs = c("Intercept" = "(Intercept)", # rename X variable & intercept
+                 "STR" = "str"),
+       statistics = c("N" = "nobs", # show only these stats and name them
+                      "R-Squared" = "r.squared",
+                      "SER" = "sigma"),
+       number_format = 2) # round to 2 decimals
+```
+
+
+# Regression Analysis
+
+```{r, residuals_histogram}
+# first let's use augment again, and *save* as aug_reg
+aug_reg <- augment(reg)
+
+# now we can plot a histogram using aug_reg
+
+ggplot(data = aug_reg)+
+  aes(x = .resid)+ # the residuals!
+  geom_histogram(color = "white",
+                 fill = "hotpink")+
+  labs(x = expression(paste("Residual, ", hat(u))))+
+  theme_pander(base_family = "Fira Sans Condensed",
+           base_size=20)
+```
+
+```{r, residual-plot}
+ggplot(data = aug_reg)+
+  aes(x = str,
+      y = .resid)+
+  geom_point(color="blue")+
+  geom_hline(aes(yintercept = 0), color="red")+
+  labs(x = "Student to Teacher Ratio",
+       y = expression(paste("Residual, ", hat(u))))+
+  theme_pander(base_family = "Fira Sans Condensed",
+           base_size=20)
+```
+
+Testing for heteroskedasticity
+
+```{r check-heteroskedasticity}
+# using package lmtest
+bptest(reg)
+```
+
+```{r robust-SE-regression}
+# using package estimatr
+reg_robust <-lm_robust(testscr ~ str,
+                              data = CASchool,
+                              se_type = "stata")
+
+reg_robust %>% summary()
+```
+
+```{r reg-output-robust}
+huxreg("Normal" = reg,
+       "Robust" = reg_robust,
+       coefs = c("Intercept" = "(Intercept)",
+                 "STR" = "str"),
+       statistics = c("N" = "nobs",
+                      "R-Squared" = "r.squared",
+                      "SER" = "sigma"),
+       number_format = 2)
+```
+
+Check for outliers
+
+```{r test-outliers}
+# using car package
+outlierTest(reg) # will point out which obs #s seem outliers
+```
+
+# Multivariate Regressions
+
+## Correlation Table
+
+```{r}
+CASchool %>%
+  select("str","testscr","el_pct", "expn_stu") %>%
+  cor()
+```
+
+## Conditional Distribution (of Test Score) by Low/High ESL
+
+```{r}
+# make a new variable called EL
+# = high (if el_pct is above median) or = low (if below median)
+CASchool<-CASchool %>% # next we create a new dummy variable called ESL
+  mutate(ESL = ifelse(el_pct > median(el_pct), # test if ESL is above median
+                     yes = "High ESL", # if yes, call this variable "High ESL"
+                     no = "Low ESL")) # if no, call this variable "Low ESL"
+
+# get average test score by high/low EL
+CASchool %>%
+  group_by(ESL) %>%
+  summarize(Average_test_score=mean(testscr))
+
+# make distributions
+ggplot(data = CASchool)+
+  aes(x = testscr,
+      fill = ESL)+
+  geom_density(alpha=0.5)+
+  labs(x = "Test Score",
+       y = "Density")+
+  ggthemes::theme_pander(
+    base_family = "Fira Sans Condensed",
+    base_size=20
+    )+
+  theme(legend.position = "bottom")
+
+# make scatterplot
+
+esl_scatter<-ggplot(data = CASchool)+
+  aes(x = str,
+      y = testscr,
+      color = ESL)+
+  geom_point()+
+  geom_smooth(method="lm")+
+  labs(x = "STR",
+       y = "Test Score")+
+  ggthemes::theme_pander(
+    base_family = "Fira Sans Condensed",
+    base_size=20
+    )+
+  theme(legend.position = "bottom")
+esl_scatter
+
+# facet instead
+
+esl_scatter+
+  facet_grid(~ESL)+ #<<
+  guides(color = F) #<<
+```
+
+## Multivariate Regression (with %EL)
+
+```{r}
+# run regression of testscr on str and el_pct
+school_reg_2 <- lm(testscr ~ str + el_pct, 
+                 data = CASchool)
+
+# look at it (just gives coefficients)
+school_reg_2
+
+# get summary
+school_reg_2 %>% summary()
+```
+
+```{r}
+# do it tider with broom
+school_reg_2 %>% tidy()
+
+# get regression fit statistics
+school_reg_2 %>% glance()
+```
+
+```{r}
+# make a regression output table
+library(huxtable)
+huxreg("Model 1" = reg,
+       "Model 2" = school_reg_2,
+       coefs = c("Intercept" = "(Intercept)",
+                 "Class Size" = "str",
+                 "%ESL Students" = "el_pct"),
+       statistics = c("N" = "nobs",
+                      "R-Squared" = "r.squared",
+                      "SER" = "sigma"),
+       number_format = 2)
+```
+
+## Measuring OVB
+
+```{r}
+# "true" regression (str and %EL)
+true<-lm(testscr~str+el_pct, data=CASchool)
+true %>% tidy()
+
+# "omitted" regression (omitting %EL)
+omitted<-lm(testscr~str, data=CASchool)
+omitted %>% tidy()
+
+# "auxiliary" regression (%EL on str)
+aux<-lm(el_pct~str, data=CASchool)
+aux %>% tidy()
+```
+
+# Variance and VIF
+
+```{r}
+library(car) # needs car package
+true %>% vif()
+
+
+# calculate VIF manually
+
+# look at aux reg stats for R^2
+# extract our R-squared from aux regression (R_j^2)
+aux_r_sq<-glance(aux) %>%
+  select(r.squared)
+
+aux_r_sq # look at it
+
+# calculate VIF manually
+
+our_vif<-1/(1-aux_r_sq) # VIF formula 
+
+our_vif
+
+```
+
