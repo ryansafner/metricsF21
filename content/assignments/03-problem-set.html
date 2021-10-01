@@ -21,7 +21,7 @@ Please submit on Blackboard Assignments by the end of the day Thursday October 7
 {{% /alert %}}</p>
 <p>Please read the <a href="/assignments/problem-sets">instructions</a> for completing homeworks.</p>
 <p style="text-align:center">
-<a target="_blank" href="/assignment/03-problem-set-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> PDF</a></span> <a target="_blank" href="/assignment/03-problem-set.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2898635"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span>
+<a target="_blank" href="/assignment/03-problem-set-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> PDF</a></span> <a target="_blank" href="/assignment/03-problem-set.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2972666"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span>
 </p>
 <p>The <i class="fas fa-file-pdf"></i> PDF is useful if you want to print out the problem set. The <i class="fas fa-file-archive"></i> R project is a zipped <code>.zip</code> file which contains a <i class="fab fa-markdown"></i> <code>.Rmd</code> file to write answers in, and the data, all in a logical working directory. (<a href="/resources/unzipping_files">See this resource</a> for help unzipping files). You can also just write an <code>.R</code> file in the project if you don’t want to use markdown. If you use the <i class="fas fa-cloud"></i> cloud project, I have already installed <code>tidyverse</code> and <code>tinytex</code> (to produce pdfs).</p>
 <div id="concepts" class="section level1">
@@ -145,7 +145,7 @@ In a sample of 48 observations, she generates the following descriptive statisti
 </blockquote>
 <div id="part-a-2" class="section level3">
 <h3>Part A</h3>
-<p>Clean up the data a bit by making a new variable to measure home attendance in millions. This will make it easier to interpret your regression later on.</p>
+<p>Clean up the data a bit by <code>mutate()</code>-ing a variable to measure home attendance in millions. This will make it easier to interpret your regression later on.</p>
 </div>
 <div id="part-b-2" class="section level3">
 <h3>Part B</h3>
@@ -157,7 +157,12 @@ In a sample of 48 observations, she generates the following descriptive statisti
 </div>
 <div id="part-d-2" class="section level3">
 <h3>Part D</h3>
-<p>Run a regression of Runs Scored on Home Attendance. What are <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\hat{\beta_1}\)</span>? Interpret them in the context of our question.</p>
+<p>We want to estimate a regression of Runs Scored on Home Attendance:</p>
+<p><span class="math display">\[
+\widehat{\text{runs scored}_i} = \beta_0 + \beta_1 \text{home attendance}_i
+\]</span>
+Run this regression in <code>R</code>.</p>
+<p>What are <span class="math inline">\(\hat{\beta_0}\)</span> and <span class="math inline">\(\hat{\beta_1}\)</span> for this model? Interpret them in the context of our question. [Hint: make sure to save your regression model as an object, and get a <code>summary()</code> of it. This object will be needed later.]</p>
 </div>
 <div id="part-e-2" class="section level3">
 <h3>Part E</h3>
@@ -165,42 +170,64 @@ In a sample of 48 observations, she generates the following descriptive statisti
 </div>
 <div id="part-f-1" class="section level3">
 <h3>Part F</h3>
-<p>Make a regression table of the output.</p>
+<p>Make a regression table of the output (using the <code>huxtable</code> package).</p>
 </div>
 <div id="part-g-1" class="section level3">
 <h3>Part G</h3>
-<p>Now let’s start running some diagnostics of the regression. Make a histogram of the residuals. Do they look roughly normal?</p>
+<p>Check the goodness of fit statistics. What is the <span class="math inline">\(R^2\)</span> and the SER of this model? Interpret them both in the context of our question.</p>
 </div>
 <div id="part-h-1" class="section level3">
 <h3>Part H</h3>
-<p>Make a residual plot.</p>
+<p>Now let’s start running some diagnostics of the regression. Make a histogram of the residuals. Do they look roughly normal? [Hint: you will need to use the <code>broom</code> package’s <code>augment()</code> command on your saved regression object to add containing the residuals (<code>.resid</code>), and save this as a new object - to be your data source for the plot in this question and the next question.]</p>
 </div>
 <div id="part-i" class="section level3">
 <h3>Part I</h3>
-<p>Test the regression for heteroskedasticity. Are the errors homoskedastic or heteroskedastic? Generate robust standard errors. Make a regression output table, with one column with regular standard errors and another with robust standard errors.</p>
+<p>Make a residual plot.</p>
 </div>
 <div id="part-j" class="section level3">
 <h3>Part J</h3>
-<p>Test the data for outliers. If there are any, identify which team(s) and season(s) are outliers.</p>
+<p>Test the regression for heteroskedasticity. Are the errors homoskedastic or heteroskedastic?</p>
+<p>[Hint: use the <code>lmtest</code> package’s <code>bptest()</code> command on your saved regression object.]</p>
+<p>Run another regression using robust standard errors. [Hint: use the <code>estimatr</code> package’s <code>lm_robust()</code> command and save the output like the following:</p>
+<pre class="r"><code>reg_robust &lt;-lm_robust(y ~ x, data = the_data, # change y, x, and data names to yours
+                              se_type = &quot;stata&quot;) # we&#39;ll use this method to calculate</code></pre>
+<p>Now make another regression output table with <code>huxtable</code>, with one column using regular standard errors (just use your original saved regression object) and another using robust standard errors (use this new saved object).</p>
 </div>
 <div id="part-k" class="section level3">
 <h3>Part K</h3>
-<p>What is the marginal effect of home attendance on runs scored? Is this statistically significant? Why or why not?</p>
+<p>Test the data for outliers. If there are any, identify which team(s) and season(s) are outliers. [Hint: use the <code>car</code> package’s <code>outlierTest()</code> command on your saved regression object.]</p>
 </div>
 <div id="part-l" class="section level3">
 <h3>Part L</h3>
-<p>Now we’ll try out the <code>infer</code> package to understand the <span class="math inline">\(p\)</span>-value and confidence interval for our observed slope in our regression model. Save the (value of) our sample <span class="math inline">\(\hat{\beta_1}\)</span> from your regression in Part D as an object. Then, install and load the <code>infer</code> package, and then calculate the slope [<code>calculate(stat = "slope")</code>] under the null hypothesis that there is no connection between attendance and runs. [<code>hypothesize(null = "independence")</code>] for 1000 additional simulated samples [<code>generate(reps = 1000, type = "permute")</code>], and save this as an object (it’s a <code>tibble</code>). Then, use this to <code>get_p_value()</code> [Set <code>obs_stat</code> equal to your observed slope, and set <code>direction = "two_sided"</code>]. Compare to the <span class="math inline">\(p\)</span>-value given by <code>lm()</code> and <code>tidy()</code> above.</p>
+<p>Look back at your regression results. What is the marginal effect of home attendance on runs scored? Is this statistically significant? Why or why not?</p>
 </div>
 <div id="part-m" class="section level3">
 <h3>Part M</h3>
-<p>Make a histogram of the simulated slopes, and plot our sample slope on that histogram, shading the <span class="math inline">\(p\)</span>-value.</p>
-<p>[You can use <code>ggplot2</code> to plot a histogram in the normal way and add a <code>geom_vline()</code>, setting <code>xintercept</code> equal to your saved object with the sample <span class="math inline">\(\hat{\beta_1}\)</span> value. <em>Alternatively</em>, you can use <code>infer</code> to pipe your <code>tibble</code> of simulations into <code>visualize()</code>, and inside <code>visualize()</code> set <code>obs_stat</code> equal to your saved <span class="math inline">\(\hat{\beta_1}\)</span> object. <em>Regardless</em> of which method you use, add <code>+shade_p_value()</code>. Inside this, set <code>obs_stat</code> equal to your saved slope, and add <code>direction = "two_sided"</code>.]</p>
+<p>Now we’ll try out the <code>infer</code> package to understand the <span class="math inline">\(p\)</span>-value for our observed slope in our regression model.</p>
+<p>First, save the (value of) our sample <span class="math inline">\(\hat{\beta_1}\)</span> from your regression in Part D as an object, I suggest:</p>
+<pre class="r"><code>our_slope = 123 # replace &quot;123&quot; with whatever number you found for the slope in part D</code></pre>
+<p>Then, install and load the <code>infer</code> package, and then run the following simulation:</p>
+<pre class="r"><code># save our simulations as an object (I called it &quot;sims&quot;)
+sims &lt;- data %&gt;% # &quot;data&quot; here is whatever you named your dataframe!
+  specify(y ~ x) %&gt;% # replacing y and x with your variable names
+  hypothesize(null = &quot;independence&quot;) %&gt;% # H_0 is that slope is 0, x and y are independent
+  generate(reps = 1000,
+           type = &quot;permute&quot;) %&gt;% # make 1000 samples assuming H_0 is true
+  calculate(stat = &quot;slope&quot;) # estimate slope in each sample
+
+# look at it
+sims
+
+# calculate p value
+sims %&gt;%
+  get_p_value(obs_stat = our_slope,
+              direction = &quot;both&quot;) # a two-sided H_a: slope =/= 0</code></pre>
+<p>Compare to the <span class="math inline">\(p\)</span>-value in your original regression output in previous parts of this question.</p>
 </div>
 <div id="part-n" class="section level3">
 <h3>Part N</h3>
-<p>Get the 95% confidence interval for your slope estimate and then make a histogram of the simulated slopes (like part L), but instead, add <code>+shade_confidence_interval()</code>. Compare this to what you get with <code>tidy()</code> above.</p>
-<p>[First, you can re-<code>tidy()</code> your original regression, with <code>conf.int = TRUE</code> inside the command, then <code>select(conf.low, conf.high)</code> and <code>filter</code> by your <code>x</code> variable. Save this as an object.]</p>
-<p>[Inside of <code>shade_confidence_interval()</code>, set <code>endpoints</code> equal to the object you just made with the low and high confidence interval values.]</p>
+<p>Make a histogram of the simulated slopes, and plot our sample slope on that histogram, shading the <span class="math inline">\(p\)</span>-value.</p>
+<p>[You can pipe <code>sims</code> into <code>visualize(obs_stat = our_slope)</code>, or use <code>ggplot2</code> to plot a histogram in the normal way, using <code>sims</code> as the data source and add a <code>geom_vline(xintercept = our_slope)</code> to show our finding on the distribution.]</p>
 </div>
 </div>
 </div>

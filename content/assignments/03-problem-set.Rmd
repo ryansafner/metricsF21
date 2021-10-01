@@ -24,7 +24,7 @@ Please submit on Blackboard Assignments by the end of the day Thursday October 7
 
 Please read the [instructions](/assignments/problem-sets) for completing homeworks.
 
-<p style="text-align:center"><a target="_blank" href="/assignment/03-problem-set-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> PDF</a></span> <a target="_blank" href="/assignment/03-problem-set.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2898635"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span></p>
+<p style="text-align:center"><a target="_blank" href="/assignment/03-problem-set-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> PDF</a></span> <a target="_blank" href="/assignment/03-problem-set.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2972666"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span></p>
 
 The <i class="fas fa-file-pdf"></i> PDF is useful if you want to print out the problem set. The <i class="fas fa-file-archive"></i> R project is a zipped `.zip` file which contains a <i class="fab fa-markdown"></i> `.Rmd` file to write answers in, and the data, all in a logical working directory. ([See this resource](/resources/unzipping_files) for help unzipping files). You can also just write an `.R` file in the project if you don't want to use markdown. If you use the <i class="fas fa-cloud"></i> cloud project, I have already installed `tidyverse` and `tinytex` (to produce pdfs).
 
@@ -134,7 +134,7 @@ Download the `MLBattend` dataset. This data contains data on attendance at major
 
 ### Part A
 
-Clean up the data a bit by making a new variable to measure home attendance in millions. This will make it easier to interpret your regression later on. 
+Clean up the data a bit by `mutate()`-ing a variable to measure home attendance in millions. This will make it easier to interpret your regression later on. 
 
 ### Part B
 
@@ -146,7 +146,14 @@ Plot a scatterplot of Runs Scored (`y`) on Home Attendance (`x`). Add a regressi
 
 ### Part D
 
-Run a regression of Runs Scored on Home Attendance. What are $\beta_0$ and $\hat{\beta_1}$? Interpret them in the context of our question.
+We want to estimate a regression of Runs Scored on Home Attendance:
+
+$$
+\widehat{\text{runs scored}_i} = \beta_0 + \beta_1 \text{home attendance}_i
+$$
+Run this regression in `R`.
+
+What are $\hat{\beta_0}$ and $\hat{\beta_1}$ for this model? Interpret them in the context of our question. [Hint: make sure to save your regression model as an object, and get a `summary()` of it. This object will be needed later.]
 
 ### Part E
 
@@ -154,43 +161,77 @@ Write out the estimated regression equation.
 
 ### Part F
 
-Make a regression table of the output.
+Make a regression table of the output (using the `huxtable` package).
 
 ### Part G
 
-Now let's start running some diagnostics of the regression. Make a histogram of the residuals. Do they look roughly normal?
+Check the goodness of fit statistics. What is the $R^2$ and the SER of this model? Interpret them both in the context of our question.
 
 ### Part H
 
-Make a residual plot.
+Now let's start running some diagnostics of the regression. Make a histogram of the residuals. Do they look roughly normal? [Hint: you will need to use the `broom` package's `augment()` command on your saved regression object to add containing the residuals (`.resid`), and save this as a new object - to be your data source for the plot in this question and the next question.]
 
 ### Part I
 
-Test the regression for heteroskedasticity. Are the errors homoskedastic or heteroskedastic? Generate robust standard errors. Make a regression output table, with one column with regular standard errors and another with robust standard errors.
+Make a residual plot.
 
 ### Part J
 
-Test the data for outliers. If there are any, identify which team(s) and season(s) are outliers.
+Test the regression for heteroskedasticity. Are the errors homoskedastic or heteroskedastic? 
+
+[Hint: use the `lmtest` package's `bptest()` command on your saved regression object.]
+
+Run another regression using robust standard errors. [Hint: use the `estimatr` package's `lm_robust()` command and save the output like the following:
+
+```{r, eval = F}
+reg_robust <-lm_robust(y ~ x, data = the_data, # change y, x, and data names to yours
+                              se_type = "stata") # we'll use this method to calculate
+```
+
+Now make another regression output table with `huxtable`, with one column using regular standard errors (just use your original saved regression object) and another using robust standard errors (use this new saved object).
 
 ### Part K
 
-What is the marginal effect of home attendance on runs scored? Is this statistically significant? Why or why not?  
+Test the data for outliers. If there are any, identify which team(s) and season(s) are outliers. [Hint: use the `car` package's `outlierTest()` command on your saved regression object.]
 
 ### Part L
 
-Now we'll try out the `infer` package to understand the $p$-value and confidence interval for our observed slope in our regression model. Save the (value of) our sample $\hat{\beta_1}$ from your regression in Part D as an object. Then, install and load the `infer` package, and then calculate the slope [`calculate(stat = "slope")`] under the null hypothesis that there is no connection between attendance and runs. [`hypothesize(null = "independence")`] for 1000 additional simulated samples [`generate(reps = 1000, type = "permute")`], and save this as an object (it's a `tibble`). Then, use this to `get_p_value()` [Set `obs_stat` equal to your observed slope, and set `direction = "two_sided"`]. Compare to the $p$-value given by `lm()` and `tidy()` above.
+Look back at your regression results. What is the marginal effect of home attendance on runs scored? Is this statistically significant? Why or why not?
 
 ### Part M
 
-Make a histogram of the simulated slopes, and plot our sample slope on that histogram, shading the $p$-value. 
+Now we'll try out the `infer` package to understand the $p$-value for our observed slope in our regression model. 
 
-[You can use `ggplot2` to plot a histogram in the normal way and add a `geom_vline()`, setting `xintercept` equal to your saved object with the sample $\hat{\beta_1}$ value. *Alternatively*, you can use `infer` to pipe your `tibble` of simulations into `visualize()`, and inside `visualize()` set `obs_stat` equal to your saved $\hat{\beta_1}$ object. *Regardless* of which method you use, add `+shade_p_value()`. Inside this, set `obs_stat` equal to your saved slope, and add `direction = "two_sided"`.]
+First, save the (value of) our sample $\hat{\beta_1}$ from your regression in Part D as an object, I suggest:
+
+```{r, eval = F}
+our_slope = 123 # replace "123" with whatever number you found for the slope in part D
+```
+
+Then, install and load the `infer` package, and then run the following simulation:
+
+```{r, eval = F}
+# save our simulations as an object (I called it "sims")
+sims <- data %>% # "data" here is whatever you named your dataframe!
+  specify(y ~ x) %>% # replacing y and x with your variable names
+  hypothesize(null = "independence") %>% # H_0 is that slope is 0, x and y are independent
+  generate(reps = 1000,
+           type = "permute") %>% # make 1000 samples assuming H_0 is true
+  calculate(stat = "slope") # estimate slope in each sample
+
+# look at it
+sims
+
+# calculate p value
+sims %>%
+  get_p_value(obs_stat = our_slope,
+              direction = "both") # a two-sided H_a: slope =/= 0
+```
+
+Compare to the $p$-value in your original regression output in previous parts of this question.
 
 ### Part N
 
-Get the 95% confidence interval for your slope estimate and then make a histogram of the simulated slopes (like part L), but instead, add `+shade_confidence_interval()`. Compare this to what you get with `tidy()` above.
+Make a histogram of the simulated slopes, and plot our sample slope on that histogram, shading the $p$-value. 
 
-[First, you can re-`tidy()` your original regression, with `conf.int = TRUE` inside the command, then `select(conf.low, conf.high)` and `filter` by your `x` variable. Save this as an object.] 
-
-[Inside of `shade_confidence_interval()`, set `endpoints` equal to the object you just made with the low and high confidence interval values.]
-
+[You can pipe `sims` into `visualize(obs_stat = our_slope)`, or use `ggplot2` to plot a histogram in the normal way, using `sims` as the data source and add a `geom_vline(xintercept = our_slope)` to show our finding on the distribution.]
