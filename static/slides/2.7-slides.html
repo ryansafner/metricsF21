@@ -43,9 +43,9 @@ class: inverse
 
 ### [Hypothesis Testing by Simulation, with *infer*](#54)
 
-### [What R Calculates (Classical Statistical Inference)](#)
+### [Classical Statistical Inference (What R Calculates)](#79)
 
-### [The Use and Abuse of `\(p\)`-values](#)
+### [The Use and Abuse of `\(p\)`-values](#93)
 
 ---
 
@@ -317,7 +317,7 @@ William Blackstone
 
 # Power and p-values
 
-- The statistical .hi[power of the test] is `\((1-\beta)\)`: the probability of correctly rejecting `\(H_0\)` when `\(H_0\)` is in fact false (e.g. not convicting an innocent person)
+- The statistical .hi[power of the test] is `\((1-\beta)\)`: the probability of correctly rejecting `\(H_0\)` when `\(H_0\)` is in fact false (e.g. convicting a guilty person)
 
 `$$\text{Power} = 1- \beta = P(\text{Reject }H_0|H_0 \text{ is false})$$`
 
@@ -928,7 +928,7 @@ CASchool %&gt;%
   generate(reps = 1000,
            type = "permute") %&gt;%
   calculate(stat = "slope") %&gt;%
-*visualize()
+* visualize()
 ```
 
 &lt;img src="2.7-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
@@ -1003,37 +1003,6 @@ CASchool %&gt;%
 
 ---
 
-# The *infer*  Pipeline: Visualize Confidence Intervals
-
-.left-code[
-### Specify
-### Hypothesize
-### Generate
-### Calculate
-### Visualize
-`%&gt;% visualize()+shade_ci()`
-]
-
-.right-plot[
-.smallest[
-- To shade confidence interval, we first need a vector of what they are
-  - I've saved the outputted `tibble` of them from 4 slides ago as `ci_values`
-
-
-
-
-```r
-simulations %&gt;%
- visualize(obs_stat = sample_slope)+
-  shade_confidence_interval(ci_values)
-```
-
-&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" style="display: block; margin: auto;" /&gt;
-]
-]
-
----
-
 # The *infer*  Pipeline: Visualize is a Wrapper of ggplot
 
 - `infer`'s `visualize()` function is just a wrapper function for `ggplot()`
@@ -1060,7 +1029,7 @@ simulations %&gt;%
            color = "blue")+
   scale_y_continuous(lim=c(0,120),
                      expand = c(0,0))+
-  labs(x = expression(paste("Distribution of ", hat(beta[1]), " under ", H[0], " that ", beta[1]==0)),
+  labs(x = expression(paste("Sampling distribution of ", hat(beta)[1], " under ", H[0], ":  ", beta[1]==0)),
        y = "Samples")+
     theme_classic(base_family = "Fira Sans Condensed",
            base_size=20)
@@ -1071,14 +1040,14 @@ simulations %&gt;%
 --
 
 .pull-right[
-&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" style="display: block; margin: auto;" /&gt;
+&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-19-1.png" width="504" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
 
 class: inverse, center, middle
 
-# What R Calculates (Classical Statistical Inference)
+# Classical Statistical Inference (What R Calculates)
 
 ---
 
@@ -1086,7 +1055,7 @@ class: inverse, center, middle
 
 .pull-left[
 
-- R does things the old-fashioned way, using a *theoretical* null distribution instead of *simulation*
+- R does things the old-fashioned way, using a *theoretical* null distribution instead of *simulating* one
 
 - A .hi[`\\(t\\)`-distribution] with `\(n-k-1\)` df&lt;sup&gt;.magenta[†]&lt;/sup&gt;
 
@@ -1098,7 +1067,7 @@ class: inverse, center, middle
 
 .pull-right[
 
-&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-22-1.png" width="504" style="display: block; margin: auto;" /&gt;
+&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" style="display: block; margin: auto;" /&gt;
 
 ]
 
@@ -1112,22 +1081,22 @@ class: inverse, center, middle
 .smallest[
 `$$\text{test statistic} = \frac{\text{estimate} - \text{null hypothesis}}{\text{standard error of estimate}}$$`
 
-- `\(t\)` has the same interpretation as `\(Z\)`, number of std. dev. away from the distribution's center&lt;sup&gt;.magenta[†]&lt;/sup&gt;
+- `\(t\)` same interpretation as `\(Z\)`: number of std. dev. away from the sampling distribution's expected value `\(E[\hat{\beta_1}]\)`&lt;sup&gt;.magenta[†]&lt;/sup&gt; (if `\(H_0\)` were true)
 
-- Compares to a critical value of `\(t^*\)` (determined by `\(\alpha\)` &amp; `\(n-k-1\)`)
+- Compares to a .hi-purple[critical value] of `\(t^*\)` (pre-determined by `\(\alpha\)`-level &amp; `\(n-k-1\)` df)
     - For 95% confidence, `\(\alpha=0.05\)`, `\(t^* \approx 2\)`&lt;sup&gt;&lt;span class="magenta"&gt;‡&lt;/span&gt;&lt;/sup&gt;
 ]
 ]
 
 .pull-right[
 
-&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-23-1.png" width="504" style="display: block; margin: auto;" /&gt;
+&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" style="display: block; margin: auto;" /&gt;
 
 ]
 
-.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; Think of our simulated distribution, the center was 0.
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; The expected value is 0, because our null hypothesis was `\(\beta_1 =0\)`
 
-&lt;sup&gt;.magenta[‡]&lt;/sup&gt; The 68-95-99.7% empirical rule!]
+&lt;sup&gt;.magenta[‡]&lt;/sup&gt; Again, the **68-95-99.7%** empirical rule!]
 
 ---
 
@@ -1140,55 +1109,108 @@ t &amp;= \frac{\hat{\beta_1}-\beta_{1,0}}{se(\hat{\beta_1})}\\
 t &amp;= \frac{-2.28-0}{0.48}\\
 t &amp;= -4.75\\ \end{align*}$$`
 
-- Our sample slope is 4.75 standard deviations below the mean under `\(H_0\)`
+- Our sample slope `\(\hat{\beta_1}\)` is **4.75 standard deviations below** the expected value `\(E[\hat{\beta_1}]\)` (i.e. 0) if `\(H_0\)` were true 
 
-- `\(p\)`-value: prob. of a test statistic at least as large (in magnitude) as ours if the null hypothesis were true&lt;sup&gt;.magenta[†]&lt;/sup&gt;
-  - `\(p\)`-value is **2-sided** for `\(H_a: \beta_1 \neq 0\)`
 ]
 ]
 
 .pull-right[
 
-&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-24-1.png" width="504" style="display: block; margin: auto;" /&gt;
+&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-22-1.png" width="504" style="display: block; margin: auto;" /&gt;
 
 ]
 
-.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; Think of our simulated distribution, the center was 0.]
-
 ---
 
-# 1-Sided vs. 2-Sided p-values I
+# What R Does: Classical Statistical Inference III
+
+.pull-left[
+.quitesmall[
+`$$\begin{align*}
+t &amp;= \frac{\hat{\beta_1}-\beta_{1,0}}{se(\hat{\beta_1})}\\
+t &amp;= \frac{-2.28-0}{0.48}\\
+t &amp;= -4.75\\ \end{align*}$$`
+
+- .hi[p-value]: prob. of a test statistic at least as large (in magnitude) as ours if the null hypothesis were true
+  - Continuous distribution implies we need probability of area *beyond* our value
+  - p-value is **2-sided** for `\(H_a: \beta_1 \neq 0\)`
+
+- `\(2 \times p(t_{418}&gt; \vert -4.75\vert)=0.0000028\)`
+]
+]
+
+.pull-right[
+
+&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-23-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+# 1-Sided Tests &amp; p-values
 
 .pull-left[
 
 `\(H_a: \beta_1&lt;0\)`
 
-`\(p\)`-value: `\(Prob(t &lt; t_i)\)`
+p-value: `\(p(t \leq t_i)\)`
 
-&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-25-1.png" width="504" style="display: block; margin: auto;" /&gt;
+&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-24-1.png" width="504" style="display: block; margin: auto;" /&gt;
 
 ]
 .pull-right[
 
 `\(H_a: \beta_1&gt;0\)`
 
-`\(p\)`-value: `\(Prob(t &gt; t_i)\)`
+p-value: `\(p(t \geq t_i)\)`
 
-&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-26-1.png" width="504" style="display: block; margin: auto;" /&gt;
+&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-25-1.png" width="504" style="display: block; margin: auto;" /&gt;
 
 
 ]
 
 ---
 
-# 1-Sided vs. 2-Sided p-values I
-
+# 2-Sided Tests and p-values
 
 `\(H_a: \beta_1 \neq 0\)`
 
-`\(p\)`-value: `\(2 \times Prob(t &gt; |t_i|)\)`
+p-value: `\(2 \times p(t \geq |t_i|)\)`
 
-&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-27-1.png" width="504" style="display: block; margin: auto;" /&gt;
+&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-26-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Calculating p-values in R
+
+.pull-left[
+
+.smallest[
+- `pt()` calculates `p`robabilities on a `t` distribution with arguments:
+  - the t-score
+  - `df = ` the degrees of freedom
+  - `lower.tail = ` 
+      - `TRUE` if looking at area to *LEFT* of value
+      - `FALSE` if looking at area to *RIGHT* of value
+
+
+```r
+2 * pt(4.75, # I'll double the right tail
+       df = 418,
+       lower.tail = F) # right tail
+```
+
+```
+## [1] 2.800692e-06
+```
+- `\(2 \times p(t_{418}&gt; \vert -4.75\vert)=0.0000028\)`
+
+]
+]
+.pull-right[
+
+&lt;img src="2.7-slides_files/figure-html/unnamed-chunk-28-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
 
 ---
 
@@ -1239,6 +1261,8 @@ tidy(school_reg, conf.int=TRUE)
 
 
 
+- p-value on `str` is 0.00000278. 
+
 ---
 
 # Conclusions
@@ -1256,24 +1280,28 @@ H_a: \, &amp; \beta_a \neq 0\\
 
 - Using the confidence intervals:
 
-- .hi-purple[We are 95% confident that the true marginal effect of class size on test scores is between `\\(-3.22\\)` and `\\(-1.34\\)`.]
+- .hi-purple[We are 95% confident that, from similarly constructed samples, the true marginal effect of class size on test scores is between -3.22 and -1.34.]
 
 ---
 
 # Hypothesis Testing vs. Confidence Intervals
 
+.smaller[
 - Confidence intervals are all *two-sided* by nature
-`$$CI_{0.95}=\left(\left[\hat{\beta_1}-2 \times se(\hat{\beta_1})\right], \, \left[\hat{\beta_1}+2 \times se(\hat{\beta_1}\right]) \right)$$`
+`$$CI_{0.95}=\left(\left[\hat{\beta_1}-\underbrace{2 \times se(\hat{\beta_1})}_{MOE}\right], \, \left[\hat{\beta_1}+\underbrace{2 \times se(\hat{\beta_1})}_{MOE}\right] \right)$$`
 
 - Hypothesis test `\((t\)`-test) of `\(H_0: \, \beta_1=0\)` computes a `\(t\)`-value of&lt;sup&gt;.red[1]&lt;/sup&gt;
 `$$t=\frac{\hat{\beta_1}}{se(\hat{\beta_1})}$$`
-and `\(p\)`&lt;0.05 when `\(t\geq2\)`
+and `\(p&lt;0.05\)` when `\(t\geq2\)` (approximately)
+]
+
+.footnote[&lt;sup&gt;.red[1]&lt;/sup&gt; Since our null hypothesis is that `\\(\beta_{1,0}=0\\)`, the test statistic simplifies to this neat fraction.]
 
 --
 
-- .hi-purple[If a confidence interval contains the `\\(H_0\\)` value (i.e. `\\(0\\)`, for our test), then *we fail to reject* `\\(H_0\\)`.]
-
-.footnote[&lt;sup&gt;.red[1]&lt;/sup&gt; Since our null hypothesis is that `\\(\beta_{1,0}=0\\)`, the test statistic simplifies to this neat fraction.]
+.smaller[
+- .hi-purple[If our confidence interval contains the `\\(H_0\\)` value (i.e. `\\(0\\)`, for our test), then *we fail to reject* `\\(H_0\\)`.]
+]
 
 ---
 
@@ -1380,7 +1408,7 @@ class: inverse, center, middle
 .pull-left[
 .font80[
 .regtable[
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-30">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-31">
 <col><col><tr>
 <th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Test Score</th></tr>
 <tr>

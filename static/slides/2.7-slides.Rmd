@@ -69,9 +69,9 @@ class: inverse
 
 ### [Hypothesis Testing by Simulation, with *infer*](#54)
 
-### [What R Calculates (Classical Statistical Inference)](#)
+### [Classical Statistical Inference (What R Calculates)](#79)
 
-### [The Use and Abuse of $p$-values](#)
+### [The Use and Abuse of $p$-values](#93)
 
 ---
 
@@ -343,7 +343,7 @@ $$\beta=P(\text{Don't reject } H_0 | H_0 \text{ is false})$$
 
 # Power and p-values
 
-- The statistical .hi[power of the test] is $(1-\beta)$: the probability of correctly rejecting $H_0$ when $H_0$ is in fact false (e.g. not convicting an innocent person)
+- The statistical .hi[power of the test] is $(1-\beta)$: the probability of correctly rejecting $H_0$ when $H_0$ is in fact false (e.g. convicting a guilty person)
 
 $$\text{Power} = 1- \beta = P(\text{Reject }H_0|H_0 \text{ is false})$$
 
@@ -949,7 +949,7 @@ CASchool %>%
   generate(reps = 1000,
            type = "permute") %>%
   calculate(stat = "slope") %>%
- visualize() #<<
+  visualize() #<<
 ```
 ]
 ]
@@ -1016,39 +1016,6 @@ CASchool %>%
 
 ---
 
-# The *infer*  Pipeline: Visualize Confidence Intervals
-
-.left-code[
-### Specify
-### Hypothesize
-### Generate
-### Calculate
-### Visualize
-`%>% visualize()+shade_ci()`
-]
-
-.right-plot[
-.smallest[
-- To shade confidence interval, we first need a vector of what they are
-  - I've saved the outputted `tibble` of them from 4 slides ago as `ci_values`
-
-```{r}
-ci_values<-simulations %>%
-  get_confidence_interval(level = 0.95,
-                          type = "se",
-                          point_estimate = sample_slope)
-```
-
-```{r, echo=T, fig.height=4, fig.retina=3, fig.align="center"}
-simulations %>%
- visualize(obs_stat = sample_slope)+
-  shade_confidence_interval(ci_values)
-```
-]
-]
-
----
-
 # The *infer*  Pipeline: Visualize is a Wrapper of ggplot
 
 - `infer`'s `visualize()` function is just a wrapper function for `ggplot()`
@@ -1074,7 +1041,7 @@ simulations %>%
            color = "blue")+
   scale_y_continuous(lim=c(0,120),
                      expand = c(0,0))+
-  labs(x = expression(paste("Distribution of ", hat(beta[1]), " under ", H[0], " that ", beta[1]==0)),
+  labs(x = expression(paste("Sampling distribution of ", hat(beta)[1], " under ", H[0], ":  ", beta[1]==0)),
        y = "Samples")+
     theme_classic(base_family = "Fira Sans Condensed",
            base_size=20)
@@ -1094,7 +1061,7 @@ simulations %>%
 
 class: inverse, center, middle
 
-# What R Calculates (Classical Statistical Inference)
+# Classical Statistical Inference (What R Calculates)
 
 ---
 
@@ -1102,7 +1069,7 @@ class: inverse, center, middle
 
 .pull-left[
 
-- R does things the old-fashioned way, using a *theoretical* null distribution instead of *simulation*
+- R does things the old-fashioned way, using a *theoretical* null distribution instead of *simulating* one
 
 - A .hi[`\\(t\\)`-distribution] with $n-k-1$ df<sup>.magenta[†]</sup>
 
@@ -1123,14 +1090,14 @@ t_ex<-ggplot(data = tibble(x=-5:5))+
   #geom_vline(xintercept = c(-4.75, 4.75), size = 1, color = "red", linetype = "dashed")+
   #geom_rect(xmin=-5,xmax=-4.75, ymin=0, ymax=0.4, fill="red", alpha=0.3)+
   #geom_rect(xmin=4.75,xmax=5, ymin=0, ymax=0.4, fill="red", alpha=0.3)+
-  labs(x = "Test Statistic t",
+  labs(x = "Test Statistic, t",
        y = "Probability",
-       caption = expression(paste("t measures our sample statistic (", t[i], ")'s deviation from ", H[0], " if ", H[0], " were True")))+
+       caption = expression(paste("t measures number of std. devs our ", hat(beta[1]), " is from E[", hat(beta[1]), "] if ", H[0], " were True")))+
   scale_x_continuous(breaks = seq(-5,5,1),
                      lim = c(-5,5),
                      expand = c(0,0))+
   scale_y_continuous(breaks = seq(0,0.4,0.1),
-                     lim = c(0,0.4),
+                     lim = c(0,0.45),
                      expand = c(0,0))+
   theme_classic(base_family = "Fira Sans Condensed",
            base_size=16)
@@ -1149,10 +1116,39 @@ t_ex
 .smallest[
 $$\text{test statistic} = \frac{\text{estimate} - \text{null hypothesis}}{\text{standard error of estimate}}$$
 
-- $t$ has the same interpretation as $Z$, number of std. dev. away from the distribution's center<sup>.magenta[†]</sup>
+- $t$ same interpretation as $Z$: number of std. dev. away from the sampling distribution's expected value $E[\hat{\beta_1}]$<sup>.magenta[†]</sup> (if $H_0$ were true)
 
-- Compares to a critical value of $t^*$ (determined by $\alpha$ & $n-k-1$)
+- Compares to a .hi-purple[critical value] of $t^*$ (pre-determined by $\alpha$-level & $n-k-1$ df)
     - For 95% confidence, $\alpha=0.05$, $t^* \approx 2$<sup><span class="magenta">‡</span></sup>
+]
+]
+
+.pull-right[
+
+```{r, fig.retina=3, fig.align="center"}
+t_ex
+
+```
+
+]
+
+.footnote[<sup>.magenta[†]</sup> The expected value is 0, because our null hypothesis was $\beta_1 =0$
+
+<sup>.magenta[‡]</sup> Again, the **68-95-99.7%** empirical rule!]
+
+---
+
+# What R Does: Classical Statistical Inference III
+
+.pull-left[
+.quitesmall[
+$$\begin{align*}
+t &= \frac{\hat{\beta_1}-\beta_{1,0}}{se(\hat{\beta_1})}\\
+t &= \frac{-2.28-0}{0.48}\\
+t &= -4.75\\ \end{align*}$$
+
+- Our sample slope $\hat{\beta_1}$ is **4.75 standard deviations below** the expected value $E[\hat{\beta_1}]$ (i.e. 0) if $H_0$ were true 
+
 ]
 ]
 
@@ -1169,14 +1165,9 @@ t_ex+
            y = 0.38,
            label = expression(paste("Our ",t[i])),
            color = "blue")
-
 ```
 
 ]
-
-.footnote[<sup>.magenta[†]</sup> Think of our simulated distribution, the center was 0.
-
-<sup>.magenta[‡]</sup> The 68-95-99.7% empirical rule!]
 
 ---
 
@@ -1189,32 +1180,43 @@ t &= \frac{\hat{\beta_1}-\beta_{1,0}}{se(\hat{\beta_1})}\\
 t &= \frac{-2.28-0}{0.48}\\
 t &= -4.75\\ \end{align*}$$
 
-- Our sample slope is 4.75 standard deviations below the mean under $H_0$
+- .hi[p-value]: prob. of a test statistic at least as large (in magnitude) as ours if the null hypothesis were true
+  - Continuous distribution implies we need probability of area *beyond* our value
+  - p-value is **2-sided** for $H_a: \beta_1 \neq 0$
 
-- $p$-value: prob. of a test statistic at least as large (in magnitude) as ours if the null hypothesis were true<sup>.magenta[†]</sup>
-  - $p$-value is **2-sided** for $H_a: \beta_1 \neq 0$
+- $2 \times p(t_{418}> \vert -4.75\vert)=0.0000028$
 ]
 ]
 
 .pull-right[
 
 ```{r, fig.retina=3, fig.align="center"}
-t_ex
+t_ex+
+  geom_rect(xmin = -5, xmax = -4.75, ymin=0, ymax = 0.5, fill = "#e64173", alpha = 0.25)+
+  geom_rect(xmin = 4.75, xmax = 5, ymin=0, ymax = 0.5, fill = "#e64173", alpha = 0.25)+
+  geom_vline(xintercept = c(-4.75, 4.75),
+             color = "blue",
+             size = 2,
+             linetype = "dashed")+
+  annotate(geom = "label",
+           x = c(-4.6, 4.6),
+           y = 0.38,
+           label = expression(paste("Our ",t[i])),
+           color = "blue")+
+  labs(caption = "p-value is probability in the tails beyond our t")
+
 ```
 
 ]
 
-.footnote[<sup>.magenta[†]</sup> Think of our simulated distribution, the center was 0.]
-
 ---
-
-# 1-Sided vs. 2-Sided p-values I
+# 1-Sided Tests & p-values
 
 .pull-left[
 
 $H_a: \beta_1<0$
 
-$p$-value: $Prob(t < t_i)$
+p-value: $p(t \leq t_i)$
 
 ```{r, fig.retina=3, fig.height=5, fig.align="center"}
 ggplot(data = tibble(x=-4:4))+
@@ -1223,7 +1225,7 @@ ggplot(data = tibble(x=-4:4))+
   stat_function(fun=dnorm, xlim=c(-4,-2), geom="area", fill="#e64173", alpha=0.5)+
   labs(x = "Test Statistic t",
        y = "Probability",
-       caption = expression(paste("t measures our sample statistic (", t[i], ")'s deviation from ", H[0], " if ", H[0], " were True")))+
+       caption = expression(paste("p-value is probability in the tail(s) beyond our test statistic, ", t[i], " of our sample slope ", hat(beta[1]))))+
   scale_x_continuous(breaks=c(-2),
                       label=c(expression(-t[i])))+
   scale_y_continuous(limits = c(0,0.45),
@@ -1238,7 +1240,7 @@ ggplot(data = tibble(x=-4:4))+
 
 $H_a: \beta_1>0$
 
-$p$-value: $Prob(t > t_i)$
+p-value: $p(t \geq t_i)$
 
 ```{r, fig.retina=3, fig.height=5, fig.align="center"}
 ggplot(data = tibble(x=-4:4))+
@@ -1247,7 +1249,7 @@ ggplot(data = tibble(x=-4:4))+
   stat_function(fun=dnorm, xlim=c(2,4), geom="area", fill="#e64173", alpha=0.5)+
   labs(x = "Test Statistic t",
        y = "Probability",
-       caption = expression(paste("t measures our sample statistic (", t[i], ")'s deviation from ", H[0], " if ", H[0], " were True")))+
+       caption = expression(paste("p-value is probability in the tail(s) beyond our test statistic, ", t[i], " of our sample slope ", hat(beta[1]))))+
   scale_x_continuous(breaks=c(2),
                       label=c(expression(t[i])))+
   scale_y_continuous(limits = c(0,0.45),
@@ -1261,12 +1263,11 @@ ggplot(data = tibble(x=-4:4))+
 
 ---
 
-# 1-Sided vs. 2-Sided p-values I
-
+# 2-Sided Tests and p-values
 
 $H_a: \beta_1 \neq 0$
 
-$p$-value: $2 \times Prob(t > |t_i|)$
+p-value: $2 \times p(t \geq |t_i|)$
 
 ```{r, fig.retina=3, fig.height=5, fig.align="center"}
 ggplot(data = tibble(x=-4:4))+
@@ -1274,11 +1275,9 @@ ggplot(data = tibble(x=-4:4))+
   stat_function(fun = dnorm, size=2, color="#e64173")+
   stat_function(fun=dnorm, xlim=c(2,4), geom="area", fill="#e64173", alpha=0.5)+
   stat_function(fun=dnorm, xlim=c(-4,-2), geom="area", fill="#e64173", alpha=0.5)+
-  stat_function(fun=dnorm, xlim=c(2,4), geom="area", fill="#e64173", alpha=0.5)+
   labs(x = "Test Statistic t",
        y = "Probability",
-       caption = expression(paste("t measures our sample statistic (", t[i], ")'s deviation from ", H[0], " if ", H[0], " were True"))
-       )+
+       caption = expression(paste("p-value is probability in the tail(s) beyond our test statistic, ", t[i], " of our sample slope ", hat(beta[1]))))+
   scale_x_continuous(breaks=c(-2,2),
                       label=c(expression(-t[i]), expression(t[i])))+
     scale_y_continuous(limits = c(0,0.45),
@@ -1286,6 +1285,50 @@ ggplot(data = tibble(x=-4:4))+
   theme_classic(base_family = "Fira Sans Condensed",
            base_size=16)
 ```
+
+---
+
+# Calculating p-values in R
+
+.pull-left[
+
+.smallest[
+- `pt()` calculates `p`robabilities on a `t` distribution with arguments:
+  - the t-score
+  - `df = ` the degrees of freedom
+  - `lower.tail = ` 
+      - `TRUE` if looking at area to *LEFT* of value
+      - `FALSE` if looking at area to *RIGHT* of value
+
+```{r, echo = T}
+2 * pt(4.75, # I'll double the right tail
+       df = 418,
+       lower.tail = F) # right tail
+```
+- $2 \times p(t_{418}> \vert -4.75\vert)=0.0000028$
+
+]
+]
+.pull-right[
+
+```{r, fig.retina=3, fig.align="center"}
+t_ex+
+  geom_rect(xmin = -5, xmax = -4.75, ymin=0, ymax = 0.5, fill = "#e64173", alpha = 0.25)+
+  geom_rect(xmin = 4.75, xmax = 5, ymin=0, ymax = 0.5, fill = "#e64173", alpha = 0.25)+
+  geom_vline(xintercept = c(-4.75, 4.75),
+             color = "blue",
+             size = 2,
+             linetype = "dashed")+
+  annotate(geom = "label",
+           x = c(-4.6, 4.6),
+           y = 0.38,
+           label = expression(paste("Our ",t[i])),
+           color = "blue")+
+  labs(caption = "p-value is probability in the tails beyond our t")
+
+```
+
+]
 
 ---
 
@@ -1312,6 +1355,8 @@ tidy(school_reg, conf.int=TRUE) %>%
   column_spec(c(3,4), color = "#e64173")
 ```
 
+- p-value on `str` is 0.00000278. 
+
 ---
 
 # Conclusions
@@ -1329,24 +1374,28 @@ H_a: \, & \beta_a \neq 0\\
 
 - Using the confidence intervals:
 
-- .hi-purple[We are 95% confident that the true marginal effect of class size on test scores is between `\\(-3.22\\)` and `\\(-1.34\\)`.]
+- .hi-purple[We are 95% confident that, from similarly constructed samples, the true marginal effect of class size on test scores is between -3.22 and -1.34.]
 
 ---
 
 # Hypothesis Testing vs. Confidence Intervals
 
+.smaller[
 - Confidence intervals are all *two-sided* by nature
-$$CI_{0.95}=\left(\left[\hat{\beta_1}-2 \times se(\hat{\beta_1})\right], \, \left[\hat{\beta_1}+2 \times se(\hat{\beta_1}\right]) \right)$$
+$$CI_{0.95}=\left(\left[\hat{\beta_1}-\underbrace{2 \times se(\hat{\beta_1})}_{MOE}\right], \, \left[\hat{\beta_1}+\underbrace{2 \times se(\hat{\beta_1})}_{MOE}\right] \right)$$
 
 - Hypothesis test $(t$-test) of $H_0: \, \beta_1=0$ computes a $t$-value of<sup>.red[1]</sup>
 $$t=\frac{\hat{\beta_1}}{se(\hat{\beta_1})}$$
-and $p$<0.05 when $t\geq2$
+and $p<0.05$ when $t\geq2$ (approximately)
+]
+
+.footnote[<sup>.red[1]</sup> Since our null hypothesis is that `\\(\beta_{1,0}=0\\)`, the test statistic simplifies to this neat fraction.]
 
 --
 
-- .hi-purple[If a confidence interval contains the `\\(H_0\\)` value (i.e. `\\(0\\)`, for our test), then *we fail to reject* `\\(H_0\\)`.]
-
-.footnote[<sup>.red[1]</sup> Since our null hypothesis is that `\\(\beta_{1,0}=0\\)`, the test statistic simplifies to this neat fraction.]
+.smaller[
+- .hi-purple[If our confidence interval contains the `\\(H_0\\)` value (i.e. `\\(0\\)`, for our test), then *we fail to reject* `\\(H_0\\)`.]
+]
 
 ---
 

@@ -1140,6 +1140,7 @@ ggplot(data = tibble(x=-4:4))+
 .pull-left[
 
 - `pnorm()` calculates `p`robabilities with a `norm`al distribution with arguments:
+  - `x = ` the value
   - `mean = ` the mean
   - `sd = ` the standard deviation
   - `lower.tail = ` 
