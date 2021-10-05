@@ -56,7 +56,7 @@ output:
 <h3>Part D</h3>
 <p>Use the <code>broom</code> package’s <code>tidy()</code> command on your regression object, and calculate confidence intervals for your estimates by setting <code>conf.int = T</code> inside <code>tidy()</code>.</p>
 <p>What is the 95% confidence interval for <span class="math inline">\(\hat{\beta_1}\)</span>, and what does it mean?</p>
-<p>Save these endpoints as an object (either by taking your <code>tidy()</code>-ed regression and <code>filter()</code>-ing the <code>term == carat</code> and then <code>select()</code>-ing the columns with the confidence interval and then saving this; or simply assigning the two values as a vector, <code>c( , )</code>, to an object).</p>
+<p>Save these endpoints as an object (either by taking your <code>tidy()</code>-ed regression and <code>filter()</code>-ing the <code>term == "carat"</code> and then <code>select()</code>-ing the columns with the confidence interval and then saving this; or simply assigning the two values as a vector, <code>c( , )</code>, to an object).</p>
 </div>
 <div id="part-e" class="section level3">
 <h3>Part E</h3>
@@ -83,7 +83,7 @@ boot</code></pre>
 <div id="part-b-1" class="section level3">
 <h3>Part B</h3>
 <p>Continue by piping your object from Part A into <code>get_confidence_interval()</code>. Set <code>level = 0.95, type = "se"</code> and <code>point_estimate</code> equal to our estimated <span class="math inline">\(\hat{\beta_1}\)</span> (saved) from Question 2 Part E.</p>
-<pre class="r"><code>boot +
+<pre class="r"><code>boot %&gt;%
   get_confidence_interval(level = 0.95,
                           type = &quot;se&quot;, 
                           point_estimate = beta_1_hat) # or whatever you saved it as</code></pre>
@@ -91,7 +91,7 @@ boot</code></pre>
 <div id="part-c-1" class="section level3">
 <h3>Part C</h3>
 <p>Now instead of <code>get_confidence_interval()</code>, pipe your object from Part A into <code>visualize()</code> to see the sampling distribution of <span class="math inline">\(\hat{\beta_1}\)</span> we simulated. You can add <code>+ shade_ci(endpoints = ...)</code> setting the argument equal to whatever you called your object containing the confidence interval from Question 2 Part D (I have it named here as <code>CI_endpoints</code>).</p>
-<pre class="r"><code>boot +
+<pre class="r"><code>boot %&gt;%
   visualize()+
   shade_ci(endpoints = CI_endpoints) # or whatever you saved it as</code></pre>
 <p>Compare your <em>simulated</em> confidence interval with the <em>theoretically-constructed</em> confidence interval from the output of <code>summary</code>, and/or of <code>tidy()</code> from Question 2.</p>

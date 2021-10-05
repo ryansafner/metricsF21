@@ -14,8 +14,8 @@ output:
 ---
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
-library(tidyverse)
-library(pander)
+#library(tidyverse)
+#library(pander)
 ```
 
 # Set Up
@@ -63,7 +63,7 @@ Use the `broom` package's `tidy()` command on your regression object, and calcul
 
 What is the 95% confidence interval for $\hat{\beta_1}$, and what does it mean?
 
-Save these endpoints as an object (either by taking your `tidy()`-ed regression and `filter()`-ing the `term == carat` and then `select()`-ing the columns with the confidence interval and then saving this; or simply assigning the two values as a vector, `c( , )`, to an object).
+Save these endpoints as an object (either by taking your `tidy()`-ed regression and `filter()`-ing the `term == "carat"` and then `select()`-ing the columns with the confidence interval and then saving this; or simply assigning the two values as a vector, `c( , )`, to an object).
 
 ### Part E
 
@@ -96,7 +96,7 @@ Note this will take a few minutes, its doing a lot of calculations! What does it
 Continue by piping your object from Part A into `get_confidence_interval()`. Set `level = 0.95, type = "se"` and `point_estimate` equal to our estimated $\hat{\beta_1}$ (saved) from Question 2 Part E.
 
 ```{r, eval = F}
-boot +
+boot %>%
   get_confidence_interval(level = 0.95,
                           type = "se", 
                           point_estimate = beta_1_hat) # or whatever you saved it as
@@ -107,7 +107,7 @@ boot +
 Now instead of `get_confidence_interval()`, pipe your object from Part A into `visualize()` to see the sampling distribution of $\hat{\beta_1}$ we simulated. You can add `+ shade_ci(endpoints = ...)` setting the argument equal to whatever you called your object containing the confidence interval from Question 2 Part D (I have it named here as `CI_endpoints`).
 
 ```{r, eval = F}
-boot +
+boot %>%
   visualize()+
   shade_ci(endpoints = CI_endpoints) # or whatever you saved it as
 ```

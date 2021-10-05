@@ -1,7 +1,7 @@
 ---
 title: "2.7 — Inference for Regression — R Practice"
-author: "YOUR NAME HERE"
-date: "`r Sys.Date()`"
+author: "Answer Key"
+date: "Tuesday, October 5, 2021"
 output:
   html_document:
     df_print: paged
@@ -13,7 +13,11 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,
+                      message = TRUE,
+                      warning = TRUE,
+                      fig.retina = 3,
+                      max.print = 25)
 set.seed(20) # using this number means all "random" generated objects will be identical for all of us!
 ```
 
@@ -29,7 +33,8 @@ Let's answer the following questions:
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+library(tidyverse)
+diamonds <- diamonds
 ```
 
 ---
@@ -43,7 +48,11 @@ Just to see what we're looking at, make a scatterplot using `ggplot()`, with `x`
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+ggplot(data = diamonds)+
+  aes(x = carat,
+      y = price)+
+  geom_point()+
+  geom_smooth(method = "lm")
 ```
 
 ---
@@ -60,7 +69,9 @@ Run a regression of `price` on `carat` using `lm()` and get a `summary()` of it.
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+reg <- lm(price ~ carat, data = diamonds)
+
+summary(reg)
 ```
 
 ---
@@ -71,9 +82,7 @@ Write out the estimated regression equation.
 
 <!--ANSWER BELOW HERE-->
 
-```{r}
-# PUT CODE HERE
-```
+$$\widehat{\text{price}}_i = -2256.36 + 7756.43 \text{carat}_i$$
 
 ---
 
@@ -86,7 +95,8 @@ Make a regression table of the output (using the `huxtable` package).
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+library(huxtable)
+huxreg(reg)
 ```
 
 ---
@@ -99,9 +109,7 @@ What is $\hat{\beta_1}$ for this model? Interpret it in the context of our quest
 
 <!--ANSWER BELOW HERE-->
 
-```{r}
-# PUT CODE HERE
-```
+$\hat{\beta_1}$, the estimated slope, is 7756.43. For every 1 carat, we expect the price of the diamond to increase by $7,756.43.
 
 ---
 
@@ -111,15 +119,34 @@ Use the `broom` package's `tidy()` command on your regression object, and calcul
 
 What is the 95% confidence interval for $\hat{\beta_1}$, and what does it mean?
 
-Save these endpoints as an object (either by taking your `tidy()`-ed regression and `filter()`-ing the `term == carat` and then `select()`-ing the columns with the confidence interval and then saving this; or simply assigning the two values as a vector, `c( , )`, to an object).
+Save these endpoints as an object (either by taking your `tidy()`-ed regression and `filter()`-ing the `term == "carat"` and then `select()`-ing the columns with the confidence interval and then saving this; or simply assigning the two values as a vector, `c( , )`, to an object).
 
 ---
 
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+library(broom)
+
+reg_tidy <- reg %>% tidy(conf.int = T)
+
+# look at tidy outcome
+reg_tidy
+
+# extract & save the confidence interval
+CI_endpoints <- reg_tidy %>%
+  filter(term == "carat") %>%
+  select(conf.low, conf.high)
+
+# look at it
+CI_endpoints
+
+# you could have alternatively just found what these are and then saved them manually
+CI_alt <- c(772.855,7783.996)
+
+CI_alt
 ```
+We are 95% confident that in similarly constructed samples, the true effect of carat on price $(\beta_1)$ is between $7,728.86 and $7,784.00.
 
 ---
 
@@ -132,7 +159,20 @@ Save your estimated $\hat{\beta_1}$ as an object, we'll need it later with `infe
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+# extract and save sample slope as object called beta_1_hat
+
+beta_1_hat <- reg_tidy %>%
+  filter(term == "carat") %>%
+  select(estimate)
+
+# confirm
+beta_1_hat
+
+# you could have alternatively just found what these are and then saved them manually
+beta_1_hat_alt <- 7756.43
+
+beta_1_hat_alt
+
 ```
 
 ---
@@ -145,7 +185,7 @@ Now let’s use `infer`. Install it if you don’t have it, then load it.
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+library(infer)
 ```
 
 ---
@@ -173,8 +213,18 @@ Note this will take a few minutes, its doing a lot of calculations! What does it
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+# save our simulations as an object (I called it "boot")
+boot <- diamonds %>% # or whatever you named your dataframe!
+  specify(carat ~ price) %>% # our regression model
+  generate(reps = 1000, # run 1000 simulations
+           type = "bootstrap") %>% # using bootstrap method
+  calculate(stat = "slope") # estimate slope in each simulation
+
+# look at it
+boot
 ```
+
+This produces 1,000 bootstrapped samples, and calculates the estimated regression slope $(\hat{\beta_1})$ for each sample.
 
 ---
 
@@ -194,8 +244,13 @@ boot %>%
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+boot %>%
+  get_confidence_interval(level = 0.95,
+                          type = "se", 
+                          point_estimate = beta_1_hat) # or whatever you saved it as
 ```
+
+This gives us a confidence interval of $7,706.95 and $7,805.91. This not exactly, but quite close to `R`'s automatic calculation using the theoretical $t$-distribution in `lm()`.
 
 ---
 
@@ -216,7 +271,9 @@ Compare your *simulated* confidence interval with the *theoretically-constructed
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+boot %>%
+  visualize()+
+  shade_ci(endpoints = CI_endpoints) # or whatever you saved it as
 ```
 
 ---
@@ -238,9 +295,7 @@ What does the output of `summary`, and/or of `tidy()` from Question 2 tell you?
 
 <!--ANSWER BELOW HERE-->
 
-```{r}
-# PUT CODE HERE
-```
+Reading the second row of estimates from the `lm summary` or `tidy` output of question 2, we saw that the `estimate` on `carat` $(\hat{\beta_1})$ was 7756.43, with a standard error of 14.07. This yields a test statistic value of 551.4, and a $p$-value of basically 0.
 
 ---
 
@@ -268,8 +323,19 @@ Note this may also take a few minutes. What does it show you?
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+# save our simulations as an object (I called it "test_sims")
+test_sims <- diamonds %>% # or whatever you named your dataframe!
+  specify(carat ~ price) %>% # our regression model
+  hypothesize(null = "independence") %>% # H_0 is that slope is 0
+  generate(reps = 1000, # run 1000 simulations
+           type = "permute") %>% # using permute method, centering distr at 0
+  calculate(stat = "slope") # estimate slope in each simulation
+
+# look at it
+test_sims
 ```
+
+This produces 1,000 permuted samples, under the assumption that the true slope is 0 (the null hypothesis), and calculates the estimated regression slope $(\hat{\beta_1})$ for each sample.
 
 ---
 
@@ -290,7 +356,10 @@ Note the warning message that comes up!
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+test_sims %>%
+  get_p_value(obs_stat = beta_1_hat,
+              direction = "both")
+# again, instead of beta_1_hat you could type in 7756.426
 ```
 
 ---
@@ -316,7 +385,15 @@ test_sims %>%
 <!--ANSWER BELOW HERE-->
 
 ```{r}
-# PUT CODE HERE
+test_sims %>%
+  visualize()
+```
+
+```{r}
+test_sims %>%
+  visualize()+
+  shade_p_value(obs_stat = beta_1_hat, # or whatever you saved it as
+                direction = "both") # for two-sided test
 ```
 
 ---
@@ -341,6 +418,20 @@ The p-value is the probability of a $t$ statistic at least as large as ours if t
 
 <!--ANSWER BELOW HERE-->
 
+The test-statistic was calculated, as described in the slides, as:
+
+$$\begin{align*}
+t & = \frac{\text{estimate} - \text{null hypothesis}}{\text{SE(estimate)}}\\
+t & = \frac{7756.43 - 0}{14.07}\\
+t &\approx 551.3 \\
+\end{align*}$$
+
+If the null hypothesis were true $(\beta_1=0)$, the probability that we get a test-statistic at least as extreme as 551.3 (essentially, 551 standard deviations away!!) is virtually 0. You can see this when we visualize using infer, above.
+
+To calculate the p-value ourselves, we need to find the probability in the tails of the $t_{53938}$-distribution beyond $\pm551.3$. The $t$ distribution has 53,938 degrees of freedom — $(n-k-1)$ where $n = 53940$ and $k=1$. 
+
 ```{r}
-# PUT CODE HERE
+2 * pt(551.3, # our t-statistic
+       df = 53938, # the df number
+       lower.tail = F) # we'll use the right tail
 ```
