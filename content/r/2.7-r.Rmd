@@ -1,7 +1,16 @@
 ---
 title: "2.7 — Inference for Regression - R Practice"
-editor_options: 
-  chunk_output_type: console
+draft: false
+date: "2020-06-08"
+linktitle: "2.7 — Inference for Regression"
+menu:
+  r:
+    parent: R Practice
+    weight: 6
+type: docs
+output:
+  blogdown::html_page:
+    toc: false
 ---
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
