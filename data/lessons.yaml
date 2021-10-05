@@ -66,6 +66,7 @@ lessons:
   - title: "2.7 — Inference for Regression"
     content: "2.7-content"
     slides: '2.7-slides'
+    r: '2.7-r'
     
   - title: '<i content="fas fa-laptop-code"></i> **Problem Set 3** due Thurs Oct 7'
     assignment: "03-problem-set"

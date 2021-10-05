@@ -1540,7 +1540,7 @@ E[\hat{\beta_1}]&amp;amp;=\beta_1+cor(X,u)\frac{s_u}{s_X} \\
 
 &lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    &lt;p&gt;&lt;em&gt;Thursday, September 23, 2021&lt;/em&gt; and &lt;em&gt;Tuesday, September 28, 2021&lt;/em&gt;&lt;/p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;em&gt;Thursday, September 23, 2021&lt;/em&gt; and &lt;em&gt;Tuesday, September 28, 2021&lt;/em&gt; (for &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/2.5-r&#34;&gt;R Practice&lt;/a&gt;)&lt;/p&gt;&lt;/p&gt;
 &lt;p&gt;Note: there is a video posted on Blackboard for the Thursday September 23 lecture.
 
   &lt;/div&gt;
@@ -1572,7 +1572,8 @@ E[\hat{\beta_1}]&amp;amp;=\beta_1+cor(X,u)\frac{s_u}{s_X} \\
 &lt;/ul&gt;
 &lt;p&gt;I have also made a RStudio Cloud project documenting all of the things we have been doing with this data that may help you when you start working with regressions:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://rstudio.cloud/spaces/163934/project/2940189&#34;&gt;&lt;i class=&#34;fas fa-cloud&#34;&gt;&lt;/i&gt; Class Size Regression Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio.cloud/spaces/163934/project/2940189&#34;&gt;&lt;i class=&#34;fas fa-cloud&#34;&gt;&lt;/i&gt; Class Size Regression Analysis (Cloud R project)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/data/class_size_regression_analysis.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Class Size Regression Analysis (output)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
@@ -1624,6 +1625,358 @@ E[\hat{\beta_1}]&amp;amp;=\beta_1+cor(X,u)\frac{s_u}{s_X} \\
 &lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;The square root of variance, as always!&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Note this is a &lt;code&gt;.dta&lt;/code&gt; Stata file. You will need to (install and) load the package &lt;code&gt;haven&lt;/code&gt; to &lt;code&gt;read_dta()&lt;/code&gt; Stata files into a dataframe.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2.6 — Statistical Inference — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/2.6-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/2.6-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-practice&#34;&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-3-due-thurs-oct-7&#34;&gt;Problem Set 3 Due Thurs Oct 7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#new-packages-mentioned&#34;&gt;New Packages Mentioned&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#appendix&#34;&gt;Appendix&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#differences-between-what-we-learned-in-class-and-classical-statistics&#34;&gt;Differences Between What We Learned in Class and Classical Statistics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#inferential-statistics-basics&#34;&gt;Inferential Statistics Basics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-central-limit-theorem&#34;&gt;The Central Limit Theorem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#if-we-dont-know-sigma-the-students-t-distribution&#34;&gt;If We Don’t Know &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;: The Student’s &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-Distribution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#confidence-intervals&#34;&gt;Confidence Intervals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Thursday, September 30, 2021&lt;/em&gt; (moved from Tuesday)
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/03-problem-set&#34;&gt;Problem Set 3&lt;/a&gt; is due by the end of the day Thursday, October 7.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;We begin with some more time for you to work on the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/2.5-r&#34;&gt;R Practice&lt;/a&gt; from last class.&lt;/p&gt;
+&lt;p&gt;This week is about inferential statistics: using &lt;em&gt;statistics&lt;/em&gt; calculated from a &lt;em&gt;sample&lt;/em&gt; of data to &lt;strong&gt;infer&lt;/strong&gt; the true (and unmeasurable) &lt;em&gt;parameters&lt;/em&gt; that describe a &lt;em&gt;population.&lt;/em&gt; In doing so, we can run &lt;em&gt;hypothesis tests&lt;/em&gt; on our sample to determine a &lt;em&gt;point&lt;/em&gt; estimate of a parameter, or construct a &lt;em&gt;confidence interval&lt;/em&gt; from our sample to cast a range for the true parameter.&lt;/p&gt;
+&lt;p&gt;This is standard principles of statistics - you hopefully should have learned it before. If it has been a while (or never) since your last statistics class, this is one of the hardest concepts to understand at first glance. I recommend &lt;a href=&#34;https://www.khanacademy.org/math/statistics-probability&#34;&gt;Khan Academy&lt;/a&gt; [From sampling distributions through significance tests, for this. Though the whole class is helpful!] or Google for these concepts, as &lt;em&gt;every&lt;/em&gt; statistics class will cover them in the standard way.&lt;/p&gt;
+&lt;p&gt;That being said, I &lt;em&gt;do not&lt;/em&gt; cover inferential statistics in the standard way (see the &lt;a href=&#34;#Appendix&#34;&gt;appendix&lt;/a&gt; today below for an overview of the standard way). I think it will be more intuitive if I &lt;em&gt;show&lt;/em&gt; you where these concepts come from by &lt;em&gt;simulating&lt;/em&gt; a sampling distribution, as opposed to reciting the theoretical sampling distributions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch.4 in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://moderndive.netlify.com/10-inference-for-regression.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Ch. 10 (optionally 8-9) in &lt;em&gt;Modern Dive&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://seeing-theory.brown.edu/frequentist-inference/index.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Visualizing Probability and Inference&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bailey teaches inferential statistics in the classical way (with reference to theoretical &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; distributions, and &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; tests). This is all valid. Again, you may wish to brush up with &lt;a href=&#34;https://www.khanacademy.org/math/statistics-probability&#34;&gt;Khan Academy&lt;/a&gt; [From sampling distributions through significance tests, for this. Though the whole class is helpful!].&lt;/p&gt;
+&lt;p&gt;The latter “book” (also free online, like R4DS) uses the &lt;code&gt;infer&lt;/code&gt; package to run simulations for inferential statistics. Chapter 10 is focused on regression (but I also recommend the chapters leading up to it, which are on inferential statistics broadly, using this method).&lt;/p&gt;
+&lt;p&gt;The final link is a great website for visualizing basic statistic concepts like probability, distributions, confidence intervals, hypothesis tests, central limit theorem, and regression.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.6-slides.html&#34;&gt;&lt;img src =&#34;/slides/2.6-slides.png&#34; alt = &#34;2.6-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/2.6-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-practice&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/h2&gt;
+&lt;p&gt;Today you will be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/2.5-r&#34;&gt;R practice problems&lt;/a&gt; on regression. Answers will be posted later on that page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-3-due-thurs-oct-7&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 3 Due Thurs Oct 7&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/03-problem-set&#34;&gt;Problem Set 3&lt;/a&gt; is due by the end of the day on Thursday, October 7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;new-packages-mentioned&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;New Packages Mentioned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;infer&lt;/code&gt;: for simulation for statistical inference&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;appendix&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Appendix&lt;/h2&gt;
+&lt;div id=&#34;differences-between-what-we-learned-in-class-and-classical-statistics&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Differences Between What We Learned in Class and Classical Statistics&lt;/h3&gt;
+&lt;p&gt;In class, you learned the basics behind inferential statistics–p-values, confidence intervals, hypothesis testing–via &lt;em&gt;empirical simulation&lt;/em&gt; of many samples permuted from our existing data. We took our sample, ran 1,000 simulations by permutation of our sample without replacement&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;, calculated the statistic (&lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta}_0\)&lt;/span&gt;, the slope) of each simulation; this gave us a (sampling) distribution of our sample statistics, and then found the probability on that distribution that we would observe our &lt;em&gt;actual&lt;/em&gt; statistic in our actual data – this is the &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-value.&lt;/p&gt;
+&lt;p&gt;Classically, before the use of computers that could run and visualize 1,000s of simulations within seconds,&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; inferential statistics was taught using &lt;em&gt;theoretical&lt;/em&gt; distributions. &lt;strong&gt;Essentially, we calculate a test-statistic by normalizing our finding against a theoretical (null) sampling distribution of our sample statistic, and find p-values by estimating the probability of observing that statistic on that theoretical distribution.&lt;/strong&gt; These distributions are almost always &lt;em&gt;normal&lt;/em&gt; or &lt;em&gt;normal-like&lt;/em&gt; distributions. The distribution that we almost always use in econometrics is the (Student’s) &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-distribution.&lt;/p&gt;
+&lt;p&gt;Furthermore, testing the null hypothesis &lt;span class=&#34;math inline&#34;&gt;\(H_0: \,\beta_1=0\)&lt;/span&gt;, is not the only type of hypothesis test, nor is the slope the only statistic we can test. In fact, there are many different types of hypothesis tests that are well-known and well-used, we focused entirely on regression (since that is the largest tool of the course).&lt;/p&gt;
+&lt;p&gt;This appendix will give you more background on the theory of inferential statistics, and is more in line with what you may have learned in earlier statistics courses.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;inferential-statistics-basics&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Inferential Statistics Basics&lt;/h3&gt;
+&lt;p&gt;It is important to remember several statistical distributions, tools, and facts. Most of them have to do with the &lt;strong&gt;normal distribution&lt;/strong&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is normally distributed with mean &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and standard deviation &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[X \sim N(\mu, \sigma)\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+## ✓ tibble  3.1.4     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+## ✓ readr   2.0.0     ✓ forcats 0.5.1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# plot a theoretical normal distribution without any data
+
+# our &amp;quot;geom&amp;quot; here is the &amp;quot;stat_function()&amp;quot; command, which draws statistical functions
+
+normal.pdf &amp;lt;- ggplot(data = data.frame(x = -4:4), # our &amp;quot;data&amp;quot; is just a sequence of x from -4 to 4
+                     aes(x = x))+
+  stat_function(fun = dnorm, # dnorm is the normal distributions
+                args = list(mean = 0, sd = 1), # set mean = 0 and sd = 1
+                color=&amp;quot;blue&amp;quot;)+
+  scale_x_continuous(breaks = seq(-4,4,1))+
+    xlab(&amp;quot;X (or Z-score)&amp;quot;)+ylab(&amp;quot;p(X)&amp;quot;)+
+  theme_light()
+
+normal.pdf&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.6-content_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Then recall the &lt;strong&gt;68-95-99.7 empirical rule&lt;/strong&gt;, that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(P(\mu-1 \sigma \leq X \leq \mu+ 1\sigma) \approx 0.68\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(P(\mu-2 \sigma \leq X \leq \mu+ 2\sigma) \approx 0.95\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(P(\mu-3 \sigma \leq X \leq \mu+ 3\sigma) \approx 0.997\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Again, in English: “68% of the observations fall within 1 standard deviation of the mean; 95% fall within 2 standard deviations of the mean, and 99.7% fall within 3 standard deviations of the mean.”&lt;/p&gt;
+&lt;p&gt;If we have the &lt;strong&gt;standard normal distribution&lt;/strong&gt; with mean 0 and standard deviation 1:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.6-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Again, we can &lt;em&gt;standardize&lt;/em&gt; any normally-distributed random variable by finding the &lt;strong&gt;Z-score&lt;/strong&gt; of each observation:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Z=\frac{X_i - \mu}{\sigma}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This ensures the mean will be 0 and standard deviation will be 1. Thus, &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt; is the number of standard deviations above &lt;span class=&#34;math inline&#34;&gt;\((+)\)&lt;/span&gt; or below &lt;span class=&#34;math inline&#34;&gt;\((-)\)&lt;/span&gt; the mean an observation is.&lt;/p&gt;
+&lt;p&gt;We can use &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;-scores to find the probability of any range of observations of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; occuring in the distribution.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pnorm(-2, mean = 0, sd = 1, lower.tail = TRUE) # area to left of -2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.02275013&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pnorm(2, mean = 0, sd = 1, lower.tail = TRUE) # area to left of 2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.9772499&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pnorm(2, mean = 0, sd = 1, lower.tail = FALSE) # area to RIGHT of 2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.02275013&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pnorm(2, mean = 0, sd = 1, lower.tail = TRUE)- pnorm(-2, mean = 0, sd = 1, lower.tail = TRUE) # area between -2 and 2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.9544997&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-central-limit-theorem&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Central Limit Theorem&lt;/h3&gt;
+&lt;p&gt;Inferential statistics can be summarized in 2 sentences:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There are unknown &lt;strong&gt;parameters&lt;/strong&gt; that describe a &lt;strong&gt;population&lt;/strong&gt; distribution that we want to know. We use &lt;strong&gt;statistics&lt;/strong&gt; that describe a &lt;strong&gt;sample&lt;/strong&gt; to &lt;em&gt;estimate&lt;/em&gt; the population parameters.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Recall there is an element of randomness in our sample statistics due to &lt;strong&gt;sampling variability&lt;/strong&gt;. For example, if we take the mean of one sample, &lt;span class=&#34;math inline&#34;&gt;\(\bar{x}\)&lt;/span&gt;, and then take the mean of a &lt;em&gt;different&lt;/em&gt; sample, the &lt;span class=&#34;math inline&#34;&gt;\(\bar{x}\)&lt;/span&gt;’s will be &lt;em&gt;slightly different&lt;/em&gt;. We can conceive of a distribution of &lt;span class=&#34;math inline&#34;&gt;\(\bar{x}\)&lt;/span&gt;’s across many different samples, and this is called the &lt;strong&gt;sampling distribution&lt;/strong&gt; of the statistic &lt;span class=&#34;math inline&#34;&gt;\((\bar{x})\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Via the sampling distribution, the sample statistic &lt;span class=&#34;math inline&#34;&gt;\((\bar{X})\)&lt;/span&gt; itself is distributed with&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mean &lt;span class=&#34;math inline&#34;&gt;\(E[\bar{x}]=\mu_X\)&lt;/span&gt; (the true population mean)&lt;/li&gt;
+&lt;li&gt;standard deviation &lt;span class=&#34;math inline&#34;&gt;\(\sigma_{\bar{x}}\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Central Limit Theorem&lt;/strong&gt;: &lt;em&gt;with large enough sample size (&lt;span class=&#34;math inline&#34;&gt;\(n\geq30\)&lt;/span&gt;), the sampling distribution of a sample statistic is approximately normal&lt;/em&gt;&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thus, the &lt;strong&gt;sampling distribution of the sample mean&lt;/strong&gt; (&lt;span class=&#34;math inline&#34;&gt;\(\bar{x}\)&lt;/span&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\bar{X} \sim \left(\mu_X, \frac{\sigma_X}{\sqrt{n}}\right)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The second term we call the &lt;strong&gt;standard error of the sample mean&lt;/strong&gt;&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;. Note that it takes the true standard deviation of the population (&lt;span class=&#34;math inline&#34;&gt;\(\sigma_X\)&lt;/span&gt;)&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt; and divides it by the square root of the sample size, &lt;span class=&#34;math inline&#34;&gt;\(\sqrt{n}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Thus &lt;strong&gt;if we know the true population standard deviation&lt;/strong&gt; (&lt;span class=&#34;math inline&#34;&gt;\(\sigma_X\)&lt;/span&gt;) then we can simply use the normal distribution for confidence intervals and hypothesis tests of a sample statistic. Since we often do not, we need to use another distribution for inferential statistics, often the &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;if-we-dont-know-sigma-the-students-t-distribution&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;If We Don’t Know &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;: The Student’s &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-Distribution&lt;/h3&gt;
+&lt;p&gt;We rarely, if ever, know the true population standard deviation for variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\sigma_X\)&lt;/span&gt;. Additionally, we sometimes have sample sizes of &lt;span class=&#34;math inline&#34;&gt;\(n &amp;lt; 30\)&lt;/span&gt;. If either of these conditions are true, we cannot use leverage the Central Limit Theorem and simplify with a standard normal distribution. Instead of the normal distribution, we use a &lt;strong&gt;Student’s t-Distribution&lt;/strong&gt;&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; is functionally equivalent to the idea of a &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;-score, with some slight modifications:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[t = \cfrac{\bar{x}-\mu}{\left(\frac{s}{\sqrt{n}}\right)}\]&lt;/span&gt;
+- &lt;span class=&#34;math inline&#34;&gt;\(\bar{x}\)&lt;/span&gt; is our estimated statistic (e.g. sample mean)
+- &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; is the true population parametner (e.g. population mean)
+- &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; is the sample standard deviation
+- &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; is the sample size&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-scores similarly measure the number of standard deviations an observation is above or below the mean.&lt;/p&gt;
+&lt;p&gt;The other main difference between normal distributions/&lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;-scores and &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; distributions /&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-scores is that &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; distributions have &lt;span class=&#34;math inline&#34;&gt;\(n-1\)&lt;/span&gt; degrees of freedom.&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[t \sim t_{n-1}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: viridisLite&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.6-content_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The standard &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-distribution looks normal-ish, with a mean of 0, but with more area in the tails of the distribution. The exact shape depends on the degrees of freedom &lt;span class=&#34;math inline&#34;&gt;\((n-1)\)&lt;/span&gt;. As &lt;span class=&#34;math inline&#34;&gt;\(\uparrow n\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\uparrow df\)&lt;/span&gt;, the &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-distribution approximates a normal distribution.&lt;/p&gt;
+&lt;p&gt;By convention, in regression we &lt;em&gt;always&lt;/em&gt; use &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-distributions for confidence intervals and hypothesis tests. For nearly all of the confidence intervals and hypothesis tests below, we functionally replace &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt; with &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;confidence-intervals&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Confidence Intervals&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;confidence interval&lt;/strong&gt; describes the range of estimates for a population parameter in the form:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[(\text{estimate} - \text{margin of error}, \, \text{estimate} + \text{margin of error})\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Our &lt;em&gt;confidence level&lt;/em&gt; is &lt;span class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; again is the “significance level”, the probability that the true population parameter is &lt;em&gt;not&lt;/em&gt; within our confidence interval&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Typical confidence levels: 90%, 95%, 99%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A confidence interval tells us that if we were to conduct many samples, (&lt;span class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt;)% would contain the true population parameter within the interval&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To construct a confidence interval, we do the following:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Calculate the sample statistic.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Find &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;-score that corresponds to desired confidence level.&lt;/strong&gt;&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt; We need to find what are called the &lt;strong&gt;“critical values”&lt;/strong&gt; of &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;, which we will call &lt;span class=&#34;math inline&#34;&gt;\(Z_{0.5\alpha}\)&lt;/span&gt; on the normal distribution that puts (&lt;span class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt;) probability between &lt;span class=&#34;math inline&#34;&gt;\(\pm Z_{0.5\alpha}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(0.5\alpha\)&lt;/span&gt; in each of the tails of the distribution. The distribution would look like this:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in is.na(x): is.na() applied to non-(list or vector) of type
+## &amp;#39;expression&amp;#39;
+
+## Warning in is.na(x): is.na() applied to non-(list or vector) of type
+## &amp;#39;expression&amp;#39;
+
+## Warning in is.na(x): is.na() applied to non-(list or vector) of type
+## &amp;#39;expression&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.6-content_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The confidence interval between the two &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;-scores &lt;span class=&#34;math inline&#34;&gt;\(-Z_{0.5\alpha}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Z_{0.5\alpha}\)&lt;/span&gt; contains the desired &lt;span class=&#34;math inline&#34;&gt;\((1-\alpha)%\)&lt;/span&gt; of observations&lt;/li&gt;
+&lt;li&gt;The area beyond each &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;-score contains &lt;span class=&#34;math inline&#34;&gt;\(0.5\alpha\)&lt;/span&gt;% of observations in each direction, for a total of &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;% beyond the critical values of &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that the image above is abstract. So for example, if we wanted a (typical) &lt;strong&gt;95% confidence interval&lt;/strong&gt; with &lt;span class=&#34;math inline&#34;&gt;\(\alpha=0.05\)&lt;/span&gt;, the critical value(s) of &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt; are &lt;span class=&#34;math inline&#34;&gt;\(\pm 1.96\)&lt;/span&gt;&lt;a href=&#34;#fn10&#34; class=&#34;footnote-ref&#34; id=&#34;fnref10&#34;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;, and looking on the distribution:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/2.6-content_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The critical values of &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt; are often given in &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;-tables, which you can find in classical statistics textbooks or online. Critical values of &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt; for common confidence intervals values are well known:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Confidence Level&lt;/th&gt;
+&lt;th&gt;&lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;&lt;/th&gt;
+&lt;th&gt;&lt;span class=&#34;math inline&#34;&gt;\(\pm Z_{0.5\alpha}\)&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;90%&lt;/td&gt;
+&lt;td&gt;0.10&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\pm 1.645\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;95%&lt;/td&gt;
+&lt;td&gt;0.05&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\pm 1.96\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;99%&lt;/td&gt;
+&lt;td&gt;0.01&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\pm 2.58\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Calculate the margin of error (MOE)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The margin of error is the critical value of &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt; times the standard error of the estimate (&lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[MOE=Z_{0.5\alpha}\sigma\]&lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Construct the confidence interval&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The confidence interval is simply our estimate plus and minus the margin of error.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[CI = \left([\bar{x}-Z_{0.5}\sigma_{\bar{x}}], \, [\bar{x}+Z_{0.5}\sigma_{\bar{x}}]\right)\]&lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Intepret the confidence interval in the context of the problem&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“We estimate with [1-alpha]% confidence that the true [population parameter] is between [lowerbound] and [upperbound]”.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;That is, for each simulation, we randomly selected observations from our existing sample to be in the simulation, and then did &lt;em&gt;not&lt;/em&gt; put that observation back in the pool to possibly be selected again.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Even when &lt;em&gt;I&lt;/em&gt; was in graduate school, 2011–2015&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;If samples are i.i.d. (independently and identically distributed if they are drawn from the same population randomly and then replaced) we don’t even need to know the population distribution to assume normality&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Instead of the “standard deviation”. “Standard error” refers to the sampling variability of a sample statistic, and is always talking about a sampling distribution.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;Which we need to know! We often do not know it!&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;“Student” was the penname of William Sealy Gosset, who has one of the more interesting stories in statistics. He worked for Guiness in Ireland testing the quality of beer. He found that with small sample sizes, normal distributions did not yield accurate results. He came up with a more accurate distribution, and since Guiness would not let him publish his findings, published it under the pseudonym of “Student.”&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;&lt;strong&gt;Degrees of freedom&lt;/strong&gt;, &lt;span class=&#34;math inline&#34;&gt;\(df\)&lt;/span&gt; are the number of independent values used for the calculation of a statistic minus the number of other statistics used as intermediate steps. For sample standard deviation &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt;, we use &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; deviations &lt;span class=&#34;math inline&#34;&gt;\((x_i-\bar{x})\)&lt;/span&gt; and 1 parameter &lt;span class=&#34;math inline&#34;&gt;\((\bar{x})\)&lt;/span&gt;, hence &lt;span class=&#34;math inline&#34;&gt;\(df=n-1\)&lt;/span&gt;&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;Equivalently, &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; is the probability of a &lt;strong&gt;Type I error&lt;/strong&gt;: a false positive finding where we incorrectly reject a null hypothesis when it the null hypothesis is in fact true.&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;Of course, if we don’t know the population &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;, we need to use the &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-distribution and find critical &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-scores instead of &lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;-scores. See above.&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;Note this is the precise value behind the rule of thumb that 95% of observations fall within 2 standard deviations of the mean!&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2.7 — Inference for Regression — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/2.7-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/2.7-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-practice&#34;&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-3-due-thurs-oct-7&#34;&gt;Problem Set 3 Due Thurs Oct 7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#new-packages-mentioned&#34;&gt;New Packages Mentioned&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Thursday, September 30, 2021&lt;/em&gt; and &lt;em&gt;Tuesday, October 5, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/03-problem-set&#34;&gt;Problem Set 3&lt;/a&gt; is due by the end of the day Thursday, October 7.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today we finish our discussion of statistical inference, focusing on hypothesis testing about our regression. We will hopefully have time at the end to work on a few practice problems.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch.4 in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://moderndive.netlify.com/10-inference-for-regression.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Ch. 10 (optionally 8-9) in &lt;em&gt;Modern Dive&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://seeing-theory.brown.edu/frequentist-inference/index.html&#34;&gt;&lt;i class=&#34;fas fa-external-link-square-alt&#34;&gt;&lt;/i&gt; Visualizing Probability and Inference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=0Rnq1NpHdmw&#34;&gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;em&gt;Last Week Tonight with John Oliver&lt;/em&gt;: Scientific Studies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://allendowney.blogspot.com/2016/06/there-is-still-only-one-test.html&#34;&gt;“There is Still Only One Test”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The readings are the same as last class, plus one highly recommended additional video: be sure to watch the excellent and hilarious discussion of the limits and misuses of scientific studies and statistical significance &lt;span class=&#34;math inline&#34;&gt;\((p\)&lt;/span&gt;-values) in the &lt;em&gt;Last Week Tonight&lt;/em&gt; clip. I also added the blog post that I reference in class about all hypothesis testing is really one common procedure.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-practice&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/h2&gt;
+&lt;p&gt;Today you will be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/2.7-r&#34;&gt;R practice problems&lt;/a&gt; on regression. Answers will be posted later on that page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-3-due-thurs-oct-7&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 3 Due Thurs Oct 7&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/03-problem-set&#34;&gt;Problem Set 3&lt;/a&gt; is due by the end of the day on Thursday, October 7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;new-packages-mentioned&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;New Packages Mentioned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;infer&lt;/code&gt;: for simulation for statistical inference&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 </description>
     </item>
