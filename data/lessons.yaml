@@ -72,6 +72,7 @@ lessons:
     assignment: "03-problem-set"
 
   - title: '<i content="fas fa-star"></i> **Midterm Exam** Thurs Oct 14'
+    assignment: "01-exam"
 
   - title: '<span class="fake-header-table">III. Causal Inference</span>'
     header: True
