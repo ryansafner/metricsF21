@@ -26,7 +26,7 @@ I have already made an R project you can download (as a `.zip`), unzip, and open
 
 ## Answers
 
-<p style="text-align:center"><a target="_blank" href="/r/2.5-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/r/2.5-r-answers.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> Answers (R Project)</a> <a target="_blank" href="/r/1.4-r-answers.R"><span class="btn btn-primary btn-lg"><i class="fas fa-registered"></i> Answers (R Script)</a></span></p>
+<p style="text-align:center"><a target="_blank" href="/r/2.5-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/r/2.5-r-answers.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> Answers (R Project)</a> <a target="_blank" href="/r/2.5-r-answers.R"><span class="btn btn-primary btn-lg"><i class="fas fa-registered"></i> Answers (R Script)</a></span></p>
 
 # Data Cleaning
 

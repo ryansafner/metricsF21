@@ -16,8 +16,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE,
                       message = TRUE,
                       warning = TRUE,
-                      fig.retina = 3,
-                      max.print = 25)
+                      fig.retina = 3)
 set.seed(20) # using this number means all "random" generated objects will be identical for all of us!
 ```
 
@@ -34,6 +33,7 @@ Let's answer the following questions:
 
 ```{r}
 library(tidyverse)
+options(scipen = 999) # disables scientific notation
 diamonds <- diamonds
 ```
 
@@ -142,7 +142,7 @@ CI_endpoints <- reg_tidy %>%
 CI_endpoints
 
 # you could have alternatively just found what these are and then saved them manually
-CI_alt <- c(772.855,7783.996)
+CI_alt <- c(7728.855,7783.996)
 
 CI_alt
 ```
@@ -197,7 +197,7 @@ Let’s generate a confidence interval for $\hat{\beta_1}$ by simulating the sam
 ```{r, eval = F}
 # save our simulations as an object (I called it "boot")
 boot <- diamonds %>% # or whatever you named your dataframe!
-  specify(carat ~ price) %>% # our regression model
+  specify(price ~ carat) %>% # our regression model
   generate(reps = 1000, # run 1000 simulations
            type = "bootstrap") %>% # using bootstrap method
   calculate(stat = "slope") # estimate slope in each simulation
@@ -215,13 +215,13 @@ Note this will take a few minutes, its doing a lot of calculations! What does it
 ```{r}
 # save our simulations as an object (I called it "boot")
 boot <- diamonds %>% # or whatever you named your dataframe!
-  specify(carat ~ price) %>% # our regression model
+  specify(price ~ carat) %>% # our regression model
   generate(reps = 1000, # run 1000 simulations
            type = "bootstrap") %>% # using bootstrap method
   calculate(stat = "slope") # estimate slope in each simulation
 
 # look at it
-boot
+#boot
 ```
 
 This produces 1,000 bootstrapped samples, and calculates the estimated regression slope $(\hat{\beta_1})$ for each sample.
@@ -306,7 +306,7 @@ Let’s now do run this hypothesis test with `infer`, which will simulate the sa
 ```{r, eval = F}
 # save our simulations as an object (I called it "test_sims")
 test_sims <- diamonds %>% # or whatever you named your dataframe!
-  specify(carat ~ price) %>% # our regression model
+  specify(price ~ carat) %>% # our regression model
   hypothesize(null = "independence") %>% # H_0 is that slope is 0
   generate(reps = 1000, # run 1000 simulations
            type = "permute") %>% # using permute method, centering distr at 0
@@ -325,14 +325,14 @@ Note this may also take a few minutes. What does it show you?
 ```{r}
 # save our simulations as an object (I called it "test_sims")
 test_sims <- diamonds %>% # or whatever you named your dataframe!
-  specify(carat ~ price) %>% # our regression model
+  specify(price ~ carat) %>% # our regression model
   hypothesize(null = "independence") %>% # H_0 is that slope is 0
   generate(reps = 1000, # run 1000 simulations
            type = "permute") %>% # using permute method, centering distr at 0
   calculate(stat = "slope") # estimate slope in each simulation
 
 # look at it
-test_sims
+#test_sims
 ```
 
 This produces 1,000 permuted samples, under the assumption that the true slope is 0 (the null hypothesis), and calculates the estimated regression slope $(\hat{\beta_1})$ for each sample.

@@ -25,6 +25,10 @@ I have already made an R project you can download (as a `.zip`), unzip, and open
 
 <p style="text-align:center"><a target="_blank" href="/r/2.7-r.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2990242"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span></p>
 
+## Answers
+
+<p style="text-align:center"><a target="_blank" href="/r/2.7-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/r/2.7-r-answers.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> Answers (R Project)</a> <a target="_blank" href="/r/2.7-r-answers.R"><span class="btn btn-primary btn-lg"><i class="fas fa-registered"></i> Answers (R Script)</a></span></p>
+
 ## Question 1
 
 Let’s use the `diamonds` data built into `ggplot`. Simply load `tidyverse` and then to be explicit, save this as a tibble (feel free to rename it) with `diamonds <- diamonds`.
