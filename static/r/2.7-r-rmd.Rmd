@@ -157,7 +157,7 @@ Let’s generate a confidence interval for $\hat{\beta_1}$ by simulating the sam
 ```{r, eval = F}
 # save our simulations as an object (I called it "boot")
 boot <- diamonds %>% # or whatever you named your dataframe!
-  specify(carat ~ price) %>% # our regression model
+  specify(price ~ carat) %>% # our regression model
   generate(reps = 1000, # run 1000 simulations
            type = "bootstrap") %>% # using bootstrap method
   calculate(stat = "slope") # estimate slope in each simulation
@@ -251,7 +251,7 @@ Let’s now do run this hypothesis test with `infer`, which will simulate the sa
 ```{r, eval = F}
 # save our simulations as an object (I called it "test_sims")
 test_sims <- diamonds %>% # or whatever you named your dataframe!
-  specify(carat ~ price) %>% # our regression model
+  specify(price ~ carat) %>% # our regression model
   hypothesize(null = "independence") %>% # H_0 is that slope is 0
   generate(reps = 1000, # run 1000 simulations
            type = "permute") %>% # using permute method, centering distr at 0
