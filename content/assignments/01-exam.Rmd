@@ -29,7 +29,7 @@ Check back here for more specific information about the exam.
 
 # Midterm Review Questions
 
-- [<i class="fas fa-chalkboard-teacher"></i> Midterm Review Questions](/static/slides/midterm-review.html)
+- [<i class="fas fa-chalkboard-teacher"></i> Midterm Review Questions](/slides/midterm-review.html)
 
 # "Practice" Exam
 
