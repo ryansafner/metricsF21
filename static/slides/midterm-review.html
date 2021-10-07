@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Midterm Review Questions</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner  Assistant Professor of Economics   safner@hood.edu   ryansafner/metricsF21   metricsF21.classes.ryansafner.com " />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/pagedtable/css/pagedtable.css" rel="stylesheet" />
+    <script src="libs/pagedtable/js/pagedtable.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Midterm Review Questions
+## ECON 480 • Econometrics • Fall 2021
+### Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF21"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF21</a><br> <a href="https://metricsF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF21.classes.ryansafner.com</a><br>
+
+---
+
+
+
+
+# Question 1
+
+What does **endogenous** mean, in words? What about statistically?
+
+---
+
+# Question 2
+
+If a regression is biased (from endogeneity), what can we learn about the bias?
+
+---
+
+# Question 3
+
+What does heteroskedasticity mean? Does heteroskedasticity **bias** `\(\hat{\beta_1}\)`?
+
+---
+
+# Question 4
+
+Is this data likely heteroskedastic or homoskedastic?
+
+&lt;img src="midterm-review_files/figure-html/unnamed-chunk-1-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Question 5
+
+- What three things impact the variation of `\(\hat{\beta_1}\)`? How?
+
+---
+
+# Question 6
+
+
+What are the four assumptions we make about the error term?
+
+Which is most important?
+
+---
+
+# Question 7
+
+`$$Wages_i=\beta_0+\beta_1Education+u_i$$`
+
+a. What is in `\(u_i\)`?
+
+b. Is `\(\hat{\beta_1}\)` likely biased?
+
+---
+
+# Question 8
+
+What does `\(R^2\)` measure? What does it mean? How do we calculate it?
+
+---
+
+# Question 9
+
+What does `\(\sigma_u\)` (SER) measure? What does it mean?
+
+---
+
+# Question 10
+
+Interpret all of these numbers (except Adjusted R-squared and the last line): 
+
+
+```
+## 
+## Call:
+## lm(formula = y ~ x, data = het_data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -27.047  -2.690   0.232   2.509  18.752 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)
+## (Intercept) -0.09958    0.23493  -0.424    0.672
+## x            0.20116    0.14049   1.432    0.153
+## 
+## Residual standard error: 5.253 on 498 degrees of freedom
+## Multiple R-squared:  0.0041,	Adjusted R-squared:  0.002101 
+## F-statistic:  2.05 on 1 and 498 DF,  p-value: 0.1528
+```
+
+---
+
+# Question 11
+
+Interpret all of these numbers: 
+
+preserve6aa1bdb580c3afee
+
+---
+
+# Question 12
+
+Suppose `\(Y\)` is normally distributed with a mean of 10 and a standard error of 5. What is the probability that `\(Y\)` is between 5 and 15?
+
+---
+
+# Question 13
+
+Explain what a `\(Z\)`-score means.
+
+---
+
+# Question 14
+
+Explain what a `\(p\)`-value means. :) 
+
+---
+
+# Question 15
+
+We run the following hypothesis test at `\(\alpha=0.05\)`: 
+
+`$$\begin{align*}
+H_0: \, &amp; \beta_1=0\\
+H_1: \, &amp; \beta_1 \neq 0 \\
+\end{align*}$$`
+
+Is this test one-sided or two-sided? 
+
+We find the `\(p\)`-value is 0.02. What is our conclusion? Be specific and precise in your wording!
+
+---
+
+# Question 16
+
+Suppose we ran that hypothesis test on our finding. What can we conclude?
+
+.pull-left[
+.smallest[
+
+```
+## 
+## Call:
+## lm(formula = y ~ x, data = het_data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -27.047  -2.690   0.232   2.509  18.752 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)
+## (Intercept) -0.09958    0.23493  -0.424    0.672
+## x            0.20116    0.14049   1.432    0.153
+## 
+## Residual standard error: 5.253 on 498 degrees of freedom
+## Multiple R-squared:  0.0041,	Adjusted R-squared:  0.002101 
+## F-statistic:  2.05 on 1 and 498 DF,  p-value: 0.1528
+```
+]
+]
+
+.pull-right[
+.smallest[
+preserve10ba0b57f9cf509a
+]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
