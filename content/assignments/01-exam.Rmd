@@ -19,8 +19,24 @@ type: docs
 ```
 
 {{% alert note %}}
-Check back here for more specific information about the exam.
+Thursday, October 14 (11:25 AM — 12:50 PM) on Blackboard Assignments
 {{% /alert %}}
+
+Exam 1 will be held **on Blackboard assignments** from **11:25 AM — 12:50 PM** on **Thursday October 14** (our class time).
+
+The exam will be a **timed assignment**. You will *not* need the whole time, I have designed the test to give you some extra time to accommodate the technical difficulties of taking an exam at home. You may close the exam page and come back to it, but *the timer will continue to run* once the exam is first opened.
+
+If you have any approved testing accommodations, or know in advance you must be absent, please confirm with me ASAP and we will make arrangements
+
+While the exam is out, neither the TA nor I will answer any questions. The one exception is, **email/message me ASAP if you encounter technical problems**.
+
+# Exam Instructions (<i class="fas fa-exclamation-circle"></i> Important, Please read)
+
+This exam will be **open-book/website, open-notes**, but **do not use the internet, or contact others**. [I have designed the exam so that Google won't help you. Everything you need should be in your notes, homeworks, or slides anyway.] I will automatically interpret substantially-similar answers, obviously-googled answers, and contact between students as cheating or plagiarism, respectively. Either will earn you a 0, and be reported. Answers should be *in your own words*, I will also deduct points for blatant copy-pastes off my slides (those are *my* words, not yours!).
+
+You must show all of your work (for calculation problems), either by typing your steps into the answer form, or you may upload handwritten steps to the exam, solving your problems. Only as a *last* resort (please!), you may email me your work before your time runs out.
+
+It is more important to me that you spend your time working and writing the answers, and less about all the technology working flawlessly.
 
 # Concepts Study Guide
 

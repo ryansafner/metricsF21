@@ -136,7 +136,8 @@ Interpret all of these numbers:
 ```{r}
 reg<-lm(y~x, data = het_data)
 library(huxtable)
-huxreg(reg,        statistics = c("N" = "nobs",
+huxreg(reg,
+       statistics = c("N" = "nobs",
                       "R-Squared" = "r.squared",
                       "SER" = "sigma"))
 ```
@@ -191,7 +192,8 @@ summary(lm(y~x, data = het_data))
 .pull-right[
 .smallest[
 ```{r}
-huxreg(reg,        statistics = c("N" = "nobs",
+huxreg(reg,
+       statistics = c("N" = "nobs",
                       "R-Squared" = "r.squared",
                       "SER" = "sigma"))
 ```
