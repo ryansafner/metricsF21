@@ -25,7 +25,7 @@ Alternatively, you may download the `.Rmd` file, do the homework in markdown, an
 
 You may work together (and I highly encourage that) but you must turn in your own answers. I grade homeworks 70% for completion, and for the remaining 30%, pick one question to grade for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.
 
-# Theory and Concepts
+# Concepts
 
 ## Question 1
 **In your own words, describe what exogeneity and endogeneity mean, and how they are related to bias in our regression. What things can we learn about the bias if we know $X$ is endogenous?**
@@ -63,6 +63,8 @@ You may work together (and I highly encourage that) but you must turn in your ow
 
 <!--WRITE YOUR ANSWERS BELOW -->
 
+# Theory and Applications
+
 ## Question 7
 
 **A researcher is interested in examining the impact of illegal music downloads on commercial music sales. The author collects data on commercial sales of the top 500 singles from 2017 ($Y$) and the number of downloads from a web site that allows `file sharing' ($X$). The author estimates the following model**
@@ -74,20 +76,6 @@ $$\text{music sales}_i = \beta_0+\beta_1 \text{illegal downloads}_i + u_i$$
 <!--WRITE YOUR ANSWERS BELOW -->
 
 ## Question 8
-
-**A pharmaceutical company is interested in estimating the impact of a new drug on cholesterol levels. They enroll 200 people in a clinical trial. People are randomly assigned the treatment group or into the control group. Half of the people are given the new drug and half the people are given a sugar pill with no active ingredient. To examine the impact of dosage on reductions in cholesterol levels, the authors of the study regress the following model:**
-
-$$\text{cholesterol level}_i = \beta_0+\beta_1 \text{dosage level}_i + u_i$$
-
-**For people in the control group, dosage level$_i=0$ and for people in the treatment group, dosage level$_i$ measures milligrams of the active ingredient. In this case, the authors find a large, negative, statistically significant estimate of $\hat{\beta_1}$. Is this an unbiased estimate of the impact of dosage on change in cholesterol level? Why or why not? Do you expect the estimate to overstate or understate the true relationship between dosage and cholesterol level?**
-
-<!--WRITE YOUR ANSWERS BELOW -->
-
-# Theory Problems
-
-**For the following questions, please *show all work* and explain answers as necessary. You may lose points if you only write the correct answer. You may use `R` to *verify* your answers, but you are expected to reach the answers in this section "manually."**
-
-## Question 9
 
 **A researcher wants to estimate the relationship between average weekly earnings $(AWE$, measured in dollars) and $Age$ (measured in years) using a simple OLS model. Using a random sample of college-educated full-time workers aged 25-65 yields the following:**
 
@@ -141,7 +129,7 @@ $$\widehat{AWE} = 696.70+9.60 \, Age$$
 
 <!--WRITE YOUR ANSWERS BELOW -->
 
-## Question 10
+## Question 9
 
 **Suppose a researcher is interested in estimating a simple linear regression model:**
 
@@ -189,7 +177,7 @@ $$Y_i=\beta_0+\beta_1X_i+u_i$$
 
 Answer the following questions using `R`. When necessary, please write answers in the same document (knitted `Rmd` to `html` or `pdf`, typed `.doc(x)`, or handwritten) as your answers to the above questions. Be sure to include (email or print an `.R` file, or show in your knitted `markdown`) your code and the outputs of your code with the rest of your answers.
 
-## Question 11
+## Question 10
 
 - [<i class="fas fa-table"></i> `mlbattend.csv`](http://metricsf20.classes.ryansafner.com/data/mlbattend.csv)
 
