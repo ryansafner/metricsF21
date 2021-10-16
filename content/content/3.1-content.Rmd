@@ -1,0 +1,61 @@
+---
+title: "3.1 — The Fundamental Problem of Causal Inference & Potential Outcomes — Class Content"
+draft: false
+linktitle: "3.1 — The Fundamental Problem of Causal Inference & Potential Outcomes"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 14
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "3.1-slides"
+---
+
+{{% alert note %}}
+*Tuesday, October 19, 2021*
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we begin extending the foundation of simple linear regression with one variable into more advanced models that can plausibly claim (when we are done) to measure *causal* relationships between $X$ and $Y$. The rest of the semester is primarily extending regression from one $X$ to many, and changing the functional form to fit various idiosyncracies of different variables, or use clever techniques to isolate marginal effects of interest.
+
+We begin by covering the fundamental problem of causal inference, that we can never observe counterfactual states of the world. If we *could*, then we could easily measure the causal effect of $X \mapsto Y$ by comparing how $Y$ is different when $X$ is different. The next best thing we can do is run a **random control trial (RCT)** where individuals are *randomly* assigned to groups to be given (different) treatment(s), and then we can compare the average outcome across groups. Random assignment ensures the only thing that differs across group outcomes is whether or not the group was given treatment, estimating the *causal effect* of treatment on the outcome. 
+
+For now, we will understand causality to mean the average treatment effect (ATE) from a RCT. RCTs are both popular and controversial. Last year’s Nobel Prize winners in economics won for their use of RCTs in development economics, but they have drawn significant criticism from other top economists as not being sufficiently generalizable.
+
+Of course, the bigger problem is it is very difficult, often impossible, to run a RCT to test a hypothesis. So economists have developed a toolkit of clever techniques to identify causal effects in “natural experiments” or “quasi-experiments” that sufficiently *simulate* a RCT. Knowledge of this repertoire of tools is truly why modern economists are in demand by government and business (not supply and demand models, etc)!
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch.1 in Bailey, *Real Econometrics*
+- [<i class="fas fa-file-pdf"></i> Ch. 4 in Cunningham (2020), *Causal Inference, the Mixtape*](http://scunning.com/causalinference_norap.pdf#chapter*.47)
+- [<i class="fab fa-wikipedia-w"></i> Rubin Causal Model](https://en.wikipedia.org/wiki/Rubin_causal_model)
+
+Bailey begins the book with a discussion of causality and random control trials that is pretty good. 
+
+The potential outcomes notation (e.g. $Y_i^{1}$ and $Y_i^{0})$ and model comes from a very famous 1974 paper by Donald Rubin in psychology. You can read more about it in Cunningham (2020) above, or the Wikipedia entry on the model.
+
+Scott Cunningham’s excellent (and free!) *Causal Inference, the Mixtape* has a great discussion of the history, and examples, of potential outcomes in an accessible way.
+
+The classic example that most economists (including myself) were taught about causality is the treatment of the Rubin model in Angrist and Pischke’s *Mostly Harmless Econometrics* (one of the classic books on econometrics). You do not need to buy that book for this class, but if you will be doing data work in your future, or going to graduate school, this book is a must own and read:
+
+- [<i class="fas fa-book"></i> Angrist and Pischke, 2009, *Mostly Harmless Econometrics*](https://www.amazon.com/Mostly-Harmless-Econometrics-Empiricists-Companion/dp/0691120358)
+
+My health insurance example is lifted directly out of this book.
+
+Here’s also a great list of famous social science (including economics) papers that use natural experiments:
+
+- [<i class="fas fa-external-link-square-alt"></i> List of 19 Natural Experiments](http://economicspsychologypolicy.blogspot.com/2015/06/list-of-19-natural-experiments.html)
+
+For more on John Snow and the birth of epidemiology, the excellent PBS show *Victoria* has a [full episode](https://www.pbslearningmedia.org/resource/mast19vic-soc-cholera/cholera-and-contagion-victoria-season-3/) (and great [resources](https://www.pbslearningmedia.org/resource/envh10.sci.life.nathis.johnsnow/john-snow-pioneer-of-epidemiology/)) about the cholera outbreak.
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`

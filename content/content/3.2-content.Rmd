@@ -1,0 +1,66 @@
+---
+title: "3.2 — The Fundamental Problem of Causal Inference & Potential Outcomes — Class Content"
+draft: false
+linktitle: "3.2 — The Fundamental Problem of Causal Inference & Potential Outcomes"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 14
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "3.2-slides"
+---
+
+{{% alert note %}}
+*Thursday, October 21, 2021*
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we return to a more nuanced discussion of causality, given what we have learned about the fundamental problem of causal inference (counterfactuals and potential outcomes). RCTs are great, but they are not everything — and in any case, you are never going to be able to design and run an RCT in the overwhelming majority of studies.
+
+Now that we understand counterfactuals, we can apply our idea of exogeneity to argue that indeed, yes, **correlation _does_ imply causation** when $X$ is exogenous! That is, $X$ being correlated with $Y$ *implies* there is a causal connection between $X$ and $Y$, and if we are certain that $cor(X,u)=0$, then we are clearly measuring the causal effect of $X \rightarrow Y$! If $cor(X,u) \neq 0$ and $X$ is endogenous, there is *still* a causal connection between $X$ and $Y$, but it goes through other variables that jointly cause $X$ and $Y$.
+
+We also introduce a new tool for thinking about simple causal models, the **directed acyclic graph (DAG)**. These are a hip new trend for thinking about causal inference, so new and trendy that they aren’t really in any mainstream textbooks yet!
+
+DAGS and DAG rules (front doors, back doors, colliders, mediators, etc.) will allow you to visually map the causal relationships between variables and describe to you the variables you must **control for** in order to properly **identify the causal effect** you are trying to measure. I show you a simply tool, [daggity.net](https://dagitty.net) that will help you do this, as well as `ggdag` in `R`.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+DAGs are a trendy new concept in econometrics and causal inference, so much so that they have yet to find their way into any major econometrics textbook! There are some resources, however, that you can look to for understanding how they work (and I base much of my lecture off of them).
+
+- [<i class="fas fa-file-pdf"></i> Ch. 3 in Cunningham (2020), *Causal Inference, the Mixtape*](http://scunning.com/causalinference_norap.pdf#chapter*.38)
+- [<i class="fas fa-book"></i> Pearl and MacKenzie, (2018), *The Book of Why*](https://www.amazon.com/Book-Why-Science-Cause-Effect/dp/046509760X)
+- [<i class="fas fa-external-link-square-alt"></i> Heiss (2020), Causal Inference"](https://github.com/andrewheiss/heiss-causal-inference/blob/master/10-causal-inference.pdf)
+- [<i class="fas fa-external-link-square-alt"></i> Huntington-Klein (2019), Dagitty.net Cheat Sheet"](https://nickch-k.github.io/introcausality/Cheat%20Sheets/Dagitty_Cheat_Sheet.pdf)
+- [<i class="fas fa-external-link-square-alt"></i> Huntington-Klein (2019), Causal Diagrams Cheat Sheet"](https://nickch-k.github.io/introcausality/Cheat%20Sheets/Causal_Diagrams_Cheat_Sheet.pdf)
+- [<i class="fas fa-external-link-square-alt"></i> My blog post on "Econometrics, Data Science, and Causal Inference"](https://ryansafner.com/post/econometrics-data-science-and-causal-inference/)
+
+The *best* book to get more into the philosophy of causality and the major origin of DAGs is Judea Pearl (and David McKenzie)'s *The Book of Why*. We owe much to Pearl, he is the flagship of the causal revolution (outside of econometrics).^[He has an interesting and contentious relationship to economics.] And [his twitter](https://twitter.com/yudapearl) is pretty amusing.
+
+The best instantiation of DAGs and causal inference into a "textbook" on econometrics and methods is Scott Cunningham's (open source!) *Causal Inference: The Mixtape* chapter on DAGs. Nick Huntington-Klein has some great lecture slides, and some cheat sheets on using Dagitty.net and understanding DAGs.
+
+Andrew Heiss, a political science professor, has a great recent book chapter on causal inference using DAGs, complete with instructions on how to do it in R and dagitty.net.
+
+Finally, I have a blog post discussing the difference between econometrics, causal inference, and data science. The end touches on causality, DAGs, and Pearl.
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`
+
+## New Packages Mentioned
+
+- `dagitty.net`: not a package in R, but an online tool to help you work with DAGs (see the cheat sheets in today’s readings page)
+
+- `ggdag`: for drawing DAGs in ggplot, and for identifying pathways `ggdag_paths()` and required adjustments `ggdag_adjustment_set()`
+
+## <i class="fas fa-registered"></i> R Practice
+
+See today’s [practice problems](/r/3.2-r/practice) to help you use DAGs and daggity.net. Answers are be posted on that page.

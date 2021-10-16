@@ -342,8 +342,8 @@
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.1 — The Fundamental Problem of Causal Inference &amp;amp; Potential Outcomes&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
-                &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.1-content/&#34;&gt;
+                &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
@@ -353,8 +353,8 @@
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;3.2 — Causal Inference II: DAGs&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
-                &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/3.2-content/&#34;&gt;
+                &lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;
                 &lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;font color=&#34;f1f1f1&#34;&gt;

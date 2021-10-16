@@ -11,7 +11,7 @@ type: docs
 output:
   blogdown::html_page:
     toc: true
-#slides: "2.7-slides"
+slides: "2.7-slides"
 ---
 
 {{% alert note %}}

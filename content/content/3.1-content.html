@@ -1,0 +1,63 @@
+---
+title: "3.1 — The Fundamental Problem of Causal Inference & Potential Outcomes — Class Content"
+draft: false
+linktitle: "3.1 — The Fundamental Problem of Causal Inference & Potential Outcomes"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 14
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "3.1-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Tuesday, October 19, 2021</em>
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we begin extending the foundation of simple linear regression with one variable into more advanced models that can plausibly claim (when we are done) to measure <em>causal</em> relationships between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. The rest of the semester is primarily extending regression from one <span class="math inline">\(X\)</span> to many, and changing the functional form to fit various idiosyncracies of different variables, or use clever techniques to isolate marginal effects of interest.</p>
+<p>We begin by covering the fundamental problem of causal inference, that we can never observe counterfactual states of the world. If we <em>could</em>, then we could easily measure the causal effect of <span class="math inline">\(X \mapsto Y\)</span> by comparing how <span class="math inline">\(Y\)</span> is different when <span class="math inline">\(X\)</span> is different. The next best thing we can do is run a <strong>random control trial (RCT)</strong> where individuals are <em>randomly</em> assigned to groups to be given (different) treatment(s), and then we can compare the average outcome across groups. Random assignment ensures the only thing that differs across group outcomes is whether or not the group was given treatment, estimating the <em>causal effect</em> of treatment on the outcome.</p>
+<p>For now, we will understand causality to mean the average treatment effect (ATE) from a RCT. RCTs are both popular and controversial. Last year’s Nobel Prize winners in economics won for their use of RCTs in development economics, but they have drawn significant criticism from other top economists as not being sufficiently generalizable.</p>
+<p>Of course, the bigger problem is it is very difficult, often impossible, to run a RCT to test a hypothesis. So economists have developed a toolkit of clever techniques to identify causal effects in “natural experiments” or “quasi-experiments” that sufficiently <em>simulate</em> a RCT. Knowledge of this repertoire of tools is truly why modern economists are in demand by government and business (not supply and demand models, etc)!</p>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Ch.1 in Bailey, <em>Real Econometrics</em></li>
+<li><a href="http://scunning.com/causalinference_norap.pdf#chapter*.47"><i class="fas fa-file-pdf"></i> Ch. 4 in Cunningham (2020), <em>Causal Inference, the Mixtape</em></a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rubin_causal_model"><i class="fab fa-wikipedia-w"></i> Rubin Causal Model</a></li>
+</ul>
+<p>Bailey begins the book with a discussion of causality and random control trials that is pretty good.</p>
+<p>The potential outcomes notation (e.g. <span class="math inline">\(Y_i^{1}\)</span> and <span class="math inline">\(Y_i^{0})\)</span> and model comes from a very famous 1974 paper by Donald Rubin in psychology. You can read more about it in Cunningham (2020) above, or the Wikipedia entry on the model.</p>
+<p>Scott Cunningham’s excellent (and free!) <em>Causal Inference, the Mixtape</em> has a great discussion of the history, and examples, of potential outcomes in an accessible way.</p>
+<p>The classic example that most economists (including myself) were taught about causality is the treatment of the Rubin model in Angrist and Pischke’s <em>Mostly Harmless Econometrics</em> (one of the classic books on econometrics). You do not need to buy that book for this class, but if you will be doing data work in your future, or going to graduate school, this book is a must own and read:</p>
+<ul>
+<li><a href="https://www.amazon.com/Mostly-Harmless-Econometrics-Empiricists-Companion/dp/0691120358"><i class="fas fa-book"></i> Angrist and Pischke, 2009, <em>Mostly Harmless Econometrics</em></a></li>
+</ul>
+<p>My health insurance example is lifted directly out of this book.</p>
+<p>Here’s also a great list of famous social science (including economics) papers that use natural experiments:</p>
+<ul>
+<li><a href="http://economicspsychologypolicy.blogspot.com/2015/06/list-of-19-natural-experiments.html"><i class="fas fa-external-link-square-alt"></i> List of 19 Natural Experiments</a></li>
+</ul>
+<p>For more on John Snow and the birth of epidemiology, the excellent PBS show <em>Victoria</em> has a <a href="https://www.pbslearningmedia.org/resource/mast19vic-soc-cholera/cholera-and-contagion-victoria-season-3/">full episode</a> (and great <a href="https://www.pbslearningmedia.org/resource/envh10.sci.life.nathis.johnsnow/john-snow-pioneer-of-epidemiology/">resources</a>) about the cholera outbreak.</p>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
