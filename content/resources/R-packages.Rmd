@@ -35,4 +35,5 @@ The following is a compendium of all R packages used in this course (in order of
 | `estimatr` | Models | For calculating robust standard errors | [[2.5](/content/2.5-content)] |
 | `lmtest` | Models | For testing for heteroskedasticity | [[2.5](/content/2.5-content)] |
 | `huxtable` | Models | For making nice regression tables | [[2.5](/content/2.5-content)] |
+| `infer` | Models | For simulation and statistical inference | [[2.6](/content/2.6-content)] |
 

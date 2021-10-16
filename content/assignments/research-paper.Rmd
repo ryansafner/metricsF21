@@ -86,13 +86,13 @@ While it may be possible for many papers in your college career, is not a paper 
 
 | Assignment | Points | Due Date | Description |
 |------------|--------|----------|-------------|
-| Abstract | 5 | Sun Oct 11 | Short summary of your ideas |
-| Literature Review | 10 | Sun Nov 1 | 1-3 paragraphs on 2-3 scholarly sources |
-| Data Description | 10 | Sun Nov 15 | Description of data sources, and some summary statistics |
-| Presentation | 5 | Thurs Nov 19 | Short presentation of your project so far |
-| Final Paper Due | 70 | Tues Nov 22 | Email to me paper, data, and code |
+| Abstract | 5 | Fri Oct 22 | Short summary of your ideas |
+| Literature Review | 10 | Fri Nov 5 | 1-3 paragraphs on 2-3 scholarly sources |
+| Data Description | 10 | Fri Nov 19 | Description of data sources, and some summary statistics |
+| Presentation | 5 | Tues/Thurs Nov 30/Dec 2 | Short presentation of your project so far |
+| Final Paper Due | 70 | Mon Dec 6 | Email to me paper, data, and code |
 
-All assignments are due by emails to me.
+All assignments are due as emails to me.
 
 - **Abstract**: write a short paragraph (3-6 sentences) summarizing: what rough topic you want to look at, a specific research question that you think you can get data to test, where you think you might be able to get some data. It's okay that much of this is speculative and you might change your mind or do very different things later!
 

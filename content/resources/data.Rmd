@@ -13,7 +13,7 @@ weight: 2
 
 ##  List of Public Datasets, Data Sources, and R APIs
 
-### Build-in Datasets
+### Built-in Datasets
 
 - A [near-comprehensive list](https://vincentarelbundock.github.io/Rdatasets/datasets.html) of all existing data sets built-in to R or R packages^[Note: You should use these more for playing around with in R to boost your data wrangling skills. These should not be used for your projects in most circumstances.]
 
@@ -29,6 +29,7 @@ Below are packages written by and for R users that link up with the API of key d
 
 Don't forget to install^[`install.packages("name_of_package")`] first and then load it with `library()`. 
 
+- [`owidR`](https://github.com/piersyork/owidR) for importing data from Our World in Data
 - [`wbstats`](https://cran.r-project.org/web/packages/wbstats/wbstats.pdf) provides access to all the data available on the **World Bank** API, which is basically everything on their website. The World Bank keeps track of *many* country-level indicators over time.
 - [`tidycensus`](https://cran.r-project.org/web/packages/tidycensus/tidycensus.pdf) gives you access to data from the **US Census** and the **American Community Survey.** These are the largest high-quality data sets you'll find of cross-sectional data on individual people in the US. You'll need to get a (free) API key from the website (or ask me for mine).
 - [`fredr`](https://cran.r-project.org/web/packages/fredr/vignettes/fredr.html) gets data from the **Federal Reserve's Economic Database (FRED)**. You'll need to get a (free) API key from the website (or ask me for mine).
@@ -49,8 +50,12 @@ Below is a list of good data sources depending on the types of topics you might 
 
 - Coronavirus Data: [John Hopkins CSSE Covid-19 data (definitive)](https://github.com/CSSEGISandData/COVID-19), [Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data), [New York Times Covid data](https://github.com/nytimes/covid-19-data), [`covdata` r package](https://github.com/kjhealy/covdata), [Tidy Covid data](https://github.com/joachim-gassen/tidycovid19)
 
+- [Our World in Data](https://ourworldindata.org)
 - [American Economic Association Data](https://www.aeaweb.org/resources/data)
+- [IPUMS](https://www.ipums.org/) (Integrated Public Use Microdata Series)
 - [EconData from UMD](http://inforumweb.umd.edu/econdata/econdata.html)
+- [ICPSR](https://www.icpsr.umich.edu/web/pages/) (Inter-university Consortium for Political and Social Research)
+- [NBER's Public Use Data Archive](https://www.nber.org/research/data?page=1&perPage=50)
 - [Historical Macroeconomic Statistics](http://www.historicalstatistics.org/)
 - [UMD's Interindustry Forecasting](http://inforumweb.umd.edu/econdata/econdatacontents.html)
 - [DB-nomics](https://db.nomics.world/)
