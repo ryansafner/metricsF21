@@ -79,6 +79,7 @@ lessons:
 
   - title: "3.1 — The Fundamental Problem of Causal Inference & Potential Outcomes"
     content: "3.1-content"
+    slides: "3.1-slides"
 
   - title: "3.2 — Causal Inference II: DAGs"
     content: "3.2-content"

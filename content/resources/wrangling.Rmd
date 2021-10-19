@@ -11,4 +11,46 @@ type: docs
 weight: 3
 ---
 
-TBD
+```{r}
+library(tidyverse)
+```
+
+## Importing Data
+
+The `janitor` package 
+
+`cleannames()`
+
+- generally makes lowercase names
+
+## Dealing with Missing Data
+
+When calculating statistics (e.g. with `summarize()`), many calculations will give errors if your data contains `NA`s. 
+
+### Example: Calculating Mean
+
+```{r, echo = T}
+data_missing <- tribble(
+  ~x, ~y,
+  2, 3,
+  1, 4,
+  NA, 2,
+  3, NA,
+  7, 8
+)
+```
+
+Now if we were to get the mean of x: 
+```{r}
+data_missing %>% 
+  summarize(mean_x = mean(x))
+```
+
+It gives us `NA`. 
+
+One way to combat this is to *ignore* all observations that contain `NA` values. Most statistics functions (like `mean()`) have an optional argument `na.rm`, which if set to `TRUE`, will ignore `NA`s when performing the calculation:
+
+```{r}
+data_missing %>%
+  summarize(mean_x = mean(x, na.rm = TRUE))
+```

@@ -50,9 +50,9 @@ class: inverse
 
 ### [Potential Outcomes](#15)
 
-### [Natural Experiments](#46)
+### [Natural Experiments](#47)
 
-### [Attack of/on the Randomistas](#53)
+### [Attack of/on the Randomistas](#54)
 
 ---
 
@@ -104,9 +104,9 @@ $$\color{orange}{\hat{Y}}=\color{teal}{\hat{f}}(\color{purple}{X})$$
 
 .pull-right[
 .center[
-![:scale 55%](https://www.dropbox.com/s/v5vwsadw5vs448t/causality.jpg?raw=1)
+![:scale 55%](../images/causality.jpg)
 
-![:scale 55%](https://www.dropbox.com/s/phhet82tcnuegxp/randomimage.jpg?raw=1)]
+![:scale 55%](../images/randomimage.jpg)]
 ]
 
 ---
@@ -122,21 +122,21 @@ $$\color{orange}{\hat{Y}}=\color{teal}{\hat{f}}(\color{purple}{X})$$
 # The Two Problems: Identification and Inference
 
 .center[
-.hi[Sample] $\color{#e64173}{\xrightarrow{\text{statistical inference}}}$ .hi[Population] $\xrightarrow{\text{causal indentification}}$ .b[Unobserved Parameters]
+.b[Sample] $\color{#6A5ACD}{\xrightarrow{\text{statistical inference}}}$ .b[Population] $\color{#e64173}{\xrightarrow{\text{causal indentification}}}$ .b[Unobserved Parameters]
 ]
 
-- We saw how to statistically .hi[infer] values of population parameters using our sample
-  - Purely empirical, math & statistics 🤓
+- We saw how to statistically .hi-purple[infer] values of population parameters using our sample
+  - .hi-turquoise[Purely empirical, math & statistics] 🤓
 ---
 
 # The Two Problems: Identification and Inference
 
 .center[
-.b[Sample] $\xrightarrow{\text{statistical inference}}$ .hi[Population] $\color{#e64173}{\xrightarrow{\text{causal indentification}}}$ .hi[Unobserved Parameters]
+.b[Sample] $\color{#6A5ACD}{\xrightarrow{\text{statistical inference}}}$ .b[Population] $\color{#e64173}{\xrightarrow{\text{causal indentification}}}$ .b[Unobserved Parameters]
 ]
 
-- We saw how to statistically .hi[infer] values of population parameters using our sample
-  - Purely empirical, math & statistics 🤓
+- We saw how to statistically .hi-purple[infer] values of population parameters using our sample
+  - .hi-turquoise[Purely empirical, math & statistics] 🤓
 
 - We now confront the problem of .hi[identifying] causal relationships within population
   - .hi-purple[Endogeneity problem]
@@ -188,7 +188,7 @@ class: inverse, center, middle
 .pull-right[
 
 .center[
-![:scale 90%](https://www.dropbox.com/s/ninee93he1zgcon/groupsplit.jpeg?raw=1)
+![:scale 90%](../images/groupsplit.jpeg)
 ]
 ]
 
@@ -197,7 +197,7 @@ class: inverse, center, middle
 # Random Control Trials (RCTs) II
 
 .center[
-![:scale 75%](https://www.dropbox.com/s/wqjisnpxaoaa2yy/rct.png?raw=1)
+![:scale 75%](../images/rct.png)
 
 Classic (simplified) procedure of a randomized control trial (RCT) from medicine
 ]
@@ -224,14 +224,14 @@ Classic (simplified) procedure of a randomized control trial (RCT) from medicine
 
 .pull-left[
 .center[
-![:scale 80%](https://www.dropbox.com/s/vcqojr6k058e8hl/3apples.jpg?raw=1)
+![:scale 80%](../images/3apples.jpg)
 Treatment Group
 ]
 ]
 
 .pull-right[
 .center[
-![:scale 100%](https://www.dropbox.com/s/xvjphzlwechgip6/3oranges.jpg?raw=1)
+![:scale 100%](../images/3oranges.jpg)
 Control Group
 ]
 ]
@@ -253,14 +253,14 @@ Control Group
 
 .pull-left[
 .center[
-![:scale 80%](https://www.dropbox.com/s/vcqojr6k058e8hl/3apples.jpg?raw=1)
+![:scale 80%](../images/3apples.jpg)
 Treatment Group
 ]
 ]
 
 .pull-right[
 .center[
-![:scale 100%](https://www.dropbox.com/s/xvjphzlwechgip6/3oranges.jpg?raw=1)
+![:scale 100%](../images/3oranges.jpg)
 Control Group
 
 .orange[(Selection Bias)]
@@ -356,11 +356,11 @@ $$\color{#314f4f}{ATE} = \color{#e64173}{E[Y_i^{1}]} - \color{#6A5ACD}{E[Y_i^{0}
 
 - Have large groups, and take *averages* instead!
 
-- .hi-slate[Average Treatment Effect (ATE)]: difference in the average (expected value) of outcome $Y$ between treated individuals and untreated individuals
+- .hi-slate[Average Treatment Effect (ATE)]: difference in the average (expected value) of outcome $Y$ between .pink[treated individuals] and .purple[untreated individuals]
 $$\color{#314f4f}{\delta} = \color{#e64173}{(\bar{Y}|D=1)}-\color{#6A5ACD}{(\bar{Y}|D=0)}$$
 
 - $D_i$ is a .hi-turquoise[binary variable], $= \begin{cases} \color{#6A5ACD}{0} & \color{#6A5ACD}{\text{ if person is not treated}}\\\color{#e64173}{1} & \color{#e64173}{\text{ if person is treated}}\\ \end{cases}$
-  - I’d much rather call this $T$, standing for $T$reatment, but this notation is famous
+  - I’d much rather call this $T_i$, standing for $T$reatment, but this notation is famous
 
 ---
 
@@ -372,13 +372,13 @@ $$\color{#314f4f}{ATE} = \color{#e64173}{E[Y_i^{1}]} - \color{#6A5ACD}{E[Y_i^{0}
 
 Again: 
 
-- Either we observe individual $i$ in the .hi[treatment group] $\color{#e64173}{(D=1)}$, i.e.
+- **Either** we observe individual $i$ in the .hi[treatment group] $\color{#e64173}{(D=1)}$, i.e.
 $$\color{#314f4f}{\delta_i} = \color{#e64173}{Y_i^{1}} - \color{red}{?}$$
 
-- Or we observe individual $i$ in the .hi-purple[control group] $\color{#6A5ACD}{(D=0)}$, i.e.
+- **Or** we observe individual $i$ in the .hi-purple[control group] $\color{#6A5ACD}{(D=0)}$, i.e.
 $$\color{#314f4f}{\delta_i} = \color{red}{?} - \color{#6A5ACD}{Y_i^{0}} $$
 
-- Never both at the same time:
+- **Never both** at the same time:
 .center[
 ✨ $\color{#314f4f}{\delta_i} = \color{#e64173}{Y_i^{1}} - \color{#6A5ACD}{Y_i^{0}}$  ✨
 ]
@@ -411,7 +411,7 @@ $$\color{#314f4f}{\delta_i} = \color{red}{?} - \color{#6A5ACD}{Y_i^{0}} $$
 # Example: The Effect of Having Health Insurance II
 
 .center[
-![:scale 42%](https://www.dropbox.com/s/5lpltvdfim6elr6/econometricshealthnocaption.png?raw=1)]
+![:scale 42%](../images/econometricshealthnocaption.png)]
 
 .source[Angrist, Joshua & Jorn-Steffen Pischke, 2015, *Mostly Harmless Econometrics*]
 ---
@@ -465,7 +465,7 @@ $$\color{#314f4f}{\delta_i} = \color{red}{?} - \color{#6A5ACD}{Y_i^{0}} $$
 | ![](../images/coldman2.jpg) | ![](../images/femalejogger2.jpg) |
 | $Y_J^0=3$ | $Y_M^0=5$ | 
 | $Y_J^1=4$ | $Y_M^1=5$ |
-| $\color{#314f4f}{\delta_J=1}$ | $\color{#314f4f}{\delta_M=0}$ |
+| ✨ $\color{#314f4f}{\delta_J=1}$ | $\color{#314f4f}{\delta_M=0}$ ✨ |
 ]
 ]
 
@@ -490,7 +490,7 @@ $$\color{#314f4f}{\delta_i} = \color{red}{?} - \color{#6A5ACD}{Y_i^{0}} $$
 | ![](../images/coldman2.jpg) | ![](../images/femalejogger2.jpg) |
 | $Y_J^0=3$ | $Y_M^0=5$ | 
 | $Y_J^1=4$ | $Y_M^1=5$ |
-| $\color{#314f4f}{\delta_J=1}$ | $\color{#314f4f}{\delta_M=0}$ |
+| ✨ $\color{#314f4f}{\delta_J=1}$ | $\color{#314f4f}{\delta_M=0}$ ✨ |
 | $\color{#e64173}{Y_J=(Y_J^1)=4}$ | $\color{#6A5ACD}{Y_M=(Y_M^0)=5}$ | 
 
 ]
@@ -525,7 +525,7 @@ $$\begin{align*}
 | ![](../images/coldman2.jpg) | ![](../images/femalejogger2.jpg) |
 | $Y_J^0=3$ | $Y_M^0=5$ | 
 | $Y_J^1=4$ | $Y_M^1=5$ |
-| $\color{#314f4f}{\delta_J=1}$ | $\color{#314f4f}{\delta_M=0}$ |
+| ✨ $\color{#314f4f}{\delta_J=1}$ | $\color{#314f4f}{\delta_M=0}$ ✨ |
 | $\color{#e64173}{Y_J=(Y_J^1)=4}$ | $\color{#6A5ACD}{Y_M=(Y_M^0)=5}$ | 
 
 ]
@@ -603,10 +603,10 @@ $$Y_J-Y_M=\underbrace{\color{#e64173}{Y^1_J}-\color{#6A5ACD}{Y^0_M}}_{=-1}$$
 - Algebra trick: add and subtract $\color{#6A5ACD}{Y^0_J}$ to equation
 
 $$\begin{align*}
-Y_j-Y_M=\underbrace{\color{#e64173}{Y^1_J}-\color{#6A5ACD}{Y^0_J}}_{=1}+\underbrace{\color{#6A5ACD}{Y^0_J}-\color{#6A5ACD}{Y^0_M}}_{=-2}
+Y_j-Y_M=\underbrace{\color{#e64173}{Y^1_J}-\color{#6A5ACD}{Y^0_J}}_{\color{#314f4f}{=1}}+\underbrace{\color{#6A5ACD}{Y^0_J}-\color{#6A5ACD}{Y^0_M}}_{\color{orange}{=-2}}
 \end{align*}$$
 
-- $\color{#e64173}{Y^1_J}-\color{#6A5ACD}{Y^0_J}=1$: Causal effect for John of buying insurance, $\color{#314f4f}{\delta_J}$
+- $\color{#e64173}{Y^1_J}-\color{#6A5ACD}{Y^0_J}=1$: .hi-slate[Causal effect for John] of buying insurance, $\color{#314f4f}{\delta_J}$
 - $\color{#6A5ACD}{Y^0_J}-\color{#6A5ACD}{Y^0_M}=-2$: Difference between John & Maria pre-treatment, .hi-orange[“selection bias”]
 
 ]
@@ -629,7 +629,7 @@ $$\color{#6A5ACD}{Y^0_J}-\color{#6A5ACD}{Y^0_M} \neq 0$$
 
 .pull-left[
 .center[
-![:scale 80%](https://www.dropbox.com/s/vcqojr6k058e8hl/3apples.jpg?raw=1)
+![:scale 80%](../images/3apples.jpg)
 
 John (Treated)
 ]
@@ -637,7 +637,7 @@ John (Treated)
 
 .pull-right[
 .center[
-![:scale 100%](https://www.dropbox.com/s/xvjphzlwechgip6/3oranges.jpg?raw=1)
+![:scale 100%](../images/3oranges.jpg)
 
 Maria (Control)
 ]
@@ -664,7 +664,7 @@ $$\color{#6A5ACD}{Y^0_J}-\color{#6A5ACD}{Y^0_M}\neq 0$$
 
 .pull-left[
 .center[
-![:scale 80%](https://www.dropbox.com/s/vcqojr6k058e8hl/3apples.jpg?raw=1)
+![:scale 80%](../images/3apples.jpg)
 
 John (Treated)
 ]
@@ -672,7 +672,7 @@ John (Treated)
 
 .pull-right[
 .center[
-![:scale 100%](https://www.dropbox.com/s/xvjphzlwechgip6/3oranges.jpg?raw=1)
+![:scale 100%](../images/3oranges.jpg)
 
 Maria (Control)
 ]
@@ -707,7 +707,7 @@ tribble(
 - .hi-slate[Individual treatment effect] (for individual $i$):
 $$\color{#314f4f}{\delta_i}=\color{#e64173}{Y^1_i}-\color{#6A5ACD}{Y^0_i}$$
 - .hi-slate[*Average* treatment effect]:
-$$\color{#314f4f}{ATE}=\frac{1}{n}\sum^n_{i=1}\color{#e64173}{Y^1_i}-\color{#6A5ACD}{Y^0_i}$$
+$$\color{#314f4f}{ATE}=\frac{1}{n}\sum^n_{i=1}(\color{#e64173}{Y^1_i}-\color{#6A5ACD}{Y^0_i})$$
 
 ]
 ]
@@ -740,7 +740,7 @@ $$\color{#314f4f}{ATE}=\frac{1}{n}\sum^n_{i=1}\color{#e64173}{Y^1_i}-\color{#6A5
 - Can’t we just take the difference in group means?
 
 $$\begin{align*}
-diff=\color{#e64173}{Avg(Y_i^{1}|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
+diff.=\color{#e64173}{Avg(Y_i^{1}|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
 \end{align*}$$
 
 - Suppose there is a uniform treatment effect, $\color{#314f4f}{\delta_i}$
@@ -774,13 +774,44 @@ $$\begin{align*}
 
 ---
 
+# Can’t We Just Take the Difference of Group Means?
+
+.pull-left[
+.smaller[
+- Can’t we just take the difference in group means?
+
+$$\begin{align*}
+diff.=\color{#e64173}{Avg(Y_i^{1}|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
+\end{align*}$$
+
+]
+]
+
+.pull-right[
+.smallest[
+.center[**Actual** (observed) Data]
+
+| Individual | .hi[Insured] | .hi-purple[Not Insured] | .hi-slate[Diff] |
+|---|---------|-------------|------|
+| John | .pink[4.0] | ? | ? |
+| Maria | ? | .purple[5.0] | ? | 
+| **Average** | ? | ? | ? | 
+
+- We never get to see each person's .hi-turquoise[counterfactual] state to compare and calculate ITEs or ATE
+  - Maria with insurance $\color{#e64173}{Y^1_M}$
+  - John without insurance $\color{#6A5ACD}{Y^0_J}$
+
+]
+]
+
+---
 # Example: Thinking about the Data
 
 .pull-left[
 .smallest[
 - Basic comparisons tell us *something* about outcomes, but not .hi-slate[ATE]
 
-$$\text{Diff. in Group Outcomes} = \color{#314f4f}{ATE} + \color{#FFA500}{\text{Selection Bias}}$$
+$$diff. = \color{#314f4f}{ATE} + \color{#FFA500}{\text{Selection Bias}}$$
 
 - .hi-orange[Selection bias]: difference in average $Y^0_i$ between groups pre-treatment
 
@@ -824,7 +855,7 @@ $$\color{#e64173}{Avg(}\color{#6A5ACD}{Y_i^{0}}\color{#e64173}{|D=1)}-\color{#6A
 
 .pull-left[
 .center[
-![:scale 80%](https://www.dropbox.com/s/vcqojr6k058e8hl/3apples.jpg?raw=1)
+![:scale 80%](../images/3apples.jpg)
 
 John (Treated)
 ]
@@ -832,7 +863,7 @@ John (Treated)
 
 .pull-right[
 .center[
-![:scale 100%](https://www.dropbox.com/s/xvjphzlwechgip6/3oranges.jpg?raw=1)
+![:scale 100%](../images/3oranges.jpg)
 
 Maria (Control)
 ]
@@ -853,8 +884,8 @@ $Y = \beta_0+\beta_1 D_i + u_i$
 - Where $D_i = \begin{cases} \color{#6A5ACD}{0} & \color{#6A5ACD}{\text{ if person is not treated}}\\\color{#e64173}{1} & \color{#e64173}{\text{ if person is treated}}\\ \end{cases}$
 
 - The problem is $cor(D,u) \neq 0$!
-  - *D* (Treatment) is endogenous!
-  - *Getting* treatment is correlated with other factors!
+  - $D_i$ (Treatment) is endogenous!
+  - *Getting* treatment is correlated with other factors that determine health!
 
 ]
 
@@ -862,7 +893,7 @@ $Y = \beta_0+\beta_1 D_i + u_i$
 
 .pull-left[
 .center[
-![:scale 80%](https://www.dropbox.com/s/vcqojr6k058e8hl/3apples.jpg?raw=1)
+![:scale 80%](../images/3apples.jpg)
 
 John (Treated)
 ]
@@ -870,7 +901,7 @@ John (Treated)
 
 .pull-right[
 .center[
-![:scale 100%](https://www.dropbox.com/s/xvjphzlwechgip6/3oranges.jpg?raw=1)
+![:scale 100%](../images/3oranges.jpg)
 
 Maria (Control)
 ]
@@ -885,9 +916,9 @@ Maria (Control)
 
 - If treatment is .hi[randomly assigned] for a large sample, it eliminates selection bias!
 
-- Treatment and control groups differ *on average* by nothing *except* treatment status
+- Treatment and control groups differ **on average** by nothing *except* treatment status
 
-- Creates *ceterus paribus* conditions in economics: groups are identical *on average* (holding constant age, sex, height, etc.)
+- Creates .hi[ceterus paribus] conditions in economics: groups are identical **on average** (holding constant age, sex, height, etc.)
 
 ]
 
@@ -895,14 +926,14 @@ Maria (Control)
 
 .pull-left[
 .center[
-![](https://www.dropbox.com/s/vcqojr6k058e8hl/3apples.jpg?raw=1)
+![](../images/3apples.jpg)
 Treatment Group
 ]
 ]
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/vcqojr6k058e8hl/3apples.jpg?raw=1)
+![](../images/3apples.jpg)
 Control Group
 ]
 ]
@@ -919,7 +950,7 @@ Control Group
 $Y = \beta_0+\beta_1 D_i + u_i$
 
 - If treatment $D_i$ is administered *randomly*, it breaks the correlation with $u_i$!
-  - Treatment becomes *exogenous*
+  - Treatment becomes .hi[exogenous]
   - $cor(D,u)=0$
 
 ]
@@ -928,14 +959,14 @@ $Y = \beta_0+\beta_1 D_i + u_i$
 
 .pull-left[
 .center[
-![](https://www.dropbox.com/s/vcqojr6k058e8hl/3apples.jpg?raw=1)
+![](../images/3apples.jpg)
 Treatment Group
 ]
 ]
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/vcqojr6k058e8hl/3apples.jpg?raw=1)
+![](../images/3apples.jpg)
 Control Group
 ]
 ]
@@ -960,7 +991,7 @@ class: inverse, center, middle
 
 .pull-right[
 .center[
-![:scale 100%](https://www.dropbox.com/s/j0kwzqb2ptusckt/madlaboratory.jpg?raw=1)
+![:scale 100%](../images/madlaboratory.jpg)
 ]
 ]
 
@@ -980,7 +1011,7 @@ class: inverse, center, middle
 
 .pull-right[
 .center[
-![:scale 100%](https://www.dropbox.com/s/3j2yflalbv2ylo1/fieldobserver.jpg?raw=1)
+![:scale 100%](../images/fieldobserver.jpg)
 ]
 ]
 
@@ -999,7 +1030,7 @@ class: inverse, center, middle
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/2yiww124mnvhj8l/nskorea2.png?raw=1)
+![](../images/nskorea2.png)
 ]
 ]
 
@@ -1023,7 +1054,7 @@ class: inverse, center, middle
 ]
 
 .center[
-![:scale 60%](https://www.dropbox.com/s/s8ar35t7sjklf4k/choleramap.jpg?raw=1)
+![:scale 60%](../images/choleramap.jpg)
 ]
 ]
 
@@ -1033,7 +1064,7 @@ class: inverse, center, middle
 
 .left-column[
 .center[
-![:scale 80%](https://www.dropbox.com/s/w5jy5an586l7ep7/johnsnow.jpg?raw=1)
+![:scale 80%](../images/johnsnow.jpg)
 
 1813-1858
 ]
@@ -1047,7 +1078,7 @@ class: inverse, center, middle
 ]
 
 .center[
-![:scale 60%](https://www.dropbox.com/s/s8ar35t7sjklf4k/choleramap.jpg?raw=1)
+![:scale 60%](../images/choleramap.jpg)
 ]
 ]
 
@@ -1092,7 +1123,7 @@ background-size: cover
 [Vox (Oct 14, 2019)](https://www.vox.com/future-perfect/2019/10/14/20913928/nobel-prize-economics-duflo-banerjee-kremer)
 ]
 
-![](https://www.dropbox.com/s/119oeqictaktgsw/voxnobelrcts.png?raw=1)
+![](../images/voxnobelrcts.png)
 
 ]
 ]
@@ -1191,7 +1222,7 @@ Economics Nobel 2015
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/j0kwzqb2ptusckt/madlaboratory.jpg?raw=1)
+![](../images/madlaboratory.jpg)
 ]
 ]
 
