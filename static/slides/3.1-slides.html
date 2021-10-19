@@ -51,16 +51,14 @@ class: inverse
 .quitesmall[
 `$$\color{orange}{Y}=\color{teal}{f}(\color{purple}{X})$$`
 
-- .hi[Causal inference]: how do changes in `\(\color{purple}{X}\)` affect `\(\color{orange}{Y}\)`?
-  - We care more about estimating `\(\color{teal}{f}\)` than `\(\color{orange}{\hat{Y}}\)`
-  - Measure the causal effect of `\(X \mapsto Y\)` (e.g., `\(\hat{\beta_1})\)`
+1. .hi[Causal inference]: how changes in `\(\color{purple}{X}\)` *cause* changes in `\(\color{orange}{Y}\)`
+  - Care more about accurately estimating `\(\color{teal}{f}\)` than getting an accurate `\(\color{orange}{\hat{Y}}\)`
+  - Measure the **causal effect** of `\(X \mapsto Y\)` (e.g., `\(\hat{\beta_1})\)`
 
-`$$\color{orange}{\hat{Y}}=\color{teal}{\hat{f}}(\color{purple}{X})$$`
-
-- .hi[Prediction]: predict `\(\color{orange}{Y}\)` using an estimated `\(\color{teal}{f}\)`
-  - `\(\color{teal}{f}\)` is an unknown “black-box”, we care more about `\(\color{orange}{\hat{Y}}\)` 
-  - .hi-purple[Forecasting]: predicting future *values* of `\(Y\)` (inflation, sales, GDP)
-  - .hi-purple[Classification]: predicting the *category* of an outcome (success or failure, cat picture or not cat picture)
+2. .hi[Prediction]: predict `\(\color{orange}{\hat{Y}}\)` using an estimated `\(\color{teal}{f}\)`
+  - Care more about getting `\(\color{orange}{\hat{Y}}\)`  as accurate as possible, `\(\color{teal}{f}\)` is an unknown “black-box”
+  - .hi-purple[Forecasting]: predict future *values* of `\(Y\)` (inflation, sales, GDP)
+  - .hi-purple[Classification]: predict the *category* of an outcome (success or failure, cat picture or not cat picture)
 
 - We care (in this class at least) only about the first
 ]
@@ -723,15 +721,6 @@ Maria (Control)
 diff.=\color{#e64173}{Avg(Y_i^{1}|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
 \end{align*}$$`
 
-- Suppose there is a uniform treatment effect, `\(\color{#314f4f}{\delta_i}\)`
-
-`$$\begin{align*}
-&amp;= \color{#e64173}{Avg(Y_i^{1}|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
-&amp;= \color{#e64173}{Avg(}\color{#314f4f}{\delta_i}+\color{#6A5ACD}{Y_i^{0}}\color{#e64173}{|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
-&amp;= \color{#314f4f}{\delta_i}+\underbrace{\color{#e64173}{Avg(}\color{#6A5ACD}{Y_i^{0}}\color{#e64173}{|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}}_{\color{#FFA500}{\text{selection bias}}}\\
-&amp;= \color{#314f4f}{ATE} + \color{#FFA500}{\text{selection bias}} \\
-\end{align*}$$`
-
 ]
 ]
 
@@ -762,6 +751,15 @@ diff.=\color{#e64173}{Avg(Y_i^{1}|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
 
 `$$\begin{align*}
 diff.=\color{#e64173}{Avg(Y_i^{1}|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
+\end{align*}$$`
+
+- Suppose there is a uniform treatment effect, `\(\color{#314f4f}{\delta_i}\)`
+
+`$$\begin{align*}
+&amp;= \color{#e64173}{Avg(Y_i^{1}|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
+&amp;= \color{#e64173}{Avg(}\color{#314f4f}{\delta_i}+\color{#6A5ACD}{Y_i^{0}}\color{#e64173}{|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
+&amp;= \color{#314f4f}{\delta_i}+\underbrace{\color{#e64173}{Avg(}\color{#6A5ACD}{Y_i^{0}}\color{#e64173}{|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}}_{\color{#FFA500}{\text{selection bias}}}\\
+&amp;= \color{#314f4f}{ATE} + \color{#FFA500}{\text{selection bias}} \\
 \end{align*}$$`
 
 ]
@@ -1187,15 +1185,13 @@ Economics Nobel 2015
 .smallest[
 - Programs *randomly* assign treatment to different individuals and measure causal effect of treatment
 
-- Some do: 
+- .hi-green[RAND Health Insurance Study]: randomly give people health insurance
 
-- **RAND Health Insurance Study**: randomly give people health insurance
+- .hi-green[Oregon Medicaid Expansion]: randomly give people Medicaid
 
-- **Oregon Medicaid Expansion**: randomly give people Medicaid
+- .hi-green[HUD's Moving to Opportunity]: randomly give people moving vouchers
 
-- **HUD's Moving to Opportunity**: randomly give people moving vouchers
-
-- **Tennessee STAR**: randomly assign students to large vs. small classes
+- .hi-green[Tennessee STAR]: randomly assign students to large vs. small classes
 
 ]
 ]

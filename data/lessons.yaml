@@ -81,7 +81,7 @@ lessons:
     content: "3.1-content"
     slides: "3.1-slides"
 
-  - title: "3.2 — Causal Inference II: DAGs"
+  - title: "3.2 — Causal Inference & DAGs"
     content: "3.2-content"
 
   - title: "3.3 — Omitted Variable Bias"
