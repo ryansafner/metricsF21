@@ -137,8 +137,8 @@ $$\color{orange}{Y}=\color{teal}{f}(\color{purple}{X})$$
   - .hi-turquoise[Purely empirical, math & statistics] 🤓
 
 - We now confront the problem of .hi[identifying] causal relationships within population
-  - .hi-purple[Endogeneity problem]
-  - Even if we had perfect data on the whole population, .hi-purple[“Does X truly cause Y?”], and can we measure that effect?
+  - .hi[Endogeneity problem]
+  - Even if we had perfect data on the whole population, .hi[“Does X truly cause Y?”], and can we measure that effect?
   - .hi-turquoise[More philosophy & theory than math & statistics!] 🧐
 
 - Truly you should do this first, *before* you get data to make inferences!
