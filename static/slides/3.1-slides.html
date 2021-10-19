@@ -783,135 +783,252 @@ diff.=\color{#e64173}{Avg(Y_i^{1}|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}\\
 ]
 
 ---
-# Example: Think
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script src="macros.js"></script>
-<script src="https://platform.twitter.com/widgets.js"></script>
-<script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false,
-"ratio": "16:9",
-"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
+# Example: Thinking about the Data
 
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
+.pull-left[
+.smallest[
+- Basic comparisons tell us *something* about outcomes, but not .hi-slate[ATE]
 
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+`$$diff. = \color{#314f4f}{ATE} + \color{#FFA500}{\text{Selection Bias}}$$`
 
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
-er pumps with sources *downstream* of a sewage dump in the Thames river spread cholera while water pumps with sources *upstream* did not
+- .hi-orange[Selection bias]: difference in average `\(Y^0_i\)` between groups pre-treatment
+
+- `\(Y^0_i\)` includes *everything* about person `\(i\)` relevant to health *except* treatment (insurance) status
+  - Age, sex, height, weight, climate, smoker, exercise, diet, etc. 
+  - Imagine a world where *nobody* gets insurance (treatment), who would have highest health scores?
+]
+]
+
+.pull-right[
+.smallest[
+.center[**Actual** (observed) Data]
+
+| Individual | .hi[Insured] | .hi-purple[Not Insured] | .hi-slate[Diff] |
+|---|---------|-------------|------|
+| John | .pink[4.0] | ? | ? |
+| Maria | ? | .purple[5.0] | ? | 
+| **Average** | ? | ? | ? | 
+
+]
+]
+
+---
+
+# Understanding Selection Bias
+
+.pull-left[
+.smallest[
+- .hi[Treatment group] and .hi-purple[control group] differ on average, for reasons *other* than getting treatment or not!
+
+- .hi-purple[Control group] is not a good counterfactual for .hi[treatment group] without treatment
+  - Average *untreated* outcome for the treatment group differs from average untreated outcome for *untreated* group
+
+`$$\color{#e64173}{Avg(}\color{#6A5ACD}{Y_i^{0}}\color{#e64173}{|D=1)}-\color{#6A5ACD}{Avg(Y_i^{0}|D=0)}$$`
+  - Recall we cannot observe `\(\color{#e64173}{Avg(}\color{#6A5ACD}{Y_i^{0}}\color{#e64173}{|D=1)}\)`!
+
+]
+]
+
+.pull-right[
+
+.pull-left[
+.center[
+![:scale 80%](../images/3apples.jpg)
+
+John (Treated)
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/3oranges.jpg)
+
+Maria (Control)
+]
+]
+]
+
+
+---
+
+# Understanding Selection Bias
+
+.pull-left[
+
+- Consider the problem in regression form:
+
+`\(Y = \beta_0+\beta_1 D_i + u_i\)`
+
+- Where `\(D_i = \begin{cases} \color{#6A5ACD}{0} &amp; \color{#6A5ACD}{\text{ if person is not treated}}\\\color{#e64173}{1} &amp; \color{#e64173}{\text{ if person is treated}}\\ \end{cases}\)`
+
+- The problem is `\(cor(D,u) \neq 0\)`!
+  - `\(D_i\)` (Treatment) is endogenous!
+  - *Getting* treatment is correlated with other factors that determine health!
+
+]
+
+.pull-right[
+
+.pull-left[
+.center[
+![:scale 80%](../images/3apples.jpg)
+
+John (Treated)
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/3oranges.jpg)
+
+Maria (Control)
+]
+]
+]
+
+---
+
+# Random Assignment: The Silver Bullet
+
+.pull-left[
+
+- If treatment is .hi[randomly assigned] for a large sample, it eliminates selection bias!
+
+- Treatment and control groups differ **on average** by nothing *except* treatment status
+
+- Creates .hi[ceterus paribus] conditions in economics: groups are identical **on average** (holding constant age, sex, height, etc.)
+
+]
+
+.pull-right[
+
+.pull-left[
+.center[
+![](../images/3apples.jpg)
+Treatment Group
+]
+]
+
+.pull-right[
+.center[
+![](../images/3apples.jpg)
+Control Group
+]
+]
+]
+
+---
+
+# Random Assignment: The Silver Bullet
+
+.pull-left[
+
+- Consider the problem in regression form:
+
+`\(Y = \beta_0+\beta_1 D_i + u_i\)`
+
+- If treatment `\(D_i\)` is administered *randomly*, it breaks the correlation with `\(u_i\)`!
+  - Treatment becomes .hi[exogenous]
+  - `\(cor(D,u)=0\)`
+
+]
+
+.pull-right[
+
+.pull-left[
+.center[
+![](../images/3apples.jpg)
+Treatment Group
+]
+]
+
+.pull-right[
+.center[
+![](../images/3apples.jpg)
+Control Group
+]
+]
+]
+
+---
+
+class: inverse, center, middle
+# Natural Experiments
+
+---
+
+# The Quest for Causal Effects I
+
+.pull-left[
+- RCTs are considered the "gold standard" for causal claims
+
+- But society is not our laboratory (probably a good thing!)
+
+- We can rarely conduct experiments to get data
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/madlaboratory.jpg)
+]
+]
+
+---
+
+# The Quest for Causal Effects II
+
+.pull-left[
+- Instead, we often rely on .hi-purple[observational data]
+
+- This data is *not random*!
+
+- Must take extra care in forming an .hi[identification strategy]
+
+- To make good claims about causation in society, we must get clever! 
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/fieldobserver.jpg)
+]
+]
+
+---
+
+# Natural Experiments
+
+.pull-left[
+
+- Economists often resort to searching for .hi[natural experiments]
+
+- Some events beyond our control occur that separate *otherwise similar* entities into a "treatment" group and a "control" group that we can compare 
+
+- e.g. natural disasters, U.S. State laws, military draft 
+]
+
+.pull-right[
+.center[
+![](../images/nskorea2.png)
+]
+]
+
+---
+
+# The First Natural Experiment
+
+.left-column[
+.center[
+![:scale 75%](../images/jonsnowmeme.jpg)
+
+1813-1858
+]
+]
+
+.right-column[
+.smallest[
+- John Snow utilized the [first famous natural experiment](http://blogs.plos.org/publichealth/2013/03/11/john-snow-the-first-epidemiologist/) to establish the foundations of epidemiology and the germ theory of disease
+
+- Water pumps with sources *downstream* of a sewage dump in the Thames river spread cholera while water pumps with sources *upstream* did not
 ]
 
 .center[
