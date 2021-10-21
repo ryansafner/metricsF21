@@ -1,7 +1,7 @@
 ---
 title: "3.2 — Causal Inference and DAGs"
-subtitle: "ECON 480 • Econometrics • Fall 2020"
-author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF20"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF20</a><br> <a href="https://metricsF20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF20.classes.ryansafner.com</a><br>'
+subtitle: "ECON 480 • Econometrics • Fall 2021"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF21"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF21</a><br> <a href="https://metricsF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF21.classes.ryansafner.com</a><br>'
 #date:
 output:
   xaringan::moon_reader:
@@ -30,8 +30,16 @@ knitr::opts_chunk$set(echo=F,
                       message=F,
                       warning=F)
 library(tidyverse)
+library(ggthemes)
+library(parallel)
+
 set.seed(256)
 update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_extra_styles(hover_code_line = TRUE)
 ```
 
 class: inverse
@@ -69,7 +77,7 @@ class: inverse
 # The Causal Revolution
 
 .center[
-![:scale 80%](../images/causaltwitter.png)
+![:scale 90%](../images/causaltwitter.png)
 ]
 
 
@@ -130,7 +138,7 @@ class: inverse, center, middle
 
 .center[
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Correlation implies casuation,&quot; the dean hi-purpleed as he handed me my PhD.<br><br>&quot;But then why-&quot;<br><br>&quot;Because if they knew, they wouldn&#39;t need us.&quot;</p>&mdash; David Robinson (@drob) <a href="https://twitter.com/drob/status/877976063942512640?ref_src=twsrc%5Etfw">June 22, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Correlation implies casuation,&quot; the dean whispered as he handed me my PhD.<br><br>&quot;But then why-&quot;<br><br>&quot;Because if they knew, they wouldn&#39;t need us.&quot;</p>&mdash; David Robinson (@drob) <a href="https://twitter.com/drob/status/877976063942512640?ref_src=twsrc%5Etfw">June 22, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ]
 
@@ -141,9 +149,9 @@ class: inverse, center, middle
 .pull-left[
 
 .smallest[
-- “Correlation does not imply causation”
+- .hi-turquoise[“Correlation does not imply causation”]
   - this is exactly backwards!
-  - this is just pointing out that exogeneity is violated
+  - this is just pointing out that .hi-purple[exogeneity is violated]
 ]
 ]
 
@@ -159,13 +167,13 @@ class: inverse, center, middle
 
 .pull-left[
 .smallest[
-- “Correlation does not imply causation”
+- .hi-turquoise[“Correlation does not imply causation”]
   - this is exactly backwards!
-  - this is just pointing out that exogeneity is violated
+  - this is just pointing out that .hi-purple[exogeneity is violated]
   
-- “Correlation implies causation”
-  - for an association, there must be *some* causal chain of variables that relate $X$ and $Y$
-  - but not necessarily merely $X \rightarrow Y$
+- .hi[“Correlation implies causation”]
+  - for an association, there must be *some* causal chain that relates $X$ and $Y$
+  - but not necessarily *merely* $X \rightarrow Y$
 ]
 ]
 
@@ -182,16 +190,15 @@ class: inverse, center, middle
 .pull-left[
 
 .smallest[
-- “Correlation does not imply causation”
+- .hi-turquoise[“Correlation does not imply causation”]
   - this is exactly backwards!
-  - this is just pointing out that exogeneity is violated
+  - this is just pointing out that .hi-purple[exogeneity is violated]
   
-- “Correlation implies causation”
-  - for an association, there must be *some* causal chain of variables that relate $X$ and $Y$
-  - but not necessarily merely $X \rightarrow Y$
-
-- “Correlation plus exogeneity is causation.”
-]
+- .hi[“Correlation implies causation”]
+  - for an association, there must be *some* causal chain that relates $X$ and $Y$
+  - but not necessarily *merely* $X \rightarrow Y$
+  
+- .hi[“Correlation plus exogeneity is causation.”]
 ]
 
 .pull-right[
@@ -207,12 +214,12 @@ class: inverse, center, middle
 .pull-left[
 - .hi-purple[Correlation:]
   - Math & Statistics
-  - Computers, AI, Machine learning can figure this out (even better than humans)
+  - Computers, AI, Machine learning can figure this out (better than humans)
 
 - .hi-purple[Causation:]
   - Philosophy, Intuition, Theory
-  - .hi[Counterfactual thinking], unique to humans (vs. animals or machines)
-  - Computers *cannot* yet figure this out
+  - .hi[Counterfactual thinking], unique to humans (vs. animals or computers)
+  - Computers .ul[*cannot*] (yet) figure this out
 
 ]
 
@@ -228,7 +235,7 @@ class: inverse, center, middle
 
 .pull-left[
 .center[
-![](https://www.dropbox.com/s/qp9m156rcxqp3nc/bookofwhy.jpg?raw=1)
+![:scale 80%](../images/bookofwhy.jpg)
 ]
 ]
 
@@ -244,13 +251,13 @@ class: inverse, center, middle
 
 .pull-left[
 .center[
-![:scale 70%](https://www.dropbox.com/s/6n3dg3xpizsxpsj/ladderofcausation.png?raw=1)
+![:scale 70%](../images/ladderofcausation.png
 ]
 ]
 
 .pull-right[
 .center[
-![:scale 70%](https://www.dropbox.com/s/qp9m156rcxqp3nc/bookofwhy.jpg?raw=1)
+![:scale 70%](../images/bookofwhy.jpg)
 ]
 ]
 
@@ -277,15 +284,28 @@ background-size: cover
 .pull-right[
 
 .center[
-![](https://www.dropbox.com/s/yw8t5xsa8dgei71/coding.jpeg?raw=1)
+![](../images/coding.jpeg)
 ]
+]
+
+---
+
+# “The Credibility Revolution”
+
+.pull-left[
+
+- 
+]
+
+.pull-right[
+
 ]
 
 ---
 
 # Clever Research Designs Identify Causality
 
-```{r, fig.retina=3, fig.align="center", out.width="60%"}
+```{r, fig.retina=3, fig.align="center", fig.width=15}
 ggplot(data = tibble(x=c(0,10),
                      y=c(0,10)))+
   aes(x = x,
@@ -296,7 +316,7 @@ ggplot(data = tibble(x=c(0,10),
   
   geom_text(x=1,y=1.5, label="Differences", size =5, color = "#fde0dd")+
   geom_text(x=1,y=1.25, label="Pre-Post", size =5, color = "#fde0dd")+
-  geom_text(x=2,y=1.75, label="Multiple Regression", size =5, color = "#fbb4b9")+
+  geom_text(x=2,y=1.75, label="Multivariate Regression", size =5, color = "#fbb4b9")+
   geom_text(x=2,y=1.25, label="Matching", size =5, color = "#fbb4b9")+
     geom_text(x=3,y=2, label="Fixed Effects", size =5, color = "#f768a1")+
     geom_text(x=3.5,y=2.25, label="Diff-in-Diff", size =5, color = "#c51b8a")+
@@ -378,8 +398,8 @@ If $X$ is a light switch, and $Y$ is a light:
 
 - Greater ice cream sales $\rightarrow$ more violent crime
 - Rooster crows $\rightarrow$ the sun rises in the morning
-- Taking Vitamin C $\rightarrow$ Colds go away a few days later
-- Political party in power $\rightarrow$ economy performs better or worse
+- Taking Vitamin C $\rightarrow$ colds go away a few days later
+- Political party $X$ in power $\rightarrow$ economy performs better/worse
 ]
 
 ---
@@ -410,7 +430,7 @@ If $X$ is a light switch, and $Y$ is a light:
 .smallest[
 - Again, RCTs are invoked as the gold standard for their ability to make counterfactual claims:
 
-- Treatment/intervention $(X)$ is *randomly assigned* to individuals, and then outcome $Y$ is measured
+- Treatment/intervention $(X)$ is **randomly assigned** to individuals
 
 > If person i who recieved treatment *had not recieved* the treatment, we can predict what his outcome *would have been*
 
@@ -680,9 +700,9 @@ grid.arrange(h1, h2, h3, h4, h5, h6, ncol=2)
 .green[**Example**]: what is the effect of education on wages?
 ]
 
-- Education $(X$, “treatment” or “exposure”)
+- Education `\\((X\\)`, “treatment” or “exposure”)
 
-- Wages $(Y$, “outcome” or “response”)
+- Wages `\\((Y\\)`, “outcome” or “response”)
 ]
 
 .pull-right[
@@ -849,7 +869,7 @@ dagify(wage~educ+conx+year+bckg+loc,
 .pull-left[
 .center[
 
-![](https://www.dropbox.com/s/zhqgfyvk2x4z863/dagitty.png?raw=1)
+![](../images/dagitty.png)
 ]
 ]
 
@@ -870,7 +890,7 @@ dagify(wage~educ+conx+year+bckg+loc,
 .pull-left[
 .center[
 
-![](https://www.dropbox.com/s/qu6839emzoitb1c/dagittyex1.png?raw=1)
+![](../images/dagittyex1.png)
 ]
 ]
 
@@ -891,7 +911,21 @@ dagify(wage~educ+conx+year+bckg+loc,
 .pull-left[
 .center[
 
-![](https://www.dropbox.com/s/a55b66p8i4znjto/dagittyex2.png?raw=1)
+![](../images/dagittyex2.png)
+]
+]
+
+.pull-right[
+]
+
+---
+
+# Let the Computer Do It: Dagitty.net III
+
+.pull-left[
+.center[
+
+![](../images/dagittyex2adjust.png)
 ]
 ]
 
@@ -902,10 +936,56 @@ dagify(wage~educ+conx+year+bckg+loc,
 > .hi-purple[Minimal sufficient adjustment sets] containing background, location, year for estimating the total effect of educ on wage:
 background, location, year
 
-- Tells you some .hi-turquoise[testable implications] (middle right)
-  - .hi-turquoise[conditional independencies], for example (last):
-  - `job_connections` $\perp$ `year` | `educ`
-  - means: holding constant `educ`, there should be no correlation between `job_connections` and `year` - can test this with data!
+]
+]
+
+---
+
+# Let the Computer Do It: Dagitty.net III
+
+.pull-left[
+.center[
+
+![](../images/dagittyex2imps.png)
+]
+]
+
+.pull-right[
+.smallest[
+- Tells you some .hi-turquoise[testable implications] of your model
+
+- These are independencies or .hi-turquoise[conditional independencies]:
+
+$$X \perp Y \, | \, Z$$
+> “X is independent of Y, given Z”
+
+- Implies that by controlling for $Z$, $X$ and $Y$ should have no correlation
+
+]
+]
+
+---
+
+# Let the Computer Do It: Dagitty.net III
+
+.pull-left[
+.center[
+
+![](../images/dagittyex2imps.png)
+]
+]
+
+.pull-right[
+.smallest[
+- Tells you some .hi-turquoise[testable implications] of your model
+
+- .hi-green[Example]: look at the last one listed: 
+
+.center[`job_connections`] $\perp$ `year` $\vert$ `educ`]
+
+> “Job connections are independent of year, controlling for education”
+
+- Implies that by controlling for `educ`, there should be no correlation between `job_connections` and `year` — can test this with data!
 ]
 ]
 
@@ -916,7 +996,7 @@ background, location, year
 .pull-left[
 .center[
 
-![](https://www.dropbox.com/s/o7h0zbpvej0zuf5/dagittycontrolled.png?raw=1)
+![](../images/dagittycontrolled.png)
 ]
 ]
 
@@ -1037,10 +1117,50 @@ dagify(wage~educ+conx+year+bckg+loc,
        loc~u1, 
        exposure = "educ",
        outcome = "wage") %>%
-  tidy_dagitty(seed = 2) %>%
-  ggdag_adjustment_set(shadow = T)+theme_dag()
+  dagitty::impliedConditionalIndependencies()
+
 ```
 
+]
+
+---
+
+# You Can Draw DAGs In R
+
+.pull-left[
+
+- You can also use `impliedConditionalIndependencies()` from the `dagitty` package to have it show the testable implications from dagitty.net
+
+
+```{r, echo = T, eval=F}
+library(dagitty)
+dagify(wage~educ+conx+year+bckg+loc,
+       educ~bckg+year+loc+laws,
+       conx~educ,
+       bckg~u1,
+       loc~u1,
+       exposure = "educ",
+       outcome = "wage"
+       ) %>%
+  impliedConditionalIndependencies()
+```
+]
+
+.pull-right[
+.smallest[
+```{r, echo = F}
+library(dagitty)
+dagify(wage~educ+conx+year+bckg+loc,
+       educ~bckg+year+loc+laws,
+       conx~educ,
+       bckg~u1,
+       loc~u1,
+       exposure = "educ",
+       outcome = "wage"
+       ) %>%
+  impliedConditionalIndependencies()
+```
+]
 ]
 
 ---
@@ -1069,7 +1189,7 @@ class: inverse, center, middle
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/qp9m156rcxqp3nc/bookofwhy.jpg?raw=1)
+![](../images/bookofwhy.jpg)
 ]
 ]
 
