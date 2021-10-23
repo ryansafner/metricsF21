@@ -63,4 +63,4 @@ The lower button will allow you to download a PDF version of the slides. I sugge
 
 ## <i class="fas fa-registered"></i> R Practice
 
-See today’s [practice problems](/r/3.2-r/practice) to help you use DAGs and daggity.net. Answers are be posted on that page.
+See today’s [practice problems](/r/3.2-r) to help you use DAGs and daggity.net. Answers will be posted on that page.

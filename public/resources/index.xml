@@ -443,7 +443,53 @@
 
 &lt;/div&gt;
 
-&lt;p&gt;TBD&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+## ✓ tibble  3.1.5     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+## ✓ readr   2.0.0     ✓ forcats 0.5.1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;importing-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Importing Data&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;janitor&lt;/code&gt; package&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cleannames()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;generally makes lowercase names&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dealing-with-missing-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Dealing with Missing Data&lt;/h2&gt;
+&lt;p&gt;When calculating statistics (e.g. with &lt;code&gt;summarize()&lt;/code&gt;), many calculations will give errors if your data contains &lt;code&gt;NA&lt;/code&gt;s.&lt;/p&gt;
+&lt;div id=&#34;example-calculating-mean&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Example: Calculating Mean&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data_missing &amp;lt;- tribble(
+  ~x, ~y,
+  2, 3,
+  1, 4,
+  NA, 2,
+  3, NA,
+  7, 8
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now if we were to get the mean of x:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data_missing %&amp;gt;% 
+  summarize(mean_x = mean(x))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 × 1
+##   mean_x
+##    &amp;lt;dbl&amp;gt;
+## 1     NA&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It gives us &lt;code&gt;NA&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;One way to combat this is to &lt;em&gt;ignore&lt;/em&gt; all observations that contain &lt;code&gt;NA&lt;/code&gt; values. Most statistics functions (like &lt;code&gt;mean()&lt;/code&gt;) have an optional argument &lt;code&gt;na.rm&lt;/code&gt;, which if set to &lt;code&gt;TRUE&lt;/code&gt;, will ignore &lt;code&gt;NA&lt;/code&gt;s when performing the calculation:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data_missing %&amp;gt;%
+  summarize(mean_x = mean(x, na.rm = TRUE))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 × 1
+##   mean_x
+##    &amp;lt;dbl&amp;gt;
+## 1   3.25&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

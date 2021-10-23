@@ -87,8 +87,11 @@ lessons:
     r: "3.2-r"
 
   - title: "3.3 — Omitted Variable Bias"
+    content: "3.3-content"
+    slides: "3.3-slides"
 
   - title: "3.4 — Multivariate OLS Estimators: Bias, Precision, and Fit"
+    content: "3.4-content"
 
   - title: '<i content="fas fa-laptop-code"></i> **Problem Set 4**'
 

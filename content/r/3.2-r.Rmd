@@ -13,6 +13,10 @@ output:
     toc: false
 ---
 
+## Answers
+
+<p style="text-align:center"><a target="_blank" href="/r/3.2-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/r/3.2-r-answers.Rmd"><span class="btn btn-primary btn-lg"><i class="fab fa-markdown"></i> Answers (Rmd)</a></span></p>
+
 For each of the following examples:
 
 i. Write out *all* of the causal pathways from `X` (treatment of interest) to `Y` (outcome of interest).
