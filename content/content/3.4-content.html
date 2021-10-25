@@ -1,0 +1,76 @@
+---
+title: "3.4 — Multivariate OLS Estimators: Bias, Precision, and Fit — Class Content"
+draft: false
+linktitle: "3.4 — Multivariate OLS Estimators: Bias, Precision, & Fit"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 16
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "3.4-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#problem-set-3-due-thurs-nov">Problem Set 3 Due Thurs Nov</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Tuesday, October 26, 2021</em>
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we continue looking at multivariate regression, and see how the introduction of additional variables affects our model: the interpretation of the marginal effects (and we will measure an example of omitted variable bias), the standard errors of the estimators, and the goodness of fit of the regression.</p>
+<p>We continue the extended example about class sizes and test scores, which comes from a (Stata) dataset from an old textbook that I used to use, <a href="https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-Update-3rd-Edition/9780133486872.html?tab=resources">Stock and Watson, 2007</a>. Download and follow along with the data from today’s example:<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<ul>
+<li><a href="http://metricsf21.classes.ryansafner.com/data/caschool.dta"><i class="fas fa-table"></i> <code>caschool.dta</code></a></li>
+</ul>
+<p>I have also made a RStudio Cloud project documenting all of the things we have been doing with this data that may help you when you start working with regressions:</p>
+<ul>
+<li><a href="https://rstudio.cloud/spaces/163934/project/2940189"><i class="fas fa-cloud"></i> Class Size Regression Analysis (Cloud R project)</a></li>
+<li><a href="/data/class_size_regression_analysis.html"><i class="fas fa-external-link-square-alt"></i> Class Size Regression Analysis (output)</a></li>
+</ul>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Ch. 5.1, 5.2, 5.4 in Bailey, <em>Real Econometrics</em></li>
+</ul>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="r-practice" class="section level2">
+<h2><i class="fas fa-registered"></i> R Practice</h2>
+<p>Today you will be working on <a href="/r/3.4-r">R practice problems</a> on multivariate regression. Answers will be posted later on that page.</p>
+</div>
+<div id="assignments" class="section level2">
+<h2><i class="fas fa-laptop-code"></i> Assignments</h2>
+<div id="problem-set-3-due-thurs-nov" class="section level3">
+<h3>Problem Set 3 Due Thurs Nov</h3>
+<p><a href="/assignments/04-problem-set">Problem Set 4</a> is due by the end of the day on Thursday, November 4.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Note this is a <code>.dta</code> Stata file. You will need to (install and) load the package <code>haven</code> to <code>read_dta()</code> Stata files into a dataframe.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

@@ -1,0 +1,50 @@
+---
+title: "3.3 — Omitted Variable Bias — Class Content"
+draft: false
+linktitle: "3.3 — Omitted Variable Bias"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 15
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "3.3-slides"
+---
+
+{{% alert note %}}
+*Tuesday, October 26, 2021*
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we return to our regression models, now knowing something about identifying causal effects. We know from DAGs that we often need to “adjust for” or “control for variables” in order to identify the causal effect we are interested in. Now we give a particular name and set of conditions for when we need to control a variable: .b[“omitted variable bias”], where some variable both causes $Y$ (is in $u)$, and is correlated with $X$. To avoid introducing the bias, we now *include* it as an additional independent variable in our regression. 
+
+Thus, we now begin exploring multivariate regression with multiple regressors:
+
+$$Y_i=\beta_0+\beta_1 X_{1i}+ \beta_2 X_{2i} + u_i$$
+
+Next class we will learn more about how the introduction of additional variables affects our model.
+
+We continue the extended example about class sizes and test scores, which comes from a (Stata) dataset from an old textbook that I used to use, [Stock and Watson, 2007](https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-Update-3rd-Edition/9780133486872.html?tab=resources). Download and follow along with the data from today's example:^[Note this is a `.dta` Stata file. You will need to (install and) load the package `haven` to `read_dta()` Stata files into a dataframe.]
+
+- [<i class="fas fa-table"></i> `caschool.dta`](http://metricsf21.classes.ryansafner.com/data/caschool.dta)
+
+I have also made a RStudio Cloud project documenting all of the things we have been doing with this data that may help you when you start working with regressions:
+
+- [<i class="fas fa-cloud"></i> Class Size Regression Analysis (Cloud R project)](https://rstudio.cloud/spaces/163934/project/2940189)
+- [<i class="fas fa-external-link-square-alt"></i> Class Size Regression Analysis (output)](/data/class_size_regression_analysis.html)
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch. 5.1 in Bailey, *Real Econometrics*
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`
