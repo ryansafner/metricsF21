@@ -70,7 +70,7 @@ $$Y_i=\beta_0+\beta_1X_i+u_i$$
 - $u_i$ includes .hi-purple[all other variables that affect `\\(Y\\)`]
 
 - Every regression model always has .hi[omitted variables] assumed in the error
-  - Most unobservable (hence “`\\(u\\)`”) or hard to measure
+  - Most are unobservable (hence “u”)
   - .green[**Examples**:] innate ability, weather at the time, etc
 
 - Again, we *assume* $u$ is random, with $E[u|X]=0$ and $var(u)=\sigma^2_u$
@@ -160,8 +160,10 @@ dagify(Y~X+Z,
 
 .pull-left[
 - Omitted variable bias makes $X$ .hi-purple[endogenous]
-  - $E(u_i|X_i)\neq 0 \implies$ knowing $X_i$ tells you something about $u_i$
-	- Knowing $X_i$ tells you something about $Y$ *not* by way of $X$! 
+
+- Violates **zero conditional mean assumption**
+$$E(u_i|X_i)\neq 0 \implies$$ 
+  - knowing $X_i$ tells you something about $u_i$ (i.e. something about $Y$ *not* by way of $X$)!
 ]
 
 .pull-right[
@@ -253,8 +255,8 @@ $$E[\hat{\beta_1}]=\beta_1+cor(X,u)\frac{\sigma_u}{\sigma_X}$$
 
 .smallest[
 3) We can .hi-purple[“sign”] the direction of the bias based on $cor(X,u)$
-  - .hi-purple[Positive] $cor(X,u)$ overestimates the true $\beta_1$ $(\hat{\beta_1}$ is too high)
-  - .hi-purple[Negative] $cor(X,u)$ underestimates the true $\beta_1$ $(\hat{\beta_1}$ is too low)
+  - .hi-purple[Positive] $cor(X,u)$ overestimates the true $\beta_1$ $(\hat{\beta_1}$ is too large)
+  - .hi-purple[Negative] $cor(X,u)$ underestimates the true $\beta_1$ $(\hat{\beta_1}$ is too small)
 ]
 
 .footnote[.quitesmall[
