@@ -94,6 +94,7 @@ lessons:
     content: "3.4-content"
 
   - title: '<i content="fas fa-laptop-code"></i> **Problem Set 4** due Thurs Nov 4'
+    assignment: "04-problem-set"
 
   - title: "3.5 — Writing an Empirical Paper"
 

@@ -1,0 +1,374 @@
+---
+title: "Problem Set 4"
+draft: false
+linktitle: "Problem Set 3"
+date: "2020-06-08"
+menu:
+  assignments:
+    parent: Problem Sets
+    weight: 5
+type: docs
+#output:
+#  blogdown::html_page:
+#    toc: true
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>{{% alert note %}}
+Please submit on Blackboard Assignments by the end of the day Thursday November 4.
+{{% /alert %}}</p>
+<p>Please read the <a href="/assignments/problem-sets">instructions</a> for completing homeworks.</p>
+<div id="theory-and-concepts" class="section level1">
+<h1>Theory and Concepts</h1>
+<div id="question-1" class="section level2">
+<h2>Question 1</h2>
+<p>In your own words, explain the fundamental problem of causal inference.</p>
+</div>
+<div id="question-2" class="section level2">
+<h2>Question 2</h2>
+<p>In your own words, explain how properly conducting a randomized controlled trial helps to identify the causal effect of one variable on another.</p>
+</div>
+<div id="question-3" class="section level2">
+<h2>Question 3</h2>
+<p>In your own words, describe what omitted variable bias means. What are the two conditions for a variable to bias OLS estimates if omitted?</p>
+</div>
+<div id="question-4" class="section level2">
+<h2>Question 4</h2>
+<p>In your own words, describe what multicollinearity means. What is the cause, and what are the consequences of multicollinearity? How can we measure multicollinearity and its effects? What happens if multicollinearity is <em>perfect</em>?</p>
+</div>
+<div id="question-5" class="section level2">
+<h2>Question 5</h2>
+<p>Explain how we use Directed Acyclic Graphs (DAGs) to depict a causal model: what are the two criteria that must hold for identifying a causal effect of <span class="math inline">\(X\)</span> on <span class="math inline">\(Y\)</span>? When should we control a variable, and when should we <em>not</em> control for a variable?</p>
+</div>
+</div>
+<div id="theory-problems" class="section level1">
+<h1>Theory Problems</h1>
+<p>For the following questions, please <em>show all work</em> and explain answers as necessary. You may lose points if you only write the correct answer. You may use <code>R</code> to <em>verify</em> your answers, but you are expected to reach the answers in this section “manually.”</p>
+<div id="question-6" class="section level2">
+<h2>Question 6</h2>
+<p>A pharmaceutical company is interested in estimating the impact of a new drug on cholesterol levels. They enroll 200 people in a clinical trial. People are randomly assigned the treatment group or into the control group. Half of the people are given the new drug and half the people are given a sugar pill with no active ingredient. To examine the impact of dosage on reductions in cholesterol levels, the authors of the study regress the following model:</p>
+<p><span class="math display">\[\text{cholesterol level}_i = \beta_0+\beta_1 \text{dosage level}_i + u_i\]</span></p>
+<p>For people in the control group, dosage level<span class="math inline">\(_i=0\)</span> and for people in the treatment group, dosage level<span class="math inline">\(_i\)</span> measures milligrams of the active ingredient. In this case, the authors find a large, negative, statistically significant estimate of <span class="math inline">\(\hat{\beta_1}\)</span>. Is this an unbiased estimate of the impact of dosage on change in cholesterol level? Why or why not? Do you expect the estimate to overstate or understate the true relationship between dosage and cholesterol level?</p>
+</div>
+<div id="question-7" class="section level2">
+<h2>Question 7</h2>
+<p>Data were collected from a random sample of 220 home sales from a community in 2017.</p>
+<p><span class="math display">\[\widehat{Price}=119.2+0.485 \, BDR+23.4 \, Bath+0.156 \, Hsize+0.002 \, Lsize+0.090 \, Age\]</span></p>
+<table>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(Price\)</span></td>
+<td>selling price (in $1,000s)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(BDR\)</span></td>
+<td>number of bedrooms</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Bath\)</span></td>
+<td>number of bathrooms</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(Hsize\)</span></td>
+<td>size of the house (in ft<span class="math inline">\(^2)\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Lsize\)</span></td>
+<td>lot size (in ft<span class="math inline">\(^2)\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(Age\)</span></td>
+<td>age of the house (in years)</td>
+</tr>
+</tbody>
+</table>
+<div id="part-a" class="section level3">
+<h3>Part A</h3>
+<p>Suppose that a homeowner converts part of an existing living space in her house to a new bathroom. What is the expected increase in the value of the house?</p>
+</div>
+<div id="part-b" class="section level3">
+<h3>Part B</h3>
+<p>Suppose a homeowner adds a new bathroom to her house, which also increases the size of the house by 100 square feet. What is the expected increase in the value of the house?</p>
+</div>
+<div id="part-c" class="section level3">
+<h3>Part C</h3>
+<p>Suppose the <span class="math inline">\(R^2\)</span> of this regression is 0.727. Calculate the adjusted <span class="math inline">\(\bar{R}^2\)</span>.</p>
+</div>
+<div id="part-d" class="section level3">
+<h3>Part D</h3>
+<p>Suppose the following auxiliary regression for <span class="math inline">\(BDR\)</span> has an <span class="math inline">\(R^2\)</span> of 0.841.</p>
+<p><span class="math display">\[\widehat{BDR}=\delta_0+\delta_1Bath+\delta_2Hsize+\delta_3Lsize+\delta_4Age\]</span></p>
+<p>Calculate the Variance Inflation Factor for <span class="math inline">\(BDR\)</span> and explain what it means.</p>
+</div>
+</div>
+<div id="question-8" class="section level2">
+<h2>Question 8</h2>
+<p>A researcher wants to investigate the effect of education on average hourly wages. Wage, education, and experience in the dataset have the following correlations:</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">Wage</th>
+<th align="right">Education</th>
+<th align="right">Experience</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wage</td>
+<td align="right">1.0000</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td>Education</td>
+<td align="right">0.4059</td>
+<td align="right">1.0000</td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td>Experience</td>
+<td align="right">0.1129</td>
+<td align="right">-0.2995</td>
+<td align="right">1.0000</td>
+</tr>
+</tbody>
+</table>
+<p>She runs a simple regression first, and gets the results:</p>
+<p><span class="math display">\[\widehat{\text{Wage}} = -0.9049 +  0.5414 \, Education\]</span></p>
+<p>She runs another regression, and gets the results:</p>
+<p><span class="math display">\[\widehat{\text{Experience}} = 35.4615 - 1.4681 \, Education\]</span></p>
+<div id="part-a-1" class="section level3">
+<h3>Part A</h3>
+<p>If the true marginal effect of experience on wages (holding education constant) is 0.0701, calculate the omitted variable bias in the first regression caused by omitting experience. Does the estimate of <span class="math inline">\(\hat{\beta_1}\)</span> in the first regression overstate or understate the effect of education on wages?</p>
+</div>
+<div id="part-b-1" class="section level3">
+<h3>Part B</h3>
+<p>Knowing this, what would be the <em>true effect</em> of education on wages, holding experience constant?</p>
+</div>
+<div id="part-c-1" class="section level3">
+<h3>Part C</h3>
+<p>The <span class="math inline">\(R^2\)</span> for the second regression is 0.0897. If she were to run a better regression including both education and experience, how much would the variance of the coefficients on education and experience increase? Why?</p>
+</div>
+</div>
+</div>
+<div id="r-questions" class="section level1">
+<h1>R Questions</h1>
+<p>Answer the following questions using <code>R</code>. When necessary, please write answers in the same document (knitted <code>Rmd</code> to <code>html</code> or <code>pdf</code>, typed <code>.doc(x)</code>, or handwritten) as your answers to the above questions. Be sure to include (email or print an <code>.R</code> file, or show in your knitted <code>markdown</code>) your code and the outputs of your code with the rest of your answers.</p>
+<div id="question-9" class="section level2">
+<h2>Question 9</h2>
+<p>Install the <code>wooldridge</code> package if you do not already have it installed.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> We will use the <code>bwght</code> data from <code>wooldridge</code><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>Let’s just look at the following variables:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>bwght</code></td>
+<td>Birth Weight (ounces)</td>
+</tr>
+<tr class="even">
+<td><code>cigs</code></td>
+<td>Cigarettes smoked per day while pregnant (1988)</td>
+</tr>
+<tr class="odd">
+<td><code>motheduc</code></td>
+<td>Mother’s education (number of years)</td>
+</tr>
+<tr class="even">
+<td><code>cigprice</code></td>
+<td>Price of cigarette pack (1988)</td>
+</tr>
+<tr class="odd">
+<td><code>faminc</code></td>
+<td>Family’s income in $1,000s (1988)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>We want to explore how a mother smoking during pregnancy affects the baby’s birthweight (which may have strong effects on outcomes over the child’s life).</p>
+</blockquote>
+<p>Just to be explicit about it, assign this as some dataframe (feel free to change the name), i.e.:</p>
+<pre class="r"><code># install.packages(&quot;wooldridge&quot;)
+library(wooldridge)
+bwght&lt;-wooldridge::bwght</code></pre>
+<div id="part-a-2" class="section level3">
+<h3>Part A</h3>
+<p>Make a correlation table for our variables listed above.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+</div>
+<div id="part-b-2" class="section level3">
+<h3>Part B</h3>
+<p>Consider the following causal model:</p>
+<pre class="r"><code>library(ggdag)
+dagify(bwght~cigs+inc,
+       cigs~price+educ+inc,
+       inc~educ,
+       exposure = &quot;cigs&quot;,
+       outcome = &quot;bwght&quot;) %&gt;%
+  tidy_dagitty(seed = 256) %&gt;%
+  ggdag_status()+
+  theme_dag_blank()+
+  theme(legend.position = &quot;none&quot;)</code></pre>
+<p><img src="/assignments/04-problem-set_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Note what we are hypothesizing:</p>
+<ul>
+<li><code>bwght</code> is caused by <code>cigs</code> and <code>inc</code></li>
+<li><code>cigs</code> are caused by <code>price</code>, <code>educ</code>, and <code>inc</code></li>
+<li><code>inc</code> is caused by <code>educ</code></li>
+</ul>
+<p>See also how this is written into the notation in R to make the DAG.</p>
+<p>Create this model on <a href="htpp://dagitty.net">dagitty.net</a>. What does <code>dagitty</code> tell us the testable implications of this causal model?</p>
+</div>
+<div id="part-c-2" class="section level3">
+<h3>Part C</h3>
+<p>Test each implication given to you by <code>dagitty.</code></p>
+<ul>
+<li>For independencies <span class="math inline">\((x \perp y)\)</span>: run a regression of <span class="math inline">\(y\)</span> on <span class="math inline">\(x\)</span>.</li>
+<li>For <em>conditional</em> independencies <span class="math inline">\((x \perp y | z, a)\)</span>: run a regression of <span class="math inline">\(y\)</span> on <span class="math inline">\(x, z, a\)</span>.</li>
+</ul>
+<p>For each, test against the null hypothesis that the relevant coefficient <span class="math inline">\((\hat{\beta_1})\)</span> is 0 (i.e. <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are indeed independent).</p>
+<p>Does this causal model hold up well?</p>
+</div>
+<div id="part-d-1" class="section level3">
+<h3>Part D</h3>
+<p>List <em>all</em> of the possible pathways from <code>cigs</code> to <code>bwght</code>. Which are “front-doors” and which are “back-doors?” Are any blocked by colliders?</p>
+</div>
+<div id="part-e" class="section level3">
+<h3>Part E</h3>
+<p>What is the minimal sufficient set of variables we need to control in order to causally identify the effect of <code>cigs</code> on <code>bwght</code>?</p>
+</div>
+<div id="part-f" class="section level3">
+<h3>Part F</h3>
+<p>Estimate the causal effect by running the appropriate regression.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+</div>
+<div id="part-g" class="section level3">
+<h3>Part G</h3>
+<p>We saw some effect between <code>faminc</code> and <code>cigprice</code>. Perhaps there are unobserved factors (such as the economy’s performance) that affect both. Add an unobserved factor <code>u1</code> to your <code>dagitty</code> model.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+</div>
+<div id="part-h" class="section level3">
+<h3>Part H</h3>
+<p>Perhaps our model is poorly specified. Maybe <code>motheduc</code> actually has a causal effect on <code>bwght</code>? Tweak your model from Question 9 on <code>dagitty</code> to add this potential relationship. What testable implications does this new model imply?</p>
+</div>
+<div id="part-i" class="section level3">
+<h3>Part I</h3>
+<p>Test these implications appropriately, like you did in Part C. Does this model hold up well?</p>
+</div>
+<div id="part-j" class="section level3">
+<h3>Part J</h3>
+<p>Under this new causal model, list <em>all</em> of the possible pathways from <code>cigs</code> to <code>bwght</code>. Which are “front-doors” and which are “back-doors?” Are any blocked by colliders?</p>
+</div>
+<div id="part-k" class="section level3">
+<h3>Part K</h3>
+<p>Under this new causal model, what is the minimal sufficient set of variables we need to control in order to causally identify the effect of <code>cigs</code> on <code>bwght</code>?</p>
+</div>
+<div id="part-l" class="section level3">
+<h3>Part L</h3>
+<p>Estimate the causal effect in this new model by running the appropriate regression. Compare your answers to those in Part F.</p>
+</div>
+<div id="part-m" class="section level3">
+<h3>Part M</h3>
+<p>Try out drawing this model using the <code>ggdag</code> package in R. See my DAG in question 3 for an example.</p>
+</div>
+</div>
+<div id="question-10" class="section level2">
+<h2>Question 10</h2>
+<ul>
+<li><a href="http://metricsf20.classes.ryansafner.com/data/heightwages.csv"><i class="fas fa-table"></i> <code>heightwages.csv</code></a></li>
+</ul>
+<p>Download the <code>heightwages.csv</code> dataset. This data is a part of a larger dataset from the National Longitudinal Survey of Youth (NLSY) 1979 cohort: a nationally representative sample of 12,686 men and women aged 14-22 years old when they were first surveyed in 1979. They were subsequently interviewed every year through 1994 and then every other year afterwards. There are many included variables, but for now we will just focus on:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>wage96</code></td>
+<td>Adult hourly wages ($/hr) reported in 1996</td>
+</tr>
+<tr class="even">
+<td><code>height85</code></td>
+<td>Adult height (inches) reported in 1985</td>
+</tr>
+<tr class="odd">
+<td><code>height81</code></td>
+<td>Adolescent height (inches) reported in 1981</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>We want to figure out what is the effect of height on wages (e.g. do taller people earn more on average than shorter people?)</p>
+</blockquote>
+<div id="part-a-3" class="section level3">
+<h3>Part A</h3>
+<p>Create a quick scatterplot between <code>height85</code> (as <span class="math inline">\(X)\)</span> amd <code>wage96</code> (as <span class="math inline">\(Y)\)</span>.</p>
+</div>
+<div id="part-b-3" class="section level3">
+<h3>Part B</h3>
+<p>Regress wages on adult height. Write the equation of the estimated OLS regression. Interpret the coefficient on <code>height85</code>.</p>
+</div>
+<div id="part-c-3" class="section level3">
+<h3>Part C</h3>
+<p>How much would someone who is 5’10" be predicted to earn per hour, according to the model?</p>
+</div>
+<div id="part-d-2" class="section level3">
+<h3>Part D</h3>
+<p>Would adolescent height cause an omitted variable bias if it were left out? Explain using both your intuition, and some statistical evidence with <code>R</code>.</p>
+</div>
+<div id="part-e-1" class="section level3">
+<h3>Part E</h3>
+<p>Now add adolescent height to the regression, and write the new regression equation below, as before. Interpret the coefficient on <code>height85</code>.</p>
+</div>
+<div id="part-f-1" class="section level3">
+<h3>Part F</h3>
+<p>How much would someone who is 5’10" in 1985 and 4’8" in 1981 be predicted to earn, according to the model?</p>
+</div>
+<div id="part-g-1" class="section level3">
+<h3>Part G</h3>
+<p>What happened to the estimate on <code>height85</code> and its standard error?</p>
+</div>
+<div id="part-h-1" class="section level3">
+<h3>Part H</h3>
+<p>Is there multicollinearity between <code>height85</code> and <code>height81</code>? Explore with a scatterplot.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+</div>
+<div id="part-i-1" class="section level3">
+<h3>Part I</h3>
+<p>Quantify how much multicollinearity affects the variance of the OLS estimates on both heights.<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></p>
+</div>
+<div id="part-j-1" class="section level3">
+<h3>Part J</h3>
+<p>Reach the same number as in part I by running an auxiliary regression.<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></p>
+</div>
+<div id="part-k-1" class="section level3">
+<h3>Part K</h3>
+<p>Make a regression table from part B and D using <code>huxtable</code>.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>This package contains datasets used in Jeffrey Wooldrige’s <em>Introductory Econometrics: A Modern Approach</em> (the textbook that I used in <em>my</em> econometrics classes years ago!)<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Which comes from The 1988 National Health Interview Survey., used in J. Mullahy (1997), “Instrumental-Variable Estimation of Count Data Models: Applications to Models of Cigarette Smoking Behavior,” <em>Review of Economics and Statistics</em> 79: 596-593.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Hints: <code>select()</code> these variables and then pipe them into <code>cor(., use="pairwise.complete.obs")</code> to use only observations for which there are data on each variable (to avoid <code>NA</code>’s).<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Note, on <code>dagitty</code>, you can change a variable on the diagram to be “<em>adjusted</em>” (controlled for) by double-clicking it and then hitting the <code>A</code> key.<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Note, on <code>dagitty</code>, you can make a variable be “<em>unobserved</em>” by double-clicking it and then hitting the <code>U</code> key.<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Hint: to avoid overplotting, use <code>geom_jitter()</code> instead of <code>geom_point()</code> to get a better view of the data.<a href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>Hint: You’ll need the <code>car</code> package.<a href="#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>Hint: There’s some missing <code>wage96</code> data that may give you a different answer, so <code>filter()</code> your data here by <code>!is.na(wage96)</code> before running this regression - this will include only observations for <code>wage96</code> that are not <code>NA</code>’s.<a href="#fnref8" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
