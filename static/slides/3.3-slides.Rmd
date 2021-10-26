@@ -63,18 +63,27 @@ extract_eq(school_reg, use_coefs = TRUE,coef_digits = 2,fix_signs = TRUE)
 
 # Review: u
 
+.pull-left[
+.smallest[
 $$Y_i=\beta_0+\beta_1X_i+u_i$$
 
-- Error term, $u_i$ includes .hi-purple[all other variables that affect `\\(Y\\)`]
+- $u_i$ includes .hi-purple[all other variables that affect `\\(Y\\)`]
 
 - Every regression model always has .hi[omitted variables] assumed in the error
-  - Most unobservable (hence "*u*") or hard to measure
+  - Most unobservable (hence “`\\(u\\)`”) or hard to measure
   - .green[**Examples**:] innate ability, weather at the time, etc
 
 - Again, we *assume* $u$ is random, with $E[u|X]=0$ and $var(u)=\sigma^2_u$
 
 - *Sometimes*, omission of variables can **bias** OLS estimators $(\hat{\beta_0}$ and $\hat{\beta_1})$
+]
+]
 
+.pull-right[
+.center[
+![](../images/error.png)
+]
+]
 ---
 
 # Omitted Variable Bias I
@@ -86,6 +95,7 @@ $$Y_i=\beta_0+\beta_1X_i+u_i$$
 ]
 
 .pull-right[
+]
 
 ---
 
@@ -526,7 +536,7 @@ Treatment Group
 
 .pull-right[
 .center[
-![:scale 100%](../images/3oranges.jpg
+![:scale 100%](../images/3oranges.jpg)
 Control Group
 ]
 ]
