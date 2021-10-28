@@ -1,12 +1,12 @@
 ---
-title: "3.2 — Causal Inference & DAGs — R Practice"
+title: "3.4 — Multivariate OLS Estimators: Bias, Precision, and Fit — R Practice"
 draft: false
 date: "2020-06-08"
-linktitle: "3.2 — Causal Inference & DAGs"
+linktitle: "3.4 — Multivariate OLS Estimators: Bias, Precision, and Fit"
 menu:
   r:
     parent: R Practice
-    weight: 7
+    weight: 8
 type: docs
 output:
   blogdown::html_page:
@@ -16,36 +16,187 @@ output:
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<div id="answers" class="section level2">
-<h2>Answers</h2>
+<div id="set-up" class="section level1">
+<h1>Set Up</h1>
+<p>To minimize confusion, I suggest creating a new <code>R Project</code> (e.g. <code>multivariate_practice</code>) and storing any data in that folder on your computer.</p>
+<p>I have already made an R project you can download (as a <code>.zip</code>), unzip, and open the <code>.Rproj</code> file in R Studio, or there is an R project you can use on the cloud:</p>
 <p style="text-align:center">
-<a target="_blank" href="/r/3.2-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/r/3.2-r-answers.Rmd"><span class="btn btn-primary btn-lg"><i class="fab fa-markdown"></i> Answers (Rmd)</a></span>
+<a target="_blank" href="/r/3.4-r.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/2990242"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span>
 </p>
-<p>For each of the following examples:</p>
-<ol style="list-style-type: lower-roman">
-<li>Write out <em>all</em> of the causal pathways from <code>X</code> (treatment of interest) to <code>Y</code> (outcome of interest).</li>
-<li>Identify which variable(s) need to be controlled to estimate the causal effect of <code>X</code> on <code>Y</code>. You can use <a href="http://dagitty.net"><code>dagitty.net</code></a> to help you, but you should start trying to recognize these on your own!</li>
-<li>Draw the DAGs in <code>r</code> using <code>ggdag</code>. After setting up the dag with <code>dagify()</code> (and specifying <code>exposure</code> and <code>outcome</code> inside <code>dagify</code>), pipe that into <code>ggdag()</code>. Try again piping it instead into <code>ggdag_status()</code> (to highlight what is X and what is Y). Try again piping it instead into <code>ggdag_adjustment_set()</code> to show what needs to be controlled.</li>
-</ol>
-<p>Don’t forget to install <code>ggdag</code>!</p>
-</div>
 <div id="question-1" class="section level2">
 <h2>Question 1</h2>
-<p><img src="/r/3.4-r_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Download and read in (<code>read_csv</code>) the data below.</p>
+<ul>
+<li><a href="https://metricsf21.classes.ryansafner.com/data/speeding_tickets.csv"><i class="fas fa-table"></i> <code>speeding_tickets.csv</code></a></li>
+</ul>
+<p>This data comes from a paper by Makowsky and Strattman (2009) that we will examine later. Even though state law sets a formula for tickets based on how fast a person was driving, police officers in practice often deviate from that formula. This dataset includes information on all traffic stops. An amount for the fine is given only for observations in which the police officer decided to assess a fine. There are a number of variables in this dataset, but the one’s we’ll look at are:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>Amount</code></td>
+<td>Amount of fine (in dollars) assessed for speeding</td>
+</tr>
+<tr class="even">
+<td><code>Age</code></td>
+<td>Age of speeding driver (in years)</td>
+</tr>
+<tr class="odd">
+<td><code>MPHover</code></td>
+<td>Miles per hour over the speed limit</td>
+</tr>
+</tbody>
+</table>
+<p>We want to explore who gets fines, and how much. We’ll come back to the other variables (which are categorical) in this dataset in later lessons.</p>
 </div>
 <div id="question-2" class="section level2">
 <h2>Question 2</h2>
-<p><img src="/r/3.4-r_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><em>How does the age of a driver affect the amount of the fine</em>? Make a scatterplot of the <code>Amount</code> of the fine (<code>y</code>) and the driver’s <code>Age</code> (<code>x</code>) along with a regression line.</p>
 </div>
 <div id="question-3" class="section level2">
 <h2>Question 3</h2>
-<p><img src="/r/3.4-r_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Next, we’ll want to find the correlation between <code>Amount</code> and <code>Age</code>. Do this first.</p>
+<p>Then notice that it won’t work. This is because there are a lot of <code>NA</code>s (missing data) for <code>Amount</code> (if tried to get the <code>mean()</code> of <code>Amount</code>, it would do the same thing.</p>
+<p>You can verify the <code>NA</code>s with:</p>
+<pre class="r"><code>data %&gt;% # use your named dataframe!
+  select(Amount) %&gt;%
+  summary()
+
+# OR
+# data %&gt;% count(Amount) # but this has a lot of rows!</code></pre>
+<p>In order to run a correlation, we need to drop or ignore all of the <code>NA</code>s. You could <code>filter()</code> the data:</p>
+<pre class="r"><code># this would OVERWRITE data
+data &lt;- data %&gt;%
+  filter(!is.na(Amount)) # remove all NAs</code></pre>
+<p>Or, if you don’t want to change your data, the <code>cor()</code> command allows you to set <code>use = "pairwise.complete.obs"</code> as an argument.</p>
 </div>
 <div id="question-4" class="section level2">
 <h2>Question 4</h2>
-<p><img src="/r/3.4-r_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>We want to estimate the following model:</p>
+<p><span class="math display">\[\widehat{\text{Amount}_i}= \hat{\beta_0}+\hat{\beta_1}\text{Age}_i\]</span></p>
+<p>Run a regression, and save it as an object. Then get a <code>summary()</code> of it.</p>
+<div id="part-a" class="section level3">
+<h3>Part A</h3>
+<p>Write out the estimated regression equation.</p>
+</div>
+<div id="part-b" class="section level3">
+<h3>Part B</h3>
+<p>What is <span class="math inline">\(\hat{\beta_0}\)</span> for this model? What does it mean in the context of our question?</p>
+</div>
+<div id="part-c" class="section level3">
+<h3>Part C</h3>
+<p>What is <span class="math inline">\(\hat{\beta_1}\)</span> for this model? What does it mean in the context of our question?</p>
+</div>
+<div id="part-d" class="section level3">
+<h3>Part D</h3>
+<p>What is the marginal effect of <code>Age</code> on <code>Amount</code>?</p>
+</div>
 </div>
 <div id="question-5" class="section level2">
 <h2>Question 5</h2>
-<p><img src="/r/3.4-r_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Redo question 4 with the <code>broom</code> package. Try out <code>tidy()</code> and <code>glance()</code>. This is just to keep you versatile!</p>
+</div>
+<div id="question-6" class="section level2">
+<h2>Question 6</h2>
+<p>How big would the difference in expected fine be for two drivers, one 18 years old and one 40 years old?</p>
+</div>
+<div id="question-7" class="section level2">
+<h2>Question 7</h2>
+<p>Now run the regression again, controlling for speed (<code>MPHover</code>).</p>
+<div id="part-a-1" class="section level3">
+<h3>Part A</h3>
+<p>Write the new regression equation.</p>
+</div>
+<div id="part-b-1" class="section level3">
+<h3>Part B</h3>
+<p>What is the marginal effect of <code>Age</code> on <code>Amount</code>? What happened to it, compared to Question 4D?</p>
+</div>
+<div id="part-c-1" class="section level3">
+<h3>Part C</h3>
+<p>What is the marginal effect of <code>MPHover</code> on <code>Amount</code>?</p>
+</div>
+<div id="part-d-1" class="section level3">
+<h3>Part D</h3>
+<p>What is <span class="math inline">\(\hat{\beta_0}\)</span> for our model, and what does it mean in the context of our question?</p>
+</div>
+<div id="part-e" class="section level3">
+<h3>Part E</h3>
+<p>What is the adjusted <span class="math inline">\(\bar{R}^2\)</span>? What does it mean?</p>
+</div>
+</div>
+<div id="question-8" class="section level2">
+<h2>Question 8</h2>
+<p>Now suppose both the 18 year old and the 40 year old each went 10 MPH over the speed limit. How big would the difference in expected fine be for the two drivers?</p>
+</div>
+<div id="question-9" class="section level2">
+<h2>Question 9</h2>
+<p>What is the difference in expected fine between two 18 year-olds, one who went 10 MPH over, and one who went 30 MPH over?</p>
+</div>
+<div id="question-10" class="section level2">
+<h2>Question 10</h2>
+<p>Use the <code>huxtable</code> package’s <code>huxreg()</code> command to make a regression table of your two regressions: the one from question 4, and the one from question 7.</p>
+</div>
+<div id="question-11" class="section level2">
+<h2>Question 11</h2>
+<p>Are our two independent variables multicollinear? Do younger people tend to drive faster?</p>
+<div id="part-a-2" class="section level3">
+<h3>Part A</h3>
+<p>Get the correlation between <code>Age</code> and <code>MPHover</code>.</p>
+</div>
+<div id="part-b-2" class="section level3">
+<h3>Part B</h3>
+<p>Make a scatterplot of <code>MPHover</code> (<code>y</code>) on <code>Age</code> (<code>x</code>).</p>
+</div>
+<div id="part-c-2" class="section level3">
+<h3>Part C</h3>
+<p>Run an auxiliary regression of <code>MPHover</code> on <code>Age</code>.</p>
+</div>
+<div id="part-d-2" class="section level3">
+<h3>Part D</h3>
+<p>Interpret the coefficient on <code>Age</code>.</p>
+</div>
+<div id="part-e-1" class="section level3">
+<h3>Part E</h3>
+<p>Look at your regression table in question 10. What happened to the standard error on <code>Age</code>? Why (consider the formula for variance of <span class="math inline">\(\hat{\beta_1})\)</span>?</p>
+</div>
+<div id="part-f" class="section level3">
+<h3>Part F</h3>
+<p>Calculate the Variance Inflation Factor (VIF) using the <code>car</code> package’s <code>vif()</code> command. Run it on your regression object saved from Question 7.</p>
+</div>
+<div id="part-g" class="section level3">
+<h3>Part G</h3>
+<p>Calculate the VIF manually, using what you learned in this question.</p>
+</div>
+</div>
+<div id="question-12" class="section level2">
+<h2>Question 12</h2>
+<p>Let’s now think about the omitted variable bias. Suppose the “true” model is the one we ran from Question 7.</p>
+<div id="part-a-3" class="section level3">
+<h3>Part A</h3>
+<p>Do you suppose that <code>MPHover</code> fits the two criteria for omitted variable bias?</p>
+</div>
+<div id="part-b-3" class="section level3">
+<h3>Part B</h3>
+<p>Look at the regression we ran in Question 4. Consider this the “omitted” regression, where we left out <code>MPHover</code>. Does our estimate of the marginal effect of <code>Age</code> on <code>Amount</code> overstate or understate the <em>true</em> marginal effect?</p>
+</div>
+<div id="part-c-3" class="section level3">
+<h3>Part C</h3>
+<p>Use the “true” model (Question 7), the “omitted” regression (Question 4), and our “auxiliary” regression (Question 11) to identify each of the following parameters that describe our biased estimate of the marginal effect of <code>Age</code> on <code>Amount</code>:
+<span class="math display">\[\alpha_1=\beta_1+\beta_2\delta_1\]</span></p>
+<p>See the notation I used in <a href="https://metricsF21.ryansafner.com/slides/3.4-slides.html#40">class</a>.</p>
+</div>
+<div id="part-d-3" class="section level3">
+<h3>Part D</h3>
+<p>From your answer in part C, how large is the omitted variable bias from leaving out <code>MPHover</code>?</p>
+</div>
+</div>
+<div id="question-13" class="section level2">
+<h2>Question 13</h2>
+<p>Make a coefficient plot of your coefficients from the regression in Question 7. The package <code>modelsummary</code> (which you will need to install and load) has a great command <code>modelplot()</code> to do this on your regression object.</p>
+</div>
 </div>

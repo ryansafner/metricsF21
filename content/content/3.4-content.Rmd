@@ -15,7 +15,7 @@ slides: "3.4-slides"
 ---
 
 {{% alert note %}}
-*Tuesday, October 26, 2021*
+*Thursday, October 28, 2021*
 {{% /alert %}}
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
