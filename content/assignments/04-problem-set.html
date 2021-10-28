@@ -20,8 +20,11 @@ type: docs
 Please submit on Blackboard Assignments by the end of the day Thursday November 4.
 {{% /alert %}}</p>
 <p>Please read the <a href="/assignments/problem-sets">instructions</a> for completing homeworks.</p>
-<div id="theory-and-concepts" class="section level1">
-<h1>Theory and Concepts</h1>
+<p style="text-align:center">
+<a target="_blank" href="/assignment/04-problem-set-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> PDF</a></span> <a target="_blank" href="/assignment/04-problem-set.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/3130729"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span>
+</p>
+<div id="concepts" class="section level1">
+<h1>Concepts</h1>
 <div id="question-1" class="section level2">
 <h2>Question 1</h2>
 <p>In your own words, explain the fundamental problem of causal inference.</p>
@@ -165,7 +168,8 @@ Please submit on Blackboard Assignments by the end of the day Thursday November 
 <p>Answer the following questions using <code>R</code>. When necessary, please write answers in the same document (knitted <code>Rmd</code> to <code>html</code> or <code>pdf</code>, typed <code>.doc(x)</code>, or handwritten) as your answers to the above questions. Be sure to include (email or print an <code>.R</code> file, or show in your knitted <code>markdown</code>) your code and the outputs of your code with the rest of your answers.</p>
 <div id="question-9" class="section level2">
 <h2>Question 9</h2>
-<p>Install the <code>wooldridge</code> package if you do not already have it installed.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> We will use the <code>bwght</code> data from <code>wooldridge</code><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>Install and load the <code>wooldridge</code> package. This package contains datasets used in Jeffrey Wooldridge’s <em>Introductory Econometrics: A Modern Approach</em> (the textbook that I used in <em>my</em> econometrics classes years ago!).</p>
+<p>We will use the <code>bwght</code> data from <code>wooldridge</code>, which comes from The 1988 National Health Interview Survey., used in J. Mullahy (1997), “Instrumental-Variable Estimation of Count Data Models: Applications to Models of Cigarette Smoking Behavior,” <em>Review of Economics and Statistics</em> 79: 596-593.</p>
 <p>Let’s just look at the following variables:</p>
 <table>
 <thead>
@@ -203,18 +207,19 @@ Please submit on Blackboard Assignments by the end of the day Thursday November 
 <p>Just to be explicit about it, assign this as some dataframe (feel free to change the name), i.e.:</p>
 <pre class="r"><code># install.packages(&quot;wooldridge&quot;)
 library(wooldridge)
-bwght&lt;-wooldridge::bwght</code></pre>
+births &lt;- bwght # feel free to rename whatever you want for the dataframe</code></pre>
 <div id="part-a-2" class="section level3">
 <h3>Part A</h3>
-<p>Make a correlation table for our variables listed above.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>Make a correlation table for our variables listed above.</p>
+<p>Hint: <code>select()</code> these variables and then pipe this into <code>cor(., use = "pairwise.complete.obs")</code> to use only observations for which there are data on each variable (to avoid <code>NA</code>’s).</p>
 </div>
 <div id="part-b-2" class="section level3">
 <h3>Part B</h3>
 <p>Consider the following causal model:</p>
 <pre class="r"><code>library(ggdag)
-dagify(bwght~cigs+inc,
-       cigs~price+educ+inc,
-       inc~educ,
+dagify(bwght ~ cigs + inc,
+       cigs ~ price + educ + inc,
+       inc ~ educ,
        exposure = &quot;cigs&quot;,
        outcome = &quot;bwght&quot;) %&gt;%
   tidy_dagitty(seed = 256) %&gt;%
@@ -223,22 +228,22 @@ dagify(bwght~cigs+inc,
   theme(legend.position = &quot;none&quot;)</code></pre>
 <p><img src="/assignments/04-problem-set_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>Note what we are hypothesizing:</p>
-<ul>
+<ol style="list-style-type: decimal">
 <li><code>bwght</code> is caused by <code>cigs</code> and <code>inc</code></li>
 <li><code>cigs</code> are caused by <code>price</code>, <code>educ</code>, and <code>inc</code></li>
 <li><code>inc</code> is caused by <code>educ</code></li>
-</ul>
-<p>See also how this is written into the notation in R to make the DAG.</p>
+</ol>
+<p>See also how this is written into the notation in R to draw (plot) the DAG.</p>
 <p>Create this model on <a href="htpp://dagitty.net">dagitty.net</a>. What does <code>dagitty</code> tell us the testable implications of this causal model?</p>
 </div>
 <div id="part-c-2" class="section level3">
 <h3>Part C</h3>
 <p>Test each implication given to you by <code>dagitty.</code></p>
 <ul>
-<li>For independencies <span class="math inline">\((x \perp y)\)</span>: run a regression of <span class="math inline">\(y\)</span> on <span class="math inline">\(x\)</span>.</li>
-<li>For <em>conditional</em> independencies <span class="math inline">\((x \perp y | z, a)\)</span>: run a regression of <span class="math inline">\(y\)</span> on <span class="math inline">\(x, z, a\)</span>.</li>
+<li>For independencies, e.g. <span class="math inline">\((x \perp y)\)</span>: run a regression of <span class="math inline">\(y\)</span> on <span class="math inline">\(x\)</span>.</li>
+<li>For <em>conditional</em> independencies, e.g. <span class="math inline">\((x \perp y | z, a)\)</span>: run a regression of <span class="math inline">\(y\)</span> on <span class="math inline">\(x, z, a\)</span>.</li>
 </ul>
-<p>For each, test against the null hypothesis that the relevant coefficient <span class="math inline">\((\hat{\beta_1})\)</span> is 0 (i.e. <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are indeed independent).</p>
+<p>For each, test against the null hypothesis that the relevant coefficient <span class="math inline">\((\beta_1) =0\)</span> (i.e. <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are indeed independent).</p>
 <p>Does this causal model hold up well?</p>
 </div>
 <div id="part-d-1" class="section level3">
@@ -247,15 +252,17 @@ dagify(bwght~cigs+inc,
 </div>
 <div id="part-e" class="section level3">
 <h3>Part E</h3>
-<p>What is the minimal sufficient set of variables we need to control in order to causally identify the effect of <code>cigs</code> on <code>bwght</code>?</p>
+<p>What is the minimal sufficient set of variables we need to control for in order to causally identify the effect of <code>cigs</code> on <code>bwght</code>?</p>
 </div>
 <div id="part-f" class="section level3">
 <h3>Part F</h3>
-<p>Estimate the causal effect by running the appropriate regression.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p>Estimate the causal effect by running the appropriate regression.</p>
+<p>FYI, on <code>dagitty.net</code>, you can change a variable on the diagram to be “<em>adjusted</em>” (controlled for) by clicking it and then hitting the <code>A</code> key.</p>
 </div>
 <div id="part-g" class="section level3">
 <h3>Part G</h3>
-<p>We saw some effect between <code>faminc</code> and <code>cigprice</code>. Perhaps there are unobserved factors (such as the economy’s performance) that affect both. Add an unobserved factor <code>u1</code> to your <code>dagitty</code> model.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<p>We saw some effect between <code>faminc</code> and <code>cigprice</code>. Perhaps there are unobserved factors (such as the economy’s performance) that affect both. Add an unobserved factor <code>u1</code> to your <code>dagitty</code> model.</p>
+<p>FYI, on <code>dagitty.net</code>, you can make a variable be “<em>unobserved</em>” by double-clicking it and then hitting the <code>U</code> key.</p>
 </div>
 <div id="part-h" class="section level3">
 <h3>Part H</h3>
@@ -285,9 +292,9 @@ dagify(bwght~cigs+inc,
 <div id="question-10" class="section level2">
 <h2>Question 10</h2>
 <ul>
-<li><a href="http://metricsf20.classes.ryansafner.com/data/heightwages.csv"><i class="fas fa-table"></i> <code>heightwages.csv</code></a></li>
+<li><a href="http://metricsf21.classes.ryansafner.com/data/heightwages.csv"><i class="fas fa-table"></i> <code>heightwages.csv</code></a></li>
 </ul>
-<p>Download the <code>heightwages.csv</code> dataset. This data is a part of a larger dataset from the National Longitudinal Survey of Youth (NLSY) 1979 cohort: a nationally representative sample of 12,686 men and women aged 14-22 years old when they were first surveyed in 1979. They were subsequently interviewed every year through 1994 and then every other year afterwards. There are many included variables, but for now we will just focus on:</p>
+<p>Download and read in the <code>heightwages.csv</code> dataset. This data is a part of a larger dataset from the National Longitudinal Survey of Youth (NLSY) 1979 cohort: a nationally representative sample of 12,686 men and women aged 14-22 years old when they were first surveyed in 1979. They were subsequently interviewed every year through 1994 and then every other year afterwards. There are many included variables, but for now we will just focus on:</p>
 <table>
 <thead>
 <tr class="header">
@@ -323,7 +330,7 @@ dagify(bwght~cigs+inc,
 </div>
 <div id="part-c-3" class="section level3">
 <h3>Part C</h3>
-<p>How much would someone who is 5’10" be predicted to earn per hour, according to the model?</p>
+<p>How much would someone who is 5’10" (70 in) be predicted to earn per hour, according to the model?</p>
 </div>
 <div id="part-d-2" class="section level3">
 <h3>Part D</h3>
@@ -343,32 +350,20 @@ dagify(bwght~cigs+inc,
 </div>
 <div id="part-h-1" class="section level3">
 <h3>Part H</h3>
-<p>Is there multicollinearity between <code>height85</code> and <code>height81</code>? Explore with a scatterplot.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+<p>Is there multicollinearity between <code>height85</code> and <code>height81</code>? Explore with a scatterplot. Hint: to avoid overplotting, use <code>geom_jitter()</code> instead of <code>geom_point()</code> to get a better view of the data.</p>
 </div>
 <div id="part-i-1" class="section level3">
 <h3>Part I</h3>
-<p>Quantify how much multicollinearity affects the variance of the OLS estimates on both heights.<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></p>
+<p>Quantify how much multicollinearity affects the variance of the OLS estimates on both heights. Hint: You’ll need the <code>vif</code> command from the <code>car</code> package.</p>
 </div>
 <div id="part-j-1" class="section level3">
 <h3>Part J</h3>
-<p>Reach the same number as in part I by running an auxiliary regression.<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></p>
+<p>Reach the same number as in part I by running an auxiliary regression.</p>
+<p>Hint: There’s some missing <code>wage96</code> data that may give you a different answer, so take the data and <code>filter(!is.na(wage96)</code> before running this regression — this will include only observations for <code>wage96</code> that are not <code>NA</code>’s.</p>
 </div>
 <div id="part-k-1" class="section level3">
 <h3>Part K</h3>
 <p>Make a regression table from part B and D using <code>huxtable</code>.</p>
 </div>
 </div>
-</div>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>This package contains datasets used in Jeffrey Wooldrige’s <em>Introductory Econometrics: A Modern Approach</em> (the textbook that I used in <em>my</em> econometrics classes years ago!)<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>Which comes from The 1988 National Health Interview Survey., used in J. Mullahy (1997), “Instrumental-Variable Estimation of Count Data Models: Applications to Models of Cigarette Smoking Behavior,” <em>Review of Economics and Statistics</em> 79: 596-593.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>Hints: <code>select()</code> these variables and then pipe them into <code>cor(., use="pairwise.complete.obs")</code> to use only observations for which there are data on each variable (to avoid <code>NA</code>’s).<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>Note, on <code>dagitty</code>, you can change a variable on the diagram to be “<em>adjusted</em>” (controlled for) by double-clicking it and then hitting the <code>A</code> key.<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
-<li id="fn5"><p>Note, on <code>dagitty</code>, you can make a variable be “<em>unobserved</em>” by double-clicking it and then hitting the <code>U</code> key.<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
-<li id="fn6"><p>Hint: to avoid overplotting, use <code>geom_jitter()</code> instead of <code>geom_point()</code> to get a better view of the data.<a href="#fnref6" class="footnote-back">↩︎</a></p></li>
-<li id="fn7"><p>Hint: You’ll need the <code>car</code> package.<a href="#fnref7" class="footnote-back">↩︎</a></p></li>
-<li id="fn8"><p>Hint: There’s some missing <code>wage96</code> data that may give you a different answer, so <code>filter()</code> your data here by <code>!is.na(wage96)</code> before running this regression - this will include only observations for <code>wage96</code> that are not <code>NA</code>’s.<a href="#fnref8" class="footnote-back">↩︎</a></p></li>
-</ol>
 </div>

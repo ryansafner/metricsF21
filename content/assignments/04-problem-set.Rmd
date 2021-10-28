@@ -25,7 +25,9 @@ Please submit on Blackboard Assignments by the end of the day Thursday November 
 
 Please read the [instructions](/assignments/problem-sets) for completing homeworks.
 
-# Theory and Concepts
+<p style="text-align:center"><a target="_blank" href="/assignment/04-problem-set-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> PDF</a></span> <a target="_blank" href="/assignment/04-problem-set.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/3130729"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span></p>
+
+# Concepts
 
 ## Question 1
 In your own words, explain the fundamental problem of causal inference. 
@@ -120,7 +122,9 @@ Answer the following questions using `R`. When necessary, please write answers i
 
 ## Question 9
 
-Install the `wooldridge` package if you do not already have it installed.^[This package contains datasets used in Jeffrey Wooldrige's *Introductory Econometrics: A Modern Approach* (the textbook that I used in *my* econometrics classes years ago!)] We will use the `bwght` data from `wooldridge`^[Which comes from The 1988 National Health Interview Survey., used in J. Mullahy (1997), “Instrumental-Variable Estimation of Count Data Models: Applications to Models of Cigarette Smoking Behavior,” *Review of Economics and Statistics* 79: 596-593.]
+Install and load the `wooldridge` package. This package contains datasets used in Jeffrey Wooldridge's *Introductory Econometrics: A Modern Approach* (the textbook that I used in *my* econometrics classes years ago!).
+
+We will use the `bwght` data from `wooldridge`, which comes from The 1988 National Health Interview Survey., used in J. Mullahy (1997), “Instrumental-Variable Estimation of Count Data Models: Applications to Models of Cigarette Smoking Behavior,” *Review of Economics and Statistics* 79: 596-593.
 
 Let's just look at the following variables:
 
@@ -136,24 +140,26 @@ Let's just look at the following variables:
 
 Just to be explicit about it, assign this as some dataframe (feel free to change the name), i.e.: 
 
-```{r}
+```{r, eval = F}
 # install.packages("wooldridge")
 library(wooldridge)
-bwght<-wooldridge::bwght
+births <- bwght # feel free to rename whatever you want for the dataframe
 ```
 
 ### Part A
 
-Make a correlation table for our variables listed above.^[Hints: `select()` these variables and then pipe them into `cor(., use="pairwise.complete.obs")` to use only observations for which there are data on each variable (to avoid `NA`'s).]
+Make a correlation table for our variables listed above. 
+
+Hint: `select()` these variables and then pipe this into `cor(., use = "pairwise.complete.obs")` to use only observations for which there are data on each variable (to avoid `NA`'s).
 
 ### Part B
 Consider the following causal model:
 
 ```{r, echo=T, message = F, warning = F}
 library(ggdag)
-dagify(bwght~cigs+inc,
-       cigs~price+educ+inc,
-       inc~educ,
+dagify(bwght ~ cigs + inc,
+       cigs ~ price + educ + inc,
+       inc ~ educ,
        exposure = "cigs",
        outcome = "bwght") %>%
   tidy_dagitty(seed = 256) %>%
@@ -164,40 +170,44 @@ dagify(bwght~cigs+inc,
 
 Note what we are hypothesizing:
 
-- `bwght` is caused by `cigs` and `inc`
-- `cigs` are caused by `price`, `educ`, and `inc`
-- `inc` is caused by `educ`
+1. `bwght` is caused by `cigs` and `inc`
+2. `cigs` are caused by `price`, `educ`, and `inc`
+3. `inc` is caused by `educ`
 
-See also how this is written into the notation in R to make the DAG.
+See also how this is written into the notation in R to draw (plot) the DAG.
 
 Create this model on [dagitty.net](htpp://dagitty.net). What does `dagitty` tell us the testable implications of this causal model?
 
 ### Part C
 
-Test each implication given to you by `dagitty.` 
+Test each implication given to you by `dagitty.`
 
-- For independencies $(x \perp y)$: run a regression of $y$ on $x$.
-- For *conditional* independencies $(x \perp y | z, a)$: run a regression of $y$ on $x, z, a$.
+- For independencies, e.g. $(x \perp y)$: run a regression of $y$ on $x$.
+- For *conditional* independencies, e.g. $(x \perp y | z, a)$: run a regression of $y$ on $x, z, a$.
 
-For each, test against the null hypothesis that the relevant coefficient $(\hat{\beta_1})$ is 0 (i.e. $x$ and $y$ are indeed independent).
+For each, test against the null hypothesis that the relevant coefficient $(\beta_1) =0$ (i.e. $x$ and $y$ are indeed independent).
 
 Does this causal model hold up well?
 
 ### Part D
 
-List *all* of the possible pathways from `cigs` to `bwght`. Which are "front-doors" and which are "back-doors?" Are any blocked by colliders?
+List *all* of the possible pathways from `cigs` to `bwght`. Which are “front-doors” and which are “back-doors?” Are any blocked by colliders?
 
 ### Part E
 
-What is the minimal sufficient set of variables we need to control in order to causally identify the effect of `cigs` on `bwght`?
+What is the minimal sufficient set of variables we need to control for in order to causally identify the effect of `cigs` on `bwght`?
 
 ### Part F
 
-Estimate the causal effect by running the appropriate regression.^[Note, on `dagitty`, you can change a variable on the diagram to be "*adjusted*" (controlled for) by double-clicking it and then hitting the `A` key.]
+Estimate the causal effect by running the appropriate regression. 
+
+FYI, on `dagitty.net`, you can change a variable on the diagram to be “*adjusted*” (controlled for) by clicking it and then hitting the `A` key.
 
 ### Part G
 
-We saw some effect between `faminc` and `cigprice`. Perhaps there are unobserved factors (such as the economy's performance) that affect both. Add an unobserved factor `u1` to your `dagitty` model.^[Note, on `dagitty`, you can make a variable be "*unobserved*" by double-clicking it and then hitting the `U` key.]
+We saw some effect between `faminc` and `cigprice`. Perhaps there are unobserved factors (such as the economy's performance) that affect both. Add an unobserved factor `u1` to your `dagitty` model. 
+
+FYI, on `dagitty.net`, you can make a variable be "*unobserved*" by double-clicking it and then hitting the `U` key.
 
 ### Part H
 
@@ -209,7 +219,7 @@ Test these implications appropriately, like you did in Part C. Does this model h
 
 ### Part J
 
-Under this new causal model, list *all* of the possible pathways from `cigs` to `bwght`. Which are "front-doors" and which are "back-doors?" Are any blocked by colliders?
+Under this new causal model, list *all* of the possible pathways from `cigs` to `bwght`. Which are “front-doors” and which are “back-doors?” Are any blocked by colliders?
 
 ### Part K
 
@@ -225,9 +235,9 @@ Try out drawing this model using the `ggdag` package in R. See my DAG in questio
 
 ## Question 10
 
-- [<i class="fas fa-table"></i> `heightwages.csv`](http://metricsf20.classes.ryansafner.com/data/heightwages.csv)
+- [<i class="fas fa-table"></i> `heightwages.csv`](http://metricsf21.classes.ryansafner.com/data/heightwages.csv)
 
-Download the `heightwages.csv` dataset. This data is a part of a larger dataset from the National Longitudinal Survey of Youth (NLSY) 1979 cohort: a nationally representative sample of 12,686 men and women aged 14-22 years old when they were first surveyed in 1979. They were subsequently interviewed every year through 1994 and then every other year afterwards. There are many included variables, but for now we will just focus on: 
+Download and read in the `heightwages.csv` dataset. This data is a part of a larger dataset from the National Longitudinal Survey of Youth (NLSY) 1979 cohort: a nationally representative sample of 12,686 men and women aged 14-22 years old when they were first surveyed in 1979. They were subsequently interviewed every year through 1994 and then every other year afterwards. There are many included variables, but for now we will just focus on: 
 
 | Variable | Description |
 |----------|-------------|
@@ -243,11 +253,11 @@ Create a quick scatterplot between `height85` (as $X)$ amd `wage96` (as $Y)$.
 
 ### Part B
 
-Regress wages on adult height. Write the equation of the estimated OLS regression. Interpret the coefficient on `height85`. 
+Regress wages on adult height. Write the equation of the estimated OLS regression. Interpret the coefficient on `height85`.
 
 ### Part C
 
-How much would someone who is 5'10" be predicted to earn per hour, according to the model?
+How much would someone who is 5'10" (70 in) be predicted to earn per hour, according to the model?
 
 ### Part D
 
@@ -267,15 +277,17 @@ What happened to the estimate on `height85` and its standard error?
 
 ### Part H
 
-Is there multicollinearity between `height85` and `height81`? Explore with a scatterplot.^[Hint: to avoid overplotting, use `geom_jitter()` instead of `geom_point()` to get a better view of the data.]
+Is there multicollinearity between `height85` and `height81`? Explore with a scatterplot. Hint: to avoid overplotting, use `geom_jitter()` instead of `geom_point()` to get a better view of the data.
 
 ### Part I
 
-Quantify how much multicollinearity affects the variance of the OLS estimates on both heights.^[Hint: You'll need the `car` package.]
+Quantify how much multicollinearity affects the variance of the OLS estimates on both heights. Hint: You'll need the `vif` command from the `car` package.
 
 ### Part J
 
-Reach the same number as in part I by running an auxiliary regression.^[Hint: There's some missing `wage96` data that may give you a different answer, so `filter()` your data here by `!is.na(wage96)` before running this regression - this will include only observations for `wage96` that are not `NA`'s.]
+Reach the same number as in part I by running an auxiliary regression.
+
+Hint: There's some missing `wage96` data that may give you a different answer, so take the data and `filter(!is.na(wage96)` before running this regression — this will include only observations for `wage96` that are not `NA`'s.
 
 ### Part K
 
