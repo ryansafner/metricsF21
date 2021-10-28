@@ -13,12 +13,12 @@ output:
     toc: false
 ---
 
-# Set Up
+## Set Up
 To minimize confusion, I suggest creating a new `R Project` (e.g. `multivariate_practice`) and storing any data in that folder on your computer.
 
 I have already made an R project you can download (as a `.zip`), unzip, and open the `.Rproj` file in R Studio, or there is an R project you can use on the cloud:
 
-<p style="text-align:center"><a target="_blank" href="/r/3.4-r.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/3127599><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span></p>
+<p style="text-align:center"><a target="_blank" href="/r/3.4-r.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/3127599"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span></p>
 
 ## Question 1
 
