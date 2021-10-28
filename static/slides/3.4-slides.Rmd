@@ -716,7 +716,7 @@ $$se(\hat{\beta_j})=\sqrt{var(\hat{\beta_1})}$$
 ]
 ]
 
-.footnote[<sup>.magenta[†]</sup> See [Class 2.5](/class/2.5-class) for a reminder of variation with just one X variable.]
+.footnote[<sup>.magenta[†]</sup> See [Class 2.5](/content/2.5-content) for a reminder of variation with just one X variable.]
 
 ---
 

@@ -153,7 +153,7 @@ Look at the regression we ran in Question 4. Consider this the “omitted” reg
 Use the “true” model (Question 7), the “omitted” regression (Question 4), and our “auxiliary” regression (Question 11) to identify each of the following parameters that describe our biased estimate of the marginal effect of `Age` on `Amount`:
 $$\alpha_1=\beta_1+\beta_2\delta_1$$
 
-See the notation I used in [class](https://metricsF21.ryansafner.com/slides/3.4-slides.html#40).
+See the notation I used in [class](https://metricsF21.classes.ryansafner.com/slides/3.4-slides.html#40).
 
 ### Part D
 From your answer in part C, how large is the omitted variable bias from leaving out `MPHover`?
