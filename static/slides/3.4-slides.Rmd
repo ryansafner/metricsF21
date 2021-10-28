@@ -83,7 +83,7 @@ class: inverse, center, middle
 
 - By analogy, we still focus on the .hi[ordinary least squares (OLS) estimators] of the unknown population parameters $\beta_0, \beta_1, \beta_2, \cdots, \beta_k$ which solves:
 
-$$\min_{\hat{\beta_0}, \hat{\beta_1}, \hat{\beta_2}, \cdots, \hat{\beta_k}} \sum^n_{i=1}\left[\underbrace{Y_i-(\hat{\beta_0}+\hat{\beta_1}X_{1i}+\hat{\beta_2}X_{2i}+\cdots+ \hat{\beta_k}X_{ki})}_{u_i}\right]^2$$
+$$\min_{\hat{\beta_0}, \hat{\beta_1}, \hat{\beta_2}, \cdots, \hat{\beta_k}} \sum^n_{i=1}\left[\underbrace{Y_i-\underbrace{(\hat{\beta_0}+\hat{\beta_1}X_{1i}+\hat{\beta_2}X_{2i}+\cdots+ \hat{\beta_k}X_{ki})}_{\color{gray}{\hat{Y}_i}}}_{\color{gray}{u_i}}\right]^2$$
 
 - Again, OLS estimators are chosen to .hi-purple[minimize] the .hi[sum of squared errors (SSE)]
   - i.e. sum of squared distances between actual values of $Y_i$ and predicted values $\hat{Y_i}$
@@ -722,7 +722,7 @@ $$se(\hat{\beta_j})=\sqrt{var(\hat{\beta_1})}$$
 
 # VIF and Multicollinearity I
 
-- Two *independent* variables are .hi[multicollinear]:
+- Two *independent* (X) variables are .hi[multicollinear]:
 
 $$cor(X_j, X_l) \neq 0 \quad \forall j \neq l$$
 
