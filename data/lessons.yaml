@@ -92,6 +92,8 @@ lessons:
 
   - title: "3.4 — Multivariate OLS Estimators: Bias, Precision, and Fit"
     content: "3.4-content"
+    slides: '3.4-slides'
+    r: "3.4-r"
 
   - title: '<i content="fas fa-laptop-code"></i> **Problem Set 4** due Thurs Nov 4'
     assignment: "04-problem-set"
