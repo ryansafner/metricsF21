@@ -6,12 +6,12 @@ date: "2020-06-08"
 menu:
   content:
     parent: Course content
-    weight: 16
+    weight: 17
 type: docs
 output:
   blogdown::html_page:
     toc: true
-slides: "3.4-slides"
+slides: "3.5-slides"
 ---
 
 {{% alert note %}}
@@ -31,7 +31,7 @@ The first is one that I showed you back in [class 1.5](/content/1.5-content) whe
 
 The second is a quick and dirty example of what I am looking for in your paper project in this class, using the ongoing example of the effect of class size on test scores. You can also look at `paper.Rmd` to see my text and code in R markdown, and `paper.pdf` to see the final product. Note that this is an example I put quickly together with minimal effort as an example for you all, it does *not* necessarily mean it is an “A” quality paper!
 
-If you are using R markdown to write your final paper, you should consult [class 1.5](/class/1.5-class) again, along with the [1.5 “R practice”](/r/1.5-r) that deals with the workflow repository.
+If you are using R markdown to write your final paper, you should consult [class 1.5](/content/1.5-content) again, along with the [1.5 “R practice”](/r/1.5-r) that deals with the workflow repository.
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 

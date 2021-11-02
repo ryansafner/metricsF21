@@ -84,7 +84,7 @@ While it is one thing to find a topic to write on, it is an altogether different
 
 Depending on the topic, you can also collect your own data, and many times you will want to create a custom dataset by simply combining data from different sources. 
 
-Don't forget to check out the [Data Resources](resources/data/) for ideas and examples of how and where to find data sets.
+Don't forget to check out the [Data Resources](https://metricsf21.classes.ryansafner.com/resources/data/) for ideas and examples of how and where to find data sets.
 
 ## Grading Rubric and Deadlines
 

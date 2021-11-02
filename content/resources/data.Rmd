@@ -8,6 +8,9 @@ menu:
 title: Data Resources
 toc: true
 type: docs
+output:
+  blogdown::html_page:
+    toc: true
 weight: 2
 ---
 
