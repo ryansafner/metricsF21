@@ -347,11 +347,28 @@ papers %>%
 
 ]
 
+---
+
+# Data: Counts of Categorical Variables II
+
+
+.pull-left[
 ```{r}
 papers %>%
   count(School) %>%
   knitr::kable(., format="html")
 ```
+
+]
+
+.pull-right[
+```{r}
+papers %>%
+  count(Covid) %>%
+  knitr::kable(., format="html")
+```
+
+]
 
 ---
 
@@ -538,13 +555,13 @@ ggplot(data = subset(papers, Class=="Econometrics"))+
 
 .pull-left[
 
-- .blue[Grade] plausibly caused by length (.red[pages]), effort, school (uni), gender, course, topic, and time (of day)
+- .blue[Grade] plausibly caused by length (.red[pages]), effort, school (uni), gender, course, topic, covid, and time (of day)
 
 - Time of day probably unrelated to length...can safely ignore (don’t need to control for)
 
 - Don’t have good data on topic
 
-- Can’t *directly* measure for the amount of effort you put in, but I can .hi-purple[proxy] for it with the grade you got in the course (strongly correlated with effort)
+- Can’t *directly* measure for the amount of effort you put in, but I can .hi-purple[proxy] for it with the final grade in the course (strongly correlated with effort)
 
 ]
 
@@ -554,6 +571,7 @@ library(ggdag)
 dagify(Grade~Pages+Time+Topic+Uni+Effort+Gender+Course+Covid,
        Pages~Gender+Uni+Effort+Topic+Course+Covid,
        Effort~Uni+Gender+Covid,
+       Topic~Gender+Course,
        exposure="Pages",
        outcome="Grade") %>%
   tidy_dagitty(seed = 2) %>%
@@ -567,7 +585,7 @@ dagify(Grade~Pages+Time+Topic+Uni+Effort+Gender+Course+Covid,
 
 .pull-left[
 
-- So I need to control for school, effort (proxied by final grade), gender, covid, and (if I had data on it...) topic
+- So I need to control for school, course, effort (proxied by final grade), gender, covid, and (if I had data on it...) topic
 
 ]
 
@@ -577,6 +595,7 @@ library(ggdag)
 dagify(Grade~Pages+Time+Topic+Uni+Effort+Course+Gender+Covid,
        Pages~Gender+Uni+Effort+Topic+Course+Covid,
        Effort~Uni+Gender+Covid,
+       Topic~Gender+Course,
        exposure="Pages",
        outcome="Grade") %>%
   tidy_dagitty(seed = 2) %>%
@@ -613,7 +632,7 @@ $$\begin{align*}
 
 $$\begin{align*}
 \text{Paper Grade}_i=& \, \beta_0+\beta_1\text{Paper Length}_i+\beta_2\text{Course Grade}_i\\
-&+\beta_3\text{Gender}_i+\beta_4\text{School}_i\\
+&+\beta_3\text{Gender}_i+\beta_4\text{School}_i+\beta_5\text{Covid}_i\\
 &+\beta_6\text{Course}_i+u_i\\ \end{align*}$$
 ]
 
@@ -631,19 +650,21 @@ $$\begin{align*}
     - Endogeneity, simultaneous causation, omitted variable bias
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.smaller[
 .green[**Example**]:
-The model likely suffers from endogeneity, as how many pages a student writes is likely to be positively correlated with personal attributes like dilligence, conscientiousness, and intelligence, which themselves are likely positively correlated with the grade of the paper. Thus, we have likely *over*stated the effect of page length on paper grades. Furthermore, we are unable to measure other variables that make page length endogenous, such as the topic that was chosen. Some topics lend themselves to shorter or longer papers and may have better or worse data that make it easier or difficult to run a clean empirical test.
+The model likely suffers from endogeneity, as how many pages a student writes is likely to be positively correlated with personal attributes like diligence, conscientiousness, and intelligence, which themselves are likely positively correlated with the grade of the paper. Thus, we have likely *over*stated the effect of page length on paper grades. Furthermore, we are unable to measure other variables that make page length endogenous, such as the topic that was chosen. Some topics lend themselves to shorter or longer papers and may have better or worse data that make it easier or difficult to run a clean empirical test.
+]
 ]
 
 ---
 
 # Empirical Model IV
 
-- Are your results **robust** across different model specifications?
+- Are your results .hi[robust] across different model specifications?
   - Do the size(s) of the marginal effect(s) you care about change or reverse direction? Become/lose significance?
     
-- At minimum, you must run several models, including a multivariate regression
-  - Run *several variations* of your model with and without controls (e.g. just $Y$ and $X$, $Y$ and $X_1$ and $X_2$, etc.)
+- At minimum, .hi-purple[you must run several models], including a multivariate regression
+  - Run **several variations** of your model with and without controls (e.g. just $Y$ and $X$, $Y$ and $X_1$ and $X_2$, etc.)
   - Check for nonlinearities: polynomials, logs, etc.
 
 ---
@@ -653,7 +674,7 @@ The model likely suffers from endogeneity, as how many pages a student writes is
 - Print a table(s) of your regression(s) results
   - R packages can help: `huxtable`, `stargazer`, `modelsummary`
 
-- Interpret your data
+- Interpret your data (in the text of the paper)
   - What does a marginal (1 unit) change in $X$ mean for $Y$, a 1% change, etc? 
   - Is each coefficient statistically significant (at 10%, 5%, or 1% levels)?
 
@@ -921,10 +942,10 @@ $$\begin{align*}
 $$\begin{align*}
 \text{Wins}_{ty} = & \, \beta_0+\beta_1 \text{OL & DL Spending}_{ty}\\
 &+ \beta_2 \text{Quarterback Spending}_{ty}\\
-&+\beta_3 \text{Defensive Coach Spending}_{ty}+u_{ty}\\ \end{align*}$$
+&+\beta_3 \text{Defensive Coach Spending}_{ty}+\alpha_r+\tau_y+\epsilon_{it}+u_{ty}\\ \end{align*}$$
 ]
 
-- Panel data for team $t$ in year $y$
+- Panel data with two way fixed effects for team $t$ in year $y$; 
 
 ---
 
@@ -939,7 +960,7 @@ $$\begin{align*}
 &+\beta_5 \text{Political Party}_{it}+\alpha_i+\tau_t+\epsilon_{it}\\ \end{align*}$$
 ]
 
-- Panel data for individual $i$ at time $t$, with individual fixed effects $(\alpha_i)$ and year fixed effects $(\tau_t)$
+- Panel data with two way fixed effects for candidate $i$ at time $t$
 
 ---
 
@@ -965,7 +986,7 @@ $$\begin{align*}
 $$\begin{align*}
 \text{Player Impact Estimate}_{i} = & \, \beta_0+\beta_1 \text{ln(Number of Twitter Followers)}_{i} + \beta_2 \text{Age}_{i}\\
 &+ \beta_3 \text{Games Played}_{i}+\beta_4 \text{Minutes played per game}_{i}\\
-& +\beta_5 \text{Points scored per game}_{i}+ \beta_6 \text{Salary}_{i}u_i\\ \end{align*}$$
+& +\beta_5 \text{Points scored per game}_{i}+ \beta_6 \text{Salary}_{i}+u_i\\ \end{align*}$$
 ]
 
 - Cross-sectional data for player $i$
@@ -979,7 +1000,7 @@ $$\begin{align*}
 .smallest[
 $$\begin{align*}
 \ln\text{CO}_{2it} = & \, \beta_0+\beta_1 \ln \text{GDP per capita}_{it} + \beta_2 \ln \text{GDP per capita}_{it}^2\\
-&+ \alpha_i + \tau_t + u_{it}\\ \end{align*}$$
+&+ \beta_3 \text{Urbanization Rate}_{it}+ \alpha_i + \tau_t + u_{it}\\ \end{align*}$$
 ]
 
-- A nonlinear (quadratic) model with panel data for country $i$ in time $t$
+- A nonlinear (quadratic) model with panel data and two-way fixed effects for country $i$ in time $t$

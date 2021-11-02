@@ -19,7 +19,7 @@ library(pander)
 ```
 
 {{% alert warning %}}
-Due by the end of the day via email Monday December 6. [See below](#Grading-Rubric-and-Deadlines) for what the email should contain.
+Due by the end of the day via email Monday December 6. [See below](#grading-rubric-and-deadlines) for what the email should contain.
 {{% /alert %}}
 
 > "How can I know what I think until I see what I say?"<br> [— E. M. Forster]{style="float:right"}
