@@ -20,7 +20,7 @@ library(ggdag)
 
 
 {{% alert note %}}
-Please submit on Blackboard Assignments by the end of the day Thursday November 4.
+Please submit on Blackboard Assignments by the end of the day Tuesday November 9.
 {{% /alert %}}
 
 Please read the [instructions](/assignments/problem-sets) for completing homeworks.

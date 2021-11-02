@@ -19,15 +19,21 @@ library(pander)
 ```
 
 {{% alert warning %}}
-Due by **DATE** and **TIME**
+Due by the end of the day via email Monday December 6. [See below](#Grading-Rubric-and-Deadlines) for what the email should contain.
 {{% /alert %}}
 
 > "How can I know what I think until I see what I say?"<br> [— E. M. Forster]{style="float:right"}
 
 > "No economist has achieved scientific success as a result of a statistically significant coefficient. Massed observations, clever common sense, elegant theorems, new policies, sagacious economic reasoning, historical perspective, relevant accounting, these have all led to scientific success. Statistical significance has not." <br> [ — McCloskey and Ziliak, "The Cult of Statistical Significance" (1996: 112)]{style="float:right"}
 
-<!--- [<i class="fas fa-external-link-square-alt"></i> Writing and Reading Empirical Papers Slides](/slides/paper-slides.html)
-- [<i class="fab fa-github"></i> Example Paper Project](https://github.com/ryansafner/example_empirical_paper)-->
+- [<i class="fas fa-external-link-square-alt"></i> Writing & Reading Empirical Papers Slides](/slides/3.5-slides.html)
+- [<i class="fab fa-github"></i> Example Paper Project](https://github.com/ryansafner/example_empirical_paper)
+
+Below I have the video/lecture and slides that I give all ECON 306 courses on how to write a good paper in general — geared towards writing an Op-Ed, but the principles apply to *any* paper you wish to write well: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-e_FjEAUhIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- [<i class="fas fa-chalkboard-teacher"></i> How to Write a Good Paper (Slides)](https://microf21.classes.ryansafner.com/slides/paper-slides.html)
 
 ## Overview 
 
@@ -127,7 +133,7 @@ The remaining 70% for the final product are broken down as follows:
 
 ## Emailing Your Final Version to Me
 
-When you send your final email (by Tuesday November 22), it should contain the following files:
+When you send your final email (by Monday December 6), it should contain the following files:
 
 1. **Your final paper as a `.pdf`.** It should include an abstract and bibliography and all tables and figures contained within it. 
 2. **The (commented!) code used for your data analysis** (i.e. loading data, making tables, making plots, running regressions). These can be either `.R` files: one or multiple (one-per-task) are equally fine OR a `.Rmd` file. I want to know *how* you reached the results you got! **Reproducibility is the goal!**
