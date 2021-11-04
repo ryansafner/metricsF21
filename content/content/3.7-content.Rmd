@@ -94,8 +94,8 @@ We know that the marginal effect of each of the two $X$ variables on $Y$ depends
 
 | Variable | Marginal Effect on Wages (Formula) | Marginal Effect on Wages (Estimate) |
 |----------|------------------------------------|-------------------------------------|
-| Education | $\hat{\beta_1}+\hat{\beta_3} \, Experience_i$ | `r b_1+b_3` $\, Experience_i$ |
-| Experience | $\hat{\beta_2}+\hat{\beta_3} \, Education_i$ | `r b_1+b_3` $\, Education_i$ |
+| Education | $\hat{\beta_1}+\hat{\beta_3} \, Experience_i$ | `r b_1` + `r b_3` $\, Experience_i$ |
+| Experience | $\hat{\beta_2}+\hat{\beta_3} \, Education_i$ | `r b_1` + `r b_3` $\, Education_i$ |
 
 We can get the marginal effects more precisely by making a **function** of each marginal effect, using the coefficients saved above. To make a your own function in `R` (a very handy thing to do!), simply define an object as `my_function<- function(){}`. Inside the `()` goes any arguments the function will need (here, it’s the value of the other variable), and then the formula to apply to that argument. Then you can run the function on any object.
 
