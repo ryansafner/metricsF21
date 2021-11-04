@@ -22,7 +22,7 @@ I have already made an R project you can download (as a `.zip`), unzip, and open
 
 ## Answers
 
-<p style="text-align:center"><a target="_blank" href="/r/3.2-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/r/3.2-r-answers.Rmd"><span class="btn btn-primary btn-lg"><i class="fab fa-markdown"></i> Answers (Rmd)</a></span></p>
+<p style="text-align:center"><a target="_blank" href="/r/3.4-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/r/3.4-r-answers.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> Answers (R Project)</a></span></p>
 
 ## Question 1
 
