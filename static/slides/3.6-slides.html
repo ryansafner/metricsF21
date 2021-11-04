@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>3.6 — Regression with Categorical Data</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner  Assistant Professor of Economics   safner@hood.edu   ryansafner/metricsF21   metricsF21.classes.ryansafner.com " />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/pagedtable/css/pagedtable.css" rel="stylesheet" />
+    <script src="libs/pagedtable/js/pagedtable.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# 3.6 — Regression with Categorical Data
+## ECON 480 • Econometrics • Fall 2021
+### Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF21"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF21</a><br> <a href="https://metricsF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF21.classes.ryansafner.com</a><br>
+
+---
+
+
+
+
+class: inverse
+
+# Outline
+
+### [Working with `Factor` Variables in R](#3)
+
+### [Regression with Dummy Variables](#12)
+
+### [Recoding Dummies](#36)
+
+### [Categorical Variables (More than 2 Categories)](#47)
+
+---
+# Categorical Data
+
+.pull-left[
+
+- .hi[Categorical data] place an individual into one of several possible *categories*
+    - e.g. sex, season, political party
+    - may be responses to survey questions
+    - can be quantitative (e.g. age, zip code)
+
+- `R` calls these `factors`
+]
+
+.pull-right[
+
+![](../images/categoricaldata.png)
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Working with `factor` Variables in `R`
+
+---
+
+# Factors in R
+
+.quitesmall[
+- `factor` is a special type of `character` object class that indicates membership in a category (called a `level`)
+
+- Suppose I have data on students:
+
+
+
+
+```r
+students %&gt;% head(n = 5)
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["ID"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Rank"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Grade"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"Sophomore","3":"77"},{"1":"2","2":"Senior","3":"72"},{"1":"3","2":"Freshman","3":"73"},{"1":"4","2":"Senior","3":"73"},{"1":"5","2":"Junior","3":"84"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+]
+
+--
+
+.quitesmall[
+- See that `Rank` is a `character` (`&lt;chr&gt;`) variable, just a string of text
+]
+
+---
+
+# Factors in R
+
+.quitesmall[
+- We can make `Rank` a `factor` variable, to indicate a student is a member of one of the possible categories: (freshman, sophomore, junior, senior)
+
+
+```r
+students &lt;- students %&gt;%
+  mutate(Rank = as.factor(Rank)) # overwrite and change class of Rank to factor
+
+students %&gt;% head(n = 5)
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["ID"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Rank"],"name":[2],"type":["fct"],"align":["left"]},{"label":["Grade"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"Sophomore","3":"77"},{"1":"2","2":"Senior","3":"72"},{"1":"3","2":"Freshman","3":"73"},{"1":"4","2":"Senior","3":"73"},{"1":"5","2":"Junior","3":"84"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+.quitesmall[
+- See now it’s a `factor` (`&lt;fct&gt;`)
+]
+
+]
+
+---
+
+# Factors in R
+
+.smallest[
+
+
+```r
+# what are the categories?
+students %&gt;%
+  group_by(Rank) %&gt;%
+  count()
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["Rank"],"name":[1],"type":["fct"],"align":["left"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"Freshman","2":"1"},{"1":"Junior","2":"4"},{"1":"Senior","2":"2"},{"1":"Sophomore","2":"3"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+```r
+# note the order is arbitrary! This is an "unordered" factor
+```
+
+]
+
+---
+
+# Ordered Factors in R
+
+.quitesmall[
+- If there is a rank order you wish to preserve, you can make an `ordered` (`factor`) variable
+  - list the `levels` from 1st to last
+
+
+```r
+students &lt;- students %&gt;%
+  mutate(Rank = ordered(Rank, # overwrite and change class of Rank to ordered
+                        # next, specify the levels, in order
+                        levels = c("Freshman", "Sophomore", "Junior", "Senior")
+                        )
+         )
+
+students %&gt;% head(n = 5)
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["ID"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Rank"],"name":[2],"type":["ord"],"align":["right"]},{"label":["Grade"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"Sophomore","3":"77"},{"1":"2","2":"Senior","3":"72"},{"1":"3","2":"Freshman","3":"73"},{"1":"4","2":"Senior","3":"73"},{"1":"5","2":"Junior","3":"84"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+]
+
+---
+
+# Ordered Factors in R
+
+.quitesmall[
+
+
+```r
+students %&gt;%
+  group_by(Rank) %&gt;%
+  count()
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["Rank"],"name":[1],"type":["ord"],"align":["right"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"Freshman","2":"1"},{"1":"Sophomore","2":"3"},{"1":"Junior","2":"4"},{"1":"Senior","2":"2"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+]
+
+---
+
+# Example Research Question
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: How much higher wages, on average, do men earn compared to women?
+]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/genderpaygap.jpg)
+]
+]
+
+---
+
+# The Pure Statistics of Comparing Group Means
+
+.pull-left[
+
+.smallest[
+- Basic statistics: can test for statistically significant difference in group means with a **t-test**&lt;sup&gt;.magenta[†]&lt;/sup&gt;, let:
+
+- .blue[`\\(Y_M\\)`]: average earnings of a sample of .blue[`\\(n_M\\)`] men
+
+- .magenta[`\\(Y_W\\)`]: average earnings of a sample of .magenta[`\\(n_W\\)`] women
+
+- **Difference** in group averages: `\(d=\)` .blue[`\\(\bar{Y}_M\\)`] `\(-\)` .magenta[`\\(\bar{Y}_W\\)`]
+
+- The hypothesis test is:
+  - `\(H_0: d=0\)`
+  - `\(H_1: d \neq 0\)`
+
+]
+]
+.pull-right[
+.center[
+![:scale 100%](../images/genderpaygap.jpg)
+]
+]
+
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; See [today’s class page](/content/3.6-content) for this example]
+
+---
+
+# Plotting Factors in R
+
+.pull-left[
+
+- If I plot a `factor` variable, e.g. `Gender` (which is either `Male` or `Female`), the scatterplot with `wage` looks like this
+  - effectively `R` treats values of a factor variable as integers
+  - in this case, `"Female"` = 0, `"Male"` = 1
+
+- Let’s make this more explicit by making a .hi[dummy variable] to stand in for Gender
+]
+
+.pull-right[
+&lt;img src="3.6-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" /&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# Regression with Dummy Variables
+
+---
+
+# Comparing Groups with Regression
+
+.smallest[
+- In a regression, we can easily compare across groups via a .hi[dummy variable]&lt;sup&gt;.magenta[†]&lt;/sup&gt;
+
+- Dummy variable *only* `\(=0\)` or `\(=1\)`, if a condition is `TRUE` vs. `FALSE`
+
+- Signifies whether an observation belongs to a category or not
+]
+
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; Also called a .hi[binary variable] or .hi[dichotomous variable]]
+
+--
+
+.smallest[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: 
+
+`$$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Female_i \quad \quad \text{ where } Female_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if individual } i \text{ is } Female \\
+   			0 &amp; \text{if individual } i \text{ is } Male\\
+  		\end{cases}$$`
+
+]
+]
+--
+
+.smallest[
+- Again, `\(\hat{\beta_1}\)` makes less sense as the “slope” of a line in this context
+
+]
+
+---
+
+# Comparing Groups in Regression: Scatterplot
+
+.pull-left[
+
+- `Female` is our dummy `\(x\)`-variable
+
+- Hard to see relationships because of **overplotting**
+
+]
+
+.pull-right[
+&lt;img src="3.6-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" /&gt;
+]
+
+---
+
+# Comparing Groups in Regression: Scatterplot
+
+.pull-left[
+
+- `Female` is our dummy `\(x\)`-variable
+
+- Hard to see relationships because of **overplotting**
+
+- Tip: use `geom_jitter()` instead of `geom_point()` to *randomly* nudge points to see them better!
+  - Only used for *plotting*, does not affect actual data, regression, etc.
+
+]
+
+.pull-right[
+&lt;img src="3.6-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" /&gt;
+]
+
+---
+
+# Comparing Groups in Regression: Scatterplot
+
+.pull-left[
+
+- `Female` is our dummy `\(x\)`-variable
+
+- Hard to see relationships because of **overplotting**
+
+- Use `geom_jitter()` instead of `geom_point()` to *randomly* nudge points
+  - *Only* for plotting purposes, does not affect actual data, regression, etc.
+
+]
+
+.pull-right[
+&lt;img src="3.6-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" /&gt;
+]
+
+---
+
+# Dummy Variables as Group Means
+
+.smallest[
+`$$\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1} D_i \quad \text{ where }D_i=\{\color{#6A5ACD}{0},\color{#e64173}{1}\}$$`
+]
+--
+
+.smallest[
+- .purple[When `\\(D_i=0\\)` (“Control group”):]
+  - `\(\hat{Y_i}=\hat{\beta_0}\)`
+  - `\(\color{#6A5ACD}{E[Y_i|D_i=0]}=\hat{\beta_0}\)` `\(\iff\)` the mean of `\(Y\)` when `\(D_i=0\)`
+]
+
+--
+
+.smallest[
+- .hi[When `\\(D_i=1\\)` (“Treatment group”):]
+  - `\(\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1} D_i\)`
+  - `\(\color{#e64173}{E[Y_i|D_i=1]}=\hat{\beta_0}+\hat{\beta_1}\)` `\(\iff\)` the mean of `\(Y\)` when `\(D_i=1\)`
+]
+
+--
+
+.smallest[
+
+- So the **difference** in group means:
+
+`$$\begin{align*}
+		&amp;=\color{#e64173}{E[Y_i|D_i=1]}-\color{#6A5ACD}{E[Y_i|D_i=0]}\\
+		&amp;=(\hat{\beta_0}+\hat{\beta_1})-(\hat{\beta_0})\\
+		&amp;=\hat{\beta_1}\\
+\end{align*}$$`
+
+]
+
+---
+
+# Dummy Variables as Group Means: Our Example
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]:
+
+`$$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Female_i$$`
+
+`$$\text{where } Female_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if } i \text{ is }Female \\
+   			0 &amp; \text{if } i \text{ is } Male\\
+  		\end{cases}$$`
+]
+]
+
+.pull-right[
+
+- Mean wage for men: 
+]
+
+---
+
+# Dummy Variables as Group Means: Our Example
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]:
+
+`$$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Female_i$$`
+
+`$$\text{where } Female_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if } i \text{ is }Female \\
+   			0 &amp; \text{if } i \text{ is } Male\\
+  		\end{cases}$$`
+]
+]
+
+.pull-right[
+
+- Mean wage for men:
+`$$E[Wage|Female=0]=\hat{\beta_0}$$`
+]
+
+---
+
+# Dummy Variables as Group Means: Our Example
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]:
+
+`$$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Female_i$$`
+
+`$$\text{where } Female_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if } i \text{ is }Female \\
+   			0 &amp; \text{if } i \text{ is } Male\\
+  		\end{cases}$$`
+]
+]
+
+.pull-right[
+
+- Mean wage for men: 
+`$$E[Wage|Female=0]=\hat{\beta_0}$$`
+
+- Mean wage for women: 
+]
+
+---
+
+# Dummy Variables as Group Means: Our Example
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]:
+
+`$$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Female_i$$`
+
+`$$\text{where } Female_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if } i \text{ is }Female \\
+   			0 &amp; \text{if } i \text{ is } Male\\
+  		\end{cases}$$`
+]
+]
+
+.pull-right[
+
+- Mean wage for men:
+`$$E[Wage|Female=0]=\hat{\beta_0}$$`
+
+- Mean wage for women:
+`$$E[Wage|Female=1]=\hat{\beta_0}+\hat{\beta_1}$$`
+]
+
+---
+
+# Dummy Variables as Group Means: Our Example
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]:
+
+`$$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Female_i$$`
+
+`$$\text{where } Female_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if } i \text{ is }Female \\
+   			0 &amp; \text{if } i \text{ is } Male\\
+  		\end{cases}$$`
+]
+]
+
+.pull-right[
+
+- Mean wage for men:
+`$$E[Wage|Female=0]=\hat{\beta_0}$$`
+
+- Mean wage for women:
+`$$E[Wage|Female=1]=\hat{\beta_0}+\hat{\beta_1}$$`
+
+- Difference in wage between men &amp; women:
+]
+
+---
+
+# Dummy Variables as Group Means: Our Example
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]:
+
+`$$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Female_i$$`
+
+`$$\text{where } Female_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if } i \text{ is }Female \\
+   			0 &amp; \text{if } i \text{ is } Male\\
+  		\end{cases}$$`
+]
+]
+
+.pull-right[
+
+- Mean wage for men: 
+`$$E[Wage|Female=0]=\hat{\beta_0}$$`
+
+- Mean wage for women: 
+`$$E[Wage|Female=1]=\hat{\beta_0}+\hat{\beta_1}$$`
+
+- Difference in wage between men &amp; women: 
+`$$\hat{\beta_1}$$`
+]
+
+---
+
+# Comparing Groups in Regression: Scatterplot
+
+.pull-left[
+`$$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Female_i$$`
+
+`$$\text{where } Female_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if } i \text{ is }Female \\
+   			0 &amp; \text{if } i \text{ is } Male\\
+  		\end{cases}$$`
+
+]
+
+.pull-right[
+&lt;img src="3.6-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" /&gt;
+]
+
+---
+
+# The Data
+
+.quitesmall[
+
+```r
+# comes from wooldridge package
+
+# install.packages("wooldridge")
+library(wooldridge)
+
+# data is called "wage1", save as a dataframe I'll call "wages"
+wages &lt;- wage1
+
+wages %&gt;% head()
+```
+]
+
+---
+
+# Get Group Averages &amp; Std. Devs. 
+
+.pull-left[
+
+.smallest[
+
+```r
+# Summarize for Men
+
+wages %&gt;%
+  filter(female==0) %&gt;%
+  summarize(mean = mean(wage),
+            sd = sd(wage))
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["mean"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["sd"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"7.099489","2":"4.160858"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+]
+
+]
+
+.pull-right[
+
+.smallest[
+
+```r
+# Summarize for Women
+
+wages %&gt;%
+  filter(female==1) %&gt;%
+  summarize(mean = mean(wage),
+            sd = sd(wage))
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["mean"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["sd"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"4.587659","2":"2.529363"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+]
+]
+
+---
+
+# Visualize Differences
+
+&lt;img src="3.6-slides_files/figure-html/unnamed-chunk-15-1.png" width="1008" /&gt;
+
+---
+
+# The Regression I
+
+.pull-left[
+.tiny[
+.code90[
+
+```r
+femalereg &lt;- lm(wage ~ female, data = wages)
+summary(femalereg)
+```
+
+```
+## 
+## Call:
+## lm(formula = wage ~ female, data = wages)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -5.5995 -1.8495 -0.9877  1.4260 17.8805 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   7.0995     0.2100  33.806  &lt; 2e-16 ***
+## female       -2.5118     0.3034  -8.279 1.04e-15 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 3.476 on 524 degrees of freedom
+## Multiple R-squared:  0.1157,	Adjusted R-squared:  0.114 
+## F-statistic: 68.54 on 1 and 524 DF,  p-value: 1.042e-15
+```
+]
+]
+]
+
+--
+
+.pull-right[
+.tiny[
+
+```r
+library(broom)
+
+tidy(femalereg)
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std.error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p.value"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"(Intercept)","2":"7.099489","3":"0.2100082","4":"33.805777","5":"8.971839e-134"},{"1":"female","2":"-2.511830","3":"0.3034092","4":"-8.278688","5":"1.041764e-15"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+]
+]
+
+---
+
+# Dummy Regression vs. Group Means
+
+.pull-left[
+
+.smallest[
+From tabulation of group means
+
+| Gender | Avg. Wage | Std. Dev.   | `\(n\)`   |
+|--------|-------------|-----------|-------|
+| Female | `\(4.59\)`    | `\(2.33\)`      | `\(252\)` |
+| Male   | `\(7.10\)`    | `\(4.16\)`      | `\(274\)` |
+| Difference | `\(2.51\)` | `\(0.30\)` | `\(-\)` |
+
+From `\(t\)`-test of difference in group means
+]
+
+]
+
+.pull-right[
+.quitesmall[
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std.error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p.value"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"(Intercept)","2":"7.099489","3":"0.2100082","4":"33.805777","5":"8.971839e-134"},{"1":"female","2":"-2.511830","3":"0.3034092","4":"-8.278688","5":"1.041764e-15"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+]
+
+`$$\widehat{\text{Wages}_i}=7.10-2.51 \, \text{Female}_i$$`
+]
+
+---
+
+class: inverse, center, middle
+
+# Recoding Dummies
+
+---
+
+# Recoding Dummies
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: 
+
+- Suppose instead of `\(female\)` we had used:
+
+`$$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Male_i \quad \quad \text{ where } Male_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if person } i \text{ is } Male \\
+   			0 &amp; \text{if person } i \text{ is } Female\\
+  		\end{cases}$$`
+
+]
+
+---
+
+# Recoding Dummies with Data
+
+.quitesmall[
+
+```r
+wages&lt;-wages %&gt;%
+  mutate(male = ifelse(female == 0, # condition: is female equal to 0?
+                       yes = 1, # if true: code as "1"
+                       no = 0)) # if false: code as "0"
+
+# verify it worked
+wages %&gt;% 
+  select(wage, female, male) %&gt;%
+  head()
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["wage"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["female"],"name":[2],"type":["int"],"align":["right"]},{"label":["male"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"3.10","2":"1","3":"0","_rn_":"1"},{"1":"3.24","2":"1","3":"0","_rn_":"2"},{"1":"3.00","2":"0","3":"1","_rn_":"3"},{"1":"6.00","2":"0","3":"1","_rn_":"4"},{"1":"5.30","2":"0","3":"1","_rn_":"5"},{"1":"8.75","2":"0","3":"1","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+]
+
+---
+
+# Scatterplot with Male
+
+.pull-left[
+&lt;img src="3.6-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" /&gt;
+]
+
+--
+
+.pull-right[
+&lt;img src="3.6-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" /&gt;
+]
+
+---
+
+# Dummy Variables as Group Means: With Male
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]:
+
+`$$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Male_i$$`
+
+`$$\text{where } Male_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if } i \text{ is } Male \\
+   			0 &amp; \text{if } i \text{ is } Female\\
+  		\end{cases}$$`
+]
+]
+
+.pull-right[
+
+- Mean wage for men: 
+`$$E[Wage|Male=1]=\hat{\beta_0}+\hat{\beta_1}$$`
+
+- Mean wage for women: 
+`$$E[Wage|Male=0]=\hat{\beta_0}$$`
+
+- Difference in wage between men &amp; women: 
+`$$\hat{\beta_1}$$`
+]
+
+---
+
+# Scatterplot with Male 
+
+.pull-left[
+&lt;img src="3.6-slides_files/figure-html/unnamed-chunk-22-1.png" width="504" /&gt;
+]
+
+--
+.pull-right[
+&lt;img src="3.6-slides_files/figure-html/unnamed-chunk-23-1.png" width="504" /&gt;
+]
+
+---
+
+# The Regression with Male I
+
+.pull-left[
+.tiny[
+.code90[
+
+```r
+malereg &lt;- lm(wage ~ male, data = wages)
+
+summary(malereg)
+```
+
+```
+## 
+## Call:
+## lm(formula = wage ~ male, data = wages)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -5.5995 -1.8495 -0.9877  1.4260 17.8805 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   4.5877     0.2190  20.950  &lt; 2e-16 ***
+## male          2.5118     0.3034   8.279 1.04e-15 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 3.476 on 524 degrees of freedom
+## Multiple R-squared:  0.1157,	Adjusted R-squared:  0.114 
+## F-statistic: 68.54 on 1 and 524 DF,  p-value: 1.042e-15
+```
+]
+]
+]
+
+--
+
+.pull-right[
+.tiny[
+
+```r
+library(broom)
+tidy(malereg)
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std.error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p.value"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"(Intercept)","2":"4.587659","3":"0.2189834","4":"20.949802","5":"3.012371e-71"},{"1":"male","2":"2.511830","3":"0.3034092","4":"8.278688","5":"1.041764e-15"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+]
+]
+
+---
+
+# The Dummy Regression: Male or Female
+
+.pull-left[
+.quitesmall[
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-26">
+<col><col><col><tr>
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(1)</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(2)</th></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Constant</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">4.59 ***</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">7.10 ***</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.22)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.21)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Female</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-2.51 ***</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.30)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Male</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">2.51 ***</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.30)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">N</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">526&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">526&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">R-Squared</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.12&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.12&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">SER</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3.48&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3.48&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th colspan="3" style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"> *** p &lt; 0.001;  ** p &lt; 0.01;  * p &lt; 0.05.</th></tr>
+</table>
+
+
+]
+]
+
+.pull-right[
+
+- Note it doesn't matter if we use `male` or `female`, males always earn $2.51 more than females
+
+- Compare the constant (average for the `\(D=0\)` group)
+
+- Should you use `male` AND `female`? We'll come to that...
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Categorical Variables (More than 2 Categories)
+
+---
+
+# Categorical Variables with More than 2 Categories
+
+- A .hi[categorical variable] expresses membership in a category, where there is no ranking or hierarchy of the categories
+    - We've looked at categorical variables with 2 categories only
+    - e.g. Male/Female, Spring/Summer/Fall/Winter, Democratic/Republican/Independent
+
+--
+
+- Might be an .hi[ordinal variable] expresses rank or an ordering of data, but not necessarily their relative magnitude
+    - e.g. Order of finalists in a competition (1st, 2nd, 3rd)
+    - e.g. Highest education attained (1=elementary school, 2=high school, 3=bachelor's degree, 4=graduate degree)
+
+---
+
+# Using Categorical Variables in Regression I
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: How do wages vary by region of the country? Let `\(Region_i=\{Northeast, \, Midwest, \, South, \, West\}\)`
+]
+
+--
+
+- Can we run the following regression?
+
+`$$\widehat{Wages_i}=\hat{\beta_0}+\hat{\beta_1}Region_i$$`
+
+---
+
+# Using Categorical Variables in Regression II
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: How do wages vary by region of the country? 
+
+]
+
+Code region numerically: 
+`$$Region_i=
+\begin{cases}1 &amp; \text{if } i \text{ is in }Northeast\\
+   			2 &amp; \text{if } i \text{ is in } Midwest\\
+    		3 &amp; \text{if } i \text{ is in } South \\
+   			4 &amp; \text{if } i \text{ is in } West\\ 
+\end{cases}$$`
+
+--
+
+- Can we run the following regression?
+
+`$$\widehat{Wages_i}=\hat{\beta_0}+\hat{\beta_1}Region_i$$`
+
+---
+
+# Using Categorical Variables in Regression III
+
+.smallest[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: How do wages vary by region of the country? 
+
+Create a dummy variable for *each* region: 
+
+- `\(Northeast_i = 1\)` if `\(i\)` is in Northeast, otherwise `\(=0\)`
+- `\(Midwest_i = 1\)` if `\(i\)` is in Midwest, otherwise `\(=0\)`
+- `\(South_i = 1\)` if `\(i\)` is in South, otherwise `\(=0\)`
+- `\(West_i = 1\)` if `\(i\)` is in West, otherwise `\(=0\)`
+
+]
+]
+
+--
+
+.smallest[
+- Can we run the following regression?
+
+`$$\widehat{Wages_i}=\hat{\beta_0}+\hat{\beta_1}Northeast_i+\hat{\beta_2}Midwest_i+\hat{\beta_3}South_i+\hat{\beta_4}West_i$$`
+]
+
+--
+
+.smallest[
+- For every `\(i: \, Northeast_i+Midwest_i+South_i+West_i=1\)`!
+]
+
+---
+
+# The Dummy Variable Trap
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: `\(\widehat{Wages_i}=\hat{\beta_0}+\hat{\beta_1}Northeast_i+\hat{\beta_2}Midwest_i+\hat{\beta_3}South_i+\hat{\beta_4}West_i\)`
+
+]
+
+- If we include *all* possible categories, they are .hi-purple[perfectly multicollinear], an exact linear function of one another: 
+
+`$$Northeast_i+Midwest_i+South_i+West_i=1 \quad \forall i$$`
+
+- This is known as the .hi[dummy variable trap], a common source of perfect multicollinearity 
+
+---
+
+# The Reference Category
+
+
+- To avoid the dummy variable trap, always omit one category from the regression, known as the .hi[“reference category”]
+
+- It does not matter which category we omit!
+
+- .hi-purple[Coefficients on each dummy variable measure the *difference* between the *reference* category and each category dummy]
+
+---
+
+# The Reference Category: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: `\(\widehat{Wages_i}=\hat{\beta_0}+\hat{\beta_1}Northeast_i+\hat{\beta_2}Midwest_i+\hat{\beta_3}South_i\)`
+]
+
+
+
+- `\(West_i\)` is omitted (arbitrarily chosen)
+
+--
+
+- `\(\hat{\beta_0}\)`: 
+
+---
+
+# The Reference Category: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: `\(\widehat{Wages_i}=\hat{\beta_0}+\hat{\beta_1}Northeast_i+\hat{\beta_2}Midwest_i+\hat{\beta_3}South_i\)`
+]
+
+
+
+- `\(West_i\)` is omitted (arbitrarily chosen)
+
+- `\(\hat{\beta_0}\)`: average wage for `\(i\)` in the West
+
+--
+
+- `\(\hat{\beta_1}\)`:
+
+---
+
+# The Reference Category: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: `\(\widehat{Wages_i}=\hat{\beta_0}+\hat{\beta_1}Northeast_i+\hat{\beta_2}Midwest_i+\hat{\beta_3}South_i\)`
+]
+
+
+
+- `\(West_i\)` is omitted (arbitrarily chosen)
+
+- `\(\hat{\beta_0}\)`: average wage for `\(i\)` in the West
+
+- `\(\hat{\beta_1}\)`: difference between West and Northeast
+
+--
+
+- `\(\hat{\beta_2}\)`:
+
+---
+
+# The Reference Category: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: `\(\widehat{Wages_i}=\hat{\beta_0}+\hat{\beta_1}Northeast_i+\hat{\beta_2}Midwest_i+\hat{\beta_3}South_i\)`
+]
+
+
+
+- `\(West_i\)` is omitted (arbitrarily chosen)
+
+- `\(\hat{\beta_0}\)`: average wage for `\(i\)` in the West
+
+- `\(\hat{\beta_1}\)`: difference between West and Northeast
+
+- `\(\hat{\beta_2}\)`: difference between West and Midwest
+
+--
+
+- `\(\hat{\beta_3}\)`: 
+
+---
+
+# The Reference Category: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: `\(\widehat{Wages_i}=\hat{\beta_0}+\hat{\beta_1}Northeast_i+\hat{\beta_2}Midwest_i+\hat{\beta_3}South_i\)`
+]
+
+
+
+- `\(West_i\)` is omitted (arbitrarily chosen)
+
+- `\(\hat{\beta_0}\)`: average wage for `\(i\)` in the West
+
+- `\(\hat{\beta_1}\)`: difference between West and Northeast
+
+- `\(\hat{\beta_2}\)`: difference between West and Midwest
+
+- `\(\hat{\beta_3}\)`: difference between West and South
+
+---
+
+# Dummy Variable Trap in R
+
+.smallest[
+.code50[
+
+
+
+```r
+lm(wage ~ noreast + northcen + south + west, data = wages) %&gt;% summary()
+```
+
+```
+## 
+## Call:
+## lm(formula = wage ~ noreast + northcen + south + west, data = wages)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -6.083 -2.387 -1.097  1.157 18.610 
+## 
+## Coefficients: (1 not defined because of singularities)
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   6.6134     0.3891  16.995  &lt; 2e-16 ***
+## noreast      -0.2436     0.5154  -0.473  0.63664    
+## northcen     -0.9029     0.5035  -1.793  0.07352 .  
+## south        -1.2265     0.4728  -2.594  0.00974 ** 
+## west              NA         NA      NA       NA    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 3.671 on 522 degrees of freedom
+## Multiple R-squared:  0.0175,	Adjusted R-squared:  0.01185 
+## F-statistic: 3.099 on 3 and 522 DF,  p-value: 0.02646
+```
+]
+]
+
+---
+
+# Using Different Reference Categories in R
+
+.code50[
+
+
+
+```r
+# let's run 4 regressions, each one we omit a different region
+no_noreast_reg &lt;- lm(wage ~ northcen + south + west, data = wages)
+no_northcen_reg &lt;- lm(wage ~ noreast + south + west, data = wages)
+no_south_reg &lt;- lm(wage ~ noreast + northcen + west, data = wages)
+no_west_reg &lt;- lm(wage ~ noreast + northcen + south, data = wages)
+
+# now make an output table
+library(huxtable)
+huxreg(no_noreast_reg,
+       no_northcen_reg,
+       no_south_reg,
+       no_west_reg,
+       coefs = c("Constant" = "(Intercept)",
+                 "Northeast" = "noreast",
+                 "Midwest" = "northcen",
+                 "South" = "south",
+                 "West" = "west"),
+       statistics = c("N" = "nobs",
+                      "R-Squared" = "r.squared",
+                      "SER" = "sigma"),
+       number_format = 3)
+```
+]
+
+---
+
+# Using Different Reference Categories in R II
+
+.pull-left[
+.tiny[
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-30">
+<col><col><col><col><col><tr>
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(1)</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(2)</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(3)</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(4)</th></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Constant</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">6.370 ***</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">5.710 ***</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">5.387 ***</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">6.613 ***</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.338)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.320)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.268)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.389)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Northeast</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.659&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.983 *&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-0.244&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.465)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.432)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.515)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Midwest</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-0.659&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.324&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-0.903&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.465)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.417)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.504)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">South</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-0.983 *&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-0.324&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-1.226 **&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.432)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.417)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.473)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">West</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.244&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.903&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">1.226 **&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.515)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.504)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.473)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">N</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">526&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">526&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">526&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">526&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">R-Squared</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.017&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.017&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.017&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.017&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">SER</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3.671&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3.671&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3.671&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3.671&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th colspan="5" style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"> *** p &lt; 0.001;  ** p &lt; 0.01;  * p &lt; 0.05.</th></tr>
+</table>
+
+]
+]
+
+.pull-right[
+
+.smallest[
+- Constant is alsways average wage for reference (omitted) region
+
+- Compare coefficients between Midwest in (1) and Northeast in (2)...
+
+- Compare coefficients between West in (3) and South in (4)...
+
+- Does not matter which region we omit!
+  - Same `\(R^2\)`, SER, coefficients give same results
+]
+
+]
+
+---
+
+# Dummy *Dependent* (Y) Variables
+
+.smallest[
+- In many contexts, we will want to have our *dependent* `\((Y)\)` variable be a dummy variable
+]
+--
+
+.smallest[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: 
+`$$\widehat{Admitted_i}=\hat{\beta_0}+\hat{\beta_1}GPA_i \quad \text{ where } Admitted_i =
+ 		 \begin{cases}
+    		1 &amp; \text{if } i \text{ is Admitted} \\
+   			0 &amp; \text{if } i \text{ is  Not Admitted}\\
+  		\end{cases}$$`
+]
+]
+--
+
+.smallest[
+- A model where `\(Y\)` is a dummy is called a .hi[linear probability model], as it measures the .hi-purple[probability of `\\(Y\\)` occuring `\\((=1)\\)` given the X's, i.e. `\\(P(Y_i=1|X_1, \cdots, X_k)\\)`]
+    - e.g. the probability person `\(i\)` is Admitted to a program with a given GPA
+]
+--
+
+.smallest[
+- Requires special tools to properly interpret and extend this (**logit**, **probit**, etc)
+
+- Feel free to write papers that have dummy `\(Y\)` variables (but you may have to ask me some more questions)!
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

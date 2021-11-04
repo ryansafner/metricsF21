@@ -103,8 +103,12 @@ lessons:
     slides: "3.5-slides"
 
   - title: "3.6 — Regression with Categorical Data"
+    content: "3.6-content"
+    slides: "3.6-slides"
 
   - title: "3.7 — Regression with Interaction Effects"
+    content: "3.7-content"
+    slides: "3.7-slides"
 
   - title: "3.8 — Polynomial Regression"
 

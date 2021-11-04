@@ -1,0 +1,289 @@
+---
+title: "3.7 — Regression with Interaction Effects — Class Content"
+draft: false
+linktitle: "3.7 — Regression with Interaction Effects"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 19
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "3.7-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#problem-set-4-due-tues-nov-9">Problem Set 4 Due Tues Nov 9</a></li>
+</ul></li>
+<li><a href="#appendix-marginal-effects-for-two-continuous-variable-interactions">Appendix: Marginal Effects for Two-Continuous Variable Interactions</a>
+<ul>
+<li><a href="#standard-error-of-marginal-effects">Standard Error of Marginal Effects</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Tuesday, November 9, 2021</em>
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we continue examining how to use categorical data in regression, particularly focusing on <em>interactions</em> between variables. We look at three types of interaction effects:
+1. Interaction between a continuous variable &amp; a dummy variable
+2. Interaction between two dummy variables
+3. Interaction between two continuous variables</p>
+<p>We will also be working on <a href="/r/3.7-r">practice problems</a> today in R.</p>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Ch. 6.3—6.4 in Bailey, <em>Real Econometrics</em></li>
+</ul>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="r-practice" class="section level2">
+<h2><i class="fas fa-registered"></i> R Practice</h2>
+<p>Today you will be working on <a href="/r/3.7-r">R practice problems</a> on multivariate regression. Answers will be posted later on that page.</p>
+</div>
+<div id="assignments" class="section level2">
+<h2><i class="fas fa-laptop-code"></i> Assignments</h2>
+<div id="problem-set-4-due-tues-nov-9" class="section level3">
+<h3>Problem Set 4 Due Tues Nov 9</h3>
+<p><a href="/assignments/04-problem-set">Problem Set 4</a> is due by the end of the day on Tuesday, November 9.</p>
+</div>
+</div>
+<div id="appendix-marginal-effects-for-two-continuous-variable-interactions" class="section level1">
+<h1>Appendix: Marginal Effects for Two-Continuous Variable Interactions</h1>
+<p>In class, we looked at the effects of education on wages, experience on wages, and the <em>interaction</em> between education and experience on wages:</p>
+<p><span class="math display">\[\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1} \, education_i+\hat{\beta_2} \, experience_i+\hat{\beta_3}(education_i \times experience_i)\]</span></p>
+<p>Using the <code>wage1</code> data in the <code>wooldridge</code> package, we found the following:</p>
+<pre class="r"><code>library(tidyverse)
+library(broom)
+library(wooldridge)
+wages &lt;- wage1
+reg_cont &lt;- lm(wage ~ educ + exper + educ:exper, data = wages)
+reg_cont %&gt;% tidy()</code></pre>
+<pre><code>## # A tibble: 4 × 5
+##   term        estimate std.error statistic  p.value
+##   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept) -2.86      1.18       -2.42  1.58e- 2
+## 2 educ         0.602     0.0899      6.69  5.64e-11
+## 3 exper        0.0458    0.0426      1.07  2.83e- 1
+## 4 educ:exper   0.00206   0.00349     0.591 5.55e- 1</code></pre>
+<p>Let’s extract and save each of these <span class="math inline">\(\hat{\beta}\)</span>’s for later use.</p>
+<pre class="r"><code>b_1 &lt;- reg_cont %&gt;%
+  tidy() %&gt;%
+  filter(term == &quot;educ&quot;) %&gt;%
+  pull(estimate)
+
+b_2 &lt;- reg_cont %&gt;%
+  tidy() %&gt;%
+  filter(term == &quot;exper&quot;) %&gt;%
+  pull(estimate)
+
+b_3 &lt;- reg_cont %&gt;%
+  tidy() %&gt;%
+  filter(term == &quot;educ:exper&quot;) %&gt;%
+  pull(estimate)
+
+# let&#39;s check each of these
+b_1</code></pre>
+<pre><code>## [1] 0.6017355</code></pre>
+<pre class="r"><code>b_2</code></pre>
+<pre><code>## [1] 0.04576891</code></pre>
+<pre class="r"><code>b_3</code></pre>
+<pre><code>## [1] 0.002062345</code></pre>
+<p>We know that the marginal effect of each of the two <span class="math inline">\(X\)</span> variables on <span class="math inline">\(Y\)</span> depends on the value of the other <span class="math inline">\(X\)</span> variable:</p>
+<table>
+<colgroup>
+<col width="12%" />
+<col width="43%" />
+<col width="44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Marginal Effect on Wages (Formula)</th>
+<th>Marginal Effect on Wages (Estimate)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Education</td>
+<td><span class="math inline">\(\hat{\beta_1}+\hat{\beta_3} \, Experience_i\)</span></td>
+<td>0.6037978 <span class="math inline">\(\, Experience_i\)</span></td>
+</tr>
+<tr class="even">
+<td>Experience</td>
+<td><span class="math inline">\(\hat{\beta_2}+\hat{\beta_3} \, Education_i\)</span></td>
+<td>0.6037978 <span class="math inline">\(\, Education_i\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>We can get the marginal effects more precisely by making a <strong>function</strong> of each marginal effect, using the coefficients saved above. To make a your own function in <code>R</code> (a very handy thing to do!), simply define an object as <code>my_function&lt;- function(){}</code>. Inside the <code>()</code> goes any arguments the function will need (here, it’s the value of the other variable), and then the formula to apply to that argument. Then you can run the function on any object.</p>
+<p>As a simple example, to make a function that squares x:</p>
+<pre class="r"><code># make function called &quot;square&quot; that squares x
+square&lt;-function(x){x^2}
+
+# test it on the value 4
+square(4)</code></pre>
+<pre><code>## [1] 16</code></pre>
+<pre class="r"><code># test it on all of these values
+square(1:4)</code></pre>
+<pre><code>## [1]  1  4  9 16</code></pre>
+<p>Now let’s make a function for the marginal effect of education (by experience):</p>
+<pre class="r"><code># make marginal effect of education on wages by years of experience function
+# input is years of experience
+me_educ&lt;-function(exper){b_1*b_3*exper}
+
+# now its a function, let&#39;s input 5 years, 10 years, 15 years of experience
+me_educ(c(5,10,15))</code></pre>
+<pre><code>## [1] 0.006204929 0.012409858 0.018614788</code></pre>
+<p>Now let’s make a function for the marginal effect of experience (by education):</p>
+<pre class="r"><code># make marginal effect of experience on wages by years of education function
+# input is years of education
+me_exper&lt;-function(educ){b_2*b_3*educ}
+
+# now its a function, let&#39;s input 5 years, 10 years, 15 years of education
+me_exper(c(5,10,15))</code></pre>
+<pre><code>## [1] 0.0004719563 0.0009439126 0.0014158689</code></pre>
+<p>We can now graph these</p>
+<pre class="r"><code>margin_educ&lt;-ggplot(data = wages)+
+  aes(x = exper)+
+  stat_function(fun = me_educ, geom = &quot;line&quot;, color = &quot;blue&quot;)+
+  scale_y_continuous(labels = scales::dollar)+
+  labs(x = &quot;Years of Experience&quot;,
+       y = &quot;Marginal Effect of Education on Wages&quot;,
+       title = &quot;Effect of Education on Wages, by Years of Experience&quot;)+
+  ggthemes::theme_pander(base_family = &quot;Fira Sans Condensed&quot;, base_size = 14)
+margin_educ</code></pre>
+<p><img src="/content/3.7-content_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>margin_exper&lt;-ggplot(data = wages)+
+  aes(x = educ)+
+  stat_function(fun = me_exper, geom = &quot;line&quot;, color = &quot;blue&quot;)+
+  scale_y_continuous(labels = function(x){paste0(&quot;$&quot;,x)})+
+  labs(x = &quot;Years of Education&quot;,
+       y = &quot;Marginal Effect of Experience on Wages&quot;,
+       title = &quot;Effect of Experience on Wages, by Years of Education&quot;)+
+  ggthemes::theme_pander(base_family = &quot;Fira Sans Condensed&quot;, base_size = 14)
+margin_exper</code></pre>
+<p><img src="/content/3.7-content_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div id="standard-error-of-marginal-effects" class="section level2">
+<h2>Standard Error of Marginal Effects</h2>
+<p>If we want to add the standard error to these graphs, we need to extract the <span class="math inline">\(se(\hat{\beta})\)</span>’s from the original regression output:</p>
+<pre class="r"><code>se_b_1 &lt;- reg_cont %&gt;%
+  tidy() %&gt;%
+  filter(term == &quot;educ&quot;) %&gt;%
+  pull(std.error)
+
+se_b_2 &lt;- reg_cont %&gt;%
+  tidy() %&gt;%
+  filter(term == &quot;exper&quot;) %&gt;%
+  pull(std.error)
+
+se_b_3 &lt;- reg_cont %&gt;%
+  tidy() %&gt;%
+  filter(term == &quot;educ:exper&quot;) %&gt;%
+  pull(std.error)
+
+# let&#39;s check each of these
+se_b_1</code></pre>
+<pre><code>## [1] 0.08989998</code></pre>
+<pre class="r"><code>se_b_2</code></pre>
+<pre><code>## [1] 0.04261376</code></pre>
+<pre class="r"><code>se_b_3</code></pre>
+<pre><code>## [1] 0.003490614</code></pre>
+<p>Now the standard error of the marginal effect is a bit tricky. The marginal effect, for example, of Education on Wages, we saw was <span class="math inline">\(\frac{\Delta Wage_i}{\Delta Education_i} = \hat{\beta_1}+\hat{\beta_3} \, Experience_i\)</span>. One property of variances (or, when square rooted, standard errors) of random variables is that:</p>
+<p><span class="math display">\[var(X+aY)=var(X)+var(Y)c^2+2 \, a \, cov(X,Y)\]</span></p>
+<p>Here, the <span class="math inline">\(\hat{\beta}\)</span>’s are random variables, and <span class="math inline">\(Experience_i\)</span> is a constant (some number, like <span class="math inline">\(a)\)</span>. So the variance is:</p>
+<p><span class="math display">\[var(\hat{\beta_1}+\hat{\beta_3}Experience_i)=var(\hat{\beta_1})+var(\hat{\beta_3})Experience_i^2+2 \, Experience_i \, cov(\hat{\beta_1},\hat{\beta_3})\]</span></p>
+<p>The standard error then is the square root of this. To get the covariance of <span class="math inline">\(\hat{\beta_1}\)</span> and <span class="math inline">\(\hat{\beta_3}\)</span>, we need to extract it from something called the <strong>variance-covariance matrix</strong>. A regression creates and stores a matrix that contains the covariances of all <span class="math inline">\(\hat{\beta}\)</span>’s with each other (and the covariance of any <span class="math inline">\(\hat{\beta}\)</span> with itself is the variance of that <span class="math inline">\(\hat{\beta})\)</span>:</p>
+<pre class="r"><code># look at variance-covariance matrix
+vcov(reg_cont)</code></pre>
+<pre><code>##              (Intercept)          educ         exper    educ:exper
+## (Intercept)  1.394949133 -0.1040894353 -0.0412570602  3.134939e-03
+## educ        -0.104089435  0.0080820059  0.0031414567 -2.513073e-04
+## exper       -0.041257060  0.0031414567  0.0018159324 -1.437215e-04
+## educ:exper   0.003134939 -0.0002513073 -0.0001437215  1.218438e-05</code></pre>
+<pre class="r"><code># make it a tibble to work with using tidyverse methods
+v&lt;-as_tibble(vcov(reg_cont))
+
+# we want the covariance between beta 1 and beta 3, save as &quot;cov_b1_b3&quot;
+cov_b1_b3&lt;-v %&gt;%
+  slice(2) %&gt;%
+  pull(`educ:exper`) 
+cov_b1_b3 # look at it</code></pre>
+<pre><code>## [1] -0.0002513073</code></pre>
+<pre class="r"><code># lets also get the covariance between beta 2 and beta 3 (for later)
+
+cov_b2_b3&lt;-v %&gt;%
+  slice(3) %&gt;%
+  pull(`educ:exper`)
+cov_b2_b3</code></pre>
+<pre><code>## [1] -0.0001437215</code></pre>
+<pre class="r"><code># make a function of the variance of the marginal effect of education on wages
+var_me_educ=function(experience){(se_b_1)^2+(se_b_3)^2*experience+2*experience*cov_b1_b3}
+
+# now square root it to get standard error
+se_me_educ=function(experience){sqrt(var_me_educ(experience))}
+
+# to plot a 95% confidence interval of the marginal effect, lets make upper and lower CI values as a function of experience
+CI_me_educ_upper=function(experience){me_educ(experience)+1.96*se_me_educ(experience)}
+CI_me_educ_lower=function(experience){me_educ(experience)-1.96*se_me_educ(experience)}
+
+# lets now add these into the data
+wages2&lt;-wages %&gt;%
+  select(exper) %&gt;%
+  mutate(me_educ = me_educ(exper),
+         CI_educ_lower = CI_me_educ_lower(exper),
+         CI_educ_upper = CI_me_educ_upper(exper)
+         )</code></pre>
+<pre><code>## Warning in sqrt(var_me_educ(experience)): NaNs produced
+
+## Warning in sqrt(var_me_educ(experience)): NaNs produced</code></pre>
+<pre class="r"><code># and graph it!
+margin_educ+
+  geom_ribbon(data = wages2, aes(ymin=CI_educ_lower, ymax=CI_educ_upper), fill = &quot;grey70&quot;, alpha = 0.5)</code></pre>
+<p><img src="/content/3.7-content_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<pre class="r"><code># do the same for the marginal effect of experience on wages
+var_me_exper=function(education){(se_b_2)^2+(se_b_3)^2*education+2*education*cov_b2_b3}
+
+# now square root it to get standard error
+se_me_exper=function(education){sqrt(var_me_educ(education))}
+
+# to plot a 95% confidence interval of the marginal effect, lets make upper and lower CI values as a function of experience
+CI_me_exper_upper=function(education){me_exper(education)+1.96*se_me_exper(education)}
+CI_me_exper_lower=function(education){me_exper(education)-1.96*se_me_exper(education)}
+
+# lets now add these into the data
+wages3&lt;-wages %&gt;%
+  select(educ) %&gt;%
+  mutate(me_exper = me_exper(educ),
+         CI_exper_lower = CI_me_exper_lower(educ),
+         CI_exper_upper = CI_me_exper_upper(educ)
+         )</code></pre>
+<pre><code>## Warning in sqrt(var_me_educ(education)): NaNs produced
+
+## Warning in sqrt(var_me_educ(education)): NaNs produced</code></pre>
+<pre class="r"><code># and graph it!
+margin_exper+
+  geom_ribbon(data = wages3, aes(ymin=CI_exper_lower, ymax=CI_exper_upper), fill = &quot;grey70&quot;, alpha = 0.5)+
+  scale_x_continuous(limits=c(0,20))</code></pre>
+<p><img src="/content/3.7-content_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+</div>
+</div>
