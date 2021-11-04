@@ -142,7 +142,7 @@ ggplot(data = data.frame(x = 0:6))+
   stat_function(fun = dnorm, args = list(mean = 2.51, sd = 0.29), color = "purple")+
   labs(x = "Wage Difference",
        y = "Density")+
-  scale_x_continuous(nreaks = seq(0,6,1),
+  scale_x_continuous(breaks = seq(0,6,1),
                      labels = scales::dollar)+
   theme_light()
 ```

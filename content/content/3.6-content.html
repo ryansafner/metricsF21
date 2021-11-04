@@ -1,17 +1,17 @@
 ---
-title: "3.5 — Reading and Writing Empirical Papers — Class Content"
+title: "3.6 — Regression with Categorical Data — Class Content"
 draft: false
-linktitle: "3.5 — Reading and Writing Empirical Papers"
+linktitle: "3.6 — Regression with Categorical Data"
 date: "2020-06-08"
 menu:
   content:
     parent: Course content
-    weight: 17
+    weight: 18
 type: docs
 output:
   blogdown::html_page:
     toc: true
-slides: "3.5-slides"
+slides: "3.6-slides"
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
@@ -21,42 +21,37 @@ slides: "3.5-slides"
 <li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
 <li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
 <li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
-<li><a href="#r-practice"><i class="fas fa-registered"></i> R Practice</a></li>
 <li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
 <ul>
 <li><a href="#problem-set-4-due-tues-nov-9">Problem Set 4 Due Tues Nov 9</a></li>
+</ul></li>
+<li><a href="#appendix-t-test-for-difference-in-group-means">Appendix: T-Test for Difference in Group Means</a>
+<ul>
+<li><a href="#the-sampling-distribution-of-d">The Sampling Distribution of <span class="math inline">\(d\)</span></a></li>
+<li><a href="#the-t-test-in-r">The <span class="math inline">\(t\)</span>-test in <code>R</code></a></li>
 </ul></li>
 </ul>
 </div>
 
 <p>{{% alert note %}}
-<em>Tuesday, November 2, 2021</em>
+<em>Thursday, November 4, 2021</em>
 {{% /alert %}}</p>
 <div id="overview" class="section level2">
 <h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
-<p>Today we discuss the elements of a good empirical paper, with an eye towards your <a href="/assignments/research-aperp">paper projects</a>.</p>
-<p>I highly recommend you look at my example repositories:</p>
-<ul>
-<li><a href="https://github.com/ryansafner/workflow"><i class="fab fa-github"></i> Workflow</a></li>
-<li><a href="https://github.com/ryansafner/example_empirical_paper"><i class="fab fa-github"></i> Example Empirical Paper</a></li>
-</ul>
-<p>The first is one that I showed you back in <a href="/content/1.5-content">class 1.5</a> when we talked about R Markdown and having a reproducible, plain-text, workflow. It has an example workflow setup that I recommend you follow: create an R project for your project, and organize all of your data, code, images, &amp; text in this set of folders inside of your project.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> You can look at <code>Example_paper.Rmd</code> to see my text and code in R markdown to write the paper, and look at <code>Example_paper.pdf</code> to see the final product.</p>
-<p>The second is a quick and dirty example of what I am looking for in your paper project in this class, using the ongoing example of the effect of class size on test scores. You can also look at <code>paper.Rmd</code> to see my text and code in R markdown, and <code>paper.pdf</code> to see the final product. Note that this is an example I put quickly together with minimal effort as an example for you all, it does <em>not</em> necessarily mean it is an “A” quality paper!</p>
-<p>If you are using R markdown to write your final paper, you should consult <a href="/content/1.5-content">class 1.5</a> again, along with the <a href="/r/1.5-r">1.5 “R practice”</a> that deals with the workflow repository.</p>
+<p>Today we look at how to use data that is categorical (i.e. variables that indicate an observation’s membership in a particular group or category). We introduce them into regression models as <strong>dummy variables</strong> that can equal 0 or 1: where 1 indicates membership in a category, and 0 indicates non-membership.</p>
+<p>We also look at what happens when categorical variables have more than two values: for regression, we introduce a dummy variable for each possible category - but be sure to leave out one reference category to avoid the dummy variable trap.</p>
 </div>
 <div id="readings" class="section level2">
 <h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
-<p>There are no readings for today, but you should look at the materials mentioned above.</p>
+<ul>
+<li><i class="fas fa-book"></i> Ch. 6.1—6.2 in Bailey, <em>Real Econometrics</em></li>
+</ul>
 </div>
 <div id="slides" class="section level2">
 <h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
 <p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
 <p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
 <p>{{% slide-links %}}</p>
-</div>
-<div id="r-practice" class="section level2">
-<h2><i class="fas fa-registered"></i> R Practice</h2>
-<p>Today you will be wrapping up <a href="/r/3.4-r">R practice problems</a> on multivariate regression. Answers will be posted later on that page.</p>
 </div>
 <div id="assignments" class="section level2">
 <h2><i class="fas fa-laptop-code"></i> Assignments</h2>
@@ -65,9 +60,145 @@ slides: "3.5-slides"
 <p><a href="/assignments/04-problem-set">Problem Set 4</a> is due by the end of the day on Tuesday, November 9.</p>
 </div>
 </div>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>I also recommend you at least save this folder on Dropbox to keep it safe!<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-</ol>
+<div id="appendix-t-test-for-difference-in-group-means" class="section level1">
+<h1>Appendix: T-Test for Difference in Group Means</h1>
+<p>Often we want to compare the means between two groups, and see if the difference is statistically significant. As an example, <strong>is there a statistically significant difference in average hourly earnings between men and women</strong>? Let:</p>
+<ul>
+<li><span class="math inline">\(\mu_W\)</span>: mean hourly earnings for female college graduates</li>
+<li><span class="math inline">\(\mu_M\)</span>: mean hourly earnings for male college graduates</li>
+</ul>
+<p>We want to run a hypothesis test for the difference <span class="math inline">\((d)\)</span> in these two population means:
+<span class="math display">\[\mu_M-\mu_W=d_0\]</span></p>
+<p>Our null hypothesis is that there is <em>no</em> statistically significant difference. Let’s also have a two-sided alternative hypothesis, simply that there <em>is</em> a difference (positive or negative).</p>
+<ul>
+<li><span class="math inline">\(H_0: d=0\)</span></li>
+<li><span class="math inline">\(H_1: d \neq 0\)</span></li>
+</ul>
+<p>Note a logical one-sided alternative would be <span class="math inline">\(H_2: d &gt; 0\)</span>, i.e. men earn more than women</p>
+<div id="the-sampling-distribution-of-d" class="section level3">
+<h3>The Sampling Distribution of <span class="math inline">\(d\)</span></h3>
+<p>The <em>true</em> population means <span class="math inline">\(\mu_M, \mu_W\)</span> are unknown, we must estimate them from <em>samples</em> of men and women. Let:
+- <span class="math inline">\(\bar{Y}_M\)</span> the average earnings of a sample of <span class="math inline">\(n_M\)</span> men<br />
+- <span class="math inline">\(\bar{Y}_W\)</span> the average earnings of a sample of <span class="math inline">\(n_W\)</span> women</p>
+<p>We then estimate <span class="math inline">\((\mu_M-\mu_W)\)</span> with the sample <span class="math inline">\((\bar{Y}_M-\bar{Y}_W)\)</span>.</p>
+<p>We would then run a <strong>t-test</strong> and calculate the <strong>test-statistic</strong> for the difference in means. The formula for the test statistic is:</p>
+<p><span class="math display">\[t = \frac{(\bar{Y_M}-\bar{Y_W})-d_0}{\sqrt{\frac{s_M^2}{n_M}+\frac{s_W^2}{n_W}}}\]</span></p>
+<p>We then compare <span class="math inline">\(t\)</span> against the critical value <span class="math inline">\(t^*\)</span>, or calculate the <span class="math inline">\(p\)</span>-value <span class="math inline">\(P(T&gt;t)\)</span> as usual to determine if we have sufficient evidence to reject <span class="math inline">\(H_0\)</span></p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+## ✓ tibble  3.1.5     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+## ✓ readr   2.0.0     ✓ forcats 0.5.1</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(wooldridge)
+# Our data comes from wage1 in the wooldridge package
+
+wages &lt;- wage1
+
+# look at average wage for men
+
+wages %&gt;%
+  filter(female == 0) %&gt;%
+  summarize(average = mean(wage),
+            sd = sd(wage))</code></pre>
+<pre><code>##    average       sd
+## 1 7.099489 4.160858</code></pre>
+<pre class="r"><code># look at average wage for women
+
+wages %&gt;%
+  filter(female == 1) %&gt;%
+  summarize(average = mean(wage),
+            sd = sd(wage))</code></pre>
+<pre><code>##    average       sd
+## 1 4.587659 2.529363</code></pre>
+<p>So our data is telling us that male and female average hourly earnings are distributed as such:</p>
+<p><span class="math display">\[\begin{align*}
+\bar{Y}_M &amp;\sim N(7.10,4.16)\\
+\bar{Y}_W &amp;\sim N(4.59,2.53)\\
+\end{align*}\]</span></p>
+<p>We can plot this to see visually. There is a lot of overlap in the two distributions, but the male average is higher than the female average, and there is also a lot more variation in males than females, noticeably the male distribution skews further to the right.</p>
+<pre class="r"><code>wages$female &lt;- as.factor(wages$female)
+
+ggplot(data = wages)+
+  aes(x = wage,
+      fill = female)+
+  geom_density(alpha = 0.5)+
+  scale_x_continuous(breaks = seq(0,25,5),
+                     name = &quot;Wage&quot;,
+                     labels = scales::dollar)+
+  theme_light()</code></pre>
+<p><img src="/content/3.6-content_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Knowing the distributions of male and female average hourly earnings, we can estimate the <strong>sampling distribution of the difference in group eans</strong> between men and women as:</p>
+<p>The mean:
+<span class="math display">\[\begin{align*}
+\bar{d}&amp;=\bar{Y}_M-\bar{Y}_W\\
+\bar{d}&amp;=7.10-4.59\\
+\bar{d}&amp;=2.51\\
+\end{align*}\]</span></p>
+<p>The standard error of the mean:
+<span class="math display">\[\begin{align*}
+SE(\bar{d})&amp;=\sqrt{\frac{s_M^2}{n_M}+\frac{s_W^2}{n_W}}\\
+&amp;=\sqrt{\frac{4.16^2}{274}+\frac{2.33^2}{252}}\\
+&amp; \approx 0.29\\
+\end{align*}\]</span></p>
+<p>So the sampling distribution of the difference in group means is distributed:
+<span class="math display">\[\bar{d} \sim N(2.51,0.29)\]</span></p>
+<pre class="r"><code>ggplot(data = data.frame(x = 0:6))+
+  aes(x = x)+
+  stat_function(fun = dnorm, args = list(mean = 2.51, sd = 0.29), color = &quot;purple&quot;)+
+  labs(x = &quot;Wage Difference&quot;,
+       y = &quot;Density&quot;)+
+  scale_x_continuous(breaks = seq(0,6,1),
+                     labels = scales::dollar)+
+  theme_light()</code></pre>
+<p><img src="/content/3.6-content_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Now we the <strong><span class="math inline">\(t\)</span>-test</strong> like any other:</p>
+<p><span class="math display">\[\begin{align*}
+t&amp;=\frac{\text{estimate}-\text{null hypothesis}}{\text{standard error of the estimate}}\\
+&amp;=\frac{d-0}{SE(d)}\\
+&amp;=\frac{2.51-0}{0.29}\\
+&amp;=8.66\\
+\end{align*}\]</span></p>
+<p>This is statistically significant. The <span class="math inline">\(p\)</span>-value, <span class="math inline">\(P(t&gt;8.66)=\)</span> is 0.000000000000000000410, or basically, 0.</p>
+<pre class="r"><code>pt(8.66,456.33, lower.tail = FALSE)</code></pre>
+<pre><code>## [1] 4.102729e-17</code></pre>
+</div>
+<div id="the-t-test-in-r" class="section level3">
+<h3>The <span class="math inline">\(t\)</span>-test in <code>R</code></h3>
+<pre class="r"><code>t.test(wage ~ female, data = wages, var.equal = FALSE)</code></pre>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  wage by female
+## t = 8.44, df = 456.33, p-value = 4.243e-16
+## alternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0
+## 95 percent confidence interval:
+##  1.926971 3.096690
+## sample estimates:
+## mean in group 0 mean in group 1 
+##        7.099489        4.587659</code></pre>
+<pre class="r"><code>reg &lt;- lm(wage~female, data = wages)
+summary(reg)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = wage ~ female, data = wages)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -5.5995 -1.8495 -0.9877  1.4260 17.8805 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   7.0995     0.2100  33.806  &lt; 2e-16 ***
+## female1      -2.5118     0.3034  -8.279 1.04e-15 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 3.476 on 524 degrees of freedom
+## Multiple R-squared:  0.1157, Adjusted R-squared:  0.114 
+## F-statistic: 68.54 on 1 and 524 DF,  p-value: 1.042e-15</code></pre>
+</div>
 </div>
