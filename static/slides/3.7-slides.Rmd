@@ -94,7 +94,7 @@ class: inverse
 --
 
 .smallest[
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Consider the gender pay gap again.
 ]
 ]
@@ -342,7 +342,7 @@ $$Y_i=\beta_0+\beta_1X_i+\beta_2 D_i+\beta_3 \color{#e64173}{(X_i \times D_i)}$$
 
 # Example I
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}exper_i+\hat{\beta_2}female_i+\hat{\beta_3}(exper_i \times female_i)$$
 
 ]
@@ -766,7 +766,7 @@ $$\color{#6A5ACD}{\beta_1+\beta_3 d_2}$$
 # Interactions Between 2 Dummy Variables: Example
 
 .smallest[
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Does the gender pay gap change if a person is married vs. single?
 
 $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}female_i+\hat{\beta_2}married_i+\hat{\beta_3}(female_i \times married_i)$$
@@ -793,7 +793,7 @@ $$\widehat{wage_i}=\hat{\beta_0}$$
 # Interactions Between 2 Dummy Variables: Example
 
 .smallest[
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Does the gender pay gap change if a person is married vs. single?
 
 $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}female_i+\hat{\beta_2}married_i+\hat{\beta_3}(female_i \times married_i)$$
@@ -830,7 +830,7 @@ $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}$$
 
 
 .smallest[
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Does the gender pay gap change if a person is married vs. single?
 
 $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}female_i+\hat{\beta_2}married_i+\hat{\beta_3}(female_i \times married_i)$$
@@ -1092,7 +1092,7 @@ $$\begin{align*}
 # Continuous Variables Interaction: Example
 
 .smallest[
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Do education and experience interact in their determination of wages?
 
 $$	\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1} \, educ_i+\hat{\beta_2} \, exper_i+\hat{\beta_3}(educ_i \times exper_i)$$

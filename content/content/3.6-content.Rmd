@@ -41,7 +41,7 @@ The lower button will allow you to download a PDF version of the slides. I sugge
 ### Problem Set 4 Due Tues Nov 9
 [Problem Set 4](/assignments/04-problem-set) is due by the end of the day on Tuesday, November 9.
 
-# Appendix: T-Test for Difference in Group Means
+## Appendix: T-Test for Difference in Group Means
 
 Often we want to compare the means between two groups, and see if the difference is statistically significant. As an example, **is there a statistically significant difference in average hourly earnings between men and women**? Let:
 
