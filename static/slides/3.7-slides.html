@@ -950,10 +950,11 @@ wages %&gt;%
 
 `$$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}female_i+\hat{\beta_2}married_i+\hat{\beta_3}(female_i \times married_i)$$`
 
-|  | Men | Women |
+|  | .hi-blue[Men] |.hi[Women] |
 |--------|-----------|---------|
-| **Unmarried**   | $5.17     | $4.61   |
-| **Married** | $7.98     | $4.57   |
+| .hi-orange[Unmarried]   | $5.17     | $4.61   |
+| .hi-turquoise[Married] | $7.98     | $4.57   |
+
 
 ---
 
@@ -1041,10 +1042,11 @@ huxreg(reg_dummies,
 .smallest[
 `$$\widehat{wage_i}=5.17-0.56 \, female_i + 2.82 \, married_i - 2.86 \, (female_i \times married_i)$$`
 
-|  | Men | Women |
+|  | .hi-blue[Men] |.hi[Women] |
 |--------|-----------|---------|
-| **Unmarried**   | $5.17     | $4.61   |
-| **Married** | $7.98     | $4.57   |
+| .hi-orange[Unmarried]   | $5.17     | $4.61   |
+| .hi-turquoise[Married] | $7.98     | $4.57   |
+
 
 ]
 
@@ -1080,10 +1082,10 @@ huxreg(reg_dummies,
 .smallest[
 `$$\widehat{wage_i}=5.17-0.56 \, female_i + 2.82 \, married_i - 2.86 \, (female_i \times married_i)$$`
 
-|  | Men | Women |
+|  | .hi-blue[Men] |.hi[Women] |
 |--------|-----------|---------|
-| **Unmarried**   | $5.17     | $4.61   |
-| **Married** | $7.98     | $4.57   |
+| .hi-orange[Unmarried]   | $5.17     | $4.61   |
+| .hi-turquoise[Married] | $7.98     | $4.57   |
 
 ]
 
@@ -1097,20 +1099,20 @@ huxreg(reg_dummies,
 --
 
 .smallest[
-- `\(\hat{\beta_2}\)`: Effect of .hi-turquoise[marriage] on wages for .hi-blue[men]
+- `\(\hat{\beta_1}\)`: **Difference** in wages between .hi-blue[men] and .hi[women] who are .hi-orange[unmarried]
 
 ]
 
 --
 
 .smallest[
-- `\(\hat{\beta_2}\)`: *Difference* in wages between .hi-blue[men] and .hi[women] who are .hi-orange[unmarried] 
+- `\(\hat{\beta_2}\)`: **Difference** in wages between .hi-turquoise[married] and .hi-orange[unmarried] .hi-blue[men]
 
 ]
 --
 
 .smallest[
-- `\(\hat{\beta_3}\)`: *Difference* in:
+- `\(\hat{\beta_3}\)`: **Difference** in:
   - effect of **Marriage** on wages between .hi-blue[men] and .hi[women]
   - effect of **Gender** on wages between .hi-orange[unmarried] and .hi-turquoise[married] individuals
 
