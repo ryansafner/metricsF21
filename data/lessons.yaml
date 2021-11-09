@@ -109,6 +109,7 @@ lessons:
   - title: "3.7 — Regression with Interaction Effects"
     content: "3.7-content"
     slides: "3.7-slides"
+    r: "3.7-r"
 
   - title: "3.8 — Polynomial Regression"
 

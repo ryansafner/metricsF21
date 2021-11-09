@@ -478,7 +478,17 @@ huxreg(interaction_reg,
 .pull-right[
 
 .quitesmall[
-```{r, ref.label="huxreg1"}
+```{r,}
+huxtable::huxreg(interaction_reg,
+       coefs = c("Constant" = "(Intercept)",
+                 "Experience" = "exper",
+                 "Female" = "female",
+                 "Experience * Female" = "exper:female"),
+       statistics = c("N" = "nobs",
+                      "R-Squared" = "r.squared",
+                      "SER" = "sigma"),
+       number_format = 2)
+
 ```
 ]
 ]
@@ -499,7 +509,7 @@ $$\widehat{wage_i}=6.16+0.05 \, Experience_i - 1.55 \, Female_i - 0.06 \, (Exper
 
 $$\widehat{wage_i}=6.16+0.05 \, Experience_i - 1.55 \, Female_i - 0.06 \, (Experience_i \times Female_i)$$
 
-- $\hat{\beta_0}$: Men with 0 years of experience earn 6.16
+- $\hat{\beta_0}$: **Men** with 0 years of experience earn 6.16
 
 --
 
@@ -511,9 +521,9 @@ $$\widehat{wage_i}=6.16+0.05 \, Experience_i - 1.55 \, Female_i - 0.06 \, (Exper
 
 $$\widehat{wage_i}=6.16+0.05 \, Experience_i - 1.55 \, Female_i - 0.06 \, (Experience_i \times Female_i)$$
 
-- $\hat{\beta_0}$: Men with 0 years of experience earn 6.16
+- $\hat{\beta_0}$: **Men** with 0 years of experience earn 6.16
 
-- $\hat{\beta_1}$: For every additional year of experience, *men* earn $0.05
+- $\hat{\beta_1}$: For every additional year of experience, **men** earn $0.05
 
 --
 
@@ -525,11 +535,11 @@ $$\widehat{wage_i}=6.16+0.05 \, Experience_i - 1.55 \, Female_i - 0.06 \, (Exper
 
 $$\widehat{wage_i}=6.16+0.05 \, Experience_i - 1.55 \, Female_i - 0.06 \, (Experience_i \times Female_i)$$
 
-- $\hat{\beta_0}$: Men with 0 years of experience earn 6.16
+- $\hat{\beta_0}$: **Men** with 0 years of experience earn 6.16
 
-- $\hat{\beta_1}$: For every additional year of experience, *men* earn $0.05
+- $\hat{\beta_1}$: For every additional year of experience, **men** earn $0.05
 
-- $\hat{\beta_2}$: *Women* with 0 years of experience earn $1.55 less than men
+- $\hat{\beta_2}$: **Women** with 0 years of experience earn $1.55 **less than men**
 
 --
 
@@ -541,13 +551,13 @@ $$\widehat{wage_i}=6.16+0.05 \, Experience_i - 1.55 \, Female_i - 0.06 \, (Exper
 
 $$\widehat{wage_i}=6.16+0.05 \, Experience_i - 1.55 \, Female_i - 0.06 \, (Experience_i \times Female_i)$$
 
-- $\hat{\beta_0}$: Men with 0 years of experience earn 6.16
+- $\hat{\beta_0}$: **Men** with 0 years of experience earn 6.16
 
-- $\hat{\beta_1}$: For every additional year of experience, *men* earn $0.05
+- $\hat{\beta_1}$: For every additional year of experience, **men** earn $0.05
 
-- $\hat{\beta_2}$: *Women* with 0 years of experience earn $1.55 less than men
+- $\hat{\beta_2}$: **Women** with 0 years of experience earn $1.55 **less than men**
 
-- $\hat{\beta_3}$: *Women* earn $0.06 less than men for every additional year of experience
+- $\hat{\beta_3}$: **Women** earn $0.06 **less than men** for every additional year of experience
 
 ---
 
@@ -628,7 +638,7 @@ tidy(interaction_reg)
 - .purple[Are intercepts different?] $\color{#6A5ACD}{H_0: \beta_2=0}$
   - Difference between men vs. women for no experience?
   - Is $\hat{\beta_2}$ significant?
-  - .purple[Yes (reject)] $\color{#6A5ACD}{H_0}$: $t = -3.210$, $p$-value = 0.00
+  - .purple[Yes (reject)] $\color{#6A5ACD}{H_0}$: $p$-value = 0.00
 
 ]
 ]
@@ -661,12 +671,12 @@ tidy(interaction_reg)
 - .purple[Are intercepts different?] $\color{#6A5ACD}{H_0: \beta_2=0}$
   - Difference between men vs. women for no experience?
   - Is $\hat{\beta_2}$ significant?
-  - .purple[Yes (reject)] $\color{#6A5ACD}{H_0}$: $t = -3.210$, $p$-value = 0.00
+  - .purple[Yes (reject)] $\color{#6A5ACD}{H_0}$: $p$-value = 0.00
 
 - .purple[Are slopes different?] $\color{#6A5ACD}{H_0: \beta_3=0}$
   - Difference between men vs. women for marginal effect of experience?
   - Is $\hat{\beta_3}$ significant?
-  - .purple[Yes (reject)] $\color{#6A5ACD}{H_0}$: $t = -2.48$, $p$-value = 0.01
+  - .purple[Yes (reject)] $\color{#6A5ACD}{H_0}$: $p$-value = 0.01
 ]
 ]
 
@@ -741,12 +751,12 @@ $$Y_i=\beta_0+\beta_1D_{1i}+\beta_2 D_{2i}+\beta_3 \color{#e64173}{(D_{1i} \time
 
 .smallest[
 - To interpret coefficients, compare cases:
-  - Hold $D_{2i}$ constant (set to some value $D_{2i}=d_2$)
+  - Hold $D_{2i}$ constant (set to some value $D_{2i}=\mathbf{d_2}$)
   - Plug in 0s or 1s for $D_{1i}$
 
 $$\begin{align*}
-E(Y_i|D_{1i}&=\color{#FFA500}{0}, D_{2i}=d_2) = \beta_0+\beta_2 d_2\\
-E(Y_i|D_{1i}&=\color{#44C1C4}{1}, D_{2i}=d_2) = \beta_0+\beta_1(\color{#44C1C4}{1})+\beta_2 d_2+\beta_3(\color{#44C1C4}{1})d_2\\
+E(Y_i|D_{1i}&=\color{#FFA500}{0}, D_{2i}=\mathbf{d_2}) = \beta_0+\beta_2 \mathbf{d_2}\\
+E(Y_i|D_{1i}&=\color{#44C1C4}{1}, D_{2i}=\mathbf{d_2}) = \beta_0+\beta_1(\color{#44C1C4}{1})+\beta_2 \mathbf{d_2}+\beta_3(\color{#44C1C4}{1})\mathbf{d_2}\\
 \end{align*}$$
 ]
 
@@ -755,7 +765,7 @@ E(Y_i|D_{1i}&=\color{#44C1C4}{1}, D_{2i}=d_2) = \beta_0+\beta_1(\color{#44C1C4}{
 .smallest[
 - Subtracting the two, the difference is:
 
-$$\color{#6A5ACD}{\beta_1+\beta_3 d_2}$$
+$$\color{#6A5ACD}{\beta_1+\beta_3 \mathbf{d_2}}$$
 
 - .hi-purple[The marginal effect of] $\color{#6A5ACD}{D_{1i} \rightarrow Y_i\\}$ .hi-purple[depends on the value of] $\color{#6A5ACD}{D_{2i}\\}$
   - $\color{#e64173}{\hat{\beta_3}}$ is the *increment* to the effect of $D_1$ on $Y$ when $D_2$ goes from $0$ to $1$
@@ -776,14 +786,14 @@ $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}female_i+\hat{\beta_2}married_i+\h
 --
 
 .quitesmall[
-- Logically, there are 4 possible combinations of $female_i = \{\color{#0047AB}{0},\color{#e64173}{1}\}$ and $married_i = \{\color{#0047AB}{0},\color{#e64173}{1}\}$
+- Logically, there are 4 possible combinations of $female_i = \{\color{#0047AB}{0},\color{#e64173}{1}\}$ and $married_i = \{\color{#FFA500}{0},\color{#44C1C4}{1}\}$
 ]
 
 --
 
 .pull-left[
 .quitesmall[
-1) .hi-blue[Unmarried] .hi-blue[men] $(female_i=\color{#0047AB}{0}, \, married_i=\color{#0047AB}{0})$
+1) .hi-orange[Unmarried] .hi-blue[men] $(female_i=\color{#0047AB}{0}, \, married_i=\color{#FFA500}{0})$
 $$\widehat{wage_i}=\hat{\beta_0}$$
 ]
 ]
@@ -801,16 +811,16 @@ $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}female_i+\hat{\beta_2}married_i+\h
 ]
 
 .quitesmall[
-- Logically, there are 4 possible combinations of $female_i = \{\color{#0047AB}{0},\color{#e64173}{1}\}$ and $married_i = \{\color{#0047AB}{0},\color{#e64173}{1}\}$
+- Logically, there are 4 possible combinations of $female_i = \{\color{#0047AB}{0},\color{#e64173}{1}\}$ and $married_i = \{\color{#FFA500}{0},\color{#44C1C4}{1}\}$
 ]
 
 .pull-left[
 .quitesmall[
-1) .hi-blue[Unmarried] .hi-blue[men] $(female_i=\color{#0047AB}{0}, \, married_i=\color{#0047AB}{0})$
+1) .hi-orange[Unmarried] .hi-blue[men] $(female_i=\color{#0047AB}{0}, \, married_i=\color{#FFA500}{0})$
 $$\widehat{wage_i}=\hat{\beta_0}$$
 
 
-2) .hi-pink[Married] .hi-blue[men] $(female_i=\color{#0047AB}{0}, \, married_i=\color{#e64173}{1})$
+2) .hi-turquoise[Married] .hi-blue[men] $(female_i=\color{#0047AB}{0}, \, married_i=\color{#44C1C4}{1})$
 $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_2}$$
 ]
 ]
@@ -819,7 +829,7 @@ $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_2}$$
 
 .pull-right[
 .quitesmall[
-3) .hi-blue[Unmarried] .hi-pink[women] $(female_i=\color{#e64173}{1}, \, married_i=\color{#0047AB}{0})$
+3) .hi-orange[Unmarried] .hi-pink[women] $(female_i=\color{#e64173}{1}, \, married_i=\color{#FFA500}{0})$
 $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}$$
 ]
 ]
@@ -838,26 +848,27 @@ $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}female_i+\hat{\beta_2}married_i+\h
 ]
 
 .quitesmall[
-- Logically, there are 4 possible combinations of $female_i = \{\color{#0047AB}{0},\color{#e64173}{1}\}$ and $married_i = \{\color{#0047AB}{0},\color{#e64173}{1}\}$
+- Logically, there are 4 possible combinations of $female_i = \{\color{#0047AB}{0},\color{#e64173}{1}\}$ and $married_i = \{\color{#FFA500}{0},\color{#44C1C4}{1}\}$
 ]
 
 .pull-left[
 .quitesmall[
-1) .hi-blue[Unmarried] .hi-blue[men] $(female_i=\color{#0047AB}{0}, \, married_i=\color{#0047AB}{0})$
+1) .hi-orange[Unmarried] .hi-blue[men] $(female_i=\color{#0047AB}{0}, \, married_i=\color{#FFA500}{0})$
 $$\widehat{wage_i}=\hat{\beta_0}$$
 
 
-2) .hi-pink[Married] .hi-blue[men] $(female_i=\color{#0047AB}{0}, \, married_i=\color{#e64173}{1})$
+2) .hi-turquoise[Married] .hi-blue[men] $(female_i=\color{#0047AB}{0}, \, married_i=\color{#44C1C4}{1})$
 $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_2}$$
 ]
 ]
+
 .pull-right[
 .quitesmall[
 
-3) .hi-blue[Unmarried] .hi-pink[women] $(female_i=\color{#e64173}{1}, \, married_i=\color{#0047AB}{0})$
+3) .hi-orange[Unmarried] .hi-pink[women] $(female_i=\color{#e64173}{1}, \, married_i=\color{#FFA500}{0})$
 $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}$$
 
-4) .hi-pink[Married women] $(female_i=\color{#e64173}{1}, \, married_i=\color{#e64173}{1})$
+4) .hi-turquoise[Married] .hi[women] $(female_i=\color{#e64173}{1}, \, married_i=\color{#44C1C4}{1})$
 $$\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1}+\hat{\beta_2}+\hat{\beta_3}$$
 
 ]
@@ -956,7 +967,16 @@ huxreg(reg_dummies,
 .pull-right[
 
 .tiny[
-```{r, ref.label="huxreg2"}
+```{r}
+huxtable::huxreg(reg_dummies,
+       coefs = c("Constant" = "(Intercept)",
+                 "Female" = "female",
+                 "Married" = "married",
+                 "Female * Married" = "female:married"),
+       statistics = c("N" = "nobs",
+                      "R-Squared" = "r.squared",
+                      "SER" = "sigma"),
+       number_format = 2)
 ```
 ]
 ]
@@ -977,26 +997,26 @@ $$\widehat{wage_i}=5.17-0.56 \, female_i + 2.82 \, married_i - 2.86 \, (female_i
 --
 
 .smallest[
-- Wage for .hi-blue[unmarried men]: $\hat{\beta_0}=5.17$
+- Wage for .hi-orange[unmarried] .hi-blue[men]: $\hat{\beta_0}=5.17$
 ]
 
 --
 
 .smallest[
-- Wage for .hi[married] .hi-blue[men]: $\hat{\beta_0}+\hat{\beta_2}=5.17+2.82=7.98$
+- Wage for .hi-turquoise[married] .hi-blue[men]: $\hat{\beta_0}+\hat{\beta_2}=5.17+2.82=7.98$
 ]
 
 --
 
 .smallest[
-- Wage for .hi-blue[unmarried] .hi[women]: $\hat{\beta_0}+\hat{\beta_1}=5.17-0.56=4.61$
+- Wage for .hi-orange[unmarried] .hi[women]: $\hat{\beta_0}+\hat{\beta_1}=5.17-0.56=4.61$
 
 ]
 
 --
 
 .smallest[
-- Wage for .hi[married women]: $\hat{\beta_0}+\hat{\beta_1}+\hat{\beta_2}+\hat{\beta_3}=5.17-0.56+2.82-2.86=4.57$
+- Wage for .hi-turquoise[married] .hi[women]: $\hat{\beta_0}+\hat{\beta_1}+\hat{\beta_2}+\hat{\beta_3}=5.17-0.56+2.82-2.86=4.57$
 ]
 
 ---
@@ -1016,21 +1036,21 @@ $$\widehat{wage_i}=5.17-0.56 \, female_i + 2.82 \, married_i - 2.86 \, (female_i
 --
 
 .smallest[
-- $\hat{\beta_0}$: Wage for .hi-blue[unmarried men]
+- $\hat{\beta_0}$: Wage for .hi-orange[unmarried] .hi-blue[men]
 
 ]
 
 --
 
 .smallest[
-- $\hat{\beta_2}$: Effect of .hi-pink[marriage] on wages for .hi-blue[men]
+- $\hat{\beta_2}$: Effect of .hi-turquoise[marriage] on wages for .hi-blue[men]
 
 ]
 
 --
 
 .smallest[
-- $\hat{\beta_2}$: *Difference* in wages between .hi-blue[men] and .hi[women] who are .hi-blue[unmarried] 
+- $\hat{\beta_2}$: *Difference* in wages between .hi-blue[men] and .hi[women] who are .hi-orange[unmarried] 
 
 ]
 --
@@ -1038,7 +1058,7 @@ $$\widehat{wage_i}=5.17-0.56 \, female_i + 2.82 \, married_i - 2.86 \, (female_i
 .smallest[
 - $\hat{\beta_3}$: *Difference* in:
   - effect of **Marriage** on wages between .hi-blue[men] and .hi[women]
-  - effect of **Gender** on wages between .hi-blue[unmarried] and .hi[married] individuals
+  - effect of **Gender** on wages between .hi-orange[unmarried] and .hi-turquoise[married] individuals
 
 ]
 ---
@@ -1146,7 +1166,16 @@ huxreg(reg_cont,
 .pull-right[
 
 .tiny[
-```{r, ref.label="huxreg3"}
+```{r}
+huxtable::huxreg(reg_cont,
+       coefs = c("Constant" = "(Intercept)",
+                 "Education" = "educ",
+                 "Experience" = "exper",
+                 "Education * Experience" = "educ:exper"),
+       statistics = c("N" = "nobs",
+                      "R-Squared" = "r.squared",
+                      "SER" = "sigma"),
+       number_format = 3)
 ```
 ]
 ]
@@ -1201,4 +1230,4 @@ Marginal Effect of *Experience* on Wages by Years of *Education*:
 
 --
 
-- If you want to estimate the marginal effects more precisely, and graph them, see the appendix in [today’s class page](/class/3.7-class)
+- If you want to estimate the marginal effects more precisely, and graph them, see the appendix in [today’s class page](/content/3.7-content)
