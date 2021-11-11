@@ -12,7 +12,7 @@ This page contains all of the following resources for each class meeting:
   <li> <i class="fas fa-info-circle"></i> **Content** materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these **before** each class.</li>
   <li> <i class="fas fa-chalkboard-teacher"></i> **Slides** are "[Xaringan](https://github.com/yihui/xaringan)" presentations in html that can be opened in any browser (You can find a downloadable PDF in each respective **content** page)</li>
   <li><i class="fas fa-registered"></i> **R** materials contain extra tutorials, videos, practice exercises for using `R`</li>
-  <li><i class="fas fa-laptop-code"></i> **Assignments** are generally 11:59 PM Sundays on Blackboard</li>
+  <li><i class="fas fa-laptop-code"></i> **Assignments** are listed with due dates</li>
 </ul>
 
 Please note that the lesson numbers, topics, and titles (e.g. 1.1) are *my* design, and do not match up with the textbook!
