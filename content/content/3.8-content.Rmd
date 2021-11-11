@@ -1,0 +1,39 @@
+---
+title: "3.8 — Polynomial Regression — Class Content"
+draft: false
+linktitle: "3.8 — Polynomial Regression"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 20
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "3.8-slides"
+---
+
+{{% alert note %}}
+*Thursday, November 11, 2021*
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+This week we will cover non-linear models, which we anticipated last week with an interaction effect between two continuous variables: $X_1 \times X_2$, where the marginal effect of $X_1 \rightarrow Y$ is dependent on the value of $X_2$.
+
+We cover two types of nonlinear models. *Today*, we cover **polynomial models**, where we include higher-order $X$ variables to explain a non-linear effect. *Next* class we will cover **logarithmic models**, which are more frequently used — as well as a few final tests and transformations for multivariate regression before we turn to panel data (Unit IV) next week.
+
+Today, we will spend the first half of class finishing [last class’ practice problems](/r/3.7-r-practice) (on dummy variables and interaction effects), then I will cover polynomial models. After we finish next class’ lecture, we will do another set of R practice problems, and you will be given your final graded **HW 5** to work on this material. 
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch. 7.1 in Bailey, *Real Econometrics*
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`

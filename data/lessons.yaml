@@ -112,8 +112,12 @@ lessons:
     r: "3.7-r"
 
   - title: "3.8 — Polynomial Regression"
-
+    content: "3.8-content"
+    slides: "3.8-slides"
+    
   - title: "3.9 — Logarithmic Regression"
+    content: "3.9-content"
+    slides: "3.9-slides"
 
   - title: '<i content="fas fa-laptop-code"></i> **Problem Set 5**'
 

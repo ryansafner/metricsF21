@@ -1,0 +1,51 @@
+---
+title: "3.9 — Logarithmic Regression — Class Content"
+draft: false
+linktitle: "3.9 — Logarithmic Regression"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 21
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "3.9-slides"
+---
+
+{{% alert note %}}
+*Thursday, November 11* and *Tuesday November 16, 2021*
+{{% /alert %}}
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today, we finish up our view of *nonlinear* models with **logarithmic models**, which are more frequently used. We also discuss a few other tests and transformations to wrap up multivariate regression before we turn to panel data: **standardizing variables** to compare effect sizes, and **joint hypothesis tests**.
+
+Interpretting logged variables can often be difficult to remember, so here I reproduce the tables that describe the interpretations of the marginal effect of $X \rightarrow Y$, as well as some visual examples from the slides:
+
+| Model | Equation | Interpretation |
+|-------|----------|----------------|
+| Linear-**Log** | $Y=\beta_0+\beta_1 \mathbf{ln(X)}$ | 1% change in $X \rightarrow \frac{\hat{\beta_1}}{100}$ **unit** change in $Y$ |
+| **Log**-Linear | $\mathbf{ln(Y)}=\beta_0+\beta_1X$ | 1 **unit** change in $X \rightarrow \hat{\beta_1}\times 100$**%** change in $Y$ |
+| **Log**-**Log** | $\mathbf{ln(Y)}=\beta_0+\beta_1\mathbf{ln(X)}$ | 1**%** change in $X \rightarrow \hat{\beta_1}$**%** change in $Y$ |
+
+- Hint: the variable that gets logged changes in **percent** terms, the variable not logged changes in *unit* terms
+
+| Linear-Log | Log-Linear | Log-Log |
+|:----------:|:----------:|:-------:|
+| ![](https://metricsf21.classes.ryansafner.com/slides/3.9-slides_files/figure-html/unnamed-chunk-14-1.png) | ![](https://metricsf21.classes.ryansafner.com/slides/3.9-slides_files/figure-html/unnamed-chunk-20-1.png) | ![](https://metricsf21.classes.ryansafner.com/slides/3.9-slides_files/figure-html/unnamed-chunk-25-1.png) |
+| $\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}\mathbf{ln(X_i)}$ | $\mathbf{ln(\hat{Y_i})}=\hat{\beta_0}+\hat{\beta_1}X_i$ | $\mathbf{ln(\hat{Y_i})}=\hat{\beta_0}+\hat{\beta_1}\mathbf{ln(X_i)}$ |
+| $R^2=0.65$ | $R^2=0.30$ | $R^2=0.61$ |
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch. 7.1 in Bailey, *Real Econometrics*
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+
+The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+`r blogdown::shortcode("slide-links")`

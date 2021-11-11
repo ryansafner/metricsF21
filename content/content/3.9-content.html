@@ -1,0 +1,111 @@
+---
+title: "3.9 — Logarithmic Regression — Class Content"
+draft: false
+linktitle: "3.9 — Logarithmic Regression"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 21
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "3.9-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Thursday, November 11</em> and <em>Tuesday November 16, 2021</em>
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today, we finish up our view of <em>nonlinear</em> models with <strong>logarithmic models</strong>, which are more frequently used. We also discuss a few other tests and transformations to wrap up multivariate regression before we turn to panel data: <strong>standardizing variables</strong> to compare effect sizes, and <strong>joint hypothesis tests</strong>.</p>
+<p>Interpretting logged variables can often be difficult to remember, so here I reproduce the tables that describe the interpretations of the marginal effect of <span class="math inline">\(X \rightarrow Y\)</span>, as well as some visual examples from the slides:</p>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="30%" />
+<col width="48%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Equation</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Linear-<strong>Log</strong></td>
+<td><span class="math inline">\(Y=\beta_0+\beta_1 \mathbf{ln(X)}\)</span></td>
+<td>1% change in <span class="math inline">\(X \rightarrow \frac{\hat{\beta_1}}{100}\)</span> <strong>unit</strong> change in <span class="math inline">\(Y\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Log</strong>-Linear</td>
+<td><span class="math inline">\(\mathbf{ln(Y)}=\beta_0+\beta_1X\)</span></td>
+<td>1 <strong>unit</strong> change in <span class="math inline">\(X \rightarrow \hat{\beta_1}\times 100\)</span><strong>%</strong> change in <span class="math inline">\(Y\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Log</strong>-<strong>Log</strong></td>
+<td><span class="math inline">\(\mathbf{ln(Y)}=\beta_0+\beta_1\mathbf{ln(X)}\)</span></td>
+<td>1<strong>%</strong> change in <span class="math inline">\(X \rightarrow \hat{\beta_1}\)</span><strong>%</strong> change in <span class="math inline">\(Y\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Hint: the variable that gets logged changes in <strong>percent</strong> terms, the variable not logged changes in <em>unit</em> terms</li>
+</ul>
+<table>
+<colgroup>
+<col width="36%" />
+<col width="36%" />
+<col width="27%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Linear-Log</th>
+<th align="center">Log-Linear</th>
+<th align="center">Log-Log</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="https://metricsf21.classes.ryansafner.com/slides/3.9-slides_files/figure-html/unnamed-chunk-14-1.png" /></td>
+<td align="center"><img src="https://metricsf21.classes.ryansafner.com/slides/3.9-slides_files/figure-html/unnamed-chunk-20-1.png" /></td>
+<td align="center"><img src="https://metricsf21.classes.ryansafner.com/slides/3.9-slides_files/figure-html/unnamed-chunk-25-1.png" /></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}\mathbf{ln(X_i)}\)</span></td>
+<td align="center"><span class="math inline">\(\mathbf{ln(\hat{Y_i})}=\hat{\beta_0}+\hat{\beta_1}X_i\)</span></td>
+<td align="center"><span class="math inline">\(\mathbf{ln(\hat{Y_i})}=\hat{\beta_0}+\hat{\beta_1}\mathbf{ln(X_i)}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(R^2=0.65\)</span></td>
+<td align="center"><span class="math inline">\(R^2=0.30\)</span></td>
+<td align="center"><span class="math inline">\(R^2=0.61\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Ch. 7.1 in Bailey, <em>Real Econometrics</em></li>
+</ul>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
