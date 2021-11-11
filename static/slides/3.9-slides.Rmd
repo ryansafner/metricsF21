@@ -1003,6 +1003,8 @@ ggplot(data = gapminder)+
 | .hi[Log]-.hi[Log] | $\color{#e64173}{\ln Y}=\beta_0+\beta_1\color{#e64173}{\ln X}$ | 1.hi[%] change in $X \rightarrow \hat{\beta_1}$.hi[%] change in $Y$ |
 
 - Hint: the variable that gets .hi[logged] changes in .hi[percent] terms, the variable not logged changes in **unit** terms
+  - Going from units $\rightarrow$ percent: multiply by 100
+  - Going from percent $\rightarrow$ units: divide by 100
 
 ---
 
