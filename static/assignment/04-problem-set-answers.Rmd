@@ -73,7 +73,7 @@ All variables that might influence the dependent variable ($Y$) that we do not m
 
 If both conditions are met, then if we did not include the omitted variable $Z$, our estimate of the causal effect of $X$ on $Y$ would be biased, because our estimate $(\hat{\beta_1}$) would pick up some of the effect of $Z$. If we include $Z$ as another independent variable, then the $\hat{\beta_1}$ on $X$ will tell us the precise effect of *only* $X\rightarrow Y$, holding $Z$ constant. 
 
-```{r, echo=F}
+```{r, echo=F, message = F, warning = F}
 library(tidyverse)
 library(ggdag)
 
@@ -368,6 +368,8 @@ births <- bwght # feel free to rename whatever you want for the dataframe
 <!--WRITE YOUR ANSWERS BELOW -->
 
 ```{r}
+library(tidyverse) # first of all!
+
 # install.packages("wooldridge")
 library(wooldridge)
 births <- bwght # save data
@@ -531,6 +533,7 @@ dag %>%
   ggdag_paths()+
   theme_dag()
 ```
+
 ---
 
 ### Part E
