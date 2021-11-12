@@ -2306,7 +2306,7 @@ normal.pdf&lt;/code&gt;&lt;/pre&gt;
 &lt;/ul&gt;
 &lt;p&gt;The first is one that I showed you back in &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.5-content&#34;&gt;class 1.5&lt;/a&gt; when we talked about R Markdown and having a reproducible, plain-text, workflow. It has an example workflow setup that I recommend you follow: create an R project for your project, and organize all of your data, code, images, &amp;amp; text in this set of folders inside of your project.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; You can look at &lt;code&gt;Example_paper.Rmd&lt;/code&gt; to see my text and code in R markdown to write the paper, and look at &lt;code&gt;Example_paper.pdf&lt;/code&gt; to see the final product.&lt;/p&gt;
 &lt;p&gt;The second is a quick and dirty example of what I am looking for in your paper project in this class, using the ongoing example of the effect of class size on test scores. You can also look at &lt;code&gt;paper.Rmd&lt;/code&gt; to see my text and code in R markdown, and &lt;code&gt;paper.pdf&lt;/code&gt; to see the final product. Note that this is an example I put quickly together with minimal effort as an example for you all, it does &lt;em&gt;not&lt;/em&gt; necessarily mean it is an “A” quality paper!&lt;/p&gt;
-&lt;p&gt;If you are using R markdown to write your final paper, you should consult &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/class/1.5-class&#34;&gt;class 1.5&lt;/a&gt; again, along with the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/1.5-r&#34;&gt;1.5 “R practice”&lt;/a&gt; that deals with the workflow repository.&lt;/p&gt;
+&lt;p&gt;If you are using R markdown to write your final paper, you should consult &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/content/1.5-content&#34;&gt;class 1.5&lt;/a&gt; again, along with the &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/1.5-r&#34;&gt;1.5 “R practice”&lt;/a&gt; that deals with the workflow repository.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
@@ -2317,8 +2317,8 @@ normal.pdf&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
 &lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
 &lt;p&gt;
-&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.4-slides.html&#34;&gt;&lt;img src =&#34;/slides/3.4-slides.png&#34; alt = &#34;3.4-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.4-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.5-slides.html&#34;&gt;&lt;img src =&#34;/slides/3.5-slides.png&#34; alt = &#34;3.5-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.5-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;r-practice&#34; class=&#34;section level2&#34;&gt;
@@ -2337,6 +2337,657 @@ normal.pdf&lt;/code&gt;&lt;/pre&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;I also recommend you at least save this folder on Dropbox to keep it safe!&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3.6 — Regression with Categorical Data — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/3.6-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/3.6-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-4-due-tues-nov-9&#34;&gt;Problem Set 4 Due Tues Nov 9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#appendix-t-test-for-difference-in-group-means&#34;&gt;Appendix: T-Test for Difference in Group Means&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#the-sampling-distribution-of-d&#34;&gt;The Sampling Distribution of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-t-test-in-r&#34;&gt;The &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-test in &lt;code&gt;R&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Thursday, November 4, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today we look at how to use data that is categorical (i.e. variables that indicate an observation’s membership in a particular group or category). We introduce them into regression models as &lt;strong&gt;dummy variables&lt;/strong&gt; that can equal 0 or 1: where 1 indicates membership in a category, and 0 indicates non-membership.&lt;/p&gt;
+&lt;p&gt;We also look at what happens when categorical variables have more than two values: for regression, we introduce a dummy variable for each possible category - but be sure to leave out one reference category to avoid the dummy variable trap.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 6.1—6.2 in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.6-slides.html&#34;&gt;&lt;img src =&#34;/slides/3.6-slides.png&#34; alt = &#34;3.6-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.6-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-4-due-tues-nov-9&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 4 Due Tues Nov 9&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/04-problem-set&#34;&gt;Problem Set 4&lt;/a&gt; is due by the end of the day on Tuesday, November 9.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;appendix-t-test-for-difference-in-group-means&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Appendix: T-Test for Difference in Group Means&lt;/h2&gt;
+&lt;p&gt;Often we want to compare the means between two groups, and see if the difference is statistically significant. As an example, &lt;strong&gt;is there a statistically significant difference in average hourly earnings between men and women&lt;/strong&gt;? Let:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mu_W\)&lt;/span&gt;: mean hourly earnings for female college graduates&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mu_M\)&lt;/span&gt;: mean hourly earnings for male college graduates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We want to run a hypothesis test for the difference &lt;span class=&#34;math inline&#34;&gt;\((d)\)&lt;/span&gt; in these two population means:
+&lt;span class=&#34;math display&#34;&gt;\[\mu_M-\mu_W=d_0\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Our null hypothesis is that there is &lt;em&gt;no&lt;/em&gt; statistically significant difference. Let’s also have a two-sided alternative hypothesis, simply that there &lt;em&gt;is&lt;/em&gt; a difference (positive or negative).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(H_0: d=0\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(H_1: d \neq 0\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note a logical one-sided alternative would be &lt;span class=&#34;math inline&#34;&gt;\(H_2: d &amp;gt; 0\)&lt;/span&gt;, i.e. men earn more than women&lt;/p&gt;
+&lt;div id=&#34;the-sampling-distribution-of-d&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Sampling Distribution of &lt;span class=&#34;math inline&#34;&gt;\(d\)&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;The &lt;em&gt;true&lt;/em&gt; population means &lt;span class=&#34;math inline&#34;&gt;\(\mu_M, \mu_W\)&lt;/span&gt; are unknown, we must estimate them from &lt;em&gt;samples&lt;/em&gt; of men and women. Let:
+- &lt;span class=&#34;math inline&#34;&gt;\(\bar{Y}_M\)&lt;/span&gt; the average earnings of a sample of &lt;span class=&#34;math inline&#34;&gt;\(n_M\)&lt;/span&gt; men&lt;br /&gt;
+- &lt;span class=&#34;math inline&#34;&gt;\(\bar{Y}_W\)&lt;/span&gt; the average earnings of a sample of &lt;span class=&#34;math inline&#34;&gt;\(n_W\)&lt;/span&gt; women&lt;/p&gt;
+&lt;p&gt;We then estimate &lt;span class=&#34;math inline&#34;&gt;\((\mu_M-\mu_W)\)&lt;/span&gt; with the sample &lt;span class=&#34;math inline&#34;&gt;\((\bar{Y}_M-\bar{Y}_W)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;We would then run a &lt;strong&gt;t-test&lt;/strong&gt; and calculate the &lt;strong&gt;test-statistic&lt;/strong&gt; for the difference in means. The formula for the test statistic is:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[t = \frac{(\bar{Y_M}-\bar{Y_W})-d_0}{\sqrt{\frac{s_M^2}{n_M}+\frac{s_W^2}{n_W}}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We then compare &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; against the critical value &lt;span class=&#34;math inline&#34;&gt;\(t^*\)&lt;/span&gt;, or calculate the &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-value &lt;span class=&#34;math inline&#34;&gt;\(P(T&amp;gt;t)\)&lt;/span&gt; as usual to determine if we have sufficient evidence to reject &lt;span class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+## ✓ tibble  3.1.5     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+## ✓ readr   2.0.0     ✓ forcats 0.5.1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(wooldridge)
+# Our data comes from wage1 in the wooldridge package
+
+wages &amp;lt;- wage1
+
+# look at average wage for men
+
+wages %&amp;gt;%
+  filter(female == 0) %&amp;gt;%
+  summarize(average = mean(wage),
+            sd = sd(wage))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    average       sd
+## 1 7.099489 4.160858&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# look at average wage for women
+
+wages %&amp;gt;%
+  filter(female == 1) %&amp;gt;%
+  summarize(average = mean(wage),
+            sd = sd(wage))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    average       sd
+## 1 4.587659 2.529363&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So our data is telling us that male and female average hourly earnings are distributed as such:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\bar{Y}_M &amp;amp;\sim N(7.10,4.16)\\
+\bar{Y}_W &amp;amp;\sim N(4.59,2.53)\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We can plot this to see visually. There is a lot of overlap in the two distributions, but the male average is higher than the female average, and there is also a lot more variation in males than females, noticeably the male distribution skews further to the right.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wages$female &amp;lt;- as.factor(wages$female)
+
+ggplot(data = wages)+
+  aes(x = wage,
+      fill = female)+
+  geom_density(alpha = 0.5)+
+  scale_x_continuous(breaks = seq(0,25,5),
+                     name = &amp;quot;Wage&amp;quot;,
+                     labels = scales::dollar)+
+  theme_light()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/3.6-content_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Knowing the distributions of male and female average hourly earnings, we can estimate the &lt;strong&gt;sampling distribution of the difference in group eans&lt;/strong&gt; between men and women as:&lt;/p&gt;
+&lt;p&gt;The mean:
+&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+\bar{d}&amp;amp;=\bar{Y}_M-\bar{Y}_W\\
+\bar{d}&amp;amp;=7.10-4.59\\
+\bar{d}&amp;amp;=2.51\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The standard error of the mean:
+&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+SE(\bar{d})&amp;amp;=\sqrt{\frac{s_M^2}{n_M}+\frac{s_W^2}{n_W}}\\
+&amp;amp;=\sqrt{\frac{4.16^2}{274}+\frac{2.33^2}{252}}\\
+&amp;amp; \approx 0.29\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So the sampling distribution of the difference in group means is distributed:
+&lt;span class=&#34;math display&#34;&gt;\[\bar{d} \sim N(2.51,0.29)\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = data.frame(x = 0:6))+
+  aes(x = x)+
+  stat_function(fun = dnorm, args = list(mean = 2.51, sd = 0.29), color = &amp;quot;purple&amp;quot;)+
+  labs(x = &amp;quot;Wage Difference&amp;quot;,
+       y = &amp;quot;Density&amp;quot;)+
+  scale_x_continuous(breaks = seq(0,6,1),
+                     labels = scales::dollar)+
+  theme_light()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/3.6-content_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Now we the &lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-test&lt;/strong&gt; like any other:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+t&amp;amp;=\frac{\text{estimate}-\text{null hypothesis}}{\text{standard error of the estimate}}\\
+&amp;amp;=\frac{d-0}{SE(d)}\\
+&amp;amp;=\frac{2.51-0}{0.29}\\
+&amp;amp;=8.66\\
+\end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is statistically significant. The &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-value, &lt;span class=&#34;math inline&#34;&gt;\(P(t&amp;gt;8.66)=\)&lt;/span&gt; is 0.000000000000000000410, or basically, 0.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pt(8.66,456.33, lower.tail = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4.102729e-17&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-t-test-in-r&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;-test in &lt;code&gt;R&lt;/code&gt;&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t.test(wage ~ female, data = wages, var.equal = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Welch Two Sample t-test
+## 
+## data:  wage by female
+## t = 8.44, df = 456.33, p-value = 4.243e-16
+## alternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0
+## 95 percent confidence interval:
+##  1.926971 3.096690
+## sample estimates:
+## mean in group 0 mean in group 1 
+##        7.099489        4.587659&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;reg &amp;lt;- lm(wage~female, data = wages)
+summary(reg)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Call:
+## lm(formula = wage ~ female, data = wages)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -5.5995 -1.8495 -0.9877  1.4260 17.8805 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&amp;gt;|t|)    
+## (Intercept)   7.0995     0.2100  33.806  &amp;lt; 2e-16 ***
+## female1      -2.5118     0.3034  -8.279 1.04e-15 ***
+## ---
+## Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1
+## 
+## Residual standard error: 3.476 on 524 degrees of freedom
+## Multiple R-squared:  0.1157, Adjusted R-squared:  0.114 
+## F-statistic: 68.54 on 1 and 524 DF,  p-value: 1.042e-15&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3.7 — Regression with Interaction Effects — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/3.7-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/3.7-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r-practice&#34;&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-4-due-tues-nov-9&#34;&gt;Problem Set 4 Due Tues Nov 9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#appendix-marginal-effects-for-two-continuous-variable-interactions&#34;&gt;Appendix: Marginal Effects for Two-Continuous Variable Interactions&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#standard-error-of-marginal-effects&#34;&gt;Standard Error of Marginal Effects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Tuesday, November 9, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today we continue examining how to use categorical data in regression, particularly focusing on &lt;em&gt;interactions&lt;/em&gt; between variables. We look at three types of interaction effects:
+1. Interaction between a continuous variable &amp;amp; a dummy variable
+2. Interaction between two dummy variables
+3. Interaction between two continuous variables&lt;/p&gt;
+&lt;p&gt;We will also be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/3.7-r&#34;&gt;practice problems&lt;/a&gt; today in R.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 6.3—6.4 in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.7-slides.html&#34;&gt;&lt;img src =&#34;/slides/3.7-slides.png&#34; alt = &#34;3.7-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.7-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-practice&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-registered&#34;&gt;&lt;/i&gt; R Practice&lt;/h2&gt;
+&lt;p&gt;Today you will be working on &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/3.7-r&#34;&gt;R practice problems&lt;/a&gt; on multivariate regression. Answers will be posted later on that page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-4-due-tues-nov-9&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 4 Due Tues Nov 9&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/04-problem-set&#34;&gt;Problem Set 4&lt;/a&gt; is due by the end of the day on Tuesday, November 9.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;appendix-marginal-effects-for-two-continuous-variable-interactions&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Appendix: Marginal Effects for Two-Continuous Variable Interactions&lt;/h1&gt;
+&lt;p&gt;In class, we looked at the effects of education on wages, experience on wages, and the &lt;em&gt;interaction&lt;/em&gt; between education and experience on wages:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\widehat{wage_i}=\hat{\beta_0}+\hat{\beta_1} \, education_i+\hat{\beta_2} \, experience_i+\hat{\beta_3}(education_i \times experience_i)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Using the &lt;code&gt;wage1&lt;/code&gt; data in the &lt;code&gt;wooldridge&lt;/code&gt; package, we found the following:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(broom)
+library(wooldridge)
+wages &amp;lt;- wage1
+reg_cont &amp;lt;- lm(wage ~ educ + exper + educ:exper, data = wages)
+reg_cont %&amp;gt;% tidy()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 4 × 5
+##   term        estimate std.error statistic  p.value
+##   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;
+## 1 (Intercept) -2.86      1.18       -2.42  1.58e- 2
+## 2 educ         0.602     0.0899      6.69  5.64e-11
+## 3 exper        0.0458    0.0426      1.07  2.83e- 1
+## 4 educ:exper   0.00206   0.00349     0.591 5.55e- 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s extract and save each of these &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta}\)&lt;/span&gt;’s for later use.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;b_1 &amp;lt;- reg_cont %&amp;gt;%
+  tidy() %&amp;gt;%
+  filter(term == &amp;quot;educ&amp;quot;) %&amp;gt;%
+  pull(estimate)
+
+b_2 &amp;lt;- reg_cont %&amp;gt;%
+  tidy() %&amp;gt;%
+  filter(term == &amp;quot;exper&amp;quot;) %&amp;gt;%
+  pull(estimate)
+
+b_3 &amp;lt;- reg_cont %&amp;gt;%
+  tidy() %&amp;gt;%
+  filter(term == &amp;quot;educ:exper&amp;quot;) %&amp;gt;%
+  pull(estimate)
+
+# let&amp;#39;s check each of these
+b_1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.6017355&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;b_2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.04576891&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;b_3&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.002062345&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We know that the marginal effect of each of the two &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; variables on &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; depends on the value of the other &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; variable:&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;col width=&#34;43%&#34; /&gt;
+&lt;col width=&#34;44%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Variable&lt;/th&gt;
+&lt;th&gt;Marginal Effect on Wages (Formula)&lt;/th&gt;
+&lt;th&gt;Marginal Effect on Wages (Estimate)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Education&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}+\hat{\beta_3} \, Experience_i\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;0.6017355 + 0.0020623 &lt;span class=&#34;math inline&#34;&gt;\(\, Experience_i\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Experience&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_2}+\hat{\beta_3} \, Education_i\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;0.6017355 + 0.0020623 &lt;span class=&#34;math inline&#34;&gt;\(\, Education_i\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We can get the marginal effects more precisely by making a &lt;strong&gt;function&lt;/strong&gt; of each marginal effect, using the coefficients saved above. To make a your own function in &lt;code&gt;R&lt;/code&gt; (a very handy thing to do!), simply define an object as &lt;code&gt;my_function&amp;lt;- function(){}&lt;/code&gt;. Inside the &lt;code&gt;()&lt;/code&gt; goes any arguments the function will need (here, it’s the value of the other variable), and then the formula to apply to that argument. Then you can run the function on any object.&lt;/p&gt;
+&lt;p&gt;As a simple example, to make a function that squares x:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# make function called &amp;quot;square&amp;quot; that squares x
+square&amp;lt;-function(x){x^2}
+
+# test it on the value 4
+square(4)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 16&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# test it on all of these values
+square(1:4)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1]  1  4  9 16&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now let’s make a function for the marginal effect of education (by experience):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# make marginal effect of education on wages by years of experience function
+# input is years of experience
+me_educ&amp;lt;-function(exper){b_1*b_3*exper}
+
+# now its a function, let&amp;#39;s input 5 years, 10 years, 15 years of experience
+me_educ(c(5,10,15))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.006204929 0.012409858 0.018614788&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now let’s make a function for the marginal effect of experience (by education):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# make marginal effect of experience on wages by years of education function
+# input is years of education
+me_exper&amp;lt;-function(educ){b_2*b_3*educ}
+
+# now its a function, let&amp;#39;s input 5 years, 10 years, 15 years of education
+me_exper(c(5,10,15))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.0004719563 0.0009439126 0.0014158689&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can now graph these&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;margin_educ&amp;lt;-ggplot(data = wages)+
+  aes(x = exper)+
+  stat_function(fun = me_educ, geom = &amp;quot;line&amp;quot;, color = &amp;quot;blue&amp;quot;)+
+  scale_y_continuous(labels = scales::dollar)+
+  labs(x = &amp;quot;Years of Experience&amp;quot;,
+       y = &amp;quot;Marginal Effect of Education on Wages&amp;quot;,
+       title = &amp;quot;Effect of Education on Wages, by Years of Experience&amp;quot;)+
+  ggthemes::theme_pander(base_family = &amp;quot;Fira Sans Condensed&amp;quot;, base_size = 14)
+margin_educ&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/3.7-content_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;margin_exper&amp;lt;-ggplot(data = wages)+
+  aes(x = educ)+
+  stat_function(fun = me_exper, geom = &amp;quot;line&amp;quot;, color = &amp;quot;blue&amp;quot;)+
+  scale_y_continuous(labels = function(x){paste0(&amp;quot;$&amp;quot;,x)})+
+  labs(x = &amp;quot;Years of Education&amp;quot;,
+       y = &amp;quot;Marginal Effect of Experience on Wages&amp;quot;,
+       title = &amp;quot;Effect of Experience on Wages, by Years of Education&amp;quot;)+
+  ggthemes::theme_pander(base_family = &amp;quot;Fira Sans Condensed&amp;quot;, base_size = 14)
+margin_exper&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/3.7-content_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;standard-error-of-marginal-effects&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Standard Error of Marginal Effects&lt;/h2&gt;
+&lt;p&gt;If we want to add the standard error to these graphs, we need to extract the &lt;span class=&#34;math inline&#34;&gt;\(se(\hat{\beta})\)&lt;/span&gt;’s from the original regression output:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;se_b_1 &amp;lt;- reg_cont %&amp;gt;%
+  tidy() %&amp;gt;%
+  filter(term == &amp;quot;educ&amp;quot;) %&amp;gt;%
+  pull(std.error)
+
+se_b_2 &amp;lt;- reg_cont %&amp;gt;%
+  tidy() %&amp;gt;%
+  filter(term == &amp;quot;exper&amp;quot;) %&amp;gt;%
+  pull(std.error)
+
+se_b_3 &amp;lt;- reg_cont %&amp;gt;%
+  tidy() %&amp;gt;%
+  filter(term == &amp;quot;educ:exper&amp;quot;) %&amp;gt;%
+  pull(std.error)
+
+# let&amp;#39;s check each of these
+se_b_1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.08989998&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;se_b_2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.04261376&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;se_b_3&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.003490614&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now the standard error of the marginal effect is a bit tricky. The marginal effect, for example, of Education on Wages, we saw was &lt;span class=&#34;math inline&#34;&gt;\(\frac{\Delta Wage_i}{\Delta Education_i} = \hat{\beta_1}+\hat{\beta_3} \, Experience_i\)&lt;/span&gt;. One property of variances (or, when square rooted, standard errors) of random variables is that:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[var(X+aY)=var(X)+var(Y)c^2+2 \, a \, cov(X,Y)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Here, the &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta}\)&lt;/span&gt;’s are random variables, and &lt;span class=&#34;math inline&#34;&gt;\(Experience_i\)&lt;/span&gt; is a constant (some number, like &lt;span class=&#34;math inline&#34;&gt;\(a)\)&lt;/span&gt;. So the variance is:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[var(\hat{\beta_1}+\hat{\beta_3}Experience_i)=var(\hat{\beta_1})+var(\hat{\beta_3})Experience_i^2+2 \, Experience_i \, cov(\hat{\beta_1},\hat{\beta_3})\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The standard error then is the square root of this. To get the covariance of &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_1}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta_3}\)&lt;/span&gt;, we need to extract it from something called the &lt;strong&gt;variance-covariance matrix&lt;/strong&gt;. A regression creates and stores a matrix that contains the covariances of all &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta}\)&lt;/span&gt;’s with each other (and the covariance of any &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta}\)&lt;/span&gt; with itself is the variance of that &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta})\)&lt;/span&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# look at variance-covariance matrix
+vcov(reg_cont)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              (Intercept)          educ         exper    educ:exper
+## (Intercept)  1.394949133 -0.1040894353 -0.0412570602  3.134939e-03
+## educ        -0.104089435  0.0080820059  0.0031414567 -2.513073e-04
+## exper       -0.041257060  0.0031414567  0.0018159324 -1.437215e-04
+## educ:exper   0.003134939 -0.0002513073 -0.0001437215  1.218438e-05&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# make it a tibble to work with using tidyverse methods
+v&amp;lt;-as_tibble(vcov(reg_cont))
+
+# we want the covariance between beta 1 and beta 3, save as &amp;quot;cov_b1_b3&amp;quot;
+cov_b1_b3&amp;lt;-v %&amp;gt;%
+  slice(2) %&amp;gt;%
+  pull(`educ:exper`) 
+cov_b1_b3 # look at it&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] -0.0002513073&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# lets also get the covariance between beta 2 and beta 3 (for later)
+
+cov_b2_b3&amp;lt;-v %&amp;gt;%
+  slice(3) %&amp;gt;%
+  pull(`educ:exper`)
+cov_b2_b3&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] -0.0001437215&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# make a function of the variance of the marginal effect of education on wages
+var_me_educ=function(experience){(se_b_1)^2+(se_b_3)^2*experience+2*experience*cov_b1_b3}
+
+# now square root it to get standard error
+se_me_educ=function(experience){sqrt(var_me_educ(experience))}
+
+# to plot a 95% confidence interval of the marginal effect, lets make upper and lower CI values as a function of experience
+CI_me_educ_upper=function(experience){me_educ(experience)+1.96*se_me_educ(experience)}
+CI_me_educ_lower=function(experience){me_educ(experience)-1.96*se_me_educ(experience)}
+
+# lets now add these into the data
+wages2&amp;lt;-wages %&amp;gt;%
+  select(exper) %&amp;gt;%
+  mutate(me_educ = me_educ(exper),
+         CI_educ_lower = CI_me_educ_lower(exper),
+         CI_educ_upper = CI_me_educ_upper(exper)
+         )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in sqrt(var_me_educ(experience)): NaNs produced
+
+## Warning in sqrt(var_me_educ(experience)): NaNs produced&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# and graph it!
+margin_educ+
+  geom_ribbon(data = wages2, aes(ymin=CI_educ_lower, ymax=CI_educ_upper), fill = &amp;quot;grey70&amp;quot;, alpha = 0.5)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/3.7-content_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# do the same for the marginal effect of experience on wages
+var_me_exper=function(education){(se_b_2)^2+(se_b_3)^2*education+2*education*cov_b2_b3}
+
+# now square root it to get standard error
+se_me_exper=function(education){sqrt(var_me_educ(education))}
+
+# to plot a 95% confidence interval of the marginal effect, lets make upper and lower CI values as a function of experience
+CI_me_exper_upper=function(education){me_exper(education)+1.96*se_me_exper(education)}
+CI_me_exper_lower=function(education){me_exper(education)-1.96*se_me_exper(education)}
+
+# lets now add these into the data
+wages3&amp;lt;-wages %&amp;gt;%
+  select(educ) %&amp;gt;%
+  mutate(me_exper = me_exper(educ),
+         CI_exper_lower = CI_me_exper_lower(educ),
+         CI_exper_upper = CI_me_exper_upper(educ)
+         )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in sqrt(var_me_educ(education)): NaNs produced
+
+## Warning in sqrt(var_me_educ(education)): NaNs produced&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# and graph it!
+margin_exper+
+  geom_ribbon(data = wages3, aes(ymin=CI_exper_lower, ymax=CI_exper_upper), fill = &amp;quot;grey70&amp;quot;, alpha = 0.5)+
+  scale_x_continuous(limits=c(0,20))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/content/3.7-content_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3.8 — Polynomial Regression — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/3.8-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/3.8-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Thursday, November 11, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;This week we will cover non-linear models, which we anticipated last week with an interaction effect between two continuous variables: &lt;span class=&#34;math inline&#34;&gt;\(X_1 \times X_2\)&lt;/span&gt;, where the marginal effect of &lt;span class=&#34;math inline&#34;&gt;\(X_1 \rightarrow Y\)&lt;/span&gt; is dependent on the value of &lt;span class=&#34;math inline&#34;&gt;\(X_2\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;We cover two types of nonlinear models. &lt;em&gt;Today&lt;/em&gt;, we cover &lt;strong&gt;polynomial models&lt;/strong&gt;, where we include higher-order &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; variables to explain a non-linear effect. &lt;em&gt;Next&lt;/em&gt; class we will cover &lt;strong&gt;logarithmic models&lt;/strong&gt;, which are more frequently used — as well as a few final tests and transformations for multivariate regression before we turn to panel data (Unit IV) next week.&lt;/p&gt;
+&lt;p&gt;Today, we will spend the first half of class finishing &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/r/3.7-r-practice&#34;&gt;last class’ practice problems&lt;/a&gt; (on dummy variables and interaction effects), then I will cover polynomial models. After we finish next class’ lecture, we will do another set of R practice problems, and you will be given your final graded &lt;strong&gt;HW 5&lt;/strong&gt; to work on this material.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 7.1 in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.8-slides.html&#34;&gt;&lt;img src =&#34;/slides/3.8-slides.png&#34; alt = &#34;3.8-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.8-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3.9 — Logarithmic Regression — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/3.9-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/3.9-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Thursday, November 11&lt;/em&gt; and &lt;em&gt;Tuesday November 16, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today, we finish up our view of &lt;em&gt;nonlinear&lt;/em&gt; models with &lt;strong&gt;logarithmic models&lt;/strong&gt;, which are more frequently used. We also discuss a few other tests and transformations to wrap up multivariate regression before we turn to panel data: &lt;strong&gt;standardizing variables&lt;/strong&gt; to compare effect sizes, and &lt;strong&gt;joint hypothesis tests&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Interpretting logged variables can often be difficult to remember, so here I reproduce the tables that describe the interpretations of the marginal effect of &lt;span class=&#34;math inline&#34;&gt;\(X \rightarrow Y\)&lt;/span&gt;, as well as some visual examples from the slides:&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;21%&#34; /&gt;
+&lt;col width=&#34;30%&#34; /&gt;
+&lt;col width=&#34;48%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th&gt;Equation&lt;/th&gt;
+&lt;th&gt;Interpretation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Linear-&lt;strong&gt;Log&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(Y=\beta_0+\beta_1 \mathbf{ln(X)}\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;1% change in &lt;span class=&#34;math inline&#34;&gt;\(X \rightarrow \frac{\hat{\beta_1}}{100}\)&lt;/span&gt; &lt;strong&gt;unit&lt;/strong&gt; change in &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;strong&gt;Log&lt;/strong&gt;-Linear&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{ln(Y)}=\beta_0+\beta_1X\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;1 &lt;strong&gt;unit&lt;/strong&gt; change in &lt;span class=&#34;math inline&#34;&gt;\(X \rightarrow \hat{\beta_1}\times 100\)&lt;/span&gt;&lt;strong&gt;%&lt;/strong&gt; change in &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;strong&gt;Log&lt;/strong&gt;-&lt;strong&gt;Log&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{ln(Y)}=\beta_0+\beta_1\mathbf{ln(X)}\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;strong&gt;%&lt;/strong&gt; change in &lt;span class=&#34;math inline&#34;&gt;\(X \rightarrow \hat{\beta_1}\)&lt;/span&gt;&lt;strong&gt;%&lt;/strong&gt; change in &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Hint: the variable that gets logged changes in &lt;strong&gt;percent&lt;/strong&gt; terms, the variable not logged changes in &lt;em&gt;unit&lt;/em&gt; terms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;36%&#34; /&gt;
+&lt;col width=&#34;36%&#34; /&gt;
+&lt;col width=&#34;27%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;center&#34;&gt;Linear-Log&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Log-Linear&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Log-Log&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/3.9-slides_files/figure-html/unnamed-chunk-17-1.png&#34; /&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/3.9-slides_files/figure-html/unnamed-chunk-23-1.png&#34; /&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;img src=&#34;https://metricsf21.classes.ryansafner.com/slides/3.9-slides_files/figure-html/unnamed-chunk-28-1.png&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}\mathbf{ln(X_i)}\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{ln(\hat{Y_i})}=\hat{\beta_0}+\hat{\beta_1}X_i\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{ln(\hat{Y_i})}=\hat{\beta_0}+\hat{\beta_1}\mathbf{ln(X_i)}\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(R^2=0.65\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(R^2=0.30\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(R^2=0.61\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 7.1 in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.9-slides.html&#34;&gt;&lt;img src =&#34;/slides/3.9-slides.png&#34; alt = &#34;3.9-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.9-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

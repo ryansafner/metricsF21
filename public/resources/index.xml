@@ -40,7 +40,15 @@
 &lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
-
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#list-of-public-datasets-data-sources-and-r-apis&#34;&gt;List of Public Datasets, Data Sources, and R APIs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#built-in-datasets&#34;&gt;Built-in Datasets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#general-databases-of-datasets&#34;&gt;General Databases of Datasets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#good-r-packages-for-getting-data-in-r-format&#34;&gt;Good R Packages for Getting Data in R Format&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#key-data-sources&#34;&gt;Key Data Sources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 
 &lt;div id=&#34;list-of-public-datasets-data-sources-and-r-apis&#34; class=&#34;section level2&#34;&gt;
