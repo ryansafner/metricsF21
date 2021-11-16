@@ -1476,11 +1476,10 @@ $$\widehat{Wage_i}=\hat{\beta_0}+\hat{\beta_1}Female_i$$
 --
 
 .smallest[
-.code80[
+.code50[
 ```{r, echo=T}
 # load car package for additional regression tools
-library("car") 
-
+library(car) 
 # F-test
 linearHypothesis(unrestricted_reg, c("northcen", "west", "south")) 
 ```
@@ -1489,7 +1488,11 @@ linearHypothesis(unrestricted_reg, c("northcen", "west", "south"))
 
 --
 
+.smallest[
 - $p$-value on $F$-test $<0.05$, so we can reject $H_0$
+
+]
+
 ---
 
 # Second F-test Example: Are Two Coefficients Equal?
@@ -1528,15 +1531,15 @@ $$\widehat{wage_i}=\beta_0+\beta_1(\text{Adolescent height}_i + \text{Adult heig
 
 ```{r, echo=T}
 # load in data
-heightwages<-read_csv("../data/heightwages.csv")
+heightwages <- read_csv("../data/heightwages.csv")
 
 # make a "heights" variable as the sum of adolescent (height81) and adult (height85) height
 
 heightwages <- heightwages %>%
-  mutate(heights=height81+height85)
+  mutate(heights = height81 + height85)
 
-height_reg<-lm(wage96~height81+height85+male, data=heightwages)
-height_restricted_reg<-lm(wage96~heights+male, data=heightwages)
+height_reg <- lm(wage96 ~ height81 + height85 + male, data = heightwages)
+height_restricted_reg <- lm(wage96 ~ heights + male, data = heightwages)
 
 ```
 
@@ -1547,7 +1550,7 @@ height_restricted_reg<-lm(wage96~heights+male, data=heightwages)
 - For second argument, set two variables equal, in quotes
 
 ```{r, echo=T}
-linearHypothesis(height_reg, "height81=height85") # F-test 
+linearHypothesis(height_reg, "height81 = height85") # F-test 
 ```
 
 - Insufficient evidence to reject $H_0$!
@@ -1571,7 +1574,7 @@ summary(unrestricted_reg)
 .smallest[
 - Last line of regression output from `summary()` is an **All F-test**
   - $H_0:$ all $\beta's=0$ 
-    - the regression explains no variation in $Y$
+      - the regression explains no variation in $Y$
   - Calculates an `F-statistic` that, if high enough, is significant (`p-value` $<0.05)$ enough to reject $H_0$
 ]
 ]
@@ -1591,4 +1594,4 @@ glance(unrestricted_reg)
 ```
 ]
 
-- "`statistic`" is the All F-test, "`p.value`" next to it is the p value from the F test
+- `statistic` is the All F-test, `p.value` next to it is the p-value from the F test

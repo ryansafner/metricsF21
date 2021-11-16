@@ -118,8 +118,10 @@ lessons:
   - title: "3.9 — Logarithmic Regression"
     content: "3.9-content"
     slides: "3.9-slides"
+    r: "3.9-r"
 
-  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 5**'
+  - title: '<i content="fas fa-laptop-code"></i> **Problem Set 5** due Tues Nov 23'
+    assignment: "05-problem-set"
 
   - title: '<span class="fake-header-table">IV. Panel Data & Advanced Models</span>'
     header: True

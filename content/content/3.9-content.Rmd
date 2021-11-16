@@ -18,6 +18,10 @@ slides: "3.9-slides"
 *Thursday, November 11* and *Tuesday November 16, 2021*
 {{% /alert %}}
 
+{{% alert warning %}}
+[Problem Set 5](/assignments/05-problem-set) is due by the end of the day Tuesday, November 23. This will be your final graded problem set!
+{{% /alert %}}
+
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
 
 Today, we finish up our view of *nonlinear* models with **logarithmic models**, which are more frequently used. We also discuss a few other tests and transformations to wrap up multivariate regression before we turn to panel data: **standardizing variables** to compare effect sizes, and **joint hypothesis tests**.
@@ -49,3 +53,9 @@ Below, you can find the slides in two formats. Clicking the image will bring you
 The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
 
 `r blogdown::shortcode("slide-links")`
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Problem Set 5 Due Tues Nov 23
+
+[Problem Set 5](/assignments/05-problem-set) is due by the end of the day on Tuesday, November 23. This will be your final graded homework!
