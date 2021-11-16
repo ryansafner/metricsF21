@@ -1159,16 +1159,35 @@ $$0.48 \times \$2,764,512=\$1,326,966$$
 
 # Standardizing in `R`
 
+.tiny[
+
+| Variable | Mean | SD |
+|----------|-----:|---:|
+| `LifeExp` | 59.47 | 12.92 |
+| `gdpPercap` | $7215.32 | $9857.46 |
+
+]
+.quitesmall[
 - Use the `scale()` command inside `mutate()` function to standardize a variable
 
+]
+
+.code60[
 ```{r, echo=T}
 gapminder <- gapminder %>%
-  mutate(life_Z = scale(lifeExp),
-         gdp_Z = scale(gdpPercap)) 
+  mutate(life_Z = scale(lifeExp), #<<
+         gdp_Z = scale(gdpPercap))  #<<
 
 std_reg <- lm(life_Z ~ gdp_Z, data = gapminder)
 tidy(std_reg)
 ```
+
+]
+
+.quitesmall[
+- A 1 standard deviation increase in `gdpPercap` will increase `lifeExp` by 0.584 standard deviations $(0.584 \times 12.92 = = 7.55$ years)
+
+]
 
 ---
 
