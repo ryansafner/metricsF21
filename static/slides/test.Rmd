@@ -1,0 +1,82 @@
+---
+title: "4.1 — Panel Data and Fixed Effects"
+subtitle: "ECON 480 • Econometrics • Fall 2021"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/metricsF21"><i class="fa fa-github fa-fw"></i>ryansafner/metricsF21</a><br> <a href="https://metricsF21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>metricsF21.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    df_print: paged
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina=3)
+library(tidyverse)
+library(ggthemes)
+library(parallel)
+
+set.seed(256)
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_extra_styles(hover_code_line = TRUE)
+library(gganimate)
+library(broom)
+```
+
+```{r}
+phones<-read_csv("../Data/cellphones.csv")
+phones<-phones %>%
+  select(-state_numeric) %>%
+  mutate(year_num = year) %>%
+  mutate_at(c("year", "state", "cell_ban", "text_ban"), as.factor) %>%
+  rename(deaths = DeathsPerBillionMiles,
+         cell_plans = cell_per10thous_pop)
+```
+
+
+```{r, echo = T}
+library(fixest)
+feols(deaths ~ cell_plans, data = phones)
+```
+
+---
+
+```{r, echo = T}
+feols(deaths ~ cell_plans | state, data = phones)
+```
+
+---
+
+```{r, echo = T}
+feols(deaths ~ cell_plans | state + year, data = phones) %>% 
+summary()
+```
+
+---
+
+```{r, echo = T}
+feols(deaths ~ cell_plans | state + year, data = phones) %>% 
+summary(., cluster = ~ state + year)
+```
