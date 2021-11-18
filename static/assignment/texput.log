@@ -1,16 +1,16 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.9.17)  1 OCT 2021 16:37
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.11.17)  17 NOV 2021 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**03-problem-set-pdf.tex
+**05-problem-set-pdf.tex
 ! Emergency stop.
-<*> 03-problem-set-pdf.tex
+<*> 05-problem-set-pdf.tex
                            
 Here is how much of TeX's memory you used:
- 2 strings out of 478492
- 28 string characters out of 5860850
- 291573 words of memory out of 5000000
- 20408 multiletter control sequences out of 15000+600000
+ 2 strings out of 478274
+ 28 string characters out of 5855301
+ 296779 words of memory out of 5000000
+ 20626 multiletter control sequences out of 15000+600000
  403430 words of font info for 27 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  0i,0n,0p,1b,6s stack positions out of 5000i,500n,10000p,200000b,80000s
