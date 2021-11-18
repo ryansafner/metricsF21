@@ -2895,12 +2895,22 @@ margin_exper+
 &lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-5-due-tues-nov-23&#34;&gt;Problem Set 5 Due Tues Nov 23&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     &lt;em&gt;Thursday, November 11&lt;/em&gt; and &lt;em&gt;Tuesday November 16, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/05-problem-set&#34;&gt;Problem Set 5&lt;/a&gt; is due by the end of the day Tuesday, November 23. This will be your final graded problem set!
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/p&gt;
@@ -2988,6 +2998,95 @@ margin_exper+
 &lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.9-slides.html&#34;&gt;&lt;img src =&#34;/slides/3.9-slides.png&#34; alt = &#34;3.9-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/3.9-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
 &lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-5-due-tues-nov-23&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 5 Due Tues Nov 23&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/05-problem-set&#34;&gt;Problem Set 5&lt;/a&gt; is due by the end of the day on Tuesday, November 23. This will be your final graded homework!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>4.1 — Panel Data and Fixed Effects — Class Content</title>
+      <link>https://metricsf21.classes.ryansafner.com/content/4.1-content/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://metricsf21.classes.ryansafner.com/content/4.1-content/</guid>
+      <description>
+&lt;script src=&#34;https://metricsf21.classes.ryansafner.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#readings&#34;&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#slides&#34;&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#problem-set-5-due-tues-nov-23&#34;&gt;Problem Set 5 Due Tues Nov 23&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#new-packages-mentioned&#34;&gt;New Packages Mentioned&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;em&gt;Thursday November 18, 2021&lt;/em&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/05-problem-set&#34;&gt;Problem Set 5&lt;/a&gt; is due by the end of the day Tuesday, November 23. This will be your final graded problem set!
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-info-circle fa-lg&#34;&gt;&lt;/i&gt; Overview&lt;/h2&gt;
+&lt;p&gt;Today, we begin our brief look at panel data, where we track multiple individuals over time. Panel data contains its own unique challenges, because it contains a time series component for every individual, giving potential sources of bias.&lt;/p&gt;
+&lt;p&gt;We now need to understand the third assumption about &lt;span class=&#34;math inline&#34;&gt;\(u_i\)&lt;/span&gt;: no autocorrelation. The errors of our observations are likely going to be correlated within each individual and within each time period.&lt;/p&gt;
+&lt;p&gt;We can correct for these with a &lt;strong&gt;fixed effects&lt;/strong&gt; model that isolates and absorbs some of that bias. In general, for a &lt;strong&gt;two-way&lt;/strong&gt; fixed effects model:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\widehat{\text{Y}}_{it} = \beta_0+\beta_1 \text{X}_{1it} + \beta_2 \text{X}_{2it}+\alpha_{i} + \theta_{t} + \nu_{it}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Each observation is an individual &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; at time &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; (pay attention to the subscripts).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(Y_{it}\)&lt;/span&gt; be our dependent variable, and &lt;span class=&#34;math inline&#34;&gt;\(X_{1it}\)&lt;/span&gt; be the independent variable of interest. We would like to estimate the causal effect of &lt;span class=&#34;math inline&#34;&gt;\(X_{1it} \rightarrow Y_{it}\)&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\alpha_i\)&lt;/span&gt; is the &lt;strong&gt;group fixed-effect&lt;/strong&gt;. It absorbs all unobservable factors that &lt;strong&gt;vary by group&lt;/strong&gt; but &lt;strong&gt;don’t change over time&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\tau_t\)&lt;/span&gt; is the &lt;strong&gt;time fixed-effect&lt;/strong&gt;. It absorbs all unobservable factors that &lt;strong&gt;do not vary by group&lt;/strong&gt; but &lt;strong&gt;change over time&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Since the fixed effects &lt;em&gt;do not&lt;/em&gt; pick up factors that &lt;strong&gt;&lt;em&gt;both&lt;/em&gt; vary by group &lt;em&gt;and&lt;/em&gt; change over time&lt;/strong&gt;, we need to include other variables that might cause &lt;span class=&#34;math inline&#34;&gt;\(X_{1it}\)&lt;/span&gt; to be endogenous: hence, &lt;span class=&#34;math inline&#34;&gt;\(X_{2it}\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\nu_{it}\)&lt;/span&gt; is the remaining (random) error term (after we have pulled &lt;span class=&#34;math inline&#34;&gt;\(\alpha_i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\tau_t\)&lt;/span&gt; out of &lt;span class=&#34;math inline&#34;&gt;\(u_{it}\)&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;readings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt; Readings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; Ch. 7.1 in Bailey, &lt;em&gt;Real Econometrics&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Slides&lt;/h2&gt;
+&lt;p&gt;Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type &lt;kbd&gt;h&lt;/kbd&gt; to see a special list of viewing options, and type &lt;kbd&gt;o&lt;/kbd&gt; for an outline view of all the slides.&lt;/p&gt;
+&lt;p&gt;The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (&lt;em&gt;not everything&lt;/em&gt; is in the slides)!&lt;/p&gt;
+&lt;p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/4.1-slides.html&#34;&gt;&lt;img src =&#34;/slides/4.1-slides.png&#34; alt = &#34;4.1-slides&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;a class=&#34;btn btn-primary btn-lg&#34; target=&#34;_blank&#34; href=&#34;https://metricsf21.classes.ryansafner.com/slides/4.1-slides.pdf&#34;&gt;&lt;i class=&#34;fas fa-file-pdf&#34;&gt;&lt;/i&gt; Download as PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;assignments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Assignments&lt;/h2&gt;
+&lt;div id=&#34;problem-set-5-due-tues-nov-23&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Problem Set 5 Due Tues Nov 23&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://metricsf21.classes.ryansafner.com/assignments/05-problem-set&#34;&gt;Problem Set 5&lt;/a&gt; is due by the end of the day on Tuesday, November 23. This will be your final graded homework!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;new-packages-mentioned&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;New Packages Mentioned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://lrberge.github.io/fixest/index.html&#34;&gt;&lt;code&gt;fixest&lt;/code&gt;&lt;/a&gt; for working with fixed effects models&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;for working with panel data and fixed effects&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note there are several other popular packages for working with panel data and fixed effects. I used to use (and teach) &lt;a href=&#34;https://cran.r-project.org/web/packages/plm/vignettes/plmPackage.html&#34;&gt;&lt;code&gt;plm&lt;/code&gt;&lt;/a&gt; but now find &lt;code&gt;fixest&lt;/code&gt; more efficient. There is also &lt;a href=&#34;https://cran.r-project.org/web/packages/lfe/index.html&#34;&gt;&lt;code&gt;lfe&lt;/code&gt;&lt;/a&gt; which I have not worked with.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

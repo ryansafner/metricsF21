@@ -37,7 +37,7 @@ class: inverse
 
 # Outline
 
-### [Pooled Regression Model](#)
+### [Pooled Regression Model](#3)
 ### [Fixed Effects Model](#)
 ### [Least Squares Dummy Variable Approach](#)
 ### [De-Meaned Approach](#)
@@ -158,7 +158,7 @@ class: inverse, center, middle
 
 $$
 `\begin{align}
-  \widehat{Y_{\color{red}{i}\color{blue}{t}}} = \beta_0 + \beta_1 X_{\color{red}{i}\color{blue}{t}} + u_{\color{red}{i}\color{blue}{t}}
+  \hat{Y}_{\color{red}{i}\color{blue}{t}}} = \beta_0 + \beta_1 X_{\color{red}{i}\color{blue}{t}} + u_{\color{red}{i}\color{blue}{t}}
 \end{align}`
 $$
 
@@ -182,7 +182,7 @@ $$
 
 .pull-right[
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Do cell phones cause more traffic fatalities?
 ]
 - No measure of cell phones *used* while driving
@@ -443,11 +443,11 @@ ggplot(data = phones)+
 
 `$$\widehat{\text{Deaths}_{it}}=\beta_0+\beta_1 \, \text{Cell Phones}_{it}+u_{it}$$`
 
-- .hi-turquoise[Multiple observations from same state `\(i\)`]
+- .hi-turquoise[Multiple observations from same state `\\(i\\)`]
   - Probably similarities among `\(u\)` for obs in same state
   - Residuals on observations from same state are likely correlated 
   
-- .hi-turquoise[Multiple observations from same year `\(t\)`]
+- .hi-turquoise[Multiple observations from same year `\\(t\\)`]
   - Probably similarities among `\(u\)` for obs in same year
   - Residuals on observations from same year are likely correlated
   
@@ -748,7 +748,7 @@ class: inverse, center, middle
 
 # Least Squares Dummy Variable Approach: Our Example
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: 
 `$$\widehat{\text{Deaths}_{it}}=\beta_0+\beta_1\text{Cell Phones}_{it}+\text{Alaska}_i+ \cdots +\text{Wyoming}_i$$`
 ]
@@ -934,19 +934,26 @@ ggplot(data = means_state)+
 
 ---
 
-# Visualizing "Within Estimates" for the 5 States
+# Visualizing “Within Group” Estimates for the 5 States
 
 
 
-&lt;img src="4.1-slides_files/figure-html/unnamed-chunk-27-1.gif" style="display: block; margin: auto;" /&gt;
 
+
+.center[
+![:scale 50%](4.1-slides_files/figure-html/unnamed-chunk-27-1.gif)
+]
 ---
 
-# Visualizing "Within Estimates" for All 51 States
+# Visualizing “Within Group” Estimates for All 51 States
 
 
 
-&lt;img src="4.1-slides_files/figure-html/unnamed-chunk-29-1.gif" style="display: block; margin: auto;" /&gt;
+
+
+.center[
+![:scale 50%](4.1-slides_files/figure-html/unnamed-chunk-29-1.gif)
+]
 
 ---
 
@@ -1111,17 +1118,17 @@ ggplot(data = phones)+
   aes(x = year,
       y = deaths)+
   geom_point(aes(color = year))+
-  
   # Add the yearly means as black points
   geom_point(data = means_year,
              aes(x = year,
                  y = avg_deaths),
              size = 3,
              color = "black")+
-  
-  geom_path(data = means_year,
-            aes(x = year,
+  # connect the means with a line
+  geom_line(data = means_year,
+            aes(x = as.numeric(year),
                 y = avg_deaths),
+            color = "black",
             size = 1)+
   theme_bw(base_family = "Fira Sans Condensed",
            base_size = 14)+
