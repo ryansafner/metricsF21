@@ -127,6 +127,8 @@ lessons:
     header: True
 
   - title: "4.1 — Panel Data and Fixed Effects Models"
+    content: "4.1-content"
+    slides: "4.1-slides"
 
   - title: "4.2 — Difference-in-Difference Models"
 

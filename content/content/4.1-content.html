@@ -1,0 +1,79 @@
+---
+title: "4.1 — Panel Data and Fixed Effects — Class Content"
+draft: false
+linktitle: "4.1 — Panel Data and Fixed Effects"
+date: "2020-06-08"
+menu:
+  content:
+    parent: Course content
+    weight: 22
+type: docs
+output:
+  blogdown::html_page:
+    toc: true
+slides: "4.1-slides"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#problem-set-5-due-tues-nov-23">Problem Set 5 Due Tues Nov 23</a></li>
+</ul></li>
+<li><a href="#new-packages-mentioned">New Packages Mentioned</a></li>
+</ul>
+</div>
+
+<p>{{% alert note %}}
+<em>Thursday November 18, 2021</em>
+{{% /alert %}}</p>
+<p>{{% alert warning %}}
+<a href="/assignments/05-problem-set">Problem Set 5</a> is due by the end of the day Tuesday, November 23. This will be your final graded problem set!
+{{% /alert %}}</p>
+<div id="overview" class="section level2">
+<h2><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today, we begin our brief look at panel data, where we track multiple individuals over time. Panel data contains its own unique challenges, because it contains a time series component for every individual, giving potential sources of bias.</p>
+<p>We now need to understand the third assumption about <span class="math inline">\(u_i\)</span>: no autocorrelation. The errors of our observations are likely going to be correlated within each individual and within each time period.</p>
+<p>We can correct for these with a <strong>fixed effects</strong> model that isolates and absorbs some of that bias. In general, for a <strong>two-way</strong> fixed effects model:</p>
+<p><span class="math display">\[\widehat{\text{Y}}_{it} = \beta_0+\beta_1 \text{X}_{1it} + \beta_2 \text{X}_{2it}+\alpha_{i} + \theta_{t} + \nu_{it}\]</span></p>
+<p>Each observation is an individual <span class="math inline">\(i\)</span> at time <span class="math inline">\(t\)</span> (pay attention to the subscripts).</p>
+<ul>
+<li>Let <span class="math inline">\(Y_{it}\)</span> be our dependent variable, and <span class="math inline">\(X_{1it}\)</span> be the independent variable of interest. We would like to estimate the causal effect of <span class="math inline">\(X_{1it} \rightarrow Y_{it}\)</span>.</li>
+<li><span class="math inline">\(\alpha_i\)</span> is the <strong>group fixed-effect</strong>. It absorbs all unobservable factors that <strong>vary by group</strong> but <strong>don’t change over time</strong>.</li>
+<li><span class="math inline">\(\tau_t\)</span> is the <strong>time fixed-effect</strong>. It absorbs all unobservable factors that <strong>do not vary by group</strong> but <strong>change over time</strong>.</li>
+<li>Since the fixed effects <em>do not</em> pick up factors that <strong><em>both</em> vary by group <em>and</em> change over time</strong>, we need to include other variables that might cause <span class="math inline">\(X_{1it}\)</span> to be endogenous: hence, <span class="math inline">\(X_{2it}\)</span></li>
+<li><span class="math inline">\(\nu_{it}\)</span> is the remaining (random) error term (after we have pulled <span class="math inline">\(\alpha_i\)</span> and <span class="math inline">\(\tau_t\)</span> out of <span class="math inline">\(u_{it}\)</span>.</li>
+</ul>
+</div>
+<div id="readings" class="section level2">
+<h2><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Ch. 7.1 in Bailey, <em>Real Econometrics</em></li>
+</ul>
+</div>
+<div id="slides" class="section level2">
+<h2><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p>Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. Note while in going through the slides, you can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.</p>
+<p>The lower button will allow you to download a PDF version of the slides. I suggest printing the slides beforehand and using them to take additional notes in class (<em>not everything</em> is in the slides)!</p>
+<p>{{% slide-links %}}</p>
+</div>
+<div id="assignments" class="section level2">
+<h2><i class="fas fa-laptop-code"></i> Assignments</h2>
+<div id="problem-set-5-due-tues-nov-23" class="section level3">
+<h3>Problem Set 5 Due Tues Nov 23</h3>
+<p><a href="/assignments/05-problem-set">Problem Set 5</a> is due by the end of the day on Tuesday, November 23. This will be your final graded homework!</p>
+</div>
+</div>
+<div id="new-packages-mentioned" class="section level1">
+<h1>New Packages Mentioned</h1>
+<ul>
+<li><p><a href="https://lrberge.github.io/fixest/index.html"><code>fixest</code></a> for working with fixed effects models</p></li>
+<li><p>for working with panel data and fixed effects</p></li>
+</ul>
+<p>Note there are several other popular packages for working with panel data and fixed effects. I used to use (and teach) <a href="https://cran.r-project.org/web/packages/plm/vignettes/plmPackage.html"><code>plm</code></a> but now find <code>fixest</code> more efficient. There is also <a href="https://cran.r-project.org/web/packages/lfe/index.html"><code>lfe</code></a> which I have not worked with.</p>
+</div>
