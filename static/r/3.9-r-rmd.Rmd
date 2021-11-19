@@ -111,7 +111,7 @@ Write out the estimated regression equation.
 
 ### Part D
 
-Is this model an improvement from the linear model? Compared $\bar{R}^2$.
+Is this model an improvement from the linear model? Compare $\bar{R}^2$.
 
 ---
 
@@ -199,7 +199,7 @@ geom_smooth(method = "lm", formula = "y ~ x + I(x^2)")
 
 ### Part J
 
-It's quite hard to see the quadratic curve with all those data points. Redo another plot and this time, only keep the quadratic `stat_smooth()` layer and leave out the `geom_point()` layer. This will only plot the regression curve.
+It's quite hard to see the quadratic curve with all those data points. Redo another plot and this time, only keep the quadratic `geom_smooth()` layer and leave out the `geom_point()` layer. This will only plot the regression curve.
 
 ---
 

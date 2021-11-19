@@ -20,6 +20,9 @@ I have already made an R project you can download (as a `.zip`), unzip, and open
 
 <p style="text-align:center"><a target="_blank" href="/r/3.9-r.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> R Project</a></span> <a target="_blank" href="https://rstudio.cloud/spaces/163934/project/3237168"><span class="btn btn-primary btn-lg"><i class="fas fa-cloud"></i> R Studio Cloud</a></span></p>
 
+## Answers
+
+<p style="text-align:center"><a target="_blank" href="/r/3.9-r-answers.html"><span class="btn btn-primary btn-lg"><i class="fas fa-external-link-square-alt"></i> Answers (html)</a> <a target="_blank" href="/r/3.9-r-answers.zip"><span class="btn btn-primary btn-lg"><i class="fas fa-file-archive"></i> Answers (R Project)</a></span></p>
 
 ## Question 1
 
