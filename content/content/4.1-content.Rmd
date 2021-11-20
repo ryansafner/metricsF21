@@ -42,7 +42,7 @@ Each observation is an individual $i$ at time $t$ (pay attention to the subscrip
 
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
-- <i class="fas fa-book"></i> Ch. 7.1 in Bailey, *Real Econometrics*
+- <i class="fas fa-book"></i> Ch. 8.1—8.4 in Bailey, *Real Econometrics*
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 
