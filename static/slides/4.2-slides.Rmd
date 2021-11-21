@@ -51,8 +51,8 @@ class: inverse
 
 ### [Difference-in-Difference Models](#3)
 ### [Example I: HOPE in Georgia](#32)
-### [Generalizing DND Models](#71)
-### [Example II: "The" Card-Kreuger Minimum Wage Study](#79)
+### [Generalizing DND Models](#72)
+### [Example II: "The" Card-Kreuger Minimum Wage Study](#80)
 
 ---
 
@@ -109,7 +109,7 @@ class: inverse, center, middle
 .pull-left[
 
 .smallest[
-- Often, we want to examine the consequences of a change, such as a law or policy
+- Often, we want to examine the consequences of a change, such as a law or policy intervention
 ]
 ]
 
@@ -123,7 +123,7 @@ class: inverse, center, middle
 .smallest[
 - Often, we want to examine the consequences of a change, such as a law or policy intervention
 
-- .green[**Example**]: how do States that implement $X$ see changes in $Y$
+- .green[**Example**]: how do States that implement policy $X$ see changes in $Y$
   - **Treatment**: States that implement $X$
   - **Control**: States that did not implement $X$
 ]
@@ -137,13 +137,13 @@ class: inverse, center, middle
 .pull-left[
 
 .smallest[
-- Often, we want to examine the consequences of a change, such as a law or policy
+- Often, we want to examine the consequences of a change, such as a law or policy intervention
 
-- .green[**Example**]: how do States that implement law $X$ see changes in $Y$
+- .green[**Example**]: how do States that implement policy $X$ see changes in $Y$
   - **Treatment**: States that implement $X$
   - **Control**: States that did not implement $X$
 
-- If we have panel data with observations for all states **before** and **after** the change...
+- If we have **panel data** with observations for all states **before** and **after** the change...
     
 - Find the *difference* between treatment & control groups *in* their *differences* before and after the treatment period
 ]
@@ -164,13 +164,13 @@ class: inverse, center, middle
 .pull-left[
 
 .smallest[
-- Often, we want to examine the consequences of a change, such as a law or policy
+- Often, we want to examine the consequences of a change, such as a law or policy intervention
 
-- .green[**Example**]: how do States that implement law $X$ see changes in $Y$
+- .green[**Example**]: how do States that implement policy $X$ see changes in $Y$
   - **Treatment**: States that implement $X$
   - **Control**: States that did not implement $X$
 
-- If we have **panel data** with observations for all states before *and* after the change...
+- If we have **panel data** with observations for all states **before** *and* **after** the change...
     
 - Find the *difference* between treatment & control groups *in* their *differences* before and after the treatment period
 ]
@@ -381,7 +381,7 @@ ggplot(data = tibble(x=1,3))+
 .pull-right[
 
 .smallest[
-- .red[Control group `\\((Treated = 0)\\)`]
+- .red[Control group `\\((\text{Treated_i} = 0)\\)`]
 
 - .red[`\\(\hat{\beta_0}\\)`]: value of $Y$ for **control** group **before** treatment
 
@@ -457,14 +457,14 @@ ggplot(data = tibble(x=1,3))+
 .pull-right[
 
 .smallest[
-- .red[Control group `\\((Treated = 0)\\)`]
+- .red[Control group `\\((\text{Treated_i} = 0)\\)`]
 
 
 - .red[`\\(\hat{\beta_0}\\)`]: value of $Y$ for **control** group **before** treatment
 
 - .red[`\\(\hat{\beta_2}\\)`]: time *difference* (for **control** group)
 
-- .green[Treated group `\\((Treated = 1)\\)`]
+- .green[Treatment group `\\((\text{Treated}_i = 1)\\)`]
 
 
 ]
@@ -541,16 +541,16 @@ ggplot(data = tibble(x=1,3))+
 .pull-right[
 
 .smallest[
-- .red[Control group `\\((Treated = 0)\\)`]
+- .red[Control group `\\((\text{Treated_i} = 0)\\)`]
 
 
 - .red[`\\(\hat{\beta_0}\\)`]: value of $Y$ for **control** group **before** treatment
 
 - .red[`\\(\hat{\beta_2}\\)`]: time *difference* (for **control** group)
 
-- .green[Treated group `\\((Treated = 1)\\)`]
+- .green[Treatment group `\\((\text{Treated}_i = 1)\\)`]
 
-- $\hat{\beta_1}$: *difference* between groups **before** treatment
+- .green[`\\(\hat{\beta_1}\\)`]: *difference* between groups **before** treatment
 
 ]
 ]
@@ -631,16 +631,16 @@ ggplot(data = tibble(x=1,3))+
 
 .pull-right[
 .smallest[
-- .red[Control group `\\((Treated = 0)\\)`]
+- .red[Control group `\\((\text{Treated_i} = 0)\\)`]
 
 
 - .red[`\\(\hat{\beta_0}\\)`]: value of $Y$ for **control** group **before** treatment
 
 - .red[`\\(\hat{\beta_2}\\)`]: time *difference* (for **control** group)
 
-- .green[Treated group `\\((Treated = 1)\\)`]
+- .green[Treatment group `\\((\text{Treated}_i = 1)\\)`]
 
-- $\hat{\beta_1}$: *difference* between groups **before** treatment
+- .green[`\\(\hat{\beta_1}\\)`]: *difference* between groups **before** treatment
 
 - .blue[`\\(\hat{\beta_3}\\)`]: .hi-blue[difference-in-difference (treatment effect)]
 ]
@@ -1201,7 +1201,7 @@ ggplot(data = tibble(x=1,3))+
                      limits=c(0,9))+
   labs(x = "Time",
        y = "Y")+
-  ggthemes::theme_pander(base_family = "Fira Sans Condensed",
+  theme_classic(base_family = "Fira Sans Condensed",
            base_size=20)
 ```
 ]
@@ -1551,8 +1551,8 @@ $\beta_0+\beta_1+\beta_2+\beta_3=0.406-0.105-0.004+0.089=0.386$
 ```{r, echo=T}
 # group mean for non-Georgian before 1992
 hope %>%
-  filter(Georgia==0,
-         After==0) %>%
+  filter(Georgia == 0,
+         After == 0) %>%
   summarize(prob = mean(InCollege))
 
 ```
@@ -1564,8 +1564,8 @@ hope %>%
 ```{r, echo=T}
 # group mean for non-Georgian AFTER 1992
 hope %>%
-  filter(Georgia==0,
-         After==1) %>%
+  filter(Georgia == 0,
+         After == 1) %>%
   summarize(prob = mean(InCollege))
 
 ```
@@ -1579,8 +1579,8 @@ hope %>%
 ```{r, echo=T}
 # group mean for Georgian before 1992
 hope %>%
-  filter(Georgia==1,
-         After==0) %>%
+  filter(Georgia == 1,
+         After == 0) %>%
   summarize(prob = mean(InCollege))
 ```
 ]
@@ -1591,8 +1591,8 @@ hope %>%
 ```{r, echo=T}
 # group mean for Georgian AFTER 1992
 hope %>%
-  filter(Georgia==1,
-         After==1) %>%
+  filter(Georgia == 1,
+         After == 1) %>%
   summarize(prob = mean(InCollege))
 ```
 ]
@@ -1622,13 +1622,15 @@ $$\begin{align*}
 # Example: Diff-in-Diff Graph
 
 ```{r, fig.retina=3, fig.align="center", fig.width=16}
-hope %>%
+plot<-hope %>%
   ggplot(data=.)+
   aes(x = After,
       y = InCollege,
       color = factor(Georgia))+
-  geom_smooth(method="lm", se=FALSE)+
+  geom_smooth(method="lm", se=FALSE, size = 2)+
   #scale_y_continuous(breaks=seq(0,1,0.125), limits=c(0,0.05))+
+  #geom_abline(intercept = 0.301, slope = -0.004, linetype = "dashed", color = "gray",
+  #            xlim = c(0,1))+
   scale_x_continuous(breaks=seq(0,1,1), labels=c("Before", "After"))+
 scale_color_manual(name = "State",
                    labels = c("Neighbors", "Georgia"), values = c("blue", "red"))+
@@ -1636,7 +1638,19 @@ scale_color_manual(name = "State",
        y = "Probability of Being Enrolled in College")+
   theme_classic(base_family = "Fira Sans Condensed",
            base_size=16)+
+  #scale_y_continuous(limits = c(0.2,0.6),
+  #                   expand = c(0,0))+
   theme(legend.position = "top")
+plot
+```
+
+---
+
+# Example: Diff-in-Diff Graph (& Counterfactual)
+
+```{r, fig.retina=3, fig.align="center", fig.width=16}
+plot+ geom_segment(x = 0, xend = 1, y = 0.301, yend = 0.297, linetype = "dashed", color = "gray", size = 2)
+
 ```
 
 ---
@@ -1650,7 +1664,7 @@ class: inverse, center, middle
 # Generalizing DND Models
 
 - DND can be **generalized** with a **two-way fixed effects** model:  	
-$$\widehat{Y_{it}}=\alpha_i+\theta_t+\beta_3 (\text{Treated}_i * \text{After}_{t})+\nu_{it}$$
+$$\widehat{Y_{it}}=\alpha_i+\theta_t+\beta_3 (\text{Treated}_i \times \text{After}_{t})+\nu_{it}$$
     - $\alpha_i$: **group fixed effects** (treatments/control groups)
     - $\theta_t$: **time fixed effects** (pre/post treatment)
 
@@ -1677,21 +1691,87 @@ $$\widehat{Enrolled_{it}} = \alpha_i+\theta_t+\beta_3 \, (Georgia_{it} \times Af
 
 # Our Example, Generalized II
 
+.pull-left[
+.smallest[
+- Using LSDV method...
+]
 .tiny[
-- Using LSDV method... 
-
+.code70[
 ```{r dnd-gen-reg, echo=T}
 DND_fe <- lm(InCollege ~ Georgia*After + factor(StateCode) + factor(Year),
            data = hope)
 DND_fe %>% tidy()
 ```
+]
+]
+]
 
+--
+
+.pull-right[
+.smallest[
+- By de-meaning data, using `fixest`
+]
+.tiny[
+.code70[
+```{r dnd-gen-reg-fixest, echo=T}
+library(fixest)
+DND_fe_2 <- feols(InCollege ~ Georgia*After | factor(StateCode) + factor(Year),
+           data = hope)
+DND_fe_2 %>% tidy()
+```
+]
+]
 ]
 
 --
 
 .smallest[
-$$\widehat{InCollege_{it}}=\alpha_i+\theta_t+0.091 \, (\text{Georgia}_i \times \text{After}_{it})$$
+$$\widehat{InCollege_{it}}=0.091 \, (\text{Georgia}_i \times \text{After}_{it})+\alpha_i+\theta_t$$
+
+]
+
+---
+
+# Our Example, Generalized, with Controls II
+
+.pull-left[
+.smallest[
+- Using LSDV method...
+]
+.tiny[
+.code70[
+```{r dnd-gen-reg-controls, echo=T}
+DND_fe_controls <- lm(InCollege ~ Georgia*After + factor(StateCode) + factor(Year) + Black + LowIncome,
+           data = hope)
+DND_fe_controls %>% tidy()
+```
+]
+]
+]
+
+--
+
+.pull-right[
+.smallest[
+- By de-meaning data, using `fixest`
+]
+.tiny[
+.code70[
+```{r dnd-gen-reg-controls-fixest, echo=T}
+library(fixest)
+DND_fe_controls_2 <- feols(InCollege ~ Georgia*After + Black + LowIncome | factor(StateCode) + factor(Year),
+           data = hope)
+DND_fe_controls_2 %>% tidy()
+```
+
+]
+]
+]
+
+--
+.smallest[
+$$\widehat{InCollege_{it}}=\alpha_i+\theta_t+0.023 \, (\text{Georgia}_i \times \text{After}_{it})-0.094 \text{Black}_{it}-0.302 \text{LowIncome}_{it}$$
 
 ]
 

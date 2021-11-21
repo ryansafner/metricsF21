@@ -181,14 +181,8 @@ install.packages("tinytex")
 tinytex::install_tinytex()
 -->
 <p><em>Due by Thursday October 7</em></p>
-<div id="instructions" class="section level1">
-<h1>Instructions</h1>
-<p>For this problem set, you may submit handwritten answers on a plain sheet of paper, or download and type/handwrite on the PDF.</p>
-<p>Alternatively, you may download the <code>.Rmd</code> file, do the homework in markdown, and email to me a single <code>knit</code>ted <code>html</code> or <code>pdf</code> file (and be sure that it shows all of your code).</p>
-<p>You may work together (and I highly encourage that) but you must turn in your own answers. I grade homeworks 70% for completion, and for the remaining 30%, pick one question to grade for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.</p>
-</div>
-<div id="theory-and-concepts" class="section level1">
-<h1>Theory and Concepts</h1>
+<div id="concepts" class="section level1">
+<h1>Concepts</h1>
 <div id="question-1" class="section level2">
 <h2>Question 1</h2>
 <p><strong>In your own words, describe what exogeneity and endogeneity mean, and how they are related to bias in our regression. What things can we learn about the bias if we know <span class="math inline">\(X\)</span> is endogenous?</strong></p>
@@ -219,6 +213,9 @@ tinytex::install_tinytex()
 <p><strong>In your own words, describe what a <span class="math inline">\(p\)</span>-value means, and how it is used to establish statistical significance.</strong></p>
 <!--WRITE YOUR ANSWERS BELOW -->
 </div>
+</div>
+<div id="theory-and-applications" class="section level1">
+<h1>Theory and Applications</h1>
 <div id="question-7" class="section level2">
 <h2>Question 7</h2>
 <p><strong>A researcher is interested in examining the impact of illegal music downloads on commercial music sales. The author collects data on commercial sales of the top 500 singles from 2017 (<span class="math inline">\(Y\)</span>) and the number of downloads from a web site that allows `file sharing’ (<span class="math inline">\(X\)</span>). The author estimates the following model</strong></p>
@@ -228,17 +225,6 @@ tinytex::install_tinytex()
 </div>
 <div id="question-8" class="section level2">
 <h2>Question 8</h2>
-<p><strong>A pharmaceutical company is interested in estimating the impact of a new drug on cholesterol levels. They enroll 200 people in a clinical trial. People are randomly assigned the treatment group or into the control group. Half of the people are given the new drug and half the people are given a sugar pill with no active ingredient. To examine the impact of dosage on reductions in cholesterol levels, the authors of the study regress the following model:</strong></p>
-<p><span class="math display">\[\text{cholesterol level}_i = \beta_0+\beta_1 \text{dosage level}_i + u_i\]</span></p>
-<p><strong>For people in the control group, dosage level<span class="math inline">\(_i=0\)</span> and for people in the treatment group, dosage level<span class="math inline">\(_i\)</span> measures milligrams of the active ingredient. In this case, the authors find a large, negative, statistically significant estimate of <span class="math inline">\(\hat{\beta_1}\)</span>. Is this an unbiased estimate of the impact of dosage on change in cholesterol level? Why or why not? Do you expect the estimate to overstate or understate the true relationship between dosage and cholesterol level?</strong></p>
-<!--WRITE YOUR ANSWERS BELOW -->
-</div>
-</div>
-<div id="theory-problems" class="section level1">
-<h1>Theory Problems</h1>
-<p><strong>For the following questions, please <em>show all work</em> and explain answers as necessary. You may lose points if you only write the correct answer. You may use <code>R</code> to <em>verify</em> your answers, but you are expected to reach the answers in this section “manually.”</strong></p>
-<div id="question-9" class="section level2">
-<h2>Question 9</h2>
 <p><strong>A researcher wants to estimate the relationship between average weekly earnings <span class="math inline">\((AWE\)</span>, measured in dollars) and <span class="math inline">\(Age\)</span> (measured in years) using a simple OLS model. Using a random sample of college-educated full-time workers aged 25-65 yields the following:</strong></p>
 <p><span class="math display">\[\widehat{AWE} = 696.70+9.60 \, Age\]</span></p>
 <div id="part-a" class="section level3">
@@ -282,8 +268,8 @@ tinytex::install_tinytex()
 <!--WRITE YOUR ANSWERS BELOW -->
 </div>
 </div>
-<div id="question-10" class="section level2">
-<h2>Question 10</h2>
+<div id="question-9" class="section level2">
+<h2>Question 9</h2>
 <p><strong>Suppose a researcher is interested in estimating a simple linear regression model:</strong></p>
 <p><span class="math display">\[Y_i=\beta_0+\beta_1X_i+u_i\]</span> <strong>In a sample of 48 observations, she generates the following descriptive statistics:</strong></p>
 <ul>
@@ -324,8 +310,8 @@ tinytex::install_tinytex()
 <div id="r-questions" class="section level1">
 <h1>R Questions</h1>
 <p>Answer the following questions using <code>R</code>. When necessary, please write answers in the same document (knitted <code>Rmd</code> to <code>html</code> or <code>pdf</code>, typed <code>.doc(x)</code>, or handwritten) as your answers to the above questions. Be sure to include (email or print an <code>.R</code> file, or show in your knitted <code>markdown</code>) your code and the outputs of your code with the rest of your answers.</p>
-<div id="question-11" class="section level2">
-<h2>Question 11</h2>
+<div id="question-10" class="section level2">
+<h2>Question 10</h2>
 <ul>
 <li><a href="http://metricsf20.classes.ryansafner.com/data/mlbattend.csv"><i class="fas fa-table"></i> <code>mlbattend.csv</code></a></li>
 </ul>

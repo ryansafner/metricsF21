@@ -40,6 +40,8 @@ Thus, $\hat{\beta_3}$ is the causal effect of the treatment we aim to measure. A
 ## <i class="fas fa-book-reader fa-lg"></i> Readings
 
 - <i class="fas fa-book"></i> Ch. 8.5 in Bailey, *Real Econometrics*
+- [<i class="fas fa-file-pdf"></i> Dynarski, 1999, “Hope for Whom? Financial Aid for the Middle Class and its Impact on College Attendance”](/readings/Dynarski-1999.pdf)
+- [<i class="fas fa-file-pdf"></i> Card and Kreuger, 1994, “Minimum Wages and Unemployment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania”](/readings/Card-Kreuger-1994.pdf)
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 

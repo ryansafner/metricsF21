@@ -525,6 +525,8 @@ library(car)
 linearHypothesis(full_reg, c("Black", "Hispanic"))
 ```
 
+Since $p<0.05$, we can reject the null hypothesis in favor of the alternative hypothesis, which implies that the race of the driver has some effect on Amount.
+
 ---
 
 ## Question 8
@@ -570,3 +572,22 @@ std_reg <- lm(Amount_Z ~ Age_Z + MPHover_Z, data = speed)
 summary(std_reg)
 ```
 
+$\hat{\beta_1}$: a 1 standard deviation increase in Age causes a 0.006 standard deviation increase in Amount.
+
+$\hat{\beta_2}$: a 1 standard deviation increase in MPHover causes a 0.663 standard deviation increase in Amount. 
+
+MPHover has a much larger marginal effect on Amount.
+
+```{r}
+# compare the coefficient plots before and after standardizing variables
+
+# Without standardizing:
+
+library(modelsummary)
+lm(Amount ~ Age + MPHover, data = speed) %>% 
+modelplot(coef_omit = "Intercept")
+
+# With standardizing:
+
+modelplot(std_reg, coef_omit = "Intercept")
+```

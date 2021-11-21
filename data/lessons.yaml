@@ -131,6 +131,8 @@ lessons:
     slides: "4.1-slides"
 
   - title: "4.2 — Difference-in-Difference Models"
+    content: "4.2-content"
+    slides: "4.2-slides"
 
   - title: '<i content="fas fa-laptop-code"></i> **Problem Set 6**'
 
