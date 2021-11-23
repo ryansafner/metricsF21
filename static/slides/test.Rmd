@@ -31,8 +31,6 @@ knitr::opts_chunk$set(echo=F,
                       warning=F,
                       fig.retina=3)
 library(tidyverse)
-library(ggthemes)
-library(parallel)
 
 set.seed(256)
 update_geom_defaults("label", list(family = "Fira Sans Condensed"))
@@ -41,42 +39,18 @@ xaringanExtra::use_tile_view()
 xaringanExtra::use_tachyons()
 xaringanExtra::use_freezeframe()
 xaringanExtra::use_extra_styles(hover_code_line = TRUE)
-library(gganimate)
 library(broom)
 ```
 
 ```{r}
-phones<-read_csv("../Data/cellphones.csv")
-phones<-phones %>%
-  select(-state_numeric) %>%
-  mutate(year_num = year) %>%
-  mutate_at(c("year", "state", "cell_ban", "text_ban"), as.factor) %>%
-  rename(deaths = DeathsPerBillionMiles,
-         cell_plans = cell_per10thous_pop)
+data <- readr::read_csv("https://docs.google.com/uc?id=10h_5og14wbNHU-lapQaS1W6SBdzI7W6Z&export=download")
+write_csv(data, "card-kreuger.csv")
 ```
 
-
-```{r, echo = T}
-library(fixest)
-feols(deaths ~ cell_plans, data = phones)
+readLines("../Data/public.dat", n = 10)
+#data <- read.delim("../Data/public.dat") 
 ```
 
----
-
-```{r, echo = T}
-feols(deaths ~ cell_plans | state, data = phones)
-```
-
----
-
-```{r, echo = T}
-feols(deaths ~ cell_plans | state + year, data = phones) %>% 
-summary()
-```
-
----
-
-```{r, echo = T}
-feols(deaths ~ cell_plans | state + year, data = phones) %>% 
-summary(., cluster = ~ state + year)
+```{r}
+data
 ```

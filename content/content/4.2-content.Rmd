@@ -15,7 +15,7 @@ slides: "4.2-slides"
 ---
 
 {{% alert note %}}
-*Thursday November 18, 2021*
+*Thursday November 23, 2021*
 {{% /alert %}}
 
 {{% alert warning %}}

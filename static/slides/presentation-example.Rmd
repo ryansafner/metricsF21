@@ -1,0 +1,208 @@
+---
+title: "Example Presentation"
+author: "Ryan Safner"
+date: "ECON 480 — Fall 2021"
+output:
+  beamer_presentation:
+    dev: cairo_pdf # Allows different fonts
+    latex_engine: xelatex # needed for different fonts
+    theme: "metropolis"
+classoption: aspectratio=169
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message = F,
+                      warning = F,
+                      fig.retina = 3)
+library(tidyverse)
+library(knitr)
+```
+
+# Overview
+
+- As a student writing an empirical research paper, does writing a longer paper attain a higher grade?
+- Simple OLS regression
+- Sample data collected from previous classes with paper assignments 
+- Strong positive effect: for every marginal page written, grades improve by about 1-2 points 
+- Robust to different models 
+
+# Theory
+
+- Dilemma:
+1. Longer papers might imply students work hard and write a good paper 
+2. But students might also put in low quality filler hoping to inflate their grades 
+
+# Data
+
+- I collected data from 7 different classes at 2 different colleges where I assigned a longer term paper 
+
+```{r, load-data}
+papers<-read_csv("../data/paperlengthsregcsv.csv")
+source("../files/summaries.R")
+papers<-papers %>%
+  mutate(Sex=as.factor(Sex),
+         Sex=recode(Sex, `F` = "Female", M = "Male")) %>%
+  mutate(Female = ifelse(Sex=="Female",1,0),
+         Morning = ifelse(Time=="Morning",1,0),
+         Hood=ifelse(School=="Hood",1,0),
+         Econometrics=ifelse(Class=="Econometrics",1,0),
+         Covid=ifelse(Covid=="Yes",1,0))
+```
+
+# Variables
+
+| Variable | Description |
+|----------|-------------|
+| Grade    | Grade on paper assignment (0-100) |
+| Pages    | Number of pages written |
+| Final | Final course grade for student |
+| Gender | Gender of student |
+| Class | Class in which paper was assigned |
+| School | School of class taught |
+| Year | Year of class |
+| Time | Time of day class met |
+| Covid | Course during Covid? |
+
+# Summary Statistics
+
+
+```{r}
+summary_table(papers, Pages, Grade, Final, Year, Female, Morning, Hood, Econometrics, Covid) %>%
+  knitr::kable(., format="html")
+```
+
+# Data: Histogram of X
+
+```{r, fig.retina=3, fig.align="center", out.width="50%"}
+papers<-papers %>%
+  mutate(Metrics = ifelse(Econometrics==1, "Econometrics", "Other"))
+
+
+pages_hist<-ggplot(data = papers)+
+  aes(x = Pages)+
+  geom_histogram(color="white", fill="#e64173",breaks=seq(0,24,2))+
+  scale_x_continuous(breaks=seq(0,24,2),
+                     limits = c(0,25),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks=seq(0,50,10),
+                     limits = c(0,52),
+                     expand = c(0,0))+
+  labs(x = "Number of Pages Written",
+       y = "Number of Papers")+
+    ggthemes::theme_pander(base_family = "Fira Sans Condensed",
+           base_size=16)
+pages_hist
+```
+
+# Data
+
+```{r, fig.retina=3, fig.align="center", out.width="50%"}
+
+pages_hist+facet_wrap(~Metrics)
+```
+
+
+# Data
+
+```{r, fig.retina=3, fig.align="center", out.width="50%"}
+scatter_no0s<-ggplot(data = subset(papers, Grade>0))+
+  aes(x = Pages,
+      y = Grade)+
+  geom_jitter(aes(color = Class))+
+  geom_smooth(method="lm", color="black")+
+  scale_x_continuous(breaks=seq(0,24,2),
+                     limits=c(0,25),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks=seq(0,100,10),
+                     limits=c(0,110),
+                     expand=c(0,0))+
+  labs(x = "Number of Pages Written",
+       y = "Paper Grade",
+       title = "Pages Written vs. Paper Grade (No 0’s)")+
+    ggthemes::theme_pander(base_family = "Fira Sans Condensed",
+           base_size=16)+
+  theme(legend.position = "bottom")
+scatter_no0s
+```
+
+# Data
+
+```{r, fig.retina=3, fig.align="center", out.width="50%"}
+
+ggplot(data = subset(papers, Class=="Econometrics"))+
+  aes(x = Pages,
+      y = Grade)+
+  geom_jitter(color = "blue")+
+  geom_smooth(method="lm", color="red")+
+  scale_x_continuous(breaks=seq(0,24,2),
+                     limits=c(0,25),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks=seq(0,100,10),
+                     limits=c(0,110),
+                     expand=c(0,0))+
+  labs(x = "Number of Pages Written",
+       y = "Paper Grade",
+       title = "Pages Written vs. Paper Grade (Econometrics Only)")+
+    ggthemes::theme_pander(base_family = "Fira Sans Condensed",
+           base_size=16)
+```
+
+# Empirical Model
+
+$$\begin{aligned}
+\text{Paper Grade}_i=& \, \beta_0+\beta_1\text{Paper Length}_i+\beta_2\text{Course Grade}_i\\
+&+\beta_3\text{Gender}_i+\beta_4\text{School}_i+\beta_5\text{Covid}_i\\
+&+\beta_6\text{Course}_i+u_i\\ \end{aligned}$$
+
+# Results
+
+```{r}
+papers0<-papers %>%
+  filter(Grade>0)
+
+hood<-papers %>%
+  filter(School=="Hood")
+
+metrics<-papers %>%
+  filter(Class=="Econometrics")
+
+basicreg<-lm(Grade~Pages, data=papers)
+no0reg<-lm(Grade~Pages, data=papers0)
+basicmetricsreg<-lm(Grade~Pages, data=metrics)
+controlsreg<-lm(Grade~Pages+Final+Female+Hood+Metrics+Covid, data=papers0)
+hoodreg<-lm(Grade~Pages+Final+Female+Metrics+Covid, data=hood)
+metricsreg<-lm(Grade~Pages+Final+Female+Covid, data=metrics)
+```
+
+```{r, results="asis"}
+library(huxtable)
+huxreg("Baseline" = basicreg,
+       "No Os" = no0reg,
+       "Econometrics Only" = basicmetricsreg,
+       "With Controls" = controlsreg,
+       "Hood Only" = hoodreg,
+       "Econometrics Only" = metricsreg,
+       coefs = c("Constant" = "(Intercept)",
+                 "Length" = "Pages",
+                 "Course Grade" = "Final",
+                 "Hood College" = "Hood",
+                 "Female" = "Female",
+                 "Econometrics Course" = "MetricsOther",
+                 "During Covid?" = "Covid"),
+       statistics = c("N" = "nobs",
+                      "R-Squared" = "r.squared",
+                      "SER" = "sigma"),
+       number_format = 2) %>%
+  print_latex()
+```
+
+# Implications
+
+- For every additional page written, we can expect a paper's grade to increase by about a point or less. 
+
+- For econometrics only, marginal effect is even smaller, only less than half of a point increase for every additional page written. 
+
+- Likely endogeneity of length due to unobserved factors such as topic and quality of writing
+
+- *It would be poor advice to recommend students simply to write long papers to earn a higher grade.*
