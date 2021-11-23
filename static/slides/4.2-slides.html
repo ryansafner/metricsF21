@@ -37,8 +37,8 @@ class: inverse
 
 ### [Difference-in-Difference Models](#3)
 ### [Example I: HOPE in Georgia](#32)
-### [Generalizing DND Models](#72)
-### [Example II: "The" Card-Kreuger Minimum Wage Study](#80)
+### [Generalizing DND Models](#74)
+### [Example II: "The" Card-Kreuger Minimum Wage Study](#88)
 
 ---
 
@@ -662,7 +662,7 @@ class: inverse, center, middle
 - `\(\text{After}_t=\begin{cases}1 \text{ if } t \text{ is after 1992}\\ 0 \text{ if } t \text{ is after 1992}\\ \end{cases}\)`
 ]
 
-.source[Dynarski, Susan (2000), "Hope for Whom? Financial Aid for the Middle Class and Its Impact on College Attendance"]
+.source[Dynarski, Susan, 1999, “Hope for Whom? Financial Aid for the Middle Class and its Impact on College Attendance,” *National Tax Journal* 53(3): 629-661]
 
 .tiny[Note: With a dummy *dependent* (Y) variable, coefficients estimate the probability `\\(Y=1\\)`, i.e. the *probability* a person is enrolled in college]
 
@@ -689,7 +689,7 @@ class: inverse, center, middle
 --
 
 - Regression equation:
-`$$\widehat{Enrolled_{it}} = \beta_0+\beta_1 \, Georgia_{i}+\beta_2 \,  After_{t}+\beta_3 \, (Georgia_{i} \times After_{t})$$`
+`$$\widehat{\text{Enrolled}_{it}} = \beta_0+\beta_1 \, \text{Georgia}_{i}+\beta_2 \,  \text{After}_{t}+\beta_3 \, (\text{Georgia}_{i} \times \text{After}_{t})$$`
 
 ---
 
@@ -709,7 +709,19 @@ class: inverse, center, middle
 
 # Example: Data
 
+.pull-left[
+
 &lt;img src="4.2-slides_files/figure-html/unnamed-chunk-25-1.png" width="504" /&gt;
+
+]
+
+.pull-right[
+.center[
+![](../images/dynarski_hope.png)
+]
+]
+
+.source[Dynarski, Susan, 1999, “Hope for Whom? Financial Aid for the Middle Class and its Impact on College Attendance,” *National Tax Journal* 53(3): 629-661]
 
 ---
 
@@ -719,7 +731,7 @@ class: inverse, center, middle
 .smallest[
 
 ```r
-DND_reg&lt;-lm(InCollege ~ Georgia + After + Georgia*After, data = hope)
+DND_reg &lt;- lm(InCollege ~ Georgia + After + Georgia*After, data = hope)
 DND_reg %&gt;% tidy()
 ```
 
@@ -732,14 +744,14 @@ DND_reg %&gt;% tidy()
 
 --
 .smallest[
-`$$\widehat{Enrolled_{it}}=0.406-0.105 \, Georgia_{i}-0.004 \, After_{t}+0.089 \, (Georgia_{i} \times After_{t})$$`
+`$$\widehat{\text{Enrolled}_{it}}=0.406-0.105 \, \text{Georgia}_{i}-0.004 \, \text{After}_{t}+0.089 \, (\text{Georgia}_{i} \times \text{After}_{t})$$`
 ]
 
 ---
 
 # Example: Interpretting the Regression
 
-`$$\widehat{Enrolled_{it}}=0.406-0.105 \, Georgia_{i}-0.004 \, After_{t}+0.089 \, (Georgia_{i} \times After_{t})$$`
+`$$\widehat{\text{Enrolled}_{it}}=0.406-0.105 \, \text{Georgia}_{i}-0.004 \, \text{After}_{t}+0.089 \, (\text{Georgia}_{i} \times \text{After}_{t})$$`
 
 --
 
@@ -773,7 +785,7 @@ A **non-Georgian** **before** 1992 was 40.6% likely to be a college student
 
 # Example: Comparing Group Means
 
-`$$\widehat{Enrolled_{it}}=0.406-0.105 \, Georgia_{i}-0.004 \, After_{t}+0.089 \, (Georgia_{i} \times After_{t})$$`
+`$$\widehat{\text{Enrolled}_{it}}=0.406-0.105 \, \text{Georgia}_{i}-0.004 \, \text{After}_{t}+0.089 \, (\text{Georgia}_{i} \times \text{After}_{t})$$`
 
 - A group mean for a dummy `\(Y\)` is `\(E[Y=1]\)`, i.e. the probability a student is enrolled:
 
@@ -882,7 +894,7 @@ hope %&gt;%
 
 # Example: Diff-in-Diff Summary
 
-`$$\widehat{Enrolled_{it}}=0.406-0.105 \, Georgia_{i}-0.004 \, After_{t}+0.089 \, (Georgia_{i} \times After_{t})$$`
+`$$\widehat{\text{Enrolled}_{it}}=0.406-0.105 \, \text{Georgia}_{i}-0.004 \, \text{After}_{t}+0.089 \, (\text{Georgia}_{i} \times \text{After}_{t})$$`
 
 |    | Neighbors | Georgia | **Group Diff** `\((\Delta Y_i)\)` |
 |----|--------:|----------:|--------------------------:|
@@ -897,6 +909,16 @@ hope %&gt;%
 	&amp;=(0.386-0.301)-(0.402-0.406)\\
 	&amp;=(0.085)-(-0.004)\\
 	&amp;=0.089\\ \end{align*}$$`
+
+---
+
+# Diff-in-Diff Summary &amp; Data
+
+.center[
+![](../images/dynarski_hope_1.png)
+]
+
+.source[Dynarski, Susan, 1999, “Hope for Whom? Financial Aid for the Middle Class and its Impact on College Attendance,” *National Tax Journal* 53(3): 629-661]
 
 ---
 
@@ -921,24 +943,25 @@ class: inverse, center, middle
 # Generalizing DND Models
 
 - DND can be **generalized** with a **two-way fixed effects** model:  	
-`$$\widehat{Y_{it}}=\alpha_i+\theta_t+\beta_3 (\text{Treated}_i \times \text{After}_{t})+\nu_{it}$$`
+`$$\widehat{Y_{it}}=\beta_1 (\text{Treated}_i \times \text{After}_{t})+\alpha_i+\theta_t++\nu_{it}$$`
     - `\(\alpha_i\)`: **group fixed effects** (treatments/control groups)
     - `\(\theta_t\)`: **time fixed effects** (pre/post treatment)
+    - `\(\beta_1\)`: diff-in-diff (interaction effect, `\(\beta_3\)` from before)
 
 --
 
-- Allows *many* periods, and treatment(s) can occur at different times to different units (so long as some do not get treated)
+- Flexibility: *many* periods (not just before/after), *many* different treatment(s)/groups, and treatment(s) can occur at different times to different units (so long as some do not get treated)
 
 --
 
 - Can also add control variables that vary within units and over time 
-`$$\widehat{Y_{it}}=\alpha_i+\theta_t+\beta_3 \, (\text{Treated}_i \times \text{After}_{t})+\beta_4 X_{it}+\nu_{it}$$`
+`$$\widehat{Y_{it}}=\beta_1 \, (\text{Treated}_i \times \text{After}_{t})+\beta_2 X_{it}+\cdots + \alpha_i+\theta_t+\nu_{it}$$`
 
 ---
 
 # Our Example, Generalized I
 
-`$$\widehat{Enrolled_{it}} = \alpha_i+\theta_t+\beta_3 \, (Georgia_{it} \times After_{it})$$`
+`$$\widehat{\text{Enrolled}_{it}} = \beta_1 \, (\text{Georgia}_{i} \times \text{After}_{t}) + \alpha_i+\theta_t+$$`
 
 - `StateCode` is a variable for the State `\(\implies\)` create State fixed effect
 
@@ -998,7 +1021,7 @@ DND_fe_2 %&gt;% tidy()
 --
 
 .smallest[
-`$$\widehat{InCollege_{it}}=0.091 \, (\text{Georgia}_i \times \text{After}_{it})+\alpha_i+\theta_t$$`
+`$$\widehat{\text{InCollege}_{it}}=0.091 \, (\text{Georgia}_i \times \text{After}_{it})+\alpha_i+\theta_t$$`
 
 ]
 
@@ -1056,13 +1079,72 @@ DND_fe_controls_2 %&gt;% tidy()
 
 --
 .smallest[
-`$$\widehat{InCollege_{it}}=\alpha_i+\theta_t+0.023 \, (\text{Georgia}_i \times \text{After}_{it})-0.094 \text{Black}_{it}-0.302 \text{LowIncome}_{it}$$`
+`$$\widehat{\text{InCollege}_{it}}=0.023 \, (\text{Georgia}_i \times \text{After}_{it})-0.094 \text{Black}_{it}-0.302 \text{LowIncome}_{it}$$`
 
 ]
 
 ---
 
+# Our Example, Generalized, with Controls II
+
+.font40[
+.regtable[
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-33">
+<col><col><col><col><tr>
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(1)</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(2)</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(3)</th></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Intercept</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.4058 ***</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.0109)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Georgia</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-0.1052 **&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.0378)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">After</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-0.0045&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.0159)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Georgia x After</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.0893&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.0914 ***</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.0234&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.0489)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.0056)&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.0128)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Low Income</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-0.3017 ***</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.0307)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Black</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">-0.0940 ***</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">(0.0127)&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Fixed Effects</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">None&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">State &amp; Year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">State &amp; Year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">N</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">4291&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">4291&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">2967&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">R-Squared</th><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.0019&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.0115&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.1036&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">SER</th><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.4893&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.4875&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.8pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.4731&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<th colspan="4" style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.8pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"> *** p &lt; 0.001;  ** p &lt; 0.01;  * p &lt; 0.05.</th></tr>
+</table>
+
+]
+]
+
+---
+
+# Our Example, Generalized, with Controls II
+
+.center[
+![:scale 60%](../images/dynarski_hope_2.png)
+]
+
+.source[Dynarski, Susan, 1999, “Hope for Whom? Financial Aid for the Middle Class and its Impact on College Attendance,” *National Tax Journal* 53(3): 629-661]
+---
+
 # Intuition behind DND
+
+.pull-left[
 
 - Diff-in-diff models are the quintessential example of exploiting .hi[natural experiments]
 
@@ -1070,15 +1152,23 @@ DND_fe_controls_2 %&gt;% tidy()
 
 - One of the cleanest and clearest causal **identification strategies**
 
+]
+
+.pull-right[
+.center[
+![](../images/legalmarijuanamap.png)
+]
+]
+
 ---
 
 class: inverse, center, middle
 
-# Example II: "The" Card-Kreuger Minimum Wage Study
+# Example II: “The” Card-Kreuger Minimum Wage Study
 
 ---
 
-# Example: "The" Card-Kreuger Minimum Wage Study I
+# Example: ”The” Card-Kreuger Minimum Wage Study I
 
 .content-box-green[
 .green[**Example**]: *The* controversial minimum wage study, Card &amp; Kreuger (1994) is a quintessential (and clever) diff-in-diff.
@@ -1100,7 +1190,7 @@ class: inverse, center, middle
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/gdoip37e26j253b/PANJ.png?raw=1)
+![](../images/panj.png)
 ]
 ]
 
@@ -1120,7 +1210,7 @@ class: inverse, center, middle
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/gdoip37e26j253b/PANJ.png?raw=1)
+![](../images/panj.png)
 ]
 ]
 
@@ -1129,7 +1219,7 @@ class: inverse, center, middle
 # Card &amp; Kreuger (1994): Comparisons
 
 .center[
-![:scale 25%](https://www.dropbox.com/s/d0z7vb9so296eun/CardKreuger1.png?raw=1)
+![:scale 25%](../images/CardKreuger1.png)
 ]
 
 ---
@@ -1137,7 +1227,7 @@ class: inverse, center, middle
 # Card &amp; Kreuger (1994): Summary I
 
 .center[
-![:scale 65%](https://www.dropbox.com/s/9igiex5ly8u67vq/CardKreuger2.png?raw=1)
+![:scale 65%](../images/CardKreuger2.png)
 ]
 
 ---
@@ -1145,7 +1235,7 @@ class: inverse, center, middle
 # Card &amp; Kreuger (1994): Summary II
 
 .center[
-![:scale 65%](https://www.dropbox.com/s/gj4spkyz3jkop2z/CardKreuger3.png?raw=1)
+![:scale 65%](../images/CardKreuger3.png)
 ]
 
 ---
@@ -1153,7 +1243,7 @@ class: inverse, center, middle
 # Card &amp; Kreuger (1994): Model 
 
 .smallest[
-`$$\widehat{Employment_{i t}}=\beta_0+\beta_1 \, NJ_{i}+\beta_2 \, After_{t}+\beta_3 \, (NJ_i \times After_t)$$`
+`$$\widehat{\text{Employment}_{i t}}=\beta_0+\beta_1 \, \text{NJ}_{i}+\beta_2 \, \text{After}_{t}+\beta_3 \, (\text{NJ}_i \times After_t)$$`
 
 - PA Before: `\(\beta_0\)`
 
@@ -1163,7 +1253,7 @@ class: inverse, center, middle
 
 - NJ After: `\(\beta_0+\beta_1+\beta_2+\beta_3\)`
 
-- **Diff-in-diff**: `\((NJ_{after}-NJ_{before})-(PA_{after}-PA_{before})\)`
+- **Diff-in-diff**: `\((\text{NJ}_{after}-\text{NJ}_{before})-(\text{PA}_{after}-\text{PA}_{before})\)`
 ]
 
 --
@@ -1181,7 +1271,7 @@ class: inverse, center, middle
 # Card &amp; Kreuger (1994): Results
 
 .center[
-![:scale 65%](https://www.dropbox.com/s/ms5gpn8lfkws6a9/CardKreuger5.png?raw=1)
+![:scale 65%](../images/CardKreuger5.png)
 ]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
