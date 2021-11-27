@@ -6,9 +6,33 @@ output:
   beamer_presentation:
     dev: cairo_pdf # Allows different fonts
     latex_engine: xelatex # needed for different fonts
-    theme: "metropolis"
+    theme: "metropolis" 
+
+# LaTeX packages needed for huxtable to render tables:
+header_includes: 
+  - \usepackage{booktabs}
+  - \usepackage{array}
+  - \usepackage{caption}
+  - \usepackage{graphicx}
+  - \usepackage{siunitx}
+  - \usepackage[normalem]{ulem}
+  - \usepackage{colortbl}
+  - \usepackage{multirow}
+  - \usepackage{hhline}
+  - \usepackage{calc}
+  - \usepackage{tabularx}
+  - \usepackage{threeparttable}
+  - \usepackage{wrapfig}
+  - \usepackage{adjustbox}
+  - \usepackage{hyperref}
+
 classoption: aspectratio=169
 ---
+
+<!-- If you're looking at this source code, this is a “Beamer” presentation
+that uses LaTeX to make PDF slides. 
+
+-->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
@@ -69,7 +93,7 @@ papers<-papers %>%
 
 ```{r}
 summary_table(papers, Pages, Grade, Final, Year, Female, Morning, Hood, Econometrics, Covid) %>%
-  knitr::kable(., format="html")
+  knitr::kable(., format="latex")
 ```
 
 # Data: Histogram of X
@@ -129,7 +153,6 @@ scatter_no0s
 # Data
 
 ```{r, fig.retina=3, fig.align="center", out.width="50%"}
-
 ggplot(data = subset(papers, Class=="Econometrics"))+
   aes(x = Pages,
       y = Grade)+
@@ -175,7 +198,8 @@ hoodreg<-lm(Grade~Pages+Final+Female+Metrics+Covid, data=hood)
 metricsreg<-lm(Grade~Pages+Final+Female+Covid, data=metrics)
 ```
 
-```{r, results="asis"}
+```{r, results = "asis"}
+# ^ Need results “asis” to print a table in LaTeX 
 library(huxtable)
 huxreg("Baseline" = basicreg,
        "No Os" = no0reg,
@@ -194,7 +218,7 @@ huxreg("Baseline" = basicreg,
                       "R-Squared" = "r.squared",
                       "SER" = "sigma"),
        number_format = 2) %>%
-  print_latex()
+  print_latex
 ```
 
 # Implications

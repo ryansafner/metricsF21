@@ -139,8 +139,9 @@ lessons:
   - title: "**Empirical Research Paper Project**"
     assignment: "research-paper"
     
-  - title: "**Final Exam**"
-
+  - title: "**Final Exam** Thurs Dec 10"
+    assignment: "02-exam"
+    
   - title: "4.3 — Instrumental Variables Models"
   
   - title: "4.4 — Regression Discontinuity Models"
