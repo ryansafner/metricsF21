@@ -148,7 +148,7 @@ Suppose observation `\(i\)` can be either `\(\{\)`Red, Orange, Yellow, Green, Bl
 
 `$$\widehat{Utility}_i=\beta_0+\beta_1 \, Eggs_i+\beta_2 \, Breakfast_i+\beta_3 (Eggs_i \times Breakfast_i)$$`
 
-`\(Breakfast_i\)` is a dummy variable `\(\begin{cases} =1 &amp; \text{if meal i is breakfast}\\ =0 &amp; \text{if meal i is not breakfast}\\ \end{cases}\)`
+`\(Breakfast_i\)` is a dummy variable `\(= \begin{cases} 1 &amp; \text{if meal i is breakfast}\\ 0 &amp; \text{if meal i is not breakfast}\\ \end{cases}\)`
 
 --
 
@@ -173,7 +173,7 @@ Suppose observation `\(i\)` can be either `\(\{\)`Red, Orange, Yellow, Green, Bl
 # Question 6
 
 
-`$$\widehat{Utility}=2+4\text{ Ice Cream Cones}_i-1\text{ Ice Cream Cones}_i^2$$`
+`$$\widehat{Utility}_i=2+4\text{ Ice Cream Cones}_i-1\text{ Ice Cream Cones}_i^2$$`
 
 --
 
@@ -198,13 +198,13 @@ Suppose observation `\(i\)` can be either `\(\{\)`Red, Orange, Yellow, Green, Bl
 
 # Question 7
 
-`$$ln(GDP_i)=10+2\text{ population (in billions)}_i$$`
+`$$\ln(GDP_i)=10+2\text{ population (in billions)}_i$$`
 
 - Interpret `\(\hat{\beta_1}\)` in context.
 
 --
 
-`$$ln(GDP_i)=10+0.1 \, ln(\text{population}_i)$$`
+`$$\ln(GDP_i)=10+0.1 \, \ln(\text{population}_i)$$`
 
 - Interpret `\(\hat{\beta_1}\)` in context.
 
@@ -212,17 +212,20 @@ Suppose observation `\(i\)` can be either `\(\{\)`Red, Orange, Yellow, Green, Bl
 
 # Question 8
 
-- Explain what an `\(F\)`-test is used for
+- Explain *what* an `\(F\)`-test is used for;
 
 --
 
-- Explain *how* an `\(F\)`-statistic is generated
+- Explain *how* an `\(F\)`-statistic is estimated (roughly).
 
 ---
 
 # Question 9
 
-`$$\text{Divorce Rate}_{it}=\beta_0+\beta_1 \text{Divorce Law}_{it}+\alpha_i+\theta_t+\epsilon_{it}$$`
+Consider a two-way fixed effects model: 
+
+`$$\text{Divorce Rate}_{it}=\beta_1 \text{Divorce Law}_{it}+\alpha_i+\theta_t+\epsilon_{it}$$`
+for State `\(i\)` at time `\(t\)`
 
 --
 
@@ -240,9 +243,10 @@ Suppose observation `\(i\)` can be either `\(\{\)`Red, Orange, Yellow, Green, Bl
 
 # Question 10
 
-`$$\text{Crime Rate}_{it}=\beta_0+\beta_1 \, \text{Maryland}_{i}+\beta_2 \, \text{After}_t+\beta_3  \, (\text{Maryland}_i \times \text{After}_t)$$`
+Suppose Maryland passes a law (and other States do not) that affects crime rates. Consider the following model: 
 
-- Suppose Maryland passes a law (and other States do not) that affects crime rates
+`$$\text{Crime Rate}_{it}=\beta_0+\beta_1 \, \text{Maryland}_{i}+\beta_2 \, \text{After}_t+\beta_3  \, (\text{Maryland}_i \times \text{After}_t)$$`
+for State `\(i\)` at time `\(t\)`
 
 --
 
