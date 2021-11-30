@@ -43,9 +43,9 @@ It is more important to me that you spend your time working and writing the answ
 - [<i class="fas fa-file-pdf"></i> Download as PDF](/examprep/finalconcepts.pdf)
 <!-- [<i class="fas fa-external-link-square-alt"></i> Review Questions Slides](/slides/midterm-review.html) -->
 
-<!--# Midterm Review Questions
+# Review Questions
 
-- [<i class="fas fa-chalkboard-teacher"></i> Midterm Review Questions](/slides/midterm-review.html)-->
+- [<i class="fas fa-chalkboard-teacher"></i> Review Questions](/slides/final-review.html)
 
 # "Practice" Exam
 
