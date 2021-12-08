@@ -19,10 +19,10 @@ type: docs
 ```
 
 {{% alert note %}}
-Thursday, December 10 (11:30 AM — 2:00 PM) on Blackboard Assignments, [as per the Registrar](https://www.hood.edu/offices-services/registrars-office/academic-calendar/final-exam-schedule)
+Thursday, December 9 (11:30 AM — 2:00 PM) on Blackboard Assignments, [as per the Registrar](https://www.hood.edu/offices-services/registrars-office/academic-calendar/final-exam-schedule)
 {{% /alert %}}
 
-The final exam will be held **on Blackboard assignments** from **11:25 AM — 2:00 PM** on **Thursday December 13**.
+The final exam will be held **on Blackboard assignments** from **11:25 AM — 2:00 PM** on **Thursday December 9**.
 
 The exam will be a **timed assignment**. You will *not* need the whole time, I have designed the test to give you some extra time to accommodate the technical difficulties of taking an exam at home. You may close the exam page and come back to it, but *the timer will continue to run* once the exam is first opened.
 
