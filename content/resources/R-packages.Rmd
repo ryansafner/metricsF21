@@ -17,6 +17,13 @@ output:
 
 The following is a compendium of all R packages used in this course (in order of appearance), their main uses, and what we use them for^[Note, many of these packages have multiple uses beyond our purposes!]. Each package name below is a **link** to the package's website and/or documentation.
 
+You can install all of these packages at once with the following command:
+
+```{r, eval = F}
+install.packages(c("tidyverse", "ggrepel", "broom", "car", "estimatr", "lmtest",
+                   "huxtable", "infer", "dagitty", "ggdag", "modelsummary", "fixest"))
+```
+
 † Indicates package is part of the [`tidyverse`](https://tidyverse.org)
 
 | Name | Type | Description/Reason(s) for Use | Classes Used |
@@ -32,8 +39,11 @@ The following is a compendium of all R packages used in this course (in order of
 | `ggrepel` | Plotting | For annotating text that doesn't cover observations | [[1.4](/content/2.5-content)] |
 | `broom` | Models | For tidying regression output | [[2.3](/content/2.3-content)] |
 | `car` | Models | For testing for outliers | [[2.5](/content/2.5-content)] |
-| `estimatr` | Models | For calculating robust standard errors | [[2.5](/content/2.5-content)] |
+| `estimatr` | Models | For calculating heteroskedasticity-robust standard errors | [[2.5](/content/2.5-content)] |
 | `lmtest` | Models | For testing for heteroskedasticity | [[2.5](/content/2.5-content)] |
-| `huxtable` | Models | For making nice regression tables | [[2.5](/content/2.5-content)] |
+| `huxtable` | Output | For making nice regression tables | [[2.5](/content/2.5-content)] |
 | `infer` | Models | For simulation and statistical inference | [[2.6](/content/2.6-content)] |
-
+| `dagitty` | Models | For working with DAGs in R | [[3.2](/content/3.2-content)] |
+| `ggdag` | Plotting | For plotting DAGs in ggplot | [[3.2](/content/3.2-content)] |
+| `modelsummary` | Output | For making nice regression tables | [[3.5](/content/3.4-content)]|
+| `fixest` | Models | For working with panel data | [[4.1](/content/4.1-content)] |

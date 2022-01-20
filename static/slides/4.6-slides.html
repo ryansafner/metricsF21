@@ -50,9 +50,58 @@ class: inverse
 
 `$$Y_i=\beta_0+\beta_1X_i+u_i \quad Y \in (0,1)$$`
 
+---
+
+# Example: Defaults
+
+.content-box-green[
+.hi-green[Example]: Whether or not a borrower defaults
+
+- Does having a higher balance .hi-purple[increase the probability of default]?
+
+]
+
+- `\(\text{Default}_i = \begin{cases} 1 &amp; \text{ if person }i \text{ defaulted}\\ 0 &amp; \text{ if person }i \text{ did not default}\\ \end{cases}\)`
+
+---
+
+# Example: Defaults
+
+
+
 
 
 ---
+
+
+```r
+head(Default)
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["default"],"name":[1],"type":["fct"],"align":["left"]},{"label":["student"],"name":[2],"type":["fct"],"align":["left"]},{"label":["balance"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["income"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"No","2":"No","3":"729.5265","4":"44361.625","_rn_":"1"},{"1":"No","2":"Yes","3":"817.1804","4":"12106.135","_rn_":"2"},{"1":"No","2":"No","3":"1073.5492","4":"31767.139","_rn_":"3"},{"1":"No","2":"No","3":"529.2506","4":"35704.494","_rn_":"4"},{"1":"No","2":"No","3":"785.6559","4":"38463.496","_rn_":"5"},{"1":"No","2":"Yes","3":"919.5885","4":"7491.559","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+---
+
+
+
+Only 3.3% default.
+
+---
+
+
+&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" /&gt;
+
+&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" /&gt;
+
+&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" /&gt;
+
+&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" /&gt;
+
+
 
 # Linear Probability Model
 
@@ -172,13 +221,13 @@ Only 3.3% default.
 
 ---
 
-&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" /&gt;
+&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" /&gt;
 
-&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" /&gt;
+&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" /&gt;
 
-&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" /&gt;
+&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" /&gt;
 
-&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" /&gt;
+&lt;img src="4.6-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" /&gt;
 
 ---
 
